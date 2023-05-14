@@ -1,6 +1,5 @@
----@class _G
----@field source Player
----@field [any] any
+---@type Player
+source = nil
 
 ---@return CitizenClass
 function CitizenLocal()
@@ -88,6 +87,7 @@ function CitizenLocal()
 
     return self
 end
+
 --[[ Legacy Alias
 --- Outputs the passed message to any trace listeners, including the console output and the log file. Does not add a newline by itself, therefore suffix a message with "\n".
 ---
@@ -100,13 +100,11 @@ end
 function RconPrint(message)
 end
 ]]
-
 --[[ Legacy
 ---Does absolutely nothing.
 function RconLog()
 end
 ]]
-
 --- @type CitizenClass
 Citizen = CitizenLocal()
 
@@ -179,7 +177,6 @@ end
 function GetPlayerEP(playerSrc)
 end
 ]]
-
 --- GetPlayerIdentifiers
 --- @param player Player
 --- @return string[]
@@ -210,8 +207,6 @@ end
 function TriggerLatentServerEvent(eventName, bps, ...)
 end
 
-
-
 --- Marks the event safe for network use. Aka, allows you to trigger the eventName event on the client, from a server side script.
 --- @usage
 --- ```
@@ -225,7 +220,6 @@ end
 --- @overload fun(eventName: string): void
 function RegisterNetEvent(eventName, cb)
 end
-
 
 --[[ Legacy Alias
 --- Marks the event safe for network use. Aka, allows you to trigger the eventName event on the client, from a server side script.
@@ -242,7 +236,6 @@ end
 function RegisterServerEvent(eventName, cb)
 end
 ]]
-
 --- Register a NUI callback method
 --- @param type string
 --- @param handler fun
