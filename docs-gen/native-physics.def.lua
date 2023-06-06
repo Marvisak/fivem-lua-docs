@@ -1,11 +1,12 @@
+--- @meta
 
 --- SetDisableFragDamage
 ---
 --- @hash [0x01BA3AED21C16CFB](https://docs.fivem.net/natives/?_0x01BA3AED21C16CFB)
 --- @param object Object
 --- @param toggle boolean
---- @return void
---- @overload fun(object: Object, toggle: boolean): void
+--- @return nil
+--- @overload fun(object: Object, toggle: boolean): nil
 function SetDisableFragDamage(object, toggle) end
 
     
@@ -50,8 +51,8 @@ function DoesEntityHaveFragInst(object) end
 ---
 --- @hash [0x1461C72C889E343E](https://docs.fivem.net/natives/?_0x1461C72C889E343E)
 --- @param ropeId number (int)
---- @return void
---- @overload fun(ropeId: number): void
+--- @return nil
+--- @overload fun(ropeId: number): nil
 function StartRopeWinding(ropeId) end
 
     
@@ -60,8 +61,8 @@ function StartRopeWinding(ropeId) end
 --- @hash [0x15F944730C832252](https://docs.fivem.net/natives/?_0x15F944730C832252)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 function SetEntityProofUnk(entity, toggle) end
 
     
@@ -71,8 +72,8 @@ function SetEntityProofUnk(entity, toggle) end
 --- @hash [0x15F944730C832252](https://docs.fivem.net/natives/?_0x15F944730C832252)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 --- @deprecated
 function N_0x15f944730c832252(entity, toggle) end
 
@@ -114,8 +115,8 @@ function N_0x271c9d3aca5d6409(ropeId) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(ropeId: number, vertex: number, x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(ropeId: number, vertex: number, x: number, y: number, z: number): nil
 function PinRopeVertex(ropeId, vertex, x, y, z) end
 
     
@@ -133,8 +134,8 @@ function PinRopeVertex(ropeId, vertex, x, y, z) end
 --- @param p8 number (float)
 --- @param p9 any
 --- @param p10 boolean
---- @return void
---- @overload fun(entity: Entity, p1: number, p2: number, p3: number, p4: number, p5: number, p6: number, p7: number, p8: number, p9: any, p10: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, p1: number, p2: number, p3: number, p4: number, p5: number, p6: number, p7: number, p8: number, p9: any, p10: boolean): nil
 function BreakEntityGlass(entity, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10) end
 
     
@@ -154,8 +155,8 @@ function GetRopeVertexCount(ropeId) end
 --- @hash [0x36CCB9BE67B970FD](https://docs.fivem.net/natives/?_0x36CCB9BE67B970FD)
 --- @param ropeId number (int)
 --- @param p1 boolean
---- @return void
---- @overload fun(ropeId: number, p1: boolean): void
+--- @return nil
+--- @overload fun(ropeId: number, p1: boolean): nil
 function N_0x36ccb9be67b970fd(ropeId, p1) end
 
     
@@ -178,8 +179,8 @@ function N_0x36ccb9be67b970fd(ropeId, p1) end
 --- @param p11 boolean
 --- @param boneName1 string (char*)
 --- @param boneName2 string (char*)
---- @return void
---- @overload fun(ropeId: number, ent1: Entity, ent2: Entity, ent1_x: number, ent1_y: number, ent1_z: number, ent2_x: number, ent2_y: number, ent2_z: number, length: number, p10: boolean, p11: boolean, boneName1: string, boneName2: string): void
+--- @return nil
+--- @overload fun(ropeId: number, ent1: Entity, ent2: Entity, ent1_x: number, ent1_y: number, ent1_z: number, ent2_x: number, ent2_y: number, ent2_z: number, length: number, p10: boolean, p11: boolean, boneName1: string, boneName2: string): nil
 function AttachEntitiesToRope(ropeId, ent1, ent2, ent1_x, ent1_y, ent1_z, ent2_x, ent2_y, ent2_z, length, p10, p11, boneName1, boneName2) end
 
     
@@ -194,8 +195,8 @@ function AttachEntitiesToRope(ropeId, ent1, ent2, ent1_x, ent1_y, ent1_z, ent2_x
 --- @param y number (float)
 --- @param z number (float)
 --- @param p5 boolean
---- @return void
---- @overload fun(ropeId: number, entity: Entity, x: number, y: number, z: number, p5: boolean): void
+--- @return nil
+--- @overload fun(ropeId: number, entity: Entity, x: number, y: number, z: number, p5: boolean): nil
 function AttachRopeToEntity(ropeId, entity, x, y, z, p5) end
 
     
@@ -204,8 +205,8 @@ function AttachRopeToEntity(ropeId, entity, x, y, z, p5) end
 --- @hash [0x4B5AE2EEE4A8F180](https://docs.fivem.net/natives/?_0x4B5AE2EEE4A8F180)
 --- @param ropeId number (int)
 --- @param vertex number (int)
---- @return void
---- @overload fun(ropeId: number, vertex: number): void
+--- @return nil
+--- @overload fun(ropeId: number, vertex: number): nil
 function UnpinRopeVertex(ropeId, vertex) end
 
     
@@ -213,8 +214,8 @@ function UnpinRopeVertex(ropeId, vertex) end
 ---
 --- @hash [0x52B4829281364649](https://docs.fivem.net/natives/?_0x52B4829281364649)
 --- @param ropeId number (int*)
---- @return void
---- @overload fun(): number
+--- @return nil
+--- @overload fun(): nil, number
 function DeleteRope(ropeId) end
 
     
@@ -222,8 +223,8 @@ function DeleteRope(ropeId) end
 ---
 --- @hash [0x5389D48EFA2F079A](https://docs.fivem.net/natives/?_0x5389D48EFA2F079A)
 --- @param ropeId number (int)
---- @return void
---- @overload fun(ropeId: number): void
+--- @return nil
+--- @overload fun(ropeId: number): nil
 function RopeConvertToSimple(ropeId) end
 
     
@@ -231,8 +232,8 @@ function RopeConvertToSimple(ropeId) end
 ---
 --- @hash [0x538D1179EC1AA9A9](https://docs.fivem.net/natives/?_0x538D1179EC1AA9A9)
 --- @param ropeId number (int)
---- @return void
---- @overload fun(ropeId: number): void
+--- @return nil
+--- @overload fun(ropeId: number): nil
 function StartRopeUnwindingFront(ropeId) end
 
     
@@ -241,8 +242,8 @@ function StartRopeUnwindingFront(ropeId) end
 --- @hash [0x5CEC1A84620E7D5B](https://docs.fivem.net/natives/?_0x5CEC1A84620E7D5B)
 --- @param object Object
 --- @param toggle boolean
---- @return void
---- @overload fun(object: Object, toggle: boolean): void
+--- @return nil
+--- @overload fun(object: Object, toggle: boolean): nil
 function SetDisableBreaking(object, toggle) end
 
     
@@ -252,8 +253,8 @@ function SetDisableBreaking(object, toggle) end
 ---
 --- @hash [0x6CE36C35C1AC8163](https://docs.fivem.net/natives/?_0x6CE36C35C1AC8163)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function RopeUnloadTextures() end
 
     
@@ -261,8 +262,8 @@ function RopeUnloadTextures() end
 ---
 --- @hash [0x710311ADF0E20730](https://docs.fivem.net/natives/?_0x710311ADF0E20730)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 function ActivatePhysics(entity) end
 
     
@@ -310,8 +311,8 @@ function N_0x84de3b5fb3e666f0(ropeId) end
 ---
 --- @hash [0x9B9039DBF2D258C1](https://docs.fivem.net/natives/?_0x9B9039DBF2D258C1)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function RopeLoadTextures() end
 
     
@@ -321,8 +322,8 @@ function RopeLoadTextures() end
 ---
 --- @hash [0x9EBD751E5787BAF2](https://docs.fivem.net/natives/?_0x9EBD751E5787BAF2)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0x9ebd751e5787baf2(p0) end
 
     
@@ -335,8 +336,8 @@ function N_0x9ebd751e5787baf2(p0) end
 --- @hash [0xA1AE736541B0FCA3](https://docs.fivem.net/natives/?_0xA1AE736541B0FCA3)
 --- @param ropeId number (int*)
 --- @param p1 boolean
---- @return void
---- @overload fun(p1: boolean): number
+--- @return nil
+--- @overload fun(p1: boolean): nil, number
 function N_0xa1ae736541b0fca3(ropeId, p1) end
 
     
@@ -344,8 +345,8 @@ function N_0xa1ae736541b0fca3(ropeId, p1) end
 ---
 --- @hash [0xAA5D6B1888E4DB20](https://docs.fivem.net/natives/?_0xAA5D6B1888E4DB20)
 --- @param ropeId number (int)
---- @return void
---- @overload fun(ropeId: number): void
+--- @return nil
+--- @overload fun(ropeId: number): nil
 function DeleteChildRope(ropeId) end
 
     
@@ -357,8 +358,8 @@ function DeleteChildRope(ropeId) end
 ---
 --- @hash [0xAA6A6098851C396F](https://docs.fivem.net/natives/?_0xAA6A6098851C396F)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetLaunchControlEnabled(toggle) end
 
     
@@ -371,8 +372,8 @@ function SetLaunchControlEnabled(toggle) end
 ---
 --- @hash [0xAA6A6098851C396F](https://docs.fivem.net/natives/?_0xAA6A6098851C396F)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0xaa6a6098851c396f(toggle) end
 
@@ -383,8 +384,8 @@ function N_0xaa6a6098851c396f(toggle) end
 --- @param p0 any
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: boolean): nil
 function N_0xb1b6216ca2e7b55e(p0, p1, p2) end
 
     
@@ -395,8 +396,8 @@ function N_0xb1b6216ca2e7b55e(p0, p1, p2) end
 --- @hash [0xB743F735C03D7810](https://docs.fivem.net/natives/?_0xB743F735C03D7810)
 --- @param ropeId number (int)
 --- @param p1 number (int)
---- @return void
---- @overload fun(ropeId: number, p1: number): void
+--- @return nil
+--- @overload fun(ropeId: number, p1: number): nil
 function N_0xb743f735c03d7810(ropeId, p1) end
 
     
@@ -419,8 +420,8 @@ function N_0xb743f735c03d7810(ropeId, p1) end
 --- @param p11 number (float)
 --- @param p12 number (float)
 --- @param p13 number (float)
---- @return void
---- @overload fun(ropeId: number, p1: number, p2: number, p3: number, p4: number, p5: number, p6: number, p7: number, p8: number, p9: number, p10: number, p11: number, p12: number, p13: number): void
+--- @return nil
+--- @overload fun(ropeId: number, p1: number, p2: number, p3: number, p4: number, p5: number, p6: number, p7: number, p8: number, p9: number, p10: number, p11: number, p12: number, p13: number): nil
 function N_0xbc0ce682d4d05650(ropeId, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13) end
 
     
@@ -429,8 +430,8 @@ function N_0xbc0ce682d4d05650(ropeId, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p
 --- @hash [0xBCF3026912A8647D](https://docs.fivem.net/natives/?_0xBCF3026912A8647D)
 --- @param ropeId number (int)
 --- @param entity Entity
---- @return void
---- @overload fun(ropeId: number, entity: Entity): void
+--- @return nil
+--- @overload fun(ropeId: number, entity: Entity): nil
 function DetachRopeFromEntity(ropeId, entity) end
 
     
@@ -438,8 +439,8 @@ function DetachRopeFromEntity(ropeId, entity) end
 ---
 --- @hash [0xBE520D9761FF811F](https://docs.fivem.net/natives/?_0xBE520D9761FF811F)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 function SetCgAtBoundcenter(entity) end
 
     
@@ -450,8 +451,8 @@ function SetCgAtBoundcenter(entity) end
 --- @hash [0xC16DE94D9BEA14A0](https://docs.fivem.net/natives/?_0xC16DE94D9BEA14A0)
 --- @param ropeId number (int)
 --- @param length number (float)
---- @return void
---- @overload fun(ropeId: number, length: number): void
+--- @return nil
+--- @overload fun(ropeId: number, length: number): nil
 function RopeResetLength(ropeId, length) end
 
     
@@ -459,8 +460,8 @@ function RopeResetLength(ropeId, length) end
 ---
 --- @hash [0xC8D667EE52114ABA](https://docs.fivem.net/natives/?_0xC8D667EE52114ABA)
 --- @param ropeId number (int)
---- @return void
---- @overload fun(ropeId: number): void
+--- @return nil
+--- @overload fun(ropeId: number): nil
 function RopeSetUpdatePinverts(ropeId) end
 
     
@@ -468,8 +469,8 @@ function RopeSetUpdatePinverts(ropeId) end
 ---
 --- @hash [0xCB2D4AB84A19AA7C](https://docs.fivem.net/natives/?_0xCB2D4AB84A19AA7C)
 --- @param ropeId number (int)
---- @return void
---- @overload fun(ropeId: number): void
+--- @return nil
+--- @overload fun(ropeId: number): nil
 function StopRopeWinding(ropeId) end
 
     
@@ -480,8 +481,8 @@ function StopRopeWinding(ropeId) end
 --- @hash [0xCBB203C04D1ABD27](https://docs.fivem.net/natives/?_0xCBB203C04D1ABD27)
 --- @param ropeId number (int)
 --- @param rope_preset string (char*)
---- @return void
---- @overload fun(ropeId: number, rope_preset: string): void
+--- @return nil
+--- @overload fun(ropeId: number, rope_preset: string): nil
 function LoadRopeData(ropeId, rope_preset) end
 
     
@@ -491,8 +492,8 @@ function LoadRopeData(ropeId, rope_preset) end
 ---
 --- @hash [0xCC6E963682533882](https://docs.fivem.net/natives/?_0xCC6E963682533882)
 --- @param object Object
---- @return void
---- @overload fun(object: Object): void
+--- @return nil
+--- @overload fun(object: Object): nil
 function N_0xcc6e963682533882(object) end
 
     
@@ -503,8 +504,8 @@ function N_0xcc6e963682533882(object) end
 --- @hash [0xD009F759A723DB1B](https://docs.fivem.net/natives/?_0xD009F759A723DB1B)
 --- @param ropeId number (int)
 --- @param length number (float)
---- @return void
---- @overload fun(ropeId: number, length: number): void
+--- @return nil
+--- @overload fun(ropeId: number, length: number): nil
 function RopeForceLength(ropeId, length) end
 
     
@@ -515,8 +516,8 @@ function RopeForceLength(ropeId, length) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(entity: Entity, x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(entity: Entity, x: number, y: number, z: number): nil
 function SetCgoffset(entity, x, y, z) end
 
     
@@ -525,8 +526,8 @@ function SetCgoffset(entity, x, y, z) end
 --- @hash [0xDC57A637A20006ED](https://docs.fivem.net/natives/?_0xDC57A637A20006ED)
 --- @param ropeId number (int)
 --- @param p1 any
---- @return void
---- @overload fun(ropeId: number, p1: any): void
+--- @return nil
+--- @overload fun(ropeId: number, p1: any): nil
 function RopeSetUpdateOrder(ropeId, p1) end
 
     
@@ -536,8 +537,8 @@ function RopeSetUpdateOrder(ropeId, p1) end
 --- @hash [0xDC57A637A20006ED](https://docs.fivem.net/natives/?_0xDC57A637A20006ED)
 --- @param ropeId number (int)
 --- @param p1 any
---- @return void
---- @overload fun(ropeId: number, p1: any): void
+--- @return nil
+--- @overload fun(ropeId: number, p1: any): nil
 --- @deprecated
 function N_0xdc57a637a20006ed(ropeId, p1) end
 
@@ -552,8 +553,8 @@ function N_0xdc57a637a20006ed(ropeId, p1) end
 --- @param vecY number (float)
 --- @param vecZ number (float)
 --- @param impulse number (float)
---- @return void
---- @overload fun(posX: number, posY: number, posZ: number, vecX: number, vecY: number, vecZ: number, impulse: number): void
+--- @return nil
+--- @overload fun(posX: number, posY: number, posZ: number, vecX: number, vecY: number, vecZ: number, impulse: number): nil
 function ApplyImpulseToCloth(posX, posY, posZ, vecX, vecY, vecZ, impulse) end
 
     
@@ -603,8 +604,8 @@ function GetRopeVertexCoord(ropeId, vertex) end
 --- @param entity Entity
 --- @param vertex number (int)
 --- @param value number (float)
---- @return void
---- @overload fun(entity: Entity, vertex: number, value: number): void
+--- @return nil
+--- @overload fun(entity: Entity, vertex: number, value: number): nil
 function SetDamping(entity, vertex, value) end
 
     
@@ -613,8 +614,8 @@ function SetDamping(entity, vertex, value) end
 --- @hash [0xF159A63806BB5BA8](https://docs.fivem.net/natives/?_0xF159A63806BB5BA8)
 --- @param ropeId number (int*)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): number
+--- @return nil
+--- @overload fun(toggle: boolean): nil, number
 function RopeDrawShadowEnabled(ropeId, toggle) end
 
     
@@ -640,8 +641,8 @@ function DoesRopeExist(ropeId) end
 ---
 --- @hash [0xFFF3A50779EFBBB3](https://docs.fivem.net/natives/?_0xFFF3A50779EFBBB3)
 --- @param ropeId number (int)
---- @return void
---- @overload fun(ropeId: number): void
+--- @return nil
+--- @overload fun(ropeId: number): nil
 function StopRopeUnwindingFront(ropeId) end
 
     

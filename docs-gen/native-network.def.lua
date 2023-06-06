@@ -1,3 +1,4 @@
+--- @meta
 
 --- ```
 --- Adds the first argument to the second.  
@@ -46,8 +47,8 @@ function NetworkHasControlOfEntity(entity) end
 ---
 --- @hash [0x023782EFC70585EE](https://docs.fivem.net/natives/?_0x023782EFC70585EE)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkBailTransitionQuickmatch() end
 
     
@@ -168,8 +169,8 @@ function NetworkIsPlayerTalking(player) end
 --- @hash [0x0379DAF89BA09AA5](https://docs.fivem.net/natives/?_0x0379DAF89BA09AA5)
 --- @param object Object
 --- @param enabled boolean
---- @return void
---- @overload fun(object: Object, enabled: boolean): void
+--- @return nil
+--- @overload fun(object: Object, enabled: boolean): nil
 function NetworkSetObjectForceStaticBlend(object, enabled) end
 
     
@@ -185,8 +186,8 @@ function NetworkSetObjectForceStaticBlend(object, enabled) end
 --- @hash [0x0379DAF89BA09AA5](https://docs.fivem.net/natives/?_0x0379DAF89BA09AA5)
 --- @param object Object
 --- @param enabled boolean
---- @return void
---- @overload fun(object: Object, enabled: boolean): void
+--- @return nil
+--- @overload fun(object: Object, enabled: boolean): nil
 --- @deprecated
 function N_0x0379daf89ba09aa5(object, enabled) end
 
@@ -206,8 +207,8 @@ function N_0x041c7f2a6c9894e6(p0, p1, p2) end
 ---
 --- @hash [0x042E4B70B93E6054](https://docs.fivem.net/natives/?_0x042E4B70B93E6054)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkGetPrimaryClanDataCancel() end
 
     
@@ -216,8 +217,8 @@ function NetworkGetPrimaryClanDataCancel() end
 ---
 --- @hash [0x042E4B70B93E6054](https://docs.fivem.net/natives/?_0x042E4B70B93E6054)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x042e4b70b93e6054() end
 
@@ -297,8 +298,8 @@ function NetworkIsSignedIn() end
 ---
 --- @hash [0x058F43EC59A8631A](https://docs.fivem.net/natives/?_0x058F43EC59A8631A)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkClearFollowers() end
 
     
@@ -307,8 +308,8 @@ function NetworkClearFollowers() end
 ---
 --- @hash [0x058F43EC59A8631A](https://docs.fivem.net/natives/?_0x058F43EC59A8631A)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x058f43ec59a8631a() end
 
@@ -317,8 +318,8 @@ function N_0x058f43ec59a8631a() end
 ---
 --- @hash [0x06FAACD625D80CAA](https://docs.fivem.net/natives/?_0x06FAACD625D80CAA)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 function NetworkRegisterEntityAsNetworked(entity) end
 
     
@@ -327,8 +328,8 @@ function NetworkRegisterEntityAsNetworked(entity) end
 ---
 --- @hash [0x06FAACD625D80CAA](https://docs.fivem.net/natives/?_0x06FAACD625D80CAA)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 --- @deprecated
 function N_0x06faacd625d80caa(entity) end
 
@@ -564,8 +565,8 @@ function N_0x0c1f7d49c39d2289() end
 --- @hash [0x0C978FDA19692C2C](https://docs.fivem.net/natives/?_0x0C978FDA19692C2C)
 --- @param p0 boolean
 --- @param p1 boolean
---- @return void
---- @overload fun(p0: boolean, p1: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean, p1: boolean): nil
 function NetworkSetTransitionVisibilityLock(p0, p1) end
 
     
@@ -575,8 +576,8 @@ function NetworkSetTransitionVisibilityLock(p0, p1) end
 --- @hash [0x0C978FDA19692C2C](https://docs.fivem.net/natives/?_0x0C978FDA19692C2C)
 --- @param p0 boolean
 --- @param p1 boolean
---- @return void
---- @overload fun(p0: boolean, p1: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean, p1: boolean): nil
 --- @deprecated
 function N_0x0c978fda19692c2c(p0, p1) end
 
@@ -620,8 +621,8 @@ function N_0x0cf6cc51aa18f0f8(p0, p1, p2) end
 ---
 --- @hash [0x0D77A82DC2D0DA59](https://docs.fivem.net/natives/?_0x0D77A82DC2D0DA59)
 ---
---- @return any, any
---- @overload fun(): any, any
+--- @return nil, any, any
+--- @overload fun(): nil, any, any
 function N_0x0d77a82dc2d0da59() end
 
     
@@ -681,8 +682,8 @@ function N_0x0e3a041ed6ac2b45(player) end
 ---
 --- @hash [0x0E4F77F7B9D74D84](https://docs.fivem.net/natives/?_0x0E4F77F7B9D74D84)
 --- @param playerCount number (int)
---- @return void
---- @overload fun(playerCount: number): void
+--- @return nil
+--- @overload fun(playerCount: number): nil
 function NetworkSetActivityPlayerMax(playerCount) end
 
     
@@ -691,8 +692,8 @@ function NetworkSetActivityPlayerMax(playerCount) end
 ---
 --- @hash [0x0E4F77F7B9D74D84](https://docs.fivem.net/natives/?_0x0E4F77F7B9D74D84)
 --- @param playerCount number (int)
---- @return void
---- @overload fun(playerCount: number): void
+--- @return nil
+--- @overload fun(playerCount: number): nil
 --- @deprecated
 function N_0x0e4f77f7b9d74d84(playerCount) end
 
@@ -734,8 +735,8 @@ function NetworkIsGamerInMySession(networkHandle) end
 --- @hash [0x0F1A4B45B7693B95](https://docs.fivem.net/natives/?_0x0F1A4B45B7693B95)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x0f1a4b45b7693b95(p0, p1) end
 
     
@@ -745,8 +746,8 @@ function N_0x0f1a4b45b7693b95(p0, p1) end
 ---
 --- @hash [0x0FF2862B61A58AF9](https://docs.fivem.net/natives/?_0x0FF2862B61A58AF9)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function NetworkOverrideReceiveRestrictionsAll(toggle) end
 
     
@@ -757,8 +758,8 @@ function NetworkOverrideReceiveRestrictionsAll(toggle) end
 ---
 --- @hash [0x0FF2862B61A58AF9](https://docs.fivem.net/natives/?_0x0FF2862B61A58AF9)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0x0ff2862b61a58af9(toggle) end
 
@@ -825,8 +826,8 @@ function NetworkIsGameInProgress() end
 ---
 --- @hash [0x113E6E3E50E286B0](https://docs.fivem.net/natives/?_0x113E6E3E50E286B0)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function NetworkClanReleaseEmblem(p0) end
 
     
@@ -835,8 +836,8 @@ function NetworkClanReleaseEmblem(p0) end
 ---
 --- @hash [0x113E6E3E50E286B0](https://docs.fivem.net/natives/?_0x113E6E3E50E286B0)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 --- @deprecated
 function N_0x113e6e3e50e286b0(p0) end
 
@@ -845,8 +846,8 @@ function N_0x113e6e3e50e286b0(p0) end
 ---
 --- @hash [0x1153FA02A659051C](https://docs.fivem.net/natives/?_0x1153FA02A659051C)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x1153fa02a659051c() end
 
     
@@ -920,8 +921,8 @@ function N_0x125e6d638b8605d4(player) end
 --- @hash [0x12B37D54667DB0B8](https://docs.fivem.net/natives/?_0x12B37D54667DB0B8)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function SetPlayerInvisibleLocally(player, toggle) end
 
     
@@ -1009,8 +1010,8 @@ function N_0x135f9b7b7add2185(networkHandle) end
 ---
 --- @hash [0x1398582B7F72B3ED](https://docs.fivem.net/natives/?_0x1398582B7F72B3ED)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x1398582b7f72b3ed(p0) end
 
     
@@ -1020,8 +1021,8 @@ function N_0x1398582b7f72b3ed(p0) end
 ---
 --- @hash [0x13F1FCB111B820B0](https://docs.fivem.net/natives/?_0x13F1FCB111B820B0)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0x13f1fcb111b820b0(p0) end
 
     
@@ -1029,8 +1030,8 @@ function N_0x13f1fcb111b820b0(p0) end
 ---
 --- @hash [0x140E6A44870A11CE](https://docs.fivem.net/natives/?_0x140E6A44870A11CE)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x140e6a44870a11ce() end
 
     
@@ -1038,8 +1039,8 @@ function N_0x140e6a44870a11ce() end
 ---
 --- @hash [0x144DA052257AE7D8](https://docs.fivem.net/natives/?_0x144DA052257AE7D8)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x144da052257ae7d8(p0) end
 
     
@@ -1146,8 +1147,8 @@ function N_0x162c23ca83ed0a62(p0) end
 --- @hash [0x1632BE0AC1E62876](https://docs.fivem.net/natives/?_0x1632BE0AC1E62876)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 function NetworkConcealEntity(entity, toggle) end
 
     
@@ -1236,8 +1237,8 @@ function NetworkPlayerIsUnk() end
 ---
 --- @hash [0x17330EBF2F2124A8](https://docs.fivem.net/natives/?_0x17330EBF2F2124A8)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ResetGhostedEntityAlpha() end
 
     
@@ -1246,8 +1247,8 @@ function ResetGhostedEntityAlpha() end
 ---
 --- @hash [0x17330EBF2F2124A8](https://docs.fivem.net/natives/?_0x17330EBF2F2124A8)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x17330ebf2f2124a8() end
 
@@ -1256,8 +1257,8 @@ function N_0x17330ebf2f2124a8() end
 ---
 --- @hash [0x17440AA15D1D3739](https://docs.fivem.net/natives/?_0x17440AA15D1D3739)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function UgcClearCreateResult() end
 
     
@@ -1266,8 +1267,8 @@ function UgcClearCreateResult() end
 ---
 --- @hash [0x17440AA15D1D3739](https://docs.fivem.net/natives/?_0x17440AA15D1D3739)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x17440aa15d1d3739() end
 
@@ -1278,8 +1279,8 @@ function N_0x17440aa15d1d3739() end
 ---
 --- @hash [0x1775961C2FBBCB5C](https://docs.fivem.net/natives/?_0x1775961C2FBBCB5C)
 --- @param id number (int)
---- @return void
---- @overload fun(id: number): void
+--- @return nil
+--- @overload fun(id: number): nil
 function NetworkSetPropertyId(id) end
 
     
@@ -1290,8 +1291,8 @@ function NetworkSetPropertyId(id) end
 --- @hash [0x17C9E241111A674D](https://docs.fivem.net/natives/?_0x17C9E241111A674D)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x17c9e241111a674d(p0, p1) end
 
     
@@ -1299,8 +1300,8 @@ function N_0x17c9e241111a674d(p0, p1) end
 ---
 --- @hash [0x17E0198B3882C2CB](https://docs.fivem.net/natives/?_0x17E0198B3882C2CB)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkStartSoloTutorialSession() end
 
     
@@ -1309,8 +1310,8 @@ function NetworkStartSoloTutorialSession() end
 ---
 --- @hash [0x17E0198B3882C2CB](https://docs.fivem.net/natives/?_0x17E0198B3882C2CB)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x17e0198b3882c2cb() end
 
@@ -1365,8 +1366,8 @@ function GetTunablesContentModifierId(contentHash) end
 ---
 --- @hash [0x1888694923EF4591](https://docs.fivem.net/natives/?_0x1888694923EF4591)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkClearGroupActivity() end
 
     
@@ -1375,8 +1376,8 @@ function NetworkClearGroupActivity() end
 ---
 --- @hash [0x1888694923EF4591](https://docs.fivem.net/natives/?_0x1888694923EF4591)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x1888694923ef4591() end
 
@@ -1500,8 +1501,8 @@ function NetworkGetParticipantIndex(index) end
 ---
 --- @hash [0x1B857666604B1A74](https://docs.fivem.net/natives/?_0x1B857666604B1A74)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function NetworkSetPlayerIsPassive(toggle) end
 
     
@@ -1510,8 +1511,8 @@ function NetworkSetPlayerIsPassive(toggle) end
 ---
 --- @hash [0x1B857666604B1A74](https://docs.fivem.net/natives/?_0x1B857666604B1A74)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0x1b857666604b1a74(toggle) end
 
@@ -1522,8 +1523,8 @@ function N_0x1b857666604b1a74(toggle) end
 --- @param maxNumMissionParticipants number (int)
 --- @param p1 boolean
 --- @param instanceId number (int)
---- @return void
---- @overload fun(maxNumMissionParticipants: number, p1: boolean, instanceId: number): void
+--- @return nil
+--- @overload fun(maxNumMissionParticipants: number, p1: boolean, instanceId: number): nil
 function NetworkSetThisScriptIsNetworkScript(maxNumMissionParticipants, p1, instanceId) end
 
     
@@ -1574,8 +1575,8 @@ function NetworkGetHostOfScript(scriptName, p1, p2) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: number, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: number, p1: any, p2: any, p3: any): nil
 function NetworkSetRichPresence(p0, p1, p2, p3) end
 
     
@@ -1673,7 +1674,7 @@ function NetworkClanGetNumMembershipDesc() end
 --- @hash [0x1F4ED342ACEFE62D](https://docs.fivem.net/natives/?_0x1F4ED342ACEFE62D)
 --- @param entity Entity
 --- @param state boolean
---- @return void
+--- @return nil
 --- @overload fun(entity: Entity, state: boolean, slow: boolean): void
 function NetworkFadeInEntity(entity, state) end
 
@@ -1684,8 +1685,8 @@ function NetworkFadeInEntity(entity, state) end
 ---
 --- @hash [0x1F7BC3539F9E0224](https://docs.fivem.net/natives/?_0x1F7BC3539F9E0224)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x1f7bc3539f9e0224() end
 
     
@@ -1693,8 +1694,8 @@ function N_0x1f7bc3539f9e0224() end
 ---
 --- @hash [0x1F8E00FB18239600](https://docs.fivem.net/natives/?_0x1F8E00FB18239600)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x1f8e00fb18239600(p0) end
 
     
@@ -1751,8 +1752,8 @@ function IsEntityAGhost(entity) end
 ---
 --- @hash [0x2302C0264EA58D31](https://docs.fivem.net/natives/?_0x2302C0264EA58D31)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x2302c0264ea58d31() end
 
     
@@ -1763,8 +1764,8 @@ function N_0x2302c0264ea58d31() end
 --- @hash [0x236406F60CF216D6](https://docs.fivem.net/natives/?_0x236406F60CF216D6)
 --- @param p0 number (int*)
 --- @param p1 number (int)
---- @return void
---- @overload fun(p1: number): number
+--- @return nil
+--- @overload fun(p1: number): nil, number
 function NetworkAddFollowers(p0, p1) end
 
     
@@ -1776,8 +1777,8 @@ function NetworkAddFollowers(p0, p1) end
 --- @hash [0x236406F60CF216D6](https://docs.fivem.net/natives/?_0x236406F60CF216D6)
 --- @param p0 number (int*)
 --- @param p1 number (int)
---- @return void
---- @overload fun(p1: number): number
+--- @return nil
+--- @overload fun(p1: number): nil, number
 --- @deprecated
 function N_0x236406f60cf216d6(p0, p1) end
 
@@ -1836,8 +1837,8 @@ function N_0x23dfb504655d0ce4() end
 --- end
 --- @hash [0x241E289B5C059EDC](https://docs.fivem.net/natives/?_0x241E289B5C059EDC)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 function SetEntityLocallyVisible(entity) end
 
     
@@ -1959,8 +1960,8 @@ function NetworkHaveOnlinePrivileges() end
 ---
 --- @hash [0x25D990F8E0E3F13C](https://docs.fivem.net/natives/?_0x25D990F8E0E3F13C)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x25d990f8e0e3f13c() end
 
     
@@ -1988,8 +1989,8 @@ function N_0x2615aa2a695930c1(p0) end
 ---
 --- @hash [0x261E97AD7BCF3D40](https://docs.fivem.net/natives/?_0x261E97AD7BCF3D40)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0x261e97ad7bcf3d40(p0) end
 
     
@@ -1997,8 +1998,8 @@ function N_0x261e97ad7bcf3d40(p0) end
 ---
 --- @hash [0x265559DA40B3F327](https://docs.fivem.net/natives/?_0x265559DA40B3F327)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x265559da40b3f327(p0) end
 
     
@@ -2006,8 +2007,8 @@ function N_0x265559da40b3f327(p0) end
 ---
 --- @hash [0x265635150FB0D82E](https://docs.fivem.net/natives/?_0x265635150FB0D82E)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x265635150fb0d82e() end
 
     
@@ -2016,8 +2017,8 @@ function N_0x265635150fb0d82e() end
 --- @hash [0x267C78C60E806B9A](https://docs.fivem.net/natives/?_0x267C78C60E806B9A)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 function NetworkAllowLocalEntityAttachment(entity, toggle) end
 
     
@@ -2027,8 +2028,8 @@ function NetworkAllowLocalEntityAttachment(entity, toggle) end
 --- @hash [0x267C78C60E806B9A](https://docs.fivem.net/natives/?_0x267C78C60E806B9A)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 --- @deprecated
 function N_0x267c78c60e806b9a(entity, toggle) end
 
@@ -2066,8 +2067,8 @@ function N_0x26f07dd83a5f7f98() end
 ---
 --- @hash [0x271CC6AB59EBF9A5](https://docs.fivem.net/natives/?_0x271CC6AB59EBF9A5)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function NetworkSessionMarkVisible(toggle) end
 
     
@@ -2076,8 +2077,8 @@ function NetworkSessionMarkVisible(toggle) end
 ---
 --- @hash [0x271CC6AB59EBF9A5](https://docs.fivem.net/natives/?_0x271CC6AB59EBF9A5)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0x271cc6ab59ebf9a5(toggle) end
 
@@ -2119,8 +2120,8 @@ function NetworkIsActivitySpectatorFromHandle(networkHandle) end
 ---
 --- @hash [0x283B6062A2C01E9B](https://docs.fivem.net/natives/?_0x283B6062A2C01E9B)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x283b6062a2c01e9b() end
 
     
@@ -2160,8 +2161,8 @@ function N_0x292564c735375edf() end
 --- @hash [0x299EEB23175895FC](https://docs.fivem.net/natives/?_0x299EEB23175895FC)
 --- @param netId number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(netId: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(netId: number, toggle: boolean): nil
 function SetNetworkIdCanMigrate(netId, toggle) end
 
     
@@ -2192,8 +2193,8 @@ function N_0x299ef3c576773506() end
 --- @param isAudible boolean
 --- @param isInvisible boolean
 --- @param netScriptEntityId number (int)
---- @return void
---- @overload fun(heli: Vehicle, isAudible: boolean, isInvisible: boolean, netScriptEntityId: number): void
+--- @return nil
+--- @overload fun(heli: Vehicle, isAudible: boolean, isInvisible: boolean, netScriptEntityId: number): nil
 function NetworkExplodeHeli(heli, isAudible, isInvisible, netScriptEntityId) end
 
     
@@ -2205,8 +2206,8 @@ function NetworkExplodeHeli(heli, isAudible, isInvisible, netScriptEntityId) end
 --- @param isAudible boolean
 --- @param isInvisible boolean
 --- @param netScriptEntityId number (int)
---- @return void
---- @overload fun(heli: Vehicle, isAudible: boolean, isInvisible: boolean, netScriptEntityId: number): void
+--- @return nil
+--- @overload fun(heli: Vehicle, isAudible: boolean, isInvisible: boolean, netScriptEntityId: number): nil
 --- @deprecated
 function N_0x2a5e0621dd815a9a(heli, isAudible, isInvisible, netScriptEntityId) end
 
@@ -2238,8 +2239,8 @@ function N_0x2a7776c709904ab0(index) end
 --- @hash [0x2B1813ABA29016C5](https://docs.fivem.net/natives/?_0x2B1813ABA29016C5)
 --- @param netID number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(netID: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(netID: number, toggle: boolean): nil
 function NetworkUseHighPrecisionBlending(netID, toggle) end
 
     
@@ -2251,8 +2252,8 @@ function NetworkUseHighPrecisionBlending(netID, toggle) end
 --- @hash [0x2B1813ABA29016C5](https://docs.fivem.net/natives/?_0x2B1813ABA29016C5)
 --- @param netID number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(netID: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(netID: number, toggle: boolean): nil
 --- @deprecated
 function N_0x2b1813aba29016c5(netID, toggle) end
 
@@ -2265,8 +2266,8 @@ function N_0x2b1813aba29016c5(netID, toggle) end
 --- @hash [0x2B1813ABA29016C5](https://docs.fivem.net/natives/?_0x2B1813ABA29016C5)
 --- @param netID number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(netID: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(netID: number, toggle: boolean): nil
 --- @deprecated
 function NetworkSetNetworkIdDynamic(netID, toggle) end
 
@@ -2290,8 +2291,8 @@ function N_0x2b1c623823db0d9d(p0, p1, p2, p3, p4, p5, p6) end
 ---
 --- @hash [0x2B3A8F7CA3A38FDE](https://docs.fivem.net/natives/?_0x2B3A8F7CA3A38FDE)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkOpenTransitionMatchmaking() end
 
     
@@ -2300,8 +2301,8 @@ function NetworkOpenTransitionMatchmaking() end
 ---
 --- @hash [0x2B3A8F7CA3A38FDE](https://docs.fivem.net/natives/?_0x2B3A8F7CA3A38FDE)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x2b3a8f7ca3a38fde() end
 
@@ -2331,8 +2332,8 @@ function N_0x2bf66d2e7414f686() end
 ---
 --- @hash [0x2C863ACDCD12B3DB](https://docs.fivem.net/natives/?_0x2C863ACDCD12B3DB)
 --- @param missionId string (char*)
---- @return void
---- @overload fun(missionId: string): void
+--- @return nil
+--- @overload fun(missionId: string): nil
 function NetworkSetCurrentMissionId(missionId) end
 
     
@@ -2346,8 +2347,8 @@ function NetworkSetCurrentMissionId(missionId) end
 ---
 --- @hash [0x2C8DF5D129595281](https://docs.fivem.net/natives/?_0x2C8DF5D129595281)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function ReserveNetworkLocalPeds(amount) end
 
     
@@ -2362,8 +2363,8 @@ function ReserveNetworkLocalPeds(amount) end
 ---
 --- @hash [0x2C8DF5D129595281](https://docs.fivem.net/natives/?_0x2C8DF5D129595281)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 --- @deprecated
 function N_0x2c8df5d129595281(amount) end
 
@@ -2392,8 +2393,8 @@ function N_0x2cc848a861d01493() end
 ---
 --- @hash [0x2CE9D95E4051AECD](https://docs.fivem.net/natives/?_0x2CE9D95E4051AECD)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x2ce9d95e4051aecd(p0) end
 
     
@@ -2436,8 +2437,8 @@ function N_0x2d5dc831176d0114(p0) end
 ---
 --- @hash [0x2D95C7E2D7E07307](https://docs.fivem.net/natives/?_0x2D95C7E2D7E07307)
 --- @param time number (int)
---- @return void
---- @overload fun(time: number): void
+--- @return nil
+--- @overload fun(time: number): nil
 function NetworkSetLocalPlayerInvincibleTime(time) end
 
     
@@ -2519,8 +2520,8 @@ function N_0x2eac52b4019e2782() end
 ---
 --- @hash [0x2FBF47B1B36D36F9](https://docs.fivem.net/natives/?_0x2FBF47B1B36D36F9)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkSessionCancelInvite() end
 
     
@@ -2569,8 +2570,8 @@ function N_0x2fc5650b0271cb57() end
 --- @param isAudible boolean
 --- @param isInvisible boolean
 --- @param p3 boolean
---- @return void
---- @overload fun(vehicle: Vehicle, isAudible: boolean, isInvisible: boolean, p3: boolean): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, isAudible: boolean, isInvisible: boolean, p3: boolean): nil
 function NetworkExplodeVehicle(vehicle, isAudible, isInvisible, p3) end
 
     
@@ -2581,8 +2582,8 @@ function NetworkExplodeVehicle(vehicle, isAudible, isInvisible, p3) end
 --- @hash [0x3039AE5AD2C9C0C4](https://docs.fivem.net/natives/?_0x3039AE5AD2C9C0C4)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function NetworkOverrideChatRestrictions(player, toggle) end
 
     
@@ -2594,8 +2595,8 @@ function NetworkOverrideChatRestrictions(player, toggle) end
 --- @hash [0x3039AE5AD2C9C0C4](https://docs.fivem.net/natives/?_0x3039AE5AD2C9C0C4)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 --- @deprecated
 function N_0x3039ae5ad2c9c0c4(player, toggle) end
 
@@ -2650,8 +2651,8 @@ function N_0x308f96458b7087cc(p1, p2, p3, p5) end
 ---
 --- @hash [0x30DE938B516F0AD2](https://docs.fivem.net/natives/?_0x30DE938B516F0AD2)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function NetworkSetTransitionActivityId(p0) end
 
     
@@ -2660,8 +2661,8 @@ function NetworkSetTransitionActivityId(p0) end
 ---
 --- @hash [0x30DE938B516F0AD2](https://docs.fivem.net/natives/?_0x30DE938B516F0AD2)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 --- @deprecated
 function N_0x30de938b516f0ad2(p0) end
 
@@ -2730,8 +2731,8 @@ function N_0x32dd916f3f7c9672(p0) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function N_0x32ebd154cb6b8b99(p0, p1, p2) end
 
     
@@ -2764,8 +2765,8 @@ function NetworkSessionEnter(p0, p1, p2, maxPlayers, p4, p5) end
 --- @hash [0x3364AA97340CA215](https://docs.fivem.net/natives/?_0x3364AA97340CA215)
 --- @param vars number (int*)
 --- @param numVars number (int)
---- @return void
---- @overload fun(numVars: number): number
+--- @return nil
+--- @overload fun(numVars: number): nil, number
 function NetworkRegisterPlayerBroadcastVariables(vars, numVars) end
 
     
@@ -2797,8 +2798,8 @@ function N_0x33de49edf4dde77a(entity) end
 ---
 --- @hash [0x3442775428FD2DAA](https://docs.fivem.net/natives/?_0x3442775428FD2DAA)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkSessionLeaveSinglePlayer() end
 
     
@@ -2815,8 +2816,8 @@ function TextureDownloadGetName(p0) end
 ---
 --- @hash [0x34F9E9049454A7A0](https://docs.fivem.net/natives/?_0x34F9E9049454A7A0)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function NetworkBlockInvites(toggle) end
 
     
@@ -2914,8 +2915,8 @@ function NetToVeh(netHandle) end
 ---
 --- @hash [0x367EF5E2F439B4C6](https://docs.fivem.net/natives/?_0x367EF5E2F439B4C6)
 --- @param p0 number (int)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function N_0x367ef5e2f439b4c6(p0) end
 
     
@@ -2959,8 +2960,8 @@ function GetContentFileVersion(p0, p1) end
 ---
 --- @hash [0x371EA43692861CF1](https://docs.fivem.net/natives/?_0x371EA43692861CF1)
 --- @param randomInt number (int)
---- @return Vector3, number
---- @overload fun(randomInt: number): Vector3, number
+--- @return nil, Vector3, number
+--- @overload fun(randomInt: number): nil, Vector3, number
 function NetworkGetRespawnResult(randomInt) end
 
     
@@ -3109,8 +3110,8 @@ function N_0x3855fb5eb2c5e8b2(p0) end
 --- @param player Player
 --- @param networkHandle number (int*)
 --- @param bufferSize number (int)
---- @return void
---- @overload fun(player: Player, bufferSize: number): number
+--- @return nil
+--- @overload fun(player: Player, bufferSize: number): nil, number
 function NetworkHandleFromPlayer(player, networkHandle, bufferSize) end
 
     
@@ -3121,8 +3122,8 @@ function NetworkHandleFromPlayer(player, networkHandle, bufferSize) end
 --- @hash [0x38B7C51AB1EDC7D8](https://docs.fivem.net/natives/?_0x38B7C51AB1EDC7D8)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 function N_0x38b7c51ab1edc7d8(entity, toggle) end
 
     
@@ -3149,8 +3150,8 @@ function NetworkGetPresenceInviteHandle(p0, p1) end
 ---
 --- @hash [0x39917E1B4CB0F911](https://docs.fivem.net/natives/?_0x39917E1B4CB0F911)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0x39917e1b4cb0f911(p0) end
 
     
@@ -3270,8 +3271,8 @@ function N_0x3b39236746714134(player) end
 ---
 --- @hash [0x3B3D11CD9FFCDFC9](https://docs.fivem.net/natives/?_0x3B3D11CD9FFCDFC9)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkSetMissionFinished() end
 
     
@@ -3283,8 +3284,8 @@ function NetworkSetMissionFinished() end
 ---
 --- @hash [0x3C5C1E2C2FF814B1](https://docs.fivem.net/natives/?_0x3C5C1E2C2FF814B1)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function N_0x3c5c1e2c2ff814b1(toggle) end
 
     
@@ -3342,8 +3343,8 @@ function N_0x3dbf2df0aeb7d289(p0) end
 --- @hash [0x3E200C2BCF4164EB](https://docs.fivem.net/natives/?_0x3E200C2BCF4164EB)
 --- @param p0 number (int)
 --- @param textLabel string (char*)
---- @return void
---- @overload fun(p0: number, textLabel: string): void
+--- @return nil
+--- @overload fun(p0: number, textLabel: string): nil
 function NetworkSetRichPresenceString(p0, textLabel) end
 
     
@@ -3353,8 +3354,8 @@ function NetworkSetRichPresenceString(p0, textLabel) end
 --- @hash [0x3E200C2BCF4164EB](https://docs.fivem.net/natives/?_0x3E200C2BCF4164EB)
 --- @param p0 number (int)
 --- @param textLabel string (char*)
---- @return void
---- @overload fun(p0: number, textLabel: string): void
+--- @return nil
+--- @overload fun(p0: number, textLabel: string): nil
 --- @deprecated
 function N_0x3e200c2bcf4164eb(p0, textLabel) end
 
@@ -3365,8 +3366,8 @@ function N_0x3e200c2bcf4164eb(p0, textLabel) end
 --- @hash [0x3E200C2BCF4164EB](https://docs.fivem.net/natives/?_0x3E200C2BCF4164EB)
 --- @param p0 number (int)
 --- @param textLabel string (char*)
---- @return void
---- @overload fun(p0: number, textLabel: string): void
+--- @return nil
+--- @overload fun(p0: number, textLabel: string): nil
 --- @deprecated
 function NetworkSetRichPresence_2(p0, textLabel) end
 
@@ -3376,8 +3377,8 @@ function NetworkSetRichPresence_2(p0, textLabel) end
 --- @hash [0x3E9B2F01C50DF595](https://docs.fivem.net/natives/?_0x3E9B2F01C50DF595)
 --- @param vars number (int*)
 --- @param numVars number (int)
---- @return void
---- @overload fun(numVars: number): number
+--- @return nil
+--- @overload fun(numVars: number): nil, number
 function NetworkRegisterHostBroadcastVariables(vars, numVars) end
 
     
@@ -3395,8 +3396,8 @@ function NetworkDoTransitionToGame(p0, maxPlayers) end
 ---
 --- @hash [0x3F52E880AAF6C8CA](https://docs.fivem.net/natives/?_0x3F52E880AAF6C8CA)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function NetworkSessionSetMatchmakingPropertyId(p0) end
 
     
@@ -3405,8 +3406,8 @@ function NetworkSessionSetMatchmakingPropertyId(p0) end
 ---
 --- @hash [0x3F52E880AAF6C8CA](https://docs.fivem.net/natives/?_0x3F52E880AAF6C8CA)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 --- @deprecated
 function N_0x3f52e880aaf6c8ca(p0) end
 
@@ -3436,8 +3437,8 @@ function N_0x3f9990bf5f22759c(networkHandle) end
 --- @hash [0x3FA36981311FA4FF](https://docs.fivem.net/natives/?_0x3FA36981311FA4FF)
 --- @param netId number (int)
 --- @param state boolean
---- @return void
---- @overload fun(netId: number, state: boolean): void
+--- @return nil
+--- @overload fun(netId: number, state: boolean): nil
 function N_0x3fa36981311fa4ff(netId, state) end
 
     
@@ -3459,8 +3460,8 @@ function NetworkPlayerHasHeadset(player) end
 --- @hash [0x3FC795691834481D](https://docs.fivem.net/natives/?_0x3FC795691834481D)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x3fc795691834481d(p0, p1) end
 
     
@@ -3468,8 +3469,8 @@ function N_0x3fc795691834481d(p0, p1) end
 ---
 --- @hash [0x407091CF6037118E](https://docs.fivem.net/natives/?_0x407091CF6037118E)
 --- @param netID number (int)
---- @return void
---- @overload fun(netID: number): void
+--- @return nil
+--- @overload fun(netID: number): nil
 function NetworkDisableProximityMigration(netID) end
 
     
@@ -3478,8 +3479,8 @@ function NetworkDisableProximityMigration(netID) end
 ---
 --- @hash [0x407091CF6037118E](https://docs.fivem.net/natives/?_0x407091CF6037118E)
 --- @param netID number (int)
---- @return void
---- @overload fun(netID: number): void
+--- @return nil
+--- @overload fun(netID: number): nil
 --- @deprecated
 function N_0x407091cf6037118e(netID) end
 
@@ -3558,8 +3559,8 @@ function NetworkGetFriendNameFromIndex(friendIndex) end
 ---
 --- @hash [0x416DBD4CD6ED8DD2](https://docs.fivem.net/natives/?_0x416DBD4CD6ED8DD2)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function FadeOutLocalPlayer(p0) end
 
     
@@ -3569,8 +3570,8 @@ function FadeOutLocalPlayer(p0) end
 --- @param toggle boolean
 --- @param playerPed Ped
 --- @param p2 boolean
---- @return void
---- @overload fun(toggle: boolean, playerPed: Ped, p2: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean, playerPed: Ped, p2: boolean): nil
 function NetworkSetInSpectatorModeExtended(toggle, playerPed, p2) end
 
     
@@ -3581,8 +3582,8 @@ function NetworkSetInSpectatorModeExtended(toggle, playerPed, p2) end
 --- @param toggle boolean
 --- @param playerPed Ped
 --- @param p2 boolean
---- @return void
---- @overload fun(toggle: boolean, playerPed: Ped, p2: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean, playerPed: Ped, p2: boolean): nil
 --- @deprecated
 function N_0x419594e137637120(toggle, playerPed, p2) end
 
@@ -3652,8 +3653,8 @@ function N_0x4237e822315d8ba9() end
 --- @hash [0x423DE3854BB50894](https://docs.fivem.net/natives/?_0x423DE3854BB50894)
 --- @param toggle boolean
 --- @param playerPed Ped
---- @return void
---- @overload fun(toggle: boolean, playerPed: Ped): void
+--- @return nil
+--- @overload fun(toggle: boolean, playerPed: Ped): nil
 function NetworkSetInSpectatorMode(toggle, playerPed) end
 
     
@@ -3670,8 +3671,8 @@ function NetworkIsFriendOnline(name) end
 ---
 --- @hash [0x42613035157E4208](https://docs.fivem.net/natives/?_0x42613035157E4208)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function ReserveNetworkLocalVehicles(amount) end
 
     
@@ -3680,8 +3681,8 @@ function ReserveNetworkLocalVehicles(amount) end
 ---
 --- @hash [0x42613035157E4208](https://docs.fivem.net/natives/?_0x42613035157E4208)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 --- @deprecated
 function N_0x42613035157e4208(amount) end
 
@@ -3711,8 +3712,8 @@ function NetworkGetEntityKillerOfPlayer(player, weaponHash) end
 ---
 --- @hash [0x42BF1D2E723B6D7E](https://docs.fivem.net/natives/?_0x42BF1D2E723B6D7E)
 --- @param ms number (int)
---- @return void
---- @overload fun(ms: number): void
+--- @return nil
+--- @overload fun(ms: number): nil
 function NetworkOverrideClockMillisecondsPerGameMinute(ms) end
 
     
@@ -3720,8 +3721,8 @@ function NetworkOverrideClockMillisecondsPerGameMinute(ms) end
 ---
 --- @hash [0x42FB3B532D526E6C](https://docs.fivem.net/natives/?_0x42FB3B532D526E6C)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkRequestCloudTunables() end
 
     
@@ -3730,8 +3731,8 @@ function NetworkRequestCloudTunables() end
 ---
 --- @hash [0x42FB3B532D526E6C](https://docs.fivem.net/natives/?_0x42FB3B532D526E6C)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x42fb3b532d526e6c() end
 
@@ -3790,8 +3791,8 @@ function N_0x439bfde3cd0610f6() end
 ---
 --- @hash [0x43F4DBA69710E01E](https://docs.fivem.net/natives/?_0x43F4DBA69710E01E)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkCloseTransitionMatchmaking() end
 
     
@@ -3800,8 +3801,8 @@ function NetworkCloseTransitionMatchmaking() end
 ---
 --- @hash [0x43F4DBA69710E01E](https://docs.fivem.net/natives/?_0x43F4DBA69710E01E)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x43f4dba69710e01e() end
 
@@ -3822,8 +3823,8 @@ function N_0x43f4dba69710e01e() end
 ---
 --- @hash [0x444C4525ECE0A4B9](https://docs.fivem.net/natives/?_0x444C4525ECE0A4B9)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x444c4525ece0a4b9() end
 
     
@@ -3853,8 +3854,8 @@ function N_0x44b37cdcae765aae(friendDataIndex, networkHandle) end
 ---
 --- @hash [0x45A83257ED02D9BC](https://docs.fivem.net/natives/?_0x45A83257ED02D9BC)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x45a83257ed02d9bc() end
 
     
@@ -3886,8 +3887,8 @@ function N_0x45e816772e93a9db() end
 --- @param p7 number (float)
 --- @param p8 number (float)
 --- @param flags number (int)
---- @return void
---- @overload fun(netScene: number, modelHash: Hash, x: number, y: number, z: number, p5: number, p6: string, p7: number, p8: number, flags: number): void
+--- @return nil
+--- @overload fun(netScene: number, modelHash: Hash, x: number, y: number, z: number, p5: number, p6: string, p7: number, p8: number, flags: number): nil
 function N_0x45f35c0edc33b03b(netScene, modelHash, x, y, z, p5, p6, p7, p8, flags) end
 
     
@@ -3999,8 +4000,8 @@ function N_0x472841a026d26d8b() end
 --- @param netScene number (int)
 --- @param entity Entity
 --- @param bone number (int)
---- @return void
---- @overload fun(netScene: number, entity: Entity, bone: number): void
+--- @return nil
+--- @overload fun(netScene: number, entity: Entity, bone: number): nil
 function NetworkAttachSynchronisedSceneToEntity(netScene, entity, bone) end
 
     
@@ -4008,8 +4009,8 @@ function NetworkAttachSynchronisedSceneToEntity(netScene, entity, bone) end
 ---
 --- @hash [0x4811BBAC21C5FCD5](https://docs.fivem.net/natives/?_0x4811BBAC21C5FCD5)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x4811bbac21c5fcd5(p0) end
 
     
@@ -4017,8 +4018,8 @@ function N_0x4811bbac21c5fcd5(p0) end
 ---
 --- @hash [0x487EB90B98E9FB19](https://docs.fivem.net/natives/?_0x487EB90B98E9FB19)
 --- @param p0 number (int)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function TextureDownloadRelease(p0) end
 
     
@@ -4106,8 +4107,8 @@ function N_0x4962cc4aa2f345b7(inviteIndex) end
 ---
 --- @hash [0x49EC8030F5015F8B](https://docs.fivem.net/natives/?_0x49EC8030F5015F8B)
 --- @param matchmakingGroup number (int)
---- @return void
---- @overload fun(matchmakingGroup: number): void
+--- @return nil
+--- @overload fun(matchmakingGroup: number): nil
 function NetworkSessionSetMatchmakingGroup(matchmakingGroup) end
 
     
@@ -4116,8 +4117,8 @@ function NetworkSessionSetMatchmakingGroup(matchmakingGroup) end
 ---
 --- @hash [0x49EC8030F5015F8B](https://docs.fivem.net/natives/?_0x49EC8030F5015F8B)
 --- @param matchmakingGroup number (int)
---- @return void
---- @overload fun(matchmakingGroup: number): void
+--- @return nil
+--- @overload fun(matchmakingGroup: number): nil
 --- @deprecated
 function N_0x49ec8030f5015f8b(matchmakingGroup) end
 
@@ -4127,8 +4128,8 @@ function N_0x49ec8030f5015f8b(matchmakingGroup) end
 ---
 --- @hash [0x49EC8030F5015F8B](https://docs.fivem.net/natives/?_0x49EC8030F5015F8B)
 --- @param matchmakingGroup number (int)
---- @return void
---- @overload fun(matchmakingGroup: number): void
+--- @return nil
+--- @overload fun(matchmakingGroup: number): nil
 --- @deprecated
 function NetworkSctvSlots(matchmakingGroup) end
 
@@ -4167,8 +4168,8 @@ function NetworkInviteGamersToTransition(p0, p1) end
 ---
 --- @hash [0x4A9FDE3A5A6D0437](https://docs.fivem.net/natives/?_0x4A9FDE3A5A6D0437)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function N_0x4a9fde3a5a6d0437(toggle) end
 
     
@@ -4187,8 +4188,8 @@ function N_0x4ad490ae1536933b(p0, p1) end
 --- @hash [0x4BA166079D658ED4](https://docs.fivem.net/natives/?_0x4BA166079D658ED4)
 --- @param entity Entity
 --- @param p1 boolean
---- @return void
---- @overload fun(entity: Entity, p1: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, p1: boolean): nil
 function NetworkSetEntityGhostedWithOwner(entity, p1) end
 
     
@@ -4198,8 +4199,8 @@ function NetworkSetEntityGhostedWithOwner(entity, p1) end
 --- @hash [0x4BA166079D658ED4](https://docs.fivem.net/natives/?_0x4BA166079D658ED4)
 --- @param entity Entity
 --- @param p1 boolean
---- @return void
---- @overload fun(entity: Entity, p1: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, p1: boolean): nil
 --- @deprecated
 function N_0x4ba166079d658ed4(entity, p1) end
 
@@ -4250,8 +4251,8 @@ function N_0x4ba92a18502bca61(player, x1, y1, z1, x2, y2, z2, width, p8, p9, p10
 ---
 --- @hash [0x4C2A9FDC22377075](https://docs.fivem.net/natives/?_0x4C2A9FDC22377075)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x4c2a9fdc22377075() end
 
     
@@ -4385,8 +4386,8 @@ function N_0x4e548c0d7ae39ff9(p0, p1) end
 ---
 --- @hash [0x4E5C93BD0C32FBF8](https://docs.fivem.net/natives/?_0x4E5C93BD0C32FBF8)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function ReserveNetworkMissionObjects(amount) end
 
     
@@ -4405,8 +4406,8 @@ function NetworkCanSessionEnd() end
 ---
 --- @hash [0x4F18196C8D38768D](https://docs.fivem.net/natives/?_0x4F18196C8D38768D)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function CloudCheckAvailability() end
 
     
@@ -4417,8 +4418,8 @@ function CloudCheckAvailability() end
 ---
 --- @hash [0x4F18196C8D38768D](https://docs.fivem.net/natives/?_0x4F18196C8D38768D)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x4f18196c8d38768d() end
 
@@ -4430,8 +4431,8 @@ function N_0x4f18196c8d38768d() end
 ---
 --- @hash [0x4F18196C8D38768D](https://docs.fivem.net/natives/?_0x4F18196C8D38768D)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function DownloadCheck() end
 
@@ -4450,8 +4451,8 @@ function NetworkIsTransitionBusy() end
 --- @hash [0x521638ADA1BA0D18](https://docs.fivem.net/natives/?_0x521638ADA1BA0D18)
 --- @param p0 number (int)
 --- @param p1 number (int)
---- @return void
---- @overload fun(p0: number, p1: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: number): nil
 function NetworkApplyTransitionParameter(p0, p1) end
 
     
@@ -4461,8 +4462,8 @@ function NetworkApplyTransitionParameter(p0, p1) end
 --- @hash [0x521638ADA1BA0D18](https://docs.fivem.net/natives/?_0x521638ADA1BA0D18)
 --- @param p0 number (int)
 --- @param p1 number (int)
---- @return void
---- @overload fun(p0: number, p1: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: number): nil
 --- @deprecated
 function N_0x521638ada1ba0d18(p0, p1) end
 
@@ -4471,8 +4472,8 @@ function N_0x521638ada1ba0d18(p0, p1) end
 ---
 --- @hash [0x524FF0AEFF9C3973](https://docs.fivem.net/natives/?_0x524FF0AEFF9C3973)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function NetworkSetLocalPlayerSyncLookAt(toggle) end
 
     
@@ -4481,8 +4482,8 @@ function NetworkSetLocalPlayerSyncLookAt(toggle) end
 ---
 --- @hash [0x524FF0AEFF9C3973](https://docs.fivem.net/natives/?_0x524FF0AEFF9C3973)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0x524ff0aeff9c3973(toggle) end
 
@@ -4567,8 +4568,8 @@ function NetworkPlayerIsRockstarDev(player) end
 ---
 --- @hash [0x5539C3EBF104A53A](https://docs.fivem.net/natives/?_0x5539C3EBF104A53A)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0x5539c3ebf104a53a(p0) end
 
     
@@ -4641,8 +4642,8 @@ function N_0x560b423d73015e77(p0) end
 ---
 --- @hash [0x5626D9D6810730D5](https://docs.fivem.net/natives/?_0x5626D9D6810730D5)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkReportMyself() end
 
     
@@ -4651,8 +4652,8 @@ function NetworkReportMyself() end
 ---
 --- @hash [0x5626D9D6810730D5](https://docs.fivem.net/natives/?_0x5626D9D6810730D5)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x5626d9d6810730d5() end
 
@@ -4802,8 +4803,8 @@ function NetworkIsPlayerBlockedByMe(player) end
 ---
 --- @hash [0x57B192B4D4AD23D5](https://docs.fivem.net/natives/?_0x57B192B4D4AD23D5)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function NetworkOverrideSendRestrictionsAll(toggle) end
 
     
@@ -4812,8 +4813,8 @@ function NetworkOverrideSendRestrictionsAll(toggle) end
 ---
 --- @hash [0x57B192B4D4AD23D5](https://docs.fivem.net/natives/?_0x57B192B4D4AD23D5)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0x57b192b4d4ad23d5(toggle) end
 
@@ -4823,8 +4824,8 @@ function N_0x57b192b4d4ad23d5(toggle) end
 ---
 --- @hash [0x57B192B4D4AD23D5](https://docs.fivem.net/natives/?_0x57B192B4D4AD23D5)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function NetworkChatMute(toggle) end
 
@@ -4942,8 +4943,8 @@ function NetworkHashFromGamerHandle(networkHandle) end
 --- @hash [0x58C21165F6545892](https://docs.fivem.net/natives/?_0x58C21165F6545892)
 --- @param p0 string (char*)
 --- @param p1 string (char*)
---- @return void
---- @overload fun(p0: string, p1: string): void
+--- @return nil
+--- @overload fun(p0: string, p1: string): nil
 function OpenCommerceStore(p0, p1) end
 
     
@@ -4959,8 +4960,8 @@ function OpenCommerceStore(p0, p1) end
 --- @hash [0x58C21165F6545892](https://docs.fivem.net/natives/?_0x58C21165F6545892)
 --- @param p0 string (char*)
 --- @param p1 string (char*)
---- @return void
---- @overload fun(p0: string, p1: string): void
+--- @return nil
+--- @overload fun(p0: string, p1: string): nil
 --- @deprecated
 function N_0x58c21165f6545892(p0, p1) end
 
@@ -5026,8 +5027,8 @@ function N_0x593570c289a77688() end
 ---
 --- @hash [0x593850C16A36B692](https://docs.fivem.net/natives/?_0x593850C16A36B692)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ShutdownAndLaunchSinglePlayerGame() end
 
     
@@ -5099,8 +5100,8 @@ function N_0x599e4fa1f87eb5ff() end
 ---
 --- @hash [0x59D421683D31835A](https://docs.fivem.net/natives/?_0x59D421683D31835A)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x59d421683d31835a(p0) end
 
     
@@ -5263,8 +5264,8 @@ function N_0x5b4f04f19376a0ba() end
 ---
 --- @hash [0x5B8ED3DB018927B1](https://docs.fivem.net/natives/?_0x5B8ED3DB018927B1)
 --- @param timeout number (int)
---- @return void
---- @overload fun(timeout: number): void
+--- @return nil
+--- @overload fun(timeout: number): nil
 function NetworkSessionVoiceSetTimeout(timeout) end
 
     
@@ -5273,8 +5274,8 @@ function NetworkSessionVoiceSetTimeout(timeout) end
 ---
 --- @hash [0x5B8ED3DB018927B1](https://docs.fivem.net/natives/?_0x5B8ED3DB018927B1)
 --- @param timeout number (int)
---- @return void
---- @overload fun(timeout: number): void
+--- @return nil
+--- @overload fun(timeout: number): nil
 --- @deprecated
 function N_0x5b8ed3db018927b1(timeout) end
 
@@ -5301,8 +5302,8 @@ function NetworkHasControlOfPickup(pickup) end
 ---
 --- @hash [0x5C497525F803486B](https://docs.fivem.net/natives/?_0x5C497525F803486B)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x5c497525f803486b() end
 
     
@@ -5311,8 +5312,8 @@ function N_0x5c497525f803486b() end
 --- @hash [0x5C707A667DF8B9FA](https://docs.fivem.net/natives/?_0x5C707A667DF8B9FA)
 --- @param toggle boolean
 --- @param player Player
---- @return void
---- @overload fun(toggle: boolean, player: Player): void
+--- @return nil
+--- @overload fun(toggle: boolean, player: Player): nil
 function NetworkSetChoiceMigrateOptions(toggle, player) end
 
     
@@ -5322,8 +5323,8 @@ function NetworkSetChoiceMigrateOptions(toggle, player) end
 --- @hash [0x5C707A667DF8B9FA](https://docs.fivem.net/natives/?_0x5C707A667DF8B9FA)
 --- @param toggle boolean
 --- @param player Player
---- @return void
---- @overload fun(toggle: boolean, player: Player): void
+--- @return nil
+--- @overload fun(toggle: boolean, player: Player): nil
 --- @deprecated
 function N_0x5c707a667df8b9fa(toggle, player) end
 
@@ -5432,8 +5433,8 @@ function N_0x5e24341a7f92a74b() end
 ---
 --- @hash [0x5E3AA4CA2B6FB0EE](https://docs.fivem.net/natives/?_0x5E3AA4CA2B6FB0EE)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x5e3aa4ca2b6fb0ee(p0) end
 
     
@@ -5461,8 +5462,8 @@ function N_0x5ea784d197556507() end
 ---
 --- @hash [0x5ECD378EE64450AB](https://docs.fivem.net/natives/?_0x5ECD378EE64450AB)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x5ecd378ee64450ab(p0) end
 
     
@@ -5549,8 +5550,8 @@ function NetworkIsTextChatActive() end
 ---
 --- @hash [0x5FFE9B4144F9712F](https://docs.fivem.net/natives/?_0x5FFE9B4144F9712F)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetLocalPlayerAsGhost(toggle) end
 
     
@@ -5558,8 +5559,8 @@ function SetLocalPlayerAsGhost(toggle) end
 ---
 --- @hash [0x600F8CB31C7AAB6E](https://docs.fivem.net/natives/?_0x600F8CB31C7AAB6E)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x600f8cb31c7aab6e(p0) end
 
     
@@ -5622,8 +5623,8 @@ function N_0x617f49c2668e6155() end
 ---
 --- @hash [0x61A885D3F7CFEE9A](https://docs.fivem.net/natives/?_0x61A885D3F7CFEE9A)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function UgcClearOfflineQuery() end
 
     
@@ -5632,8 +5633,8 @@ function UgcClearOfflineQuery() end
 ---
 --- @hash [0x61A885D3F7CFEE9A](https://docs.fivem.net/natives/?_0x61A885D3F7CFEE9A)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x61a885d3f7cfee9a() end
 
@@ -5643,8 +5644,8 @@ function N_0x61a885d3f7cfee9a() end
 --- @hash [0x6274C4712850841E](https://docs.fivem.net/natives/?_0x6274C4712850841E)
 --- @param vehicle Vehicle
 --- @param toggle boolean
---- @return void
---- @overload fun(vehicle: Vehicle, toggle: boolean): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, toggle: boolean): nil
 function SetNetworkVehicleAsGhost(vehicle, toggle) end
 
     
@@ -5654,8 +5655,8 @@ function SetNetworkVehicleAsGhost(vehicle, toggle) end
 --- @hash [0x6274C4712850841E](https://docs.fivem.net/natives/?_0x6274C4712850841E)
 --- @param vehicle Vehicle
 --- @param toggle boolean
---- @return void
---- @overload fun(vehicle: Vehicle, toggle: boolean): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, toggle: boolean): nil
 --- @deprecated
 function N_0x6274c4712850841e(vehicle, toggle) end
 
@@ -5666,8 +5667,8 @@ function N_0x6274c4712850841e(vehicle, toggle) end
 --- @hash [0x6274C4712850841E](https://docs.fivem.net/natives/?_0x6274C4712850841E)
 --- @param vehicle Vehicle
 --- @param toggle boolean
---- @return void
---- @overload fun(vehicle: Vehicle, toggle: boolean): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, toggle: boolean): nil
 --- @deprecated
 function SetNetworkObjectNonContact(vehicle, toggle) end
 
@@ -5806,8 +5807,8 @@ function N_0x64e5c4cc82847b73() end
 ---
 --- @hash [0x64F62AFB081E260D](https://docs.fivem.net/natives/?_0x64F62AFB081E260D)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkFinishBroadcastingData() end
 
     
@@ -5816,8 +5817,8 @@ function NetworkFinishBroadcastingData() end
 ---
 --- @hash [0x64F62AFB081E260D](https://docs.fivem.net/natives/?_0x64F62AFB081E260D)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x64f62afb081e260d() end
 
@@ -5866,8 +5867,8 @@ function NetworkPlayerIsCheater() end
 ---
 --- @hash [0x658500AE6D723A7E](https://docs.fivem.net/natives/?_0x658500AE6D723A7E)
 --- @param alpha number (int)
---- @return void
---- @overload fun(alpha: number): void
+--- @return nil
+--- @overload fun(alpha: number): nil
 function SetGhostedEntityAlpha(alpha) end
 
     
@@ -5878,8 +5879,8 @@ function SetGhostedEntityAlpha(alpha) end
 ---
 --- @hash [0x658500AE6D723A7E](https://docs.fivem.net/natives/?_0x658500AE6D723A7E)
 --- @param alpha number (int)
---- @return void
---- @overload fun(alpha: number): void
+--- @return nil
+--- @overload fun(alpha: number): nil
 --- @deprecated
 function N_0x658500ae6d723a7e(alpha) end
 
@@ -5969,8 +5970,8 @@ function NetworkAreCutsceneEntities() end
 ---
 --- @hash [0x66F010A4B031A331](https://docs.fivem.net/natives/?_0x66F010A4B031A331)
 --- @param networkHandle number (int*)
---- @return void
---- @overload fun(): number
+--- @return nil
+--- @overload fun(): nil, number
 function NetworkSetInviteOnCallForInviteMenu(networkHandle) end
 
     
@@ -5979,8 +5980,8 @@ function NetworkSetInviteOnCallForInviteMenu(networkHandle) end
 ---
 --- @hash [0x66F010A4B031A331](https://docs.fivem.net/natives/?_0x66F010A4B031A331)
 --- @param networkHandle number (int*)
---- @return void
---- @overload fun(): number
+--- @return nil
+--- @overload fun(): nil, number
 --- @deprecated
 function N_0x66f010a4b031a331(networkHandle) end
 
@@ -6029,8 +6030,8 @@ function N_0x678bb03c1a3bd51e(p0, p1, p2) end
 ---
 --- @hash [0x6793E42BE02B575D](https://docs.fivem.net/natives/?_0x6793E42BE02B575D)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkSessionVoiceLeave() end
 
     
@@ -6076,8 +6077,8 @@ function NetworkIsInTransition() end
 ---
 --- @hash [0x68103E2247887242](https://docs.fivem.net/natives/?_0x68103E2247887242)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x68103e2247887242() end
 
     
@@ -6138,8 +6139,8 @@ function N_0x697f508861875b42(contextHash, nameHash, value) end
 ---
 --- @hash [0x6A5D89D7769A40D8](https://docs.fivem.net/natives/?_0x6A5D89D7769A40D8)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function N_0x6a5d89d7769a40d8(toggle) end
 
     
@@ -6147,8 +6148,8 @@ function N_0x6a5d89d7769a40d8(toggle) end
 ---
 --- @hash [0x6B07B9CE4D390375](https://docs.fivem.net/natives/?_0x6B07B9CE4D390375)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function NetworkBlockKickedPlayers(p0) end
 
     
@@ -6157,8 +6158,8 @@ function NetworkBlockKickedPlayers(p0) end
 ---
 --- @hash [0x6B07B9CE4D390375](https://docs.fivem.net/natives/?_0x6B07B9CE4D390375)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 --- @deprecated
 function N_0x6b07b9ce4d390375(p0) end
 
@@ -6176,8 +6177,8 @@ function NetworkIsTransitionHostFromHandle(networkHandle) end
 ---
 --- @hash [0x6BFF5F84102DF80A](https://docs.fivem.net/natives/?_0x6BFF5F84102DF80A)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function N_0x6bff5f84102df80a(player) end
 
     
@@ -6238,8 +6239,8 @@ function NetworkIsInMpCutscene() end
 ---
 --- @hash [0x6CE50E47F5543D0C](https://docs.fivem.net/natives/?_0x6CE50E47F5543D0C)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x6ce50e47f5543d0c() end
 
     
@@ -6247,8 +6248,8 @@ function N_0x6ce50e47f5543d0c() end
 ---
 --- @hash [0x6D03BFBD643B2A02](https://docs.fivem.net/natives/?_0x6D03BFBD643B2A02)
 ---
---- @return number, number, number
---- @overload fun(): number, number, number
+--- @return nil, number, number, number
+--- @overload fun(): nil, number, number, number
 function NetworkGetGlobalMultiplayerClock() end
 
     
@@ -6257,8 +6258,8 @@ function NetworkGetGlobalMultiplayerClock() end
 ---
 --- @hash [0x6D03BFBD643B2A02](https://docs.fivem.net/natives/?_0x6D03BFBD643B2A02)
 ---
---- @return number, number, number
---- @overload fun(): number, number, number
+--- @return nil, number, number, number
+--- @overload fun(): nil, number, number, number
 --- @deprecated
 function N_0x6d03bfbd643b2a02() end
 
@@ -6268,8 +6269,8 @@ function N_0x6d03bfbd643b2a02() end
 ---
 --- @hash [0x6D03BFBD643B2A02](https://docs.fivem.net/natives/?_0x6D03BFBD643B2A02)
 ---
---- @return number, number, number
---- @overload fun(): number, number, number
+--- @return nil, number, number, number
+--- @overload fun(): nil, number, number, number
 --- @deprecated
 function NetworkGetServerTime() end
 
@@ -6278,8 +6279,8 @@ function NetworkGetServerTime() end
 ---
 --- @hash [0x6D14CCEE1B40381A](https://docs.fivem.net/natives/?_0x6D14CCEE1B40381A)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkClearFoundGamers() end
 
     
@@ -6371,8 +6372,8 @@ function N_0x6f44cbf56d79fac0(index, index2) end
 --- @hash [0x6F697A66CE78674E](https://docs.fivem.net/natives/?_0x6F697A66CE78674E)
 --- @param team number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(team: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(team: number, toggle: boolean): nil
 function NetworkOverrideTeamRestrictions(team, toggle) end
 
     
@@ -6382,8 +6383,8 @@ function NetworkOverrideTeamRestrictions(team, toggle) end
 --- @hash [0x6F697A66CE78674E](https://docs.fivem.net/natives/?_0x6F697A66CE78674E)
 --- @param team number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(team: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(team: number, toggle: boolean): nil
 --- @deprecated
 function N_0x6f697a66ce78674e(team, toggle) end
 
@@ -6433,8 +6434,8 @@ function NetworkIsParticipantActive(p0) end
 ---
 --- @hash [0x702BC4D605522539](https://docs.fivem.net/natives/?_0x702BC4D605522539)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x702bc4d605522539(p0) end
 
     
@@ -6462,8 +6463,8 @@ function N_0x703f12425eca8bf5(p0) end
 ---
 --- @hash [0x70DA3BF8DACD3210](https://docs.fivem.net/natives/?_0x70DA3BF8DACD3210)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function NetworkSetOverrideSpectatorMode(toggle) end
 
     
@@ -6506,8 +6507,8 @@ function NetworkIsEntityConcealed(entity) end
 ---
 --- @hash [0x715135F4B82AC90D](https://docs.fivem.net/natives/?_0x715135F4B82AC90D)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 function RemoveAllStickyBombsFromEntity(entity) end
 
     
@@ -6522,8 +6523,8 @@ function RemoveAllStickyBombsFromEntity(entity) end
 ---
 --- @hash [0x715135F4B82AC90D](https://docs.fivem.net/natives/?_0x715135F4B82AC90D)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 --- @deprecated
 function N_0x715135f4b82ac90d(entity) end
 
@@ -6656,8 +6657,8 @@ function N_0x7242f8b741ce1086(netId) end
 ---
 --- @hash [0x72433699B4E6DD64](https://docs.fivem.net/natives/?_0x72433699B4E6DD64)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkResetBodyTracker() end
 
     
@@ -6665,8 +6666,8 @@ function NetworkResetBodyTracker() end
 ---
 --- @hash [0x726E0375C7A26368](https://docs.fivem.net/natives/?_0x726E0375C7A26368)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkRemoveAllTransitionInvite() end
 
     
@@ -6675,8 +6676,8 @@ function NetworkRemoveAllTransitionInvite() end
 ---
 --- @hash [0x726E0375C7A26368](https://docs.fivem.net/natives/?_0x726E0375C7A26368)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x726e0375c7a26368() end
 
@@ -6749,8 +6750,8 @@ function N_0x729e3401f0430686(animDict, animName) end
 ---
 --- @hash [0x72D0706CD6CCDB58](https://docs.fivem.net/natives/?_0x72D0706CD6CCDB58)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ReleaseAllCommerceItemImages() end
 
     
@@ -6759,8 +6760,8 @@ function ReleaseAllCommerceItemImages() end
 ---
 --- @hash [0x72D0706CD6CCDB58](https://docs.fivem.net/natives/?_0x72D0706CD6CCDB58)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x72d0706cd6ccdb58() end
 
@@ -6789,8 +6790,8 @@ function N_0x72d918c99bcacc54(p0) end
 ---
 --- @hash [0x7368E683BB9038D6](https://docs.fivem.net/natives/?_0x7368E683BB9038D6)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 function NetworkUnregisterNetworkedEntity(entity) end
 
     
@@ -6799,8 +6800,8 @@ function NetworkUnregisterNetworkedEntity(entity) end
 ---
 --- @hash [0x7368E683BB9038D6](https://docs.fivem.net/natives/?_0x7368E683BB9038D6)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 --- @deprecated
 function N_0x7368e683bb9038d6(entity) end
 
@@ -6834,8 +6835,8 @@ function NetworkGetActivityPlayerNum(p0) end
 ---
 --- @hash [0x741A3D8380319A81](https://docs.fivem.net/natives/?_0x741A3D8380319A81)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x741a3d8380319a81() end
 
     
@@ -6852,8 +6853,8 @@ function N_0x741a3d8380319a81() end
 --- @param flag number (int)
 --- @param playbackRate number (float)
 --- @param p9 any
---- @return void
---- @overload fun(ped: Ped, netScene: number, animDict: string, animnName: string, blendInSpeed: number, blendOutSpeed: number, duration: number, flag: number, playbackRate: number, p9: any): void
+--- @return nil
+--- @overload fun(ped: Ped, netScene: number, animDict: string, animnName: string, blendInSpeed: number, blendOutSpeed: number, duration: number, flag: number, playbackRate: number, p9: any): nil
 function NetworkAddPedToSynchronisedScene(ped, netScene, animDict, animnName, blendInSpeed, blendOutSpeed, duration, flag, playbackRate, p9) end
 
     
@@ -6940,8 +6941,8 @@ function N_0x74fb3e29e6d10fa9() end
 ---
 --- @hash [0x75138790B4359A74](https://docs.fivem.net/natives/?_0x75138790B4359A74)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function NetworkSetActivitySpectator(toggle) end
 
     
@@ -6949,8 +6950,8 @@ function NetworkSetActivitySpectator(toggle) end
 ---
 --- @hash [0x7524B431B2E6F7EE](https://docs.fivem.net/natives/?_0x7524B431B2E6F7EE)
 --- @param p0 any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 function NetworkRemoveTransitionInvite(p0) end
 
     
@@ -7019,8 +7020,8 @@ function N_0x759299c5bb31d2a9(p0, p1) end
 ---
 --- @hash [0x7619364C82D3BF14](https://docs.fivem.net/natives/?_0x7619364C82D3BF14)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function SetLocalPlayerVisibleLocally(p0) end
 
     
@@ -7048,8 +7049,8 @@ function N_0x769951e2455e2eb5() end
 ---
 --- @hash [0x76B02E21ED27A469](https://docs.fivem.net/natives/?_0x76B02E21ED27A469)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function ReserveNetworkMissionVehicles(amount) end
 
     
@@ -7060,8 +7061,8 @@ function ReserveNetworkMissionVehicles(amount) end
 --- @hash [0x76B3F29D3F967692](https://docs.fivem.net/natives/?_0x76B3F29D3F967692)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x76b3f29d3f967692(p0, p1) end
 
     
@@ -7120,8 +7121,8 @@ function NetworkPlayerGetName(player) end
 ---
 --- @hash [0x77758139EC9B66C7](https://docs.fivem.net/natives/?_0x77758139EC9B66C7)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function UsePlayerColourInsteadOfTeamColour(toggle) end
 
     
@@ -7129,8 +7130,8 @@ function UsePlayerColourInsteadOfTeamColour(toggle) end
 ---
 --- @hash [0x77FADDCBE3499DF7](https://docs.fivem.net/natives/?_0x77FADDCBE3499DF7)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x77faddcbe3499df7(p0) end
 
     
@@ -7203,8 +7204,8 @@ function NetworkCheckDataManagerForHandle(p0) end
 ---
 --- @hash [0x797F9C5E661D920E](https://docs.fivem.net/natives/?_0x797F9C5E661D920E)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function ReserveNetworkLocalObjects(amount) end
 
     
@@ -7219,8 +7220,8 @@ function ReserveNetworkLocalObjects(amount) end
 ---
 --- @hash [0x797F9C5E661D920E](https://docs.fivem.net/natives/?_0x797F9C5E661D920E)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 --- @deprecated
 function N_0x797f9c5e661d920e(amount) end
 
@@ -7248,8 +7249,8 @@ function GetNetworkTime() end
 ---
 --- @hash [0x7AC752103856FB20](https://docs.fivem.net/natives/?_0x7AC752103856FB20)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function NetworkSetScriptReadyForEvents(toggle) end
 
     
@@ -7258,8 +7259,8 @@ function NetworkSetScriptReadyForEvents(toggle) end
 ---
 --- @hash [0x7AC752103856FB20](https://docs.fivem.net/natives/?_0x7AC752103856FB20)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0x7ac752103856fb20(toggle) end
 
@@ -7319,8 +7320,8 @@ function GetContentDescriptionHash(p0) end
 ---
 --- @hash [0x7D395EA61622E116](https://docs.fivem.net/natives/?_0x7D395EA61622E116)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0x7d395ea61622e116(p0) end
 
     
@@ -7368,8 +7369,8 @@ function N_0x7ef7649b64d7ff10(entity) end
 --- @hash [0x7F8413B7FC2AA6B9](https://docs.fivem.net/natives/?_0x7F8413B7FC2AA6B9)
 --- @param p0 boolean
 --- @param p1 number (int)
---- @return void
---- @overload fun(p0: boolean, p1: number): void
+--- @return nil
+--- @overload fun(p0: boolean, p1: number): nil
 function NetworkSessionVoiceRespondToRequest(p0, p1) end
 
     
@@ -7379,8 +7380,8 @@ function NetworkSessionVoiceRespondToRequest(p0, p1) end
 --- @hash [0x7F8413B7FC2AA6B9](https://docs.fivem.net/natives/?_0x7F8413B7FC2AA6B9)
 --- @param p0 boolean
 --- @param p1 number (int)
---- @return void
---- @overload fun(p0: boolean, p1: number): void
+--- @return nil
+--- @overload fun(p0: boolean, p1: number): nil
 --- @deprecated
 function NetworkSetKeepFocuspoint(p0, p1) end
 
@@ -7596,8 +7597,8 @@ function N_0x83660b734994124d(p0, p1, p2) end
 --- @hash [0x838DA0936A24ED4D](https://docs.fivem.net/natives/?_0x838DA0936A24ED4D)
 --- @param vehicle Vehicle
 --- @param toggle boolean
---- @return void
---- @overload fun(vehicle: Vehicle, toggle: boolean): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, toggle: boolean): nil
 function SetNetworkEnableVehiclePositionCorrection(vehicle, toggle) end
 
     
@@ -7609,8 +7610,8 @@ function SetNetworkEnableVehiclePositionCorrection(vehicle, toggle) end
 --- @hash [0x838DA0936A24ED4D](https://docs.fivem.net/natives/?_0x838DA0936A24ED4D)
 --- @param vehicle Vehicle
 --- @param toggle boolean
---- @return void
---- @overload fun(vehicle: Vehicle, toggle: boolean): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, toggle: boolean): nil
 --- @deprecated
 function N_0x838da0936a24ed4d(vehicle, toggle) end
 
@@ -7652,8 +7653,8 @@ function N_0x83f28ce49fbbffba(p0, p1, p2) end
 ---
 --- @hash [0x83FE8D7229593017](https://docs.fivem.net/natives/?_0x83FE8D7229593017)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x83fe8d7229593017() end
 
     
@@ -7745,8 +7746,8 @@ function N_0x855bc38818f6f684() end
 ---
 --- @hash [0x859ED1CEA343FCA8](https://docs.fivem.net/natives/?_0x859ED1CEA343FCA8)
 --- @param networkHandle number (int*)
---- @return void
---- @overload fun(): number
+--- @return nil
+--- @overload fun(): nil, number
 function NetworkShowProfileUi(networkHandle) end
 
     
@@ -7795,8 +7796,8 @@ function NetworkDoesTunableExist(tunableContext, tunableName) end
 ---
 --- @hash [0x86E0660E4F5C956D](https://docs.fivem.net/natives/?_0x86E0660E4F5C956D)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkClearGetGamerStatus() end
 
     
@@ -7805,8 +7806,8 @@ function NetworkClearGetGamerStatus() end
 ---
 --- @hash [0x86E0660E4F5C956D](https://docs.fivem.net/natives/?_0x86E0660E4F5C956D)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x86e0660e4f5c956d() end
 
@@ -7966,8 +7967,8 @@ function N_0x89023fbbf9200e9f() end
 --- @hash [0x890E2C5ABED7236D](https://docs.fivem.net/natives/?_0x890E2C5ABED7236D)
 --- @param vehicle Vehicle
 --- @param toggle boolean
---- @return void
---- @overload fun(vehicle: Vehicle, toggle: boolean): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, toggle: boolean): nil
 function NetworkSetVehicleWheelsDestructible(vehicle, toggle) end
 
     
@@ -7983,8 +7984,8 @@ function NetworkSetVehicleWheelsDestructible(vehicle, toggle) end
 --- @hash [0x890E2C5ABED7236D](https://docs.fivem.net/natives/?_0x890E2C5ABED7236D)
 --- @param vehicle Vehicle
 --- @param toggle boolean
---- @return void
---- @overload fun(vehicle: Vehicle, toggle: boolean): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, toggle: boolean): nil
 --- @deprecated
 function N_0x890e2c5abed7236d(vehicle, toggle) end
 
@@ -8029,8 +8030,8 @@ function N_0x8b4ffc790ca131ef(p0, p1, p2, p3) end
 --- @hash [0x8B6A4DD0AF9CE215](https://docs.fivem.net/natives/?_0x8B6A4DD0AF9CE215)
 --- @param playerType number (int)
 --- @param playerCount number (int)
---- @return void
---- @overload fun(playerType: number, playerCount: number): void
+--- @return nil
+--- @overload fun(playerType: number, playerCount: number): nil
 function NetworkSessionSetMatchmakingGroupMax(playerType, playerCount) end
 
     
@@ -8045,8 +8046,8 @@ function NetworkSessionSetMatchmakingGroupMax(playerType, playerCount) end
 --- @hash [0x8B6A4DD0AF9CE215](https://docs.fivem.net/natives/?_0x8B6A4DD0AF9CE215)
 --- @param playerType number (int)
 --- @param playerCount number (int)
---- @return void
---- @overload fun(playerType: number, playerCount: number): void
+--- @return nil
+--- @overload fun(playerType: number, playerCount: number): nil
 --- @deprecated
 function N_0x8b6a4dd0af9ce215(playerType, playerCount) end
 
@@ -8062,8 +8063,8 @@ function N_0x8b6a4dd0af9ce215(playerType, playerCount) end
 --- @hash [0x8B6A4DD0AF9CE215](https://docs.fivem.net/natives/?_0x8B6A4DD0AF9CE215)
 --- @param playerType number (int)
 --- @param playerCount number (int)
---- @return void
---- @overload fun(playerType: number, playerCount: number): void
+--- @return nil
+--- @overload fun(playerType: number, playerCount: number): nil
 --- @deprecated
 function NetworkSessionSetMaxPlayers(playerType, playerCount) end
 
@@ -8145,8 +8146,8 @@ function N_0x8be1146dfd5d4468(tunableContext, tunableName, value) end
 ---
 --- @hash [0x8C70252FC40F320B](https://docs.fivem.net/natives/?_0x8C70252FC40F320B)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function NetworkSetVehicleTestDrive(toggle) end
 
     
@@ -8230,8 +8231,8 @@ function NetworkAddFriend(networkHandle, message) end
 ---
 --- @hash [0x8EF52ACAECC51D9C](https://docs.fivem.net/natives/?_0x8EF52ACAECC51D9C)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function N_0x8ef52acaecc51d9c(toggle) end
 
     
@@ -8387,8 +8388,8 @@ function N_0x941e5306bcd7c2c7() end
 ---
 --- @hash [0x94538037EE44F5CF](https://docs.fivem.net/natives/?_0x94538037EE44F5CF)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0x94538037ee44f5cf(p0) end
 
     
@@ -8396,8 +8397,8 @@ function N_0x94538037ee44f5cf(p0) end
 ---
 --- @hash [0x9465E683B12D3F6B](https://docs.fivem.net/natives/?_0x9465E683B12D3F6B)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x9465e683b12d3f6b() end
 
     
@@ -8457,8 +8458,8 @@ function N_0x94bc51e9449d917f(p0, p1, p2, maxPlayers, p4) end
 ---
 --- @hash [0x95914459A87EBA28](https://docs.fivem.net/natives/?_0x95914459A87EBA28)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkBail() end
 
     
@@ -8469,8 +8470,8 @@ function NetworkBail() end
 --- @hash [0x95BAF97C82464629](https://docs.fivem.net/natives/?_0x95BAF97C82464629)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x95baf97c82464629(p0, p1) end
 
     
@@ -8500,8 +8501,8 @@ function N_0x9614b71f8adb982b() end
 ---
 --- @hash [0x9641A9FF718E9C5E](https://docs.fivem.net/natives/?_0x9641A9FF718E9C5E)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetStoreEnabled(toggle) end
 
     
@@ -8525,8 +8526,8 @@ function NetworkIsInParty() end
 ---
 --- @hash [0x966DD84FB6A46017](https://docs.fivem.net/natives/?_0x966DD84FB6A46017)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ClearLaunchParams() end
 
     
@@ -8535,8 +8536,8 @@ function ClearLaunchParams() end
 ---
 --- @hash [0x966DD84FB6A46017](https://docs.fivem.net/natives/?_0x966DD84FB6A46017)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x966dd84fb6a46017() end
 
@@ -8582,8 +8583,8 @@ function NetworkAccessTunableFloatHash(tunableContext, tunableName, value) end
 ---
 --- @hash [0x973D76AA760A6CB6](https://docs.fivem.net/natives/?_0x973D76AA760A6CB6)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0x973d76aa760a6cb6(p0) end
 
     
@@ -8618,8 +8619,8 @@ function N_0x9747292807126eda() end
 --- @param z number (float)
 --- @param p4 boolean
 --- @param p5 boolean
---- @return void
---- @overload fun(player: Player, x: number, y: number, z: number, p4: boolean, p5: boolean): void
+--- @return nil
+--- @overload fun(player: Player, x: number, y: number, z: number, p4: boolean, p5: boolean): nil
 function NetworkRespawnCoords(player, x, y, z, p4, p5) end
 
     
@@ -8635,8 +8636,8 @@ function NetworkRespawnCoords(player, x, y, z, p4, p5) end
 --- @param z number (float)
 --- @param p4 boolean
 --- @param p5 boolean
---- @return void
---- @overload fun(player: Player, x: number, y: number, z: number, p4: boolean, p5: boolean): void
+--- @return nil
+--- @overload fun(player: Player, x: number, y: number, z: number, p4: boolean, p5: boolean): nil
 --- @deprecated
 function N_0x9769f811d1785b03(player, x, y, z, p4, p5) end
 
@@ -8671,8 +8672,8 @@ function N_0x97a770beef227e2b(p0, p1) end
 --- @hash [0x97DD4C5944CC2E6A](https://docs.fivem.net/natives/?_0x97DD4C5944CC2E6A)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function NetworkOverrideSendRestrictions(player, toggle) end
 
     
@@ -8685,8 +8686,8 @@ function NetworkOverrideSendRestrictions(player, toggle) end
 --- @hash [0x97DD4C5944CC2E6A](https://docs.fivem.net/natives/?_0x97DD4C5944CC2E6A)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 --- @deprecated
 function N_0x97dd4c5944cc2e6a(player, toggle) end
 
@@ -8700,8 +8701,8 @@ function N_0x97dd4c5944cc2e6a(player, toggle) end
 --- @hash [0x97DD4C5944CC2E6A](https://docs.fivem.net/natives/?_0x97DD4C5944CC2E6A)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 --- @deprecated
 function NetworkOverrideSendRestrictions(player, toggle) end
 
@@ -8776,8 +8777,8 @@ function ObjToNet(object) end
 ---
 --- @hash [0x9A1B3FCDB36C8697](https://docs.fivem.net/natives/?_0x9A1B3FCDB36C8697)
 --- @param netScene number (int)
---- @return void
---- @overload fun(netScene: number): void
+--- @return nil
+--- @overload fun(netScene: number): nil
 function NetworkStartSynchronisedScene(netScene) end
 
     
@@ -8877,8 +8878,8 @@ function N_0x9bf438815f5d96ea(p0, p1, p2, p3, p4, p5) end
 ---
 --- @hash [0x9C1556705F864230](https://docs.fivem.net/natives/?_0x9C1556705F864230)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkSessionVoiceHost() end
 
     
@@ -8904,8 +8905,8 @@ function NetworkDoTransitionQuickmatchWithGroup(p0, p1, p2, p3, p4, p5) end
 --- @hash [0x9CA5DE655269FEC4](https://docs.fivem.net/natives/?_0x9CA5DE655269FEC4)
 --- @param p0 boolean
 --- @param p1 boolean
---- @return void
---- @overload fun(p0: boolean, p1: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean, p1: boolean): nil
 function NetworkSetInMpCutscene(p0, p1) end
 
     
@@ -8928,8 +8929,8 @@ function NetworkJoinTransition(player) end
 ---
 --- @hash [0x9D277B76D1D12222](https://docs.fivem.net/natives/?_0x9D277B76D1D12222)
 --- @param maxSpectators number (int)
---- @return void
---- @overload fun(maxSpectators: number): void
+--- @return nil
+--- @overload fun(maxSpectators: number): nil
 function NetworkSetActivitySpectatorMax(maxSpectators) end
 
     
@@ -8961,8 +8962,8 @@ function NetworkAmIMutedByPlayer(player) end
 --- @hash [0x9D724B400A7E8FFC](https://docs.fivem.net/natives/?_0x9D724B400A7E8FFC)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x9d724b400a7e8ffc(p0, p1) end
 
     
@@ -8983,8 +8984,8 @@ function NetworkIsTransitionToGame() end
 ---
 --- @hash [0x9D7AFCBF21C51712](https://docs.fivem.net/natives/?_0x9D7AFCBF21C51712)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function N_0x9d7afcbf21c51712(toggle) end
 
     
@@ -9012,8 +9013,8 @@ function NetworkGetFoundGamer(p0, p1) end
 --- @hash [0x9DD368BF06983221](https://docs.fivem.net/natives/?_0x9DD368BF06983221)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function NetworkDisableInvincibleFlashing(player, toggle) end
 
     
@@ -9023,8 +9024,8 @@ function NetworkDisableInvincibleFlashing(player, toggle) end
 --- @hash [0x9DD368BF06983221](https://docs.fivem.net/natives/?_0x9DD368BF06983221)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 --- @deprecated
 function N_0x9dd368bf06983221(player, toggle) end
 
@@ -9221,8 +9222,8 @@ function N_0xa06509a691d12be4() end
 ---
 --- @hash [0xA0682D67EF1FBA3D](https://docs.fivem.net/natives/?_0xA0682D67EF1FBA3D)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function NetworkSuppressInvite(toggle) end
 
     
@@ -9307,8 +9308,8 @@ function N_0xa0fa4ec6a05da44e() end
 --- @param memberId string (char*)
 --- @param networkHandle number (int*)
 --- @param bufferSize number (int)
---- @return void
---- @overload fun(bufferSize: number): string): number
+--- @return nil
+--- @overload fun(bufferSize: number): nil, string): nil, number
 function NetworkHandleFromMemberId(memberId, networkHandle, bufferSize) end
 
     
@@ -9412,8 +9413,8 @@ function NetworkGetNumFoundGamers() end
 ---
 --- @hash [0xA1E5E0204A6FCC70](https://docs.fivem.net/natives/?_0xA1E5E0204A6FCC70)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function UgcClearModifyResult() end
 
     
@@ -9422,8 +9423,8 @@ function UgcClearModifyResult() end
 ---
 --- @hash [0xA1E5E0204A6FCC70](https://docs.fivem.net/natives/?_0xA1E5E0204A6FCC70)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xa1e5e0204a6fcc70() end
 
@@ -9432,8 +9433,8 @@ function N_0xa1e5e0204a6fcc70() end
 ---
 --- @hash [0xA29177F7703B5644](https://docs.fivem.net/natives/?_0xA29177F7703B5644)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkSessionForceCancelInvite() end
 
     
@@ -9442,8 +9443,8 @@ function NetworkSessionForceCancelInvite() end
 ---
 --- @hash [0xA29177F7703B5644](https://docs.fivem.net/natives/?_0xA29177F7703B5644)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xa29177f7703b5644() end
 
@@ -9455,8 +9456,8 @@ function N_0xa29177f7703b5644() end
 --- @hash [0xA2A707979FE754DC](https://docs.fivem.net/natives/?_0xA2A707979FE754DC)
 --- @param vehicle Vehicle
 --- @param multiplier number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, multiplier: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, multiplier: number): nil
 function SetNetworkVehiclePositionUpdateMultiplier(vehicle, multiplier) end
 
     
@@ -9468,8 +9469,8 @@ function SetNetworkVehiclePositionUpdateMultiplier(vehicle, multiplier) end
 --- @hash [0xA2A707979FE754DC](https://docs.fivem.net/natives/?_0xA2A707979FE754DC)
 --- @param vehicle Vehicle
 --- @param multiplier number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, multiplier: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, multiplier: number): nil
 --- @deprecated
 function N_0xa2a707979fe754dc(vehicle, multiplier) end
 
@@ -9482,8 +9483,8 @@ function N_0xa2a707979fe754dc(vehicle, multiplier) end
 --- @hash [0xA2A707979FE754DC](https://docs.fivem.net/natives/?_0xA2A707979FE754DC)
 --- @param vehicle Vehicle
 --- @param multiplier number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, multiplier: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, multiplier: number): nil
 --- @deprecated
 function SetNetworkVehicleBlenderDistanceMultiplier(vehicle, multiplier) end
 
@@ -9508,8 +9509,8 @@ function GetTimeDifference(timeA, timeB) end
 ---
 --- @hash [0xA2E9C1AB8A92E8CD](https://docs.fivem.net/natives/?_0xA2E9C1AB8A92E8CD)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function N_0xa2e9c1ab8a92e8cd(toggle) end
 
     
@@ -9568,8 +9569,8 @@ function NetworkGetNumConnectedPlayers() end
 --- @param p7 any
 --- @param p8 any
 --- @param p9 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any, p9: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any, p9: any): nil
 function N_0xa5eafe473e45c442(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9) end
 
     
@@ -9610,8 +9611,8 @@ function NetworkRequestControlOfNetworkId(netId) end
 --- @param netId number (int)
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(netId: number, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(netId: number, p1: boolean, p2: boolean): nil
 function SetNetworkIdVisibleInCutscene(netId, p1, p2) end
 
     
@@ -9679,8 +9680,8 @@ function NetworkGetNumParticipantsHost() end
 ---
 --- @hash [0xA6FCECCF4721D679](https://docs.fivem.net/natives/?_0xA6FCECCF4721D679)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xa6fceccf4721d679(p0) end
 
     
@@ -9708,8 +9709,8 @@ function N_0xa72835064dd63e4c() end
 ---
 --- @hash [0xA73667484D7037C3](https://docs.fivem.net/natives/?_0xA73667484D7037C3)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function NetworkSessionBlockJoinRequests(toggle) end
 
     
@@ -9718,8 +9719,8 @@ function NetworkSessionBlockJoinRequests(toggle) end
 ---
 --- @hash [0xA73667484D7037C3](https://docs.fivem.net/natives/?_0xA73667484D7037C3)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0xa73667484d7037c3(toggle) end
 
@@ -9790,8 +9791,8 @@ function GetContentCategory(p0) end
 --- @hash [0xA7C511FA1C5BDA38](https://docs.fivem.net/natives/?_0xA7C511FA1C5BDA38)
 --- @param player Player
 --- @param p1 boolean
---- @return void
---- @overload fun(player: Player, p1: boolean): void
+--- @return nil
+--- @overload fun(player: Player, p1: boolean): nil
 function SetRelationshipToPlayer(player, p1) end
 
     
@@ -9801,8 +9802,8 @@ function SetRelationshipToPlayer(player, p1) end
 --- @hash [0xA7C511FA1C5BDA38](https://docs.fivem.net/natives/?_0xA7C511FA1C5BDA38)
 --- @param player Player
 --- @param p1 boolean
---- @return void
---- @overload fun(player: Player, p1: boolean): void
+--- @return nil
+--- @overload fun(player: Player, p1: boolean): nil
 --- @deprecated
 function N_0xa7c511fa1c5bda38(player, p1) end
 
@@ -9815,8 +9816,8 @@ function N_0xa7c511fa1c5bda38(player, p1) end
 --- @param y number (float)
 --- @param z number (float)
 --- @param heading number (float)
---- @return void
---- @overload fun(entity: Entity, x: number, y: number, z: number, heading: number): void
+--- @return nil
+--- @overload fun(entity: Entity, x: number, y: number, z: number, heading: number): nil
 function NetworkOverrideCoordsAndHeading(entity, x, y, z, heading) end
 
     
@@ -9829,8 +9830,8 @@ function NetworkOverrideCoordsAndHeading(entity, x, y, z, heading) end
 --- @param y number (float)
 --- @param z number (float)
 --- @param heading number (float)
---- @return void
---- @overload fun(entity: Entity, x: number, y: number, z: number, heading: number): void
+--- @return nil
+--- @overload fun(entity: Entity, x: number, y: number, z: number, heading: number): nil
 --- @deprecated
 function N_0xa7e30de9272b6d49(entity, x, y, z, heading) end
 
@@ -9841,8 +9842,8 @@ function N_0xa7e30de9272b6d49(entity, x, y, z, heading) end
 --- @param netId number (int)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(netId: number, player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(netId: number, player: Player, toggle: boolean): nil
 function SetNetworkIdAlwaysExistsForPlayer(netId, player, toggle) end
 
     
@@ -9853,8 +9854,8 @@ function SetNetworkIdAlwaysExistsForPlayer(netId, player, toggle) end
 --- @param netId number (int)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(netId: number, player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(netId: number, player: Player, toggle: boolean): nil
 --- @deprecated
 function N_0xa8a024587329f36a(netId, player, toggle) end
 
@@ -9866,8 +9867,8 @@ function N_0xa8a024587329f36a(netId, player, toggle) end
 --- @param netId number (int)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(netId: number, player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(netId: number, player: Player, toggle: boolean): nil
 --- @deprecated
 function SetNetworkIdSyncToPlayer(netId, player, toggle) end
 
@@ -9978,8 +9979,8 @@ function N_0xaa6a47a573abb75a(tunableContext, tunableName) end
 ---
 --- @hash [0xAA6D5451DC3448B6](https://docs.fivem.net/natives/?_0xAA6D5451DC3448B6)
 --- @param mpSettingSpawn Hash
---- @return void
---- @overload fun(mpSettingSpawn: Hash): void
+--- @return nil
+--- @overload fun(mpSettingSpawn: Hash): nil
 function NetworkSetCurrentSpawnSetting(mpSettingSpawn) end
 
     
@@ -10002,8 +10003,8 @@ function GetNumReservedMissionObjects(p0) end
 ---
 --- @hash [0xAAA553E7DD28A457](https://docs.fivem.net/natives/?_0xAAA553E7DD28A457)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetNetworkCutsceneEntities(toggle) end
 
     
@@ -10012,8 +10013,8 @@ function SetNetworkCutsceneEntities(toggle) end
 ---
 --- @hash [0xAAA553E7DD28A457](https://docs.fivem.net/natives/?_0xAAA553E7DD28A457)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0xaaa553e7dd28a457(toggle) end
 
@@ -10047,8 +10048,8 @@ function NetworkClanGetMembershipCount(p0) end
 ---
 --- @hash [0xABD5E88B8A2D3DB2](https://docs.fivem.net/natives/?_0xABD5E88B8A2D3DB2)
 --- @param globalPtr any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 function NetworkSessionVoiceConnectToPlayer(globalPtr) end
 
     
@@ -10073,8 +10074,8 @@ function NetworkSessionVoiceConnectToPlayer(globalPtr) end
 ---
 --- @hash [0xABD5E88B8A2D3DB2](https://docs.fivem.net/natives/?_0xABD5E88B8A2D3DB2)
 --- @param globalPtr any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 --- @deprecated
 function N_0xabd5e88b8a2d3db2(globalPtr) end
 
@@ -10100,8 +10101,8 @@ function N_0xabd5e88b8a2d3db2(globalPtr) end
 ---
 --- @hash [0xABD5E88B8A2D3DB2](https://docs.fivem.net/natives/?_0xABD5E88B8A2D3DB2)
 --- @param globalPtr any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 --- @deprecated
 function NetworkVoiceConnectToPlayer(globalPtr) end
 
@@ -10131,8 +10132,8 @@ function NetworkHasPendingInvite() end
 --- @hash [0xAC97AF97FA68E5D5](https://docs.fivem.net/natives/?_0xAC97AF97FA68E5D5)
 --- @param posixTime number (int)
 --- @param timeStructure any
---- @return void
---- @overload fun(posixTime: number): any
+--- @return nil
+--- @overload fun(posixTime: number): nil, any
 function ConvertPosixTime(posixTime, timeStructure) end
 
     
@@ -10153,8 +10154,8 @@ function ConvertPosixTime(posixTime, timeStructure) end
 --- @hash [0xAC97AF97FA68E5D5](https://docs.fivem.net/natives/?_0xAC97AF97FA68E5D5)
 --- @param posixTime number (int)
 --- @param timeStructure any
---- @return void
---- @overload fun(posixTime: number): any
+--- @return nil
+--- @overload fun(posixTime: number): nil, any
 --- @deprecated
 function GetDateAndTimeFromUnixEpoch(posixTime, timeStructure) end
 
@@ -10175,8 +10176,8 @@ function NetworkIsInTutorialSession() end
 ---
 --- @hash [0xADB57E5B663CCA8B](https://docs.fivem.net/natives/?_0xADB57E5B663CCA8B)
 --- @param p0 Player
---- @return number, number
---- @overload fun(p0: Player): number, number
+--- @return nil, number, number
+--- @overload fun(p0: Player): nil, number, number
 function N_0xadb57e5b663cca8b(p0) end
 
     
@@ -10256,8 +10257,8 @@ function N_0xaf50da1a3f8b1ba4(loadingState) end
 ---
 --- @hash [0xAF66059A131AA269](https://docs.fivem.net/natives/?_0xAF66059A131AA269)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function NetworkOverrideTransitionChat(p0) end
 
     
@@ -10266,8 +10267,8 @@ function NetworkOverrideTransitionChat(p0) end
 ---
 --- @hash [0xAF66059A131AA269](https://docs.fivem.net/natives/?_0xAF66059A131AA269)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 --- @deprecated
 function N_0xaf66059a131aa269(p0) end
 
@@ -10323,8 +10324,8 @@ function NetworkClanPlayerIsActive(networkHandle) end
 ---
 --- @hash [0xB13E88E655E5A3BC](https://docs.fivem.net/natives/?_0xB13E88E655E5A3BC)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xb13e88e655e5a3bc() end
 
     
@@ -10422,8 +10423,8 @@ function N_0xb4271092ca7edf48(index) end
 --- @hash [0xB4AB419E0D86ACAE](https://docs.fivem.net/natives/?_0xB4AB419E0D86ACAE)
 --- @param p0 number (int)
 --- @param p1 boolean
---- @return void
---- @overload fun(p0: number, p1: boolean): void
+--- @return nil
+--- @overload fun(p0: number, p1: boolean): nil
 function NetworkSessionChangeSlots(p0, p1) end
 
     
@@ -10433,8 +10434,8 @@ function NetworkSessionChangeSlots(p0, p1) end
 --- @hash [0xB4AB419E0D86ACAE](https://docs.fivem.net/natives/?_0xB4AB419E0D86ACAE)
 --- @param p0 number (int)
 --- @param p1 boolean
---- @return void
---- @overload fun(p0: number, p1: boolean): void
+--- @return nil
+--- @overload fun(p0: number, p1: boolean): nil
 --- @deprecated
 function N_0xb4ab419e0d86acae(p0, p1) end
 
@@ -10503,8 +10504,8 @@ function N_0xb5d3453c98456528() end
 ---
 --- @hash [0xB606E6CC59664972](https://docs.fivem.net/natives/?_0xB606E6CC59664972)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xb606e6cc59664972(p0) end
 
     
@@ -10512,8 +10513,8 @@ function N_0xb606e6cc59664972(p0) end
 ---
 --- @hash [0xB60FEBA45333D36F](https://docs.fivem.net/natives/?_0xB60FEBA45333D36F)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function ReserveNetworkMissionPeds(amount) end
 
     
@@ -10539,8 +10540,8 @@ function N_0xb746d20b17f2a229() end
 ---
 --- @hash [0xB7C7F6AD6424304B](https://docs.fivem.net/natives/?_0xB7C7F6AD6424304B)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkUpdatePlayerScars() end
 
     
@@ -10549,8 +10550,8 @@ function NetworkUpdatePlayerScars() end
 ---
 --- @hash [0xB7C7F6AD6424304B](https://docs.fivem.net/natives/?_0xB7C7F6AD6424304B)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xb7c7f6ad6424304b() end
 
@@ -10623,8 +10624,8 @@ function N_0xba416d68c631496a() end
 --- @hash [0xBA7F0B77D80A4EB7](https://docs.fivem.net/natives/?_0xBA7F0B77D80A4EB7)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0xba7f0b77d80a4eb7(p0, p1) end
 
     
@@ -10632,8 +10633,8 @@ function N_0xba7f0b77d80a4eb7(p0, p1) end
 ---
 --- @hash [0xBA96394A0EECFA65](https://docs.fivem.net/natives/?_0xBA96394A0EECFA65)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function UgcClearQueryResults() end
 
     
@@ -10642,8 +10643,8 @@ function UgcClearQueryResults() end
 ---
 --- @hash [0xBA96394A0EECFA65](https://docs.fivem.net/natives/?_0xBA96394A0EECFA65)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xba96394a0eecfa65() end
 
@@ -10672,8 +10673,8 @@ function N_0xba9775570db788cf() end
 ---
 --- @hash [0xBABEC9E69A91C57B](https://docs.fivem.net/natives/?_0xBABEC9E69A91C57B)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function NetworkSetVoiceActive(toggle) end
 
     
@@ -10746,8 +10747,8 @@ function NetworkClanRemoteMembershipsAreInCache(p0) end
 --- @param player Player
 --- @param toggle boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean, p2: boolean): nil
 function NetworkConcealPlayer(player, toggle, p2) end
 
     
@@ -10795,8 +10796,8 @@ function CanRegisterMissionPeds(amount) end
 ---
 --- @hash [0xBD0BE0BFC927EAC1](https://docs.fivem.net/natives/?_0xBD0BE0BFC927EAC1)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkCacheLocalPlayerHeadBlendData() end
 
     
@@ -10805,8 +10806,8 @@ function NetworkCacheLocalPlayerHeadBlendData() end
 ---
 --- @hash [0xBD0BE0BFC927EAC1](https://docs.fivem.net/natives/?_0xBD0BE0BFC927EAC1)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xbd0be0bfc927eac1() end
 
@@ -10873,8 +10874,8 @@ function N_0xbe3e347a87aceb82(p0, p1, p2, p3) end
 --- @hash [0xBEC0816FF5ACBCDA](https://docs.fivem.net/natives/?_0xBEC0816FF5ACBCDA)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function ActivateDamageTrackerOnPlayer(player, toggle) end
 
     
@@ -10884,8 +10885,8 @@ function ActivateDamageTrackerOnPlayer(player, toggle) end
 --- @hash [0xBEC0816FF5ACBCDA](https://docs.fivem.net/natives/?_0xBEC0816FF5ACBCDA)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 --- @deprecated
 function N_0xbec0816ff5acbcda(player, toggle) end
 
@@ -10915,8 +10916,8 @@ function N_0xbf09786a7fcab582(p0) end
 --- @hash [0xBF22E0F32968E967](https://docs.fivem.net/natives/?_0xBF22E0F32968E967)
 --- @param player Player
 --- @param p1 boolean
---- @return void
---- @overload fun(player: Player, p1: boolean): void
+--- @return nil
+--- @overload fun(player: Player, p1: boolean): nil
 function N_0xbf22e0f32968e967(player, p1) end
 
     
@@ -11061,8 +11062,8 @@ function N_0xc116ff9b4d488291(p2, p3) end
 --- @hash [0xC1447451DDB512F0](https://docs.fivem.net/natives/?_0xC1447451DDB512F0)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function NetworkUgcNav(p0, p1) end
 
     
@@ -11074,8 +11075,8 @@ function NetworkUgcNav(p0, p1) end
 --- @hash [0xC1447451DDB512F0](https://docs.fivem.net/natives/?_0xC1447451DDB512F0)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 --- @deprecated
 function N_0xc1447451ddb512f0(p0, p1) end
 
@@ -11084,8 +11085,8 @@ function N_0xc1447451ddb512f0(p0, p1) end
 ---
 --- @hash [0xC19F6C8E7865A6FF](https://docs.fivem.net/natives/?_0xC19F6C8E7865A6FF)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function NetworkSessionValidateJoin(p0) end
 
     
@@ -11094,8 +11095,8 @@ function NetworkSessionValidateJoin(p0) end
 ---
 --- @hash [0xC19F6C8E7865A6FF](https://docs.fivem.net/natives/?_0xC19F6C8E7865A6FF)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 --- @deprecated
 function N_0xc19f6c8e7865a6ff(p0) end
 
@@ -11105,8 +11106,8 @@ function N_0xc19f6c8e7865a6ff(p0) end
 ---
 --- @hash [0xC19F6C8E7865A6FF](https://docs.fivem.net/natives/?_0xC19F6C8E7865A6FF)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 --- @deprecated
 function NetworkSessionHosted(p0) end
 
@@ -11146,8 +11147,8 @@ function NetworkGetBanData(privilege) end
 ---
 --- @hash [0xC254481A4574CB2F](https://docs.fivem.net/natives/?_0xC254481A4574CB2F)
 --- @param netScene number (int)
---- @return void
---- @overload fun(netScene: number): void
+--- @return nil
+--- @overload fun(netScene: number): nil
 function NetworkStopSynchronisedScene(netScene) end
 
     
@@ -11155,8 +11156,8 @@ function NetworkStopSynchronisedScene(netScene) end
 ---
 --- @hash [0xC2B82527CA77053E](https://docs.fivem.net/natives/?_0xC2B82527CA77053E)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkClearPropertyId() end
 
     
@@ -11165,8 +11166,8 @@ function NetworkClearPropertyId() end
 ---
 --- @hash [0xC2B82527CA77053E](https://docs.fivem.net/natives/?_0xC2B82527CA77053E)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xc2b82527ca77053e() end
 
@@ -11188,8 +11189,8 @@ function N_0xc32ea7a2f6ca7557() end
 --- @param p2 number (int)
 --- @param state number (int)
 --- @param p4 number (int)
---- @return void
---- @overload fun(hash: Hash, p1: number, p2: number, state: number, p4: number): void
+--- @return nil
+--- @overload fun(hash: Hash, p1: number, p2: number, state: number, p4: number): nil
 function NetworkTransitionTrack(hash, p1, p2, state, p4) end
 
     
@@ -11202,8 +11203,8 @@ function NetworkTransitionTrack(hash, p1, p2, state, p4) end
 --- @param p2 number (int)
 --- @param state number (int)
 --- @param p4 number (int)
---- @return void
---- @overload fun(hash: Hash, p1: number, p2: number, state: number, p4: number): void
+--- @return nil
+--- @overload fun(hash: Hash, p1: number, p2: number, state: number, p4: number): nil
 --- @deprecated
 function N_0xc3bfed92026a2aad(hash, p1, p2, state, p4) end
 
@@ -11265,8 +11266,8 @@ function N_0xc434133d9ba52777(p0, p1) end
 ---
 --- @hash [0xC505036A35AFD01B](https://docs.fivem.net/natives/?_0xC505036A35AFD01B)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function NetworkDisableLeaveRemotePedBehind(toggle) end
 
     
@@ -11275,8 +11276,8 @@ function NetworkDisableLeaveRemotePedBehind(toggle) end
 ---
 --- @hash [0xC505036A35AFD01B](https://docs.fivem.net/natives/?_0xC505036A35AFD01B)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0xc505036a35afd01b(toggle) end
 
@@ -11336,8 +11337,8 @@ function N_0xc64ded7ef0d2fe37(p0) end
 ---
 --- @hash [0xC6F8AB8A4189CF3A](https://docs.fivem.net/natives/?_0xC6F8AB8A4189CF3A)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkSessionJoinInvite() end
 
     
@@ -11346,8 +11347,8 @@ function NetworkSessionJoinInvite() end
 ---
 --- @hash [0xC6F8AB8A4189CF3A](https://docs.fivem.net/natives/?_0xC6F8AB8A4189CF3A)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function NetworkIsPlayerAnimationDrawingSynchronized() end
 
@@ -11430,8 +11431,8 @@ function NetworkAccessTunableBoolHashFailVal(tunableContext, tunableName, defaul
 ---
 --- @hash [0xC74C33FCA52856D5](https://docs.fivem.net/natives/?_0xC74C33FCA52856D5)
 --- @param p0 number (int)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function NetworkSessionHostSinglePlayer(p0) end
 
     
@@ -11567,8 +11568,8 @@ function NetworkCanSetWaypoint() end
 ---
 --- @hash [0xC9B43A33D09CADA7](https://docs.fivem.net/natives/?_0xC9B43A33D09CADA7)
 --- @param sceneId number (int)
---- @return void
---- @overload fun(sceneId: number): void
+--- @return nil
+--- @overload fun(sceneId: number): nil
 function NetworkForceLocalUseOfSyncedSceneCamera(sceneId) end
 
     
@@ -11577,8 +11578,8 @@ function NetworkForceLocalUseOfSyncedSceneCamera(sceneId) end
 ---
 --- @hash [0xC9B43A33D09CADA7](https://docs.fivem.net/natives/?_0xC9B43A33D09CADA7)
 --- @param sceneId number (int)
---- @return void
---- @overload fun(sceneId: number): void
+--- @return nil
+--- @overload fun(sceneId: number): nil
 --- @deprecated
 function N_0xc9b43a33d09cada7(sceneId) end
 
@@ -11587,8 +11588,8 @@ function N_0xc9b43a33d09cada7(sceneId) end
 ---
 --- @hash [0xCA2C8073411ECDB6](https://docs.fivem.net/natives/?_0xCA2C8073411ECDB6)
 --- @param networkHandle number (int*)
---- @return void
---- @overload fun(): number
+--- @return nil
+--- @overload fun(): nil, number
 function NetworkSetGamerInvitedToTransition(networkHandle) end
 
     
@@ -11596,8 +11597,8 @@ function NetworkSetGamerInvitedToTransition(networkHandle) end
 ---
 --- @hash [0xCA575C391FEA25CC](https://docs.fivem.net/natives/?_0xCA575C391FEA25CC)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xca575c391fea25cc(p0) end
 
     
@@ -11609,8 +11610,8 @@ function N_0xca575c391fea25cc(p0) end
 ---
 --- @hash [0xCA59CCAE5D01E4CE](https://docs.fivem.net/natives/?_0xCA59CCAE5D01E4CE)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xca59ccae5d01e4ce() end
 
     
@@ -11647,8 +11648,8 @@ function NetworkIsInSession() end
 ---
 --- @hash [0xCAE55F48D3D7875C](https://docs.fivem.net/natives/?_0xCAE55F48D3D7875C)
 --- @param groupId number (int)
---- @return void
---- @overload fun(groupId: number): void
+--- @return nil
+--- @overload fun(groupId: number): nil
 function NetworkSessionAddActiveMatchmakingGroup(groupId) end
 
     
@@ -11657,8 +11658,8 @@ function NetworkSessionAddActiveMatchmakingGroup(groupId) end
 ---
 --- @hash [0xCAE55F48D3D7875C](https://docs.fivem.net/natives/?_0xCAE55F48D3D7875C)
 --- @param groupId number (int)
---- @return void
---- @overload fun(groupId: number): void
+--- @return nil
+--- @overload fun(groupId: number): nil
 --- @deprecated
 function N_0xcae55f48d3d7875c(groupId) end
 
@@ -11733,8 +11734,8 @@ function FilloutPmPlayerList(networkHandle, p1, p2) end
 ---
 --- @hash [0xCBF12D65F95AD686](https://docs.fivem.net/natives/?_0xCBF12D65F95AD686)
 --- @param value number (float)
---- @return void
---- @overload fun(value: number): void
+--- @return nil
+--- @overload fun(value: number): nil
 function NetworkSetTalkerProximity(value) end
 
     
@@ -11804,8 +11805,8 @@ function GetPlayerAdvancedModifierPrivileges(p0) end
 ---
 --- @hash [0xCD71A4ECAB22709E](https://docs.fivem.net/natives/?_0xCD71A4ECAB22709E)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 function NetworkUseLogarithmicBlendingThisFrame(entity) end
 
     
@@ -11814,8 +11815,8 @@ function NetworkUseLogarithmicBlendingThisFrame(entity) end
 ---
 --- @hash [0xCD71A4ECAB22709E](https://docs.fivem.net/natives/?_0xCD71A4ECAB22709E)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 --- @deprecated
 function N_0xcd71a4ecab22709e(entity) end
 
@@ -11940,8 +11941,8 @@ function N_0xcf61d4b4702ee9eb() end
 --- @param netScene number (int)
 --- @param animDict string (char*)
 --- @param animName string (char*)
---- @return void
---- @overload fun(netScene: number, animDict: string, animName: string): void
+--- @return nil
+--- @overload fun(netScene: number, animDict: string, animName: string): nil
 function NetworkAddSynchronisedSceneCamera(netScene, animDict, animName) end
 
     
@@ -11952,8 +11953,8 @@ function NetworkAddSynchronisedSceneCamera(netScene, animDict, animName) end
 --- @param netScene number (int)
 --- @param animDict string (char*)
 --- @param animName string (char*)
---- @return void
---- @overload fun(netScene: number, animDict: string, animName: string): void
+--- @return nil
+--- @overload fun(netScene: number, animDict: string, animName: string): nil
 --- @deprecated
 function N_0xcf8bd3b0bd6d42d7(netScene, animDict, animName) end
 
@@ -11963,8 +11964,8 @@ function N_0xcf8bd3b0bd6d42d7(netScene, animDict, animName) end
 --- @hash [0xCFD115B373C0DF63](https://docs.fivem.net/natives/?_0xCFD115B373C0DF63)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any): any
+--- @return nil
+--- @overload fun(p0: any): nil, any
 function UgcGetContentUpdatedDate(p0, p1) end
 
     
@@ -11974,8 +11975,8 @@ function UgcGetContentUpdatedDate(p0, p1) end
 --- @hash [0xCFD115B373C0DF63](https://docs.fivem.net/natives/?_0xCFD115B373C0DF63)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any): any
+--- @return nil
+--- @overload fun(p0: any): nil, any
 --- @deprecated
 function N_0xcfd115b373c0df63(p0, p1) end
 
@@ -11984,8 +11985,8 @@ function N_0xcfd115b373c0df63(p0, p1) end
 ---
 --- @hash [0xCFEB46DCD7D8D5EB](https://docs.fivem.net/natives/?_0xCFEB46DCD7D8D5EB)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0xcfeb46dcd7d8d5eb(p0) end
 
     
@@ -11993,8 +11994,8 @@ function N_0xcfeb46dcd7d8d5eb(p0) end
 ---
 --- @hash [0xCFEB8AF24FC1D0BB](https://docs.fivem.net/natives/?_0xCFEB8AF24FC1D0BB)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function NetworkBlockJoinQueueInvites(toggle) end
 
     
@@ -12003,8 +12004,8 @@ function NetworkBlockJoinQueueInvites(toggle) end
 ---
 --- @hash [0xCFEB8AF24FC1D0BB](https://docs.fivem.net/natives/?_0xCFEB8AF24FC1D0BB)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0xcfeb8af24fc1d0bb(toggle) end
 
@@ -12014,8 +12015,8 @@ function N_0xcfeb8af24fc1d0bb(toggle) end
 ---
 --- @hash [0xCFEB8AF24FC1D0BB](https://docs.fivem.net/natives/?_0xCFEB8AF24FC1D0BB)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function NetworkBlockInvites_2(toggle) end
 
@@ -12064,8 +12065,8 @@ function N_0xd0a484cb2f829fbe() end
 ---
 --- @hash [0xD0AFAFF5A51D72F7](https://docs.fivem.net/natives/?_0xD0AFAFF5A51D72F7)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkEndTutorialSession() end
 
     
@@ -12074,8 +12075,8 @@ function NetworkEndTutorialSession() end
 --- @hash [0xD1065D68947E7B6E](https://docs.fivem.net/natives/?_0xD1065D68947E7B6E)
 --- @param p0 boolean
 --- @param p1 boolean
---- @return void
---- @overload fun(p0: boolean, p1: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean, p1: boolean): nil
 function SetLocalPlayerVisibleInCutscene(p0, p1) end
 
     
@@ -12205,8 +12206,8 @@ function N_0xd414be129bb81b32(player) end
 --- @hash [0xD45B1FFCCD52FF19](https://docs.fivem.net/natives/?_0xD45B1FFCCD52FF19)
 --- @param netID number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(netID: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(netID: number, toggle: boolean): nil
 function ActivateDamageTrackerOnNetworkId(netID, toggle) end
 
     
@@ -12216,8 +12217,8 @@ function ActivateDamageTrackerOnNetworkId(netID, toggle) end
 --- @param friendIndex number (int)
 --- @param networkHandle number (int*)
 --- @param bufferSize number (int)
---- @return void
---- @overload fun(friendIndex: number, bufferSize: number): number
+--- @return nil
+--- @overload fun(friendIndex: number, bufferSize: number): nil, number
 function NetworkHandleFromFriend(friendIndex, networkHandle, bufferSize) end
 
     
@@ -12267,8 +12268,8 @@ function N_0xd5a4b59980401588(p0, p1) end
 ---
 --- @hash [0xD5B4883AC32F24C3](https://docs.fivem.net/natives/?_0xD5B4883AC32F24C3)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function NetworkSetTeamOnlyChat(toggle) end
 
     
@@ -12336,8 +12337,8 @@ function NetworkSessionIsPlayerVotedToKick(player) end
 --- @hash [0xD6D7478CA62B8D41](https://docs.fivem.net/natives/?_0xD6D7478CA62B8D41)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0xd6d7478ca62b8d41(p0, p1) end
 
     
@@ -12345,8 +12346,8 @@ function N_0xd6d7478ca62b8d41(p0, p1) end
 ---
 --- @hash [0xD7B6C73CAD419BCF](https://docs.fivem.net/natives/?_0xD7B6C73CAD419BCF)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0xd7b6c73cad419bcf(p0) end
 
     
@@ -12387,8 +12388,8 @@ function IsSphereVisibleToAnotherMachine(p0, p1, p2, p3) end
 --- @hash [0xD830567D88A1E873](https://docs.fivem.net/natives/?_0xD830567D88A1E873)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 function NetworkSetEntityCanBlend(entity, toggle) end
 
     
@@ -12416,8 +12417,8 @@ function NetToObj(netHandle) end
 ---
 --- @hash [0xD972DF67326F966E](https://docs.fivem.net/natives/?_0xD972DF67326F966E)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkClearClockTimeOverride() end
 
     
@@ -12426,8 +12427,8 @@ function NetworkClearClockTimeOverride() end
 ---
 --- @hash [0xD972DF67326F966E](https://docs.fivem.net/natives/?_0xD972DF67326F966E)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xd972df67326f966e() end
 
@@ -12463,8 +12464,8 @@ function N_0xdb663cc9ff3407a9(player) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number): nil
 function NetworkApplyVoiceProximityOverride(x, y, z) end
 
     
@@ -12475,8 +12476,8 @@ function NetworkApplyVoiceProximityOverride(x, y, z) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number): nil
 --- @deprecated
 function IsNetworkVehicleBeenDamagedByAnyObject(x, y, z) end
 
@@ -12523,8 +12524,8 @@ function N_0xdc48473142545431() end
 --- @param userId string (char*)
 --- @param networkHandle number (int*)
 --- @param bufferSize number (int)
---- @return void
---- @overload fun(bufferSize: number): string): number
+--- @return nil
+--- @overload fun(bufferSize: number): nil, string): nil, number
 function NetworkHandleFromUserId(userId, networkHandle, bufferSize) end
 
     
@@ -12545,8 +12546,8 @@ function NetworkIsFindingGamers() end
 --- @hash [0xDDF73E2B1FEC5AB4](https://docs.fivem.net/natives/?_0xDDF73E2B1FEC5AB4)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function NetworkOverrideReceiveRestrictions(player, toggle) end
 
     
@@ -12559,8 +12560,8 @@ function NetworkOverrideReceiveRestrictions(player, toggle) end
 --- @hash [0xDDF73E2B1FEC5AB4](https://docs.fivem.net/natives/?_0xDDF73E2B1FEC5AB4)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 --- @deprecated
 function N_0xddf73e2b1fec5ab4(player, toggle) end
 
@@ -12600,8 +12601,8 @@ function SubtractAFromBAndCheckIfNegative(timeA, timeB) end
 --- @param entity Entity
 --- @param normal boolean
 --- @param slow boolean
---- @return void
---- @overload fun(entity: Entity, normal: boolean, slow: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, normal: boolean, slow: boolean): nil
 function NetworkFadeOutEntity(entity, normal, slow) end
 
     
@@ -12684,8 +12685,8 @@ function N_0xdffa5be8381c3314() end
 --- @param p0 any
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: boolean): nil
 function SetEntityVisibleInCutscene(p0, p1, p2) end
 
     
@@ -12693,8 +12694,8 @@ function SetEntityVisibleInCutscene(p0, p1, p2) end
 ---
 --- @hash [0xE036A705F989E049](https://docs.fivem.net/natives/?_0xE036A705F989E049)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkClearVoiceChannel() end
 
     
@@ -12703,8 +12704,8 @@ function NetworkClearVoiceChannel() end
 ---
 --- @hash [0xE036A705F989E049](https://docs.fivem.net/natives/?_0xE036A705F989E049)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xe036a705f989e049() end
 
@@ -12714,8 +12715,8 @@ function N_0xe036a705f989e049() end
 --- @hash [0xE05E81A888FA63C8](https://docs.fivem.net/natives/?_0xE05E81A888FA63C8)
 --- @param netId number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(netId: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(netId: number, toggle: boolean): nil
 function SetNetworkIdExistsOnAllMachines(netId, toggle) end
 
     
@@ -12762,8 +12763,8 @@ function NetworkGetFriendName(friendIndex) end
 --- end
 --- @hash [0xE135A9FF3F5D05D8](https://docs.fivem.net/natives/?_0xE135A9FF3F5D05D8)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 function SetEntityLocallyInvisible(entity) end
 
     
@@ -12859,8 +12860,8 @@ function NetworkGetRandomIntInRange(rangeStart, rangeEnd) end
 --- @param p4 any
 --- @param p5 any
 --- @param p6 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any): nil
 function N_0xe42d626eec94e5d9(p0, p1, p2, p3, p4, p5, p6) end
 
     
@@ -12957,8 +12958,8 @@ function N_0xe5608ca7bc163a5f(tunableContext, tunableName, value) end
 ---
 --- @hash [0xE57397B4A3429DD0](https://docs.fivem.net/natives/?_0xE57397B4A3429DD0)
 --- @param networkHandle number (int*)
---- @return void
---- @overload fun(): number
+--- @return nil
+--- @overload fun(): nil, number
 function NetworkSessionGetInviter(networkHandle) end
 
     
@@ -12966,8 +12967,8 @@ function NetworkSessionGetInviter(networkHandle) end
 ---
 --- @hash [0xE5F773C1A1D9D168](https://docs.fivem.net/natives/?_0xE5F773C1A1D9D168)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function SetLocalPlayerInvisibleLocally(p0) end
 
     
@@ -12996,8 +12997,8 @@ function N_0xe64a3ca08dfa37a9(areaHandle) end
 --- @hash [0xE66C690248F11150](https://docs.fivem.net/natives/?_0xE66C690248F11150)
 --- @param ped Ped
 --- @param p1 number (int)
---- @return void
---- @overload fun(ped: Ped, p1: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: number): nil
 function NetworkApplyPedScarData(ped, p1) end
 
     
@@ -13007,8 +13008,8 @@ function NetworkApplyPedScarData(ped, p1) end
 --- @hash [0xE66C690248F11150](https://docs.fivem.net/natives/?_0xE66C690248F11150)
 --- @param ped Ped
 --- @param p1 number (int)
---- @return void
---- @overload fun(ped: Ped, p1: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: number): nil
 --- @deprecated
 function N_0xe66c690248f11150(ped, p1) end
 
@@ -13018,8 +13019,8 @@ function N_0xe66c690248f11150(ped, p1) end
 --- @hash [0xE6717E652B8C8D8A](https://docs.fivem.net/natives/?_0xE6717E652B8C8D8A)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0xe6717e652b8c8d8a(p0, p1) end
 
     
@@ -13030,8 +13031,8 @@ function N_0xe6717e652b8c8d8a(p0, p1) end
 --- @param hours number (int)
 --- @param minutes number (int)
 --- @param seconds number (int)
---- @return void
---- @overload fun(hours: number, minutes: number, seconds: number): void
+--- @return nil
+--- @overload fun(hours: number, minutes: number, seconds: number): nil
 function NetworkOverrideClockTime(hours, minutes, seconds) end
 
     
@@ -13052,8 +13053,8 @@ function IsPlayerInCutscene(player) end
 --- @hash [0xE86051786B66CD8E](https://docs.fivem.net/natives/?_0xE86051786B66CD8E)
 --- @param networkHandle number (int*)
 --- @param bufferSize number (int)
---- @return void
---- @overload fun(bufferSize: number): number
+--- @return nil
+--- @overload fun(bufferSize: number): nil, number
 function NetworkGetLocalHandle(networkHandle, bufferSize) end
 
     
@@ -13079,8 +13080,8 @@ function NetworkIsGamerBlockedByMe(networkHandle) end
 ---
 --- @hash [0xE9B99B6853181409](https://docs.fivem.net/natives/?_0xE9B99B6853181409)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function UgcCancelQuery() end
 
     
@@ -13089,8 +13090,8 @@ function UgcCancelQuery() end
 ---
 --- @hash [0xE9B99B6853181409](https://docs.fivem.net/natives/?_0xE9B99B6853181409)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xe9b99b6853181409() end
 
@@ -13160,8 +13161,8 @@ function NetworkAccessTunableBoolHash(tunableContext, tunableName) end
 --- @param heading number (float)
 --- @param unk boolean
 --- @param changetime boolean
---- @return void
---- @overload fun(x: number, y: number, z: number, heading: number, unk: boolean, changetime: boolean): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, heading: number, unk: boolean, changetime: boolean): nil
 function NetworkResurrectLocalPlayer(x, y, z, heading, unk, changetime) end
 
     
@@ -13172,8 +13173,8 @@ function NetworkResurrectLocalPlayer(x, y, z, heading, unk, changetime) end
 --- @hash [0xEA8C0DDB10E2822A](https://docs.fivem.net/natives/?_0xEA8C0DDB10E2822A)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0xea8c0ddb10e2822a(p0, p1) end
 
     
@@ -13185,8 +13186,8 @@ function N_0xea8c0ddb10e2822a(p0, p1) end
 ---
 --- @hash [0xEAA572036990CD1B](https://docs.fivem.net/natives/?_0xEAA572036990CD1B)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkBailTransition() end
 
     
@@ -13205,8 +13206,8 @@ function N_0xebcab9e5048434f4() end
 --- @param p0 number (int)
 --- @param string string (char*)
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: number, string: string, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: number, string: string, p2: boolean): nil
 function NetworkApplyTransitionParameterString(p0, string, p2) end
 
     
@@ -13217,8 +13218,8 @@ function NetworkApplyTransitionParameterString(p0, string, p2) end
 --- @param p0 number (int)
 --- @param string string (char*)
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: number, string: string, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: number, string: string, p2: boolean): nil
 --- @deprecated
 function N_0xebefc2e77084f599(p0, string, p2) end
 
@@ -13227,8 +13228,8 @@ function N_0xebefc2e77084f599(p0, string, p2) end
 ---
 --- @hash [0xEBF8284D8CADEB53](https://docs.fivem.net/natives/?_0xEBF8284D8CADEB53)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xebf8284d8cadeb53() end
 
     
@@ -13249,8 +13250,8 @@ function N_0xebfa8d50addc54c4(p0) end
 --- @hash [0xEC51713AB6EC36E8](https://docs.fivem.net/natives/?_0xEC51713AB6EC36E8)
 --- @param netId number (int)
 --- @param time number (int)
---- @return void
---- @overload fun(netId: number, time: number): void
+--- @return nil
+--- @overload fun(netId: number, time: number): nil
 function SetNetworkVehicleRespotTimer(netId, time) end
 
     
@@ -13339,8 +13340,8 @@ function NetworkClanPlayerGetDesc(bufferSize) end
 --- @hash [0xEEEDA5E6D7080987](https://docs.fivem.net/natives/?_0xEEEDA5E6D7080987)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function NetworkChangeTransitionSlots(p0, p1) end
 
     
@@ -13350,8 +13351,8 @@ function NetworkChangeTransitionSlots(p0, p1) end
 --- @hash [0xEEEDA5E6D7080987](https://docs.fivem.net/natives/?_0xEEEDA5E6D7080987)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 --- @deprecated
 function N_0xeeeda5e6d7080987(p0, p1) end
 
@@ -13380,8 +13381,8 @@ function N_0xef0912ddf7c4cb4b() end
 ---
 --- @hash [0xEF26739BCD9907D5](https://docs.fivem.net/natives/?_0xEF26739BCD9907D5)
 --- @param p0 any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 function NetworkSetTransitionCreatorHandle(p0) end
 
     
@@ -13389,8 +13390,8 @@ function NetworkSetTransitionCreatorHandle(p0) end
 ---
 --- @hash [0xEF6212C2EFEF1A23](https://docs.fivem.net/natives/?_0xEF6212C2EFEF1A23)
 --- @param channel number (int)
---- @return void
---- @overload fun(channel: number): void
+--- @return nil
+--- @overload fun(channel: number): nil
 function NetworkSetVoiceChannel(channel) end
 
     
@@ -13438,8 +13439,8 @@ function N_0xf0210268db0974b1(p0) end
 ---
 --- @hash [0xF03755696450470C](https://docs.fivem.net/natives/?_0xF03755696450470C)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkClearVoiceProximityOverride() end
 
     
@@ -13448,8 +13449,8 @@ function NetworkClearVoiceProximityOverride() end
 ---
 --- @hash [0xF03755696450470C](https://docs.fivem.net/natives/?_0xF03755696450470C)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xf03755696450470c() end
 
@@ -13460,8 +13461,8 @@ function N_0xf03755696450470c() end
 ---
 --- @hash [0xF083835B70BA9BFE](https://docs.fivem.net/natives/?_0xF083835B70BA9BFE)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xf083835b70ba9bfe() end
 
     
@@ -13471,8 +13472,8 @@ function N_0xf083835b70ba9bfe() end
 ---
 --- @hash [0xF0BC9BCD24A511D5](https://docs.fivem.net/natives/?_0xF0BC9BCD24A511D5)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function NetworkPedForceGameStateUpdate(ped) end
 
     
@@ -13483,8 +13484,8 @@ function NetworkPedForceGameStateUpdate(ped) end
 ---
 --- @hash [0xF0BC9BCD24A511D5](https://docs.fivem.net/natives/?_0xF0BC9BCD24A511D5)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function N_0xf0bc9bcd24a511d5(ped) end
 
@@ -13517,8 +13518,8 @@ function N_0xf12e6cd06c73d69e() end
 ---
 --- @hash [0xF1B84178F8674195](https://docs.fivem.net/natives/?_0xF1B84178F8674195)
 --- @param seed number (int)
---- @return void
---- @overload fun(seed: number): void
+--- @return nil
+--- @overload fun(seed: number): nil
 function NetworkSeedRandomNumberGenerator(seed) end
 
     
@@ -13527,8 +13528,8 @@ function NetworkSeedRandomNumberGenerator(seed) end
 ---
 --- @hash [0xF1B84178F8674195](https://docs.fivem.net/natives/?_0xF1B84178F8674195)
 --- @param seed number (int)
---- @return void
---- @overload fun(seed: number): void
+--- @return nil
+--- @overload fun(seed: number): nil
 --- @deprecated
 function N_0xf1b84178f8674195(seed) end
 
@@ -13545,8 +13546,8 @@ function N_0xf1b84178f8674195(seed) end
 --- @hash [0xF1CA12B18AEF5298](https://docs.fivem.net/natives/?_0xF1CA12B18AEF5298)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 function NetworkSetEntityInvisibleToNetwork(entity, toggle) end
 
     
@@ -13563,8 +13564,8 @@ function NetworkSetEntityInvisibleToNetwork(entity, toggle) end
 --- @hash [0xF1CA12B18AEF5298](https://docs.fivem.net/natives/?_0xF1CA12B18AEF5298)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 --- @deprecated
 function N_0xf1ca12b18aef5298(entity, toggle) end
 
@@ -13582,8 +13583,8 @@ function N_0xf1ca12b18aef5298(entity, toggle) end
 --- @hash [0xF1CA12B18AEF5298](https://docs.fivem.net/natives/?_0xF1CA12B18AEF5298)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 --- @deprecated
 function NetworkSetEntityVisibleToNetwork(entity, toggle) end
 
@@ -13592,8 +13593,8 @@ function NetworkSetEntityVisibleToNetwork(entity, toggle) end
 ---
 --- @hash [0xF1EEA2DDA9FFA69D](https://docs.fivem.net/natives/?_0xF1EEA2DDA9FFA69D)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function NetworkSessionSetMatchmakingMentalState(p0) end
 
     
@@ -13602,8 +13603,8 @@ function NetworkSessionSetMatchmakingMentalState(p0) end
 ---
 --- @hash [0xF1EEA2DDA9FFA69D](https://docs.fivem.net/natives/?_0xF1EEA2DDA9FFA69D)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 --- @deprecated
 function N_0xf1eea2dda9ffa69d(p0) end
 
@@ -13618,8 +13619,8 @@ function N_0xf1eea2dda9ffa69d(p0) end
 --- @param speed number (float)
 --- @param speedMulitiplier number (float)
 --- @param flag number (int)
---- @return void
---- @overload fun(entity: Entity, netScene: number, animDict: string, animName: string, speed: number, speedMulitiplier: number, flag: number): void
+--- @return nil
+--- @overload fun(entity: Entity, netScene: number, animDict: string, animName: string, speed: number, speedMulitiplier: number, flag: number): nil
 function NetworkAddEntityToSynchronisedScene(entity, netScene, animDict, animName, speed, speedMulitiplier, flag) end
 
     
@@ -13698,8 +13699,8 @@ function NetworkIsSessionBusy() end
 --- @param clanDesc number (int*)
 --- @param bufferSize number (int)
 --- @param formattedTag string (char*)
---- @return void
---- @overload fun(bufferSize: number): number): string
+--- @return nil
+--- @overload fun(bufferSize: number): nil, number): nil, string
 function NetworkClanGetUiFormattedTag(clanDesc, bufferSize, formattedTag) end
 
     
@@ -13712,8 +13713,8 @@ function NetworkClanGetUiFormattedTag(clanDesc, bufferSize, formattedTag) end
 --- @param clanDesc number (int*)
 --- @param bufferSize number (int)
 --- @param formattedTag string (char*)
---- @return void
---- @overload fun(bufferSize: number): number): string
+--- @return nil
+--- @overload fun(bufferSize: number): nil, number): nil, string
 --- @deprecated
 function N_0xf45352426ff3a4f0(clanDesc, bufferSize, formattedTag) end
 
@@ -13722,8 +13723,8 @@ function N_0xf45352426ff3a4f0(clanDesc, bufferSize, formattedTag) end
 ---
 --- @hash [0xF46A1E03E8755980](https://docs.fivem.net/natives/?_0xF46A1E03E8755980)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function NetworkSetNoSpectatorChat(toggle) end
 
     
@@ -13732,8 +13733,8 @@ function NetworkSetNoSpectatorChat(toggle) end
 ---
 --- @hash [0xF46A1E03E8755980](https://docs.fivem.net/natives/?_0xF46A1E03E8755980)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0xf46a1e03e8755980(toggle) end
 
@@ -13742,8 +13743,8 @@ function N_0xf46a1e03e8755980(toggle) end
 ---
 --- @hash [0xF49ABC20D8552257](https://docs.fivem.net/natives/?_0xF49ABC20D8552257)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xf49abc20d8552257(p0) end
 
     
@@ -13797,8 +13798,8 @@ function AreIntegersEqual(timeA, timeB) end
 ---
 --- @hash [0xF6F4383B7C92F11A](https://docs.fivem.net/natives/?_0xF6F4383B7C92F11A)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xf6f4383b7c92f11a(p0) end
 
     
@@ -13832,8 +13833,8 @@ function N_0xf7b2cfde5c9f700d(p0, p1, p2, p3) end
 ---
 --- @hash [0xF808475FA571D823](https://docs.fivem.net/natives/?_0xF808475FA571D823)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function NetworkSetFriendlyFireOption(toggle) end
 
     
@@ -13841,8 +13842,8 @@ function NetworkSetFriendlyFireOption(toggle) end
 ---
 --- @hash [0xF814FEC6A19FD6E0](https://docs.fivem.net/natives/?_0xF814FEC6A19FD6E0)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xf814fec6a19fd6e0() end
 
     
@@ -13850,8 +13851,8 @@ function N_0xf814fec6a19fd6e0() end
 ---
 --- @hash [0xF98DDE0A8ED09323](https://docs.fivem.net/natives/?_0xF98DDE0A8ED09323)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function UgcSetQueryDataFromOffline(p0) end
 
     
@@ -13860,8 +13861,8 @@ function UgcSetQueryDataFromOffline(p0) end
 ---
 --- @hash [0xF98DDE0A8ED09323](https://docs.fivem.net/natives/?_0xF98DDE0A8ED09323)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 --- @deprecated
 function N_0xf98dde0a8ed09323(p0) end
 
@@ -13912,8 +13913,8 @@ function N_0xf9e1ccae8ba4c281(p0, p1) end
 ---
 --- @hash [0xFA2888E3833C8E96](https://docs.fivem.net/natives/?_0xFA2888E3833C8E96)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xfa2888e3833c8e96() end
 
     
@@ -13923,8 +13924,8 @@ function N_0xfa2888e3833c8e96() end
 ---
 --- @hash [0xFA8904DC5F304220](https://docs.fivem.net/natives/?_0xFA8904DC5F304220)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function NetworkSessionKickPlayer(player) end
 
     
@@ -13942,8 +13943,8 @@ function NetworkAcceptPresenceInvite(p0) end
 --- @hash [0xFAA10F1FAFB11AF2](https://docs.fivem.net/natives/?_0xFAA10F1FAFB11AF2)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function SetPlayerVisibleLocally(player, toggle) end
 
     
@@ -13953,8 +13954,8 @@ function SetPlayerVisibleLocally(player, toggle) end
 ---
 --- @hash [0xFAC18E7356BD3210](https://docs.fivem.net/natives/?_0xFAC18E7356BD3210)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xfac18e7356bd3210() end
 
     
@@ -13964,8 +13965,8 @@ function N_0xfac18e7356bd3210() end
 --- @param p0 Hash
 --- @param p1 number (int)
 --- @param p2 Hash
---- @return void
---- @overload fun(p0: Hash, p1: number, p2: Hash): void
+--- @return nil
+--- @overload fun(p0: Hash, p1: number, p2: Hash): nil
 function N_0xfae628f1e9adb239(p0, p1, p2) end
 
     
@@ -14005,8 +14006,8 @@ function N_0xfb1f9381e80fa13f(p0, p1) end
 ---
 --- @hash [0xFB3272229A82C759](https://docs.fivem.net/natives/?_0xFB3272229A82C759)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkClearTransitionCreatorHandle() end
 
     
@@ -14015,8 +14016,8 @@ function NetworkClearTransitionCreatorHandle() end
 --- @hash [0xFB680D403909DC70](https://docs.fivem.net/natives/?_0xFB680D403909DC70)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0xfb680d403909dc70(p0, p1) end
 
     
@@ -14024,8 +14025,8 @@ function N_0xfb680d403909dc70(p0, p1) end
 ---
 --- @hash [0xFB8F2A6F3DF08CBE](https://docs.fivem.net/natives/?_0xFB8F2A6F3DF08CBE)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkCancelRespawnSearch() end
 
     
@@ -14034,8 +14035,8 @@ function NetworkCancelRespawnSearch() end
 ---
 --- @hash [0xFB8F2A6F3DF08CBE](https://docs.fivem.net/natives/?_0xFB8F2A6F3DF08CBE)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xfb8f2a6f3df08cbe() end
 
@@ -14084,8 +14085,8 @@ function N_0xfbcfa2ea2e206890() end
 ---
 --- @hash [0xFC18DB55AE19E046](https://docs.fivem.net/natives/?_0xFC18DB55AE19E046)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function NetworkSetInFreeCamMode(toggle) end
 
     
@@ -14094,8 +14095,8 @@ function NetworkSetInFreeCamMode(toggle) end
 ---
 --- @hash [0xFC18DB55AE19E046](https://docs.fivem.net/natives/?_0xFC18DB55AE19E046)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0xfc18db55ae19e046(toggle) end
 
@@ -14145,8 +14146,8 @@ function NetworkGamertagFromHandleSucceeded() end
 ---
 --- @hash [0xFD75DABC0957BF33](https://docs.fivem.net/natives/?_0xFD75DABC0957BF33)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0xfd75dabc0957bf33(p0) end
 
     

@@ -1,11 +1,12 @@
+--- @meta
 
 --- RemoveFromItemset
 ---
 --- @hash [0x25E68244B0177686](https://docs.fivem.net/natives/?_0x25E68244B0177686)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function RemoveFromItemset(p0, p1) end
 
     
@@ -32,8 +33,8 @@ function CreateItemset(distri) end
 ---
 --- @hash [0x41BC0D722FC04221](https://docs.fivem.net/natives/?_0x41BC0D722FC04221)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function CleanItemset(p0) end
 
     
@@ -69,8 +70,8 @@ function GetItemsetSize(x) end
 ---
 --- @hash [0xDE18220B1C183EDA](https://docs.fivem.net/natives/?_0xDE18220B1C183EDA)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function DestroyItemset(p0) end
 
     

@@ -1,3 +1,4 @@
+--- @meta
 
 --- GetNameOfThread
 ---
@@ -23,8 +24,8 @@ function GetThreadName(threadId) end
 ---
 --- @hash [0x078EBE9809CCD637](https://docs.fivem.net/natives/?_0x078EBE9809CCD637)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ShutdownLoadingScreen() end
 
     
@@ -50,8 +51,8 @@ function N_0x0f6f1ebbc4e1d5e6(scriptIndex, p1) end
 ---
 --- @hash [0x107E5CC7CA942BC1](https://docs.fivem.net/natives/?_0x107E5CC7CA942BC1)
 --- @param contextHash Hash
---- @return void
---- @overload fun(contextHash: Hash): void
+--- @return nil
+--- @overload fun(contextHash: Hash): nil
 function BgEndContextHash(contextHash) end
 
     
@@ -59,8 +60,8 @@ function BgEndContextHash(contextHash) end
 ---
 --- @hash [0x1090044AD1DA76FA](https://docs.fivem.net/natives/?_0x1090044AD1DA76FA)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function TerminateThisThread() end
 
     
@@ -221,8 +222,8 @@ function IsThreadActive(threadId) end
 ---
 --- @hash [0x5262CC1995D07E09](https://docs.fivem.net/natives/?_0x5262CC1995D07E09)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetNoLoadingScreen(toggle) end
 
     
@@ -237,8 +238,8 @@ function SetNoLoadingScreen(toggle) end
 --- @param eventData number (int*)
 --- @param eventDataSize number (int)
 --- @param playerBits number (int)
---- @return void
---- @overload fun(eventGroup: number, eventDataSize: number, playerBits: number): number
+--- @return nil
+--- @overload fun(eventGroup: number, eventDataSize: number, playerBits: number): nil, number
 function TriggerScriptEvent(eventGroup, eventData, eventDataSize, playerBits) end
 
     
@@ -277,8 +278,8 @@ function GetNumberOfEvents(eventGroup) end
 ---
 --- @hash [0x6EB5F71AA68F2E8E](https://docs.fivem.net/natives/?_0x6EB5F71AA68F2E8E)
 --- @param scriptName string (char*)
---- @return void
---- @overload fun(scriptName: string): void
+--- @return nil
+--- @overload fun(scriptName: string): nil
 function RequestScript(scriptName) end
 
     
@@ -290,8 +291,8 @@ function RequestScript(scriptName) end
 ---
 --- @hash [0x75B18E49607874C7](https://docs.fivem.net/natives/?_0x75B18E49607874C7)
 --- @param contextHash Hash
---- @return void
---- @overload fun(contextHash: Hash): void
+--- @return nil
+--- @overload fun(contextHash: Hash): nil
 function BgStartContextHash(contextHash) end
 
     
@@ -305,8 +306,8 @@ function BgStartContextHash(contextHash) end
 ---
 --- @hash [0x760910B49D2B98EA](https://docs.fivem.net/natives/?_0x760910B49D2B98EA)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x760910b49d2b98ea() end
 
     
@@ -378,8 +379,8 @@ function GetEventExists(eventGroup, eventIndex) end
 ---
 --- @hash [0x9D5A25BADB742ACD](https://docs.fivem.net/natives/?_0x9D5A25BADB742ACD)
 --- @param contextName string (char*)
---- @return void
---- @overload fun(contextName: string): void
+--- @return nil
+--- @overload fun(contextName: string): nil
 function BgStartContext(contextName) end
 
     
@@ -392,8 +393,8 @@ function BgStartContext(contextName) end
 --- @param eventData number (int*)
 --- @param eventDataSize number (int)
 --- @param playerBits number (int)
---- @return void
---- @overload fun(eventGroup: number, eventDataSize: number, playerBits: number): number
+--- @return nil
+--- @overload fun(eventGroup: number, eventDataSize: number, playerBits: number): nil, number
 function TriggerScriptEvent_2(eventGroup, eventData, eventDataSize, playerBits) end
 
     
@@ -407,8 +408,8 @@ function TriggerScriptEvent_2(eventGroup, eventData, eventDataSize, playerBits) 
 --- @param eventData number (int*)
 --- @param eventDataSize number (int)
 --- @param playerBits number (int)
---- @return void
---- @overload fun(eventGroup: number, eventDataSize: number, playerBits: number): number
+--- @return nil
+--- @overload fun(eventGroup: number, eventDataSize: number, playerBits: number): nil, number
 --- @deprecated
 function N_0xa40cc53df8e50837(eventGroup, eventData, eventDataSize, playerBits) end
 
@@ -417,8 +418,8 @@ function N_0xa40cc53df8e50837(eventGroup, eventData, eventDataSize, playerBits) 
 ---
 --- @hash [0xB1577667C3708F9B](https://docs.fivem.net/natives/?_0xB1577667C3708F9B)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function LockLoadingScreenButtons() end
 
     
@@ -427,8 +428,8 @@ function LockLoadingScreenButtons() end
 ---
 --- @hash [0xB1577667C3708F9B](https://docs.fivem.net/natives/?_0xB1577667C3708F9B)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xb1577667c3708f9b() end
 
@@ -446,8 +447,8 @@ function GetIdOfThisThread() end
 ---
 --- @hash [0xC5BC038960E9DB27](https://docs.fivem.net/natives/?_0xC5BC038960E9DB27)
 --- @param scriptHash Hash
---- @return void
---- @overload fun(scriptHash: Hash): void
+--- @return nil
+--- @overload fun(scriptHash: Hash): nil
 function SetScriptWithNameHashAsNoLongerNeeded(scriptHash) end
 
     
@@ -456,8 +457,8 @@ function SetScriptWithNameHashAsNoLongerNeeded(scriptHash) end
 ---
 --- @hash [0xC5BC038960E9DB27](https://docs.fivem.net/natives/?_0xC5BC038960E9DB27)
 --- @param scriptHash Hash
---- @return void
---- @overload fun(scriptHash: Hash): void
+--- @return nil
+--- @overload fun(scriptHash: Hash): nil
 --- @deprecated
 function SetStreamedScriptAsNoLongerNeeded(scriptHash) end
 
@@ -466,8 +467,8 @@ function SetStreamedScriptAsNoLongerNeeded(scriptHash) end
 ---
 --- @hash [0xC8B189ED9138BCD4](https://docs.fivem.net/natives/?_0xC8B189ED9138BCD4)
 --- @param threadId number (int)
---- @return void
---- @overload fun(threadId: number): void
+--- @return nil
+--- @overload fun(threadId: number): nil
 function TerminateThread(threadId) end
 
     
@@ -475,8 +476,8 @@ function TerminateThread(threadId) end
 ---
 --- @hash [0xC90D2DCACD56184C](https://docs.fivem.net/natives/?_0xC90D2DCACD56184C)
 --- @param scriptName string (char*)
---- @return void
---- @overload fun(scriptName: string): void
+--- @return nil
+--- @overload fun(scriptName: string): nil
 function SetScriptAsNoLongerNeeded(scriptName) end
 
     
@@ -486,8 +487,8 @@ function SetScriptAsNoLongerNeeded(scriptName) end
 ---
 --- @hash [0xD62A67D26D9653E6](https://docs.fivem.net/natives/?_0xD62A67D26D9653E6)
 --- @param scriptHash Hash
---- @return void
---- @overload fun(scriptHash: Hash): void
+--- @return nil
+--- @overload fun(scriptHash: Hash): nil
 function RequestScriptWithNameHash(scriptHash) end
 
     
@@ -498,8 +499,8 @@ function RequestScriptWithNameHash(scriptHash) end
 ---
 --- @hash [0xD62A67D26D9653E6](https://docs.fivem.net/natives/?_0xD62A67D26D9653E6)
 --- @param scriptHash Hash
---- @return void
---- @overload fun(scriptHash: Hash): void
+--- @return nil
+--- @overload fun(scriptHash: Hash): nil
 --- @deprecated
 function RequestStreamedScript(scriptHash) end
 
@@ -521,8 +522,8 @@ function GetEventAtIndex(eventGroup, eventIndex) end
 ---
 --- @hash [0xDADFADA5A20143A8](https://docs.fivem.net/natives/?_0xDADFADA5A20143A8)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ScriptThreadIteratorReset() end
 
     
@@ -532,8 +533,8 @@ function ScriptThreadIteratorReset() end
 ---
 --- @hash [0xDADFADA5A20143A8](https://docs.fivem.net/natives/?_0xDADFADA5A20143A8)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xdadfada5a20143a8() end
 
@@ -544,8 +545,8 @@ function N_0xdadfada5a20143a8() end
 ---
 --- @hash [0xDADFADA5A20143A8](https://docs.fivem.net/natives/?_0xDADFADA5A20143A8)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function BeginEnumeratingThreads() end
 
@@ -558,8 +559,8 @@ function BeginEnumeratingThreads() end
 ---
 --- @hash [0xDC2BACD920D0A0DD](https://docs.fivem.net/natives/?_0xDC2BACD920D0A0DD)
 --- @param contextName string (char*)
---- @return void
---- @overload fun(contextName: string): void
+--- @return nil
+--- @overload fun(contextName: string): nil
 function BgEndContext(contextName) end
 
     

@@ -1,3 +1,4 @@
+--- @meta
 
 --- ```
 --- Returns number of possible values of the forcedPropIndex argument of GET_FORCED_PROP.
@@ -127,8 +128,8 @@ function GetPropFromOutfit(outfit, slot, outComponentVariant) end
 ---
 --- @hash [0x1E8C308FD312C036](https://docs.fivem.net/natives/?_0x1E8C308FD312C036)
 --- @param outComponent number (int*)
---- @return void
---- @overload fun(): number
+--- @return nil
+--- @overload fun(): nil, number
 function InitShopPedComponent(outComponent) end
 
     
@@ -137,8 +138,8 @@ function InitShopPedComponent(outComponent) end
 --- @hash [0x249E310B2D920699](https://docs.fivem.net/natives/?_0x249E310B2D920699)
 --- @param componentId number (int)
 --- @param outComponent number (int*)
---- @return void
---- @overload fun(componentId: number): number
+--- @return nil
+--- @overload fun(componentId: number): nil, number
 function GetShopPedQueryComponent(componentId, outComponent) end
 
     
@@ -268,8 +269,8 @@ function N_0x341de7ed1d2a1bfd(componentHash, restrictionTagHash, componentId) en
 ---
 --- @hash [0x3C1978285B036B25](https://docs.fivem.net/natives/?_0x3C1978285B036B25)
 --- @param hash Hash
---- @return void
---- @overload fun(hash: Hash): void
+--- @return nil
+--- @overload fun(hash: Hash): nil
 function UnloadContentChangeSetGroup(hash) end
 
     
@@ -337,8 +338,8 @@ function GetDlcVehicleFlags(dlcVehicleIndex) end
 --- @hash [0x5D5CAFF661DDF6FC](https://docs.fivem.net/natives/?_0x5D5CAFF661DDF6FC)
 --- @param componentHash Hash
 --- @param outProp any
---- @return void
---- @overload fun(componentHash: Hash): any
+--- @return nil
+--- @overload fun(componentHash: Hash): nil, any
 function GetShopPedProp(componentHash, outProp) end
 
     
@@ -348,8 +349,8 @@ function GetShopPedProp(componentHash, outProp) end
 --- @hash [0x5D5CAFF661DDF6FC](https://docs.fivem.net/natives/?_0x5D5CAFF661DDF6FC)
 --- @param componentHash Hash
 --- @param outProp any
---- @return void
---- @overload fun(componentHash: Hash): any
+--- @return nil
+--- @overload fun(componentHash: Hash): nil, any
 --- @deprecated
 function N_0x5d5caff661ddf6fc(componentHash, outProp) end
 
@@ -377,8 +378,8 @@ function GetHashNameForProp(entity, componentId, propIndex, propTextureIndex) en
 ---
 --- @hash [0x6BEDF5769AC2DC07](https://docs.fivem.net/natives/?_0x6BEDF5769AC2DC07)
 --- @param hash Hash
---- @return void
---- @overload fun(hash: Hash): void
+--- @return nil
+--- @overload fun(hash: Hash): nil
 function LoadContentChangeSetGroup(hash) end
 
     
@@ -387,8 +388,8 @@ function LoadContentChangeSetGroup(hash) end
 --- @hash [0x6C93ED8C2F74859B](https://docs.fivem.net/natives/?_0x6C93ED8C2F74859B)
 --- @param componentHash Hash
 --- @param forcedComponentIndex number (int)
---- @return Hash, number, number
---- @overload fun(componentHash: Hash, forcedComponentIndex: number): Hash, number, number
+--- @return nil, Hash, number, number
+--- @overload fun(componentHash: Hash, forcedComponentIndex: number): nil, Hash, number, number
 function GetForcedComponent(componentHash, forcedComponentIndex) end
 
     
@@ -448,8 +449,8 @@ function GetDlcWeaponComponentData(dlcWeaponIndex, dlcWeapCompIndex, ComponentDa
 --- @hash [0x6D793F03A631FE56](https://docs.fivem.net/natives/?_0x6D793F03A631FE56)
 --- @param outfitIndex number (int)
 --- @param outfit any
---- @return void
---- @overload fun(outfitIndex: number): any
+--- @return nil
+--- @overload fun(outfitIndex: number): nil, any
 function GetShopPedQueryOutfit(outfitIndex, outfit) end
 
     
@@ -458,8 +459,8 @@ function GetShopPedQueryOutfit(outfitIndex, outfit) end
 --- @hash [0x6E11F282F11863B6](https://docs.fivem.net/natives/?_0x6E11F282F11863B6)
 --- @param componentHash Hash
 --- @param variantComponentIndex number (int)
---- @return Hash, number, number
---- @overload fun(componentHash: Hash, variantComponentIndex: number): Hash, number, number
+--- @return nil, Hash, number, number
+--- @overload fun(componentHash: Hash, variantComponentIndex: number): nil, Hash, number, number
 function GetVariantComponent(componentHash, variantComponentIndex) end
 
     
@@ -470,8 +471,8 @@ function GetVariantComponent(componentHash, variantComponentIndex) end
 --- @hash [0x74C0E2A57EC66760](https://docs.fivem.net/natives/?_0x74C0E2A57EC66760)
 --- @param componentHash Hash
 --- @param outComponent any
---- @return void
---- @overload fun(componentHash: Hash): any
+--- @return nil
+--- @overload fun(componentHash: Hash): nil, any
 function GetShopPedComponent(componentHash, outComponent) end
 
     
@@ -619,8 +620,8 @@ function GetNumDlcWeaponComponentsSp(dlcWeaponIndex) end
 --- @hash [0xB7952076E444979D](https://docs.fivem.net/natives/?_0xB7952076E444979D)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any): any
+--- @return nil
+--- @overload fun(p0: any): nil, any
 function GetShopPedOutfit(p0, p1) end
 
     
@@ -756,8 +757,8 @@ function IsDlcDataEmpty(itemHash) end
 --- @hash [0xD81B7F27BC773E66](https://docs.fivem.net/natives/?_0xD81B7F27BC773E66)
 --- @param componentHash Hash
 --- @param variantPropIndex number (int)
---- @return Hash, number, number
---- @overload fun(componentHash: Hash, variantPropIndex: number): Hash, number, number
+--- @return nil, Hash, number, number
+--- @overload fun(componentHash: Hash, variantPropIndex: number): nil, Hash, number, number
 function GetVariantProp(componentHash, variantPropIndex) end
 
     
@@ -767,8 +768,8 @@ function GetVariantProp(componentHash, variantPropIndex) end
 --- @hash [0xD81B7F27BC773E66](https://docs.fivem.net/natives/?_0xD81B7F27BC773E66)
 --- @param componentHash Hash
 --- @param variantPropIndex number (int)
---- @return Hash, number, number
---- @overload fun(componentHash: Hash, variantPropIndex: number): Hash, number, number
+--- @return nil, Hash, number, number
+--- @overload fun(componentHash: Hash, variantPropIndex: number): nil, Hash, number, number
 --- @deprecated
 function N_0xd81b7f27bc773e66(componentHash, variantPropIndex) end
 
@@ -778,8 +779,8 @@ function N_0xd81b7f27bc773e66(componentHash, variantPropIndex) end
 --- @hash [0xDE44A00999B2837D](https://docs.fivem.net/natives/?_0xDE44A00999B2837D)
 --- @param componentId number (int)
 --- @param outProp any
---- @return void
---- @overload fun(componentId: number): any
+--- @return nil
+--- @overload fun(componentId: number): nil, any
 function GetShopPedQueryProp(componentId, outProp) end
 
     
@@ -788,8 +789,8 @@ function GetShopPedQueryProp(componentId, outProp) end
 --- @hash [0xE1CA84EBF72E691D](https://docs.fivem.net/natives/?_0xE1CA84EBF72E691D)
 --- @param componentHash Hash
 --- @param forcedPropIndex number (int)
---- @return Hash, number, number
---- @overload fun(componentHash: Hash, forcedPropIndex: number): Hash, number, number
+--- @return nil, Hash, number, number
+--- @overload fun(componentHash: Hash, forcedPropIndex: number): nil, Hash, number, number
 function GetForcedProp(componentHash, forcedPropIndex) end
 
     
@@ -799,8 +800,8 @@ function GetForcedProp(componentHash, forcedPropIndex) end
 --- @hash [0xE1CA84EBF72E691D](https://docs.fivem.net/natives/?_0xE1CA84EBF72E691D)
 --- @param componentHash Hash
 --- @param forcedPropIndex number (int)
---- @return Hash, number, number
---- @overload fun(componentHash: Hash, forcedPropIndex: number): Hash, number, number
+--- @return nil, Hash, number, number
+--- @overload fun(componentHash: Hash, forcedPropIndex: number): nil, Hash, number, number
 --- @deprecated
 function N_0xe1ca84ebf72e691d(componentHash, forcedPropIndex) end
 
@@ -809,8 +810,8 @@ function N_0xe1ca84ebf72e691d(componentHash, forcedPropIndex) end
 ---
 --- @hash [0xEB0A2B758F7B850F](https://docs.fivem.net/natives/?_0xEB0A2B758F7B850F)
 --- @param outProp number (int*)
---- @return void
---- @overload fun(): number
+--- @return nil
+--- @overload fun(): nil, number
 function InitShopPedProp(outProp) end
 
     

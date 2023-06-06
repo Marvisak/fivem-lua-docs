@@ -1,3 +1,4 @@
+--- @meta
 
 --- N_0x011883f41211432a
 ---
@@ -9,8 +10,8 @@
 --- @param y2 number (float)
 --- @param z2 number (float)
 --- @param p6 number (int)
---- @return void
---- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, p6: number): void
+--- @return nil
+--- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, p6: number): nil
 function N_0x011883f41211432a(x1, y1, z1, x2, y2, z2, p6) end
 
     
@@ -54,8 +55,8 @@ function N_0x971d7b15bcdbef99() end
 --- @param drawableId number (int)
 --- @param textureId number (int)
 --- @param modelHash Hash
---- @return void
---- @overload fun(cutsceneEntName: string, componentId: number, drawableId: number, textureId: number, modelHash: Hash): void
+--- @return nil
+--- @overload fun(cutsceneEntName: string, componentId: number, drawableId: number, textureId: number, modelHash: Hash): nil
 function SetCutscenePedPropVariation(cutsceneEntName, componentId, drawableId, textureId, modelHash) end
 
     
@@ -68,8 +69,8 @@ function SetCutscenePedPropVariation(cutsceneEntName, componentId, drawableId, t
 --- @param drawableId number (int)
 --- @param textureId number (int)
 --- @param modelHash Hash
---- @return void
---- @overload fun(cutsceneEntName: string, componentId: number, drawableId: number, textureId: number, modelHash: Hash): void
+--- @return nil
+--- @overload fun(cutsceneEntName: string, componentId: number, drawableId: number, textureId: number, modelHash: Hash): nil
 --- @deprecated
 function N_0x0546524ade2e9723(cutsceneEntName, componentId, drawableId, textureId, modelHash) end
 
@@ -80,8 +81,8 @@ function N_0x0546524ade2e9723(cutsceneEntName, componentId, drawableId, textureI
 ---
 --- @hash [0x06A3524161C502BA](https://docs.fivem.net/natives/?_0x06A3524161C502BA)
 --- @param cutsceneName string (char*)
---- @return void
---- @overload fun(cutsceneName: string): void
+--- @return nil
+--- @overload fun(cutsceneName: string): nil
 function RequestCutFile(cutsceneName) end
 
     
@@ -92,8 +93,8 @@ function RequestCutFile(cutsceneName) end
 ---
 --- @hash [0x06A3524161C502BA](https://docs.fivem.net/natives/?_0x06A3524161C502BA)
 --- @param cutsceneName string (char*)
---- @return void
---- @overload fun(cutsceneName: string): void
+--- @return nil
+--- @overload fun(cutsceneName: string): nil
 --- @deprecated
 function N_0x06a3524161c502ba(cutsceneName) end
 
@@ -102,8 +103,8 @@ function N_0x06a3524161c502ba(cutsceneName) end
 ---
 --- @hash [0x06EE9048FD080382](https://docs.fivem.net/natives/?_0x06EE9048FD080382)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0x06ee9048fd080382(p0) end
 
     
@@ -143,8 +144,8 @@ function N_0x0abc54de641dc0fc(cutsceneName) end
 ---
 --- @hash [0x186D5CB5E7B0FF7B](https://docs.fivem.net/natives/?_0x186D5CB5E7B0FF7B)
 --- @param flags number (int)
---- @return void
---- @overload fun(flags: number): void
+--- @return nil
+--- @overload fun(flags: number): nil
 function StartCutscene(flags) end
 
     
@@ -155,8 +156,8 @@ function StartCutscene(flags) end
 --- @param y number (float)
 --- @param z number (float)
 --- @param flags number (int)
---- @return void
---- @overload fun(x: number, y: number, z: number, flags: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, flags: number): nil
 function StartCutsceneAtCoords(x, y, z, flags) end
 
     
@@ -167,8 +168,8 @@ function StartCutsceneAtCoords(x, y, z, flags) end
 --- @param p1 boolean
 --- @param p2 boolean
 --- @param p3 boolean
---- @return void
---- @overload fun(p0: boolean, p1: boolean, p2: boolean, p3: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean, p1: boolean, p2: boolean, p3: boolean): nil
 function N_0x20746f7b1032a3c7(p0, p1, p2, p3) end
 
     
@@ -176,8 +177,8 @@ function N_0x20746f7b1032a3c7(p0, p1, p2, p3) end
 ---
 --- @hash [0x2131046957F31B04](https://docs.fivem.net/natives/?_0x2131046957F31B04)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function RegisterSynchronisedScriptSpeech() end
 
     
@@ -198,8 +199,8 @@ function HasThisCutsceneLoaded(cutsceneName) end
 --- @param cutsceneEntName string (char*)
 --- @param ped Ped
 --- @param modelHash Hash
---- @return void
---- @overload fun(cutsceneEntName: string, ped: Ped, modelHash: Hash): void
+--- @return nil
+--- @overload fun(cutsceneEntName: string, ped: Ped, modelHash: Hash): nil
 function SetCutscenePedComponentVariationFromPed(cutsceneEntName, ped, modelHash) end
 
     
@@ -212,8 +213,8 @@ function SetCutscenePedComponentVariationFromPed(cutsceneEntName, ped, modelHash
 --- @param cutsceneEntName string (char*)
 --- @param ped Ped
 --- @param modelHash Hash
---- @return void
---- @overload fun(cutsceneEntName: string, ped: Ped, modelHash: Hash): void
+--- @return nil
+--- @overload fun(cutsceneEntName: string, ped: Ped, modelHash: Hash): nil
 --- @deprecated
 function N_0x2a56c06ebef2b0d9(cutsceneEntName, ped, modelHash) end
 
@@ -222,8 +223,8 @@ function N_0x2a56c06ebef2b0d9(cutsceneEntName, ped, modelHash) end
 ---
 --- @hash [0x2F137B508DE238F2](https://docs.fivem.net/natives/?_0x2F137B508DE238F2)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0x2f137b508de238f2(p0) end
 
     
@@ -240,8 +241,8 @@ function WasCutsceneSkipped() end
 ---
 --- @hash [0x41FAA8FB2ECE8720](https://docs.fivem.net/natives/?_0x41FAA8FB2ECE8720)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function SetCutsceneCanBeSkipped(p0) end
 
     
@@ -250,8 +251,8 @@ function SetCutsceneCanBeSkipped(p0) end
 ---
 --- @hash [0x41FAA8FB2ECE8720](https://docs.fivem.net/natives/?_0x41FAA8FB2ECE8720)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 --- @deprecated
 function N_0x41faa8fb2ece8720(p0) end
 
@@ -260,8 +261,8 @@ function N_0x41faa8fb2ece8720(p0) end
 ---
 --- @hash [0x440AF51A3462B86F](https://docs.fivem.net/natives/?_0x440AF51A3462B86F)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function RemoveCutscene() end
 
     
@@ -290,8 +291,8 @@ function DoesCutsceneEntityExist(cutsceneEntName, modelHash) end
 --- @param cutsceneEntName string (char*)
 --- @param p1 number (int)
 --- @param p2 number (int)
---- @return void
---- @overload fun(cutsceneEntName: string, p1: number, p2: number): void
+--- @return nil
+--- @overload fun(cutsceneEntName: string, p1: number, p2: number): nil
 function SetCutsceneEntityStreamingFlags(cutsceneEntName, p1, p2) end
 
     
@@ -302,8 +303,8 @@ function SetCutsceneEntityStreamingFlags(cutsceneEntName, p1, p2) end
 --- @param cutsceneEntName string (char*)
 --- @param p1 number (int)
 --- @param p2 number (int)
---- @return void
---- @overload fun(cutsceneEntName: string, p1: number, p2: number): void
+--- @return nil
+--- @overload fun(cutsceneEntName: string, p1: number, p2: number): nil
 --- @deprecated
 function N_0x4c61c75bee8184c2(cutsceneEntName, p1, p2) end
 
@@ -418,8 +419,8 @@ function N_0x71b74d2ae19338d0(flag) end
 --- @hash [0x7A86743F475D9E09](https://docs.fivem.net/natives/?_0x7A86743F475D9E09)
 --- @param cutsceneName string (char*)
 --- @param flags number (int)
---- @return void
---- @overload fun(cutsceneName: string, flags: number): void
+--- @return nil
+--- @overload fun(cutsceneName: string, flags: number): nil
 function RequestCutscene(cutsceneName, flags) end
 
     
@@ -438,8 +439,8 @@ function HasCutsceneFinished() end
 ---
 --- @hash [0x7F96F23FA9B73327](https://docs.fivem.net/natives/?_0x7F96F23FA9B73327)
 --- @param modelHash Hash
---- @return void
---- @overload fun(modelHash: Hash): void
+--- @return nil
+--- @overload fun(modelHash: Hash): nil
 function N_0x7f96f23fa9b73327(modelHash) end
 
     
@@ -450,8 +451,8 @@ function N_0x7f96f23fa9b73327(modelHash) end
 --- @param p1 boolean
 --- @param p2 boolean
 --- @param p3 boolean
---- @return void
---- @overload fun(p0: boolean, p1: boolean, p2: boolean, p3: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean, p1: boolean, p2: boolean, p3: boolean): nil
 function SetCutsceneFadeValues(p0, p1, p2, p3) end
 
     
@@ -462,8 +463,8 @@ function SetCutsceneFadeValues(p0, p1, p2, p3) end
 ---
 --- @hash [0x8D9DF6ECA8768583](https://docs.fivem.net/natives/?_0x8D9DF6ECA8768583)
 --- @param threadId number (int)
---- @return void
---- @overload fun(threadId: number): void
+--- @return nil
+--- @overload fun(threadId: number): nil
 function N_0x8d9df6eca8768583(threadId) end
 
     
@@ -478,8 +479,8 @@ function N_0x8d9df6eca8768583(threadId) end
 --- @param p3 number (float)
 --- @param p4 number (float)
 --- @param p5 number (float)
---- @return void
---- @overload fun(p0: number, p1: number, p2: number, p3: number, p4: number, p5: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: number, p2: number, p3: number, p4: number, p5: number): nil
 function SetCutsceneTriggerArea(p0, p1, p2, p3, p4, p5) end
 
     
@@ -575,8 +576,8 @@ function N_0xb56bbbcc2955d9cb() end
 --- @param z number (float)
 --- @param heading number (float)
 --- @param p4 number (int)
---- @return void
---- @overload fun(x: number, y: number, z: number, heading: number, p4: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, heading: number, p4: number): nil
 function SetCutsceneOrigin(x, y, z, heading, p4) end
 
     
@@ -588,8 +589,8 @@ function SetCutsceneOrigin(x, y, z, heading, p4) end
 --- @param drawableId number (int)
 --- @param textureId number (int)
 --- @param modelHash Hash
---- @return void
---- @overload fun(cutsceneEntName: string, componentId: number, drawableId: number, textureId: number, modelHash: Hash): void
+--- @return nil
+--- @overload fun(cutsceneEntName: string, componentId: number, drawableId: number, textureId: number, modelHash: Hash): nil
 function SetCutscenePedComponentVariation(cutsceneEntName, componentId, drawableId, textureId, modelHash) end
 
     
@@ -612,8 +613,8 @@ function GetEntityIndexOfRegisteredEntity(cutsceneEntName, modelHash) end
 --- @param cutsceneName string (char*)
 --- @param playbackFlags number (int)
 --- @param flags number (int)
---- @return void
---- @overload fun(cutsceneName: string, playbackFlags: number, flags: number): void
+--- @return nil
+--- @overload fun(cutsceneName: string, playbackFlags: number, flags: number): nil
 function RequestCutsceneWithPlaybackList(cutsceneName, playbackFlags, flags) end
 
     
@@ -627,8 +628,8 @@ function RequestCutsceneWithPlaybackList(cutsceneName, playbackFlags, flags) end
 --- @param cutsceneName string (char*)
 --- @param playbackFlags number (int)
 --- @param flags number (int)
---- @return void
---- @overload fun(cutsceneName: string, playbackFlags: number, flags: number): void
+--- @return nil
+--- @overload fun(cutsceneName: string, playbackFlags: number, flags: number): nil
 --- @deprecated
 function N_0xc23de0e91c30b58c(cutsceneName, playbackFlags, flags) end
 
@@ -643,8 +644,8 @@ function N_0xc23de0e91c30b58c(cutsceneName, playbackFlags, flags) end
 --- @param cutsceneName string (char*)
 --- @param playbackFlags number (int)
 --- @param flags number (int)
---- @return void
---- @overload fun(cutsceneName: string, playbackFlags: number, flags: number): void
+--- @return nil
+--- @overload fun(cutsceneName: string, playbackFlags: number, flags: number): nil
 --- @deprecated
 function RequestCutsceneEx(cutsceneName, playbackFlags, flags) end
 
@@ -665,8 +666,8 @@ function HasCutsceneLoaded() end
 ---
 --- @hash [0xC61B86C9F61EB404](https://docs.fivem.net/natives/?_0xC61B86C9F61EB404)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function N_0xc61b86c9f61eb404(toggle) end
 
     
@@ -674,8 +675,8 @@ function N_0xc61b86c9f61eb404(toggle) end
 ---
 --- @hash [0xC7272775B4DC786E](https://docs.fivem.net/natives/?_0xC7272775B4DC786E)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function StopCutscene(p0) end
 
     
@@ -685,8 +686,8 @@ function StopCutscene(p0) end
 ---
 --- @hash [0xD00D76A7DFC9D852](https://docs.fivem.net/natives/?_0xD00D76A7DFC9D852)
 --- @param cutsceneName string (char*)
---- @return void
---- @overload fun(cutsceneName: string): void
+--- @return nil
+--- @overload fun(cutsceneName: string): nil
 function RemoveCutFile(cutsceneName) end
 
     
@@ -697,8 +698,8 @@ function RemoveCutFile(cutsceneName) end
 ---
 --- @hash [0xD00D76A7DFC9D852](https://docs.fivem.net/natives/?_0xD00D76A7DFC9D852)
 --- @param cutsceneName string (char*)
---- @return void
---- @overload fun(cutsceneName: string): void
+--- @return nil
+--- @overload fun(cutsceneName: string): nil
 --- @deprecated
 function N_0xd00d76a7dfc9d852(cutsceneName) end
 
@@ -707,8 +708,8 @@ function N_0xd00d76a7dfc9d852(cutsceneName) end
 ---
 --- @hash [0xD220BDD222AC4A1E](https://docs.fivem.net/natives/?_0xD220BDD222AC4A1E)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function StopCutsceneImmediately() end
 
     
@@ -725,8 +726,8 @@ function IsCutscenePlaying() end
 ---
 --- @hash [0xE36A98D8AB3D3C66](https://docs.fivem.net/natives/?_0xE36A98D8AB3D3C66)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0xe36a98d8ab3d3c66(p0) end
 
     
@@ -745,8 +746,8 @@ function N_0xe36a98d8ab3d3c66(p0) end
 --- @param p2 number (int)
 --- @param modelHash Hash
 --- @param p4 number (int)
---- @return void
---- @overload fun(cutsceneEntity: Entity, cutsceneEntName: string, p2: number, modelHash: Hash, p4: number): void
+--- @return nil
+--- @overload fun(cutsceneEntity: Entity, cutsceneEntName: string, p2: number, modelHash: Hash, p4: number): nil
 function RegisterEntityForCutscene(cutsceneEntity, cutsceneEntName, p2, modelHash, p4) end
 
     

@@ -1,3 +1,4 @@
+--- @meta
 
 --- ```
 --- Gets the current frame time.  
@@ -59,8 +60,8 @@ function Vdist(x1, y1, z1, x2, y2, z2) end
 ---
 --- @hash [0x42B65DEEF2EDF2A1](https://docs.fivem.net/natives/?_0x42B65DEEF2EDF2A1)
 --- @param priority number (int)
---- @return void
---- @overload fun(priority: number): void
+--- @return nil
+--- @overload fun(priority: number): nil
 function SetThreadPriority(priority) end
 
     
@@ -73,8 +74,8 @@ function SetThreadPriority(priority) end
 ---
 --- @hash [0x42B65DEEF2EDF2A1](https://docs.fivem.net/natives/?_0x42B65DEEF2EDF2A1)
 --- @param priority number (int)
---- @return void
---- @overload fun(priority: number): void
+--- @return nil
+--- @overload fun(priority: number): nil
 --- @deprecated
 function N_0x42b65deef2edf2a1(priority) end
 
@@ -85,8 +86,8 @@ function N_0x42b65deef2edf2a1(priority) end
 ---
 --- @hash [0x4EDE34FBADD967A6](https://docs.fivem.net/natives/?_0x4EDE34FBADD967A6)
 --- @param ms number (int)
---- @return void
---- @overload fun(ms: number): void
+--- @return nil
+--- @overload fun(ms: number): nil
 function Wait(ms) end
 
     
@@ -94,8 +95,8 @@ function Wait(ms) end
 ---
 --- @hash [0x5AE11BC36633DE4E](https://docs.fivem.net/natives/?_0x5AE11BC36633DE4E)
 --- @param value number (int)
---- @return void
---- @overload fun(value: number): void
+--- @return nil
+--- @overload fun(value: number): nil
 function Settimerb(value) end
 
     
@@ -199,8 +200,8 @@ function ToFloat(value) end
 ---
 --- @hash [0xC1B1E9A034A63A62](https://docs.fivem.net/natives/?_0xC1B1E9A034A63A62)
 --- @param value number (int)
---- @return void
---- @overload fun(value: number): void
+--- @return nil
+--- @overload fun(value: number): nil
 function Settimera(value) end
 
     

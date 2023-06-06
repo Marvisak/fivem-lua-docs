@@ -1,3 +1,4 @@
+--- @meta
 
 --- ScInboxGetTotalNumMessages
 ---
@@ -35,8 +36,8 @@ function GetTotalScInboxIds() end
 --- @hash [0x040ADDCBAFA1018A](https://docs.fivem.net/natives/?_0x040ADDCBAFA1018A)
 --- @param offset number (int)
 --- @param limit number (int)
---- @return void
---- @overload fun(offset: number, limit: number): void
+--- @return nil
+--- @overload fun(offset: number, limit: number): nil
 function ScInboxGetEmails(offset, limit) end
 
     
@@ -46,8 +47,8 @@ function ScInboxGetEmails(offset, limit) end
 --- @hash [0x040ADDCBAFA1018A](https://docs.fivem.net/natives/?_0x040ADDCBAFA1018A)
 --- @param offset number (int)
 --- @param limit number (int)
---- @return void
---- @overload fun(offset: number, limit: number): void
+--- @return nil
+--- @overload fun(offset: number, limit: number): nil
 --- @deprecated
 function N_0x040addcbafa1018a(offset, limit) end
 
@@ -107,8 +108,8 @@ function N_0x0f73393bac7e6730(plateText, tokenOut) end
 ---
 --- @hash [0x116FB94DC4B79F17](https://docs.fivem.net/natives/?_0x116FB94DC4B79F17)
 --- @param p0 string (char*)
---- @return void
---- @overload fun(p0: string): void
+--- @return nil
+--- @overload fun(p0: string): nil
 function N_0x116fb94dc4b79f17(p0) end
 
     
@@ -256,8 +257,8 @@ function N_0x225798743970412b(p0) end
 ---
 --- @hash [0x2330C12A7A605D16](https://docs.fivem.net/natives/?_0x2330C12A7A605D16)
 --- @param networkHandle number (int*)
---- @return void
---- @overload fun(): number
+--- @return nil
+--- @overload fun(): nil, number
 function ScEmailMessagePushGamerToRecipList(networkHandle) end
 
     
@@ -401,8 +402,8 @@ function N_0x418dc16fae452c1c(achievement) end
 --- @hash [0x44ACA259D67651DB](https://docs.fivem.net/natives/?_0x44ACA259D67651DB)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p1: any): any
+--- @return nil
+--- @overload fun(p1: any): nil, any
 function N_0x44aca259d67651db(p0, p1) end
 
     
@@ -475,8 +476,8 @@ function N_0x50a8a36201dbf83e() end
 ---
 --- @hash [0x55DF6DB45179236E](https://docs.fivem.net/natives/?_0x55DF6DB45179236E)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ScEmailMessageClearRecipList() end
 
     
@@ -485,8 +486,8 @@ function ScEmailMessageClearRecipList() end
 ---
 --- @hash [0x55DF6DB45179236E](https://docs.fivem.net/natives/?_0x55DF6DB45179236E)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x55df6db45179236e() end
 
@@ -515,8 +516,8 @@ function N_0x5c4ebffa98bdb41c(token) end
 ---
 --- @hash [0x675721C9F644D161](https://docs.fivem.net/natives/?_0x675721C9F644D161)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x675721c9f644d161() end
 
     
@@ -975,8 +976,8 @@ function N_0xa468e0be12b12c70() end
 ---
 --- @hash [0xA68D3D229F4F3B06](https://docs.fivem.net/natives/?_0xA68D3D229F4F3B06)
 --- @param data string (char*)
---- @return void
---- @overload fun(data: string): void
+--- @return nil
+--- @overload fun(data: string): nil
 function ScInboxMessageSendUgcStatUpdateEvent(data) end
 
     
@@ -985,8 +986,8 @@ function ScInboxMessageSendUgcStatUpdateEvent(data) end
 ---
 --- @hash [0xA68D3D229F4F3B06](https://docs.fivem.net/natives/?_0xA68D3D229F4F3B06)
 --- @param data string (char*)
---- @return void
---- @overload fun(data: string): void
+--- @return nil
+--- @overload fun(data: string): nil
 --- @deprecated
 function N_0xa68d3d229f4f3b06(data) end
 
@@ -1072,8 +1073,8 @@ function N_0xbc1cc91205ec8d6e() end
 ---
 --- @hash [0xBFA0A56A817C6C7D](https://docs.fivem.net/natives/?_0xBFA0A56A817C6C7D)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetHandleRockstarMessageViaScript(toggle) end
 
     
@@ -1082,8 +1083,8 @@ function SetHandleRockstarMessageViaScript(toggle) end
 ---
 --- @hash [0xBFA0A56A817C6C7D](https://docs.fivem.net/natives/?_0xBFA0A56A817C6C7D)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0xbfa0a56a817c6c7d(toggle) end
 
@@ -1225,8 +1226,8 @@ function N_0xd8122c407663b995() end
 ---
 --- @hash [0xDA024BDBD600F44A](https://docs.fivem.net/natives/?_0xDA024BDBD600F44A)
 --- @param networkHandle number (int*)
---- @return void
---- @overload fun(): number
+--- @return nil
+--- @overload fun(): nil, number
 function ScInboxMessagePushGamerToEventRecipList(networkHandle) end
 
     
@@ -1235,8 +1236,8 @@ function ScInboxMessagePushGamerToEventRecipList(networkHandle) end
 ---
 --- @hash [0xDA024BDBD600F44A](https://docs.fivem.net/natives/?_0xDA024BDBD600F44A)
 --- @param networkHandle number (int*)
---- @return void
---- @overload fun(): number
+--- @return nil
+--- @overload fun(): nil, number
 --- @deprecated
 function N_0xda024bdbd600f44a(networkHandle) end
 
@@ -1292,8 +1293,8 @@ function N_0xe75a4a2e5e316d86() end
 ---
 --- @hash [0xEA95C0853A27888E](https://docs.fivem.net/natives/?_0xEA95C0853A27888E)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xea95c0853a27888e() end
 
     

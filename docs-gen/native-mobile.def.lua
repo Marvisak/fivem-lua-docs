@@ -1,3 +1,4 @@
+--- @meta
 
 --- ```
 --- Disables the phone up-button, oddly enough.   
@@ -9,8 +10,8 @@
 ---
 --- @hash [0x015C49A93E3E086E](https://docs.fivem.net/natives/?_0x015C49A93E3E086E)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function CellCamDisableThisFrame(toggle) end
 
     
@@ -25,8 +26,8 @@ function CellCamDisableThisFrame(toggle) end
 ---
 --- @hash [0x015C49A93E3E086E](https://docs.fivem.net/natives/?_0x015C49A93E3E086E)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0x015c49a93e3e086e(toggle) end
 
@@ -42,8 +43,8 @@ function N_0x015c49a93e3e086e(toggle) end
 ---
 --- @hash [0x015C49A93E3E086E](https://docs.fivem.net/natives/?_0x015C49A93E3E086E)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function DisablePhoneThisFrame(toggle) end
 
@@ -52,8 +53,8 @@ function DisablePhoneThisFrame(toggle) end
 ---
 --- @hash [0x15E69E2802C24B8D](https://docs.fivem.net/natives/?_0x15E69E2802C24B8D)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function CellCamSetRoll(p0) end
 
     
@@ -62,8 +63,8 @@ function CellCamSetRoll(p0) end
 ---
 --- @hash [0x15E69E2802C24B8D](https://docs.fivem.net/natives/?_0x15E69E2802C24B8D)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 --- @deprecated
 function N_0x15e69e2802c24b8d(p0) end
 
@@ -72,8 +73,8 @@ function N_0x15e69e2802c24b8d(p0) end
 ---
 --- @hash [0x1B0B4AEED5B9B41C](https://docs.fivem.net/natives/?_0x1B0B4AEED5B9B41C)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function CellCamSetHorizontalOffset(p0) end
 
     
@@ -82,8 +83,8 @@ function CellCamSetHorizontalOffset(p0) end
 ---
 --- @hash [0x1B0B4AEED5B9B41C](https://docs.fivem.net/natives/?_0x1B0B4AEED5B9B41C)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 --- @deprecated
 function N_0x1b0b4aeed5b9b41c(p0) end
 
@@ -93,8 +94,8 @@ function N_0x1b0b4aeed5b9b41c(p0) end
 --- @hash [0x1CEFB61F193070AE](https://docs.fivem.net/natives/?_0x1CEFB61F193070AE)
 --- @param rotation Vector3 (Vector3*)
 --- @param p1 Vehicle
---- @return void
---- @overload fun(p1: Vehicle): Vector3
+--- @return nil
+--- @overload fun(p1: Vehicle): nil, Vector3
 function GetMobilePhoneRotation(rotation, p1) end
 
     
@@ -102,8 +103,8 @@ function GetMobilePhoneRotation(rotation, p1) end
 ---
 --- @hash [0x3117D84EFA60F77B](https://docs.fivem.net/natives/?_0x3117D84EFA60F77B)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function CellCamSetVerticalOffset(p0) end
 
     
@@ -112,8 +113,8 @@ function CellCamSetVerticalOffset(p0) end
 ---
 --- @hash [0x3117D84EFA60F77B](https://docs.fivem.net/natives/?_0x3117D84EFA60F77B)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 --- @deprecated
 function N_0x3117d84efa60f77b(p0) end
 
@@ -122,8 +123,8 @@ function N_0x3117d84efa60f77b(p0) end
 ---
 --- @hash [0x375A706A5C2FD084](https://docs.fivem.net/natives/?_0x375A706A5C2FD084)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetMobilePhoneUnk(toggle) end
 
     
@@ -132,8 +133,8 @@ function SetMobilePhoneUnk(toggle) end
 ---
 --- @hash [0x375A706A5C2FD084](https://docs.fivem.net/natives/?_0x375A706A5C2FD084)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0x375a706a5c2fd084(toggle) end
 
@@ -144,8 +145,8 @@ function N_0x375a706a5c2fd084(toggle) end
 ---
 --- @hash [0x3BC861DF703E5097](https://docs.fivem.net/natives/?_0x3BC861DF703E5097)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function DestroyMobilePhone() end
 
     
@@ -165,8 +166,8 @@ function CellCamIsCharVisibleNoFaceCheck(entity) end
 ---
 --- @hash [0x44E44169EF70138E](https://docs.fivem.net/natives/?_0x44E44169EF70138E)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function CellCamSetLean(toggle) end
 
     
@@ -178,8 +179,8 @@ function CellCamSetLean(toggle) end
 ---
 --- @hash [0x44E44169EF70138E](https://docs.fivem.net/natives/?_0x44E44169EF70138E)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function SetPhoneLean(toggle) end
 
@@ -188,8 +189,8 @@ function SetPhoneLean(toggle) end
 ---
 --- @hash [0x466DA42C89865553](https://docs.fivem.net/natives/?_0x466DA42C89865553)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function CellCamSetHeadHeight(p0) end
 
     
@@ -198,8 +199,8 @@ function CellCamSetHeadHeight(p0) end
 ---
 --- @hash [0x466DA42C89865553](https://docs.fivem.net/natives/?_0x466DA42C89865553)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 --- @deprecated
 function N_0x466da42c89865553(p0) end
 
@@ -208,8 +209,8 @@ function N_0x466da42c89865553(p0) end
 ---
 --- @hash [0x53F4892D18EC90A4](https://docs.fivem.net/natives/?_0x53F4892D18EC90A4)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function CellCamSetDistance(p0) end
 
     
@@ -218,8 +219,8 @@ function CellCamSetDistance(p0) end
 ---
 --- @hash [0x53F4892D18EC90A4](https://docs.fivem.net/natives/?_0x53F4892D18EC90A4)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 --- @deprecated
 function N_0x53f4892d18ec90a4(p0) end
 
@@ -228,8 +229,8 @@ function N_0x53f4892d18ec90a4(p0) end
 ---
 --- @hash [0x584FDFDA48805B86](https://docs.fivem.net/natives/?_0x584FDFDA48805B86)
 --- @param position Vector3 (Vector3*)
---- @return void
---- @overload fun(): Vector3
+--- @return nil
+--- @overload fun(): nil, Vector3
 function GetMobilePhonePosition(position) end
 
     
@@ -239,8 +240,8 @@ function GetMobilePhonePosition(position) end
 --- @param posX number (float)
 --- @param posY number (float)
 --- @param posZ number (float)
---- @return void
---- @overload fun(posX: number, posY: number, posZ: number): void
+--- @return nil
+--- @overload fun(posX: number, posY: number, posZ: number): nil
 function SetMobilePhonePosition(posX, posY, posZ) end
 
     
@@ -250,8 +251,8 @@ function SetMobilePhonePosition(posX, posY, posZ) end
 ---
 --- @hash [0x95C9E72F3D7DEC9B](https://docs.fivem.net/natives/?_0x95C9E72F3D7DEC9B)
 --- @param direction number (int)
---- @return void
---- @overload fun(direction: number): void
+--- @return nil
+--- @overload fun(direction: number): nil
 function CellCamMoveFinger(direction) end
 
     
@@ -262,8 +263,8 @@ function CellCamMoveFinger(direction) end
 ---
 --- @hash [0x95C9E72F3D7DEC9B](https://docs.fivem.net/natives/?_0x95C9E72F3D7DEC9B)
 --- @param direction number (int)
---- @return void
---- @overload fun(direction: number): void
+--- @return nil
+--- @overload fun(direction: number): nil
 --- @deprecated
 function MoveFinger(direction) end
 
@@ -284,8 +285,8 @@ function MoveFinger(direction) end
 ---
 --- @hash [0xA2CCBE62CD4C91A4](https://docs.fivem.net/natives/?_0xA2CCBE62CD4C91A4)
 --- @param toggle number (int*)
---- @return void
---- @overload fun(): number
+--- @return nil
+--- @overload fun(): nil, number
 function N_0xa2ccbe62cd4c91a4(toggle) end
 
     
@@ -301,8 +302,8 @@ function N_0xa2ccbe62cd4c91a4(toggle) end
 ---
 --- @hash [0xA4E8E696C532FBC7](https://docs.fivem.net/natives/?_0xA4E8E696C532FBC7)
 --- @param phoneType number (int)
---- @return void
---- @overload fun(phoneType: number): void
+--- @return nil
+--- @overload fun(phoneType: number): nil
 function CreateMobilePhone(phoneType) end
 
     
@@ -310,8 +311,8 @@ function CreateMobilePhone(phoneType) end
 ---
 --- @hash [0xAC2890471901861C](https://docs.fivem.net/natives/?_0xAC2890471901861C)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function N_0xac2890471901861c(p0) end
 
     
@@ -319,8 +320,8 @@ function N_0xac2890471901861c(p0) end
 ---
 --- @hash [0xB4A53E05F68B6FA1](https://docs.fivem.net/natives/?_0xB4A53E05F68B6FA1)
 --- @param renderId number (int*)
---- @return void
---- @overload fun(): number
+--- @return nil
+--- @overload fun(): nil, number
 function GetMobilePhoneRenderId(renderId) end
 
     
@@ -333,8 +334,8 @@ function GetMobilePhoneRenderId(renderId) end
 --- @param rotY number (float)
 --- @param rotZ number (float)
 --- @param p3 any
---- @return void
---- @overload fun(rotX: number, rotY: number, rotZ: number, p3: any): void
+--- @return nil
+--- @overload fun(rotX: number, rotY: number, rotZ: number, p3: any): nil
 function SetMobilePhoneRotation(rotX, rotY, rotZ, p3) end
 
     
@@ -356,8 +357,8 @@ function CanPhoneBeSeenOnScreen() end
 ---
 --- @hash [0xCBDD322A73D6D932](https://docs.fivem.net/natives/?_0xCBDD322A73D6D932)
 --- @param scale number (float)
---- @return void
---- @overload fun(scale: number): void
+--- @return nil
+--- @overload fun(scale: number): nil
 function SetMobilePhoneScale(scale) end
 
     
@@ -365,8 +366,8 @@ function SetMobilePhoneScale(scale) end
 ---
 --- @hash [0xD6ADE981781FCA09](https://docs.fivem.net/natives/?_0xD6ADE981781FCA09)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function CellCamSetHeadPitch(p0) end
 
     
@@ -375,8 +376,8 @@ function CellCamSetHeadPitch(p0) end
 ---
 --- @hash [0xD6ADE981781FCA09](https://docs.fivem.net/natives/?_0xD6ADE981781FCA09)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 --- @deprecated
 function N_0xd6ade981781fca09(p0) end
 
@@ -385,8 +386,8 @@ function N_0xd6ade981781fca09(p0) end
 ---
 --- @hash [0xF1E22DC13F5EEBAD](https://docs.fivem.net/natives/?_0xF1E22DC13F5EEBAD)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function CellCamSetHeadRoll(p0) end
 
     
@@ -395,8 +396,8 @@ function CellCamSetHeadRoll(p0) end
 ---
 --- @hash [0xF1E22DC13F5EEBAD](https://docs.fivem.net/natives/?_0xF1E22DC13F5EEBAD)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 --- @deprecated
 function N_0xf1e22dc13f5eebad(p0) end
 
@@ -408,8 +409,8 @@ function N_0xf1e22dc13f5eebad(p0) end
 ---
 --- @hash [0xF511F759238A5122](https://docs.fivem.net/natives/?_0xF511F759238A5122)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function ScriptIsMovingMobilePhoneOffscreen(toggle) end
 
     
@@ -418,8 +419,8 @@ function ScriptIsMovingMobilePhoneOffscreen(toggle) end
 --- @hash [0xFDE8F069C542D126](https://docs.fivem.net/natives/?_0xFDE8F069C542D126)
 --- @param p0 boolean
 --- @param p1 boolean
---- @return void
---- @overload fun(p0: boolean, p1: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean, p1: boolean): nil
 function CellCamActivate(p0, p1) end
 
     

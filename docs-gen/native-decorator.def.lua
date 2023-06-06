@@ -1,3 +1,4 @@
+--- @meta
 
 --- DecorRemove
 ---
@@ -130,8 +131,8 @@ function DecorSetTime(entity, propertyName, timestamp) end
 --- @hash [0x9FD90732F56403CE](https://docs.fivem.net/natives/?_0x9FD90732F56403CE)
 --- @param propertyName string (char*)
 --- @param type number (int)
---- @return void
---- @overload fun(propertyName: string, type: number): void
+--- @return nil
+--- @overload fun(propertyName: string, type: number): nil
 function DecorRegister(propertyName, type) end
 
     
@@ -151,8 +152,8 @@ function DecorGetInt(entity, propertyName) end
 ---
 --- @hash [0xA9D14EEA259F9248](https://docs.fivem.net/natives/?_0xA9D14EEA259F9248)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function DecorRegisterLock() end
 
     

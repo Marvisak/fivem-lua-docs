@@ -1,3 +1,6 @@
+--- @meta
+
+
 ---@type Player
 source = nil
 
@@ -10,13 +13,13 @@ function CitizenLocal()
     --- @field InvokeNative fun(nativeHash: Hash, ...: any):any
     --- @field ResultAsString fun():string
     --- @field ResultAsLong fun():number
-    --- @field SetTickRoutine fun(tick: fun(tickTime: number, profilerEnabled: boolean)):void
-    --- @field SetEventRoutine fun(tick: fun(eventName: string, eventPayload: any, eventSource: any)):void
-    --- @field SetStackTraceRoutine fun(tick: any):void
-    --- @field SetCallRefRoutine fun(tick: any):void
-    --- @field CanonicalizeRef fun(tick: any):void
-    --- @field SetDeleteRefRoutine fun(tick: any):void
-    --- @field SetDuplicateRefRoutine fun(tick: any):void
+    --- @field SetTickRoutine fun(tick: fun(tickTime: number, profilerEnabled: boolean)):nil
+    --- @field SetEventRoutine fun(tick: fun(eventName: string, eventPayload: any, eventSource: any)):nil
+    --- @field SetStackTraceRoutine fun(tick: any):nil
+    --- @field SetCallRefRoutine fun(tick: any):nil
+    --- @field CanonicalizeRef fun(tick: any):nil
+    --- @field SetDeleteRefRoutine fun(tick: any):nil
+    --- @field SetDuplicateRefRoutine fun(tick: any):nil
     local self = {}
 
 
@@ -40,8 +43,8 @@ function CitizenLocal()
     --- print("Can you see me?")
     --- ```
     ---
-    --- @param handler fun():void
-    --- @return void
+    --- @param handler fun():nil
+    --- @return nil
     function self.CreateThread(handler)
     end
 
@@ -56,7 +59,7 @@ function CitizenLocal()
 
     --- This will “pause” the execution of the current thread for milliseconds amount of time.
     --- @param milliseconds number (int)  The amount of milliseconds to pause the current thread.
-    --- @return void
+    --- @return nil
     function self.Wait(milliseconds)
     end
 
@@ -69,8 +72,8 @@ function CitizenLocal()
     --- end)
     --- ```
     --- @param milliseconds number (int) The amount of milliseconds to pause the current thread.
-    --- @param callback fun():void
-    --- @return void
+    --- @param callback fun():nil
+    --- @return nil
     function self.SetTimeout(milliseconds, callback)
     end
 
@@ -81,7 +84,7 @@ function CitizenLocal()
     --- Citizen.Trace("Hello, World!\n")
     --- ```
     --- @param message string
-    --- @return void
+    --- @return nil
     function self.Trace(message)
     end
 
@@ -125,7 +128,7 @@ end
 --- see https://docs.fivem.net/docs/scripting-manual/working-with-events/listening-for-events/ for more info
 ---
 --- @param eventName string
---- @param eventRoutine fun
+--- @param eventRoutine function
 --- @return EventHandlerData
 function AddEventHandler(eventName, eventRoutine)
 end
@@ -142,20 +145,20 @@ end
 --- RemoveEventHandler(eventA)
 ---```
 --- @param eventData EventHandlerData
---- @return void
+--- @return nil
 function RemoveEventHandler(eventData)
 end
 
 --- TriggerEvent
 --- @param eventName string
---- @vararg any
+--- @param ... any
 function TriggerEvent(eventName, ...)
 end
 
 --- TriggerClientEvent
 --- @param eventName string
 --- @param playerId -1|Player
---- @vararg any
+--- @param ... any
 function TriggerClientEvent(eventName, playerId, ...)
 end
 
@@ -163,7 +166,7 @@ end
 --- @param eventName string
 --- @param playerId -1|Player
 --- @param bps number
---- @vararg any
+--- @param ... any
 function TriggerLatentClientEvent(eventName, playerId, bps, ...)
 end
 
@@ -217,7 +220,7 @@ end
 --- @param eventName string
 --- @param cb function
 --- @return EventHandlerData
---- @overload fun(eventName: string): void
+--- @overload fun(eventName: string): nil
 function RegisterNetEvent(eventName, cb)
 end
 
@@ -238,8 +241,8 @@ end
 ]]
 --- Register a NUI callback method
 --- @param type string
---- @param handler fun
---- @return void
+--- @param handler function
+--- @return nil
 function RegisterNUICallback(type, handler)
 end
 
@@ -261,6 +264,6 @@ end
 --- })
 --- ```
 --- @param message table
---- @return void
+--- @return nil
 function SendNUIMessage(message)
 end

@@ -1,3 +1,4 @@
+--- @meta
 
 --- ```
 --- NativeDB Introduced: v2372

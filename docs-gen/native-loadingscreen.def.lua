@@ -1,3 +1,4 @@
+--- @meta
 
 --- LoadingscreenGetLoadFreemodeWithEventName
 ---
@@ -23,8 +24,8 @@ function N_0x8aa464d4e0f6accd() end
 ---
 --- @hash [0xB0C56BD3D808D863](https://docs.fivem.net/natives/?_0xB0C56BD3D808D863)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function LoadingscreenSetLoadFreemode(toggle) end
 
     
@@ -33,8 +34,8 @@ function LoadingscreenSetLoadFreemode(toggle) end
 ---
 --- @hash [0xB0C56BD3D808D863](https://docs.fivem.net/natives/?_0xB0C56BD3D808D863)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function GetBroadcastFinshedLosSound(toggle) end
 
@@ -44,8 +45,8 @@ function GetBroadcastFinshedLosSound(toggle) end
 ---
 --- @hash [0xB0C56BD3D808D863](https://docs.fivem.net/natives/?_0xB0C56BD3D808D863)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0xb0c56bd3d808d863(toggle) end
 
@@ -85,8 +86,8 @@ function IsUiLoadingMultiplayer() end
 ---
 --- @hash [0xC7E7181C09F33B69](https://docs.fivem.net/natives/?_0xC7E7181C09F33B69)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function LoadingscreenSetIsLoadingFreemode(toggle) end
 
     
@@ -95,8 +96,8 @@ function LoadingscreenSetIsLoadingFreemode(toggle) end
 ---
 --- @hash [0xC7E7181C09F33B69](https://docs.fivem.net/natives/?_0xC7E7181C09F33B69)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0xc7e7181c09f33b69(toggle) end
 
@@ -145,8 +146,8 @@ function ReturnZero() end
 ---
 --- @hash [0xFA1E0E893D915215](https://docs.fivem.net/natives/?_0xFA1E0E893D915215)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function N_0xfa1e0e893d915215(toggle) end
 
     
@@ -156,8 +157,8 @@ function N_0xfa1e0e893d915215(toggle) end
 ---
 --- @hash [0xFC309E94546FCDB5](https://docs.fivem.net/natives/?_0xFC309E94546FCDB5)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function LoadingscreenSetLoadFreemodeWithEventName(toggle) end
 
     
@@ -168,8 +169,8 @@ function LoadingscreenSetLoadFreemodeWithEventName(toggle) end
 ---
 --- @hash [0xFC309E94546FCDB5](https://docs.fivem.net/natives/?_0xFC309E94546FCDB5)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0xfc309e94546fcdb5(toggle) end
 
@@ -181,8 +182,8 @@ function N_0xfc309e94546fcdb5(toggle) end
 ---
 --- @hash [0xFC309E94546FCDB5](https://docs.fivem.net/natives/?_0xFC309E94546FCDB5)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function IsInLoadingScreen(toggle) end
 

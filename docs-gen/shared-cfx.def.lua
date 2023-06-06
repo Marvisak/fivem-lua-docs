@@ -1,3 +1,4 @@
+--- @meta
 
 --- GetVehicleSteeringAngle
 ---
@@ -12,8 +13,8 @@ function GetVehicleSteeringAngle(vehicle) end
 ---
 --- @hash [0x1E86F206](https://docs.fivem.net/natives/?_0x1E86F206)
 --- @param referenceIdentity string (char*)
---- @return void
---- @overload fun(referenceIdentity: string): void
+--- @return nil
+--- @overload fun(referenceIdentity: string): nil
 function DeleteFunctionReference(referenceIdentity) end
 
     
@@ -22,7 +23,7 @@ function DeleteFunctionReference(referenceIdentity) end
 --- @hash [0x21C7A35B](https://docs.fivem.net/natives/?_0x21C7A35B)
 --- @param key string (char*)
 --- @param value string (char*)
---- @return void
+--- @return nil
 --- @overload fun(key: string, value: string|JsonString<any>): void
 function SetResourceKvp(key, value) end
 
@@ -78,8 +79,8 @@ function GetResourceByFindIndex(findIndex) end
 ---
 --- @hash [0x3BB78F05](https://docs.fivem.net/natives/?_0x3BB78F05)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 function EnsureEntityStateBag(entity) end
 
     
@@ -169,8 +170,8 @@ function GetResourceKvpInt(key) end
 ---
 --- @hash [0x561C060B](https://docs.fivem.net/natives/?_0x561C060B)
 --- @param commandString string (char*)
---- @return void
---- @overload fun(commandString: string): void
+--- @return nil
+--- @overload fun(commandString: string): nil
 function ExecuteCommand(commandString) end
 
     
@@ -219,9 +220,9 @@ function WasEventCanceled() end
 --- @hash [0x5BA35AAF](https://docs.fivem.net/natives/?_0x5BA35AAF)
 --- @param keyFilter string (char*)
 --- @param bagFilter string (char*)
---- @param handler fun
+--- @param handler function
 --- @return number
---- @overload fun(keyFilter: string, bagFilter: string, handler: fun): number
+--- @overload fun(keyFilter: string, bagFilter: string, handler: function): number
 function AddStateBagChangeHandler(keyFilter, bagFilter, handler) end
 
     
@@ -256,10 +257,10 @@ function AddStateBagChangeHandler(keyFilter, bagFilter, handler) end
 --- end, false --[[this command is not restricted, everyone can use this.]]
 --- @hash [0x5FA79B0F](https://docs.fivem.net/natives/?_0x5FA79B0F)
 --- @param commandName string (char*)
---- @param handler fun
+--- @param handler function
 --- @param restricted boolean
---- @return void
---- @overload fun(commandName: string, handler: fun, restricted: boolean): void
+--- @return nil
+--- @overload fun(commandName: string, handler: function, restricted: boolean): nil
 function RegisterCommand(commandName, handler, restricted) end
 
     
@@ -279,8 +280,8 @@ function GetStateBagValue(bagName, key) end
 --- @hash [0x6A2B1E8](https://docs.fivem.net/natives/?_0x6A2B1E8)
 --- @param key string (char*)
 --- @param value number (int)
---- @return void
---- @overload fun(key: string, value: number): void
+--- @return nil
+--- @overload fun(key: string, value: number): nil
 function SetResourceKvpInt(key, value) end
 
     
@@ -300,8 +301,8 @@ function GetConvar(varName, default_) end
 --- @usage DeleteResourceKvp('liberty_city'
 --- @hash [0x7389B5DF](https://docs.fivem.net/natives/?_0x7389B5DF)
 --- @param key string (char*)
---- @return void
---- @overload fun(key: string): void
+--- @return nil
+--- @overload fun(key: string): nil
 function DeleteResourceKvp(key) end
 
     
@@ -393,8 +394,8 @@ function GetPlayerMeleeWeaponDamageModifier(playerId) end
 --- @param valueData string (char*)
 --- @param valueLength number (int)
 --- @param replicated boolean
---- @return void
---- @overload fun(bagName: string, keyName: string, valueData: string, valueLength: number, replicated: boolean): void
+--- @return nil
+--- @overload fun(bagName: string, keyName: string, valueData: string, valueLength: number, replicated: boolean): nil
 function SetStateBagValue(bagName, keyName, valueData, valueLength, replicated) end
 
     
@@ -404,8 +405,8 @@ function SetStateBagValue(bagName, keyName, valueData, valueLength, replicated) 
 --- @param eventName string (char*)
 --- @param eventPayload string (char*)
 --- @param payloadLength number (int)
---- @return void
---- @overload fun(eventName: string, eventPayload: string, payloadLength: number): void
+--- @return nil
+--- @overload fun(eventName: string, eventPayload: string, payloadLength: number): nil
 function TriggerEventInternal(eventName, eventPayload, payloadLength) end
 
     
@@ -448,8 +449,8 @@ function GetPlayerWeaponDefenseModifier_2(playerId) end
 --- @hash [0x9ADD2938](https://docs.fivem.net/natives/?_0x9ADD2938)
 --- @param key string (char*)
 --- @param value number (float)
---- @return void
---- @overload fun(key: string, value: number): void
+--- @return nil
+--- @overload fun(key: string, value: number): nil
 function SetResourceKvpFloat(key, value) end
 
     
@@ -480,8 +481,8 @@ function GetPlayerFromStateBagName(bagName) end
 ---
 --- @hash [0xB3210203](https://docs.fivem.net/natives/?_0xB3210203)
 --- @param handle number (int)
---- @return void
---- @overload fun(handle: number): void
+--- @return nil
+--- @overload fun(handle: number): nil
 function EndFindKvp(handle) end
 
     
@@ -489,8 +490,8 @@ function EndFindKvp(handle) end
 ---
 --- @hash [0xB39CA35C](https://docs.fivem.net/natives/?_0xB39CA35C)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ProfilerExitScope() end
 
     
@@ -516,8 +517,8 @@ function FindKvp(handle) end
 ---
 --- @hash [0xC795A4A9](https://docs.fivem.net/natives/?_0xC795A4A9)
 --- @param scopeName string (char*)
---- @return void
---- @overload fun(scopeName: string): void
+--- @return nil
+--- @overload fun(scopeName: string): nil
 function ProfilerEnterScope(scopeName) end
 
     
@@ -534,8 +535,8 @@ function IsDuplicityVersion() end
 ---
 --- @hash [0xD233A168](https://docs.fivem.net/natives/?_0xD233A168)
 --- @param eventName string (char*)
---- @return void
---- @overload fun(eventName: string): void
+--- @return nil
+--- @overload fun(eventName: string): nil
 function RegisterResourceAsEventHandler(eventName) end
 
     
@@ -545,8 +546,8 @@ function RegisterResourceAsEventHandler(eventName) end
 ---
 --- @hash [0xD36BE661](https://docs.fivem.net/natives/?_0xD36BE661)
 --- @param cookie number (int)
---- @return void
---- @overload fun(cookie: number): void
+--- @return nil
+--- @overload fun(cookie: number): nil
 function RemoveStateBagChangeHandler(cookie) end
 
     
@@ -668,8 +669,8 @@ function ProfilerIsRecording() end
 ---
 --- @hash [0xFA29D35D](https://docs.fivem.net/natives/?_0xFA29D35D)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function CancelEvent() end
 
     

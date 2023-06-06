@@ -1,3 +1,4 @@
+--- @meta
 
 --- ```
 --- NativeDB Introduced: v2060
@@ -67,8 +68,8 @@ function HasAdditionalTextLoaded(slot) end
 ---
 --- @hash [0x02CFBA0C9E9275CE](https://docs.fivem.net/natives/?_0x02CFBA0C9E9275CE)
 --- @param millisecondsToFlash number (int)
---- @return void
---- @overload fun(millisecondsToFlash: number): void
+--- @return nil
+--- @overload fun(millisecondsToFlash: number): nil
 function FlashAbilityBar(millisecondsToFlash) end
 
     
@@ -76,8 +77,8 @@ function FlashAbilityBar(millisecondsToFlash) end
 ---
 --- @hash [0x038C1F517D7FDCF8](https://docs.fivem.net/natives/?_0x038C1F517D7FDCF8)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function SetTextProportional(p0) end
 
     
@@ -85,8 +86,8 @@ function SetTextProportional(p0) end
 ---
 --- @hash [0x03B504CF259931BC](https://docs.fivem.net/natives/?_0x03B504CF259931BC)
 --- @param value number (int)
---- @return void
---- @overload fun(value: number): void
+--- @return nil
+--- @overload fun(value: number): nil
 function AddTextComponentInteger(value) end
 
     
@@ -95,8 +96,8 @@ function AddTextComponentInteger(value) end
 --- @hash [0x03D7FB09E75D6B7E](https://docs.fivem.net/natives/?_0x03D7FB09E75D6B7E)
 --- @param blip Blip
 --- @param color number (int)
---- @return void
---- @overload fun(blip: Blip, color: number): void
+--- @return nil
+--- @overload fun(blip: Blip, color: number): nil
 function SetBlipColour(blip, color) end
 
     
@@ -106,8 +107,8 @@ function SetBlipColour(blip, color) end
 ---
 --- @hash [0x04655F9D075D0AE5](https://docs.fivem.net/natives/?_0x04655F9D075D0AE5)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function N_0x04655f9d075d0ae5(toggle) end
 
     
@@ -141,8 +142,8 @@ function N_0x052991e59076e4e4(p0, p1) end
 ---
 --- @hash [0x06A320535F5F0248](https://docs.fivem.net/natives/?_0x06A320535F5F0248)
 --- @param maximumValue number (int)
---- @return void
---- @overload fun(maximumValue: number): void
+--- @return nil
+--- @overload fun(maximumValue: number): nil
 function SetMaxArmourHudDisplay(maximumValue) end
 
     
@@ -151,8 +152,8 @@ function SetMaxArmourHudDisplay(maximumValue) end
 ---
 --- @hash [0x06A320535F5F0248](https://docs.fivem.net/natives/?_0x06A320535F5F0248)
 --- @param maximumValue number (int)
---- @return void
---- @overload fun(maximumValue: number): void
+--- @return nil
+--- @overload fun(maximumValue: number): nil
 --- @deprecated
 function N_0x06a320535f5f0248(maximumValue) end
 
@@ -164,8 +165,8 @@ function N_0x06a320535f5f0248(maximumValue) end
 --- @hash [0x0772DF77852C2E30](https://docs.fivem.net/natives/?_0x0772DF77852C2E30)
 --- @param cash number (int)
 --- @param bank number (int)
---- @return void
---- @overload fun(cash: number, bank: number): void
+--- @return nil
+--- @overload fun(cash: number, bank: number): nil
 function ChangeFakeMpCash(cash, bank) end
 
     
@@ -177,8 +178,8 @@ function ChangeFakeMpCash(cash, bank) end
 --- @hash [0x0772DF77852C2E30](https://docs.fivem.net/natives/?_0x0772DF77852C2E30)
 --- @param cash number (int)
 --- @param bank number (int)
---- @return void
---- @overload fun(cash: number, bank: number): void
+--- @return nil
+--- @overload fun(cash: number, bank: number): nil
 --- @deprecated
 function SetSingleplayerHudCash(cash, bank) end
 
@@ -191,8 +192,8 @@ function SetSingleplayerHudCash(cash, bank) end
 --- @hash [0x0772DF77852C2E30](https://docs.fivem.net/natives/?_0x0772DF77852C2E30)
 --- @param cash number (int)
 --- @param bank number (int)
---- @return void
---- @overload fun(cash: number, bank: number): void
+--- @return nil
+--- @overload fun(cash: number, bank: number): nil
 --- @deprecated
 function SetPlayerCashChange(cash, bank) end
 
@@ -205,8 +206,8 @@ function SetPlayerCashChange(cash, bank) end
 --- @hash [0x07C837F9A01C34C9](https://docs.fivem.net/natives/?_0x07C837F9A01C34C9)
 --- @param scale number (float)
 --- @param size number (float)
---- @return void
---- @overload fun(scale: number, size: number): void
+--- @return nil
+--- @overload fun(scale: number, size: number): nil
 function SetTextScale(scale, size) end
 
     
@@ -216,8 +217,8 @@ function SetTextScale(scale, size) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number): nil
 function SetMinimapFowRevealCoordinate(x, y, z) end
 
     
@@ -228,8 +229,8 @@ function SetMinimapFowRevealCoordinate(x, y, z) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number): nil
 --- @deprecated
 function N_0x0923dbf87dff735e(x, y, z) end
 
@@ -240,8 +241,8 @@ function N_0x0923dbf87dff735e(x, y, z) end
 ---
 --- @hash [0x096EF57A0C999BBA](https://docs.fivem.net/natives/?_0x096EF57A0C999BBA)
 --- @param zoomLevel number (int)
---- @return void
---- @overload fun(zoomLevel: number): void
+--- @return nil
+--- @overload fun(zoomLevel: number): nil
 function SetRadarZoom(zoomLevel) end
 
     
@@ -275,8 +276,8 @@ function N_0x09c0403ed9a751c2(id) end
 ---
 --- @hash [0x0A24DA3A41B718F5](https://docs.fivem.net/natives/?_0x0A24DA3A41B718F5)
 --- @param labelName string (char*)
---- @return void
---- @overload fun(labelName: string): void
+--- @return nil
+--- @overload fun(labelName: string): nil
 function BeginTextCommandIsThisHelpMessageBeingDisplayed(labelName) end
 
     
@@ -291,8 +292,8 @@ function BeginTextCommandIsThisHelpMessageBeingDisplayed(labelName) end
 ---
 --- @hash [0x0A24DA3A41B718F5](https://docs.fivem.net/natives/?_0x0A24DA3A41B718F5)
 --- @param labelName string (char*)
---- @return void
---- @overload fun(labelName: string): void
+--- @return nil
+--- @overload fun(labelName: string): nil
 --- @deprecated
 function N_0x0a24da3a41b718f5(labelName) end
 
@@ -303,8 +304,8 @@ function N_0x0a24da3a41b718f5(labelName) end
 ---
 --- @hash [0x0AFC4AF510774B47](https://docs.fivem.net/natives/?_0x0AFC4AF510774B47)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function HudWeaponWheelIgnoreSelection() end
 
     
@@ -315,8 +316,8 @@ function HudWeaponWheelIgnoreSelection() end
 ---
 --- @hash [0x0AFC4AF510774B47](https://docs.fivem.net/natives/?_0x0AFC4AF510774B47)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function BlockWeaponWheelThisFrame() end
 
@@ -328,8 +329,8 @@ function BlockWeaponWheelThisFrame() end
 ---
 --- @hash [0x0AFC4AF510774B47](https://docs.fivem.net/natives/?_0x0AFC4AF510774B47)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x0afc4af510774b47() end
 
@@ -365,8 +366,8 @@ function N_0x0afc4af510774b47() end
 ---
 --- @hash [0x0B4DF1FA60C0E664](https://docs.fivem.net/natives/?_0x0B4DF1FA60C0E664)
 --- @param id number (int)
---- @return void
---- @overload fun(id: number): void
+--- @return nil
+--- @overload fun(id: number): nil
 function ShowHudComponentThisFrame(id) end
 
     
@@ -378,8 +379,8 @@ function ShowHudComponentThisFrame(id) end
 --- @hash [0x0C4BBF625CA98C4E](https://docs.fivem.net/natives/?_0x0C4BBF625CA98C4E)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedAiBlipForcedOn(ped, toggle) end
 
     
@@ -392,8 +393,8 @@ function SetPedAiBlipForcedOn(ped, toggle) end
 --- @hash [0x0C4BBF625CA98C4E](https://docs.fivem.net/natives/?_0x0C4BBF625CA98C4E)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 --- @deprecated
 function N_0x0c4bbf625ca98c4e(ped, toggle) end
 
@@ -407,8 +408,8 @@ function N_0x0c4bbf625ca98c4e(ped, toggle) end
 --- @hash [0x0C4BBF625CA98C4E](https://docs.fivem.net/natives/?_0x0C4BBF625CA98C4E)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 --- @deprecated
 function IsAiBlipAlwaysShown(ped, toggle) end
 
@@ -453,8 +454,8 @@ function N_0x0c5a80a9e096d529(index, name, cash, rp, lvl, colour) end
 ---
 --- @hash [0x0C698D8F099174C7](https://docs.fivem.net/natives/?_0x0C698D8F099174C7)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x0c698d8f099174c7(p0) end
 
     
@@ -462,8 +463,8 @@ function N_0x0c698d8f099174c7(p0) end
 ---
 --- @hash [0x0CF54F20DE43879C](https://docs.fivem.net/natives/?_0x0CF54F20DE43879C)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x0cf54f20de43879c(p0) end
 
     
@@ -478,8 +479,8 @@ function N_0x0cf54f20de43879c(p0) end
 --- @hash [0x0E4C749FF9DE9CC4](https://docs.fivem.net/natives/?_0x0E4C749FF9DE9CC4)
 --- @param value number (int)
 --- @param commaSeparated boolean
---- @return void
---- @overload fun(value: number, commaSeparated: boolean): void
+--- @return nil
+--- @overload fun(value: number, commaSeparated: boolean): nil
 function AddTextComponentFormattedInteger(value, commaSeparated) end
 
     
@@ -495,8 +496,8 @@ function AddTextComponentFormattedInteger(value, commaSeparated) end
 --- @hash [0x0E4C749FF9DE9CC4](https://docs.fivem.net/natives/?_0x0E4C749FF9DE9CC4)
 --- @param value number (int)
 --- @param commaSeparated boolean
---- @return void
---- @overload fun(value: number, commaSeparated: boolean): void
+--- @return nil
+--- @overload fun(value: number, commaSeparated: boolean): nil
 --- @deprecated
 function N_0x0e4c749ff9de9cc4(value, commaSeparated) end
 
@@ -515,8 +516,8 @@ function N_0x0e4c749ff9de9cc4(value, commaSeparated) end
 --- @hash [0x10706DC6AD2D49C0](https://docs.fivem.net/natives/?_0x10706DC6AD2D49C0)
 --- @param menuHash Hash
 --- @param p1 number (int)
---- @return void
---- @overload fun(menuHash: Hash, p1: number): void
+--- @return nil
+--- @overload fun(menuHash: Hash, p1: number): nil
 function RestartFrontendMenu(menuHash, p1) end
 
     
@@ -546,8 +547,8 @@ function N_0x10bddbfc529428dd(p0) end
 ---
 --- @hash [0x10D373323E5B9C0D](https://docs.fivem.net/natives/?_0x10D373323E5B9C0D)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function BusyspinnerOff() end
 
     
@@ -558,8 +559,8 @@ function BusyspinnerOff() end
 ---
 --- @hash [0x10D373323E5B9C0D](https://docs.fivem.net/natives/?_0x10D373323E5B9C0D)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x10d373323e5b9c0d() end
 
@@ -571,8 +572,8 @@ function N_0x10d373323e5b9c0d() end
 ---
 --- @hash [0x10D373323E5B9C0D](https://docs.fivem.net/natives/?_0x10D373323E5B9C0D)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function RemoveLoadingPrompt() end
 
@@ -584,8 +585,8 @@ function RemoveLoadingPrompt() end
 --- @hash [0x1115F16B8AB9E8BF](https://docs.fivem.net/natives/?_0x1115F16B8AB9E8BF)
 --- @param timestamp number (int)
 --- @param flags number (int)
---- @return void
---- @overload fun(timestamp: number, flags: number): void
+--- @return nil
+--- @overload fun(timestamp: number, flags: number): nil
 function AddTextComponentSubstringTime(timestamp, flags) end
 
     
@@ -628,8 +629,8 @@ function IsNamedRendertargetLinked(modelHash) end
 ---
 --- @hash [0x1185A8087587322C](https://docs.fivem.net/natives/?_0x1185A8087587322C)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0x1185a8087587322c(p0) end
 
     
@@ -637,8 +638,8 @@ function N_0x1185a8087587322c(p0) end
 ---
 --- @hash [0x12782CE0A636E9F0](https://docs.fivem.net/natives/?_0x12782CE0A636E9F0)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ResetReticuleValues() end
 
     
@@ -649,8 +650,8 @@ function ResetReticuleValues() end
 --- @hash [0x1279E861A329E73F](https://docs.fivem.net/natives/?_0x1279E861A329E73F)
 --- @param x number (float)
 --- @param y number (float)
---- @return void
---- @overload fun(x: number, y: number): void
+--- @return nil
+--- @overload fun(x: number, y: number): nil
 function LockMinimapPosition(x, y) end
 
     
@@ -659,8 +660,8 @@ function LockMinimapPosition(x, y) end
 --- @hash [0x127DE7B20C60A6A3](https://docs.fivem.net/natives/?_0x127DE7B20C60A6A3)
 --- @param blip Blip
 --- @param player Player
---- @return void
---- @overload fun(blip: Blip, player: Player): void
+--- @return nil
+--- @overload fun(blip: Blip, player: Player): nil
 function SetBlipNameToPlayerName(blip, player) end
 
     
@@ -671,8 +672,8 @@ function SetBlipNameToPlayerName(blip, player) end
 --- @hash [0x13127EC3665E8EE1](https://docs.fivem.net/natives/?_0x13127EC3665E8EE1)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 function SetBlipShowCone(blip, toggle) end
 
     
@@ -864,8 +865,8 @@ function N_0x13c4b962653a5280() end
 ---
 --- @hash [0x14621BB1DF14E2B2](https://docs.fivem.net/natives/?_0x14621BB1DF14E2B2)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ReleaseControlOfFrontend() end
 
     
@@ -876,8 +877,8 @@ function ReleaseControlOfFrontend() end
 ---
 --- @hash [0x14621BB1DF14E2B2](https://docs.fivem.net/natives/?_0x14621BB1DF14E2B2)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x14621bb1df14e2b2() end
 
@@ -889,8 +890,8 @@ function N_0x14621bb1df14e2b2() end
 --- @param r number (int)
 --- @param g number (int)
 --- @param b number (int)
---- @return void
---- @overload fun(blip: Blip, r: number, g: number, b: number): void
+--- @return nil
+--- @overload fun(blip: Blip, r: number, g: number, b: number): nil
 function SetBlipSecondaryColour(blip, r, g, b) end
 
     
@@ -900,8 +901,8 @@ function SetBlipSecondaryColour(blip, r, g, b) end
 ---
 --- @hash [0x14C9FDCC41F81F63](https://docs.fivem.net/natives/?_0x14C9FDCC41F81F63)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function HudWeaponWheelIgnoreControlInput(toggle) end
 
     
@@ -912,8 +913,8 @@ function HudWeaponWheelIgnoreControlInput(toggle) end
 ---
 --- @hash [0x14C9FDCC41F81F63](https://docs.fivem.net/natives/?_0x14C9FDCC41F81F63)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0x14c9fdcc41f81f63(toggle) end
 
@@ -934,8 +935,8 @@ function GetNextBlipInfoId(blipSprite) end
 --- @param gamerTagId number (int)
 --- @param health number (int)
 --- @param maximumHealth number (int)
---- @return void
---- @overload fun(gamerTagId: number, health: number, maximumHealth: number): void
+--- @return nil
+--- @overload fun(gamerTagId: number, health: number, maximumHealth: number): nil
 function SetMpGamerTagOverridePlayerHealth(gamerTagId, health, maximumHealth) end
 
     
@@ -947,8 +948,8 @@ function SetMpGamerTagOverridePlayerHealth(gamerTagId, health, maximumHealth) en
 --- @param gamerTagId number (int)
 --- @param health number (int)
 --- @param maximumHealth number (int)
---- @return void
---- @overload fun(gamerTagId: number, health: number, maximumHealth: number): void
+--- @return nil
+--- @overload fun(gamerTagId: number, health: number, maximumHealth: number): nil
 --- @deprecated
 function N_0x1563fe35e9928e67(gamerTagId, health, maximumHealth) end
 
@@ -961,8 +962,8 @@ function N_0x1563fe35e9928e67(gamerTagId, health, maximumHealth) end
 --- @param gamerTagId number (int)
 --- @param health number (int)
 --- @param maximumHealth number (int)
---- @return void
---- @overload fun(gamerTagId: number, health: number, maximumHealth: number): void
+--- @return nil
+--- @overload fun(gamerTagId: number, health: number, maximumHealth: number): nil
 --- @deprecated
 function SetMpGamerHealthBarMax(gamerTagId, health, maximumHealth) end
 
@@ -1046,8 +1047,8 @@ function IsRadarHidden() end
 --- @param p9 string (char*)
 --- @param background boolean
 --- @param errorCode number (int)
---- @return void
---- @overload fun(labelTitle: string, labelMsg: string, p2: number, p3: number, labelMsg2: string, p5: boolean, p6: number, p7: number, p8: string, p9: string, background: boolean, errorCode: number): void
+--- @return nil
+--- @overload fun(labelTitle: string, labelMsg: string, p2: number, p3: number, labelMsg2: string, p5: boolean, p6: number, p7: number, p8: string, p9: string, background: boolean, errorCode: number): nil
 function SetWarningMessageWithAlert(labelTitle, labelMsg, p2, p3, labelMsg2, p5, p6, p7, p8, p9, background, errorCode) end
 
     
@@ -1122,8 +1123,8 @@ function SetWarningMessageWithAlert(labelTitle, labelMsg, p2, p3, labelMsg2, p5,
 --- @param p9 string (char*)
 --- @param background boolean
 --- @param errorCode number (int)
---- @return void
---- @overload fun(labelTitle: string, labelMsg: string, p2: number, p3: number, labelMsg2: string, p5: boolean, p6: number, p7: number, p8: string, p9: string, background: boolean, errorCode: number): void
+--- @return nil
+--- @overload fun(labelTitle: string, labelMsg: string, p2: number, p3: number, labelMsg2: string, p5: boolean, p6: number, p7: number, p8: string, p9: string, background: boolean, errorCode: number): nil
 --- @deprecated
 function N_0x15803fec3b9a872b(labelTitle, labelMsg, p2, p3, labelMsg2, p5, p6, p7, p8, p9, background, errorCode) end
 
@@ -1199,8 +1200,8 @@ function N_0x15803fec3b9a872b(labelTitle, labelMsg, p2, p3, labelMsg2, p5, p6, p
 --- @param p9 string (char*)
 --- @param background boolean
 --- @param errorCode number (int)
---- @return void
---- @overload fun(labelTitle: string, labelMsg: string, p2: number, p3: number, labelMsg2: string, p5: boolean, p6: number, p7: number, p8: string, p9: string, background: boolean, errorCode: number): void
+--- @return nil
+--- @overload fun(labelTitle: string, labelMsg: string, p2: number, p3: number, labelMsg2: string, p5: boolean, p6: number, p7: number, p8: string, p9: string, background: boolean, errorCode: number): nil
 --- @deprecated
 function DrawFrontendAlert(labelTitle, labelMsg, p2, p3, labelMsg2, p5, p6, p7, p8, p9, background, errorCode) end
 
@@ -1221,8 +1222,8 @@ function DoesPedHaveAiBlip(ped) end
 ---
 --- @hash [0x15CFA549788D35EF](https://docs.fivem.net/natives/?_0x15CFA549788D35EF)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ThefeedDisplayLoadingScreenTips() end
 
     
@@ -1231,8 +1232,8 @@ function ThefeedDisplayLoadingScreenTips() end
 ---
 --- @hash [0x15CFA549788D35EF](https://docs.fivem.net/natives/?_0x15CFA549788D35EF)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x15cfa549788d35ef() end
 
@@ -1242,8 +1243,8 @@ function N_0x15cfa549788d35ef() end
 ---
 --- @hash [0x15CFA549788D35EF](https://docs.fivem.net/natives/?_0x15CFA549788D35EF)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function ThefeedEnable() end
 
@@ -1273,8 +1274,8 @@ function GetTextSubstring(text, position, length) end
 --- @param g number (int)
 --- @param b number (int)
 --- @param a number (int)
---- @return void
---- @overload fun(r: number, g: number, b: number, a: number): void
+--- @return nil
+--- @overload fun(r: number, g: number, b: number, a: number): nil
 function SetScriptVariable_2HudColour(r, g, b, a) end
 
     
@@ -1288,8 +1289,8 @@ function SetScriptVariable_2HudColour(r, g, b, a) end
 --- @param g number (int)
 --- @param b number (int)
 --- @param a number (int)
---- @return void
---- @overload fun(r: number, g: number, b: number, a: number): void
+--- @return nil
+--- @overload fun(r: number, g: number, b: number, a: number): nil
 --- @deprecated
 function N_0x16a304e6cb2bfab9(r, g, b, a) end
 
@@ -1301,8 +1302,8 @@ function N_0x16a304e6cb2bfab9(r, g, b, a) end
 ---
 --- @hash [0x170F541E1CADD1DE](https://docs.fivem.net/natives/?_0x170F541E1CADD1DE)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function UseFakeMpCash(p0) end
 
     
@@ -1314,8 +1315,8 @@ function UseFakeMpCash(p0) end
 ---
 --- @hash [0x170F541E1CADD1DE](https://docs.fivem.net/natives/?_0x170F541E1CADD1DE)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 --- @deprecated
 function N_0x170f541e1cadd1de(p0) end
 
@@ -1326,8 +1327,8 @@ function N_0x170f541e1cadd1de(p0) end
 ---
 --- @hash [0x17299B63C7683A2B](https://docs.fivem.net/natives/?_0x17299B63C7683A2B)
 --- @param gxtEntryHash Hash
---- @return void
---- @overload fun(gxtEntryHash: Hash): void
+--- @return nil
+--- @overload fun(gxtEntryHash: Hash): nil
 function AddTextComponentSubstringTextLabelHashKey(gxtEntryHash) end
 
     
@@ -1338,8 +1339,8 @@ function AddTextComponentSubstringTextLabelHashKey(gxtEntryHash) end
 ---
 --- @hash [0x17299B63C7683A2B](https://docs.fivem.net/natives/?_0x17299B63C7683A2B)
 --- @param gxtEntryHash Hash
---- @return void
---- @overload fun(gxtEntryHash: Hash): void
+--- @return nil
+--- @overload fun(gxtEntryHash: Hash): nil
 --- @deprecated
 function N_0x17299b63c7683a2b(gxtEntryHash) end
 
@@ -1351,8 +1352,8 @@ function N_0x17299b63c7683a2b(gxtEntryHash) end
 --- @param green number (int)
 --- @param blue number (int)
 --- @param alpha number (int)
---- @return void
---- @overload fun(red: number, green: number, blue: number, alpha: number): void
+--- @return nil
+--- @overload fun(red: number, green: number, blue: number, alpha: number): nil
 function ThefeedSetAnimpostfxColor(red, green, blue, alpha) end
 
     
@@ -1364,8 +1365,8 @@ function ThefeedSetAnimpostfxColor(red, green, blue, alpha) end
 --- @param green number (int)
 --- @param blue number (int)
 --- @param alpha number (int)
---- @return void
---- @overload fun(red: number, green: number, blue: number, alpha: number): void
+--- @return nil
+--- @overload fun(red: number, green: number, blue: number, alpha: number): nil
 --- @deprecated
 function N_0x17430b918701c342(red, green, blue, alpha) end
 
@@ -1378,8 +1379,8 @@ function N_0x17430b918701c342(red, green, blue, alpha) end
 --- @param green number (int)
 --- @param blue number (int)
 --- @param alpha number (int)
---- @return void
---- @overload fun(red: number, green: number, blue: number, alpha: number): void
+--- @return nil
+--- @overload fun(red: number, green: number, blue: number, alpha: number): nil
 --- @deprecated
 function SetNotificationFlashColor(red, green, blue, alpha) end
 
@@ -1388,8 +1389,8 @@ function SetNotificationFlashColor(red, green, blue, alpha) end
 ---
 --- @hash [0x17AD8C9706BDD88A](https://docs.fivem.net/natives/?_0x17AD8C9706BDD88A)
 --- @param count number (int)
---- @return void
---- @overload fun(count: number): void
+--- @return nil
+--- @overload fun(count: number): nil
 function ThefeedSetAnimpostfxCount(count) end
 
     
@@ -1398,8 +1399,8 @@ function ThefeedSetAnimpostfxCount(count) end
 ---
 --- @hash [0x17AD8C9706BDD88A](https://docs.fivem.net/natives/?_0x17AD8C9706BDD88A)
 --- @param count number (int)
---- @return void
---- @overload fun(count: number): void
+--- @return nil
+--- @overload fun(count: number): nil
 --- @deprecated
 function N_0x17ad8c9706bdd88a(count) end
 
@@ -1438,8 +1439,8 @@ function IsHudPreferenceSwitchedOn() end
 --- @hash [0x1A5CD7752DD28CD3](https://docs.fivem.net/natives/?_0x1A5CD7752DD28CD3)
 --- @param toggle boolean
 --- @param ped Ped
---- @return void
---- @overload fun(toggle: boolean, ped: Ped): void
+--- @return nil
+--- @overload fun(toggle: boolean, ped: Ped): nil
 function SetMinimapInSpectatorMode(toggle, ped) end
 
     
@@ -1449,8 +1450,8 @@ function SetMinimapInSpectatorMode(toggle, ped) end
 --- @hash [0x1A5CD7752DD28CD3](https://docs.fivem.net/natives/?_0x1A5CD7752DD28CD3)
 --- @param toggle boolean
 --- @param ped Ped
---- @return void
---- @overload fun(toggle: boolean, ped: Ped): void
+--- @return nil
+--- @overload fun(toggle: boolean, ped: Ped): nil
 --- @deprecated
 function KeyHudColour(toggle, ped) end
 
@@ -1468,8 +1469,8 @@ function GetNamedRendertargetRenderId(name) end
 ---
 --- @hash [0x1AC8F4AD40E22127](https://docs.fivem.net/natives/?_0x1AC8F4AD40E22127)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function CloseMultiplayerChat() end
 
     
@@ -1478,8 +1479,8 @@ function CloseMultiplayerChat() end
 ---
 --- @hash [0x1AC8F4AD40E22127](https://docs.fivem.net/natives/?_0x1AC8F4AD40E22127)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function AbortTextChat() end
 
@@ -1515,8 +1516,8 @@ function DoesTextBlockExist(gxt) end
 ---
 --- @hash [0x1CA3E9EAC9D93E5E](https://docs.fivem.net/natives/?_0x1CA3E9EAC9D93E5E)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function SetTextDropShadow() end
 
     
@@ -1529,8 +1530,8 @@ function SetTextDropShadow() end
 --- @hash [0x1CCC708F0F850613](https://docs.fivem.net/natives/?_0x1CCC708F0F850613)
 --- @param hudColorIndex number (int)
 --- @param hudColorIndex2 number (int)
---- @return void
---- @overload fun(hudColorIndex: number, hudColorIndex2: number): void
+--- @return nil
+--- @overload fun(hudColorIndex: number, hudColorIndex2: number): nil
 function ReplaceHudColour(hudColorIndex, hudColorIndex2) end
 
     
@@ -1544,8 +1545,8 @@ function ReplaceHudColour(hudColorIndex, hudColorIndex2) end
 --- @hash [0x1CCC708F0F850613](https://docs.fivem.net/natives/?_0x1CCC708F0F850613)
 --- @param hudColorIndex number (int)
 --- @param hudColorIndex2 number (int)
---- @return void
---- @overload fun(hudColorIndex: number, hudColorIndex2: number): void
+--- @return nil
+--- @overload fun(hudColorIndex: number, hudColorIndex2: number): nil
 --- @deprecated
 function N_0x1ccc708f0f850613(hudColorIndex, hudColorIndex2) end
 
@@ -1560,8 +1561,8 @@ function N_0x1ccc708f0f850613(hudColorIndex, hudColorIndex2) end
 --- @hash [0x1CCC708F0F850613](https://docs.fivem.net/natives/?_0x1CCC708F0F850613)
 --- @param hudColorIndex number (int)
 --- @param hudColorIndex2 number (int)
---- @return void
---- @overload fun(hudColorIndex: number, hudColorIndex2: number): void
+--- @return nil
+--- @overload fun(hudColorIndex: number, hudColorIndex2: number): nil
 --- @deprecated
 function SetHudColoursSwitch(hudColorIndex, hudColorIndex2) end
 
@@ -1702,8 +1703,8 @@ function SetNotificationMessage(textureDict, textureName, flash, iconType, sende
 ---
 --- @hash [0x1DB21A44B09E8BA3](https://docs.fivem.net/natives/?_0x1DB21A44B09E8BA3)
 --- @param disable boolean
---- @return void
---- @overload fun(disable: boolean): void
+--- @return nil
+--- @overload fun(disable: boolean): nil
 function DisableMultiplayerChat(disable) end
 
     
@@ -1712,8 +1713,8 @@ function DisableMultiplayerChat(disable) end
 ---
 --- @hash [0x1DB21A44B09E8BA3](https://docs.fivem.net/natives/?_0x1DB21A44B09E8BA3)
 --- @param disable boolean
---- @return void
---- @overload fun(disable: boolean): void
+--- @return nil
+--- @overload fun(disable: boolean): nil
 --- @deprecated
 function SetTextChatUnk(disable) end
 
@@ -1733,8 +1734,8 @@ function IsWaypointActive() end
 ---
 --- @hash [0x1DFEDD15019315A9](https://docs.fivem.net/natives/?_0x1DFEDD15019315A9)
 --- @param visible boolean
---- @return void
---- @overload fun(visible: boolean): void
+--- @return nil
+--- @overload fun(visible: boolean): nil
 function SetAbilityBarVisibilityInMultiplayer(visible) end
 
     
@@ -1830,8 +1831,8 @@ function SetNotificationMessage_4(picTxd, picTxn, flash, iconType, nameStr, subt
 ---
 --- @hash [0x1EAC5F91BCBC5073](https://docs.fivem.net/natives/?_0x1EAC5F91BCBC5073)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetRaceTrackRender(toggle) end
 
     
@@ -1840,8 +1841,8 @@ function SetRaceTrackRender(toggle) end
 ---
 --- @hash [0x1EAC5F91BCBC5073](https://docs.fivem.net/natives/?_0x1EAC5F91BCBC5073)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0x1eac5f91bcbc5073(toggle) end
 
@@ -1852,8 +1853,8 @@ function N_0x1eac5f91bcbc5073(toggle) end
 ---
 --- @hash [0x1EAE6DD17B7A5EFA](https://docs.fivem.net/natives/?_0x1EAE6DD17B7A5EFA)
 --- @param spriteId number (int)
---- @return void
---- @overload fun(spriteId: number): void
+--- @return nil
+--- @overload fun(spriteId: number): nil
 function RaceGalleryNextBlipSprite(spriteId) end
 
     
@@ -1864,8 +1865,8 @@ function RaceGalleryNextBlipSprite(spriteId) end
 ---
 --- @hash [0x1EAE6DD17B7A5EFA](https://docs.fivem.net/natives/?_0x1EAE6DD17B7A5EFA)
 --- @param spriteId number (int)
---- @return void
---- @overload fun(spriteId: number): void
+--- @return nil
+--- @overload fun(spriteId: number): nil
 --- @deprecated
 function N_0x1eae6dd17b7a5efa(spriteId) end
 
@@ -1894,8 +1895,8 @@ function GetBlipSprite(blip) end
 --- EndTextCommandThefeedPostTicker(true, true
 --- @hash [0x202709F4C58A0424](https://docs.fivem.net/natives/?_0x202709F4C58A0424)
 --- @param text string (char*)
---- @return void
---- @overload fun(text: string): void
+--- @return nil
+--- @overload fun(text: string): nil
 function BeginTextCommandThefeedPost(text) end
 
     
@@ -1912,8 +1913,8 @@ function BeginTextCommandThefeedPost(text) end
 --- EndTextCommandThefeedPostTicker(true, true
 --- @hash [0x202709F4C58A0424](https://docs.fivem.net/natives/?_0x202709F4C58A0424)
 --- @param text string (char*)
---- @return void
---- @overload fun(text: string): void
+--- @return nil
+--- @overload fun(text: string): nil
 --- @deprecated
 function SetNotificationTextEntry(text) end
 
@@ -1922,8 +1923,8 @@ function SetNotificationTextEntry(text) end
 ---
 --- @hash [0x20FE7FDFEEAD38C0](https://docs.fivem.net/natives/?_0x20FE7FDFEEAD38C0)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function HideMinimapInteriorMapThisFrame() end
 
     
@@ -1932,8 +1933,8 @@ function HideMinimapInteriorMapThisFrame() end
 ---
 --- @hash [0x20FE7FDFEEAD38C0](https://docs.fivem.net/natives/?_0x20FE7FDFEEAD38C0)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x20fe7fdfeead38c0() end
 
@@ -1942,8 +1943,8 @@ function N_0x20fe7fdfeead38c0() end
 ---
 --- @hash [0x211C4EF450086857](https://docs.fivem.net/natives/?_0x211C4EF450086857)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x211c4ef450086857() end
 
     
@@ -1965,8 +1966,8 @@ function N_0x214cd562a939246a() end
 ---
 --- @hash [0x2162C446DFDF38FD](https://docs.fivem.net/natives/?_0x2162C446DFDF38FD)
 --- @param p0 string (char*)
---- @return void
---- @overload fun(p0: string): void
+--- @return nil
+--- @overload fun(p0: string): nil
 function LogDebugInfo(p0) end
 
     
@@ -1978,8 +1979,8 @@ function LogDebugInfo(p0) end
 ---
 --- @hash [0x2162C446DFDF38FD](https://docs.fivem.net/natives/?_0x2162C446DFDF38FD)
 --- @param p0 string (char*)
---- @return void
---- @overload fun(p0: string): void
+--- @return nil
+--- @overload fun(p0: string): nil
 --- @deprecated
 function N_0x2162c446dfdf38fd(p0) end
 
@@ -1991,8 +1992,8 @@ function N_0x2162c446dfdf38fd(p0) end
 ---
 --- @hash [0x21986729D6A3A830](https://docs.fivem.net/natives/?_0x21986729D6A3A830)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ClearGpsFlags() end
 
     
@@ -2049,8 +2050,8 @@ function GetCurrentFrontendMenu() end
 --- @hash [0x231C8F89D0539D8F](https://docs.fivem.net/natives/?_0x231C8F89D0539D8F)
 --- @param toggleBigMap boolean
 --- @param showFullMap boolean
---- @return void
---- @overload fun(toggleBigMap: boolean, showFullMap: boolean): void
+--- @return nil
+--- @overload fun(toggleBigMap: boolean, showFullMap: boolean): nil
 function SetBigmapActive(toggleBigMap, showFullMap) end
 
     
@@ -2062,8 +2063,8 @@ function SetBigmapActive(toggleBigMap, showFullMap) end
 --- @hash [0x231C8F89D0539D8F](https://docs.fivem.net/natives/?_0x231C8F89D0539D8F)
 --- @param toggleBigMap boolean
 --- @param showFullMap boolean
---- @return void
---- @overload fun(toggleBigMap: boolean, showFullMap: boolean): void
+--- @return nil
+--- @overload fun(toggleBigMap: boolean, showFullMap: boolean): nil
 --- @deprecated
 function SetRadarBigmapEnabled(toggleBigMap, showFullMap) end
 
@@ -2107,8 +2108,8 @@ function SetRadarBigmapEnabled(toggleBigMap, showFullMap) end
 --- @hash [0x234CDD44D996FD9A](https://docs.fivem.net/natives/?_0x234CDD44D996FD9A)
 --- @param blip Blip
 --- @param index number (int)
---- @return void
---- @overload fun(blip: Blip, index: number): void
+--- @return nil
+--- @overload fun(blip: Blip, index: number): nil
 function SetBlipCategory(blip, index) end
 
     
@@ -2124,8 +2125,8 @@ function SetBlipCategory(blip, index) end
 --- @param loop boolean
 --- @param beep boolean
 --- @param duration number (int)
---- @return void
---- @overload fun(shape: number, loop: boolean, beep: boolean, duration: number): void
+--- @return nil
+--- @overload fun(shape: number, loop: boolean, beep: boolean, duration: number): nil
 function EndTextCommandDisplayHelp(shape, loop, beep, duration) end
 
     
@@ -2142,8 +2143,8 @@ function EndTextCommandDisplayHelp(shape, loop, beep, duration) end
 --- @param loop boolean
 --- @param beep boolean
 --- @param duration number (int)
---- @return void
---- @overload fun(shape: number, loop: boolean, beep: boolean, duration: number): void
+--- @return nil
+--- @overload fun(shape: number, loop: boolean, beep: boolean, duration: number): nil
 --- @deprecated
 function DisplayHelpTextFromStringLabel(shape, loop, beep, duration) end
 
@@ -2159,8 +2160,8 @@ function DisplayHelpTextFromStringLabel(shape, loop, beep, duration) end
 --- @hash [0x23C3EB807312F01A](https://docs.fivem.net/natives/?_0x23C3EB807312F01A)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 function ShowFriendIndicatorOnBlip(blip, toggle) end
 
     
@@ -2176,8 +2177,8 @@ function ShowFriendIndicatorOnBlip(blip, toggle) end
 --- @hash [0x23C3EB807312F01A](https://docs.fivem.net/natives/?_0x23C3EB807312F01A)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 --- @deprecated
 function N_0x23c3eb807312f01a(blip, toggle) end
 
@@ -2194,8 +2195,8 @@ function N_0x23c3eb807312f01a(blip, toggle) end
 --- @hash [0x23C3EB807312F01A](https://docs.fivem.net/natives/?_0x23C3EB807312F01A)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 --- @deprecated
 function SetBlipFriend(blip, toggle) end
 
@@ -2204,8 +2205,8 @@ function SetBlipFriend(blip, toggle) end
 ---
 --- @hash [0x23D69E0465570028](https://docs.fivem.net/natives/?_0x23D69E0465570028)
 --- @param p0 string (char*)
---- @return void
---- @overload fun(p0: string): void
+--- @return nil
+--- @overload fun(p0: string): nil
 function BeginTextCommandObjective(p0) end
 
     
@@ -2214,8 +2215,8 @@ function BeginTextCommandObjective(p0) end
 ---
 --- @hash [0x23D69E0465570028](https://docs.fivem.net/natives/?_0x23D69E0465570028)
 --- @param p0 string (char*)
---- @return void
---- @overload fun(p0: string): void
+--- @return nil
+--- @overload fun(p0: string): nil
 --- @deprecated
 function N_0x23d69e0465570028(p0) end
 
@@ -2246,8 +2247,8 @@ function N_0x2432784aca090da4(hudIndex) end
 ---
 --- @hash [0x243296A510B562B6](https://docs.fivem.net/natives/?_0x243296A510B562B6)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x243296a510b562b6() end
 
     
@@ -2269,8 +2270,8 @@ function N_0x24a49beaf468dc90(p0, p1, p2, p3, p4) end
 --- @hash [0x24AC0137444F9FD5](https://docs.fivem.net/natives/?_0x24AC0137444F9FD5)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 function SetBlipAsMissionCreatorBlip(blip, toggle) end
 
     
@@ -2278,8 +2279,8 @@ function SetBlipAsMissionCreatorBlip(blip, toggle) end
 ---
 --- @hash [0x2513DFB0FB8400FE](https://docs.fivem.net/natives/?_0x2513DFB0FB8400FE)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function SetTextOutline() end
 
     
@@ -2290,8 +2291,8 @@ function SetTextOutline() end
 --- @hash [0x25615540D894B814](https://docs.fivem.net/natives/?_0x25615540D894B814)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 function SetRadiusBlipEdge(blip, toggle) end
 
     
@@ -2303,8 +2304,8 @@ function SetRadiusBlipEdge(blip, toggle) end
 --- @hash [0x25615540D894B814](https://docs.fivem.net/natives/?_0x25615540D894B814)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 --- @deprecated
 function N_0x25615540d894b814(blip, toggle) end
 
@@ -2313,8 +2314,8 @@ function N_0x25615540d894b814(blip, toggle) end
 ---
 --- @hash [0x25F87B30C382FCA7](https://docs.fivem.net/natives/?_0x25F87B30C382FCA7)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ThefeedHideThisFrame() end
 
     
@@ -2323,8 +2324,8 @@ function ThefeedHideThisFrame() end
 ---
 --- @hash [0x25F87B30C382FCA7](https://docs.fivem.net/natives/?_0x25F87B30C382FCA7)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x25f87b30c382fca7() end
 
@@ -2334,8 +2335,8 @@ function N_0x25f87b30c382fca7() end
 ---
 --- @hash [0x25F87B30C382FCA7](https://docs.fivem.net/natives/?_0x25F87B30C382FCA7)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function HideHudNotificationsThisFrame() end
 
@@ -2350,8 +2351,8 @@ function HideHudNotificationsThisFrame() end
 ---
 --- @hash [0x25FBB336DF1804CB](https://docs.fivem.net/natives/?_0x25FBB336DF1804CB)
 --- @param text string (char*)
---- @return void
---- @overload fun(text: string): void
+--- @return nil
+--- @overload fun(text: string): nil
 function BeginTextCommandDisplayText(text) end
 
     
@@ -2366,8 +2367,8 @@ function BeginTextCommandDisplayText(text) end
 ---
 --- @hash [0x25FBB336DF1804CB](https://docs.fivem.net/natives/?_0x25FBB336DF1804CB)
 --- @param text string (char*)
---- @return void
---- @overload fun(text: string): void
+--- @return nil
+--- @overload fun(text: string): nil
 --- @deprecated
 function SetTextEntry(text) end
 
@@ -2378,8 +2379,8 @@ function SetTextEntry(text) end
 ---
 --- @hash [0x2632482FD6B9AB87](https://docs.fivem.net/natives/?_0x2632482FD6B9AB87)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function SetDirectorModeClearTriggeredFlag() end
 
     
@@ -2390,8 +2391,8 @@ function SetDirectorModeClearTriggeredFlag() end
 ---
 --- @hash [0x2632482FD6B9AB87](https://docs.fivem.net/natives/?_0x2632482FD6B9AB87)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x2632482fd6b9ab87() end
 
@@ -2409,8 +2410,8 @@ function IsMissionCreatorBlip(blip) end
 ---
 --- @hash [0x2708FC083123F9FF](https://docs.fivem.net/natives/?_0x2708FC083123F9FF)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ClearRaceGalleryBlips() end
 
     
@@ -2419,8 +2420,8 @@ function ClearRaceGalleryBlips() end
 ---
 --- @hash [0x2708FC083123F9FF](https://docs.fivem.net/natives/?_0x2708FC083123F9FF)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x2708fc083123f9ff() end
 
@@ -2448,8 +2449,8 @@ function GetPauseMenuState() end
 ---
 --- @hash [0x276B6CE369C33678](https://docs.fivem.net/natives/?_0x276B6CE369C33678)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function DisplayAreaName(toggle) end
 
     
@@ -2459,8 +2460,8 @@ function DisplayAreaName(toggle) end
 ---
 --- @hash [0x2790F4B17D098E26](https://docs.fivem.net/natives/?_0x2790F4B17D098E26)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function N_0x2790f4b17d098e26(toggle) end
 
     
@@ -2468,8 +2469,8 @@ function N_0x2790f4b17d098e26(toggle) end
 ---
 --- @hash [0x2916A928514C9827](https://docs.fivem.net/natives/?_0x2916A928514C9827)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x2916a928514c9827() end
 
     
@@ -2480,8 +2481,8 @@ function N_0x2916a928514c9827() end
 ---
 --- @hash [0x299FAEBB108AE05B](https://docs.fivem.net/natives/?_0x299FAEBB108AE05B)
 --- @param angle number (int)
---- @return void
---- @overload fun(angle: number): void
+--- @return nil
+--- @overload fun(angle: number): nil
 function LockMinimapAngle(angle) end
 
     
@@ -2490,8 +2491,8 @@ function LockMinimapAngle(angle) end
 --- @hash [0x2A179DF17CCF04CD](https://docs.fivem.net/natives/?_0x2A179DF17CCF04CD)
 --- @param p0 number (int)
 --- @param p1 boolean
---- @return void
---- @overload fun(p0: number, p1: boolean): void
+--- @return nil
+--- @overload fun(p0: number, p1: boolean): nil
 function ClearAdditionalText(p0, p1) end
 
     
@@ -2521,8 +2522,8 @@ function N_0x2a25adc48f87841f() end
 --- @param blip Blip
 --- @param opacity number (int)
 --- @param duration number (int)
---- @return void
---- @overload fun(blip: Blip, opacity: number, duration: number): void
+--- @return nil
+--- @overload fun(blip: Blip, opacity: number, duration: number): nil
 function SetBlipFade(blip, opacity, duration) end
 
     
@@ -2534,8 +2535,8 @@ function SetBlipFade(blip, opacity, duration) end
 --- @hash [0x2B6D467DAB714E8D](https://docs.fivem.net/natives/?_0x2B6D467DAB714E8D)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 function SetBlipShrink(blip, toggle) end
 
     
@@ -2548,8 +2549,8 @@ function SetBlipShrink(blip, toggle) end
 --- @hash [0x2B6D467DAB714E8D](https://docs.fivem.net/natives/?_0x2B6D467DAB714E8D)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 --- @deprecated
 function N_0x2b6d467dab714e8d(blip, toggle) end
 
@@ -2711,8 +2712,8 @@ function N_0x2c173ae2bdb9385e(blip) end
 --- @hash [0x2C9F302398E13141](https://docs.fivem.net/natives/?_0x2C9F302398E13141)
 --- @param blip Blip
 --- @param p1 any
---- @return void
---- @overload fun(blip: Blip, p1: any): void
+--- @return nil
+--- @overload fun(blip: Blip, p1: any): nil
 function N_0x2c9f302398e13141(blip, p1) end
 
     
@@ -2720,8 +2721,8 @@ function N_0x2c9f302398e13141(blip, p1) end
 ---
 --- @hash [0x2CEA2839313C09AC](https://docs.fivem.net/natives/?_0x2CEA2839313C09AC)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ClearSmallPrints() end
 
     
@@ -2729,8 +2730,8 @@ function ClearSmallPrints() end
 ---
 --- @hash [0x2DE6C5E2E996F178](https://docs.fivem.net/natives/?_0x2DE6C5E2E996F178)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x2de6c5e2e996f178(p0) end
 
     
@@ -2748,8 +2749,8 @@ function N_0x2e22fefa0100275e() end
 --- @hash [0x2E8D9498C56DD0D1](https://docs.fivem.net/natives/?_0x2E8D9498C56DD0D1)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 function SetBlipFlashesAlternate(blip, toggle) end
 
     
@@ -2800,8 +2801,8 @@ function N_0x2f057596f2bd0061() end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number): nil
 function AddPointToGpsCustomRoute(x, y, z) end
 
     
@@ -2812,8 +2813,8 @@ function AddPointToGpsCustomRoute(x, y, z) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number): nil
 --- @deprecated
 function N_0x311438a071dd9b1a(x, y, z) end
 
@@ -2828,8 +2829,8 @@ function N_0x311438a071dd9b1a(x, y, z) end
 --- @hash [0x3158C77A7E888AB4](https://docs.fivem.net/natives/?_0x3158C77A7E888AB4)
 --- @param gamerTagId number (int)
 --- @param hudColorIndex number (int)
---- @return void
---- @overload fun(gamerTagId: number, hudColorIndex: number): void
+--- @return nil
+--- @overload fun(gamerTagId: number, hudColorIndex: number): nil
 function SetMpGamerTagHealthBarColour(gamerTagId, hudColorIndex) end
 
     
@@ -2844,8 +2845,8 @@ function SetMpGamerTagHealthBarColour(gamerTagId, hudColorIndex) end
 --- @hash [0x3158C77A7E888AB4](https://docs.fivem.net/natives/?_0x3158C77A7E888AB4)
 --- @param gamerTagId number (int)
 --- @param hudColorIndex number (int)
---- @return void
---- @overload fun(gamerTagId: number, hudColorIndex: number): void
+--- @return nil
+--- @overload fun(gamerTagId: number, hudColorIndex: number): nil
 --- @deprecated
 function N_0x3158c77a7e888ab4(gamerTagId, hudColorIndex) end
 
@@ -2861,8 +2862,8 @@ function N_0x3158c77a7e888ab4(gamerTagId, hudColorIndex) end
 --- @hash [0x3158C77A7E888AB4](https://docs.fivem.net/natives/?_0x3158C77A7E888AB4)
 --- @param gamerTagId number (int)
 --- @param hudColorIndex number (int)
---- @return void
---- @overload fun(gamerTagId: number, hudColorIndex: number): void
+--- @return nil
+--- @overload fun(gamerTagId: number, hudColorIndex: number): nil
 --- @deprecated
 function SetMpGamerTagHealthBarColor(gamerTagId, hudColorIndex) end
 
@@ -2871,8 +2872,8 @@ function SetMpGamerTagHealthBarColor(gamerTagId, hudColorIndex) end
 ---
 --- @hash [0x31698AA80E0223F8](https://docs.fivem.net/natives/?_0x31698AA80E0223F8)
 --- @param gamerTagId number (int)
---- @return void
---- @overload fun(gamerTagId: number): void
+--- @return nil
+--- @overload fun(gamerTagId: number): nil
 function RemoveMpGamerTag(gamerTagId) end
 
     
@@ -2881,8 +2882,8 @@ function RemoveMpGamerTag(gamerTagId) end
 ---
 --- @hash [0x31698AA80E0223F8](https://docs.fivem.net/natives/?_0x31698AA80E0223F8)
 --- @param gamerTagId number (int)
---- @return void
---- @overload fun(gamerTagId: number): void
+--- @return nil
+--- @overload fun(gamerTagId: number): nil
 --- @deprecated
 function N_0x31698aa80e0223f8(gamerTagId) end
 
@@ -2898,8 +2899,8 @@ function N_0x31698aa80e0223f8(gamerTagId) end
 --- @param txnString1 string (char*)
 --- @param txdString2 string (char*)
 --- @param txnString2 string (char*)
---- @return void
---- @overload fun(txdString1: string, txnString1: string, txdString2: string, txnString2: string): void
+--- @return nil
+--- @overload fun(txdString1: string, txnString1: string, txdString2: string, txnString2: string): nil
 function ThefeedUpdateItemTexture(txdString1, txnString1, txdString2, txnString2) end
 
     
@@ -2915,8 +2916,8 @@ function ThefeedUpdateItemTexture(txdString1, txnString1, txdString2, txnString2
 --- @param txnString1 string (char*)
 --- @param txdString2 string (char*)
 --- @param txnString2 string (char*)
---- @return void
---- @overload fun(txdString1: string, txnString1: string, txdString2: string, txnString2: string): void
+--- @return nil
+--- @overload fun(txdString1: string, txnString1: string, txdString2: string, txnString2: string): nil
 --- @deprecated
 function N_0x317eba71d7543f52(txdString1, txnString1, txdString2, txnString2) end
 
@@ -2933,8 +2934,8 @@ function N_0x317eba71d7543f52(txdString1, txnString1, txdString2, txnString2) en
 --- @param txnString1 string (char*)
 --- @param txdString2 string (char*)
 --- @param txnString2 string (char*)
---- @return void
---- @overload fun(txdString1: string, txnString1: string, txdString2: string, txnString2: string): void
+--- @return nil
+--- @overload fun(txdString1: string, txnString1: string, txdString2: string, txnString2: string): nil
 --- @deprecated
 function ThefeedAddTxdRef(txdString1, txnString1, txdString2, txnString2) end
 
@@ -2943,8 +2944,8 @@ function ThefeedAddTxdRef(txdString1, txnString1, txdString2, txnString2) end
 ---
 --- @hash [0x320D0E0D936A0E9B](https://docs.fivem.net/natives/?_0x320D0E0D936A0E9B)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetGpsFlashes(toggle) end
 
     
@@ -2961,8 +2962,8 @@ function IsHelpMessageFadingOut() end
 ---
 --- @hash [0x32888337579A5970](https://docs.fivem.net/natives/?_0x32888337579A5970)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ThefeedDisableLoadingScreenTips() end
 
     
@@ -2971,8 +2972,8 @@ function ThefeedDisableLoadingScreenTips() end
 ---
 --- @hash [0x32888337579A5970](https://docs.fivem.net/natives/?_0x32888337579A5970)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x32888337579a5970() end
 
@@ -2982,8 +2983,8 @@ function N_0x32888337579a5970() end
 ---
 --- @hash [0x32888337579A5970](https://docs.fivem.net/natives/?_0x32888337579A5970)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function ThefeedDisable() end
 
@@ -3038,8 +3039,8 @@ function N_0x359af31a4b52f5ed() end
 ---
 --- @hash [0x35A3CD97B2C0A6D2](https://docs.fivem.net/natives/?_0x35A3CD97B2C0A6D2)
 --- @param blip Blip
---- @return void
---- @overload fun(blip: Blip): void
+--- @return nil
+--- @overload fun(blip: Blip): nil
 function N_0x35a3cd97b2c0a6d2(blip) end
 
     
@@ -3047,8 +3048,8 @@ function N_0x35a3cd97b2c0a6d2(blip) end
 ---
 --- @hash [0x35EDD5B2E3FF01C0](https://docs.fivem.net/natives/?_0x35EDD5B2E3FF01C0)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function SetMinimapGolfCourseOff() end
 
     
@@ -3057,8 +3058,8 @@ function SetMinimapGolfCourseOff() end
 ---
 --- @hash [0x35EDD5B2E3FF01C0](https://docs.fivem.net/natives/?_0x35EDD5B2E3FF01C0)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x35edd5b2e3ff01c0() end
 
@@ -3067,8 +3068,8 @@ function N_0x35edd5b2e3ff01c0() end
 ---
 --- @hash [0x36C1451A88A09630](https://docs.fivem.net/natives/?_0x36C1451A88A09630)
 ---
---- @return number, number
---- @overload fun(): number, number
+--- @return nil, number, number
+--- @overload fun(): nil, number, number
 function GetPauseMenuSelection() end
 
     
@@ -3077,8 +3078,8 @@ function GetPauseMenuSelection() end
 ---
 --- @hash [0x36C1451A88A09630](https://docs.fivem.net/natives/?_0x36C1451A88A09630)
 ---
---- @return number, number
---- @overload fun(): number, number
+--- @return nil, number, number
+--- @overload fun(): nil, number, number
 --- @deprecated
 function N_0x36c1451a88a09630() end
 
@@ -3119,8 +3120,8 @@ function DrawNotification_3(isImportant, bHasTokens) end
 --- @param showBg boolean
 --- @param p9 any
 --- @param p10 any
---- @return any, any
---- @overload fun(entryHeader: string, entryLine1: string, flags: number, entryLine2: string, p4: boolean, p5: any, showBg: boolean, p9: any, p10: any): any, any
+--- @return nil, any, any
+--- @overload fun(entryHeader: string, entryLine1: string, flags: number, entryLine2: string, p4: boolean, p5: any, showBg: boolean, p9: any, p10: any): nil, any, any
 function SetWarningMessageWithHeaderUnk(entryHeader, entryLine1, flags, entryLine2, p4, p5, showBg, p9, p10) end
 
     
@@ -3128,8 +3129,8 @@ function SetWarningMessageWithHeaderUnk(entryHeader, entryLine1, flags, entryLin
 ---
 --- @hash [0x39BBF623FC803EAC](https://docs.fivem.net/natives/?_0x39BBF623FC803EAC)
 --- @param hudColor number (int)
---- @return void
---- @overload fun(hudColor: number): void
+--- @return nil
+--- @overload fun(hudColor: number): nil
 function SetColourOfNextTextComponent(hudColor) end
 
     
@@ -3138,8 +3139,8 @@ function SetColourOfNextTextComponent(hudColor) end
 ---
 --- @hash [0x39BBF623FC803EAC](https://docs.fivem.net/natives/?_0x39BBF623FC803EAC)
 --- @param hudColor number (int)
---- @return void
---- @overload fun(hudColor: number): void
+--- @return nil
+--- @overload fun(hudColor: number): nil
 --- @deprecated
 function N_0x39bbf623fc803eac(hudColor) end
 
@@ -3149,8 +3150,8 @@ function N_0x39bbf623fc803eac(hudColor) end
 ---
 --- @hash [0x39BBF623FC803EAC](https://docs.fivem.net/natives/?_0x39BBF623FC803EAC)
 --- @param hudColor number (int)
---- @return void
---- @overload fun(hudColor: number): void
+--- @return nil
+--- @overload fun(hudColor: number): nil
 --- @deprecated
 function SetNotificationColorNext(hudColor) end
 
@@ -3185,8 +3186,8 @@ function N_0x3bab9a4e4f2ff5c7() end
 ---
 --- @hash [0x3CA6050692BC61B0](https://docs.fivem.net/natives/?_0x3CA6050692BC61B0)
 --- @param state boolean
---- @return void
---- @overload fun(state: boolean): void
+--- @return nil
+--- @overload fun(state: boolean): nil
 function SetPauseMenuPedLighting(state) end
 
     
@@ -3201,8 +3202,8 @@ function SetPauseMenuPedLighting(state) end
 ---
 --- @hash [0x3CA6050692BC61B0](https://docs.fivem.net/natives/?_0x3CA6050692BC61B0)
 --- @param state boolean
---- @return void
---- @overload fun(state: boolean): void
+--- @return nil
+--- @overload fun(state: boolean): nil
 --- @deprecated
 function N_0x3ca6050692bc61b0(state) end
 
@@ -3235,8 +3236,8 @@ function N_0x3ca6050692bc61b0(state) end
 --- @param hudColor number (int)
 --- @param routeFromPlayer boolean
 --- @param displayOnFoot boolean
---- @return void
---- @overload fun(hudColor: number, routeFromPlayer: boolean, displayOnFoot: boolean): void
+--- @return nil
+--- @overload fun(hudColor: number, routeFromPlayer: boolean, displayOnFoot: boolean): nil
 function StartGpsMultiRoute(hudColor, routeFromPlayer, displayOnFoot) end
 
     
@@ -3269,8 +3270,8 @@ function StartGpsMultiRoute(hudColor, routeFromPlayer, displayOnFoot) end
 --- @param hudColor number (int)
 --- @param routeFromPlayer boolean
 --- @param displayOnFoot boolean
---- @return void
---- @overload fun(hudColor: number, routeFromPlayer: boolean, displayOnFoot: boolean): void
+--- @return nil
+--- @overload fun(hudColor: number, routeFromPlayer: boolean, displayOnFoot: boolean): nil
 --- @deprecated
 function N_0x3d3d15af7bcaaf83(hudColor, routeFromPlayer, displayOnFoot) end
 
@@ -3301,8 +3302,8 @@ function N_0x3d9acb1eb139e702() end
 ---
 --- @hash [0x3DDA37128DD1ACA8](https://docs.fivem.net/natives/?_0x3DDA37128DD1ACA8)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetGpsMultiRouteRender(toggle) end
 
     
@@ -3311,8 +3312,8 @@ function SetGpsMultiRouteRender(toggle) end
 ---
 --- @hash [0x3DDA37128DD1ACA8](https://docs.fivem.net/natives/?_0x3DDA37128DD1ACA8)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0x3dda37128dd1aca8(toggle) end
 
@@ -3321,8 +3322,8 @@ function N_0x3dda37128dd1aca8(toggle) end
 ---
 --- @hash [0x3E93E06DB8EF1F30](https://docs.fivem.net/natives/?_0x3E93E06DB8EF1F30)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function UnlockMinimapPosition() end
 
     
@@ -3331,8 +3332,8 @@ function UnlockMinimapPosition() end
 --- @hash [0x3EED80DFF7325CAA](https://docs.fivem.net/natives/?_0x3EED80DFF7325CAA)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedAiBlipHasCone(ped, toggle) end
 
     
@@ -3342,8 +3343,8 @@ function SetPedAiBlipHasCone(ped, toggle) end
 --- @hash [0x3EED80DFF7325CAA](https://docs.fivem.net/natives/?_0x3EED80DFF7325CAA)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 --- @deprecated
 function HideSpecialAbilityLockonOperation(ped, toggle) end
 
@@ -3374,8 +3375,8 @@ function N_0x3f0cf9cb7e589b88() end
 --- @param health number (int)
 --- @param capacity number (int)
 --- @param wasAdded boolean
---- @return void
---- @overload fun(health: number, capacity: number, wasAdded: boolean): void
+--- @return nil
+--- @overload fun(health: number, capacity: number, wasAdded: boolean): nil
 function SetHealthHudDisplayValues(health, capacity, wasAdded) end
 
     
@@ -3386,8 +3387,8 @@ function SetHealthHudDisplayValues(health, capacity, wasAdded) end
 --- @param health number (int)
 --- @param capacity number (int)
 --- @param wasAdded boolean
---- @return void
---- @overload fun(health: number, capacity: number, wasAdded: boolean): void
+--- @return nil
+--- @overload fun(health: number, capacity: number, wasAdded: boolean): nil
 --- @deprecated
 function N_0x3f5cc444dcaaa8f2(health, capacity, wasAdded) end
 
@@ -3396,8 +3397,8 @@ function N_0x3f5cc444dcaaa8f2(health, capacity, wasAdded) end
 ---
 --- @hash [0x402F9ED62087E898](https://docs.fivem.net/natives/?_0x402F9ED62087E898)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function DisplayHudWhenPausedThisFrame() end
 
     
@@ -3406,8 +3407,8 @@ function DisplayHudWhenPausedThisFrame() end
 ---
 --- @hash [0x402F9ED62087E898](https://docs.fivem.net/natives/?_0x402F9ED62087E898)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x402f9ed62087e898() end
 
@@ -3416,8 +3417,8 @@ function N_0x402f9ed62087e898() end
 ---
 --- @hash [0x41350B4FC28E3941](https://docs.fivem.net/natives/?_0x41350B4FC28E3941)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0x41350b4fc28e3941(p0) end
 
     
@@ -3480,8 +3481,8 @@ function GetLengthOfString(string) end
 --- @param g number (int)
 --- @param b number (int)
 --- @param a number (int)
---- @return void
---- @overload fun(p0: number, r: number, g: number, b: number, a: number): void
+--- @return nil
+--- @overload fun(p0: number, r: number, g: number, b: number, a: number): nil
 function SetTextEdge(p0, r, g, b, a) end
 
     
@@ -3489,8 +3490,8 @@ function SetTextEdge(p0, r, g, b, a) end
 ---
 --- @hash [0x444D8CF241EC25C5](https://docs.fivem.net/natives/?_0x444D8CF241EC25C5)
 --- @param contextHash Hash
---- @return void
---- @overload fun(contextHash: Hash): void
+--- @return nil
+--- @overload fun(contextHash: Hash): nil
 function PauseMenuDeactivateContext(contextHash) end
 
     
@@ -3499,8 +3500,8 @@ function PauseMenuDeactivateContext(contextHash) end
 ---
 --- @hash [0x444D8CF241EC25C5](https://docs.fivem.net/natives/?_0x444D8CF241EC25C5)
 --- @param contextHash Hash
---- @return void
---- @overload fun(contextHash: Hash): void
+--- @return nil
+--- @overload fun(contextHash: Hash): nil
 --- @deprecated
 function ObjectDecalToggle(contextHash) end
 
@@ -3531,8 +3532,8 @@ function DrawNotification_2(blink, bHasTokens) end
 ---
 --- @hash [0x450930E616475D0D](https://docs.fivem.net/natives/?_0x450930E616475D0D)
 --- @param id number (int)
---- @return void
---- @overload fun(id: number): void
+--- @return nil
+--- @overload fun(id: number): nil
 function ResetHudComponentValues(id) end
 
     
@@ -3547,8 +3548,8 @@ function ResetHudComponentValues(id) end
 --- @hash [0x45FF974EEE1C8734](https://docs.fivem.net/natives/?_0x45FF974EEE1C8734)
 --- @param blip Blip
 --- @param alpha number (int)
---- @return void
---- @overload fun(blip: Blip, alpha: number): void
+--- @return nil
+--- @overload fun(blip: Blip, alpha: number): nil
 function SetBlipAlpha(blip, alpha) end
 
     
@@ -3561,8 +3562,8 @@ function SetBlipAlpha(blip, alpha) end
 --- @param g number (int)
 --- @param b number (int)
 --- @param a number (int)
---- @return void
---- @overload fun(distance: number, r: number, g: number, b: number, a: number): void
+--- @return nil
+--- @overload fun(distance: number, r: number, g: number, b: number, a: number): nil
 function SetTextDropshadow(distance, r, g, b, a) end
 
     
@@ -3589,8 +3590,8 @@ function AddBlipForRadius(posX, posY, posZ, radius) end
 ---
 --- @hash [0x488043841BBE156F](https://docs.fivem.net/natives/?_0x488043841BBE156F)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function HudDisplayLoadingScreenTips() end
 
     
@@ -3599,8 +3600,8 @@ function HudDisplayLoadingScreenTips() end
 ---
 --- @hash [0x488043841BBE156F](https://docs.fivem.net/natives/?_0x488043841BBE156F)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x488043841bbe156f() end
 
@@ -3609,8 +3610,8 @@ function N_0x488043841bbe156f() end
 ---
 --- @hash [0x4895BDEA16E7C080](https://docs.fivem.net/natives/?_0x4895BDEA16E7C080)
 --- @param p0 number (int)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function PauseMenuRedrawInstructionalButtons(p0) end
 
     
@@ -3619,8 +3620,8 @@ function PauseMenuRedrawInstructionalButtons(p0) end
 ---
 --- @hash [0x4895BDEA16E7C080](https://docs.fivem.net/natives/?_0x4895BDEA16E7C080)
 --- @param p0 number (int)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 --- @deprecated
 function EnableDeathbloodSeethrough(p0) end
 
@@ -3630,8 +3631,8 @@ function EnableDeathbloodSeethrough(p0) end
 ---
 --- @hash [0x4895BDEA16E7C080](https://docs.fivem.net/natives/?_0x4895BDEA16E7C080)
 --- @param p0 number (int)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 --- @deprecated
 function N_0x4895bdea16e7c080(p0) end
 
@@ -3642,8 +3643,8 @@ function N_0x4895bdea16e7c080(p0) end
 ---
 --- @hash [0x4A0C7C9BB10ABB36](https://docs.fivem.net/natives/?_0x4A0C7C9BB10ABB36)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function ThefeedSetAnimpostfxSound(toggle) end
 
     
@@ -3654,8 +3655,8 @@ function ThefeedSetAnimpostfxSound(toggle) end
 ---
 --- @hash [0x4A0C7C9BB10ABB36](https://docs.fivem.net/natives/?_0x4A0C7C9BB10ABB36)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0x4a0c7c9bb10abb36(toggle) end
 
@@ -3695,8 +3696,8 @@ function GetLevelBlipSprite() end
 ---
 --- @hash [0x4B0311D3CDC4648F](https://docs.fivem.net/natives/?_0x4B0311D3CDC4648F)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function HideLoadingOnFadeThisFrame() end
 
     
@@ -3705,8 +3706,8 @@ function HideLoadingOnFadeThisFrame() end
 --- @hash [0x4B5B620C9B59ED34](https://docs.fivem.net/natives/?_0x4B5B620C9B59ED34)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x4b5b620c9b59ed34(p0, p1) end
 
     
@@ -3738,8 +3739,8 @@ function IsHelpMessageBeingDisplayed() end
 ---
 --- @hash [0x4E096588B13FFECA](https://docs.fivem.net/natives/?_0x4E096588B13FFECA)
 --- @param justifyType number (int)
---- @return void
---- @overload fun(justifyType: number): void
+--- @return nil
+--- @overload fun(justifyType: number): nil
 function SetTextJustification(justifyType) end
 
     
@@ -3754,8 +3755,8 @@ function SetTextJustification(justifyType) end
 ---
 --- @hash [0x4E096588B13FFECA](https://docs.fivem.net/natives/?_0x4E096588B13FFECA)
 --- @param justifyType number (int)
---- @return void
---- @overload fun(justifyType: number): void
+--- @return nil
+--- @overload fun(justifyType: number): nil
 --- @deprecated
 function N_0x4e096588b13ffeca(justifyType) end
 
@@ -3808,8 +3809,8 @@ function N_0x4e929e7a5796fd26(gamerTagId) end
 ---
 --- @hash [0x4F38DCA127DAAEA2](https://docs.fivem.net/natives/?_0x4F38DCA127DAAEA2)
 --- @param id number (int)
---- @return void
---- @overload fun(id: number): void
+--- @return nil
+--- @overload fun(id: number): nil
 function ShowScriptedHudComponentThisFrame(id) end
 
     
@@ -3820,8 +3821,8 @@ function ShowScriptedHudComponentThisFrame(id) end
 --- @hash [0x4F7D8A9BFB0B43E9](https://docs.fivem.net/natives/?_0x4F7D8A9BFB0B43E9)
 --- @param blip Blip
 --- @param enabled boolean
---- @return void
---- @overload fun(blip: Blip, enabled: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, enabled: boolean): nil
 function SetBlipRoute(blip, enabled) end
 
     
@@ -3830,8 +3831,8 @@ function SetBlipRoute(blip, enabled) end
 --- @hash [0x50085246ABD3FEFA](https://docs.fivem.net/natives/?_0x50085246ABD3FEFA)
 --- @param hudIndex number (int)
 --- @param p1 boolean
---- @return void
---- @overload fun(hudIndex: number, p1: boolean): void
+--- @return nil
+--- @overload fun(hudIndex: number, p1: boolean): nil
 function ClearFloatingHelp(hudIndex, p1) end
 
     
@@ -3841,8 +3842,8 @@ function ClearFloatingHelp(hudIndex, p1) end
 ---
 --- @hash [0x504DFE62A1692296](https://docs.fivem.net/natives/?_0x504DFE62A1692296)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetInteriorZoomLevelIncreased(toggle) end
 
     
@@ -3853,8 +3854,8 @@ function SetInteriorZoomLevelIncreased(toggle) end
 ---
 --- @hash [0x504DFE62A1692296](https://docs.fivem.net/natives/?_0x504DFE62A1692296)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0x504dfe62a1692296(toggle) end
 
@@ -3871,8 +3872,8 @@ function N_0x504dfe62a1692296(toggle) end
 ---
 --- @hash [0x521FB041D93DD0E4](https://docs.fivem.net/natives/?_0x521FB041D93DD0E4)
 --- @param entry string (char*)
---- @return void
---- @overload fun(entry: string): void
+--- @return nil
+--- @overload fun(entry: string): nil
 function BeginTextCommandLineCount(entry) end
 
     
@@ -3889,8 +3890,8 @@ function BeginTextCommandLineCount(entry) end
 ---
 --- @hash [0x521FB041D93DD0E4](https://docs.fivem.net/natives/?_0x521FB041D93DD0E4)
 --- @param entry string (char*)
---- @return void
---- @overload fun(entry: string): void
+--- @return nil
+--- @overload fun(entry: string): nil
 --- @deprecated
 function SetTextGxtEntry(entry) end
 
@@ -3901,8 +3902,8 @@ function SetTextGxtEntry(entry) end
 ---
 --- @hash [0x523A590C1A3CC0D3](https://docs.fivem.net/natives/?_0x523A590C1A3CC0D3)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function OpenReportugcMenu() end
 
     
@@ -3913,8 +3914,8 @@ function OpenReportugcMenu() end
 ---
 --- @hash [0x523A590C1A3CC0D3](https://docs.fivem.net/natives/?_0x523A590C1A3CC0D3)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x523a590c1a3cc0d3() end
 
@@ -3926,8 +3927,8 @@ function N_0x523a590c1a3cc0d3() end
 ---
 --- @hash [0x523A590C1A3CC0D3](https://docs.fivem.net/natives/?_0x523A590C1A3CC0D3)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function DisplayJobReport() end
 
@@ -4035,8 +4036,8 @@ function SetNotificationMessageClanTag_2(picTxd, picTxn, flash, iconType1, nameS
 ---
 --- @hash [0x532CFF637EF80148](https://docs.fivem.net/natives/?_0x532CFF637EF80148)
 --- @param blip Blip
---- @return void
---- @overload fun(blip: Blip): void
+--- @return nil
+--- @overload fun(blip: Blip): nil
 function HideNumberOnBlip(blip) end
 
     
@@ -4047,8 +4048,8 @@ function HideNumberOnBlip(blip) end
 ---
 --- @hash [0x5354C5BA2EA868A4](https://docs.fivem.net/natives/?_0x5354C5BA2EA868A4)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function RaceGalleryFullscreen(toggle) end
 
     
@@ -4060,8 +4061,8 @@ function RaceGalleryFullscreen(toggle) end
 ---
 --- @hash [0x5354C5BA2EA868A4](https://docs.fivem.net/natives/?_0x5354C5BA2EA868A4)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0x5354c5ba2ea868a4(toggle) end
 
@@ -4074,8 +4075,8 @@ function N_0x5354c5ba2ea868a4(toggle) end
 ---
 --- @hash [0x5354C5BA2EA868A4](https://docs.fivem.net/natives/?_0x5354C5BA2EA868A4)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function SetMapFullScreen(toggle) end
 
@@ -4085,8 +4086,8 @@ function SetMapFullScreen(toggle) end
 --- @hash [0x54318C915D27E4CE](https://docs.fivem.net/natives/?_0x54318C915D27E4CE)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 function SetBlipHiddenOnLegend(blip, toggle) end
 
     
@@ -4096,8 +4097,8 @@ function SetBlipHiddenOnLegend(blip, toggle) end
 --- @hash [0x54318C915D27E4CE](https://docs.fivem.net/natives/?_0x54318C915D27E4CE)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 --- @deprecated
 function N_0x54318c915d27e4ce(blip, toggle) end
 
@@ -4112,8 +4113,8 @@ function N_0x54318c915d27e4ce(blip, toggle) end
 ---
 --- @hash [0x54CE8AC98E120CAB](https://docs.fivem.net/natives/?_0x54CE8AC98E120CAB)
 --- @param text string (char*)
---- @return void
---- @overload fun(text: string): void
+--- @return nil
+--- @overload fun(text: string): nil
 function BeginTextCommandGetWidth(text) end
 
     
@@ -4128,8 +4129,8 @@ function BeginTextCommandGetWidth(text) end
 ---
 --- @hash [0x54CE8AC98E120CAB](https://docs.fivem.net/natives/?_0x54CE8AC98E120CAB)
 --- @param text string (char*)
---- @return void
---- @overload fun(text: string): void
+--- @return nil
+--- @overload fun(text: string): nil
 --- @deprecated
 function SetTextEntryForWidth(text) end
 
@@ -4145,8 +4146,8 @@ function SetTextEntryForWidth(text) end
 ---
 --- @hash [0x54CE8AC98E120CAB](https://docs.fivem.net/natives/?_0x54CE8AC98E120CAB)
 --- @param text string (char*)
---- @return void
---- @overload fun(text: string): void
+--- @return nil
+--- @overload fun(text: string): nil
 --- @deprecated
 function BeginTextCommandWidth(text) end
 
@@ -4183,8 +4184,8 @@ function N_0x551df99658db6ee8(x, y, z) end
 ---
 --- @hash [0x55598D21339CB998](https://docs.fivem.net/natives/?_0x55598D21339CB998)
 --- @param pos number (float)
---- @return void
---- @overload fun(pos: number): void
+--- @return nil
+--- @overload fun(pos: number): nil
 function ThefeedSetScriptedMenuHeight(pos) end
 
     
@@ -4193,8 +4194,8 @@ function ThefeedSetScriptedMenuHeight(pos) end
 ---
 --- @hash [0x55598D21339CB998](https://docs.fivem.net/natives/?_0x55598D21339CB998)
 --- @param pos number (float)
---- @return void
---- @overload fun(pos: number): void
+--- @return nil
+--- @overload fun(pos: number): nil
 --- @deprecated
 function N_0x55598d21339cb998(pos) end
 
@@ -4204,8 +4205,8 @@ function N_0x55598d21339cb998(pos) end
 ---
 --- @hash [0x55598D21339CB998](https://docs.fivem.net/natives/?_0x55598D21339CB998)
 --- @param pos number (float)
---- @return void
---- @overload fun(pos: number): void
+--- @return nil
+--- @overload fun(pos: number): nil
 --- @deprecated
 function ClearNotificationsPos(pos) end
 
@@ -4216,8 +4217,8 @@ function ClearNotificationsPos(pos) end
 ---
 --- @hash [0x55F5A5F07134DE60](https://docs.fivem.net/natives/?_0x55F5A5F07134DE60)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x55f5a5f07134de60() end
 
     
@@ -4251,8 +4252,8 @@ function N_0x56176892826a4fe8(ped) end
 ---
 --- @hash [0x56C8B608CFD49854](https://docs.fivem.net/natives/?_0x56C8B608CFD49854)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ThefeedCommentTeleportPoolOn() end
 
     
@@ -4263,8 +4264,8 @@ function ThefeedCommentTeleportPoolOn() end
 ---
 --- @hash [0x56C8B608CFD49854](https://docs.fivem.net/natives/?_0x56C8B608CFD49854)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x56c8b608cfd49854() end
 
@@ -4273,8 +4274,8 @@ function N_0x56c8b608cfd49854() end
 ---
 --- @hash [0x577599CCED639CA2](https://docs.fivem.net/natives/?_0x577599CCED639CA2)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x577599cced639ca2(p0) end
 
     
@@ -4284,8 +4285,8 @@ function N_0x577599cced639ca2(p0) end
 ---
 --- @hash [0x57D760D55F54E071](https://docs.fivem.net/natives/?_0x57D760D55F54E071)
 --- @param p0 number (int)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function N_0x57d760d55f54e071(p0) end
 
     
@@ -4303,8 +4304,8 @@ function RegisterNamedRendertarget(name, p1) end
 ---
 --- @hash [0x583049884A2EEE3C](https://docs.fivem.net/natives/?_0x583049884A2EEE3C)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ThefeedForceRenderOff() end
 
     
@@ -4313,8 +4314,8 @@ function ThefeedForceRenderOff() end
 ---
 --- @hash [0x583049884A2EEE3C](https://docs.fivem.net/natives/?_0x583049884A2EEE3C)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x583049884a2eee3c() end
 
@@ -4324,8 +4325,8 @@ function N_0x583049884a2eee3c() end
 ---
 --- @hash [0x583049884A2EEE3C](https://docs.fivem.net/natives/?_0x583049884A2EEE3C)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function ThefeedHideGtaoTooltips() end
 
@@ -4343,8 +4344,8 @@ function GetBlipCoords(blip) end
 ---
 --- @hash [0x58FADDED207897DC](https://docs.fivem.net/natives/?_0x58FADDED207897DC)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetMinimapBlockWaypoint(toggle) end
 
     
@@ -4388,8 +4389,8 @@ function AddTrevorRandomModifier(gamerTagId) end
 --- @param y number (float)
 --- @param heading number (int)
 --- @param zoom number (int)
---- @return void
---- @overload fun(interior: Hash, x: number, y: number, heading: number, zoom: number): void
+--- @return nil
+--- @overload fun(interior: Hash, x: number, y: number, heading: number, zoom: number): nil
 function SetRadarAsInteriorThisFrame(interior, x, y, heading, zoom) end
 
     
@@ -4412,8 +4413,8 @@ function AddBlipForCoord(x, y, z) end
 --- @hash [0x5B440763A4C8D15B](https://docs.fivem.net/natives/?_0x5B440763A4C8D15B)
 --- @param p0 number (int)
 --- @param p1 number (float)
---- @return void
---- @overload fun(p0: number, p1: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: number): nil
 function SetGpsFlags(p0, p1) end
 
     
@@ -4559,8 +4560,8 @@ function AddBlipForEntity(entity) end
 ---
 --- @hash [0x5E1460624D194A38](https://docs.fivem.net/natives/?_0x5E1460624D194A38)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetToggleMinimapHeistIsland(toggle) end
 
     
@@ -4568,8 +4569,8 @@ function SetToggleMinimapHeistIsland(toggle) end
 ---
 --- @hash [0x5E62BE5DC58E9E06](https://docs.fivem.net/natives/?_0x5E62BE5DC58E9E06)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ClearPedInPauseMenu() end
 
     
@@ -4577,8 +4578,8 @@ function ClearPedInPauseMenu() end
 ---
 --- @hash [0x5F15302936E07111](https://docs.fivem.net/natives/?_0x5F15302936E07111)
 --- @param renderId number (int)
---- @return void
---- @overload fun(renderId: number): void
+--- @return nil
+--- @overload fun(renderId: number): nil
 function SetTextRenderId(renderId) end
 
     
@@ -4587,8 +4588,8 @@ function SetTextRenderId(renderId) end
 --- @hash [0x5F28ECF5FC84772F](https://docs.fivem.net/natives/?_0x5F28ECF5FC84772F)
 --- @param p0 boolean
 --- @param name string (char*)
---- @return void
---- @overload fun(p0: boolean, name: string): void
+--- @return nil
+--- @overload fun(p0: boolean, name: string): nil
 function SetMissionName(p0, name) end
 
     
@@ -4596,8 +4597,8 @@ function SetMissionName(p0, name) end
 ---
 --- @hash [0x5F68520888E69014](https://docs.fivem.net/natives/?_0x5F68520888E69014)
 --- @param string string (char*)
---- @return void
---- @overload fun(string: string): void
+--- @return nil
+--- @overload fun(string: string): nil
 function AddTextComponentSubstringKeyboardDisplay(string) end
 
     
@@ -4606,8 +4607,8 @@ function AddTextComponentSubstringKeyboardDisplay(string) end
 ---
 --- @hash [0x5F68520888E69014](https://docs.fivem.net/natives/?_0x5F68520888E69014)
 --- @param string string (char*)
---- @return void
---- @overload fun(string: string): void
+--- @return nil
+--- @overload fun(string: string): nil
 --- @deprecated
 function AddTextComponentString3(string) end
 
@@ -4617,8 +4618,8 @@ function AddTextComponentString3(string) end
 ---
 --- @hash [0x5F68520888E69014](https://docs.fivem.net/natives/?_0x5F68520888E69014)
 --- @param string string (char*)
---- @return void
---- @overload fun(string: string): void
+--- @return nil
+--- @overload fun(string: string): nil
 --- @deprecated
 function AddTextComponentScaleform(string) end
 
@@ -4627,8 +4628,8 @@ function AddTextComponentScaleform(string) end
 ---
 --- @hash [0x5FBAE526203990C9](https://docs.fivem.net/natives/?_0x5FBAE526203990C9)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function HideMinimapExteriorMapThisFrame() end
 
     
@@ -4637,8 +4638,8 @@ function HideMinimapExteriorMapThisFrame() end
 ---
 --- @hash [0x5FBAE526203990C9](https://docs.fivem.net/natives/?_0x5FBAE526203990C9)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function DisableRadarThisFrame() end
 
@@ -4650,8 +4651,8 @@ function DisableRadarThisFrame() end
 --- @hash [0x5FBCA48327B914DF](https://docs.fivem.net/natives/?_0x5FBCA48327B914DF)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 function ShowHeadingIndicatorOnBlip(blip, toggle) end
 
     
@@ -4663,8 +4664,8 @@ function ShowHeadingIndicatorOnBlip(blip, toggle) end
 --- @hash [0x5FBCA48327B914DF](https://docs.fivem.net/natives/?_0x5FBCA48327B914DF)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 --- @deprecated
 function N_0x5fbca48327b914df(blip, toggle) end
 
@@ -4696,8 +4697,8 @@ function N_0x5fbd7095fe7ae57f(p0, p1) end
 --- @hash [0x6009F9F1AE90D8A6](https://docs.fivem.net/natives/?_0x6009F9F1AE90D8A6)
 --- @param gxt string (char*)
 --- @param slot number (int)
---- @return void
---- @overload fun(gxt: string, slot: number): void
+--- @return nil
+--- @overload fun(gxt: string, slot: number): nil
 function RequestAdditionalTextForDlc(gxt, slot) end
 
     
@@ -4707,8 +4708,8 @@ function RequestAdditionalTextForDlc(gxt, slot) end
 --- @hash [0x6009F9F1AE90D8A6](https://docs.fivem.net/natives/?_0x6009F9F1AE90D8A6)
 --- @param gxt string (char*)
 --- @param slot number (int)
---- @return void
---- @overload fun(gxt: string, slot: number): void
+--- @return nil
+--- @overload fun(gxt: string, slot: number): nil
 --- @deprecated
 function RequestAdditionalText_2(gxt, slot) end
 
@@ -4717,8 +4718,8 @@ function RequestAdditionalText_2(gxt, slot) end
 ---
 --- @hash [0x60296AF4BA14ABC5](https://docs.fivem.net/natives/?_0x60296AF4BA14ABC5)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function AddNextMessageToPreviousBriefs(p0) end
 
     
@@ -4726,8 +4727,8 @@ function AddNextMessageToPreviousBriefs(p0) end
 ---
 --- @hash [0x60734CC207C9833C](https://docs.fivem.net/natives/?_0x60734CC207C9833C)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function AllowSonarBlips(toggle) end
 
     
@@ -4736,8 +4737,8 @@ function AllowSonarBlips(toggle) end
 ---
 --- @hash [0x60734CC207C9833C](https://docs.fivem.net/natives/?_0x60734CC207C9833C)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0x60734cc207c9833c(toggle) end
 
@@ -4746,8 +4747,8 @@ function N_0x60734cc207c9833c(toggle) end
 ---
 --- @hash [0x60E892BA4F5BDCA4](https://docs.fivem.net/natives/?_0x60E892BA4F5BDCA4)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ShowSigninUi() end
 
     
@@ -4756,8 +4757,8 @@ function ShowSigninUi() end
 ---
 --- @hash [0x60E892BA4F5BDCA4](https://docs.fivem.net/natives/?_0x60E892BA4F5BDCA4)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x60e892ba4f5bdca4() end
 
@@ -4771,8 +4772,8 @@ function N_0x60e892ba4f5bdca4() end
 --- @param gamerTagId number (int)
 --- @param component number (int)
 --- @param hudColorIndex number (int)
---- @return void
---- @overload fun(gamerTagId: number, component: number, hudColorIndex: number): void
+--- @return nil
+--- @overload fun(gamerTagId: number, component: number, hudColorIndex: number): nil
 function SetMpGamerTagColour(gamerTagId, component, hudColorIndex) end
 
     
@@ -4786,8 +4787,8 @@ function SetMpGamerTagColour(gamerTagId, component, hudColorIndex) end
 --- @param gamerTagId number (int)
 --- @param component number (int)
 --- @param hudColorIndex number (int)
---- @return void
---- @overload fun(gamerTagId: number, component: number, hudColorIndex: number): void
+--- @return nil
+--- @overload fun(gamerTagId: number, component: number, hudColorIndex: number): nil
 --- @deprecated
 function N_0x613ed644950626ae(gamerTagId, component, hudColorIndex) end
 
@@ -4796,8 +4797,8 @@ function N_0x613ed644950626ae(gamerTagId, component, hudColorIndex) end
 ---
 --- @hash [0x6178F68A87A4D3A0](https://docs.fivem.net/natives/?_0x6178F68A87A4D3A0)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ClearAllHelpMessages() end
 
     
@@ -4805,8 +4806,8 @@ function ClearAllHelpMessages() end
 ---
 --- @hash [0x62E849B7EB28E770](https://docs.fivem.net/natives/?_0x62E849B7EB28E770)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0x62e849b7eb28e770(p0) end
 
     
@@ -4819,8 +4820,8 @@ function N_0x62e849b7eb28e770(p0) end
 --- @hash [0x63145D9C883A1A70](https://docs.fivem.net/natives/?_0x63145D9C883A1A70)
 --- @param start number (float)
 --- @param end_ number (float)
---- @return void
---- @overload fun(start: number, end_: number): void
+--- @return nil
+--- @overload fun(start: number, end_: number): nil
 function SetTextWrap(start, end_) end
 
     
@@ -4936,8 +4937,8 @@ function N_0x632b2940c67f4ea9(scaleformHandle) end
 --- @param gamerTagId number (int)
 --- @param component number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(gamerTagId: number, component: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(gamerTagId: number, component: number, toggle: boolean): nil
 function SetMpGamerTagVisibility(gamerTagId, component, toggle) end
 
     
@@ -4986,8 +4987,8 @@ function SetMpGamerTagVisibility(gamerTagId, component, toggle) end
 --- @param gamerTagId number (int)
 --- @param component number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(gamerTagId: number, component: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(gamerTagId: number, component: number, toggle: boolean): nil
 --- @deprecated
 function N_0x63bb75abedc1f6a0(gamerTagId, component, toggle) end
 
@@ -4998,8 +4999,8 @@ function N_0x63bb75abedc1f6a0(gamerTagId, component, toggle) end
 ---
 --- @hash [0x66E0276CC5F6B9DA](https://docs.fivem.net/natives/?_0x66E0276CC5F6B9DA)
 --- @param fontType number (int)
---- @return void
---- @overload fun(fontType: number): void
+--- @return nil
+--- @overload fun(fontType: number): nil
 function SetTextFont(fontType) end
 
     
@@ -5016,8 +5017,8 @@ function N_0x66e7cb63c97b7d20() end
 ---
 --- @hash [0x67EEDEA1B9BAFD94](https://docs.fivem.net/natives/?_0x67EEDEA1B9BAFD94)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ClearGpsMultiRoute() end
 
     
@@ -5026,8 +5027,8 @@ function ClearGpsMultiRoute() end
 ---
 --- @hash [0x67EEDEA1B9BAFD94](https://docs.fivem.net/natives/?_0x67EEDEA1B9BAFD94)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x67eedea1b9bafd94() end
 
@@ -5063,8 +5064,8 @@ function N_0x67eedea1b9bafd94() end
 ---
 --- @hash [0x6806C51AD12B83B8](https://docs.fivem.net/natives/?_0x6806C51AD12B83B8)
 --- @param id number (int)
---- @return void
---- @overload fun(id: number): void
+--- @return nil
+--- @overload fun(id: number): nil
 function HideHudComponentThisFrame(id) end
 
     
@@ -5072,8 +5073,8 @@ function HideHudComponentThisFrame(id) end
 ---
 --- @hash [0x6A1738B4323FE2D9](https://docs.fivem.net/natives/?_0x6A1738B4323FE2D9)
 --- @param gxtEntryHash Hash
---- @return void
---- @overload fun(gxtEntryHash: Hash): void
+--- @return nil
+--- @overload fun(gxtEntryHash: Hash): nil
 function OverrideMultiplayerChatPrefix(gxtEntryHash) end
 
     
@@ -5082,8 +5083,8 @@ function OverrideMultiplayerChatPrefix(gxtEntryHash) end
 ---
 --- @hash [0x6A1738B4323FE2D9](https://docs.fivem.net/natives/?_0x6A1738B4323FE2D9)
 --- @param gxtEntryHash Hash
---- @return void
---- @overload fun(gxtEntryHash: Hash): void
+--- @return nil
+--- @overload fun(gxtEntryHash: Hash): nil
 --- @deprecated
 function N_0x6a1738b4323fe2d9(gxtEntryHash) end
 
@@ -5092,8 +5093,8 @@ function N_0x6a1738b4323fe2d9(gxtEntryHash) end
 ---
 --- @hash [0x6AFDFB93754950C7](https://docs.fivem.net/natives/?_0x6AFDFB93754950C7)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function ToggleStealthRadar(toggle) end
 
     
@@ -5101,8 +5102,8 @@ function ToggleStealthRadar(toggle) end
 ---
 --- @hash [0x6B1DE27EE78E6A19](https://docs.fivem.net/natives/?_0x6B1DE27EE78E6A19)
 --- @param hudColorIndex number (int)
---- @return void
---- @overload fun(hudColorIndex: number): void
+--- @return nil
+--- @overload fun(hudColorIndex: number): nil
 function FlashMinimapDisplayWithColor(hudColorIndex) end
 
     
@@ -5111,8 +5112,8 @@ function FlashMinimapDisplayWithColor(hudColorIndex) end
 ---
 --- @hash [0x6B1DE27EE78E6A19](https://docs.fivem.net/natives/?_0x6B1DE27EE78E6A19)
 --- @param hudColorIndex number (int)
---- @return void
---- @overload fun(hudColorIndex: number): void
+--- @return nil
+--- @overload fun(hudColorIndex: number): nil
 --- @deprecated
 function N_0x6b1de27ee78e6a19(hudColorIndex) end
 
@@ -5121,8 +5122,8 @@ function N_0x6b1de27ee78e6a19(hudColorIndex) end
 ---
 --- @hash [0x6B3C4650BC8BEE47](https://docs.fivem.net/natives/?_0x6B3C4650BC8BEE47)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetTextRightJustify(toggle) end
 
     
@@ -5132,8 +5133,8 @@ function SetTextRightJustify(toggle) end
 ---
 --- @hash [0x6B50FC8749632EC1](https://docs.fivem.net/natives/?_0x6B50FC8749632EC1)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetMinimapSonarEnabled(toggle) end
 
     
@@ -5149,8 +5150,8 @@ function SetMinimapSonarEnabled(toggle) end
 --- EndTextCommandDisplayText(0.5, 0.5
 --- @hash [0x6C188BE134E074AA](https://docs.fivem.net/natives/?_0x6C188BE134E074AA)
 --- @param text string (char*)
---- @return void
---- @overload fun(text: string): void
+--- @return nil
+--- @overload fun(text: string): nil
 function AddTextComponentSubstringPlayerName(text) end
 
     
@@ -5167,8 +5168,8 @@ function AddTextComponentSubstringPlayerName(text) end
 --- EndTextCommandDisplayText(0.5, 0.5
 --- @hash [0x6C188BE134E074AA](https://docs.fivem.net/natives/?_0x6C188BE134E074AA)
 --- @param text string (char*)
---- @return void
---- @overload fun(text: string): void
+--- @return nil
+--- @overload fun(text: string): nil
 --- @deprecated
 function AddTextComponentString(text) end
 
@@ -5186,8 +5187,8 @@ function AddTextComponentString(text) end
 ---
 --- @hash [0x6CDD58146A436083](https://docs.fivem.net/natives/?_0x6CDD58146A436083)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetUseWaypointAsDestination(toggle) end
 
     
@@ -5205,8 +5206,8 @@ function SetUseWaypointAsDestination(toggle) end
 ---
 --- @hash [0x6CDD58146A436083](https://docs.fivem.net/natives/?_0x6CDD58146A436083)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0x6cdd58146a436083(toggle) end
 
@@ -5217,8 +5218,8 @@ function N_0x6cdd58146a436083(toggle) end
 ---
 --- @hash [0x6D14BFDC33B34F55](https://docs.fivem.net/natives/?_0x6D14BFDC33B34F55)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function DontTiltMinimapThisFrame() end
 
     
@@ -5229,8 +5230,8 @@ function DontTiltMinimapThisFrame() end
 ---
 --- @hash [0x6D14BFDC33B34F55](https://docs.fivem.net/natives/?_0x6D14BFDC33B34F55)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function CenterPlayerOnRadarThisFrame() end
 
@@ -5239,8 +5240,8 @@ function CenterPlayerOnRadarThisFrame() end
 ---
 --- @hash [0x6D3465A73092F0E6](https://docs.fivem.net/natives/?_0x6D3465A73092F0E6)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function DisableFrontendThisFrame() end
 
     
@@ -5276,8 +5277,8 @@ function DisableFrontendThisFrame() end
 --- @param crewR number (int)
 --- @param crewG number (int)
 --- @param crewB number (int)
---- @return void
---- @overload fun(player: Player, username: string, crewIsPrivate: boolean, crewIsRockstar: boolean, crewName: string, crewRank: number, crewR: number, crewG: number, crewB: number): void
+--- @return nil
+--- @overload fun(player: Player, username: string, crewIsPrivate: boolean, crewIsRockstar: boolean, crewName: string, crewRank: number, crewR: number, crewG: number, crewB: number): nil
 function CreateMpGamerTagWithCrewColor(player, username, crewIsPrivate, crewIsRockstar, crewName, crewRank, crewR, crewG, crewB) end
 
     
@@ -5314,8 +5315,8 @@ function CreateMpGamerTagWithCrewColor(player, username, crewIsPrivate, crewIsRo
 --- @param crewR number (int)
 --- @param crewG number (int)
 --- @param crewB number (int)
---- @return void
---- @overload fun(player: Player, username: string, crewIsPrivate: boolean, crewIsRockstar: boolean, crewName: string, crewRank: number, crewR: number, crewG: number, crewB: number): void
+--- @return nil
+--- @overload fun(player: Player, username: string, crewIsPrivate: boolean, crewIsRockstar: boolean, crewName: string, crewRank: number, crewR: number, crewG: number, crewB: number): nil
 --- @deprecated
 function N_0x6dd05e9d83efa4c9(player, username, crewIsPrivate, crewIsRockstar, crewName, crewRank, crewR, crewG, crewB) end
 
@@ -5353,8 +5354,8 @@ function N_0x6dd05e9d83efa4c9(player, username, crewIsPrivate, crewIsRockstar, c
 --- @param crewR number (int)
 --- @param crewG number (int)
 --- @param crewB number (int)
---- @return void
---- @overload fun(player: Player, username: string, crewIsPrivate: boolean, crewIsRockstar: boolean, crewName: string, crewRank: number, crewR: number, crewG: number, crewB: number): void
+--- @return nil
+--- @overload fun(player: Player, username: string, crewIsPrivate: boolean, crewIsRockstar: boolean, crewName: string, crewRank: number, crewR: number, crewG: number, crewB: number): nil
 --- @deprecated
 function CreateMpGamerTagColor(player, username, crewIsPrivate, crewIsRockstar, crewName, crewRank, crewR, crewG, crewB) end
 
@@ -5392,8 +5393,8 @@ function CreateMpGamerTagColor(player, username, crewIsPrivate, crewIsRockstar, 
 --- @param crewR number (int)
 --- @param crewG number (int)
 --- @param crewB number (int)
---- @return void
---- @overload fun(player: Player, username: string, crewIsPrivate: boolean, crewIsRockstar: boolean, crewName: string, crewRank: number, crewR: number, crewG: number, crewB: number): void
+--- @return nil
+--- @overload fun(player: Player, username: string, crewIsPrivate: boolean, crewIsRockstar: boolean, crewName: string, crewRank: number, crewR: number, crewG: number, crewB: number): nil
 --- @deprecated
 function SetMpGamerTagColor(player, username, crewIsPrivate, crewIsRockstar, crewName, crewRank, crewR, crewG, crewB) end
 
@@ -5431,8 +5432,8 @@ function SetMpGamerTagColor(player, username, crewIsPrivate, crewIsRockstar, cre
 --- @param crewR number (int)
 --- @param crewG number (int)
 --- @param crewB number (int)
---- @return void
---- @overload fun(player: Player, username: string, crewIsPrivate: boolean, crewIsRockstar: boolean, crewName: string, crewRank: number, crewR: number, crewG: number, crewB: number): void
+--- @return nil
+--- @overload fun(player: Player, username: string, crewIsPrivate: boolean, crewIsRockstar: boolean, crewName: string, crewRank: number, crewR: number, crewG: number, crewB: number): nil
 --- @deprecated
 function CreateMpGamerTagForNetPlayer(player, username, crewIsPrivate, crewIsRockstar, crewName, crewRank, crewR, crewG, crewB) end
 
@@ -5509,8 +5510,8 @@ function IsMinimapAreaRevealed(x, y, z) end
 ---
 --- @hash [0x6EF54AB721DC6242](https://docs.fivem.net/natives/?_0x6EF54AB721DC6242)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function RemoveWarningMessageListItems() end
 
     
@@ -5519,8 +5520,8 @@ function RemoveWarningMessageListItems() end
 ---
 --- @hash [0x6EF54AB721DC6242](https://docs.fivem.net/natives/?_0x6EF54AB721DC6242)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x6ef54ab721dc6242() end
 
@@ -5529,8 +5530,8 @@ function N_0x6ef54ab721dc6242() end
 ---
 --- @hash [0x6F1554B0CC2089FA](https://docs.fivem.net/natives/?_0x6F1554B0CC2089FA)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function ThefeedOnlyShowTooltips(toggle) end
 
     
@@ -5539,8 +5540,8 @@ function ThefeedOnlyShowTooltips(toggle) end
 ---
 --- @hash [0x6F1554B0CC2089FA](https://docs.fivem.net/natives/?_0x6F1554B0CC2089FA)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0x6f1554b0cc2089fa(toggle) end
 
@@ -5550,8 +5551,8 @@ function N_0x6f1554b0cc2089fa(toggle) end
 --- @hash [0x6F6F290102C02AB4](https://docs.fivem.net/natives/?_0x6F6F290102C02AB4)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 function SetBlipAsFriendly(blip, toggle) end
 
     
@@ -5592,8 +5593,8 @@ function N_0x6f72cd94f7b5b68c() end
 --- @param p5 any
 --- @param p6 any
 --- @param p9 boolean
---- @return any, any
---- @overload fun(entryHeader: string, entryLine1: string, instructionalKey: any, entryLine2: string, p4: boolean, p5: any, p6: any, p9: boolean): any, any
+--- @return nil, any, any
+--- @overload fun(entryHeader: string, entryLine1: string, instructionalKey: any, entryLine2: string, p4: boolean, p5: any, p6: any, p9: boolean): nil, any, any
 function SetWarningMessageWithHeaderAndSubstringFlags(entryHeader, entryLine1, instructionalKey, entryLine2, p4, p5, p6, p9) end
 
     
@@ -5615,8 +5616,8 @@ function SetWarningMessageWithHeaderAndSubstringFlags(entryHeader, entryLine1, i
 --- @param p5 any
 --- @param p6 any
 --- @param p9 boolean
---- @return any, any
---- @overload fun(entryHeader: string, entryLine1: string, instructionalKey: any, entryLine2: string, p4: boolean, p5: any, p6: any, p9: boolean): any, any
+--- @return nil, any, any
+--- @overload fun(entryHeader: string, entryLine1: string, instructionalKey: any, entryLine2: string, p4: boolean, p5: any, p6: any, p9: boolean): nil, any, any
 --- @deprecated
 function SetWarningMessage_3(entryHeader, entryLine1, instructionalKey, entryLine2, p4, p5, p6, p9) end
 
@@ -5627,8 +5628,8 @@ function SetWarningMessage_3(entryHeader, entryLine1, instructionalKey, entryLin
 ---
 --- @hash [0x719FF505F097FD20](https://docs.fivem.net/natives/?_0x719FF505F097FD20)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function HideHudAndRadarThisFrame() end
 
     
@@ -5639,8 +5640,8 @@ function HideHudAndRadarThisFrame() end
 --- @hash [0x71A78003C8E71424](https://docs.fivem.net/natives/?_0x71A78003C8E71424)
 --- @param gxt string (char*)
 --- @param slot number (int)
---- @return void
---- @overload fun(gxt: string, slot: number): void
+--- @return nil
+--- @overload fun(gxt: string, slot: number): nil
 function RequestAdditionalText(gxt, slot) end
 
     
@@ -5654,8 +5655,8 @@ function RequestAdditionalText(gxt, slot) end
 ---
 --- @hash [0x71BDB63DBAF8DA59](https://docs.fivem.net/natives/?_0x71BDB63DBAF8DA59)
 --- @param hole number (int)
---- @return void
---- @overload fun(hole: number): void
+--- @return nil
+--- @overload fun(hole: number): nil
 function SetMinimapGolfCourse(hole) end
 
     
@@ -5670,8 +5671,8 @@ function SetMinimapGolfCourse(hole) end
 ---
 --- @hash [0x71BDB63DBAF8DA59](https://docs.fivem.net/natives/?_0x71BDB63DBAF8DA59)
 --- @param hole number (int)
---- @return void
---- @overload fun(hole: number): void
+--- @return nil
+--- @overload fun(hole: number): nil
 --- @deprecated
 function N_0x71bdb63dbaf8da59(hole) end
 
@@ -5691,8 +5692,8 @@ function GetBlipHudColour(blip) end
 ---
 --- @hash [0x72C1056D678BB7D8](https://docs.fivem.net/natives/?_0x72C1056D678BB7D8)
 --- @param weaponHash Hash
---- @return void
---- @overload fun(weaponHash: Hash): void
+--- @return nil
+--- @overload fun(weaponHash: Hash): nil
 function HudSetWeaponWheelTopSlot(weaponHash) end
 
     
@@ -5703,8 +5704,8 @@ function HudSetWeaponWheelTopSlot(weaponHash) end
 ---
 --- @hash [0x72C1056D678BB7D8](https://docs.fivem.net/natives/?_0x72C1056D678BB7D8)
 --- @param weaponHash Hash
---- @return void
---- @overload fun(weaponHash: Hash): void
+--- @return nil
+--- @overload fun(weaponHash: Hash): nil
 --- @deprecated
 function N_0x72c1056d678bb7d8(weaponHash) end
 
@@ -5716,8 +5717,8 @@ function N_0x72c1056d678bb7d8(weaponHash) end
 ---
 --- @hash [0x72C1056D678BB7D8](https://docs.fivem.net/natives/?_0x72C1056D678BB7D8)
 --- @param weaponHash Hash
---- @return void
---- @overload fun(weaponHash: Hash): void
+--- @return nil
+--- @overload fun(weaponHash: Hash): nil
 --- @deprecated
 function HudWeaponWheelSetSlotHash(weaponHash) end
 
@@ -5730,8 +5731,8 @@ function HudWeaponWheelSetSlotHash(weaponHash) end
 --- @param posZ number (float)
 --- @param radius number (float)
 --- @param p4 number (int)
---- @return void
---- @overload fun(posX: number, posY: number, posZ: number, radius: number, p4: number): void
+--- @return nil
+--- @overload fun(posX: number, posY: number, posZ: number, radius: number, p4: number): nil
 function TriggerSonarBlip(posX, posY, posZ, radius, p4) end
 
     
@@ -5744,8 +5745,8 @@ function TriggerSonarBlip(posX, posY, posZ, radius, p4) end
 --- @param posZ number (float)
 --- @param radius number (float)
 --- @param p4 number (int)
---- @return void
---- @overload fun(posX: number, posY: number, posZ: number, radius: number, p4: number): void
+--- @return nil
+--- @overload fun(posX: number, posY: number, posZ: number, radius: number, p4: number): nil
 --- @deprecated
 function N_0x72dd432f3cdfc0ee(posX, posY, posZ, radius, p4) end
 
@@ -5756,8 +5757,8 @@ function N_0x72dd432f3cdfc0ee(posX, posY, posZ, radius, p4) end
 ---
 --- @hash [0x73115226F4814E62](https://docs.fivem.net/natives/?_0x73115226F4814E62)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function DisplaySniperScopeThisFrame() end
 
     
@@ -5765,8 +5766,8 @@ function DisplaySniperScopeThisFrame() end
 ---
 --- @hash [0x742D6FD43115AF73](https://docs.fivem.net/natives/?_0x742D6FD43115AF73)
 --- @param blip Blip
---- @return void
---- @overload fun(blip: Blip): void
+--- @return nil
+--- @overload fun(blip: Blip): nil
 function PulseBlip(blip) end
 
     
@@ -5777,8 +5778,8 @@ function PulseBlip(blip) end
 --- @hash [0x74513EA3E505181E](https://docs.fivem.net/natives/?_0x74513EA3E505181E)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 function ShowTickOnBlip(blip, toggle) end
 
     
@@ -5790,8 +5791,8 @@ function ShowTickOnBlip(blip, toggle) end
 --- @hash [0x74513EA3E505181E](https://docs.fivem.net/natives/?_0x74513EA3E505181E)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 --- @deprecated
 function N_0x74513ea3e505181e(blip, toggle) end
 
@@ -5804,8 +5805,8 @@ function N_0x74513ea3e505181e(blip, toggle) end
 --- @hash [0x74513EA3E505181E](https://docs.fivem.net/natives/?_0x74513EA3E505181E)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 --- @deprecated
 function SetBlipChecked(blip, toggle) end
 
@@ -5814,8 +5815,8 @@ function SetBlipChecked(blip, toggle) end
 ---
 --- @hash [0x745711A75AB09277](https://docs.fivem.net/natives/?_0x745711A75AB09277)
 --- @param active boolean
---- @return void
---- @overload fun(active: boolean): void
+--- @return nil
+--- @overload fun(active: boolean): nil
 function SetFrontendActive(active) end
 
     
@@ -5824,8 +5825,8 @@ function SetFrontendActive(active) end
 --- @hash [0x75A16C3DA34F1245](https://docs.fivem.net/natives/?_0x75A16C3DA34F1245)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 function ShowHeightOnBlip(blip, toggle) end
 
     
@@ -5835,8 +5836,8 @@ function ShowHeightOnBlip(blip, toggle) end
 --- @hash [0x75A16C3DA34F1245](https://docs.fivem.net/natives/?_0x75A16C3DA34F1245)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 --- @deprecated
 function N_0x75a16c3da34f1245(blip, toggle) end
 
@@ -5866,8 +5867,8 @@ function SetMinimapComponent(componentID, toggle, hudColor) end
 ---
 --- @hash [0x75D3691713C3B05A](https://docs.fivem.net/natives/?_0x75D3691713C3B05A)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function OpenSocialClubMenu() end
 
     
@@ -5876,8 +5877,8 @@ function OpenSocialClubMenu() end
 ---
 --- @hash [0x75D3691713C3B05A](https://docs.fivem.net/natives/?_0x75D3691713C3B05A)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x75d3691713c3b05a() end
 
@@ -5889,8 +5890,8 @@ function N_0x75d3691713c3b05a() end
 --- @hash [0x761B77454205A61D](https://docs.fivem.net/natives/?_0x761B77454205A61D)
 --- @param p0 string (char*)
 --- @param p1 number (int)
---- @return void
---- @overload fun(p0: string, p1: number): void
+--- @return nil
+--- @overload fun(p0: string, p1: number): nil
 function AddTextComponentSubstringPhoneNumber(p0, p1) end
 
     
@@ -5902,8 +5903,8 @@ function AddTextComponentSubstringPhoneNumber(p0, p1) end
 --- @hash [0x761B77454205A61D](https://docs.fivem.net/natives/?_0x761B77454205A61D)
 --- @param p0 string (char*)
 --- @param p1 number (int)
---- @return void
---- @overload fun(p0: string, p1: number): void
+--- @return nil
+--- @overload fun(p0: string, p1: number): nil
 --- @deprecated
 function N_0x761b77454205a61d(p0, p1) end
 
@@ -5916,8 +5917,8 @@ function N_0x761b77454205a61d(p0, p1) end
 --- @hash [0x761B77454205A61D](https://docs.fivem.net/natives/?_0x761B77454205A61D)
 --- @param p0 string (char*)
 --- @param p1 number (int)
---- @return void
---- @overload fun(p0: string, p1: number): void
+--- @return nil
+--- @overload fun(p0: string, p1: number): nil
 --- @deprecated
 function AddTextComponentAppTitle(p0, p1) end
 
@@ -5931,8 +5932,8 @@ function AddTextComponentAppTitle(p0, p1) end
 --- end
 --- @hash [0x7669F9E39DC17063](https://docs.fivem.net/natives/?_0x7669F9E39DC17063)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function DisplayHudWhenDeadThisFrame() end
 
     
@@ -5946,8 +5947,8 @@ function DisplayHudWhenDeadThisFrame() end
 --- end
 --- @hash [0x7669F9E39DC17063](https://docs.fivem.net/natives/?_0x7669F9E39DC17063)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x7669f9e39dc17063() end
 
@@ -5958,8 +5959,8 @@ function N_0x7669f9e39dc17063() end
 --- @param hudIndex number (int)
 --- @param x number (float)
 --- @param y number (float)
---- @return void
---- @overload fun(hudIndex: number, x: number, y: number): void
+--- @return nil
+--- @overload fun(hudIndex: number, x: number, y: number): nil
 function SetFloatingHelpTextScreenPosition(hudIndex, x, y) end
 
     
@@ -5970,8 +5971,8 @@ function SetFloatingHelpTextScreenPosition(hudIndex, x, y) end
 --- @param hudIndex number (int)
 --- @param x number (float)
 --- @param y number (float)
---- @return void
---- @overload fun(hudIndex: number, x: number, y: number): void
+--- @return nil
+--- @overload fun(hudIndex: number, x: number, y: number): nil
 --- @deprecated
 function N_0x7679cc1bcebe3d4c(hudIndex, x, y) end
 
@@ -5980,8 +5981,8 @@ function N_0x7679cc1bcebe3d4c(hudIndex, x, y) end
 ---
 --- @hash [0x7792424AA0EAC32E](https://docs.fivem.net/natives/?_0x7792424AA0EAC32E)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ClearDynamicPauseMenuErrorMessage() end
 
     
@@ -5990,8 +5991,8 @@ function ClearDynamicPauseMenuErrorMessage() end
 ---
 --- @hash [0x7792424AA0EAC32E](https://docs.fivem.net/natives/?_0x7792424AA0EAC32E)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x7792424aa0eac32e() end
 
@@ -6004,8 +6005,8 @@ function N_0x7792424aa0eac32e() end
 --- @hash [0x77E2DD177910E1CF](https://docs.fivem.net/natives/?_0x77E2DD177910E1CF)
 --- @param x number (float)
 --- @param y number (float)
---- @return void
---- @overload fun(x: number, y: number): void
+--- @return nil
+--- @overload fun(x: number, y: number): nil
 function SetPlayerBlipPositionThisFrame(x, y) end
 
     
@@ -6014,8 +6015,8 @@ function SetPlayerBlipPositionThisFrame(x, y) end
 ---
 --- @hash [0x77F16B447824DA6C](https://docs.fivem.net/natives/?_0x77F16B447824DA6C)
 --- @param pageId number (int)
---- @return void
---- @overload fun(pageId: number): void
+--- @return nil
+--- @overload fun(pageId: number): nil
 function PauseMenuceptionGoDeeper(pageId) end
 
     
@@ -6025,8 +6026,8 @@ function PauseMenuceptionGoDeeper(pageId) end
 ---
 --- @hash [0x77F16B447824DA6C](https://docs.fivem.net/natives/?_0x77F16B447824DA6C)
 --- @param pageId number (int)
---- @return void
---- @overload fun(pageId: number): void
+--- @return nil
+--- @overload fun(pageId: number): nil
 --- @deprecated
 function N_0x77f16b447824da6c(pageId) end
 
@@ -6038,8 +6039,8 @@ function N_0x77f16b447824da6c(pageId) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(hudIndex: number, x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(hudIndex: number, x: number, y: number, z: number): nil
 function SetFloatingHelpTextWorldPosition(hudIndex, x, y, z) end
 
     
@@ -6051,8 +6052,8 @@ function SetFloatingHelpTextWorldPosition(hudIndex, x, y, z) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(hudIndex: number, x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(hudIndex: number, x: number, y: number, z: number): nil
 --- @deprecated
 function N_0x784ba7e0eceb4178(hudIndex, x, y, z) end
 
@@ -6066,8 +6067,8 @@ function N_0x784ba7e0eceb4178(hudIndex, x, y, z) end
 --- @param p3 number (int)
 --- @param p4 number (int)
 --- @param p5 number (int)
---- @return void
---- @overload fun(hudIndex: number, p1: number, p2: number, p3: number, p4: number, p5: number): void
+--- @return nil
+--- @overload fun(hudIndex: number, p1: number, p2: number, p3: number, p4: number, p5: number): nil
 function SetFloatingHelpTextStyle(hudIndex, p1, p2, p3, p4, p5) end
 
     
@@ -6081,8 +6082,8 @@ function SetFloatingHelpTextStyle(hudIndex, p1, p2, p3, p4, p5) end
 --- @param p3 number (int)
 --- @param p4 number (int)
 --- @param p5 number (int)
---- @return void
---- @overload fun(hudIndex: number, p1: number, p2: number, p3: number, p4: number, p5: number): void
+--- @return nil
+--- @overload fun(hudIndex: number, p1: number, p2: number, p3: number, p4: number, p5: number): nil
 --- @deprecated
 function N_0x788e7fd431bd67f1(hudIndex, p1, p2, p3, p4, p5) end
 
@@ -6111,8 +6112,8 @@ function IsMessageBeingDisplayed() end
 ---
 --- @hash [0x7AA5B4CE533C858B](https://docs.fivem.net/natives/?_0x7AA5B4CE533C858B)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ClearGpsRaceTrack() end
 
     
@@ -6260,8 +6261,8 @@ function N_0x7ae0589093a2e088(chTitle, iconType, chSubtitle, isImportant, titleC
 --- @param p6 string (char*)
 --- @param showBg boolean
 --- @param errorCode number (int)
---- @return void
---- @overload fun(entryLine1: string, instructionalKey: number, entryLine2: string, p3: boolean, p4: number, background: string, p6: string, showBg: boolean, errorCode: number): void
+--- @return nil
+--- @overload fun(entryLine1: string, instructionalKey: number, entryLine2: string, p3: boolean, p4: number, background: string, p6: string, showBg: boolean, errorCode: number): nil
 function SetWarningMessage(entryLine1, instructionalKey, entryLine2, p3, p4, background, p6, showBg, errorCode) end
 
     
@@ -6269,8 +6270,8 @@ function SetWarningMessage(entryLine1, instructionalKey, entryLine2, p3, p4, bac
 ---
 --- @hash [0x7B21E0BB01E8224A](https://docs.fivem.net/natives/?_0x7B21E0BB01E8224A)
 --- @param color number (int)
---- @return void
---- @overload fun(color: number): void
+--- @return nil
+--- @overload fun(color: number): nil
 function SetMainPlayerBlipColour(color) end
 
     
@@ -6279,8 +6280,8 @@ function SetMainPlayerBlipColour(color) end
 ---
 --- @hash [0x7B21E0BB01E8224A](https://docs.fivem.net/natives/?_0x7B21E0BB01E8224A)
 --- @param color number (int)
---- @return void
---- @overload fun(color: number): void
+--- @return nil
+--- @overload fun(color: number): nil
 --- @deprecated
 function N_0x7b21e0bb01e8224a(color) end
 
@@ -6302,8 +6303,8 @@ function GetLabelText(labelName) end
 --- @hash [0x7B7723747CCB55B6](https://docs.fivem.net/natives/?_0x7B7723747CCB55B6)
 --- @param gamerTagId number (int)
 --- @param string string (char*)
---- @return void
---- @overload fun(gamerTagId: number, string: string): void
+--- @return nil
+--- @overload fun(gamerTagId: number, string: string): nil
 function SetMpGamerTagBigText(gamerTagId, string) end
 
     
@@ -6313,8 +6314,8 @@ function SetMpGamerTagBigText(gamerTagId, string) end
 --- @hash [0x7B7723747CCB55B6](https://docs.fivem.net/natives/?_0x7B7723747CCB55B6)
 --- @param gamerTagId number (int)
 --- @param string string (char*)
---- @return void
---- @overload fun(gamerTagId: number, string: string): void
+--- @return nil
+--- @overload fun(gamerTagId: number, string: string): nil
 --- @deprecated
 function N_0x7b7723747ccb55b6(gamerTagId, string) end
 
@@ -6325,8 +6326,8 @@ function N_0x7b7723747ccb55b6(gamerTagId, string) end
 --- @hash [0x7B7723747CCB55B6](https://docs.fivem.net/natives/?_0x7B7723747CCB55B6)
 --- @param gamerTagId number (int)
 --- @param string string (char*)
---- @return void
---- @overload fun(gamerTagId: number, string: string): void
+--- @return nil
+--- @overload fun(gamerTagId: number, string: string): nil
 --- @deprecated
 function SetMpGamerTagChatting(gamerTagId, string) end
 
@@ -6335,8 +6336,8 @@ function SetMpGamerTagChatting(gamerTagId, string) end
 ---
 --- @hash [0x7C226D5346D4D10A](https://docs.fivem.net/natives/?_0x7C226D5346D4D10A)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x7c226d5346d4d10a(p0) end
 
     
@@ -6346,8 +6347,8 @@ function N_0x7c226d5346d4d10a(p0) end
 ---
 --- @hash [0x7C9C91AB74A0360F](https://docs.fivem.net/natives/?_0x7C9C91AB74A0360F)
 --- @param hudColorIndex number (int)
---- @return number, number, number, number
---- @overload fun(hudColorIndex: number): number, number, number, number
+--- @return nil, number, number, number, number
+--- @overload fun(hudColorIndex: number): nil, number, number, number, number
 function GetHudColour(hudColorIndex) end
 
     
@@ -6391,8 +6392,8 @@ function N_0x7cd934010e115c2c(ped) end
 ---
 --- @hash [0x7E17BE53E1AAABAF](https://docs.fivem.net/natives/?_0x7E17BE53E1AAABAF)
 ---
---- @return number, number, number
---- @overload fun(): number, number, number
+--- @return nil, number, number, number
+--- @overload fun(): nil, number, number, number
 function GetPauseMenuSelectionData() end
 
     
@@ -6417,8 +6418,8 @@ function GetPauseMenuSelectionData() end
 ---
 --- @hash [0x7E17BE53E1AAABAF](https://docs.fivem.net/natives/?_0x7E17BE53E1AAABAF)
 ---
---- @return number, number, number
---- @overload fun(): number, number, number
+--- @return nil, number, number, number
+--- @overload fun(): nil, number, number, number
 --- @deprecated
 function N_0x7e17be53e1aaabaf() end
 
@@ -6429,8 +6430,8 @@ function N_0x7e17be53e1aaabaf() end
 ---
 --- @hash [0x7EC8ABA5E74B3D7A](https://docs.fivem.net/natives/?_0x7EC8ABA5E74B3D7A)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetInteriorZoomLevelDecreased(toggle) end
 
     
@@ -6441,8 +6442,8 @@ function SetInteriorZoomLevelDecreased(toggle) end
 ---
 --- @hash [0x7EC8ABA5E74B3D7A](https://docs.fivem.net/natives/?_0x7EC8ABA5E74B3D7A)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0x7ec8aba5e74b3d7a(toggle) end
 
@@ -6473,8 +6474,8 @@ function GetLengthOfStringWithThisTextLabel(gxt) end
 ---
 --- @hash [0x805D7CBB36FD6C4C](https://docs.fivem.net/natives/?_0x805D7CBB36FD6C4C)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function OpenOnlinePoliciesMenu() end
 
     
@@ -6483,8 +6484,8 @@ function OpenOnlinePoliciesMenu() end
 ---
 --- @hash [0x805D7CBB36FD6C4C](https://docs.fivem.net/natives/?_0x805D7CBB36FD6C4C)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function ShowSocialClubLegalScreen() end
 
@@ -6497,8 +6498,8 @@ function ShowSocialClubLegalScreen() end
 ---
 --- @hash [0x808519373FD336A3](https://docs.fivem.net/natives/?_0x808519373FD336A3)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetPlayerIsInDirectorMode(toggle) end
 
     
@@ -6511,8 +6512,8 @@ function SetPlayerIsInDirectorMode(toggle) end
 ---
 --- @hash [0x808519373FD336A3](https://docs.fivem.net/natives/?_0x808519373FD336A3)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0x808519373fd336a3(toggle) end
 
@@ -6526,8 +6527,8 @@ function N_0x808519373fd336a3(toggle) end
 ---
 --- @hash [0x808519373FD336A3](https://docs.fivem.net/natives/?_0x808519373FD336A3)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function SetDirectorMode(toggle) end
 
@@ -6536,8 +6537,8 @@ function SetDirectorMode(toggle) end
 ---
 --- @hash [0x80EAD8E2E1D5D52E](https://docs.fivem.net/natives/?_0x80EAD8E2E1D5D52E)
 --- @param blip Blip
---- @return void
---- @overload fun(blip: Blip): void
+--- @return nil
+--- @overload fun(blip: Blip): nil
 function AddTextComponentSubstringBlipName(blip) end
 
     
@@ -6546,8 +6547,8 @@ function AddTextComponentSubstringBlipName(blip) end
 ---
 --- @hash [0x80EAD8E2E1D5D52E](https://docs.fivem.net/natives/?_0x80EAD8E2E1D5D52E)
 --- @param blip Blip
---- @return void
---- @overload fun(blip: Blip): void
+--- @return nil
+--- @overload fun(blip: Blip): nil
 --- @deprecated
 function N_0x80ead8e2e1d5d52e(blip) end
 
@@ -6556,8 +6557,8 @@ function N_0x80ead8e2e1d5d52e(blip) end
 ---
 --- @hash [0x80FE4F3AB4E1B62A](https://docs.fivem.net/natives/?_0x80FE4F3AB4E1B62A)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ThefeedClearFrozenPost() end
 
     
@@ -6566,8 +6567,8 @@ function ThefeedClearFrozenPost() end
 ---
 --- @hash [0x80FE4F3AB4E1B62A](https://docs.fivem.net/natives/?_0x80FE4F3AB4E1B62A)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x80fe4f3ab4e1b62a() end
 
@@ -6577,8 +6578,8 @@ function N_0x80fe4f3ab4e1b62a() end
 ---
 --- @hash [0x80FE4F3AB4E1B62A](https://docs.fivem.net/natives/?_0x80FE4F3AB4E1B62A)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function ThefeedFlushPersistent() end
 
@@ -6589,8 +6590,8 @@ function ThefeedFlushPersistent() end
 ---
 --- @hash [0x817B86108EB94E51](https://docs.fivem.net/natives/?_0x817B86108EB94E51)
 --- @param p0 boolean
---- @return any, any, any, any, any, any, any, any
---- @overload fun(p0: boolean): any, any, any, any, any, any, any, any
+--- @return nil, any, any, any, any, any, any, any, any
+--- @overload fun(p0: boolean): nil, any, any, any, any, any, any, any, any
 function N_0x817b86108eb94e51(p0) end
 
     
@@ -6598,8 +6599,8 @@ function N_0x817b86108eb94e51(p0) end
 ---
 --- @hash [0x8183455E16C42E3A](https://docs.fivem.net/natives/?_0x8183455E16C42E3A)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function UnlockMinimapAngle() end
 
     
@@ -6618,8 +6619,8 @@ function GetWarningMessageTitleHash() end
 ---
 --- @hash [0x81FA173F170560D1](https://docs.fivem.net/natives/?_0x81FA173F170560D1)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function RefreshWaypoint() end
 
     
@@ -6680,8 +6681,8 @@ function ThefeedGetCurrentNotification() end
 ---
 --- @hash [0x82CEDC33687E1F50](https://docs.fivem.net/natives/?_0x82CEDC33687E1F50)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function DisplayPlayerNameTagsOnBlips(toggle) end
 
     
@@ -6693,8 +6694,8 @@ function DisplayPlayerNameTagsOnBlips(toggle) end
 ---
 --- @hash [0x82CEDC33687E1F50](https://docs.fivem.net/natives/?_0x82CEDC33687E1F50)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0x82cedc33687e1f50(toggle) end
 
@@ -6704,8 +6705,8 @@ function N_0x82cedc33687e1f50(toggle) end
 --- @hash [0x837155CD2F63DA09](https://docs.fivem.net/natives/?_0x837155CD2F63DA09)
 --- @param blip Blip
 --- @param colour number (int)
---- @return void
---- @overload fun(blip: Blip, colour: number): void
+--- @return nil
+--- @overload fun(blip: Blip, colour: number): nil
 function SetBlipRouteColour(blip, colour) end
 
     
@@ -6715,8 +6716,8 @@ function SetBlipRouteColour(blip, colour) end
 ---
 --- @hash [0x8410C5E0CD847B9D](https://docs.fivem.net/natives/?_0x8410C5E0CD847B9D)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x8410c5e0cd847b9d() end
 
     
@@ -6746,8 +6747,8 @@ function N_0x84698ab38d0c6636(contextHash) end
 ---
 --- @hash [0x8509B634FBE7DA11](https://docs.fivem.net/natives/?_0x8509B634FBE7DA11)
 --- @param inputType string (char*)
---- @return void
---- @overload fun(inputType: string): void
+--- @return nil
+--- @overload fun(inputType: string): nil
 function BeginTextCommandDisplayHelp(inputType) end
 
     
@@ -6758,8 +6759,8 @@ function BeginTextCommandDisplayHelp(inputType) end
 ---
 --- @hash [0x8509B634FBE7DA11](https://docs.fivem.net/natives/?_0x8509B634FBE7DA11)
 --- @param inputType string (char*)
---- @return void
---- @overload fun(inputType: string): void
+--- @return nil
+--- @overload fun(inputType: string): nil
 --- @deprecated
 function SetTextComponentFormat(inputType) end
 
@@ -6776,8 +6777,8 @@ function SetTextComponentFormat(inputType) end
 ---
 --- @hash [0x853648FD1063A213](https://docs.fivem.net/natives/?_0x853648FD1063A213)
 --- @param text string (char*)
---- @return void
---- @overload fun(text: string): void
+--- @return nil
+--- @overload fun(text: string): nil
 function BeginTextCommandIsMessageDisplayed(text) end
 
     
@@ -6794,8 +6795,8 @@ function BeginTextCommandIsMessageDisplayed(text) end
 ---
 --- @hash [0x853648FD1063A213](https://docs.fivem.net/natives/?_0x853648FD1063A213)
 --- @param text string (char*)
---- @return void
---- @overload fun(text: string): void
+--- @return nil
+--- @overload fun(text: string): nil
 --- @deprecated
 function N_0x853648fd1063a213(text) end
 
@@ -6839,8 +6840,8 @@ function GetTextScreenWidth(p0) end
 --- RemoveBlip(blip
 --- @hash [0x86A652570E5F25DD](https://docs.fivem.net/natives/?_0x86A652570E5F25DD)
 --- @param blip Blip (Blip*)
---- @return void
---- @overload fun(): Blip
+--- @return nil
+--- @overload fun(): nil, Blip
 function RemoveBlip(blip) end
 
     
@@ -6848,8 +6849,8 @@ function RemoveBlip(blip) end
 ---
 --- @hash [0x8817605C2BA76200](https://docs.fivem.net/natives/?_0x8817605C2BA76200)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ForceCloseTextInputBox() end
 
     
@@ -6858,8 +6859,8 @@ function ForceCloseTextInputBox() end
 ---
 --- @hash [0x8817605C2BA76200](https://docs.fivem.net/natives/?_0x8817605C2BA76200)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x8817605c2ba76200() end
 
@@ -6870,8 +6871,8 @@ function N_0x8817605c2ba76200() end
 ---
 --- @hash [0x889329C80FE5963C](https://docs.fivem.net/natives/?_0x889329C80FE5963C)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetAllowAbilityBarInMultiplayer(toggle) end
 
     
@@ -6926,8 +6927,8 @@ function IsStreamingAdditionalText(p0) end
 ---
 --- @hash [0x8DB8CFFD58B62552](https://docs.fivem.net/natives/?_0x8DB8CFFD58B62552)
 --- @param spriteId number (int)
---- @return void
---- @overload fun(spriteId: number): void
+--- @return nil
+--- @overload fun(spriteId: number): nil
 function SetMouseCursorSprite(spriteId) end
 
     
@@ -6954,8 +6955,8 @@ function SetMouseCursorSprite(spriteId) end
 ---
 --- @hash [0x8DB8CFFD58B62552](https://docs.fivem.net/natives/?_0x8DB8CFFD58B62552)
 --- @param spriteId number (int)
---- @return void
---- @overload fun(spriteId: number): void
+--- @return nil
+--- @overload fun(spriteId: number): nil
 --- @deprecated
 function N_0x8db8cffd58b62552(spriteId) end
 
@@ -6983,8 +6984,8 @@ function N_0x8db8cffd58b62552(spriteId) end
 ---
 --- @hash [0x8DB8CFFD58B62552](https://docs.fivem.net/natives/?_0x8DB8CFFD58B62552)
 --- @param spriteId number (int)
---- @return void
---- @overload fun(spriteId: number): void
+--- @return nil
+--- @overload fun(spriteId: number): nil
 --- @deprecated
 function SetCursorSprite(spriteId) end
 
@@ -6993,8 +6994,8 @@ function SetCursorSprite(spriteId) end
 ---
 --- @hash [0x8DFCED7A656F8802](https://docs.fivem.net/natives/?_0x8DFCED7A656F8802)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function ClearHelp(toggle) end
 
     
@@ -7041,8 +7042,8 @@ function N_0x8f08017f9d7c47bd(p0, p1, p2) end
 ---
 --- @hash [0x8F9EE5687F8EECCD](https://docs.fivem.net/natives/?_0x8F9EE5687F8EECCD)
 --- @param gxtEntry string (char*)
---- @return void
---- @overload fun(gxtEntry: string): void
+--- @return nil
+--- @overload fun(gxtEntry: string): nil
 function BeginTextCommandOverrideButtonText(gxtEntry) end
 
     
@@ -7051,8 +7052,8 @@ function BeginTextCommandOverrideButtonText(gxtEntry) end
 ---
 --- @hash [0x8F9EE5687F8EECCD](https://docs.fivem.net/natives/?_0x8F9EE5687F8EECCD)
 --- @param gxtEntry string (char*)
---- @return void
---- @overload fun(gxtEntry: string): void
+--- @return nil
+--- @overload fun(gxtEntry: string): nil
 --- @deprecated
 function N_0x8f9ee5687f8eeccd(gxtEntry) end
 
@@ -7062,8 +7063,8 @@ function N_0x8f9ee5687f8eeccd(gxtEntry) end
 ---
 --- @hash [0x8F9EE5687F8EECCD](https://docs.fivem.net/natives/?_0x8F9EE5687F8EECCD)
 --- @param gxtEntry string (char*)
---- @return void
---- @overload fun(gxtEntry: string): void
+--- @return nil
+--- @overload fun(gxtEntry: string): nil
 --- @deprecated
 function BeginTextCommandTimer(gxtEntry) end
 
@@ -7074,8 +7075,8 @@ function BeginTextCommandTimer(gxtEntry) end
 --- @param toggle boolean
 --- @param radarThickness number (int)
 --- @param mapThickness number (int)
---- @return void
---- @overload fun(toggle: boolean, radarThickness: number, mapThickness: number): void
+--- @return nil
+--- @overload fun(toggle: boolean, radarThickness: number, mapThickness: number): nil
 function SetGpsCustomRouteRender(toggle, radarThickness, mapThickness) end
 
     
@@ -7086,8 +7087,8 @@ function SetGpsCustomRouteRender(toggle, radarThickness, mapThickness) end
 --- @param toggle boolean
 --- @param radarThickness number (int)
 --- @param mapThickness number (int)
---- @return void
---- @overload fun(toggle: boolean, radarThickness: number, mapThickness: number): void
+--- @return nil
+--- @overload fun(toggle: boolean, radarThickness: number, mapThickness: number): nil
 --- @deprecated
 function N_0x900086f371220b6f(toggle, radarThickness, mapThickness) end
 
@@ -7111,8 +7112,8 @@ function N_0x900086f371220b6f(toggle, radarThickness, mapThickness) end
 --- @hash [0x9029B2F3DA924928](https://docs.fivem.net/natives/?_0x9029B2F3DA924928)
 --- @param blip Blip
 --- @param displayId number (int)
---- @return void
---- @overload fun(blip: Blip, displayId: number): void
+--- @return nil
+--- @overload fun(blip: Blip, displayId: number): nil
 function SetBlipDisplay(blip, displayId) end
 
     
@@ -7230,8 +7231,8 @@ function N_0x90a6526cf0381030(p0, p1, p2, p3) end
 ---
 --- @hash [0x9133955F1A2DA957](https://docs.fivem.net/natives/?_0x9133955F1A2DA957)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetMinimapInPrologue(toggle) end
 
     
@@ -7242,8 +7243,8 @@ function SetMinimapInPrologue(toggle) end
 ---
 --- @hash [0x9133955F1A2DA957](https://docs.fivem.net/natives/?_0x9133955F1A2DA957)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function SetDrawMapVisible(toggle) end
 
@@ -7255,8 +7256,8 @@ function SetDrawMapVisible(toggle) end
 ---
 --- @hash [0x9133955F1A2DA957](https://docs.fivem.net/natives/?_0x9133955F1A2DA957)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function SetNorthYanktonMap(toggle) end
 
@@ -7285,8 +7286,8 @@ function N_0x9135584d09a3437e() end
 ---
 --- @hash [0x9245E81072704B8A](https://docs.fivem.net/natives/?_0x9245E81072704B8A)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function PauseMenuDisableBusyspinner(toggle) end
 
     
@@ -7295,8 +7296,8 @@ function PauseMenuDisableBusyspinner(toggle) end
 ---
 --- @hash [0x9245E81072704B8A](https://docs.fivem.net/natives/?_0x9245E81072704B8A)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0x9245e81072704b8a(toggle) end
 
@@ -7315,8 +7316,8 @@ function N_0x9245e81072704b8a(toggle) end
 ---
 --- @hash [0x92F0DA1E27DB96DC](https://docs.fivem.net/natives/?_0x92F0DA1E27DB96DC)
 --- @param hudColorIndex number (int)
---- @return void
---- @overload fun(hudColorIndex: number): void
+--- @return nil
+--- @overload fun(hudColorIndex: number): nil
 function ThefeedSetNextPostBackgroundColor(hudColorIndex) end
 
     
@@ -7335,8 +7336,8 @@ function ThefeedSetNextPostBackgroundColor(hudColorIndex) end
 ---
 --- @hash [0x92F0DA1E27DB96DC](https://docs.fivem.net/natives/?_0x92F0DA1E27DB96DC)
 --- @param hudColorIndex number (int)
---- @return void
---- @overload fun(hudColorIndex: number): void
+--- @return nil
+--- @overload fun(hudColorIndex: number): nil
 --- @deprecated
 function N_0x92f0da1e27db96dc(hudColorIndex) end
 
@@ -7356,8 +7357,8 @@ function N_0x92f0da1e27db96dc(hudColorIndex) end
 ---
 --- @hash [0x92F0DA1E27DB96DC](https://docs.fivem.net/natives/?_0x92F0DA1E27DB96DC)
 --- @param hudColorIndex number (int)
---- @return void
---- @overload fun(hudColorIndex: number): void
+--- @return nil
+--- @overload fun(hudColorIndex: number): nil
 --- @deprecated
 function SetNotificationBackgroundColor(hudColorIndex) end
 
@@ -7377,8 +7378,8 @@ function SetNotificationBackgroundColor(hudColorIndex) end
 ---
 --- @hash [0x92F0DA1E27DB96DC](https://docs.fivem.net/natives/?_0x92F0DA1E27DB96DC)
 --- @param hudColorIndex number (int)
---- @return void
---- @overload fun(hudColorIndex: number): void
+--- @return nil
+--- @overload fun(hudColorIndex: number): nil
 --- @deprecated
 function ThefeedNextPostBackgroundColor(hudColorIndex) end
 
@@ -7389,8 +7390,8 @@ function ThefeedNextPostBackgroundColor(hudColorIndex) end
 ---
 --- @hash [0x94CF4AC034C9C986](https://docs.fivem.net/natives/?_0x94CF4AC034C9C986)
 --- @param website string (char*)
---- @return void
---- @overload fun(website: string): void
+--- @return nil
+--- @overload fun(website: string): nil
 function AddTextComponentSubstringWebsite(website) end
 
     
@@ -7401,8 +7402,8 @@ function AddTextComponentSubstringWebsite(website) end
 ---
 --- @hash [0x94CF4AC034C9C986](https://docs.fivem.net/natives/?_0x94CF4AC034C9C986)
 --- @param website string (char*)
---- @return void
---- @overload fun(website: string): void
+--- @return nil
+--- @overload fun(website: string): nil
 --- @deprecated
 function AddTextComponentString2(website) end
 
@@ -7411,8 +7412,8 @@ function AddTextComponentString2(website) end
 ---
 --- @hash [0x95CF81BD06EE1887](https://docs.fivem.net/natives/?_0x95CF81BD06EE1887)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function RemoveMultiplayerWalletCash() end
 
     
@@ -7421,8 +7422,8 @@ function RemoveMultiplayerWalletCash() end
 ---
 --- @hash [0x95CF81BD06EE1887](https://docs.fivem.net/natives/?_0x95CF81BD06EE1887)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x95cf81bd06ee1887() end
 
@@ -7444,8 +7445,8 @@ function N_0x95cf81bd06ee1887() end
 --- @hash [0x960C9FF8F616E41C](https://docs.fivem.net/natives/?_0x960C9FF8F616E41C)
 --- @param message string (char*)
 --- @param p1 boolean
---- @return void
---- @overload fun(message: string, p1: boolean): void
+--- @return nil
+--- @overload fun(message: string, p1: boolean): nil
 function DisplayHelpTextThisFrame(message, p1) end
 
     
@@ -7455,8 +7456,8 @@ function DisplayHelpTextThisFrame(message, p1) end
 ---
 --- @hash [0x968F270E39141ECA](https://docs.fivem.net/natives/?_0x968F270E39141ECA)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function RemoveMultiplayerHudCash() end
 
     
@@ -7467,8 +7468,8 @@ function RemoveMultiplayerHudCash() end
 ---
 --- @hash [0x96DEC8D5430208B7](https://docs.fivem.net/natives/?_0x96DEC8D5430208B7)
 --- @param display boolean
---- @return void
---- @overload fun(display: boolean): void
+--- @return nil
+--- @overload fun(display: boolean): nil
 function DisplayCash(display) end
 
     
@@ -7485,8 +7486,8 @@ function GetBlipAlpha(blip) end
 ---
 --- @hash [0x975D66A0BC17064C](https://docs.fivem.net/natives/?_0x975D66A0BC17064C)
 --- @param maximumValue number (int)
---- @return void
---- @overload fun(maximumValue: number): void
+--- @return nil
+--- @overload fun(maximumValue: number): nil
 function SetMaxHealthHudDisplay(maximumValue) end
 
     
@@ -7495,8 +7496,8 @@ function SetMaxHealthHudDisplay(maximumValue) end
 ---
 --- @hash [0x975D66A0BC17064C](https://docs.fivem.net/natives/?_0x975D66A0BC17064C)
 --- @param maximumValue number (int)
---- @return void
---- @overload fun(maximumValue: number): void
+--- @return nil
+--- @overload fun(maximumValue: number): nil
 --- @deprecated
 function N_0x975d66a0bc17064c(maximumValue) end
 
@@ -7506,8 +7507,8 @@ function N_0x975d66a0bc17064c(maximumValue) end
 --- @hash [0x97C65887D4B37FA9](https://docs.fivem.net/natives/?_0x97C65887D4B37FA9)
 --- @param ped Ped
 --- @param range number (float)
---- @return void
---- @overload fun(ped: Ped, range: number): void
+--- @return nil
+--- @overload fun(ped: Ped, range: number): nil
 function SetPedAiBlipNoticeRange(ped, range) end
 
     
@@ -7517,8 +7518,8 @@ function SetPedAiBlipNoticeRange(ped, range) end
 --- @hash [0x97C65887D4B37FA9](https://docs.fivem.net/natives/?_0x97C65887D4B37FA9)
 --- @param ped Ped
 --- @param range number (float)
---- @return void
---- @overload fun(ped: Ped, range: number): void
+--- @return nil
+--- @overload fun(ped: Ped, range: number): nil
 --- @deprecated
 function N_0x97c65887d4b37fa9(ped, range) end
 
@@ -7529,8 +7530,8 @@ function N_0x97c65887d4b37fa9(ped, range) end
 --- @hash [0x97C65887D4B37FA9](https://docs.fivem.net/natives/?_0x97C65887D4B37FA9)
 --- @param ped Ped
 --- @param range number (float)
---- @return void
---- @overload fun(ped: Ped, range: number): void
+--- @return nil
+--- @overload fun(ped: Ped, range: number): nil
 --- @deprecated
 function SetAiBlipMaxDistance(ped, range) end
 
@@ -7766,8 +7767,8 @@ function GetCurrentWebsiteId() end
 --- end
 --- @hash [0x98215325A695E78A](https://docs.fivem.net/natives/?_0x98215325A695E78A)
 --- @param enable boolean
---- @return void
---- @overload fun(enable: boolean): void
+--- @return nil
+--- @overload fun(enable: boolean): nil
 function SetMouseCursorVisibleInMenus(enable) end
 
     
@@ -7784,8 +7785,8 @@ function SetMouseCursorVisibleInMenus(enable) end
 --- end
 --- @hash [0x98215325A695E78A](https://docs.fivem.net/natives/?_0x98215325A695E78A)
 --- @param enable boolean
---- @return void
---- @overload fun(enable: boolean): void
+--- @return nil
+--- @overload fun(enable: boolean): nil
 --- @deprecated
 function N_0x98215325a695e78a(enable) end
 
@@ -7807,8 +7808,8 @@ function N_0x98c3cf913d895111(string, length) end
 --- @hash [0x9969599CCFF5D85E](https://docs.fivem.net/natives/?_0x9969599CCFF5D85E)
 --- @param value number (float)
 --- @param maxValue number (float)
---- @return void
---- @overload fun(value: number, maxValue: number): void
+--- @return nil
+--- @overload fun(value: number, maxValue: number): nil
 function SetAbilityBarValue(value, maxValue) end
 
     
@@ -7839,8 +7840,8 @@ function GetBlipInfoIdPickupIndex(blip) end
 --- @hash [0x9C16459B2324B2CF](https://docs.fivem.net/natives/?_0x9C16459B2324B2CF)
 --- @param gamerTagId number (int)
 --- @param count number (int)
---- @return void
---- @overload fun(gamerTagId: number, count: number): void
+--- @return nil
+--- @overload fun(gamerTagId: number, count: number): nil
 function SetMpGamerTagMpBagLargeCount(gamerTagId, count) end
 
     
@@ -7852,8 +7853,8 @@ function SetMpGamerTagMpBagLargeCount(gamerTagId, count) end
 --- @hash [0x9C16459B2324B2CF](https://docs.fivem.net/natives/?_0x9C16459B2324B2CF)
 --- @param gamerTagId number (int)
 --- @param count number (int)
---- @return void
---- @overload fun(gamerTagId: number, count: number): void
+--- @return nil
+--- @overload fun(gamerTagId: number, count: number): nil
 --- @deprecated
 function N_0x9b9aa95688f78dd3(gamerTagId, count) end
 
@@ -7866,8 +7867,8 @@ function N_0x9b9aa95688f78dd3(gamerTagId, count) end
 --- @hash [0x9C16459B2324B2CF](https://docs.fivem.net/natives/?_0x9C16459B2324B2CF)
 --- @param gamerTagId number (int)
 --- @param count number (int)
---- @return void
---- @overload fun(gamerTagId: number, count: number): void
+--- @return nil
+--- @overload fun(gamerTagId: number, count: number): nil
 --- @deprecated
 function SetMpGamerTagUnk(gamerTagId, count) end
 
@@ -7876,8 +7877,8 @@ function SetMpGamerTagUnk(gamerTagId, count) end
 ---
 --- @hash [0x9D292F73ADBD9313](https://docs.fivem.net/natives/?_0x9D292F73ADBD9313)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ClearBrief() end
 
     
@@ -7891,8 +7892,8 @@ function ClearBrief() end
 --- @hash [0x9D77056A530643F6](https://docs.fivem.net/natives/?_0x9D77056A530643F6)
 --- @param duration number (int)
 --- @param drawImmediately boolean
---- @return void
---- @overload fun(duration: number, drawImmediately: boolean): void
+--- @return nil
+--- @overload fun(duration: number, drawImmediately: boolean): nil
 function EndTextCommandPrint(duration, drawImmediately) end
 
     
@@ -7907,8 +7908,8 @@ function EndTextCommandPrint(duration, drawImmediately) end
 --- @hash [0x9D77056A530643F6](https://docs.fivem.net/natives/?_0x9D77056A530643F6)
 --- @param duration number (int)
 --- @param drawImmediately boolean
---- @return void
---- @overload fun(duration: number, drawImmediately: boolean): void
+--- @return nil
+--- @overload fun(duration: number, drawImmediately: boolean): nil
 --- @deprecated
 function DrawSubtitleTimed(duration, drawImmediately) end
 
@@ -7922,8 +7923,8 @@ function DrawSubtitleTimed(duration, drawImmediately) end
 ---
 --- @hash [0x9E778248D6685FE0](https://docs.fivem.net/natives/?_0x9E778248D6685FE0)
 --- @param name string (char*)
---- @return void
---- @overload fun(name: string): void
+--- @return nil
+--- @overload fun(name: string): nil
 function SetSocialClubTour(name) end
 
     
@@ -7937,8 +7938,8 @@ function SetSocialClubTour(name) end
 ---
 --- @hash [0x9E778248D6685FE0](https://docs.fivem.net/natives/?_0x9E778248D6685FE0)
 --- @param name string (char*)
---- @return void
---- @overload fun(name: string): void
+--- @return nil
+--- @overload fun(name: string): nil
 --- @deprecated
 function N_0x9e778248d6685fe0(name) end
 
@@ -7961,8 +7962,8 @@ function IsRadarPreferenceSwitchedOn() end
 --- @hash [0x9FCB3CBFB3EAD69A](https://docs.fivem.net/natives/?_0x9FCB3CBFB3EAD69A)
 --- @param p0 number (int)
 --- @param p1 number (float)
---- @return void
---- @overload fun(p0: number, p1: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: number): nil
 function N_0x9fcb3cbfb3ead69a(p0, p1) end
 
     
@@ -7972,8 +7973,8 @@ function N_0x9fcb3cbfb3ead69a(p0, p1) end
 ---
 --- @hash [0xA0EBB943C300E693](https://docs.fivem.net/natives/?_0xA0EBB943C300E693)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function DisplayRadar(toggle) end
 
     
@@ -7981,8 +7982,8 @@ function DisplayRadar(toggle) end
 ---
 --- @hash [0xA13C11E1B5C06BFC](https://docs.fivem.net/natives/?_0xA13C11E1B5C06BFC)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ThefeedForceRenderOn() end
 
     
@@ -7991,8 +7992,8 @@ function ThefeedForceRenderOn() end
 ---
 --- @hash [0xA13C11E1B5C06BFC](https://docs.fivem.net/natives/?_0xA13C11E1B5C06BFC)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xa13c11e1b5c06bfc() end
 
@@ -8027,8 +8028,8 @@ function N_0xa13e93403f26c812(weaponTypeIndex) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function N_0xa17784fca9548d15(p0, p1, p2) end
 
     
@@ -8036,8 +8037,8 @@ function N_0xa17784fca9548d15(p0, p1, p2) end
 ---
 --- @hash [0xA18AFB39081B6A1F](https://docs.fivem.net/natives/?_0xA18AFB39081B6A1F)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function FlashWantedDisplay(p0) end
 
     
@@ -8079,8 +8080,8 @@ function N_0xa277800a9eae340e() end
 --- @hash [0xA3C0B359DCB848B6](https://docs.fivem.net/natives/?_0xA3C0B359DCB848B6)
 --- @param blip Blip
 --- @param number number (int)
---- @return void
---- @overload fun(blip: Blip, number: number): void
+--- @return nil
+--- @overload fun(blip: Blip, number: number): nil
 function ShowNumberOnBlip(blip, number) end
 
     
@@ -8116,8 +8117,8 @@ function N_0xa48931185f0536fe() end
 ---
 --- @hash [0xA4DEDE28B1814289](https://docs.fivem.net/natives/?_0xA4DEDE28B1814289)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function HideAreaAndVehicleNameThisFrame() end
 
     
@@ -8130,8 +8131,8 @@ function HideAreaAndVehicleNameThisFrame() end
 ---
 --- @hash [0xA4DEDE28B1814289](https://docs.fivem.net/natives/?_0xA4DEDE28B1814289)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xa4dede28b1814289() end
 
@@ -8140,8 +8141,8 @@ function N_0xa4dede28b1814289() end
 ---
 --- @hash [0xA50ABC31E3CDFAFF](https://docs.fivem.net/natives/?_0xA50ABC31E3CDFAFF)
 --- @param p0 number (int)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function SetTextLeading(p0) end
 
     
@@ -8158,8 +8159,8 @@ function IsBlipFlashing(blip) end
 ---
 --- @hash [0xA5E78BA2B1331C55](https://docs.fivem.net/natives/?_0xA5E78BA2B1331C55)
 --- @param display boolean
---- @return void
---- @overload fun(display: boolean): void
+--- @return nil
+--- @overload fun(display: boolean): nil
 function DisplayAmmoThisFrame(display) end
 
     
@@ -8169,8 +8170,8 @@ function DisplayAmmoThisFrame(display) end
 ---
 --- @hash [0xA6294919E56FF02A](https://docs.fivem.net/natives/?_0xA6294919E56FF02A)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function DisplayHud(toggle) end
 
     
@@ -8180,8 +8181,8 @@ function DisplayHud(toggle) end
 --- @hash [0xA67F9C46D612B6F1](https://docs.fivem.net/natives/?_0xA67F9C46D612B6F1)
 --- @param gamerTagId number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(gamerTagId: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(gamerTagId: number, toggle: boolean): nil
 function SetMpGamerTagUseVehicleHealth(gamerTagId, toggle) end
 
     
@@ -8192,8 +8193,8 @@ function SetMpGamerTagUseVehicleHealth(gamerTagId, toggle) end
 --- @hash [0xA67F9C46D612B6F1](https://docs.fivem.net/natives/?_0xA67F9C46D612B6F1)
 --- @param gamerTagId number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(gamerTagId: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(gamerTagId: number, toggle: boolean): nil
 --- @deprecated
 function N_0xa67f9c46d612b6f1(gamerTagId, toggle) end
 
@@ -8205,8 +8206,8 @@ function N_0xa67f9c46d612b6f1(gamerTagId, toggle) end
 --- @hash [0xA67F9C46D612B6F1](https://docs.fivem.net/natives/?_0xA67F9C46D612B6F1)
 --- @param gamerTagId number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(gamerTagId: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(gamerTagId: number, toggle: boolean): nil
 --- @deprecated
 function SetMpGamerTagIcons(gamerTagId, toggle) end
 
@@ -8231,8 +8232,8 @@ function DoesBlipExist(blip) end
 ---
 --- @hash [0xA7E4E2D361C2627F](https://docs.fivem.net/natives/?_0xA7E4E2D361C2627F)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function SetWaypointOff() end
 
     
@@ -8249,8 +8250,8 @@ function IsHudHidden() end
 ---
 --- @hash [0xA86911979638106F](https://docs.fivem.net/natives/?_0xA86911979638106F)
 --- @param buttonIndex number (int)
---- @return void
---- @overload fun(buttonIndex: number): void
+--- @return nil
+--- @overload fun(buttonIndex: number): nil
 function EndTextCommandOverrideButtonText(buttonIndex) end
 
     
@@ -8259,8 +8260,8 @@ function EndTextCommandOverrideButtonText(buttonIndex) end
 ---
 --- @hash [0xA86911979638106F](https://docs.fivem.net/natives/?_0xA86911979638106F)
 --- @param buttonIndex number (int)
---- @return void
---- @overload fun(buttonIndex: number): void
+--- @return nil
+--- @overload fun(buttonIndex: number): nil
 --- @deprecated
 function N_0xa86911979638106f(buttonIndex) end
 
@@ -8270,8 +8271,8 @@ function N_0xa86911979638106f(buttonIndex) end
 ---
 --- @hash [0xA86911979638106F](https://docs.fivem.net/natives/?_0xA86911979638106F)
 --- @param buttonIndex number (int)
---- @return void
---- @overload fun(buttonIndex: number): void
+--- @return nil
+--- @overload fun(buttonIndex: number): nil
 --- @deprecated
 function EndTextCommandTimer(buttonIndex) end
 
@@ -8283,8 +8284,8 @@ function EndTextCommandTimer(buttonIndex) end
 --- @hash [0xA8B6AFDAC320AC87](https://docs.fivem.net/natives/?_0xA8B6AFDAC320AC87)
 --- @param blip Blip
 --- @param heading number (float)
---- @return void
---- @overload fun(blip: Blip, heading: number): void
+--- @return nil
+--- @overload fun(blip: Blip, heading: number): nil
 function SetBlipSquaredRotation(blip, heading) end
 
     
@@ -8296,8 +8297,8 @@ function SetBlipSquaredRotation(blip, heading) end
 --- @hash [0xA8B6AFDAC320AC87](https://docs.fivem.net/natives/?_0xA8B6AFDAC320AC87)
 --- @param blip Blip
 --- @param heading number (float)
---- @return void
---- @overload fun(blip: Blip, heading: number): void
+--- @return nil
+--- @overload fun(blip: Blip, heading: number): nil
 --- @deprecated
 function N_0xa8b6afdac320ac87(blip, heading) end
 
@@ -8306,8 +8307,8 @@ function N_0xa8b6afdac320ac87(blip, heading) end
 ---
 --- @hash [0xA8FDB297A8D25FBA](https://docs.fivem.net/natives/?_0xA8FDB297A8D25FBA)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ThefeedFlushQueue() end
 
     
@@ -8316,8 +8317,8 @@ function ThefeedFlushQueue() end
 ---
 --- @hash [0xA8FDB297A8D25FBA](https://docs.fivem.net/natives/?_0xA8FDB297A8D25FBA)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xa8fdb297a8d25fba() end
 
@@ -8328,8 +8329,8 @@ function N_0xa8fdb297a8d25fba() end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number): nil
 function AddPointToGpsMultiRoute(x, y, z) end
 
     
@@ -8340,8 +8341,8 @@ function AddPointToGpsMultiRoute(x, y, z) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number): nil
 --- @deprecated
 function N_0xa905192a6781c41b(x, y, z) end
 
@@ -8546,8 +8547,8 @@ function DrawNotificationAward(textureDict, textureName, rpBonus, colorOverlay, 
 --- @hash [0xAA51DB313C010A7E](https://docs.fivem.net/natives/?_0xAA51DB313C010A7E)
 --- @param blip Blip
 --- @param interval number (int)
---- @return void
---- @overload fun(blip: Blip, interval: number): void
+--- @return nil
+--- @overload fun(blip: Blip, interval: number): nil
 function SetBlipFlashInterval(blip, interval) end
 
     
@@ -8557,8 +8558,8 @@ function SetBlipFlashInterval(blip, interval) end
 --- @param id number (int)
 --- @param x number (float)
 --- @param y number (float)
---- @return void
---- @overload fun(id: number, x: number, y: number): void
+--- @return nil
+--- @overload fun(id: number, x: number, y: number): nil
 function SetHudComponentPosition(id, x, y) end
 
     
@@ -8568,8 +8569,8 @@ function SetHudComponentPosition(id, x, y) end
 ---
 --- @hash [0xAAE7CE1D63167423](https://docs.fivem.net/natives/?_0xAAE7CE1D63167423)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function SetMouseCursorActiveThisFrame() end
 
     
@@ -8580,8 +8581,8 @@ function SetMouseCursorActiveThisFrame() end
 ---
 --- @hash [0xAAE7CE1D63167423](https://docs.fivem.net/natives/?_0xAAE7CE1D63167423)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function ShowCursorThisFrame() end
 
@@ -8624,8 +8625,8 @@ function ShowCursorThisFrame() end
 ---
 --- @hash [0xABA17D7CE615ADBF](https://docs.fivem.net/natives/?_0xABA17D7CE615ADBF)
 --- @param string string (char*)
---- @return void
---- @overload fun(string: string): void
+--- @return nil
+--- @overload fun(string: string): nil
 function BeginTextCommandBusyspinnerOn(string) end
 
     
@@ -8668,8 +8669,8 @@ function BeginTextCommandBusyspinnerOn(string) end
 ---
 --- @hash [0xABA17D7CE615ADBF](https://docs.fivem.net/natives/?_0xABA17D7CE615ADBF)
 --- @param string string (char*)
---- @return void
---- @overload fun(string: string): void
+--- @return nil
+--- @overload fun(string: string): nil
 --- @deprecated
 function N_0xaba17d7ce615adbf(string) end
 
@@ -8713,8 +8714,8 @@ function N_0xaba17d7ce615adbf(string) end
 ---
 --- @hash [0xABA17D7CE615ADBF](https://docs.fivem.net/natives/?_0xABA17D7CE615ADBF)
 --- @param string string (char*)
---- @return void
---- @overload fun(string: string): void
+--- @return nil
+--- @overload fun(string: string): nil
 --- @deprecated
 function SetLoadingPromptTextEntry(string) end
 
@@ -8758,8 +8759,8 @@ function SetLoadingPromptTextEntry(string) end
 ---
 --- @hash [0xABA17D7CE615ADBF](https://docs.fivem.net/natives/?_0xABA17D7CE615ADBF)
 --- @param string string (char*)
---- @return void
---- @overload fun(string: string): void
+--- @return nil
+--- @overload fun(string: string): nil
 --- @deprecated
 function BeginTextCommandBusyString(string) end
 
@@ -8784,8 +8785,8 @@ function DoesTextLabelExist(gxt) end
 --- @hash [0xAC0BFBDC3BE00E14](https://docs.fivem.net/natives/?_0xAC0BFBDC3BE00E14)
 --- @param ped Ped
 --- @param p1 number (int)
---- @return void
---- @overload fun(ped: Ped, p1: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: number): nil
 function GivePedToPauseMenu(ped, p1) end
 
     
@@ -8816,8 +8817,8 @@ function HasThisAdditionalTextLoaded(gxt, slot) end
 ---
 --- @hash [0xADED7F5748ACAFE6](https://docs.fivem.net/natives/?_0xADED7F5748ACAFE6)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ThefeedCommentTeleportPoolOff() end
 
     
@@ -8828,8 +8829,8 @@ function ThefeedCommentTeleportPoolOff() end
 ---
 --- @hash [0xADED7F5748ACAFE6](https://docs.fivem.net/natives/?_0xADED7F5748ACAFE6)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xaded7f5748acafe6() end
 
@@ -8841,8 +8842,8 @@ function N_0xaded7f5748acafe6() end
 ---
 --- @hash [0xADED7F5748ACAFE6](https://docs.fivem.net/natives/?_0xADED7F5748ACAFE6)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function ThefeedShowGtaoTooltips() end
 
@@ -8854,8 +8855,8 @@ function ThefeedShowGtaoTooltips() end
 --- @param posX number (float)
 --- @param posY number (float)
 --- @param posZ number (float)
---- @return void
---- @overload fun(blip: Blip, posX: number, posY: number, posZ: number): void
+--- @return nil
+--- @overload fun(blip: Blip, posX: number, posY: number, posZ: number): nil
 function SetBlipCoords(blip, posX, posY, posZ) end
 
     
@@ -8866,8 +8867,8 @@ function SetBlipCoords(blip, posX, posY, posZ) end
 --- @hash [0xAE9FC9EF6A9FAC79](https://docs.fivem.net/natives/?_0xAE9FC9EF6A9FAC79)
 --- @param blip Blip
 --- @param priority number (int)
---- @return void
---- @overload fun(blip: Blip, priority: number): void
+--- @return nil
+--- @overload fun(blip: Blip, priority: number): nil
 function SetBlipPriority(blip, priority) end
 
     
@@ -8942,8 +8943,8 @@ function IsPauseMenuActive() end
 --- @param entity Entity
 --- @param offsetX number (float)
 --- @param offsetY number (float)
---- @return void
---- @overload fun(hudIndex: number, entity: Entity, offsetX: number, offsetY: number): void
+--- @return nil
+--- @overload fun(hudIndex: number, entity: Entity, offsetX: number, offsetY: number): nil
 function SetFloatingHelpTextToEntity(hudIndex, entity, offsetX, offsetY) end
 
     
@@ -8955,8 +8956,8 @@ function SetFloatingHelpTextToEntity(hudIndex, entity, offsetX, offsetY) end
 --- @param entity Entity
 --- @param offsetX number (float)
 --- @param offsetY number (float)
---- @return void
---- @overload fun(hudIndex: number, entity: Entity, offsetX: number, offsetY: number): void
+--- @return nil
+--- @overload fun(hudIndex: number, entity: Entity, offsetX: number, offsetY: number): nil
 --- @deprecated
 function N_0xb094bc1db4018240(hudIndex, entity, offsetX, offsetY) end
 
@@ -8991,8 +8992,8 @@ function IsTextChatActive() end
 --- @param ped Ped
 --- @param hasCone boolean
 --- @param color number (int)
---- @return void
---- @overload fun(ped: Ped, hasCone: boolean, color: number): void
+--- @return nil
+--- @overload fun(ped: Ped, hasCone: boolean, color: number): nil
 function SetPedHasAiBlipWithColor(ped, hasCone, color) end
 
     
@@ -9003,8 +9004,8 @@ function SetPedHasAiBlipWithColor(ped, hasCone, color) end
 --- @param ped Ped
 --- @param hasCone boolean
 --- @param color number (int)
---- @return void
---- @overload fun(ped: Ped, hasCone: boolean, color: number): void
+--- @return nil
+--- @overload fun(ped: Ped, hasCone: boolean, color: number): nil
 --- @deprecated
 function N_0xb13dcb4c6faad238(ped, hasCone, color) end
 
@@ -9014,8 +9015,8 @@ function N_0xb13dcb4c6faad238(ped, hasCone, color) end
 --- @hash [0xB14552383D39CE3E](https://docs.fivem.net/natives/?_0xB14552383D39CE3E)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 function SetBlipFlashes(blip, toggle) end
 
     
@@ -9024,8 +9025,8 @@ function SetBlipFlashes(blip, toggle) end
 --- @hash [0xB203913733F27884](https://docs.fivem.net/natives/?_0xB203913733F27884)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 function SetBlipBright(blip, toggle) end
 
     
@@ -9084,8 +9085,8 @@ function N_0xb2a592b04648a9cb() end
 --- @hash [0xB552929B85FC27EC](https://docs.fivem.net/natives/?_0xB552929B85FC27EC)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0xb552929b85fc27ec(p0, p1) end
 
     
@@ -9093,8 +9094,8 @@ function N_0xb552929b85fc27ec(p0, p1) end
 ---
 --- @hash [0xB57D8DD645CFA2CF](https://docs.fivem.net/natives/?_0xB57D8DD645CFA2CF)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ClearReminderMessage() end
 
     
@@ -9103,8 +9104,8 @@ function ClearReminderMessage() end
 ---
 --- @hash [0xB57D8DD645CFA2CF](https://docs.fivem.net/natives/?_0xB57D8DD645CFA2CF)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xb57d8dd645cfa2cf() end
 
@@ -9149,8 +9150,8 @@ function N_0xb6871b0555b02996(ch1TXD, ch1TXN, val1, ch2TXD, ch2TXN, val2) end
 ---
 --- @hash [0xB695E2CD0A2DA9EE](https://docs.fivem.net/natives/?_0xB695E2CD0A2DA9EE)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ThefeedSpsExtendWidescreenOff() end
 
     
@@ -9159,8 +9160,8 @@ function ThefeedSpsExtendWidescreenOff() end
 ---
 --- @hash [0xB695E2CD0A2DA9EE](https://docs.fivem.net/natives/?_0xB695E2CD0A2DA9EE)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xb695e2cd0a2da9ee() end
 
@@ -9170,8 +9171,8 @@ function N_0xb695e2cd0a2da9ee() end
 ---
 --- @hash [0xB695E2CD0A2DA9EE](https://docs.fivem.net/natives/?_0xB695E2CD0A2DA9EE)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function ThefeedDisableBaselineOffset() end
 
@@ -9184,8 +9185,8 @@ function ThefeedDisableBaselineOffset() end
 ---
 --- @hash [0xB7B873520C84C118](https://docs.fivem.net/natives/?_0xB7B873520C84C118)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xb7b873520c84c118() end
 
     
@@ -9196,8 +9197,8 @@ function N_0xb7b873520c84c118() end
 --- @hash [0xB81656BC81FE24D1](https://docs.fivem.net/natives/?_0xB81656BC81FE24D1)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 function ShowOutlineIndicatorOnBlip(blip, toggle) end
 
     
@@ -9209,8 +9210,8 @@ function ShowOutlineIndicatorOnBlip(blip, toggle) end
 --- @hash [0xB81656BC81FE24D1](https://docs.fivem.net/natives/?_0xB81656BC81FE24D1)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 --- @deprecated
 function N_0xb81656bc81fe24d1(blip, toggle) end
 
@@ -9223,8 +9224,8 @@ function N_0xb81656bc81fe24d1(blip, toggle) end
 --- @hash [0xB81656BC81FE24D1](https://docs.fivem.net/natives/?_0xB81656BC81FE24D1)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 --- @deprecated
 function SetBlipFriendly(blip, toggle) end
 
@@ -9241,8 +9242,8 @@ function SetBlipFriendly(blip, toggle) end
 ---
 --- @hash [0xB87A37EEB7FAA67D](https://docs.fivem.net/natives/?_0xB87A37EEB7FAA67D)
 --- @param GxtEntry string (char*)
---- @return void
---- @overload fun(GxtEntry: string): void
+--- @return nil
+--- @overload fun(GxtEntry: string): nil
 function BeginTextCommandPrint(GxtEntry) end
 
     
@@ -9259,8 +9260,8 @@ function BeginTextCommandPrint(GxtEntry) end
 ---
 --- @hash [0xB87A37EEB7FAA67D](https://docs.fivem.net/natives/?_0xB87A37EEB7FAA67D)
 --- @param GxtEntry string (char*)
---- @return void
---- @overload fun(GxtEntry: string): void
+--- @return nil
+--- @overload fun(GxtEntry: string): nil
 --- @deprecated
 function SetTextEntry_2(GxtEntry) end
 
@@ -9269,8 +9270,8 @@ function SetTextEntry_2(GxtEntry) end
 ---
 --- @hash [0xB99C4E4D9499DF29](https://docs.fivem.net/natives/?_0xB99C4E4D9499DF29)
 --- @param flagIndex number (int)
---- @return void
---- @overload fun(flagIndex: number): void
+--- @return nil
+--- @overload fun(flagIndex: number): nil
 function ResetGlobalActionscriptFlag(flagIndex) end
 
     
@@ -9279,8 +9280,8 @@ function ResetGlobalActionscriptFlag(flagIndex) end
 ---
 --- @hash [0xB99C4E4D9499DF29](https://docs.fivem.net/natives/?_0xB99C4E4D9499DF29)
 --- @param flagIndex number (int)
---- @return void
---- @overload fun(flagIndex: number): void
+--- @return nil
+--- @overload fun(flagIndex: number): nil
 --- @deprecated
 function N_0xb99c4e4d9499df29(flagIndex) end
 
@@ -9293,8 +9294,8 @@ function N_0xb99c4e4d9499df29(flagIndex) end
 --- @param alpha number (int)
 --- @param p3 number (int)
 --- @param p4 number (int)
---- @return void
---- @overload fun(style: number, hudColor: number, alpha: number, p3: number, p4: number): void
+--- @return nil
+--- @overload fun(style: number, hudColor: number, alpha: number, p3: number, p4: number): nil
 function SetHelpMessageTextStyle(style, hudColor, alpha, p3, p4) end
 
     
@@ -9307,8 +9308,8 @@ function SetHelpMessageTextStyle(style, hudColor, alpha, p3, p4) end
 --- @param alpha number (int)
 --- @param p3 number (int)
 --- @param p4 number (int)
---- @return void
---- @overload fun(style: number, hudColor: number, alpha: number, p3: number, p4: number): void
+--- @return nil
+--- @overload fun(style: number, hudColor: number, alpha: number, p3: number, p4: number): nil
 --- @deprecated
 function N_0xb9c362babecddc7a(style, hudColor, alpha, p3, p4) end
 
@@ -9317,8 +9318,8 @@ function N_0xb9c362babecddc7a(style, hudColor, alpha, p3, p4) end
 ---
 --- @hash [0xBA751764F0821256](https://docs.fivem.net/natives/?_0xBA751764F0821256)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function SuppressFrontendRenderingThisFrame() end
 
     
@@ -9327,8 +9328,8 @@ function SuppressFrontendRenderingThisFrame() end
 ---
 --- @hash [0xBA751764F0821256](https://docs.fivem.net/natives/?_0xBA751764F0821256)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xba751764f0821256() end
 
@@ -9339,8 +9340,8 @@ function N_0xba751764f0821256() end
 ---
 --- @hash [0xBA8D65C1C65702E5](https://docs.fivem.net/natives/?_0xBA8D65C1C65702E5)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function N_0xba8d65c1c65702e5(toggle) end
 
     
@@ -9350,8 +9351,8 @@ function N_0xba8d65c1c65702e5(toggle) end
 ---
 --- @hash [0xBAE4F9B97CD43B30](https://docs.fivem.net/natives/?_0xBAE4F9B97CD43B30)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function ThefeedSetFlushAnimpostfx(toggle) end
 
     
@@ -9362,8 +9363,8 @@ function ThefeedSetFlushAnimpostfx(toggle) end
 ---
 --- @hash [0xBAE4F9B97CD43B30](https://docs.fivem.net/natives/?_0xBAE4F9B97CD43B30)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0xbae4f9b97cd43b30(toggle) end
 
@@ -9379,8 +9380,8 @@ function N_0xbae4f9b97cd43b30(toggle) end
 --- EndTextCommandSetBlipName(blip
 --- @hash [0xBC38B49BCB83BC9B](https://docs.fivem.net/natives/?_0xBC38B49BCB83BC9B)
 --- @param blip Blip
---- @return void
---- @overload fun(blip: Blip): void
+--- @return nil
+--- @overload fun(blip: Blip): nil
 function EndTextCommandSetBlipName(blip) end
 
     
@@ -9434,8 +9435,8 @@ function GetBlipFromEntity(entity) end
 ---
 --- @hash [0xBD12C5EEE184C337](https://docs.fivem.net/natives/?_0xBD12C5EEE184C337)
 --- @param zoom number (float)
---- @return void
---- @overload fun(zoom: number): void
+--- @return nil
+--- @overload fun(zoom: number): nil
 function SetRadarZoomPrecise(zoom) end
 
     
@@ -9444,8 +9445,8 @@ function SetRadarZoomPrecise(zoom) end
 ---
 --- @hash [0xBD12C5EEE184C337](https://docs.fivem.net/natives/?_0xBD12C5EEE184C337)
 --- @param zoom number (float)
---- @return void
---- @overload fun(zoom: number): void
+--- @return nil
+--- @overload fun(zoom: number): nil
 --- @deprecated
 function RespondingAsTemp(zoom) end
 
@@ -9463,8 +9464,8 @@ function RespondingAsTemp(zoom) end
 ---
 --- @hash [0xBD12F8228410D9B4](https://docs.fivem.net/natives/?_0xBD12F8228410D9B4)
 --- @param busySpinnerType number (int)
---- @return void
---- @overload fun(busySpinnerType: number): void
+--- @return nil
+--- @overload fun(busySpinnerType: number): nil
 function EndTextCommandBusyspinnerOn(busySpinnerType) end
 
     
@@ -9482,8 +9483,8 @@ function EndTextCommandBusyspinnerOn(busySpinnerType) end
 ---
 --- @hash [0xBD12F8228410D9B4](https://docs.fivem.net/natives/?_0xBD12F8228410D9B4)
 --- @param busySpinnerType number (int)
---- @return void
---- @overload fun(busySpinnerType: number): void
+--- @return nil
+--- @overload fun(busySpinnerType: number): nil
 --- @deprecated
 function N_0xbd12f8228410d9b4(busySpinnerType) end
 
@@ -9502,8 +9503,8 @@ function N_0xbd12f8228410d9b4(busySpinnerType) end
 ---
 --- @hash [0xBD12F8228410D9B4](https://docs.fivem.net/natives/?_0xBD12F8228410D9B4)
 --- @param busySpinnerType number (int)
---- @return void
---- @overload fun(busySpinnerType: number): void
+--- @return nil
+--- @overload fun(busySpinnerType: number): nil
 --- @deprecated
 function ShowLoadingPrompt(busySpinnerType) end
 
@@ -9522,8 +9523,8 @@ function ShowLoadingPrompt(busySpinnerType) end
 ---
 --- @hash [0xBD12F8228410D9B4](https://docs.fivem.net/natives/?_0xBD12F8228410D9B4)
 --- @param busySpinnerType number (int)
---- @return void
---- @overload fun(busySpinnerType: number): void
+--- @return nil
+--- @overload fun(busySpinnerType: number): nil
 --- @deprecated
 function EndTextCommandBusyString(busySpinnerType) end
 
@@ -9543,8 +9544,8 @@ function AddBlipForPickup(pickup) end
 ---
 --- @hash [0xBE4390CB40B3E627](https://docs.fivem.net/natives/?_0xBE4390CB40B3E627)
 --- @param notificationId number (int)
---- @return void
---- @overload fun(notificationId: number): void
+--- @return nil
+--- @overload fun(notificationId: number): nil
 function ThefeedRemoveItem(notificationId) end
 
     
@@ -9555,8 +9556,8 @@ function ThefeedRemoveItem(notificationId) end
 ---
 --- @hash [0xBE4390CB40B3E627](https://docs.fivem.net/natives/?_0xBE4390CB40B3E627)
 --- @param notificationId number (int)
---- @return void
---- @overload fun(notificationId: number): void
+--- @return nil
+--- @overload fun(notificationId: number): nil
 --- @deprecated
 function RemoveNotification(notificationId) end
 
@@ -9571,8 +9572,8 @@ function RemoveNotification(notificationId) end
 --- @param green number (int)
 --- @param blue number (int)
 --- @param alpha number (int)
---- @return void
---- @overload fun(red: number, green: number, blue: number, alpha: number): void
+--- @return nil
+--- @overload fun(red: number, green: number, blue: number, alpha: number): nil
 function SetTextColour(red, green, blue, alpha) end
 
     
@@ -9581,8 +9582,8 @@ function SetTextColour(red, green, blue, alpha) end
 --- @hash [0xBE8BE4FE60E27B72](https://docs.fivem.net/natives/?_0xBE8BE4FE60E27B72)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 function SetBlipAsShortRange(blip, toggle) end
 
     
@@ -9608,8 +9609,8 @@ function GetBlipInfoIdType(blip) end
 ---
 --- @hash [0xBF4F34A85CA2970C](https://docs.fivem.net/natives/?_0xBF4F34A85CA2970C)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xbf4f34a85ca2970c() end
 
     
@@ -9672,8 +9673,8 @@ function CreateMpGamerTag(ped, username, crewIsPrivate, crewIsRockstar, crewName
 ---
 --- @hash [0xC02F4DBFB51D988B](https://docs.fivem.net/natives/?_0xC02F4DBFB51D988B)
 --- @param align boolean
---- @return void
---- @overload fun(align: boolean): void
+--- @return nil
+--- @overload fun(align: boolean): nil
 function SetTextCentre(align) end
 
     
@@ -9685,8 +9686,8 @@ function SetTextCentre(align) end
 ---
 --- @hash [0xC2D15BEF167E27BC](https://docs.fivem.net/natives/?_0xC2D15BEF167E27BC)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function SetMultiplayerWalletCash() end
 
     
@@ -9699,8 +9700,8 @@ function SetMultiplayerWalletCash() end
 ---
 --- @hash [0xC2D15BEF167E27BC](https://docs.fivem.net/natives/?_0xC2D15BEF167E27BC)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xc2d15bef167e27bc() end
 
@@ -9722,8 +9723,8 @@ function N_0xc2d2ad9eaae265b8() end
 ---
 --- @hash [0xC3B07BA00A83B0F1](https://docs.fivem.net/natives/?_0xC3B07BA00A83B0F1)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function SetWidescreenFormat(p0) end
 
     
@@ -9754,8 +9755,8 @@ function N_0xc406be343fc4b9af() end
 --- @hash [0xC4278F70131BAA6D](https://docs.fivem.net/natives/?_0xC4278F70131BAA6D)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 function SetBlipDisplayIndicatorOnBlip(blip, toggle) end
 
     
@@ -9767,8 +9768,8 @@ function SetBlipDisplayIndicatorOnBlip(blip, toggle) end
 --- @hash [0xC4278F70131BAA6D](https://docs.fivem.net/natives/?_0xC4278F70131BAA6D)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 --- @deprecated
 function N_0xc4278f70131baa6d(blip, toggle) end
 
@@ -9777,8 +9778,8 @@ function N_0xc4278f70131baa6d(blip, toggle) end
 ---
 --- @hash [0xC594B315EDF2D4AF](https://docs.fivem.net/natives/?_0xC594B315EDF2D4AF)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function N_0xc594b315edf2d4af(ped) end
 
     
@@ -9786,8 +9787,8 @@ function N_0xc594b315edf2d4af(ped) end
 ---
 --- @hash [0xC63CD5D2920ACBE7](https://docs.fivem.net/natives/?_0xC63CD5D2920ACBE7)
 --- @param labelName string (char*)
---- @return void
---- @overload fun(labelName: string): void
+--- @return nil
+--- @overload fun(labelName: string): nil
 function AddTextComponentSubstringTextLabel(labelName) end
 
     
@@ -9796,8 +9797,8 @@ function AddTextComponentSubstringTextLabel(labelName) end
 ---
 --- @hash [0xC63CD5D2920ACBE7](https://docs.fivem.net/natives/?_0xC63CD5D2920ACBE7)
 --- @param labelName string (char*)
---- @return void
---- @overload fun(labelName: string): void
+--- @return nil
+--- @overload fun(labelName: string): nil
 --- @deprecated
 function AddTextComponentItemString(labelName) end
 
@@ -9806,8 +9807,8 @@ function AddTextComponentItemString(labelName) end
 ---
 --- @hash [0xC65AB383CD91DF98](https://docs.fivem.net/natives/?_0xC65AB383CD91DF98)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function PreloadBusyspinner() end
 
     
@@ -9816,8 +9817,8 @@ function PreloadBusyspinner() end
 ---
 --- @hash [0xC65AB383CD91DF98](https://docs.fivem.net/natives/?_0xC65AB383CD91DF98)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xc65ab383cd91df98() end
 
@@ -9902,8 +9903,8 @@ function EndTextCommandThefeedPostMessagetextEntry(txdName, textureName, flash, 
 --- @param p0 boolean
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: boolean, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: boolean, p1: any, p2: any): nil
 function PauseMenuSetBusySpinner(p0, p1, p2) end
 
     
@@ -9914,8 +9915,8 @@ function PauseMenuSetBusySpinner(p0, p1, p2) end
 --- @param p0 boolean
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: boolean, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: boolean, p1: any, p2: any): nil
 --- @deprecated
 function N_0xc78e239ac5b2ddb9(p0, p1, p2) end
 
@@ -9924,8 +9925,8 @@ function N_0xc78e239ac5b2ddb9(p0, p1, p2) end
 ---
 --- @hash [0xC7C6789AA1CFEDD0](https://docs.fivem.net/natives/?_0xC7C6789AA1CFEDD0)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function RemoveMultiplayerBankCash() end
 
     
@@ -9987,8 +9988,8 @@ function N_0xca6b2f7ce32ab653(p0, p1, p2) end
 --- @hash [0xCAC2031EBF79B1A8](https://docs.fivem.net/natives/?_0xCAC2031EBF79B1A8)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 function ShowHasCompletedIndicatorOnBlip(blip, toggle) end
 
     
@@ -9996,8 +9997,8 @@ function ShowHasCompletedIndicatorOnBlip(blip, toggle) end
 ---
 --- @hash [0xCB7CC0D58405AD41](https://docs.fivem.net/natives/?_0xCB7CC0D58405AD41)
 --- @param zoom number (float)
---- @return void
---- @overload fun(zoom: number): void
+--- @return nil
+--- @overload fun(zoom: number): nil
 function SetRadarZoomToDistance(zoom) end
 
     
@@ -10006,8 +10007,8 @@ function SetRadarZoomToDistance(zoom) end
 ---
 --- @hash [0xCB7CC0D58405AD41](https://docs.fivem.net/natives/?_0xCB7CC0D58405AD41)
 --- @param zoom number (float)
---- @return void
---- @overload fun(zoom: number): void
+--- @return nil
+--- @overload fun(zoom: number): nil
 --- @deprecated
 function SetRadarZoomLevelThisFrame(zoom) end
 
@@ -10016,8 +10017,8 @@ function SetRadarZoomLevelThisFrame(zoom) end
 ---
 --- @hash [0xCC33FA791322B9D9](https://docs.fivem.net/natives/?_0xCC33FA791322B9D9)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ClearPrints() end
 
     
@@ -10030,8 +10031,8 @@ function ClearPrints() end
 --- end
 --- @hash [0xCC3FDDED67BCFC63](https://docs.fivem.net/natives/?_0xCC3FDDED67BCFC63)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function AllowPauseMenuWhenDeadThisFrame() end
 
     
@@ -10045,8 +10046,8 @@ function AllowPauseMenuWhenDeadThisFrame() end
 --- end
 --- @hash [0xCC3FDDED67BCFC63](https://docs.fivem.net/natives/?_0xCC3FDDED67BCFC63)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xcc3fdded67bcfc63() end
 
@@ -10062,8 +10063,8 @@ function N_0xcc3fdded67bcfc63() end
 --- @hash [0xCD015E5BB0D96A57](https://docs.fivem.net/natives/?_0xCD015E5BB0D96A57)
 --- @param x number (float)
 --- @param y number (float)
---- @return void
---- @overload fun(x: number, y: number): void
+--- @return nil
+--- @overload fun(x: number, y: number): nil
 function EndTextCommandDisplayText(x, y) end
 
     
@@ -10079,8 +10080,8 @@ function EndTextCommandDisplayText(x, y) end
 --- @hash [0xCD015E5BB0D96A57](https://docs.fivem.net/natives/?_0xCD015E5BB0D96A57)
 --- @param x number (float)
 --- @param y number (float)
---- @return void
---- @overload fun(x: number, y: number): void
+--- @return nil
+--- @overload fun(x: number, y: number): nil
 --- @deprecated
 function DrawText(x, y) end
 
@@ -10095,8 +10096,8 @@ function DrawText(x, y) end
 --- @param blip Blip
 --- @param xScale number (float)
 --- @param yScale number (float)
---- @return void
---- @overload fun(blip: Blip, xScale: number, yScale: number): void
+--- @return nil
+--- @overload fun(blip: Blip, xScale: number, yScale: number): nil
 function SetBlipScaleTransformation(blip, xScale, yScale) end
 
     
@@ -10108,8 +10109,8 @@ function SetBlipScaleTransformation(blip, xScale, yScale) end
 ---
 --- @hash [0xCD74233600C4EA6B](https://docs.fivem.net/natives/?_0xCD74233600C4EA6B)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function N_0xcd74233600c4ea6b(toggle) end
 
     
@@ -10117,8 +10118,8 @@ function N_0xcd74233600c4ea6b(toggle) end
 ---
 --- @hash [0xCDCA26E80FAECB8F](https://docs.fivem.net/natives/?_0xCDCA26E80FAECB8F)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function PauseMenuceptionTheKick() end
 
     
@@ -10127,8 +10128,8 @@ function PauseMenuceptionTheKick() end
 ---
 --- @hash [0xCDCA26E80FAECB8F](https://docs.fivem.net/natives/?_0xCDCA26E80FAECB8F)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xcdca26e80faecb8f() end
 
@@ -10209,8 +10210,8 @@ function GetTextSubstringSlice(text, startPosition, endPosition) end
 ---
 --- @hash [0xCEF214315D276FD1](https://docs.fivem.net/natives/?_0xCEF214315D276FD1)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function FlagPlayerContextInTournament(toggle) end
 
     
@@ -10219,8 +10220,8 @@ function FlagPlayerContextInTournament(toggle) end
 ---
 --- @hash [0xCEF214315D276FD1](https://docs.fivem.net/natives/?_0xCEF214315D276FD1)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0xcef214315d276fd1(toggle) end
 
@@ -10230,8 +10231,8 @@ function N_0xcef214315d276fd1(toggle) end
 ---
 --- @hash [0xCEF214315D276FD1](https://docs.fivem.net/natives/?_0xCEF214315D276FD1)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function SetIsInTournament(toggle) end
 
@@ -10243,8 +10244,8 @@ function SetIsInTournament(toggle) end
 --- @hash [0xCF228E2AA03099C3](https://docs.fivem.net/natives/?_0xCF228E2AA03099C3)
 --- @param gamerTagId number (int)
 --- @param wantedlvl number (int)
---- @return void
---- @overload fun(gamerTagId: number, wantedlvl: number): void
+--- @return nil
+--- @overload fun(gamerTagId: number, wantedlvl: number): nil
 function SetMpGamerTagWantedLevel(gamerTagId, wantedlvl) end
 
     
@@ -10256,8 +10257,8 @@ function SetMpGamerTagWantedLevel(gamerTagId, wantedlvl) end
 --- @hash [0xCF228E2AA03099C3](https://docs.fivem.net/natives/?_0xCF228E2AA03099C3)
 --- @param gamerTagId number (int)
 --- @param wantedlvl number (int)
---- @return void
---- @overload fun(gamerTagId: number, wantedlvl: number): void
+--- @return nil
+--- @overload fun(gamerTagId: number, wantedlvl: number): nil
 --- @deprecated
 function N_0xcf228e2aa03099c3(gamerTagId, wantedlvl) end
 
@@ -10268,8 +10269,8 @@ function N_0xcf228e2aa03099c3(gamerTagId, wantedlvl) end
 ---
 --- @hash [0xCF708001E1E536DD](https://docs.fivem.net/natives/?_0xCF708001E1E536DD)
 --- @param p0 string (char*)
---- @return void
---- @overload fun(p0: string): void
+--- @return nil
+--- @overload fun(p0: string): nil
 function ClearThisPrint(p0) end
 
     
@@ -10277,8 +10278,8 @@ function ClearThisPrint(p0) end
 ---
 --- @hash [0xCFDBDF5AE59BA0F4](https://docs.fivem.net/natives/?_0xCFDBDF5AE59BA0F4)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function EndTextCommandObjective(p0) end
 
     
@@ -10287,8 +10288,8 @@ function EndTextCommandObjective(p0) end
 ---
 --- @hash [0xCFDBDF5AE59BA0F4](https://docs.fivem.net/natives/?_0xCFDBDF5AE59BA0F4)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 --- @deprecated
 function N_0xcfdbdf5ae59ba0f4(p0) end
 
@@ -10306,8 +10307,8 @@ function GetStreetNameFromHashKey(hash) end
 ---
 --- @hash [0xD12882D3FF82BF11](https://docs.fivem.net/natives/?_0xD12882D3FF82BF11)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ClearAllBlipRoutes() end
 
     
@@ -10316,8 +10317,8 @@ function ClearAllBlipRoutes() end
 ---
 --- @hash [0xD12882D3FF82BF11](https://docs.fivem.net/natives/?_0xD12882D3FF82BF11)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xd12882d3ff82bf11() end
 
@@ -10326,8 +10327,8 @@ function N_0xd12882d3ff82bf11() end
 ---
 --- @hash [0xD1942374085C8469](https://docs.fivem.net/natives/?_0xD1942374085C8469)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xd1942374085c8469(p0) end
 
     
@@ -10342,8 +10343,8 @@ function N_0xd1942374085c8469(p0) end
 --- @hash [0xD201F3FF917A506D](https://docs.fivem.net/natives/?_0xD201F3FF917A506D)
 --- @param altitude number (float)
 --- @param p1 boolean
---- @return void
---- @overload fun(altitude: number, p1: boolean): void
+--- @return nil
+--- @overload fun(altitude: number, p1: boolean): nil
 function SetMinimapAltitudeIndicatorLevel(altitude, p1) end
 
     
@@ -10359,8 +10360,8 @@ function SetMinimapAltitudeIndicatorLevel(altitude, p1) end
 --- @hash [0xD201F3FF917A506D](https://docs.fivem.net/natives/?_0xD201F3FF917A506D)
 --- @param altitude number (float)
 --- @param p1 boolean
---- @return void
---- @overload fun(altitude: number, p1: boolean): void
+--- @return nil
+--- @overload fun(altitude: number, p1: boolean): nil
 --- @deprecated
 function SetMinimapAttitudeIndicatorLevel(altitude, p1) end
 
@@ -10424,8 +10425,8 @@ function DrawNotificationWithIcon(eType, iIcon, sTitle) end
 ---
 --- @hash [0xD2049635DEB9C375](https://docs.fivem.net/natives/?_0xD2049635DEB9C375)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xd2049635deb9c375() end
 
     
@@ -10435,8 +10436,8 @@ function N_0xd2049635deb9c375() end
 --- @hash [0xD29EC58C2F6B5014](https://docs.fivem.net/natives/?_0xD29EC58C2F6B5014)
 --- @param gamerTagId number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(gamerTagId: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(gamerTagId: number, toggle: boolean): nil
 function SetMpGamerTagDisablePlayerHealthSync(gamerTagId, toggle) end
 
     
@@ -10447,8 +10448,8 @@ function SetMpGamerTagDisablePlayerHealthSync(gamerTagId, toggle) end
 --- @hash [0xD29EC58C2F6B5014](https://docs.fivem.net/natives/?_0xD29EC58C2F6B5014)
 --- @param gamerTagId number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(gamerTagId: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(gamerTagId: number, toggle: boolean): nil
 --- @deprecated
 function N_0xd29ec58c2f6b5014(gamerTagId, toggle) end
 
@@ -10460,8 +10461,8 @@ function N_0xd29ec58c2f6b5014(gamerTagId, toggle) end
 --- @hash [0xD29EC58C2F6B5014](https://docs.fivem.net/natives/?_0xD29EC58C2F6B5014)
 --- @param gamerTagId number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(gamerTagId: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(gamerTagId: number, toggle: boolean): nil
 --- @deprecated
 function SetMpGamerHealthBarDisplay(gamerTagId, toggle) end
 
@@ -10470,8 +10471,8 @@ function SetMpGamerHealthBarDisplay(gamerTagId, toggle) end
 ---
 --- @hash [0xD2B32BE3FC1626C6](https://docs.fivem.net/natives/?_0xD2B32BE3FC1626C6)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function CloseSocialClubMenu() end
 
     
@@ -10480,8 +10481,8 @@ function CloseSocialClubMenu() end
 ---
 --- @hash [0xD2B32BE3FC1626C6](https://docs.fivem.net/natives/?_0xD2B32BE3FC1626C6)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xd2b32be3fc1626c6() end
 
@@ -10494,8 +10495,8 @@ function N_0xd2b32be3fc1626c6() end
 --- @hash [0xD30C50DF888D58B5](https://docs.fivem.net/natives/?_0xD30C50DF888D58B5)
 --- @param ped Ped
 --- @param hasCone boolean
---- @return void
---- @overload fun(ped: Ped, hasCone: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, hasCone: boolean): nil
 function SetPedHasAiBlip(ped, hasCone) end
 
     
@@ -10508,8 +10509,8 @@ function SetPedHasAiBlip(ped, hasCone) end
 --- @hash [0xD30C50DF888D58B5](https://docs.fivem.net/natives/?_0xD30C50DF888D58B5)
 --- @param ped Ped
 --- @param hasCone boolean
---- @return void
---- @overload fun(ped: Ped, hasCone: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, hasCone: boolean): nil
 --- @deprecated
 function N_0xd30c50df888d58b5(ped, hasCone) end
 
@@ -10523,8 +10524,8 @@ function N_0xd30c50df888d58b5(ped, hasCone) end
 --- @hash [0xD30C50DF888D58B5](https://docs.fivem.net/natives/?_0xD30C50DF888D58B5)
 --- @param ped Ped
 --- @param hasCone boolean
---- @return void
---- @overload fun(ped: Ped, hasCone: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, hasCone: boolean): nil
 --- @deprecated
 function SetPedEnemyAiBlip(ped, hasCone) end
 
@@ -10538,8 +10539,8 @@ function SetPedEnemyAiBlip(ped, hasCone) end
 --- @hash [0xD30C50DF888D58B5](https://docs.fivem.net/natives/?_0xD30C50DF888D58B5)
 --- @param ped Ped
 --- @param hasCone boolean
---- @return void
---- @overload fun(ped: Ped, hasCone: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, hasCone: boolean): nil
 --- @deprecated
 function SetPedAiBlip(ped, hasCone) end
 
@@ -10549,8 +10550,8 @@ function SetPedAiBlip(ped, hasCone) end
 --- @hash [0xD38744167B2FA257](https://docs.fivem.net/natives/?_0xD38744167B2FA257)
 --- @param blip Blip
 --- @param scale number (float)
---- @return void
---- @overload fun(blip: Blip, scale: number): void
+--- @return nil
+--- @overload fun(blip: Blip, scale: number): nil
 function SetBlipScale(blip, scale) end
 
     
@@ -10562,8 +10563,8 @@ function SetBlipScale(blip, scale) end
 --- @hash [0xD3CD6FD297AE87CC](https://docs.fivem.net/natives/?_0xD3CD6FD297AE87CC)
 --- @param blip Blip
 --- @param duration number (int)
---- @return void
---- @overload fun(blip: Blip, duration: number): void
+--- @return nil
+--- @overload fun(blip: Blip, duration: number): nil
 function SetBlipFlashTimer(blip, duration) end
 
     
@@ -10602,8 +10603,8 @@ function IsLoadingPromptBeingDisplayed() end
 ---
 --- @hash [0xD4438C0564490E63](https://docs.fivem.net/natives/?_0xD4438C0564490E63)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ThefeedSpsExtendWidescreenOn() end
 
     
@@ -10612,8 +10613,8 @@ function ThefeedSpsExtendWidescreenOn() end
 ---
 --- @hash [0xD4438C0564490E63](https://docs.fivem.net/natives/?_0xD4438C0564490E63)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xd4438c0564490e63() end
 
@@ -10623,8 +10624,8 @@ function N_0xd4438c0564490e63() end
 ---
 --- @hash [0xD4438C0564490E63](https://docs.fivem.net/natives/?_0xD4438C0564490E63)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function ThefeedEnableBaselineOffset() end
 
@@ -10633,8 +10634,8 @@ function ThefeedEnableBaselineOffset() end
 ---
 --- @hash [0xD46923FC481CA285](https://docs.fivem.net/natives/?_0xD46923FC481CA285)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function HideHelpTextThisFrame() end
 
     
@@ -10670,8 +10671,8 @@ function N_0xd484bf71050ca1ee(blipSprite) end
 --- @param gamerTagId number (int)
 --- @param component number (int)
 --- @param alpha number (int)
---- @return void
---- @overload fun(gamerTagId: number, component: number, alpha: number): void
+--- @return nil
+--- @overload fun(gamerTagId: number, component: number, alpha: number): nil
 function SetMpGamerTagAlpha(gamerTagId, component, alpha) end
 
     
@@ -10684,8 +10685,8 @@ function SetMpGamerTagAlpha(gamerTagId, component, alpha) end
 --- @param gamerTagId number (int)
 --- @param component number (int)
 --- @param alpha number (int)
---- @return void
---- @overload fun(gamerTagId: number, component: number, alpha: number): void
+--- @return nil
+--- @overload fun(gamerTagId: number, component: number, alpha: number): nil
 --- @deprecated
 function N_0xd48fe545cd46f857(gamerTagId, component, alpha) end
 
@@ -10699,8 +10700,8 @@ function N_0xd48fe545cd46f857(gamerTagId, component, alpha) end
 --- @param g number (int)
 --- @param b number (int)
 --- @param a number (int)
---- @return void
---- @overload fun(r: number, g: number, b: number, a: number): void
+--- @return nil
+--- @overload fun(r: number, g: number, b: number, a: number): nil
 function SetScriptVariableHudColour(r, g, b, a) end
 
     
@@ -10714,8 +10715,8 @@ function SetScriptVariableHudColour(r, g, b, a) end
 --- @param g number (int)
 --- @param b number (int)
 --- @param a number (int)
---- @return void
---- @overload fun(r: number, g: number, b: number, a: number): void
+--- @return nil
+--- @overload fun(r: number, g: number, b: number, a: number): nil
 --- @deprecated
 function N_0xd68a5ff8a3a89874(r, g, b, a) end
 
@@ -10724,8 +10725,8 @@ function N_0xd68a5ff8a3a89874(r, g, b, a) end
 ---
 --- @hash [0xD8E694757BCEA8E9](https://docs.fivem.net/natives/?_0xD8E694757BCEA8E9)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function DeleteWaypoint() end
 
     
@@ -10734,8 +10735,8 @@ function DeleteWaypoint() end
 ---
 --- @hash [0xD8E694757BCEA8E9](https://docs.fivem.net/natives/?_0xD8E694757BCEA8E9)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xd8e694757bcea8e9() end
 
@@ -10793,8 +10794,8 @@ function N_0xdaf87174be7454ff(p0) end
 --- @param hudColor number (int)
 --- @param displayOnFoot boolean
 --- @param followPlayer boolean
---- @return void
---- @overload fun(hudColor: number, displayOnFoot: boolean, followPlayer: boolean): void
+--- @return nil
+--- @overload fun(hudColor: number, displayOnFoot: boolean, followPlayer: boolean): nil
 function StartGpsCustomRoute(hudColor, displayOnFoot, followPlayer) end
 
     
@@ -10825,8 +10826,8 @@ function StartGpsCustomRoute(hudColor, displayOnFoot, followPlayer) end
 --- @param hudColor number (int)
 --- @param displayOnFoot boolean
 --- @param followPlayer boolean
---- @return void
---- @overload fun(hudColor: number, displayOnFoot: boolean, followPlayer: boolean): void
+--- @return nil
+--- @overload fun(hudColor: number, displayOnFoot: boolean, followPlayer: boolean): nil
 --- @deprecated
 function N_0xdb34e8d56fc13b08(hudColor, displayOnFoot, followPlayer) end
 
@@ -10897,8 +10898,8 @@ function GetTextScaleHeight(size, font) end
 --- @param background boolean
 --- @param p7 any
 --- @param showBg boolean
---- @return void
---- @overload fun(flags: number, p4: boolean, p5: any, background: boolean, showBg: boolean): string): string): string): any
+--- @return nil
+--- @overload fun(flags: number, p4: boolean, p5: any, background: boolean, showBg: boolean): nil, string): nil, string): nil, string): nil, any
 function SetWarningMessageWithHeader(titleMsg, entryLine1, flags, promptMsg, p4, p5, background, p7, showBg) end
 
     
@@ -10926,8 +10927,8 @@ function SetWarningMessageWithHeader(titleMsg, entryLine1, flags, promptMsg, p4,
 --- @param background boolean
 --- @param p7 any
 --- @param showBg boolean
---- @return void
---- @overload fun(flags: number, p4: boolean, p5: any, background: boolean, showBg: boolean): string): string): string): any
+--- @return nil
+--- @overload fun(flags: number, p4: boolean, p5: any, background: boolean, showBg: boolean): nil, string): nil, string): nil, string): nil, any
 --- @deprecated
 function SetWarningMessage_2(titleMsg, entryLine1, flags, promptMsg, p4, p5, background, p7, showBg) end
 
@@ -10960,8 +10961,8 @@ function GetMainPlayerBlipId() end
 --- @hash [0xDCFB5D4DB8BF367E](https://docs.fivem.net/natives/?_0xDCFB5D4DB8BF367E)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 function ShowCrewIndicatorOnBlip(blip, toggle) end
 
     
@@ -10985,8 +10986,8 @@ function ShowCrewIndicatorOnBlip(blip, toggle) end
 --- @hash [0xDCFB5D4DB8BF367E](https://docs.fivem.net/natives/?_0xDCFB5D4DB8BF367E)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 --- @deprecated
 function N_0xdcfb5d4db8bf367e(blip, toggle) end
 
@@ -11011,8 +11012,8 @@ function N_0xdcfb5d4db8bf367e(blip, toggle) end
 --- @hash [0xDCFB5D4DB8BF367E](https://docs.fivem.net/natives/?_0xDCFB5D4DB8BF367E)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 --- @deprecated
 function SetBlipCrew(blip, toggle) end
 
@@ -11034,8 +11035,8 @@ function IsScriptedHudComponentActive(id) end
 ---
 --- @hash [0xDD21B55DF695CD0A](https://docs.fivem.net/natives/?_0xDD21B55DF695CD0A)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function SetMultiplayerBankCash() end
 
     
@@ -11096,8 +11097,8 @@ function N_0xdd2238f57b977751(blip) end
 ---
 --- @hash [0xDD564BDD0472C936](https://docs.fivem.net/natives/?_0xDD564BDD0472C936)
 --- @param hash Hash
---- @return void
---- @overload fun(hash: Hash): void
+--- @return nil
+--- @overload fun(hash: Hash): nil
 function PauseMenuActivateContext(hash) end
 
     
@@ -11139,8 +11140,8 @@ function PauseMenuActivateContext(hash) end
 ---
 --- @hash [0xDD564BDD0472C936](https://docs.fivem.net/natives/?_0xDD564BDD0472C936)
 --- @param hash Hash
---- @return void
---- @overload fun(hash: Hash): void
+--- @return nil
+--- @overload fun(hash: Hash): nil
 --- @deprecated
 function N_0xdd564bdd0472c936(hash) end
 
@@ -11183,8 +11184,8 @@ function N_0xdd564bdd0472c936(hash) end
 ---
 --- @hash [0xDD564BDD0472C936](https://docs.fivem.net/natives/?_0xDD564BDD0472C936)
 --- @param hash Hash
---- @return void
---- @overload fun(hash: Hash): void
+--- @return nil
+--- @overload fun(hash: Hash): nil
 --- @deprecated
 function AddFrontendMenuContext(hash) end
 
@@ -11276,8 +11277,8 @@ function N_0xde03620f8703a9df() end
 --- @hash [0xDEA2B8283BAA3944](https://docs.fivem.net/natives/?_0xDEA2B8283BAA3944)
 --- @param gamerTagId number (int)
 --- @param string string (char*)
---- @return void
---- @overload fun(gamerTagId: number, string: string): void
+--- @return nil
+--- @overload fun(gamerTagId: number, string: string): nil
 function SetMpGamerTagName(gamerTagId, string) end
 
     
@@ -11287,8 +11288,8 @@ function SetMpGamerTagName(gamerTagId, string) end
 --- @hash [0xDEA2B8283BAA3944](https://docs.fivem.net/natives/?_0xDEA2B8283BAA3944)
 --- @param gamerTagId number (int)
 --- @param string string (char*)
---- @return void
---- @overload fun(gamerTagId: number, string: string): void
+--- @return nil
+--- @overload fun(gamerTagId: number, string: string): nil
 --- @deprecated
 function N_0xdea2b8283baa3944(gamerTagId, string) end
 
@@ -11297,8 +11298,8 @@ function N_0xdea2b8283baa3944(gamerTagId, string) end
 ---
 --- @hash [0xDF47FC56C71569CF](https://docs.fivem.net/natives/?_0xDF47FC56C71569CF)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetPauseMenuActive(toggle) end
 
     
@@ -11322,8 +11323,8 @@ function GetBlipColour(blip) end
 --- @hash [0xDF735600A4696DAF](https://docs.fivem.net/natives/?_0xDF735600A4696DAF)
 --- @param blip Blip
 --- @param spriteId number (int)
---- @return void
---- @overload fun(blip: Blip, spriteId: number): void
+--- @return nil
+--- @overload fun(blip: Blip, spriteId: number): nil
 function SetBlipSprite(blip, spriteId) end
 
     
@@ -11364,8 +11365,8 @@ function GetMinimapRevealPercentage() end
 ---
 --- @hash [0xE124FA80A759019C](https://docs.fivem.net/natives/?_0xE124FA80A759019C)
 --- @param text string (char*)
---- @return void
---- @overload fun(text: string): void
+--- @return nil
+--- @overload fun(text: string): nil
 function BeginTextCommandClearPrint(text) end
 
     
@@ -11376,8 +11377,8 @@ function BeginTextCommandClearPrint(text) end
 ---
 --- @hash [0xE124FA80A759019C](https://docs.fivem.net/natives/?_0xE124FA80A759019C)
 --- @param text string (char*)
---- @return void
---- @overload fun(text: string): void
+--- @return nil
+--- @overload fun(text: string): nil
 --- @deprecated
 function N_0xe124fa80a759019c(text) end
 
@@ -11406,8 +11407,8 @@ function IsMedicalDisabled() end
 ---
 --- @hash [0xE1CD1E48E025E661](https://docs.fivem.net/natives/?_0xE1CD1E48E025E661)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ThefeedResume() end
 
     
@@ -11416,8 +11417,8 @@ function ThefeedResume() end
 ---
 --- @hash [0xE1CD1E48E025E661](https://docs.fivem.net/natives/?_0xE1CD1E48E025E661)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xe1cd1e48e025e661() end
 
@@ -11427,8 +11428,8 @@ function N_0xe1cd1e48e025e661() end
 --- @hash [0xE2590BC29220CEBB](https://docs.fivem.net/natives/?_0xE2590BC29220CEBB)
 --- @param blip Blip
 --- @param toggle boolean
---- @return void
---- @overload fun(blip: Blip, toggle: boolean): void
+--- @return nil
+--- @overload fun(blip: Blip, toggle: boolean): nil
 function SetBlipHighDetail(blip, toggle) end
 
     
@@ -11436,8 +11437,8 @@ function SetBlipHighDetail(blip, toggle) end
 ---
 --- @hash [0xE374C498D8BADC14](https://docs.fivem.net/natives/?_0xE374C498D8BADC14)
 --- @param id number (int)
---- @return void
---- @overload fun(id: number): void
+--- @return nil
+--- @overload fun(id: number): nil
 function HideScriptedHudComponentThisFrame(id) end
 
     
@@ -11493,8 +11494,8 @@ function IsBlipOnMinimap(blip) end
 --- @hash [0xE45087D85F468BC2](https://docs.fivem.net/natives/?_0xE45087D85F468BC2)
 --- @param p0 boolean
 --- @param name string (char*)
---- @return void
---- @overload fun(p0: boolean, name: string): void
+--- @return nil
+--- @overload fun(p0: boolean, name: string): nil
 function SetMissionName_2(p0, name) end
 
     
@@ -11504,8 +11505,8 @@ function SetMissionName_2(p0, name) end
 --- @hash [0xE45087D85F468BC2](https://docs.fivem.net/natives/?_0xE45087D85F468BC2)
 --- @param p0 boolean
 --- @param name string (char*)
---- @return void
---- @overload fun(p0: boolean, name: string): void
+--- @return nil
+--- @overload fun(p0: boolean, name: string): nil
 --- @deprecated
 function N_0xe45087d85f468bc2(p0, name) end
 
@@ -11516,8 +11517,8 @@ function N_0xe45087d85f468bc2(p0, name) end
 ---
 --- @hash [0xE4C3B169876D33D7](https://docs.fivem.net/natives/?_0xE4C3B169876D33D7)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xe4c3b169876d33d7(p0) end
 
     
@@ -11526,8 +11527,8 @@ function N_0xe4c3b169876d33d7(p0) end
 --- @hash [0xE52B8E7F85D39A08](https://docs.fivem.net/natives/?_0xE52B8E7F85D39A08)
 --- @param ped Ped
 --- @param gangId number (int)
---- @return void
---- @overload fun(ped: Ped, gangId: number): void
+--- @return nil
+--- @overload fun(ped: Ped, gangId: number): nil
 function SetPedAiBlipGangId(ped, gangId) end
 
     
@@ -11537,8 +11538,8 @@ function SetPedAiBlipGangId(ped, gangId) end
 --- @hash [0xE52B8E7F85D39A08](https://docs.fivem.net/natives/?_0xE52B8E7F85D39A08)
 --- @param ped Ped
 --- @param gangId number (int)
---- @return void
---- @overload fun(ped: Ped, gangId: number): void
+--- @return nil
+--- @overload fun(ped: Ped, gangId: number): nil
 --- @deprecated
 function N_0xe52b8e7f85d39a08(ped, gangId) end
 
@@ -11549,8 +11550,8 @@ function N_0xe52b8e7f85d39a08(ped, gangId) end
 --- @hash [0xE52B8E7F85D39A08](https://docs.fivem.net/natives/?_0xE52B8E7F85D39A08)
 --- @param ped Ped
 --- @param gangId number (int)
---- @return void
---- @overload fun(ped: Ped, gangId: number): void
+--- @return nil
+--- @overload fun(ped: Ped, gangId: number): nil
 --- @deprecated
 function SetAiBlipType(ped, gangId) end
 
@@ -11559,8 +11560,8 @@ function SetAiBlipType(ped, gangId) end
 ---
 --- @hash [0xE67C6DFD386EA5E7](https://docs.fivem.net/natives/?_0xE67C6DFD386EA5E7)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0xe67c6dfd386ea5e7(p0) end
 
     
@@ -11568,8 +11569,8 @@ function N_0xe67c6dfd386ea5e7(p0) end
 ---
 --- @hash [0xE6DE0561D9232A64](https://docs.fivem.net/natives/?_0xE6DE0561D9232A64)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ClearGpsCustomRoute() end
 
     
@@ -11578,8 +11579,8 @@ function ClearGpsCustomRoute() end
 ---
 --- @hash [0xE6DE0561D9232A64](https://docs.fivem.net/natives/?_0xE6DE0561D9232A64)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xe6de0561d9232a64() end
 
@@ -11597,8 +11598,8 @@ function N_0xe6de0561d9232a64() end
 --- @hash [0xE7DCB5B874BCD96E](https://docs.fivem.net/natives/?_0xE7DCB5B874BCD96E)
 --- @param value number (float)
 --- @param decimalPlaces number (int)
---- @return void
---- @overload fun(value: number, decimalPlaces: number): void
+--- @return nil
+--- @overload fun(value: number, decimalPlaces: number): nil
 function AddTextComponentFloat(value, decimalPlaces) end
 
     
@@ -11606,8 +11607,8 @@ function AddTextComponentFloat(value, decimalPlaces) end
 ---
 --- @hash [0xE81B7D2A3DAB2D81](https://docs.fivem.net/natives/?_0xE81B7D2A3DAB2D81)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function SetRadarAsExteriorThisFrame() end
 
     
@@ -11627,8 +11628,8 @@ function ReleaseNamedRendertarget(name) end
 --- @hash [0xEAA0FFE120D92784](https://docs.fivem.net/natives/?_0xEAA0FFE120D92784)
 --- @param blip Blip
 --- @param gxtEntry string (char*)
---- @return void
---- @overload fun(blip: Blip, gxtEntry: string): void
+--- @return nil
+--- @overload fun(blip: Blip, gxtEntry: string): nil
 function SetBlipNameFromTextFile(blip, gxtEntry) end
 
     
@@ -11638,8 +11639,8 @@ function SetBlipNameFromTextFile(blip, gxtEntry) end
 ---
 --- @hash [0xEB354E5376BC81A7](https://docs.fivem.net/natives/?_0xEB354E5376BC81A7)
 --- @param show boolean
---- @return void
---- @overload fun(show: boolean): void
+--- @return nil
+--- @overload fun(show: boolean): nil
 function HudForceWeaponWheel(show) end
 
     
@@ -11650,8 +11651,8 @@ function HudForceWeaponWheel(show) end
 ---
 --- @hash [0xEB354E5376BC81A7](https://docs.fivem.net/natives/?_0xEB354E5376BC81A7)
 --- @param show boolean
---- @return void
---- @overload fun(show: boolean): void
+--- @return nil
+--- @overload fun(show: boolean): nil
 --- @deprecated
 function N_0xeb354e5376bc81a7(show) end
 
@@ -11663,8 +11664,8 @@ function N_0xeb354e5376bc81a7(show) end
 ---
 --- @hash [0xEB354E5376BC81A7](https://docs.fivem.net/natives/?_0xEB354E5376BC81A7)
 --- @param show boolean
---- @return void
---- @overload fun(show: boolean): void
+--- @return nil
+--- @overload fun(show: boolean): nil
 --- @deprecated
 function ShowWeaponWheel(show) end
 
@@ -11725,8 +11726,8 @@ function HasMpGamerTagCrewFlagsSet(gamerTagId) end
 ---
 --- @hash [0xEB81A3DADD503187](https://docs.fivem.net/natives/?_0xEB81A3DADD503187)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xeb81a3dadd503187() end
 
     
@@ -11736,8 +11737,8 @@ function N_0xeb81a3dadd503187() end
 ---
 --- @hash [0xEC9264727EEC0F28](https://docs.fivem.net/natives/?_0xEC9264727EEC0F28)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function TakeControlOfFrontend() end
 
     
@@ -11748,8 +11749,8 @@ function TakeControlOfFrontend() end
 ---
 --- @hash [0xEC9264727EEC0F28](https://docs.fivem.net/natives/?_0xEC9264727EEC0F28)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xec9264727eec0f28() end
 
@@ -11760,8 +11761,8 @@ function N_0xec9264727eec0f28() end
 ---
 --- @hash [0xECF128344E9FF9F1](https://docs.fivem.net/natives/?_0xECF128344E9FF9F1)
 --- @param state boolean
---- @return void
---- @overload fun(state: boolean): void
+--- @return nil
+--- @overload fun(state: boolean): nil
 function SetPauseMenuPedSleepState(state) end
 
     
@@ -11772,8 +11773,8 @@ function SetPauseMenuPedSleepState(state) end
 ---
 --- @hash [0xECF128344E9FF9F1](https://docs.fivem.net/natives/?_0xECF128344E9FF9F1)
 --- @param state boolean
---- @return void
---- @overload fun(state: boolean): void
+--- @return nil
+--- @overload fun(state: boolean): nil
 --- @deprecated
 function N_0xecf128344e9ff9f1(state) end
 
@@ -11782,8 +11783,8 @@ function N_0xecf128344e9ff9f1(state) end
 ---
 --- @hash [0xEE4C0E6DBC6F2C6F](https://docs.fivem.net/natives/?_0xEE4C0E6DBC6F2C6F)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ForceCloseReportugcMenu() end
 
     
@@ -11792,8 +11793,8 @@ function ForceCloseReportugcMenu() end
 ---
 --- @hash [0xEE4C0E6DBC6F2C6F](https://docs.fivem.net/natives/?_0xEE4C0E6DBC6F2C6F)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xee4c0e6dbc6f2c6f() end
 
@@ -11803,8 +11804,8 @@ function N_0xee4c0e6dbc6f2c6f() end
 --- @hash [0xEE76FF7E6A0166B0](https://docs.fivem.net/natives/?_0xEE76FF7E6A0166B0)
 --- @param gamerTagId number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(gamerTagId: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(gamerTagId: number, toggle: boolean): nil
 function SetMpGamerTagVisibilityAll(gamerTagId, toggle) end
 
     
@@ -11814,8 +11815,8 @@ function SetMpGamerTagVisibilityAll(gamerTagId, toggle) end
 --- @hash [0xEE76FF7E6A0166B0](https://docs.fivem.net/natives/?_0xEE76FF7E6A0166B0)
 --- @param gamerTagId number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(gamerTagId: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(gamerTagId: number, toggle: boolean): nil
 --- @deprecated
 function N_0xee76ff7e6a0166b0(gamerTagId, toggle) end
 
@@ -11826,8 +11827,8 @@ function N_0xee76ff7e6a0166b0(gamerTagId, toggle) end
 --- @hash [0xEE76FF7E6A0166B0](https://docs.fivem.net/natives/?_0xEE76FF7E6A0166B0)
 --- @param gamerTagId number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(gamerTagId: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(gamerTagId: number, toggle: boolean): nil
 --- @deprecated
 function SetMpGamerTag_(gamerTagId, toggle) end
 
@@ -11838,8 +11839,8 @@ function SetMpGamerTag_(gamerTagId, toggle) end
 --- @hash [0xEE76FF7E6A0166B0](https://docs.fivem.net/natives/?_0xEE76FF7E6A0166B0)
 --- @param gamerTagId number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(gamerTagId: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(gamerTagId: number, toggle: boolean): nil
 --- @deprecated
 function SetMpGamerTag(gamerTagId, toggle) end
 
@@ -11850,8 +11851,8 @@ function SetMpGamerTag(gamerTagId, toggle) end
 --- @hash [0xEE76FF7E6A0166B0](https://docs.fivem.net/natives/?_0xEE76FF7E6A0166B0)
 --- @param gamerTagId number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(gamerTagId: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(gamerTagId: number, toggle: boolean): nil
 --- @deprecated
 function SetMpGamerTagEnabled(gamerTagId, toggle) end
 
@@ -11900,8 +11901,8 @@ function SetMpGamerTagEnabled(gamerTagId, toggle) end
 --- @param menuhash Hash
 --- @param togglePause boolean
 --- @param component number (int)
---- @return void
---- @overload fun(menuhash: Hash, togglePause: boolean, component: number): void
+--- @return nil
+--- @overload fun(menuhash: Hash, togglePause: boolean, component: number): nil
 function ActivateFrontendMenu(menuhash, togglePause, component) end
 
     
@@ -11976,8 +11977,8 @@ function GetLengthOfLiteralString(string) end
 ---
 --- @hash [0xF06EBB91A81E09E3](https://docs.fivem.net/natives/?_0xF06EBB91A81E09E3)
 --- @param setWarn boolean
---- @return void
---- @overload fun(setWarn: boolean): void
+--- @return nil
+--- @overload fun(setWarn: boolean): nil
 function PauseMenuSetWarnOnTabChange(setWarn) end
 
     
@@ -11986,8 +11987,8 @@ function PauseMenuSetWarnOnTabChange(setWarn) end
 ---
 --- @hash [0xF06EBB91A81E09E3](https://docs.fivem.net/natives/?_0xF06EBB91A81E09E3)
 --- @param setWarn boolean
---- @return void
---- @overload fun(setWarn: boolean): void
+--- @return nil
+--- @overload fun(setWarn: boolean): nil
 --- @deprecated
 function N_0xf06ebb91a81e09e3(setWarn) end
 
@@ -12005,8 +12006,8 @@ function N_0xf13fe2a80c05c561() end
 ---
 --- @hash [0xF1A6C18B35BCADE6](https://docs.fivem.net/natives/?_0xF1A6C18B35BCADE6)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function ShowStartMissionInstructionalButton(p0) end
 
     
@@ -12015,8 +12016,8 @@ function ShowStartMissionInstructionalButton(p0) end
 ---
 --- @hash [0xF1A6C18B35BCADE6](https://docs.fivem.net/natives/?_0xF1A6C18B35BCADE6)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 --- @deprecated
 function N_0xf1a6c18b35bcade6(p0) end
 
@@ -12037,8 +12038,8 @@ function N_0xf284ac67940c6812() end
 ---
 --- @hash [0xF2DD778C22B15BDA](https://docs.fivem.net/natives/?_0xF2DD778C22B15BDA)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function FlashMinimapDisplay() end
 
     
@@ -12052,8 +12053,8 @@ function FlashMinimapDisplay() end
 --- @param g number (int)
 --- @param b number (int)
 --- @param a number (int)
---- @return void
---- @overload fun(hudColorIndex: number, r: number, g: number, b: number, a: number): void
+--- @return nil
+--- @overload fun(hudColorIndex: number, r: number, g: number, b: number, a: number): nil
 function ReplaceHudColourWithRgba(hudColorIndex, r, g, b, a) end
 
     
@@ -12068,8 +12069,8 @@ function ReplaceHudColourWithRgba(hudColorIndex, r, g, b, a) end
 --- @param g number (int)
 --- @param b number (int)
 --- @param a number (int)
---- @return void
---- @overload fun(hudColorIndex: number, r: number, g: number, b: number, a: number): void
+--- @return nil
+--- @overload fun(hudColorIndex: number, r: number, g: number, b: number, a: number): nil
 --- @deprecated
 function N_0xf314cf4f0211894e(hudColorIndex, r, g, b, a) end
 
@@ -12085,8 +12086,8 @@ function N_0xf314cf4f0211894e(hudColorIndex, r, g, b, a) end
 --- @param g number (int)
 --- @param b number (int)
 --- @param a number (int)
---- @return void
---- @overload fun(hudColorIndex: number, r: number, g: number, b: number, a: number): void
+--- @return nil
+--- @overload fun(hudColorIndex: number, r: number, g: number, b: number, a: number): nil
 --- @deprecated
 function SetHudColour(hudColorIndex, r, g, b, a) end
 
@@ -12096,8 +12097,8 @@ function SetHudColour(hudColorIndex, r, g, b, a) end
 --- @hash [0xF47E567B3630DD12](https://docs.fivem.net/natives/?_0xF47E567B3630DD12)
 --- @param p0 number (int)
 --- @param hudColor number (int)
---- @return void
---- @overload fun(p0: number, hudColor: number): void
+--- @return nil
+--- @overload fun(p0: number, hudColor: number): nil
 function OverrideMultiplayerChatColour(p0, hudColor) end
 
     
@@ -12107,8 +12108,8 @@ function OverrideMultiplayerChatColour(p0, hudColor) end
 --- @hash [0xF47E567B3630DD12](https://docs.fivem.net/natives/?_0xF47E567B3630DD12)
 --- @param p0 number (int)
 --- @param hudColor number (int)
---- @return void
---- @overload fun(p0: number, hudColor: number): void
+--- @return nil
+--- @overload fun(p0: number, hudColor: number): nil
 --- @deprecated
 function N_0xf47e567b3630dd12(p0, hudColor) end
 
@@ -12117,8 +12118,8 @@ function N_0xf47e567b3630dd12(p0, hudColor) end
 ---
 --- @hash [0xF6C09E276AEB3F2D](https://docs.fivem.net/natives/?_0xF6C09E276AEB3F2D)
 --- @param modelHash Hash
---- @return void
---- @overload fun(modelHash: Hash): void
+--- @return nil
+--- @overload fun(modelHash: Hash): nil
 function LinkNamedRendertarget(modelHash) end
 
     
@@ -12136,8 +12137,8 @@ function LinkNamedRendertarget(modelHash) end
 --- @param p5 any
 --- @param p6 any
 --- @param p7 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any): nil
 function N_0xf83d0febe75e62c9(p0, p1, p2, p3, p4, p5, p6, p7) end
 
     
@@ -12148,8 +12149,8 @@ function N_0xf83d0febe75e62c9(p0, p1, p2, p3, p4, p5, p6, p7) end
 --- @hash [0xF87683CDF73C3F6E](https://docs.fivem.net/natives/?_0xF87683CDF73C3F6E)
 --- @param blip Blip
 --- @param rotation number (int)
---- @return void
---- @overload fun(blip: Blip, rotation: number): void
+--- @return nil
+--- @overload fun(blip: Blip, rotation: number): nil
 function SetBlipRotation(blip, rotation) end
 
     
@@ -12159,8 +12160,8 @@ function SetBlipRotation(blip, rotation) end
 ---
 --- @hash [0xF8DEE0A5600CBB93](https://docs.fivem.net/natives/?_0xF8DEE0A5600CBB93)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetMinimapHideFow(toggle) end
 
     
@@ -12171,8 +12172,8 @@ function SetMinimapHideFow(toggle) end
 ---
 --- @hash [0xF8DEE0A5600CBB93](https://docs.fivem.net/natives/?_0xF8DEE0A5600CBB93)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0xf8dee0a5600cbb93(toggle) end
 
@@ -12184,8 +12185,8 @@ function N_0xf8dee0a5600cbb93(toggle) end
 ---
 --- @hash [0xF8DEE0A5600CBB93](https://docs.fivem.net/natives/?_0xF8DEE0A5600CBB93)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function SetMinimapRevealed(toggle) end
 
@@ -12202,8 +12203,8 @@ function SetMinimapRevealed(toggle) end
 --- EndTextCommandSetBlipName(blip
 --- @hash [0xF9113A30DE5C6670](https://docs.fivem.net/natives/?_0xF9113A30DE5C6670)
 --- @param textLabel string (char*)
---- @return void
---- @overload fun(textLabel: string): void
+--- @return nil
+--- @overload fun(textLabel: string): nil
 function BeginTextCommandSetBlipName(textLabel) end
 
     
@@ -12212,8 +12213,8 @@ function BeginTextCommandSetBlipName(textLabel) end
 --- @hash [0xF98E4B3E56AFC7B1](https://docs.fivem.net/natives/?_0xF98E4B3E56AFC7B1)
 --- @param blip Blip
 --- @param zoom number (float)
---- @return void
---- @overload fun(blip: Blip, zoom: number): void
+--- @return nil
+--- @overload fun(blip: Blip, zoom: number): nil
 function SetRadarZoomToBlip(blip, zoom) end
 
     
@@ -12223,8 +12224,8 @@ function SetRadarZoomToBlip(blip, zoom) end
 --- @hash [0xF98E4B3E56AFC7B1](https://docs.fivem.net/natives/?_0xF98E4B3E56AFC7B1)
 --- @param blip Blip
 --- @param zoom number (float)
---- @return void
---- @overload fun(blip: Blip, zoom: number): void
+--- @return nil
+--- @overload fun(blip: Blip, zoom: number): nil
 --- @deprecated
 function N_0xf98e4b3e56afc7b1(blip, zoom) end
 
@@ -12288,8 +12289,8 @@ function GetBlipInfoIdCoord(blip) end
 ---
 --- @hash [0xFCC75460ABA29378](https://docs.fivem.net/natives/?_0xFCC75460ABA29378)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function EndTextCommandClearPrint() end
 
     
@@ -12298,8 +12299,8 @@ function EndTextCommandClearPrint() end
 ---
 --- @hash [0xFCC75460ABA29378](https://docs.fivem.net/natives/?_0xFCC75460ABA29378)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xfcc75460aba29378() end
 
@@ -12309,8 +12310,8 @@ function N_0xfcc75460aba29378() end
 --- @hash [0xFCFACD0DB9D7A57D](https://docs.fivem.net/natives/?_0xFCFACD0DB9D7A57D)
 --- @param ped Ped
 --- @param spriteId number (int)
---- @return void
---- @overload fun(ped: Ped, spriteId: number): void
+--- @return nil
+--- @overload fun(ped: Ped, spriteId: number): nil
 function SetPedAiBlipSprite(ped, spriteId) end
 
     
@@ -12320,8 +12321,8 @@ function SetPedAiBlipSprite(ped, spriteId) end
 --- @hash [0xFCFACD0DB9D7A57D](https://docs.fivem.net/natives/?_0xFCFACD0DB9D7A57D)
 --- @param ped Ped
 --- @param spriteId number (int)
---- @return void
---- @overload fun(ped: Ped, spriteId: number): void
+--- @return nil
+--- @overload fun(ped: Ped, spriteId: number): nil
 --- @deprecated
 function N_0xfcfacd0db9d7a57d(ped, spriteId) end
 
@@ -12331,8 +12332,8 @@ function N_0xfcfacd0db9d7a57d(ped, spriteId) end
 --- @hash [0xFD1D220394BCB824](https://docs.fivem.net/natives/?_0xFD1D220394BCB824)
 --- @param p0 number (int)
 --- @param p1 number (int)
---- @return void
---- @overload fun(p0: number, p1: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: number): nil
 function SetMultiplayerHudCash(p0, p1) end
 
     
@@ -12340,8 +12341,8 @@ function SetMultiplayerHudCash(p0, p1) end
 ---
 --- @hash [0xFDB423997FA30340](https://docs.fivem.net/natives/?_0xFDB423997FA30340)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ThefeedPause() end
 
     
@@ -12350,8 +12351,8 @@ function ThefeedPause() end
 ---
 --- @hash [0xFDB423997FA30340](https://docs.fivem.net/natives/?_0xFDB423997FA30340)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xfdb423997fa30340() end
 
@@ -12360,8 +12361,8 @@ function N_0xfdb423997fa30340() end
 ---
 --- @hash [0xFDD85225B2DEA55E](https://docs.fivem.net/natives/?_0xFDD85225B2DEA55E)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ThefeedResetAllParameters() end
 
     
@@ -12370,8 +12371,8 @@ function ThefeedResetAllParameters() end
 ---
 --- @hash [0xFDD85225B2DEA55E](https://docs.fivem.net/natives/?_0xFDD85225B2DEA55E)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xfdd85225b2dea55e() end
 
@@ -12381,8 +12382,8 @@ function N_0xfdd85225b2dea55e() end
 ---
 --- @hash [0xFDD85225B2DEA55E](https://docs.fivem.net/natives/?_0xFDD85225B2DEA55E)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function ThefeedClearAnimpostfx() end
 
@@ -12393,8 +12394,8 @@ function ThefeedClearAnimpostfx() end
 ---
 --- @hash [0xFDEC055AB549E328](https://docs.fivem.net/natives/?_0xFDEC055AB549E328)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ThefeedFreezeNextPost() end
 
     
@@ -12405,8 +12406,8 @@ function ThefeedFreezeNextPost() end
 ---
 --- @hash [0xFDEC055AB549E328](https://docs.fivem.net/natives/?_0xFDEC055AB549E328)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xfdec055ab549e328() end
 
@@ -12418,8 +12419,8 @@ function N_0xfdec055ab549e328() end
 ---
 --- @hash [0xFDEC055AB549E328](https://docs.fivem.net/natives/?_0xFDEC055AB549E328)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function ThefeedSetNextPostPersistent() end
 
@@ -12429,8 +12430,8 @@ function ThefeedSetNextPostPersistent() end
 --- @hash [0xFE43368D2AA4F2FC](https://docs.fivem.net/natives/?_0xFE43368D2AA4F2FC)
 --- @param x number (float)
 --- @param y number (float)
---- @return void
---- @overload fun(x: number, y: number): void
+--- @return nil
+--- @overload fun(x: number, y: number): nil
 function SetNewWaypoint(x, y) end
 
     
@@ -12438,8 +12439,8 @@ function SetNewWaypoint(x, y) end
 ---
 --- @hash [0xFF4FB7C8CDFA3DA7](https://docs.fivem.net/natives/?_0xFF4FB7C8CDFA3DA7)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ClearGpsPlayerWaypoint() end
 
     

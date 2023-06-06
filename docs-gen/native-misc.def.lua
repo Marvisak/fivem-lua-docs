@@ -1,3 +1,4 @@
+--- @meta
 
 --- ```
 --- windowTitle's  
@@ -37,8 +38,8 @@
 --- @param defaultConcat2 string (char*)
 --- @param defaultConcat3 string (char*)
 --- @param maxInputLength number (int)
---- @return void
---- @overload fun(p0: number, windowTitle: string, p2: string, defaultText: string, defaultConcat1: string, defaultConcat2: string, defaultConcat3: string, maxInputLength: number): void
+--- @return nil
+--- @overload fun(p0: number, windowTitle: string, p2: string, defaultText: string, defaultConcat1: string, defaultConcat2: string, defaultConcat3: string, maxInputLength: number): nil
 function DisplayOnscreenKeyboard(p0, windowTitle, p2, defaultText, defaultConcat1, defaultConcat2, defaultConcat3, maxInputLength) end
 
     
@@ -60,8 +61,8 @@ function DisplayOnscreenKeyboard(p0, windowTitle, p2, defaultText, defaultConcat
 --- @param p6 boolean
 --- @param p7 boolean
 --- @param p8 boolean
---- @return void
---- @overload fun(x: number, y: number, z: number, radius: number, p4: boolean, p5: boolean, p6: boolean, p7: boolean, p8: boolean): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, radius: number, p4: boolean, p5: boolean, p6: boolean, p7: boolean, p8: boolean): nil
 function ClearAreaOfVehicles(x, y, z, radius, p4, p5, p6, p7, p8) end
 
     
@@ -72,8 +73,8 @@ function ClearAreaOfVehicles(x, y, z, radius, p4, p5, p6, p7, p8) end
 ---
 --- @hash [0x02DEAAC8F8EA7FE7](https://docs.fivem.net/natives/?_0x02DEAAC8F8EA7FE7)
 --- @param p0 string (char*)
---- @return void
---- @overload fun(p0: string): void
+--- @return nil
+--- @overload fun(p0: string): nil
 function N_0x02deaac8f8ea7fe7(p0) end
 
     
@@ -85,8 +86,8 @@ function N_0x02deaac8f8ea7fe7(p0) end
 ---
 --- @hash [0x03E8D3D5F549087A](https://docs.fivem.net/natives/?_0x03E8D3D5F549087A)
 --- @param modelHash Hash
---- @return Vector3, Vector3
---- @overload fun(modelHash: Hash): Vector3, Vector3
+--- @return nil, Vector3, Vector3
+--- @overload fun(modelHash: Hash): nil, Vector3, Vector3
 function GetModelDimensions(modelHash) end
 
     
@@ -94,8 +95,8 @@ function GetModelDimensions(modelHash) end
 ---
 --- @hash [0x04456F95153C6BE4](https://docs.fivem.net/natives/?_0x04456F95153C6BE4)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function StopSaveArray() end
 
     
@@ -109,8 +110,8 @@ function StopSaveArray() end
 --- @param z number (float)
 --- @param radius number (float)
 --- @param flags number (int)
---- @return void
---- @overload fun(x: number, y: number, z: number, radius: number, flags: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, radius: number, flags: number): nil
 function ClearAreaOfCops(x, y, z, radius, flags) end
 
     
@@ -156,8 +157,8 @@ function CreateIncidentWithEntity(dispatchService, ped, numUnits, radius, outInc
 ---
 --- @hash [0x06462A961E94B67C](https://docs.fivem.net/natives/?_0x06462A961E94B67C)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x06462a961e94b67c() end
 
     
@@ -217,8 +218,8 @@ function N_0x075f1d57402c93ba() end
 --- @param z number (float)
 --- @param radius number (float)
 --- @param flags number (int)
---- @return void
---- @overload fun(x: number, y: number, z: number, radius: number, flags: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, radius: number, flags: number): nil
 function ClearAreaOfProjectiles(x, y, z, radius, flags) end
 
     
@@ -229,8 +230,8 @@ function ClearAreaOfProjectiles(x, y, z, radius, flags) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function ScriptRaceInit(p0, p1, p2, p3) end
 
     
@@ -242,8 +243,8 @@ function ScriptRaceInit(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 --- @deprecated
 function N_0x0a60017f841a54f2(p0, p1, p2, p3) end
 
@@ -283,8 +284,8 @@ function UpdateOnscreenKeyboard() end
 ---
 --- @hash [0x0CF97F497FE7D048](https://docs.fivem.net/natives/?_0x0CF97F497FE7D048)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function N_0x0cf97f497fe7d048(p0) end
 
     
@@ -293,8 +294,8 @@ function N_0x0cf97f497fe7d048(p0) end
 --- @hash [0x10C2FA78D0E128A1](https://docs.fivem.net/natives/?_0x10C2FA78D0E128A1)
 --- @param p0 any
 --- @param name string (char*)
---- @return void
---- @overload fun(): any): string
+--- @return nil
+--- @overload fun(): nil, any): nil, string
 function RegisterEnumToSave(p0, name) end
 
     
@@ -321,8 +322,8 @@ function OverrideSaveHouse(p0, p1, p2, p3, p4, p5, p6, p7) end
 --- @hash [0x1178E104409FE58C](https://docs.fivem.net/natives/?_0x1178E104409FE58C)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x1178e104409fe58c(p0, p1) end
 
     
@@ -330,8 +331,8 @@ function N_0x1178e104409fe58c(p0, p1) end
 ---
 --- @hash [0x11879CDD803D30F4](https://docs.fivem.net/natives/?_0x11879CDD803D30F4)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function SetFireAmmoThisFrame(player) end
 
     
@@ -342,8 +343,8 @@ function SetFireAmmoThisFrame(player) end
 ---
 --- @hash [0x11B56FBBF7224868](https://docs.fivem.net/natives/?_0x11B56FBBF7224868)
 --- @param name string (char*)
---- @return void
---- @overload fun(name: string): void
+--- @return nil
+--- @overload fun(name: string): nil
 function PreloadCloudHat(name) end
 
     
@@ -355,8 +356,8 @@ function PreloadCloudHat(name) end
 ---
 --- @hash [0x11B56FBBF7224868](https://docs.fivem.net/natives/?_0x11B56FBBF7224868)
 --- @param name string (char*)
---- @return void
---- @overload fun(name: string): void
+--- @return nil
+--- @overload fun(name: string): nil
 --- @deprecated
 function N_0x11b56fbbf7224868(name) end
 
@@ -378,8 +379,8 @@ function N_0x11b56fbbf7224868(name) end
 --- @param p9 boolean
 --- @param p10 boolean
 --- @param p11 boolean
---- @return void
---- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, width: number, p7: boolean, p8: boolean, p9: boolean, p10: boolean, p11: boolean): void
+--- @return nil
+--- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, width: number, p7: boolean, p8: boolean, p9: boolean, p10: boolean, p11: boolean): nil
 function ClearAngledAreaOfVehicles(x1, y1, z1, x2, y2, z2, width, p7, p8, p9, p10, p11) end
 
     
@@ -421,8 +422,8 @@ function N_0x1327e2fe9746baee(id) end
 ---
 --- @hash [0x1454F2448DE30163](https://docs.fivem.net/natives/?_0x1454F2448DE30163)
 --- @param fakeWantedLevel number (int)
---- @return void
---- @overload fun(fakeWantedLevel: number): void
+--- @return nil
+--- @overload fun(fakeWantedLevel: number): nil
 function SetFakeWantedLevel(fakeWantedLevel) end
 
     
@@ -535,8 +536,8 @@ function N_0x19bfed045c647c49(ped) end
 ---
 --- @hash [0x19E00D7322C6F85B](https://docs.fivem.net/natives/?_0x19E00D7322C6F85B)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetMinigameInProgress(toggle) end
 
     
@@ -588,8 +589,8 @@ function AddStuntJump(x1, y1, z1, x2, y2, z2, x3, y3, z3, x4, y4, z4, camX, camY
 ---
 --- @hash [0x1B1AB132A16FDA55](https://docs.fivem.net/natives/?_0x1B1AB132A16FDA55)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ClearReplayStats() end
 
     
@@ -626,8 +627,8 @@ function N_0x1b2366c3f2a5c8df() end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function N_0x1bb299305c3e8c13(p0, p1, p2, p3) end
 
     
@@ -650,8 +651,8 @@ function Acos(p0) end
 ---
 --- @hash [0x1D408577D440E81E](https://docs.fivem.net/natives/?_0x1D408577D440E81E)
 --- @param timeScale number (float)
---- @return void
---- @overload fun(timeScale: number): void
+--- @return nil
+--- @overload fun(timeScale: number): nil
 function SetTimeScale(timeScale) end
 
     
@@ -661,8 +662,8 @@ function SetTimeScale(timeScale) end
 ---
 --- @hash [0x1E0B4DC0D990A4E7](https://docs.fivem.net/natives/?_0x1E0B4DC0D990A4E7)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetFadeOutAfterArrest(toggle) end
 
     
@@ -719,8 +720,8 @@ function CompareStrings(str1, str2, matchCase, maxLength) end
 --- @hash [0x1EAE0A6E978894A2](https://docs.fivem.net/natives/?_0x1EAE0A6E978894A2)
 --- @param p0 number (int)
 --- @param p1 boolean
---- @return void
---- @overload fun(p0: number, p1: boolean): void
+--- @return nil
+--- @overload fun(p0: number, p1: boolean): nil
 function N_0x1eae0a6e978894a2(p0, p1) end
 
     
@@ -753,8 +754,8 @@ function AddHospitalRestart(x, y, z, p3, p4) end
 ---
 --- @hash [0x1FF6BF9A63E5757F](https://docs.fivem.net/natives/?_0x1FF6BF9A63E5757F)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ScriptRaceShutdown() end
 
     
@@ -763,8 +764,8 @@ function ScriptRaceShutdown() end
 ---
 --- @hash [0x1FF6BF9A63E5757F](https://docs.fivem.net/natives/?_0x1FF6BF9A63E5757F)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x1ff6bf9a63e5757f() end
 
@@ -806,8 +807,8 @@ function N_0x2107a3773771186d() end
 --- @param dst any
 --- @param src any
 --- @param size number (int)
---- @return void
---- @overload fun(src: any, size: number): any
+--- @return nil
+--- @overload fun(src: any, size: number): nil, any
 function CopyMemory(dst, src, size) end
 
     
@@ -818,8 +819,8 @@ function CopyMemory(dst, src, size) end
 --- @param dst any
 --- @param src any
 --- @param size number (int)
---- @return void
---- @overload fun(src: any, size: number): any
+--- @return nil
+--- @overload fun(src: any, size: number): nil, any
 --- @deprecated
 function N_0x213aeb2b90cba7ac(dst, src, size) end
 
@@ -848,8 +849,8 @@ function N_0x21c235bc64831e5a(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9) end
 ---
 --- @hash [0x21FFB63D8C615361](https://docs.fivem.net/natives/?_0x21FFB63D8C615361)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function IgnoreNextRestart(toggle) end
 
     
@@ -877,8 +878,8 @@ function N_0x2272b0a1343129f4() end
 ---
 --- @hash [0x23227DF0B2115469](https://docs.fivem.net/natives/?_0x23227DF0B2115469)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x23227df0b2115469() end
 
     
@@ -892,8 +893,8 @@ function N_0x23227df0b2115469() end
 --- @hash [0x23285DED6EBD7EA3](https://docs.fivem.net/natives/?_0x23285DED6EBD7EA3)
 --- @param policeIndex number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(policeIndex: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(policeIndex: number, toggle: boolean): nil
 function DisablePoliceRestart(policeIndex, toggle) end
 
     
@@ -927,8 +928,8 @@ function N_0x24da7d7667fd7b09() end
 ---
 --- @hash [0x2587A48BC88DFADF](https://docs.fivem.net/natives/?_0x2587A48BC88DFADF)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetRiotModeEnabled(toggle) end
 
     
@@ -937,8 +938,8 @@ function SetRiotModeEnabled(toggle) end
 ---
 --- @hash [0x2587A48BC88DFADF](https://docs.fivem.net/natives/?_0x2587A48BC88DFADF)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0x2587a48bc88dfadf(toggle) end
 
@@ -947,8 +948,8 @@ function N_0x2587a48bc88dfadf(toggle) end
 ---
 --- @hash [0x264AC28B01B353A5](https://docs.fivem.net/natives/?_0x264AC28B01B353A5)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function RemoveDispatchSpawnBlockingArea(p0) end
 
     
@@ -960,8 +961,8 @@ function RemoveDispatchSpawnBlockingArea(p0) end
 --- @param ped Ped
 --- @param toggle boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean, p2: boolean): nil
 function EnableTennisMode(ped, toggle, p2) end
 
     
@@ -986,8 +987,8 @@ function EnableTennisMode(ped, toggle, p2) end
 ---
 --- @hash [0x29B487C359E19889](https://docs.fivem.net/natives/?_0x29B487C359E19889)
 --- @param weatherType string (char*)
---- @return void
---- @overload fun(weatherType: string): void
+--- @return nil
+--- @overload fun(weatherType: string): nil
 function SetWeatherTypeNow(weatherType) end
 
     
@@ -1044,8 +1045,8 @@ function N_0x2b626a0150e4d449() end
 ---
 --- @hash [0x2C2B3493FBF51C71](https://docs.fivem.net/natives/?_0x2C2B3493FBF51C71)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function PauseDeathArrestRestart(toggle) end
 
     
@@ -1054,8 +1055,8 @@ function PauseDeathArrestRestart(toggle) end
 ---
 --- @hash [0x2C2B3493FBF51C71](https://docs.fivem.net/natives/?_0x2C2B3493FBF51C71)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function DisableAutomaticRespawn(toggle) end
 
@@ -1130,8 +1131,8 @@ function GetHeadingFromVector_2d(dx, dy) end
 ---
 --- @hash [0x31125FD509D9043F](https://docs.fivem.net/natives/?_0x31125FD509D9043F)
 --- @param p0 any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 function N_0x31125fd509d9043f(p0) end
 
     
@@ -1149,8 +1150,8 @@ function GetRandomFloatInRange(startRange, endRange) end
 ---
 --- @hash [0x31727907B2C43C55](https://docs.fivem.net/natives/?_0x31727907B2C43C55)
 --- @param minAmplitude number (float)
---- @return void
---- @overload fun(minAmplitude: number): void
+--- @return nil
+--- @overload fun(minAmplitude: number): nil
 function WaterOverrideSetOceannoiseminamplitude(minAmplitude) end
 
     
@@ -1159,8 +1160,8 @@ function WaterOverrideSetOceannoiseminamplitude(minAmplitude) end
 ---
 --- @hash [0x31727907B2C43C55](https://docs.fivem.net/natives/?_0x31727907B2C43C55)
 --- @param minAmplitude number (float)
---- @return void
---- @overload fun(minAmplitude: number): void
+--- @return nil
+--- @overload fun(minAmplitude: number): nil
 --- @deprecated
 function N_0x31727907b2c43c55(minAmplitude) end
 
@@ -1207,8 +1208,8 @@ function N_0x32c7a7e8c43a1f80(x, y, z, radius, pedMultiplier, vehicleMultiplier,
 ---
 --- @hash [0x338D2E3477711050](https://docs.fivem.net/natives/?_0x338D2E3477711050)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ClearOverrideWeather() end
 
     
@@ -1263,8 +1264,8 @@ function IsProjectileTypeInRadius(x, y, z, projHash, radius, ownedByPlayer) end
 --- @hash [0x34C9EE5986258415](https://docs.fivem.net/natives/?_0x34C9EE5986258415)
 --- @param p0 any
 --- @param name string (char*)
---- @return void
---- @overload fun(): any): string
+--- @return nil
+--- @overload fun(): nil, any): nil, string
 function RegisterIntToSave(p0, name) end
 
     
@@ -1274,8 +1275,8 @@ function RegisterIntToSave(p0, name) end
 ---
 --- @hash [0x37DEB0AA183FB6D8](https://docs.fivem.net/natives/?_0x37DEB0AA183FB6D8)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function SaveBenchmarkRecording() end
 
     
@@ -1286,8 +1287,8 @@ function SaveBenchmarkRecording() end
 ---
 --- @hash [0x37DEB0AA183FB6D8](https://docs.fivem.net/natives/?_0x37DEB0AA183FB6D8)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x37deb0aa183fb6d8() end
 
@@ -1355,8 +1356,8 @@ function N_0x3bbbd13e5041a79e() end
 ---
 --- @hash [0x3ED1438C1F5C6612](https://docs.fivem.net/natives/?_0x3ED1438C1F5C6612)
 --- @param p0 number (int)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function NextOnscreenKeyboardResultWillDisplayUsingTheseFonts(p0) end
 
     
@@ -1368,8 +1369,8 @@ function NextOnscreenKeyboardResultWillDisplayUsingTheseFonts(p0) end
 ---
 --- @hash [0x3ED1438C1F5C6612](https://docs.fivem.net/natives/?_0x3ED1438C1F5C6612)
 --- @param p0 number (int)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 --- @deprecated
 function N_0x3ed1438c1f5c6612(p0) end
 
@@ -1425,8 +1426,8 @@ function CreateIncident(dispatchService, x, y, z, numUnits, radius, outIncidentI
 ---
 --- @hash [0x405591EC8FD9096D](https://docs.fivem.net/natives/?_0x405591EC8FD9096D)
 --- @param amplitude number (float)
---- @return void
---- @overload fun(amplitude: number): void
+--- @return nil
+--- @overload fun(amplitude: number): nil
 function WaterOverrideSetOceanwaveamplitude(amplitude) end
 
     
@@ -1435,8 +1436,8 @@ function WaterOverrideSetOceanwaveamplitude(amplitude) end
 ---
 --- @hash [0x405591EC8FD9096D](https://docs.fivem.net/natives/?_0x405591EC8FD9096D)
 --- @param amplitude number (float)
---- @return void
---- @overload fun(amplitude: number): void
+--- @return nil
+--- @overload fun(amplitude: number): nil
 --- @deprecated
 function N_0x405591ec8fd9096d(amplitude) end
 
@@ -1447,8 +1448,8 @@ function N_0x405591ec8fd9096d(amplitude) end
 ---
 --- @hash [0x437138B6A830166A](https://docs.fivem.net/natives/?_0x437138B6A830166A)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ResetBenchmarkRecording() end
 
     
@@ -1459,8 +1460,8 @@ function ResetBenchmarkRecording() end
 ---
 --- @hash [0x437138B6A830166A](https://docs.fivem.net/natives/?_0x437138B6A830166A)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x437138b6a830166a() end
 
@@ -1469,8 +1470,8 @@ function N_0x437138b6a830166a() end
 ---
 --- @hash [0x438822C279B73B93](https://docs.fivem.net/natives/?_0x438822C279B73B93)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function SetBeastModeActive(player) end
 
     
@@ -1479,8 +1480,8 @@ function SetBeastModeActive(player) end
 ---
 --- @hash [0x438822C279B73B93](https://docs.fivem.net/natives/?_0x438822C279B73B93)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 --- @deprecated
 function N_0x438822c279b73b93(player) end
 
@@ -1489,8 +1490,8 @@ function N_0x438822c279b73b93(player) end
 ---
 --- @hash [0x444D98F98C11F3EC](https://docs.fivem.net/natives/?_0x444D98F98C11F3EC)
 --- @param seed number (int)
---- @return void
---- @overload fun(seed: number): void
+--- @return nil
+--- @overload fun(seed: number): nil
 function SetRandomSeed(seed) end
 
     
@@ -1528,8 +1529,8 @@ function IsPrevWeatherType(weatherType) end
 --- @hash [0x44F7CBC1BEB3327D](https://docs.fivem.net/natives/?_0x44F7CBC1BEB3327D)
 --- @param p0 any
 --- @param p1 number (float)
---- @return void
---- @overload fun(p0: any, p1: number): void
+--- @return nil
+--- @overload fun(p0: any, p1: number): nil
 function SetDispatchTimeBetweenSpawnAttempts(p0, p1) end
 
     
@@ -1575,8 +1576,8 @@ function N_0x4750fc27570311ec() end
 --- @hash [0x48838ED9937A15D1](https://docs.fivem.net/natives/?_0x48838ED9937A15D1)
 --- @param p0 any
 --- @param p1 number (float)
---- @return void
---- @overload fun(p0: any, p1: number): void
+--- @return nil
+--- @overload fun(p0: any, p1: number): nil
 function SetDispatchTimeBetweenSpawnAttemptsMultiplier(p0, p1) end
 
     
@@ -1599,8 +1600,8 @@ function IsPcVersion() end
 --- @hash [0x48F069265A0E4BEC](https://docs.fivem.net/natives/?_0x48F069265A0E4BEC)
 --- @param p0 any
 --- @param name string (char*)
---- @return void
---- @overload fun(): any): string
+--- @return nil
+--- @overload fun(): nil, any): nil, string
 function N_0x48f069265a0e4bec(p0, name) end
 
     
@@ -1610,8 +1611,8 @@ function N_0x48f069265a0e4bec(p0, name) end
 ---
 --- @hash [0x4A18E01DF2C87B86](https://docs.fivem.net/natives/?_0x4A18E01DF2C87B86)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetFadeOutAfterDeath(toggle) end
 
     
@@ -1649,8 +1650,8 @@ function IsDurangoVersion() end
 --- @hash [0x4DCDF92BF64236CD](https://docs.fivem.net/natives/?_0x4DCDF92BF64236CD)
 --- @param p0 string (char*)
 --- @param p1 string (char*)
---- @return void
---- @overload fun(p0: string, p1: string): void
+--- @return nil
+--- @overload fun(p0: string, p1: string): nil
 function N_0x4dcdf92bf64236cd(p0, p1) end
 
     
@@ -1661,8 +1662,8 @@ function N_0x4dcdf92bf64236cd(p0, p1) end
 ---
 --- @hash [0x4EBB7E87AA0DBED4](https://docs.fivem.net/natives/?_0x4EBB7E87AA0DBED4)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetPlayerIsInAnimalForm(toggle) end
 
     
@@ -1674,8 +1675,8 @@ function SetPlayerIsInAnimalForm(toggle) end
 ---
 --- @hash [0x4EBB7E87AA0DBED4](https://docs.fivem.net/natives/?_0x4EBB7E87AA0DBED4)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0x4ebb7e87aa0dbed4(toggle) end
 
@@ -1688,8 +1689,8 @@ function N_0x4ebb7e87aa0dbed4(toggle) end
 ---
 --- @hash [0x4EBB7E87AA0DBED4](https://docs.fivem.net/natives/?_0x4EBB7E87AA0DBED4)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function ShowPedInPauseMenu(toggle) end
 
@@ -1700,8 +1701,8 @@ function ShowPedInPauseMenu(toggle) end
 --- @param p0 any
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: boolean): nil
 function SetSaveHouse(p0, p1, p2) end
 
     
@@ -1709,8 +1710,8 @@ function SetSaveHouse(p0, p1, p2) end
 ---
 --- @hash [0x50EEAAD86232EE55](https://docs.fivem.net/natives/?_0x50EEAAD86232EE55)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function DoAutoSave() end
 
     
@@ -1754,8 +1755,8 @@ function GetBitsInRange(var, rangeStart, rangeEnd) end
 --- @param ped Ped
 --- @param p1 string (char*)
 --- @param p2 number (float)
---- @return void
---- @overload fun(ped: Ped, p1: string, p2: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: string, p2: number): nil
 function N_0x54f157e0336a3822(ped, p1, p2) end
 
     
@@ -1770,8 +1771,8 @@ function N_0x54f157e0336a3822(ped, p1, p2) end
 ---
 --- @hash [0x556C1AA270D5A207](https://docs.fivem.net/natives/?_0x556C1AA270D5A207)
 --- @param incidentId number (int)
---- @return void
---- @overload fun(incidentId: number): void
+--- @return nil
+--- @overload fun(incidentId: number): nil
 function DeleteIncident(incidentId) end
 
     
@@ -1843,8 +1844,8 @@ function GetPrevWeatherType() end
 ---
 --- @hash [0x577D1284D6873711](https://docs.fivem.net/natives/?_0x577D1284D6873711)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetGamePaused(toggle) end
 
     
@@ -1859,8 +1860,8 @@ function SetGamePaused(toggle) end
 --- @param weatherType1 Hash
 --- @param weatherType2 Hash
 --- @param percentWeather2 number (float)
---- @return void
---- @overload fun(weatherType1: Hash, weatherType2: Hash, percentWeather2: number): void
+--- @return nil
+--- @overload fun(weatherType1: Hash, weatherType2: Hash, percentWeather2: number): nil
 function SetWeatherTypeTransition(weatherType1, weatherType2, percentWeather2) end
 
     
@@ -1868,8 +1869,8 @@ function SetWeatherTypeTransition(weatherType1, weatherType2, percentWeather2) e
 ---
 --- @hash [0x57FFF03E423A4C0B](https://docs.fivem.net/natives/?_0x57FFF03E423A4C0B)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function SetSuperJumpThisFrame(player) end
 
     
@@ -1879,8 +1880,8 @@ function SetSuperJumpThisFrame(player) end
 ---
 --- @hash [0x5896F2BD5683A4E1](https://docs.fivem.net/natives/?_0x5896F2BD5683A4E1)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ResetDispatchSpawnLocation() end
 
     
@@ -1892,8 +1893,8 @@ function ResetDispatchSpawnLocation() end
 ---
 --- @hash [0x58A39BE597CE99CD](https://docs.fivem.net/natives/?_0x58A39BE597CE99CD)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function CancelOnscreenKeyboard() end
 
     
@@ -1906,8 +1907,8 @@ function CancelOnscreenKeyboard() end
 ---
 --- @hash [0x58A39BE597CE99CD](https://docs.fivem.net/natives/?_0x58A39BE597CE99CD)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x58a39be597ce99cd() end
 
@@ -1969,8 +1970,8 @@ function IsTennisMode(ped) end
 --- @param p0 any
 --- @param size number (int)
 --- @param arrayName string (char*)
---- @return void
---- @overload fun(size: number): any): string
+--- @return nil
+--- @overload fun(size: number): nil, any): nil, string
 function StartSaveArrayWithSize(p0, size, arrayName) end
 
     
@@ -1981,8 +1982,8 @@ function StartSaveArrayWithSize(p0, size, arrayName) end
 --- @param p0 any
 --- @param size number (int)
 --- @param arrayName string (char*)
---- @return void
---- @overload fun(size: number): any): string
+--- @return nil
+--- @overload fun(size: number): nil, any): nil, string
 --- @deprecated
 function StartSaveArray(p0, size, arrayName) end
 
@@ -2002,8 +2003,8 @@ function IsSniperInverted() end
 ---
 --- @hash [0x6216B116083A7CB4](https://docs.fivem.net/natives/?_0x6216B116083A7CB4)
 --- @param minBumpiness number (float)
---- @return void
---- @overload fun(minBumpiness: number): void
+--- @return nil
+--- @overload fun(minBumpiness: number): nil
 function WaterOverrideSetRippleminbumpiness(minBumpiness) end
 
     
@@ -2012,8 +2013,8 @@ function WaterOverrideSetRippleminbumpiness(minBumpiness) end
 ---
 --- @hash [0x6216B116083A7CB4](https://docs.fivem.net/natives/?_0x6216B116083A7CB4)
 --- @param minBumpiness number (float)
---- @return void
---- @overload fun(minBumpiness: number): void
+--- @return nil
+--- @overload fun(minBumpiness: number): nil
 --- @deprecated
 function N_0x6216b116083a7cb4(minBumpiness) end
 
@@ -2037,8 +2038,8 @@ function Tan(p0) end
 ---
 --- @hash [0x643E26EA6E024D92](https://docs.fivem.net/natives/?_0x643E26EA6E024D92)
 --- @param level number (float)
---- @return void
---- @overload fun(level: number): void
+--- @return nil
+--- @overload fun(level: number): nil
 function SetRainLevel(level) end
 
     
@@ -2053,8 +2054,8 @@ function SetRainLevel(level) end
 ---
 --- @hash [0x643E26EA6E024D92](https://docs.fivem.net/natives/?_0x643E26EA6E024D92)
 --- @param level number (float)
---- @return void
---- @overload fun(level: number): void
+--- @return nil
+--- @overload fun(level: number): nil
 --- @deprecated
 function SetRainFxIntensity(level) end
 
@@ -2067,8 +2068,8 @@ function SetRainFxIntensity(level) end
 ---
 --- @hash [0x65D2EBB47E1CEC21](https://docs.fivem.net/natives/?_0x65D2EBB47E1CEC21)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function N_0x65d2ebb47e1cec21(toggle) end
 
     
@@ -2189,8 +2190,8 @@ function IsAutoSaveInProgress() end
 ---
 --- @hash [0x693478ACBD7F18E7](https://docs.fivem.net/natives/?_0x693478ACBD7F18E7)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x693478acbd7f18e7() end
 
     
@@ -2198,8 +2199,8 @@ function N_0x693478acbd7f18e7() end
 ---
 --- @hash [0x69FE6DC87BD2A5E9](https://docs.fivem.net/natives/?_0x69FE6DC87BD2A5E9)
 --- @param value any
---- @return void
---- @overload fun(value: any): void
+--- @return nil
+--- @overload fun(value: any): nil
 function AddReplayStatValue(value) end
 
     
@@ -2208,8 +2209,8 @@ function AddReplayStatValue(value) end
 ---
 --- @hash [0x69FE6DC87BD2A5E9](https://docs.fivem.net/natives/?_0x69FE6DC87BD2A5E9)
 --- @param value any
---- @return void
---- @overload fun(value: any): void
+--- @return nil
+--- @overload fun(value: any): nil
 --- @deprecated
 function N_0x69fe6dc87bd2a5e9(value) end
 
@@ -2246,8 +2247,8 @@ function N_0x6e04f06094c87047() end
 ---
 --- @hash [0x6F2135B6129620C1](https://docs.fivem.net/natives/?_0x6F2135B6129620C1)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function N_0x6f2135b6129620c1(toggle) end
 
     
@@ -2262,8 +2263,8 @@ function N_0x6f2135b6129620c1(toggle) end
 --- @hash [0x6F7794F28C6B2535](https://docs.fivem.net/natives/?_0x6F7794F28C6B2535)
 --- @param p0 any
 --- @param name string (char*)
---- @return void
---- @overload fun(): any): string
+--- @return nil
+--- @overload fun(): nil, any): nil, string
 function RegisterTextLabelToSave_2(p0, name) end
 
     
@@ -2279,8 +2280,8 @@ function RegisterTextLabelToSave_2(p0, name) end
 --- @hash [0x6F7794F28C6B2535](https://docs.fivem.net/natives/?_0x6F7794F28C6B2535)
 --- @param p0 any
 --- @param name string (char*)
---- @return void
---- @overload fun(): any): string
+--- @return nil
+--- @overload fun(): nil, any): nil, string
 --- @deprecated
 function N_0x6f7794f28c6b2535(p0, name) end
 
@@ -2301,8 +2302,8 @@ function N_0x6fddf453c0c756ec() end
 ---
 --- @hash [0x6FE601A64180D423](https://docs.fivem.net/natives/?_0x6FE601A64180D423)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function SetDispatchIdealSpawnDistance(p0) end
 
     
@@ -2310,8 +2311,8 @@ function SetDispatchIdealSpawnDistance(p0) end
 ---
 --- @hash [0x703CC7F60CBB2B57](https://docs.fivem.net/natives/?_0x703CC7F60CBB2B57)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x703cc7f60cbb2b57(p0) end
 
     
@@ -2319,8 +2320,8 @@ function N_0x703cc7f60cbb2b57(p0) end
 ---
 --- @hash [0x704983DF373B198F](https://docs.fivem.net/natives/?_0x704983DF373B198F)
 --- @param weatherType string (char*)
---- @return void
---- @overload fun(weatherType: string): void
+--- @return nil
+--- @overload fun(weatherType: string): nil
 function SetWeatherTypePersist(weatherType) end
 
     
@@ -2331,8 +2332,8 @@ function SetWeatherTypePersist(weatherType) end
 --- @param y number (float)
 --- @param z number (float)
 --- @param heading number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number, heading: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, heading: number): nil
 function SetRestartCustomPosition(x, y, z, heading) end
 
     
@@ -2344,8 +2345,8 @@ function SetRestartCustomPosition(x, y, z, heading) end
 --- @param y number (float)
 --- @param z number (float)
 --- @param heading number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number, heading: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, heading: number): nil
 --- @deprecated
 function N_0x706b5edcaa7fa663(x, y, z, heading) end
 
@@ -2358,8 +2359,8 @@ function N_0x706b5edcaa7fa663(x, y, z, heading) end
 --- @param y number (float)
 --- @param z number (float)
 --- @param heading number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number, heading: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, heading: number): nil
 --- @deprecated
 function SetCustomRespawnPosition(x, y, z, heading) end
 
@@ -2423,8 +2424,8 @@ function Absf(value) end
 ---
 --- @hash [0x740E14FAD5842351](https://docs.fivem.net/natives/?_0x740E14FAD5842351)
 --- @param level number (int)
---- @return void
---- @overload fun(level: number): void
+--- @return nil
+--- @overload fun(level: number): nil
 function SetGravityLevel(level) end
 
     
@@ -2434,8 +2435,8 @@ function SetGravityLevel(level) end
 ---
 --- @hash [0x7472BB270D7B4F3E](https://docs.fivem.net/natives/?_0x7472BB270D7B4F3E)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function PopulateNow() end
 
     
@@ -2443,8 +2444,8 @@ function PopulateNow() end
 ---
 --- @hash [0x74E20C9145FB66FD](https://docs.fivem.net/natives/?_0x74E20C9145FB66FD)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function StopSaveData() end
 
     
@@ -2452,8 +2453,8 @@ function StopSaveData() end
 ---
 --- @hash [0x77A84429DD9F0A15](https://docs.fivem.net/natives/?_0x77A84429DD9F0A15)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ResetDispatchIdealSpawnDistance() end
 
     
@@ -2479,8 +2480,8 @@ function IsThisAMinigameScript() end
 ---
 --- @hash [0x7C9C0B1EEB1F9072](https://docs.fivem.net/natives/?_0x7C9C0B1EEB1F9072)
 --- @param bumpiness number (float)
---- @return void
---- @overload fun(bumpiness: number): void
+--- @return nil
+--- @overload fun(bumpiness: number): nil
 function WaterOverrideSetRipplebumpiness(bumpiness) end
 
     
@@ -2489,8 +2490,8 @@ function WaterOverrideSetRipplebumpiness(bumpiness) end
 ---
 --- @hash [0x7C9C0B1EEB1F9072](https://docs.fivem.net/natives/?_0x7C9C0B1EEB1F9072)
 --- @param bumpiness number (float)
---- @return void
---- @overload fun(bumpiness: number): void
+--- @return nil
+--- @overload fun(bumpiness: number): nil
 --- @deprecated
 function N_0x7c9c0b1eeb1f9072(bumpiness) end
 
@@ -2500,8 +2501,8 @@ function N_0x7c9c0b1eeb1f9072(bumpiness) end
 --- @hash [0x7CAEC29ECB5DFEBB](https://docs.fivem.net/natives/?_0x7CAEC29ECB5DFEBB)
 --- @param p0 any
 --- @param name string (char*)
---- @return void
---- @overload fun(): any): string
+--- @return nil
+--- @overload fun(): nil, any): nil, string
 function RegisterFloatToSave(p0, name) end
 
     
@@ -2524,8 +2525,8 @@ function IsFrontendFading() end
 ---
 --- @hash [0x7EC6F9A478A6A512](https://docs.fivem.net/natives/?_0x7EC6F9A478A6A512)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x7ec6f9a478a6a512() end
 
     
@@ -2535,8 +2536,8 @@ function N_0x7ec6f9a478a6a512() end
 ---
 --- @hash [0x7F06937B0CDCBC1A](https://docs.fivem.net/natives/?_0x7F06937B0CDCBC1A)
 --- @param level number (float)
---- @return void
---- @overload fun(level: number): void
+--- @return nil
+--- @overload fun(level: number): nil
 function SetSnowLevel(level) end
 
     
@@ -2587,8 +2588,8 @@ function N_0x8098c8d6597aae18(index) end
 --- @hash [0x8269816F6CFD40F8](https://docs.fivem.net/natives/?_0x8269816F6CFD40F8)
 --- @param p0 any
 --- @param name string (char*)
---- @return void
---- @overload fun(): any): string
+--- @return nil
+--- @overload fun(): nil, any): nil, string
 function N_0x8269816f6cfd40f8(p0, name) end
 
     
@@ -2645,8 +2646,8 @@ function GetOnscreenKeyboardResult() end
 --- @param isAudible boolean
 --- @param isInvisible boolean
 --- @param speed number (float)
---- @return void
---- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, damage: number, pureAccuracy: boolean, weaponHash: Hash, ownerPed: Ped, isAudible: boolean, isInvisible: boolean, speed: number): void
+--- @return nil
+--- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, damage: number, pureAccuracy: boolean, weaponHash: Hash, ownerPed: Ped, isAudible: boolean, isInvisible: boolean, speed: number): nil
 function ShootSingleBulletBetweenCoords(x1, y1, z1, x2, y2, z2, damage, pureAccuracy, weaponHash, ownerPed, isAudible, isInvisible, speed) end
 
     
@@ -2664,8 +2665,8 @@ function Atan2(p0, p1) end
 ---
 --- @hash [0x8951EB9C6906D3C8](https://docs.fivem.net/natives/?_0x8951EB9C6906D3C8)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x8951eb9c6906d3c8() end
 
     
@@ -2682,8 +2683,8 @@ function IsMemoryCardInUse() end
 ---
 --- @hash [0x8B05F884CF7E8020](https://docs.fivem.net/natives/?_0x8B05F884CF7E8020)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function SetRandomWeatherType() end
 
     
@@ -2739,8 +2740,8 @@ function GetGroundZCoordWithOffsets(x, y, z) end
 ---
 --- @hash [0x8D74E26F54B4E5C3](https://docs.fivem.net/natives/?_0x8D74E26F54B4E5C3)
 --- @param p0 string (char*)
---- @return void
---- @overload fun(p0: string): void
+--- @return nil
+--- @overload fun(p0: string): nil
 function N_0x8d74e26f54b4e5c3(p0) end
 
     
@@ -2806,8 +2807,8 @@ function GetIsProjectileTypeInArea(x1, y1, z1, x2, y2, z2, projectileHash, proje
 --- @param rangeStart number (int)
 --- @param rangeEnd number (int)
 --- @param p3 number (int)
---- @return void
---- @overload fun(rangeStart: number, rangeEnd: number, p3: number): number
+--- @return nil
+--- @overload fun(rangeStart: number, rangeEnd: number, p3: number): nil, number
 function SetBitsInRange(var, rangeStart, rangeEnd, p3) end
 
     
@@ -2840,8 +2841,8 @@ function N_0x8ef5573a1f801a5c(player) end
 --- @param p3 number (float)
 --- @param p4 number (float)
 --- @param p5 boolean
---- @return void
---- @overload fun(ped: Ped, p1: number, p2: number, p3: number, p4: number, p5: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: number, p2: number, p3: number, p4: number, p5: boolean): nil
 function PlayTennisDiveAnim(ped, p1, p2, p3, p4, p5) end
 
     
@@ -2855,8 +2856,8 @@ function PlayTennisDiveAnim(ped, p1, p2, p3, p4, p5) end
 --- @param p3 number (float)
 --- @param p4 number (float)
 --- @param p5 boolean
---- @return void
---- @overload fun(ped: Ped, p1: number, p2: number, p3: number, p4: number, p5: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: number, p2: number, p3: number, p4: number, p5: boolean): nil
 --- @deprecated
 function N_0x8fa9c42fc5d7c64b(ped, p1, p2, p3, p4, p5) end
 
@@ -2869,8 +2870,8 @@ function N_0x8fa9c42fc5d7c64b(ped, p1, p2, p3, p4, p5) end
 ---
 --- @hash [0x916CA67D26FD1E37](https://docs.fivem.net/natives/?_0x916CA67D26FD1E37)
 --- @param p0 string (char*)
---- @return void
---- @overload fun(p0: string): void
+--- @return nil
+--- @overload fun(p0: string): nil
 function N_0x916ca67d26fd1e37(p0) end
 
     
@@ -2914,8 +2915,8 @@ function N_0x918c7b2d2ff3928b(x1, y1, z1, x2, y2, z2, width) end
 ---
 --- @hash [0x9243BAC96D64C050](https://docs.fivem.net/natives/?_0x9243BAC96D64C050)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkSetScriptIsSafeForNetworkGame() end
 
     
@@ -2925,8 +2926,8 @@ function NetworkSetScriptIsSafeForNetworkGame() end
 ---
 --- @hash [0x92790862E36C2ADA](https://docs.fivem.net/natives/?_0x92790862E36C2ADA)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function StartBenchmarkRecording() end
 
     
@@ -2937,8 +2938,8 @@ function StartBenchmarkRecording() end
 ---
 --- @hash [0x92790862E36C2ADA](https://docs.fivem.net/natives/?_0x92790862E36C2ADA)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x92790862e36c2ada() end
 
@@ -2956,8 +2957,8 @@ function N_0x92790862e36c2ada() end
 --- @hash [0x933D6A9EEC1BACD0](https://docs.fivem.net/natives/?_0x933D6A9EEC1BACD0)
 --- @param address number (int*)
 --- @param offset number (int)
---- @return void
---- @overload fun(offset: number): number
+--- @return nil
+--- @overload fun(offset: number): nil, number
 function SetBit(address, offset) end
 
     
@@ -2974,8 +2975,8 @@ function SetBit(address, offset) end
 --- @param p5 boolean
 --- @param p6 boolean
 --- @param p7 boolean
---- @return void
---- @overload fun(x: number, y: number, z: number, radius: number, p4: boolean, p5: boolean, p6: boolean, p7: boolean): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, radius: number, p4: boolean, p5: boolean, p6: boolean, p7: boolean): nil
 function ClearAreaLeaveVehicleHealth(x, y, z, radius, p4, p5, p6, p7) end
 
     
@@ -2993,8 +2994,8 @@ function ClearAreaLeaveVehicleHealth(x, y, z, radius, p4, p5, p6, p7) end
 --- @param p5 boolean
 --- @param p6 boolean
 --- @param p7 boolean
---- @return void
---- @overload fun(x: number, y: number, z: number, radius: number, p4: boolean, p5: boolean, p6: boolean, p7: boolean): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, radius: number, p4: boolean, p5: boolean, p6: boolean, p7: boolean): nil
 --- @deprecated
 function N_0x957838aaf91bd12d(x, y, z, radius, p4, p5, p6, p7) end
 
@@ -3013,8 +3014,8 @@ function N_0x957838aaf91bd12d(x, y, z, radius, p4, p5, p6, p7) end
 --- @param p5 boolean
 --- @param p6 boolean
 --- @param p7 boolean
---- @return void
---- @overload fun(x: number, y: number, z: number, radius: number, p4: boolean, p5: boolean, p6: boolean, p7: boolean): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, radius: number, p4: boolean, p5: boolean, p6: boolean, p7: boolean): nil
 --- @deprecated
 function ClearAreaOfEverything(x, y, z, radius, p4, p5, p6, p7) end
 
@@ -3023,8 +3024,8 @@ function ClearAreaOfEverything(x, y, z, radius, p4, p5, p6, p7) end
 ---
 --- @hash [0x957E790EA1727B64](https://docs.fivem.net/natives/?_0x957E790EA1727B64)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ClearCloudHat() end
 
     
@@ -3068,8 +3069,8 @@ function N_0x9689123e3f213aa5() end
 ---
 --- @hash [0x971927086CFD2158](https://docs.fivem.net/natives/?_0x971927086CFD2158)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetRandomEventFlag(toggle) end
 
     
@@ -3077,8 +3078,8 @@ function SetRandomEventFlag(toggle) end
 ---
 --- @hash [0x97E7E2C04245115B](https://docs.fivem.net/natives/?_0x97E7E2C04245115B)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x97e7e2c04245115b(p0) end
 
     
@@ -3123,8 +3124,8 @@ function N_0x996dd1e1e02f1008() end
 --- @hash [0x9B2BD3773123EA2F](https://docs.fivem.net/natives/?_0x9B2BD3773123EA2F)
 --- @param dispatchService number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(dispatchService: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(dispatchService: number, toggle: boolean): nil
 function BlockDispatchServiceResourceCreation(dispatchService, toggle) end
 
     
@@ -3134,8 +3135,8 @@ function BlockDispatchServiceResourceCreation(dispatchService, toggle) end
 --- @hash [0x9B2BD3773123EA2F](https://docs.fivem.net/natives/?_0x9B2BD3773123EA2F)
 --- @param dispatchService number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(dispatchService: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(dispatchService: number, toggle: boolean): nil
 --- @deprecated
 function N_0x9b2bd3773123ea2f(dispatchService, toggle) end
 
@@ -3144,8 +3145,8 @@ function N_0x9b2bd3773123ea2f(dispatchService, toggle) end
 ---
 --- @hash [0x9BAE5AD2508DF078](https://docs.fivem.net/natives/?_0x9BAE5AD2508DF078)
 --- @param toggle number (int)
---- @return void
---- @overload fun(toggle: number): void
+--- @return nil
+--- @overload fun(toggle: number): nil
 function SetInstancePriorityMode(toggle) end
 
     
@@ -3154,8 +3155,8 @@ function SetInstancePriorityMode(toggle) end
 ---
 --- @hash [0x9BAE5AD2508DF078](https://docs.fivem.net/natives/?_0x9BAE5AD2508DF078)
 --- @param toggle number (int)
---- @return void
---- @overload fun(toggle: number): void
+--- @return nil
+--- @overload fun(toggle: number): nil
 --- @deprecated
 function EnableMpDlcMaps(toggle) end
 
@@ -3165,8 +3166,8 @@ function EnableMpDlcMaps(toggle) end
 ---
 --- @hash [0x9BAE5AD2508DF078](https://docs.fivem.net/natives/?_0x9BAE5AD2508DF078)
 --- @param toggle number (int)
---- @return void
---- @overload fun(toggle: number): void
+--- @return nil
+--- @overload fun(toggle: number): nil
 --- @deprecated
 function UseFreemodeMapBehavior(toggle) end
 
@@ -3176,8 +3177,8 @@ function UseFreemodeMapBehavior(toggle) end
 ---
 --- @hash [0x9BAE5AD2508DF078](https://docs.fivem.net/natives/?_0x9BAE5AD2508DF078)
 --- @param toggle number (int)
---- @return void
---- @overload fun(toggle: number): void
+--- @return nil
+--- @overload fun(toggle: number): nil
 --- @deprecated
 function LowerMapPropDensity(toggle) end
 
@@ -3197,8 +3198,8 @@ function GetGameTimer() end
 ---
 --- @hash [0x9D8D44ADBBA61EF2](https://docs.fivem.net/natives/?_0x9D8D44ADBBA61EF2)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetPlayerRockstarEditorDisabled(toggle) end
 
     
@@ -3209,8 +3210,8 @@ function SetPlayerRockstarEditorDisabled(toggle) end
 ---
 --- @hash [0x9D8D44ADBBA61EF2](https://docs.fivem.net/natives/?_0x9D8D44ADBBA61EF2)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0x9d8d44adbba61ef2(toggle) end
 
@@ -3221,8 +3222,8 @@ function N_0x9d8d44adbba61ef2(toggle) end
 ---
 --- @hash [0x9DC711BC69C548DF](https://docs.fivem.net/natives/?_0x9DC711BC69C548DF)
 --- @param scriptName string (char*)
---- @return void
---- @overload fun(scriptName: string): void
+--- @return nil
+--- @overload fun(scriptName: string): nil
 function TerminateAllScriptsWithThisName(scriptName) end
 
     
@@ -3278,8 +3279,8 @@ function IsAussieVersion() end
 ---
 --- @hash [0x9F5E6BB6B34540DA](https://docs.fivem.net/natives/?_0x9F5E6BB6B34540DA)
 --- @param maxBumpiness number (float)
---- @return void
---- @overload fun(maxBumpiness: number): void
+--- @return nil
+--- @overload fun(maxBumpiness: number): nil
 function WaterOverrideSetRipplemaxbumpiness(maxBumpiness) end
 
     
@@ -3288,8 +3289,8 @@ function WaterOverrideSetRipplemaxbumpiness(maxBumpiness) end
 ---
 --- @hash [0x9F5E6BB6B34540DA](https://docs.fivem.net/natives/?_0x9F5E6BB6B34540DA)
 --- @param maxBumpiness number (float)
---- @return void
---- @overload fun(maxBumpiness: number): void
+--- @return nil
+--- @overload fun(maxBumpiness: number): nil
 --- @deprecated
 function N_0x9f5e6bb6b34540da(maxBumpiness) end
 
@@ -3368,8 +3369,8 @@ function N_0xa0ad167e4b39d9a2(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, 
 ---
 --- @hash [0xA1183BCFEE0F93D1](https://docs.fivem.net/natives/?_0xA1183BCFEE0F93D1)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function SetForcePlayerToJump(player) end
 
     
@@ -3380,8 +3381,8 @@ function SetForcePlayerToJump(player) end
 ---
 --- @hash [0xA1183BCFEE0F93D1](https://docs.fivem.net/natives/?_0xA1183BCFEE0F93D1)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 --- @deprecated
 function N_0xa1183bcfee0f93d1(player) end
 
@@ -3390,8 +3391,8 @@ function N_0xa1183bcfee0f93d1(player) end
 ---
 --- @hash [0xA23E821FBDF8A5F2](https://docs.fivem.net/natives/?_0xA23E821FBDF8A5F2)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function EndReplayStats() end
 
     
@@ -3399,8 +3400,8 @@ function EndReplayStats() end
 ---
 --- @hash [0xA2716D40842EAF79](https://docs.fivem.net/natives/?_0xA2716D40842EAF79)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ClearRestartCustomPosition() end
 
     
@@ -3409,8 +3410,8 @@ function ClearRestartCustomPosition() end
 ---
 --- @hash [0xA2716D40842EAF79](https://docs.fivem.net/natives/?_0xA2716D40842EAF79)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xa2716d40842eaf79() end
 
@@ -3420,8 +3421,8 @@ function N_0xa2716d40842eaf79() end
 ---
 --- @hash [0xA2716D40842EAF79](https://docs.fivem.net/natives/?_0xA2716D40842EAF79)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function SetNextRespawnToCustom() end
 
@@ -3439,8 +3440,8 @@ function GetMissionFlag() end
 ---
 --- @hash [0xA43D5C6FE51ADBEF](https://docs.fivem.net/natives/?_0xA43D5C6FE51ADBEF)
 --- @param weatherType string (char*)
---- @return void
---- @overload fun(weatherType: string): void
+--- @return nil
+--- @overload fun(weatherType: string): nil
 function SetOverrideWeather(weatherType) end
 
     
@@ -3461,8 +3462,8 @@ function N_0xa4a0065e39c9f25c() end
 ---
 --- @hash [0xA5272EBEDD4747F6](https://docs.fivem.net/natives/?_0xA5272EBEDD4747F6)
 --- @param p0 number (int)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function DisableStuntJumpSet(p0) end
 
     
@@ -3479,8 +3480,8 @@ function DisableStuntJumpSet(p0) end
 --- @param ignoreCopCars boolean
 --- @param ignoreObjects boolean
 --- @param p7 boolean
---- @return void
---- @overload fun(X: number, Y: number, Z: number, radius: number, p4: boolean, ignoreCopCars: boolean, ignoreObjects: boolean, p7: boolean): void
+--- @return nil
+--- @overload fun(X: number, Y: number, Z: number, radius: number, p4: boolean, ignoreCopCars: boolean, ignoreObjects: boolean, p7: boolean): nil
 function ClearArea(X, Y, Z, radius, p4, ignoreCopCars, ignoreObjects, p7) end
 
     
@@ -3509,8 +3510,8 @@ function IsAreaOccupied(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12) e
 ---
 --- @hash [0xA66C71C98D5F2CFB](https://docs.fivem.net/natives/?_0xA66C71C98D5F2CFB)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function SetExplosiveAmmoThisFrame(player) end
 
     
@@ -3521,8 +3522,8 @@ function SetExplosiveAmmoThisFrame(player) end
 --- @hash [0xA6A12939F16D85BE](https://docs.fivem.net/natives/?_0xA6A12939F16D85BE)
 --- @param hash Hash
 --- @param p1 boolean
---- @return void
---- @overload fun(hash: Hash, p1: boolean): void
+--- @return nil
+--- @overload fun(hash: Hash, p1: boolean): nil
 function RemoveStealthKill(hash, p1) end
 
     
@@ -3534,8 +3535,8 @@ function RemoveStealthKill(hash, p1) end
 --- @hash [0xA6A12939F16D85BE](https://docs.fivem.net/natives/?_0xA6A12939F16D85BE)
 --- @param hash Hash
 --- @param p1 boolean
---- @return void
---- @overload fun(hash: Hash, p1: boolean): void
+--- @return nil
+--- @overload fun(hash: Hash, p1: boolean): nil
 --- @deprecated
 function N_0xa6a12939f16d85be(hash, p1) end
 
@@ -3554,8 +3555,8 @@ function IsOrbisVersion() end
 --- @hash [0xA735353C77334EA0](https://docs.fivem.net/natives/?_0xA735353C77334EA0)
 --- @param p0 any
 --- @param name string (char*)
---- @return void
---- @overload fun(): any): string
+--- @return nil
+--- @overload fun(): nil, any): nil, string
 function RegisterInt64ToSave(p0, name) end
 
     
@@ -3565,8 +3566,8 @@ function RegisterInt64ToSave(p0, name) end
 --- @hash [0xA735353C77334EA0](https://docs.fivem.net/natives/?_0xA735353C77334EA0)
 --- @param p0 any
 --- @param name string (char*)
---- @return void
---- @overload fun(): any): string
+--- @return nil
+--- @overload fun(): nil, any): nil, string
 --- @deprecated
 function N_0xa735353c77334ea0(p0, name) end
 
@@ -3579,8 +3580,8 @@ function N_0xa735353c77334ea0(p0, name) end
 --- @hash [0xA74802FB8D0B7814](https://docs.fivem.net/natives/?_0xA74802FB8D0B7814)
 --- @param name string (char*)
 --- @param p1 number (float)
---- @return void
---- @overload fun(name: string, p1: number): void
+--- @return nil
+--- @overload fun(name: string, p1: number): nil
 function UnloadCloudHat(name, p1) end
 
     
@@ -3593,8 +3594,8 @@ function UnloadCloudHat(name, p1) end
 --- @hash [0xA74802FB8D0B7814](https://docs.fivem.net/natives/?_0xA74802FB8D0B7814)
 --- @param name string (char*)
 --- @param p1 number (float)
---- @return void
---- @overload fun(name: string, p1: number): void
+--- @return nil
+--- @overload fun(name: string, p1: number): nil
 --- @deprecated
 function N_0xa74802fb8d0b7814(name, p1) end
 
@@ -3603,8 +3604,8 @@ function N_0xa74802fb8d0b7814(name, p1) end
 ---
 --- @hash [0xA7A1127490312C36](https://docs.fivem.net/natives/?_0xA7A1127490312C36)
 --- @param maxAmplitude number (float)
---- @return void
---- @overload fun(maxAmplitude: number): void
+--- @return nil
+--- @overload fun(maxAmplitude: number): nil
 function WaterOverrideSetShorewavemaxamplitude(maxAmplitude) end
 
     
@@ -3613,8 +3614,8 @@ function WaterOverrideSetShorewavemaxamplitude(maxAmplitude) end
 ---
 --- @hash [0xA7A1127490312C36](https://docs.fivem.net/natives/?_0xA7A1127490312C36)
 --- @param maxAmplitude number (float)
---- @return void
---- @overload fun(maxAmplitude: number): void
+--- @return nil
+--- @overload fun(maxAmplitude: number): nil
 --- @deprecated
 function N_0xa7a1127490312c36(maxAmplitude) end
 
@@ -3623,8 +3624,8 @@ function N_0xa7a1127490312c36(maxAmplitude) end
 ---
 --- @hash [0xA8434F1DFF41D6E7](https://docs.fivem.net/natives/?_0xA8434F1DFF41D6E7)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function WaterOverrideFadeIn(p0) end
 
     
@@ -3633,8 +3634,8 @@ function WaterOverrideFadeIn(p0) end
 ---
 --- @hash [0xA8434F1DFF41D6E7](https://docs.fivem.net/natives/?_0xA8434F1DFF41D6E7)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 --- @deprecated
 function N_0xa8434f1dff41d6e7(p0) end
 
@@ -3671,8 +3672,8 @@ function IsBitSet(address, offset) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 boolean
---- @return void
---- @overload fun(p1: any, p2: boolean): any
+--- @return nil
+--- @overload fun(p1: any, p2: boolean): nil, any
 function StartSaveData(p0, p1, p2) end
 
     
@@ -3689,8 +3690,8 @@ function Atan(p0) end
 ---
 --- @hash [0xAA391C728106F7AF](https://docs.fivem.net/natives/?_0xAA391C728106F7AF)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetThisScriptCanBePaused(toggle) end
 
     
@@ -3724,8 +3725,8 @@ function N_0xabb2fa71c83a1b72() end
 ---
 --- @hash [0xAC3A74E8384A9919](https://docs.fivem.net/natives/?_0xAC3A74E8384A9919)
 --- @param speed number (float)
---- @return void
---- @overload fun(speed: number): void
+--- @return nil
+--- @overload fun(speed: number): nil
 function SetWind(speed) end
 
     
@@ -3733,8 +3734,8 @@ function SetWind(speed) end
 ---
 --- @hash [0xAC7BFD5C1D83EA75](https://docs.fivem.net/natives/?_0xAC7BFD5C1D83EA75)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ResetDispatchSpawnBlockingAreas() end
 
     
@@ -3763,8 +3764,8 @@ function IsPositionOccupied(x, y, z, range, p4, checkVehicles, checkPeds, p7, p8
 --- @param incidentId number (int)
 --- @param dispatchService number (int)
 --- @param numUnits number (int)
---- @return void
---- @overload fun(incidentId: number, dispatchService: number, numUnits: number): void
+--- @return nil
+--- @overload fun(incidentId: number, dispatchService: number, numUnits: number): nil
 function SetIncidentRequestedUnits(incidentId, dispatchService, numUnits) end
 
     
@@ -3775,8 +3776,8 @@ function SetIncidentRequestedUnits(incidentId, dispatchService, numUnits) end
 --- @param incidentId number (int)
 --- @param dispatchService number (int)
 --- @param numUnits number (int)
---- @return void
---- @overload fun(incidentId: number, dispatchService: number, numUnits: number): void
+--- @return nil
+--- @overload fun(incidentId: number, dispatchService: number, numUnits: number): nil
 --- @deprecated
 function N_0xb08b85d860e7ba3c(incidentId, dispatchService, numUnits) end
 
@@ -3786,8 +3787,8 @@ function N_0xb08b85d860e7ba3c(incidentId, dispatchService, numUnits) end
 --- @hash [0xB129E447A2EDA4BF](https://docs.fivem.net/natives/?_0xB129E447A2EDA4BF)
 --- @param id number (int)
 --- @param p1 boolean
---- @return void
---- @overload fun(id: number, p1: boolean): void
+--- @return nil
+--- @overload fun(id: number, p1: boolean): nil
 function RemovePopMultiplierArea(id, p1) end
 
     
@@ -3797,8 +3798,8 @@ function RemovePopMultiplierArea(id, p1) end
 --- @hash [0xB129E447A2EDA4BF](https://docs.fivem.net/natives/?_0xB129E447A2EDA4BF)
 --- @param id number (int)
 --- @param p1 boolean
---- @return void
---- @overload fun(id: number, p1: boolean): void
+--- @return nil
+--- @overload fun(id: number, p1: boolean): nil
 --- @deprecated
 function N_0xb129e447a2eda4bf(id, p1) end
 
@@ -3829,8 +3830,8 @@ function N_0xb335f761606db47c(p3, p4) end
 ---
 --- @hash [0xB3CD58CCA6CDA852](https://docs.fivem.net/natives/?_0xB3CD58CCA6CDA852)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ClearTacticalAnalysisPoints() end
 
     
@@ -3839,8 +3840,8 @@ function ClearTacticalAnalysisPoints() end
 ---
 --- @hash [0xB3CD58CCA6CDA852](https://docs.fivem.net/natives/?_0xB3CD58CCA6CDA852)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xb3cd58cca6cda852() end
 
@@ -3849,8 +3850,8 @@ function N_0xb3cd58cca6cda852() end
 ---
 --- @hash [0xB3E6360DDE733E82](https://docs.fivem.net/natives/?_0xB3E6360DDE733E82)
 --- @param maxAmplitude number (float)
---- @return void
---- @overload fun(maxAmplitude: number): void
+--- @return nil
+--- @overload fun(maxAmplitude: number): nil
 function WaterOverrideSetOceanwavemaxamplitude(maxAmplitude) end
 
     
@@ -3859,8 +3860,8 @@ function WaterOverrideSetOceanwavemaxamplitude(maxAmplitude) end
 ---
 --- @hash [0xB3E6360DDE733E82](https://docs.fivem.net/natives/?_0xB3E6360DDE733E82)
 --- @param maxAmplitude number (float)
---- @return void
---- @overload fun(maxAmplitude: number): void
+--- @return nil
+--- @overload fun(maxAmplitude: number): nil
 --- @deprecated
 function N_0xb3e6360dde733e82(maxAmplitude) end
 
@@ -3869,8 +3870,8 @@ function N_0xb3e6360dde733e82(maxAmplitude) end
 ---
 --- @hash [0xB51B9AB9EF81868C](https://docs.fivem.net/natives/?_0xB51B9AB9EF81868C)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function N_0xb51b9ab9ef81868c(toggle) end
 
     
@@ -3882,8 +3883,8 @@ function N_0xb51b9ab9ef81868c(toggle) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number): nil
 function AddTacticalAnalysisPoint(x, y, z) end
 
     
@@ -3896,8 +3897,8 @@ function AddTacticalAnalysisPoint(x, y, z) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number): nil
 --- @deprecated
 function N_0xb8721407ee9c3ff6(x, y, z) end
 
@@ -3906,8 +3907,8 @@ function N_0xb8721407ee9c3ff6(x, y, z) end
 ---
 --- @hash [0xB8F87EAD7533B176](https://docs.fivem.net/natives/?_0xB8F87EAD7533B176)
 --- @param amplitude number (float)
---- @return void
---- @overload fun(amplitude: number): void
+--- @return nil
+--- @overload fun(amplitude: number): nil
 function WaterOverrideSetShorewaveamplitude(amplitude) end
 
     
@@ -3916,8 +3917,8 @@ function WaterOverrideSetShorewaveamplitude(amplitude) end
 ---
 --- @hash [0xB8F87EAD7533B176](https://docs.fivem.net/natives/?_0xB8F87EAD7533B176)
 --- @param amplitude number (float)
---- @return void
---- @overload fun(amplitude: number): void
+--- @return nil
+--- @overload fun(amplitude: number): nil
 --- @deprecated
 function N_0xb8f87ead7533b176(amplitude) end
 
@@ -3926,8 +3927,8 @@ function N_0xb8f87ead7533b176(amplitude) end
 ---
 --- @hash [0xB938B7E6D3C0620C](https://docs.fivem.net/natives/?_0xB938B7E6D3C0620C)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetCreditsActive(toggle) end
 
     
@@ -3935,8 +3936,8 @@ function SetCreditsActive(toggle) end
 ---
 --- @hash [0xB98236CAAECEF897](https://docs.fivem.net/natives/?_0xB98236CAAECEF897)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetThisScriptCanRemoveBlipsCreatedByAnyScript(toggle) end
 
     
@@ -3944,8 +3945,8 @@ function SetThisScriptCanRemoveBlipsCreatedByAnyScript(toggle) end
 ---
 --- @hash [0xB9854DFDE0D833D6](https://docs.fivem.net/natives/?_0xB9854DFDE0D833D6)
 --- @param disturb number (float)
---- @return void
---- @overload fun(disturb: number): void
+--- @return nil
+--- @overload fun(disturb: number): nil
 function WaterOverrideSetRippledisturb(disturb) end
 
     
@@ -3954,8 +3955,8 @@ function WaterOverrideSetRippledisturb(disturb) end
 ---
 --- @hash [0xB9854DFDE0D833D6](https://docs.fivem.net/natives/?_0xB9854DFDE0D833D6)
 --- @param disturb number (float)
---- @return void
---- @overload fun(disturb: number): void
+--- @return nil
+--- @overload fun(disturb: number): nil
 --- @deprecated
 function N_0xb9854dfde0d833d6(disturb) end
 
@@ -3964,8 +3965,8 @@ function N_0xb9854dfde0d833d6(disturb) end
 ---
 --- @hash [0xBA4B8D83BDC75551](https://docs.fivem.net/natives/?_0xBA4B8D83BDC75551)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xba4b8d83bdc75551(p0) end
 
     
@@ -4073,8 +4074,8 @@ function AddStuntJumpAngled(x1, y1, z1, x2, y2, z2, radius1, x3, y3, z3, x4, y4,
 --- @param z number (float)
 --- @param radius number (float)
 --- @param flags number (int)
---- @return void
---- @overload fun(x: number, y: number, z: number, radius: number, flags: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, radius: number, flags: number): nil
 function ClearAreaOfPeds(x, y, z, radius, flags) end
 
     
@@ -4084,8 +4085,8 @@ function ClearAreaOfPeds(x, y, z, radius, flags) end
 --- @param p0 any
 --- @param size number (int)
 --- @param structName string (char*)
---- @return void
---- @overload fun(size: number): any): string
+--- @return nil
+--- @overload fun(size: number): nil, any): nil, string
 function StartSaveStructWithSize(p0, size, structName) end
 
     
@@ -4096,8 +4097,8 @@ function StartSaveStructWithSize(p0, size, structName) end
 --- @param p0 any
 --- @param size number (int)
 --- @param structName string (char*)
---- @return void
---- @overload fun(size: number): any): string
+--- @return nil
+--- @overload fun(size: number): nil, any): nil, string
 --- @deprecated
 function StartSaveStruct(p0, size, structName) end
 
@@ -4127,8 +4128,8 @@ function StartSaveStruct(p0, size, structName) end
 --- @param p15 boolean
 --- @param p16 boolean
 --- @param p17 boolean
---- @return void
---- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, damage: number, p7: boolean, weaponHash: Hash, ownerPed: Ped, isAudible: boolean, isInvisible: boolean, speed: number, entity: Entity, p14: boolean, p15: boolean, p16: boolean, p17: boolean): void
+--- @return nil
+--- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, damage: number, p7: boolean, weaponHash: Hash, ownerPed: Ped, isAudible: boolean, isInvisible: boolean, speed: number, entity: Entity, p14: boolean, p15: boolean, p16: boolean, p17: boolean): nil
 function ShootSingleBulletBetweenCoordsIgnoreEntityNew(x1, y1, z1, x2, y2, z2, damage, p7, weaponHash, ownerPed, isAudible, isInvisible, speed, entity, p14, p15, p16, p17) end
 
     
@@ -4158,8 +4159,8 @@ function ShootSingleBulletBetweenCoordsIgnoreEntityNew(x1, y1, z1, x2, y2, z2, d
 --- @param p15 boolean
 --- @param p16 boolean
 --- @param p17 boolean
---- @return void
---- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, damage: number, p7: boolean, weaponHash: Hash, ownerPed: Ped, isAudible: boolean, isInvisible: boolean, speed: number, entity: Entity, p14: boolean, p15: boolean, p16: boolean, p17: boolean): void
+--- @return nil
+--- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, damage: number, p7: boolean, weaponHash: Hash, ownerPed: Ped, isAudible: boolean, isInvisible: boolean, speed: number, entity: Entity, p14: boolean, p15: boolean, p16: boolean, p17: boolean): nil
 --- @deprecated
 function N_0xbfe5756e7407064a(x1, y1, z1, x2, y2, z2, damage, p7, weaponHash, ownerPed, isAudible, isInvisible, speed, entity, p14, p15, p16, p17) end
 
@@ -4190,8 +4191,8 @@ function N_0xbfe5756e7407064a(x1, y1, z1, x2, y2, z2, damage, p7, weaponHash, ow
 --- @param p15 boolean
 --- @param p16 boolean
 --- @param p17 boolean
---- @return void
---- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, damage: number, p7: boolean, weaponHash: Hash, ownerPed: Ped, isAudible: boolean, isInvisible: boolean, speed: number, entity: Entity, p14: boolean, p15: boolean, p16: boolean, p17: boolean): void
+--- @return nil
+--- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, damage: number, p7: boolean, weaponHash: Hash, ownerPed: Ped, isAudible: boolean, isInvisible: boolean, speed: number, entity: Entity, p14: boolean, p15: boolean, p16: boolean, p17: boolean): nil
 --- @deprecated
 function ShootSingleBulletBetweenCoordsWithExtraParams(x1, y1, z1, x2, y2, z2, damage, p7, weaponHash, ownerPed, isAudible, isInvisible, speed, entity, p14, p15, p16, p17) end
 
@@ -4226,8 +4227,8 @@ function RegisterSaveHouse(p0, p1, p2, p3, p4, p5, p6) end
 ---
 --- @hash [0xC0AA53F866B3134D](https://docs.fivem.net/natives/?_0xC0AA53F866B3134D)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ForceGameStatePlaying() end
 
     
@@ -4247,8 +4248,8 @@ function ForceGameStatePlaying() end
 ---
 --- @hash [0xC0AA53F866B3134D](https://docs.fivem.net/natives/?_0xC0AA53F866B3134D)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function ResetLocalplayerState() end
 
@@ -4257,8 +4258,8 @@ function ResetLocalplayerState() end
 ---
 --- @hash [0xC3C221ADDDE31A11](https://docs.fivem.net/natives/?_0xC3C221ADDDE31A11)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function WaterOverrideFadeOut(p0) end
 
     
@@ -4267,8 +4268,8 @@ function WaterOverrideFadeOut(p0) end
 ---
 --- @hash [0xC3C221ADDDE31A11](https://docs.fivem.net/natives/?_0xC3C221ADDDE31A11)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 --- @deprecated
 function N_0xc3c221addde31a11(p0) end
 
@@ -4277,8 +4278,8 @@ function N_0xc3c221addde31a11(p0) end
 ---
 --- @hash [0xC3EAD29AB273ECE8](https://docs.fivem.net/natives/?_0xC3EAD29AB273ECE8)
 --- @param minAmplitude number (float)
---- @return void
---- @overload fun(minAmplitude: number): void
+--- @return nil
+--- @overload fun(minAmplitude: number): nil
 function WaterOverrideSetShorewaveminamplitude(minAmplitude) end
 
     
@@ -4287,8 +4288,8 @@ function WaterOverrideSetShorewaveminamplitude(minAmplitude) end
 ---
 --- @hash [0xC3EAD29AB273ECE8](https://docs.fivem.net/natives/?_0xC3EAD29AB273ECE8)
 --- @param minAmplitude number (float)
---- @return void
---- @overload fun(minAmplitude: number): void
+--- @return nil
+--- @overload fun(minAmplitude: number): nil
 --- @deprecated
 function N_0xc3ead29ab273ece8(minAmplitude) end
 
@@ -4301,8 +4302,8 @@ function N_0xc3ead29ab273ece8(minAmplitude) end
 ---
 --- @hash [0xC4301E5121A0ED73](https://docs.fivem.net/natives/?_0xC4301E5121A0ED73)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetMissionFlag(toggle) end
 
     
@@ -4324,8 +4325,8 @@ function GetProfileSetting(profileSetting) end
 ---
 --- @hash [0xC54A08C85AE4D410](https://docs.fivem.net/natives/?_0xC54A08C85AE4D410)
 --- @param strength number (float)
---- @return void
---- @overload fun(strength: number): void
+--- @return nil
+--- @overload fun(strength: number): nil
 function WaterOverrideSetStrength(strength) end
 
     
@@ -4339,8 +4340,8 @@ function WaterOverrideSetStrength(strength) end
 ---
 --- @hash [0xC54A08C85AE4D410](https://docs.fivem.net/natives/?_0xC54A08C85AE4D410)
 --- @param strength number (float)
---- @return void
---- @overload fun(strength: number): void
+--- @return nil
+--- @overload fun(strength: number): nil
 --- @deprecated
 function N_0xc54a08c85ae4d410(strength) end
 
@@ -4360,8 +4361,8 @@ function GetSnowLevel() end
 ---
 --- @hash [0xC5F0A8EBD3F361CE](https://docs.fivem.net/natives/?_0xC5F0A8EBD3F361CE)
 --- @param flag number (int)
---- @return void
---- @overload fun(flag: number): void
+--- @return nil
+--- @overload fun(flag: number): nil
 function SetInstancePriorityHint(flag) end
 
     
@@ -4372,8 +4373,8 @@ function SetInstancePriorityHint(flag) end
 ---
 --- @hash [0xC5F0A8EBD3F361CE](https://docs.fivem.net/natives/?_0xC5F0A8EBD3F361CE)
 --- @param flag number (int)
---- @return void
---- @overload fun(flag: number): void
+--- @return nil
+--- @overload fun(flag: number): nil
 --- @deprecated
 function SetUnkMapFlag(flag) end
 
@@ -4382,8 +4383,8 @@ function SetUnkMapFlag(flag) end
 ---
 --- @hash [0xC79AE21974B01FB2](https://docs.fivem.net/natives/?_0xC79AE21974B01FB2)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function CleanupAsyncInstall() end
 
     
@@ -4392,8 +4393,8 @@ function CleanupAsyncInstall() end
 ---
 --- @hash [0xC79AE21974B01FB2](https://docs.fivem.net/natives/?_0xC79AE21974B01FB2)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xc79ae21974b01fb2() end
 
@@ -4404,8 +4405,8 @@ function N_0xc79ae21974b01fb2() end
 ---
 --- @hash [0xC7DB36C24634F52B](https://docs.fivem.net/natives/?_0xC7DB36C24634F52B)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function StopBenchmarkRecording() end
 
     
@@ -4416,8 +4417,8 @@ function StopBenchmarkRecording() end
 ---
 --- @hash [0xC7DB36C24634F52B](https://docs.fivem.net/natives/?_0xC7DB36C24634F52B)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xc7db36c24634f52b() end
 
@@ -4438,8 +4439,8 @@ function Asin(p0) end
 --- @hash [0xC8535819C450EBA8](https://docs.fivem.net/natives/?_0xC8535819C450EBA8)
 --- @param hospitalIndex number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(hospitalIndex: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(hospitalIndex: number, toggle: boolean): nil
 function DisableHospitalRestart(hospitalIndex, toggle) end
 
     
@@ -4463,8 +4464,8 @@ function IsIncidentValid(incidentId) end
 --- @hash [0xC8F4131414C835A1](https://docs.fivem.net/natives/?_0xC8F4131414C835A1)
 --- @param p0 any
 --- @param name string (char*)
---- @return void
---- @overload fun(): any): string
+--- @return nil
+--- @overload fun(): nil, any): nil, string
 function RegisterBoolToSave(p0, name) end
 
     
@@ -4493,8 +4494,8 @@ function GetGroundZFor_3dCoord(x, y, z, groundZ, ignoreWater) end
 ---
 --- @hash [0xC9BF75D28165FF77](https://docs.fivem.net/natives/?_0xC9BF75D28165FF77)
 --- @param ignoreVehicle boolean
---- @return void
---- @overload fun(ignoreVehicle: boolean): void
+--- @return nil
+--- @overload fun(ignoreVehicle: boolean): nil
 function SetSaveMenuActive(ignoreVehicle) end
 
     
@@ -4522,8 +4523,8 @@ function IsStringNullOrEmpty(string) end
 --- @param defaultConcat6 string (char*)
 --- @param defaultConcat7 string (char*)
 --- @param maxInputLength number (int)
---- @return void
---- @overload fun(p0: number, maxInputLength: number): string): any): string): string): string): string): string): string): string): string
+--- @return nil
+--- @overload fun(p0: number, maxInputLength: number): nil, string): nil, any): nil, string): nil, string): nil, string): nil, string): nil, string): nil, string): nil, string): nil, string
 function DisplayOnscreenKeyboardWithLongerInitialString(p0, windowTitle, p2, defaultText, defaultConcat1, defaultConcat2, defaultConcat3, defaultConcat4, defaultConcat5, defaultConcat6, defaultConcat7, maxInputLength) end
 
     
@@ -4543,8 +4544,8 @@ function DisplayOnscreenKeyboardWithLongerInitialString(p0, windowTitle, p2, def
 --- @param defaultConcat6 string (char*)
 --- @param defaultConcat7 string (char*)
 --- @param maxInputLength number (int)
---- @return void
---- @overload fun(p0: number, maxInputLength: number): string): any): string): string): string): string): string): string): string): string
+--- @return nil
+--- @overload fun(p0: number, maxInputLength: number): nil, string): nil, any): nil, string): nil, string): nil, string): nil, string): nil, string): nil, string): nil, string): nil, string
 --- @deprecated
 function N_0xca78cfa0366592fe(p0, windowTitle, p2, defaultText, defaultConcat1, defaultConcat2, defaultConcat3, defaultConcat4, defaultConcat5, defaultConcat6, defaultConcat7, maxInputLength) end
 
@@ -4565,8 +4566,8 @@ function N_0xca78cfa0366592fe(p0, windowTitle, p2, defaultText, defaultConcat1, 
 --- @param defaultConcat6 string (char*)
 --- @param defaultConcat7 string (char*)
 --- @param maxInputLength number (int)
---- @return void
---- @overload fun(p0: number, maxInputLength: number): string): any): string): string): string): string): string): string): string): string
+--- @return nil
+--- @overload fun(p0: number, maxInputLength: number): nil, string): nil, any): nil, string): nil, string): nil, string): nil, string): nil, string): nil, string): nil, string): nil, string
 --- @deprecated
 function DisplayOnscreenKeyboard_2(p0, windowTitle, p2, defaultText, defaultConcat1, defaultConcat2, defaultConcat3, defaultConcat4, defaultConcat5, defaultConcat6, defaultConcat7, maxInputLength) end
 
@@ -4593,8 +4594,8 @@ function IsPs3Version() end
 ---
 --- @hash [0xCCC39339BEF76CF5](https://docs.fivem.net/natives/?_0xCCC39339BEF76CF5)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ClearWeatherTypePersist() end
 
     
@@ -4613,8 +4614,8 @@ function N_0xd10282b6e3751ba0() end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number): nil
 function SetDispatchSpawnLocation(x, y, z) end
 
     
@@ -4625,8 +4626,8 @@ function SetDispatchSpawnLocation(x, y, z) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number): nil
 --- @deprecated
 function N_0xd10f442036302d50(x, y, z) end
 
@@ -4651,8 +4652,8 @@ function GetHashKey(string) end
 --- @hash [0xD261BA3E7E998072](https://docs.fivem.net/natives/?_0xD261BA3E7E998072)
 --- @param incidentId number (int)
 --- @param p1 number (float)
---- @return void
---- @overload fun(incidentId: number, p1: number): void
+--- @return nil
+--- @overload fun(incidentId: number, p1: number): nil
 function SetIncidentUnk(incidentId, p1) end
 
     
@@ -4664,8 +4665,8 @@ function SetIncidentUnk(incidentId, p1) end
 --- @hash [0xD261BA3E7E998072](https://docs.fivem.net/natives/?_0xD261BA3E7E998072)
 --- @param incidentId number (int)
 --- @param p1 number (float)
---- @return void
---- @overload fun(incidentId: number, p1: number): void
+--- @return nil
+--- @overload fun(incidentId: number, p1: number): nil
 --- @deprecated
 function N_0xd261ba3e7e998072(incidentId, p1) end
 
@@ -4745,8 +4746,8 @@ function N_0xd642319c54aadeb6() end
 ---
 --- @hash [0xD79185689F8FD5DF](https://docs.fivem.net/natives/?_0xD79185689F8FD5DF)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetStuntJumpsCanTrigger(toggle) end
 
     
@@ -4755,8 +4756,8 @@ function SetStuntJumpsCanTrigger(toggle) end
 ---
 --- @hash [0xD79185689F8FD5DF](https://docs.fivem.net/natives/?_0xD79185689F8FD5DF)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0xd79185689f8fd5df(toggle) end
 
@@ -4767,8 +4768,8 @@ function N_0xd79185689f8fd5df(toggle) end
 ---
 --- @hash [0xD9F692D349249528](https://docs.fivem.net/natives/?_0xD9F692D349249528)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xd9f692d349249528() end
 
     
@@ -4778,8 +4779,8 @@ function N_0xd9f692d349249528() end
 ---
 --- @hash [0xDA66D2796BA33F12](https://docs.fivem.net/natives/?_0xDA66D2796BA33F12)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetFadeInAfterDeathArrest(toggle) end
 
     
@@ -4814,8 +4815,8 @@ function SetFadeInAfterDeathArrest(toggle) end
 --- @hash [0xDC0F817884CDD856](https://docs.fivem.net/natives/?_0xDC0F817884CDD856)
 --- @param dispatchService number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(dispatchService: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(dispatchService: number, toggle: boolean): nil
 function EnableDispatchService(dispatchService, toggle) end
 
     
@@ -4851,8 +4852,8 @@ function EnableDispatchService(dispatchService, toggle) end
 --- @hash [0xDC0F817884CDD856](https://docs.fivem.net/natives/?_0xDC0F817884CDD856)
 --- @param dispatchService number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(dispatchService: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(dispatchService: number, toggle: boolean): nil
 --- @deprecated
 function N_0xdc0f817884cdd856(dispatchService, toggle) end
 
@@ -4861,8 +4862,8 @@ function N_0xdc0f817884cdd856(dispatchService, toggle) end
 ---
 --- @hash [0xDC518000E39DAE1F](https://docs.fivem.net/natives/?_0xDC518000E39DAE1F)
 --- @param p0 number (int)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function DeleteStuntJump(p0) end
 
     
@@ -4912,8 +4913,8 @@ function N_0xdc9274a7ef6b2867() end
 --- @param z number (float)
 --- @param radius number (float)
 --- @param flags number (int)
---- @return void
---- @overload fun(x: number, y: number, z: number, radius: number, flags: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, radius: number, flags: number): nil
 function ClearAreaOfObjects(x, y, z, radius, flags) end
 
     
@@ -4936,8 +4937,8 @@ function IsBulletInBox(x1, y1, z1, x2, y2, z2, ownedByPlayer) end
 ---
 --- @hash [0xDEA36202FC3382DF](https://docs.fivem.net/natives/?_0xDEA36202FC3382DF)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function AllowMissionCreatorWarp(toggle) end
 
     
@@ -4946,8 +4947,8 @@ function AllowMissionCreatorWarp(toggle) end
 ---
 --- @hash [0xDEA36202FC3382DF](https://docs.fivem.net/natives/?_0xDEA36202FC3382DF)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0xdea36202fc3382df(toggle) end
 
@@ -5000,8 +5001,8 @@ function GetProjectileNearPedCoords(ped, weaponHash, distance, outCoords, ownedB
 --- @hash [0xE0E500246FF73D66](https://docs.fivem.net/natives/?_0xE0E500246FF73D66)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function BeginReplayStats(p0, p1) end
 
     
@@ -5014,8 +5015,8 @@ function BeginReplayStats(p0, p1) end
 --- @param p3 number (float)
 --- @param p4 number (float)
 --- @param p5 boolean
---- @return void
---- @overload fun(ped: Ped, animDict: string, animName: string, p3: number, p4: number, p5: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, animDict: string, animName: string, p3: number, p4: number, p5: boolean): nil
 function PlayTennisSwingAnim(ped, animDict, animName, p3, p4, p5) end
 
     
@@ -5029,8 +5030,8 @@ function PlayTennisSwingAnim(ped, animDict, animName, p3, p4, p5) end
 --- @param p3 number (float)
 --- @param p4 number (float)
 --- @param p5 boolean
---- @return void
---- @overload fun(ped: Ped, animDict: string, animName: string, p3: number, p4: number, p5: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, animDict: string, animName: string, p3: number, p4: number, p5: boolean): nil
 --- @deprecated
 function N_0xe266ed23311f24d4(ped, animDict, animName, p3, p4, p5) end
 
@@ -5039,8 +5040,8 @@ function N_0xe266ed23311f24d4(ped, animDict, animName, p3, p4, p5) end
 ---
 --- @hash [0xE369A5783B866016](https://docs.fivem.net/natives/?_0xE369A5783B866016)
 --- @param p0 number (int)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function EnableStuntJumpSet(p0) end
 
     
@@ -5067,8 +5068,8 @@ function EnableStuntJumpSet(p0) end
 --- @param isInvisible boolean
 --- @param speed number (float)
 --- @param entity Entity
---- @return void
---- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, damage: number, p7: boolean, weaponHash: Hash, ownerPed: Ped, isAudible: boolean, isInvisible: boolean, speed: number, entity: Entity): void
+--- @return nil
+--- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, damage: number, p7: boolean, weaponHash: Hash, ownerPed: Ped, isAudible: boolean, isInvisible: boolean, speed: number, entity: Entity): nil
 function ShootSingleBulletBetweenCoordsIgnoreEntity(x1, y1, z1, x2, y2, z2, damage, p7, weaponHash, ownerPed, isAudible, isInvisible, speed, entity) end
 
     
@@ -5096,8 +5097,8 @@ function ShootSingleBulletBetweenCoordsIgnoreEntity(x1, y1, z1, x2, y2, z2, dama
 --- @param isInvisible boolean
 --- @param speed number (float)
 --- @param entity Entity
---- @return void
---- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, damage: number, p7: boolean, weaponHash: Hash, ownerPed: Ped, isAudible: boolean, isInvisible: boolean, speed: number, entity: Entity): void
+--- @return nil
+--- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, damage: number, p7: boolean, weaponHash: Hash, ownerPed: Ped, isAudible: boolean, isInvisible: boolean, speed: number, entity: Entity): nil
 --- @deprecated
 function N_0xe3a7742e0b7a2f8b(x1, y1, z1, x2, y2, z2, damage, p7, weaponHash, ownerPed, isAudible, isInvisible, speed, entity) end
 
@@ -5126,8 +5127,8 @@ function N_0xe3a7742e0b7a2f8b(x1, y1, z1, x2, y2, z2, damage, p7, weaponHash, ow
 --- @param isInvisible boolean
 --- @param speed number (float)
 --- @param entity Entity
---- @return void
---- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, damage: number, p7: boolean, weaponHash: Hash, ownerPed: Ped, isAudible: boolean, isInvisible: boolean, speed: number, entity: Entity): void
+--- @return nil
+--- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, damage: number, p7: boolean, weaponHash: Hash, ownerPed: Ped, isAudible: boolean, isInvisible: boolean, speed: number, entity: Entity): nil
 --- @deprecated
 function ShootSingleBulletBetweenCoordsPresetParams(x1, y1, z1, x2, y2, z2, damage, p7, weaponHash, ownerPed, isAudible, isInvisible, speed, entity) end
 
@@ -5138,8 +5139,8 @@ function ShootSingleBulletBetweenCoordsPresetParams(x1, y1, z1, x2, y2, z2, dama
 ---
 --- @hash [0xE3D969D2785FFB5E](https://docs.fivem.net/natives/?_0xE3D969D2785FFB5E)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xe3d969d2785ffb5e() end
 
     
@@ -5150,8 +5151,8 @@ function N_0xe3d969d2785ffb5e() end
 --- @hash [0xE532EC1A63231B4F](https://docs.fivem.net/natives/?_0xE532EC1A63231B4F)
 --- @param p0 number (int)
 --- @param p1 number (int)
---- @return void
---- @overload fun(p0: number, p1: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: number): nil
 function N_0xe532ec1a63231b4f(p0, p1) end
 
     
@@ -5174,8 +5175,8 @@ function IsPointObscuredByAMissionEntity(p0, p1, p2, p3, p4, p5, p6) end
 ---
 --- @hash [0xE574A662ACAEFBB1](https://docs.fivem.net/natives/?_0xE574A662ACAEFBB1)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function RestartGame() end
 
     
@@ -5184,8 +5185,8 @@ function RestartGame() end
 ---
 --- @hash [0xE574A662ACAEFBB1](https://docs.fivem.net/natives/?_0xE574A662ACAEFBB1)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xe574a662acaefbb1() end
 
@@ -5215,8 +5216,8 @@ function N_0xe599a503b3837e1b() end
 --- @hash [0xE6869BECDD8F2403](https://docs.fivem.net/natives/?_0xE6869BECDD8F2403)
 --- @param id number (int)
 --- @param p1 boolean
---- @return void
---- @overload fun(id: number, p1: boolean): void
+--- @return nil
+--- @overload fun(id: number, p1: boolean): nil
 function RemovePopMultiplierSphere(id, p1) end
 
     
@@ -5226,8 +5227,8 @@ function RemovePopMultiplierSphere(id, p1) end
 --- @hash [0xE6869BECDD8F2403](https://docs.fivem.net/natives/?_0xE6869BECDD8F2403)
 --- @param id number (int)
 --- @param p1 boolean
---- @return void
---- @overload fun(id: number, p1: boolean): void
+--- @return nil
+--- @overload fun(id: number, p1: boolean): nil
 --- @deprecated
 function N_0xe6869becdd8f2403(id, p1) end
 
@@ -5236,8 +5237,8 @@ function N_0xe6869becdd8f2403(id, p1) end
 ---
 --- @hash [0xE6B7B0ACD4E4B75E](https://docs.fivem.net/natives/?_0xE6B7B0ACD4E4B75E)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function CancelStuntJump() end
 
     
@@ -5252,8 +5253,8 @@ function CancelStuntJump() end
 --- @hash [0xE80492A9AC099A93](https://docs.fivem.net/natives/?_0xE80492A9AC099A93)
 --- @param address number (int*)
 --- @param offset number (int)
---- @return void
---- @overload fun(offset: number): number
+--- @return nil
+--- @overload fun(offset: number): nil, number
 function ClearBit(address, offset) end
 
     
@@ -5323,8 +5324,8 @@ function N_0xea2f2061875eed90() end
 --- @hash [0xEB078CA2B5E82ADD](https://docs.fivem.net/natives/?_0xEB078CA2B5E82ADD)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0xeb078ca2b5e82add(p0, p1) end
 
     
@@ -5333,8 +5334,8 @@ function N_0xeb078ca2b5e82add(p0, p1) end
 --- SetWindDirection(math.rad(180.0)
 --- @hash [0xEB0F4468467B4528](https://docs.fivem.net/natives/?_0xEB0F4468467B4528)
 --- @param direction number (float)
---- @return void
---- @overload fun(direction: number): void
+--- @return nil
+--- @overload fun(direction: number): nil
 function SetWindDirection(direction) end
 
     
@@ -5342,8 +5343,8 @@ function SetWindDirection(direction) end
 ---
 --- @hash [0xEB1774DF12BB9F12](https://docs.fivem.net/natives/?_0xEB1774DF12BB9F12)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function StopSaveStruct() end
 
     
@@ -5362,8 +5363,8 @@ function N_0xeb2104e905c6f2e9() end
 ---
 --- @hash [0xEB2DB0CAD13154B3](https://docs.fivem.net/natives/?_0xEB2DB0CAD13154B3)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function ResetDispatchTimeBetweenSpawnAttempts(p0) end
 
     
@@ -5404,8 +5405,8 @@ function GetNumberOfDispatchedUnitsForPlayer(dispatchService) end
 ---
 --- @hash [0xEB6891F03362FB12](https://docs.fivem.net/natives/?_0xEB6891F03362FB12)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ForceSocialClubUpdate() end
 
     
@@ -5413,8 +5414,8 @@ function ForceSocialClubUpdate() end
 ---
 --- @hash [0xEBD3205A207939ED](https://docs.fivem.net/natives/?_0xEBD3205A207939ED)
 --- @param p0 any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 function N_0xebd3205a207939ed(p0) end
 
     
@@ -5422,8 +5423,8 @@ function N_0xebd3205a207939ed(p0) end
 ---
 --- @hash [0xED712CA327900C8A](https://docs.fivem.net/natives/?_0xED712CA327900C8A)
 --- @param weatherType string (char*)
---- @return void
---- @overload fun(weatherType: string): void
+--- @return nil
+--- @overload fun(weatherType: string): nil
 function SetWeatherTypeNowPersist(weatherType) end
 
     
@@ -5432,8 +5433,8 @@ function SetWeatherTypeNowPersist(weatherType) end
 --- @hash [0xEDB1232C5BEAE62F](https://docs.fivem.net/natives/?_0xEDB1232C5BEAE62F)
 --- @param p0 any
 --- @param name string (char*)
---- @return void
---- @overload fun(): any): string
+--- @return nil
+--- @overload fun(): nil, any): nil, string
 function RegisterTextLabelToSave(p0, name) end
 
     
@@ -5443,8 +5444,8 @@ function RegisterTextLabelToSave(p0, name) end
 ---
 --- @hash [0xEE09ECEDBABE47FC](https://docs.fivem.net/natives/?_0xEE09ECEDBABE47FC)
 --- @param speed number (float)
---- @return void
---- @overload fun(speed: number): void
+--- @return nil
+--- @overload fun(speed: number): nil
 function SetWindSpeed(speed) end
 
     
@@ -5483,8 +5484,8 @@ function Absi(value) end
 ---
 --- @hash [0xF14878FC50BEC6EE](https://docs.fivem.net/natives/?_0xF14878FC50BEC6EE)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function UsingMissionCreator(toggle) end
 
     
@@ -5545,8 +5546,8 @@ function GetRandomIntInRange_2(startRange, endRange) end
 --- @param y1 number (float)
 --- @param z1 number (float)
 --- @param w1 number (float)
---- @return number, number, number, number
---- @overload fun(t: number, x: number, y: number, z: number, w: number, x1: number, y1: number, z1: number, w1: number): number, number, number, number
+--- @return nil, number, number, number, number
+--- @overload fun(t: number, x: number, y: number, z: number, w: number, x1: number, y1: number, z1: number, w1: number): nil, number, number, number, number
 function SlerpNearQuaternion(t, x, y, z, w, x1, y1, z1, w1) end
 
     
@@ -5563,8 +5564,8 @@ function SlerpNearQuaternion(t, x, y, z, w, x1, y1, z1, w1) end
 --- @param y1 number (float)
 --- @param z1 number (float)
 --- @param w1 number (float)
---- @return number, number, number, number
---- @overload fun(t: number, x: number, y: number, z: number, w: number, x1: number, y1: number, z1: number, w1: number): number, number, number, number
+--- @return nil, number, number, number, number
+--- @overload fun(t: number, x: number, y: number, z: number, w: number, x1: number, y1: number, z1: number, w1: number): nil, number, number, number, number
 --- @deprecated
 function N_0xf2f6a2fa49278625(t, x, y, z, w, x1, y1, z1, w1) end
 
@@ -5573,8 +5574,8 @@ function N_0xf2f6a2fa49278625(t, x, y, z, w, x1, y1, z1, w1) end
 ---
 --- @hash [0xF36199225D6D8C86](https://docs.fivem.net/natives/?_0xF36199225D6D8C86)
 --- @param opacity number (float)
---- @return void
---- @overload fun(opacity: number): void
+--- @return nil
+--- @overload fun(opacity: number): nil
 function SetCloudHatOpacity(opacity) end
 
     
@@ -5583,8 +5584,8 @@ function SetCloudHatOpacity(opacity) end
 ---
 --- @hash [0xF36199225D6D8C86](https://docs.fivem.net/natives/?_0xF36199225D6D8C86)
 --- @param opacity number (float)
---- @return void
---- @overload fun(opacity: number): void
+--- @return nil
+--- @overload fun(opacity: number): nil
 --- @deprecated
 function N_0xf36199225d6d8c86(opacity) end
 
@@ -5593,8 +5594,8 @@ function N_0xf36199225d6d8c86(opacity) end
 ---
 --- @hash [0xF3BBE884A14BB413](https://docs.fivem.net/natives/?_0xF3BBE884A14BB413)
 ---
---- @return Hash, Hash, number
---- @overload fun(): Hash, Hash, number
+--- @return nil, Hash, Hash, number
+--- @overload fun(): nil, Hash, Hash, number
 function GetWeatherTypeTransition() end
 
     
@@ -5602,8 +5603,8 @@ function GetWeatherTypeTransition() end
 ---
 --- @hash [0xF3D78F59DFE18D79](https://docs.fivem.net/natives/?_0xF3D78F59DFE18D79)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetFadeInAfterLoad(toggle) end
 
     
@@ -5634,8 +5635,8 @@ function N_0xf56dfb7b61be7276(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, 
 ---
 --- @hash [0xF6062E089251C898](https://docs.fivem.net/natives/?_0xF6062E089251C898)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ForceLightningFlash() end
 
     
@@ -5646,8 +5647,8 @@ function ForceLightningFlash() end
 ---
 --- @hash [0xF6062E089251C898](https://docs.fivem.net/natives/?_0xF6062E089251C898)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function CreateLightningThunder() end
 
@@ -5665,8 +5666,8 @@ function IsXbox360Version() end
 ---
 --- @hash [0xF751B16FB32ABC1D](https://docs.fivem.net/natives/?_0xF751B16FB32ABC1D)
 --- @param minAmplitude number (float)
---- @return void
---- @overload fun(minAmplitude: number): void
+--- @return nil
+--- @overload fun(minAmplitude: number): nil
 function WaterOverrideSetOceanwaveminamplitude(minAmplitude) end
 
     
@@ -5675,8 +5676,8 @@ function WaterOverrideSetOceanwaveminamplitude(minAmplitude) end
 ---
 --- @hash [0xF751B16FB32ABC1D](https://docs.fivem.net/natives/?_0xF751B16FB32ABC1D)
 --- @param minAmplitude number (float)
---- @return void
---- @overload fun(minAmplitude: number): void
+--- @return nil
+--- @overload fun(minAmplitude: number): nil
 --- @deprecated
 function N_0xf751b16fb32abc1d(minAmplitude) end
 
@@ -5687,8 +5688,8 @@ function N_0xf751b16fb32abc1d(minAmplitude) end
 ---
 --- @hash [0xFA3FFB0EEBC288A3](https://docs.fivem.net/natives/?_0xFA3FFB0EEBC288A3)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0xfa3ffb0eebc288a3(p0) end
 
     
@@ -5709,8 +5710,8 @@ function N_0xfa3ffb0eebc288a3(p0) end
 --- @hash [0xFAA457EF263E8763](https://docs.fivem.net/natives/?_0xFAA457EF263E8763)
 --- @param p0 any
 --- @param name string (char*)
---- @return void
---- @overload fun(): any): string
+--- @return nil
+--- @overload fun(): nil, any): nil, string
 function N_0xfaa457ef263e8763(p0, name) end
 
     
@@ -5718,8 +5719,8 @@ function N_0xfaa457ef263e8763(p0, name) end
 ---
 --- @hash [0xFB00CA71DA386228](https://docs.fivem.net/natives/?_0xFB00CA71DA386228)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xfb00ca71da386228() end
 
     
@@ -5728,8 +5729,8 @@ function N_0xfb00ca71da386228() end
 --- @hash [0xFB5045B7C42B75BF](https://docs.fivem.net/natives/?_0xFB5045B7C42B75BF)
 --- @param weatherType string (char*)
 --- @param time number (float)
---- @return void
---- @overload fun(weatherType: string, time: number): void
+--- @return nil
+--- @overload fun(weatherType: string, time: number): nil
 function SetWeatherTypeOvertimePersist(weatherType, time) end
 
     
@@ -5739,8 +5740,8 @@ function SetWeatherTypeOvertimePersist(weatherType, time) end
 --- @hash [0xFB5045B7C42B75BF](https://docs.fivem.net/natives/?_0xFB5045B7C42B75BF)
 --- @param weatherType string (char*)
 --- @param time number (float)
---- @return void
---- @overload fun(weatherType: string, time: number): void
+--- @return nil
+--- @overload fun(weatherType: string, time: number): nil
 --- @deprecated
 function SetWeatherTypeOverTime(weatherType, time) end
 
@@ -5751,8 +5752,8 @@ function SetWeatherTypeOverTime(weatherType, time) end
 ---
 --- @hash [0xFB80AB299D2EE1BD](https://docs.fivem.net/natives/?_0xFB80AB299D2EE1BD)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function N_0xfb80ab299d2ee1bd(toggle) end
 
     
@@ -5783,8 +5784,8 @@ function N_0xfb80ab299d2ee1bd(toggle) end
 --- @hash [0xFC4842A34657BFCB](https://docs.fivem.net/natives/?_0xFC4842A34657BFCB)
 --- @param name string (char*)
 --- @param transitionTime number (float)
---- @return void
---- @overload fun(name: string, transitionTime: number): void
+--- @return nil
+--- @overload fun(name: string, transitionTime: number): nil
 function LoadCloudHat(name, transitionTime) end
 
     
@@ -5816,8 +5817,8 @@ function LoadCloudHat(name, transitionTime) end
 --- @hash [0xFC4842A34657BFCB](https://docs.fivem.net/natives/?_0xFC4842A34657BFCB)
 --- @param name string (char*)
 --- @param transitionTime number (float)
---- @return void
---- @overload fun(name: string, transitionTime: number): void
+--- @return nil
+--- @overload fun(name: string, transitionTime: number): nil
 --- @deprecated
 function SetCloudHatTransition(name, transitionTime) end
 
@@ -5871,8 +5872,8 @@ function IsSniperBulletInArea(x1, y1, z1, x2, y2, z2) end
 ---
 --- @hash [0xFF1BED81BFDC0FE0](https://docs.fivem.net/natives/?_0xFF1BED81BFDC0FE0)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function SetExplosiveMeleeThisFrame(player) end
 
     

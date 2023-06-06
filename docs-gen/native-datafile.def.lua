@@ -1,3 +1,4 @@
+--- @meta
 
 --- ```
 --- NativeDB Added Parameter 2: Any p1
@@ -177,8 +178,8 @@ function N_0x22da66936e0fff37(p0) end
 ---
 --- @hash [0x2ED61456317B8178](https://docs.fivem.net/natives/?_0x2ED61456317B8178)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function DatafileStoreMissionHeader() end
 
     
@@ -189,8 +190,8 @@ function DatafileStoreMissionHeader() end
 ---
 --- @hash [0x2ED61456317B8178](https://docs.fivem.net/natives/?_0x2ED61456317B8178)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x2ed61456317b8178() end
 
@@ -200,8 +201,8 @@ function N_0x2ed61456317b8178() end
 --- @hash [0x2F0661C155AEEEAA](https://docs.fivem.net/natives/?_0x2F0661C155AEEEAA)
 --- @param arrayData any
 --- @param value string (char*)
---- @return void
---- @overload fun(): any): string
+--- @return nil
+--- @overload fun(): nil, any): nil, string
 function DataarrayAddString(arrayData, value) end
 
     
@@ -211,8 +212,8 @@ function DataarrayAddString(arrayData, value) end
 --- @hash [0x2F0661C155AEEEAA](https://docs.fivem.net/natives/?_0x2F0661C155AEEEAA)
 --- @param arrayData any
 --- @param value string (char*)
---- @return void
---- @overload fun(): any): string
+--- @return nil
+--- @overload fun(): nil, any): nil, string
 --- @deprecated
 function ArrayValueAddString(arrayData, value) end
 
@@ -223,8 +224,8 @@ function ArrayValueAddString(arrayData, value) end
 --- @param objectData any
 --- @param key string (char*)
 --- @param value boolean
---- @return void
---- @overload fun(value: boolean): any): string
+--- @return nil
+--- @overload fun(value: boolean): nil, any): nil, string
 function DatadictSetBool(objectData, key, value) end
 
     
@@ -235,8 +236,8 @@ function DatadictSetBool(objectData, key, value) end
 --- @param objectData any
 --- @param key string (char*)
 --- @param value boolean
---- @return void
---- @overload fun(value: boolean): any): string
+--- @return nil
+--- @overload fun(value: boolean): nil, any): nil, string
 --- @deprecated
 function ObjectValueAddBoolean(objectData, key, value) end
 
@@ -332,8 +333,8 @@ function ArrayValueGetInteger(arrayData, arrayIndex) end
 --- @param valueX number (float)
 --- @param valueY number (float)
 --- @param valueZ number (float)
---- @return void
---- @overload fun(valueX: number, valueY: number, valueZ: number): any
+--- @return nil
+--- @overload fun(valueX: number, valueY: number, valueZ: number): nil, any
 function DataarrayAddVector(arrayData, valueX, valueY, valueZ) end
 
     
@@ -345,8 +346,8 @@ function DataarrayAddVector(arrayData, valueX, valueY, valueZ) end
 --- @param valueX number (float)
 --- @param valueY number (float)
 --- @param valueZ number (float)
---- @return void
---- @overload fun(valueX: number, valueY: number, valueZ: number): any
+--- @return nil
+--- @overload fun(valueX: number, valueY: number, valueZ: number): nil, any
 --- @deprecated
 function ArrayValueAddVector3(arrayData, valueX, valueY, valueZ) end
 
@@ -413,8 +414,8 @@ function ObjectValueGetVector3(objectData, key) end
 --- @param valueX number (float)
 --- @param valueY number (float)
 --- @param valueZ number (float)
---- @return void
---- @overload fun(valueX: number, valueY: number, valueZ: number): any): string
+--- @return nil
+--- @overload fun(valueX: number, valueY: number, valueZ: number): nil, any): nil, string
 function DatadictSetVector(objectData, key, valueX, valueY, valueZ) end
 
     
@@ -427,8 +428,8 @@ function DatadictSetVector(objectData, key, valueX, valueY, valueZ) end
 --- @param valueX number (float)
 --- @param valueY number (float)
 --- @param valueZ number (float)
---- @return void
---- @overload fun(valueX: number, valueY: number, valueZ: number): any): string
+--- @return nil
+--- @overload fun(valueX: number, valueY: number, valueZ: number): nil, any): nil, string
 --- @deprecated
 function ObjectValueAddVector3(objectData, key, valueX, valueY, valueZ) end
 
@@ -504,8 +505,8 @@ function N_0x52818819057f2b40(p0) end
 --- @hash [0x57A995FD75D37F56](https://docs.fivem.net/natives/?_0x57A995FD75D37F56)
 --- @param arrayData any
 --- @param value number (float)
---- @return void
---- @overload fun(value: number): any
+--- @return nil
+--- @overload fun(value: number): nil, any
 function DataarrayAddFloat(arrayData, value) end
 
     
@@ -515,8 +516,8 @@ function DataarrayAddFloat(arrayData, value) end
 --- @hash [0x57A995FD75D37F56](https://docs.fivem.net/natives/?_0x57A995FD75D37F56)
 --- @param arrayData any
 --- @param value number (float)
---- @return void
---- @overload fun(value: number): any
+--- @return nil
+--- @overload fun(value: number): nil, any
 --- @deprecated
 function ArrayValueAddFloat(arrayData, value) end
 
@@ -633,8 +634,8 @@ function N_0x692d808c34a82143(contentId, rating, contentTypeName) end
 ---
 --- @hash [0x6AD0BD5E087866CB](https://docs.fivem.net/natives/?_0x6AD0BD5E087866CB)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x6ad0bd5e087866cb(p0) end
 
     
@@ -642,8 +643,8 @@ function N_0x6ad0bd5e087866cb(p0) end
 ---
 --- @hash [0x6CC86E78358D5119](https://docs.fivem.net/natives/?_0x6CC86E78358D5119)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function DatafileClearWatchList() end
 
     
@@ -652,8 +653,8 @@ function DatafileClearWatchList() end
 ---
 --- @hash [0x6CC86E78358D5119](https://docs.fivem.net/natives/?_0x6CC86E78358D5119)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x6cc86e78358d5119() end
 
@@ -796,8 +797,8 @@ function N_0x8f5ea1c01d65a100(p0) end
 --- @param objectData any
 --- @param key string (char*)
 --- @param value string (char*)
---- @return void
---- @overload fun(): any): string): string
+--- @return nil
+--- @overload fun(): nil, any): nil, string): nil, string
 function DatadictSetString(objectData, key, value) end
 
     
@@ -808,8 +809,8 @@ function DatadictSetString(objectData, key, value) end
 --- @param objectData any
 --- @param key string (char*)
 --- @param value string (char*)
---- @return void
---- @overload fun(): any): string): string
+--- @return nil
+--- @overload fun(): nil, any): nil, string): nil, string
 --- @deprecated
 function ObjectValueAddString(objectData, key, value) end
 
@@ -844,8 +845,8 @@ function N_0x906b778ca1dc72b6() end
 ---
 --- @hash [0x9AB9C1CFC8862DFB](https://docs.fivem.net/natives/?_0x9AB9C1CFC8862DFB)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function DatafileDelete() end
 
     
@@ -971,8 +972,8 @@ function N_0xa6eef01087181edd(p0, p1) end
 ---
 --- @hash [0xAD6875BBC0FC899C](https://docs.fivem.net/natives/?_0xAD6875BBC0FC899C)
 --- @param id number (int)
---- @return void
---- @overload fun(id: number): void
+--- @return nil
+--- @overload fun(id: number): nil
 function DatafileWatchRequestId(id) end
 
     
@@ -983,8 +984,8 @@ function DatafileWatchRequestId(id) end
 ---
 --- @hash [0xAD6875BBC0FC899C](https://docs.fivem.net/natives/?_0xAD6875BBC0FC899C)
 --- @param id number (int)
---- @return void
---- @overload fun(id: number): void
+--- @return nil
+--- @overload fun(id: number): nil
 --- @deprecated
 function N_0xad6875bbc0fc899c(id) end
 
@@ -1097,8 +1098,8 @@ function ArrayValueGetFloat(arrayData, arrayIndex) end
 --- @param objectData any
 --- @param key string (char*)
 --- @param value number (float)
---- @return void
---- @overload fun(value: number): any): string
+--- @return nil
+--- @overload fun(value: number): nil, any): nil, string
 function DatadictSetFloat(objectData, key, value) end
 
     
@@ -1109,8 +1110,8 @@ function DatadictSetFloat(objectData, key, value) end
 --- @param objectData any
 --- @param key string (char*)
 --- @param value number (float)
---- @return void
---- @overload fun(value: number): any): string
+--- @return nil
+--- @overload fun(value: number): nil, any): nil, string
 --- @deprecated
 function ObjectValueAddFloat(objectData, key, value) end
 
@@ -1157,8 +1158,8 @@ function LoadUgcFile(filename) end
 ---
 --- @hash [0xC55854C7D7274882](https://docs.fivem.net/natives/?_0xC55854C7D7274882)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function DatafileFlushMissionHeader() end
 
     
@@ -1167,8 +1168,8 @@ function DatafileFlushMissionHeader() end
 ---
 --- @hash [0xC55854C7D7274882](https://docs.fivem.net/natives/?_0xC55854C7D7274882)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xc55854c7d7274882() end
 
@@ -1214,8 +1215,8 @@ function N_0xc84527e235fca219(data, dataCount, contentName, description, tagsCsv
 --- @hash [0xCABDB751D86FE93B](https://docs.fivem.net/natives/?_0xCABDB751D86FE93B)
 --- @param arrayData any
 --- @param value number (int)
---- @return void
---- @overload fun(value: number): any
+--- @return nil
+--- @overload fun(value: number): nil, any
 function DataarrayAddInt(arrayData, value) end
 
     
@@ -1225,8 +1226,8 @@ function DataarrayAddInt(arrayData, value) end
 --- @hash [0xCABDB751D86FE93B](https://docs.fivem.net/natives/?_0xCABDB751D86FE93B)
 --- @param arrayData any
 --- @param value number (int)
---- @return void
---- @overload fun(value: number): any
+--- @return nil
+--- @overload fun(value: number): nil, any
 --- @deprecated
 function ArrayValueAddInteger(arrayData, value) end
 
@@ -1237,8 +1238,8 @@ function ArrayValueAddInteger(arrayData, value) end
 ---
 --- @hash [0xD27058A1CA2B13EE](https://docs.fivem.net/natives/?_0xD27058A1CA2B13EE)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function DatafileCreate() end
 
     
@@ -1281,8 +1282,8 @@ function N_0xdbf860cf1db8e599(p0) end
 --- @param objectData any
 --- @param key string (char*)
 --- @param value number (int)
---- @return void
---- @overload fun(value: number): any): string
+--- @return nil
+--- @overload fun(value: number): nil, any): nil, string
 function DatadictSetInt(objectData, key, value) end
 
     
@@ -1293,8 +1294,8 @@ function DatadictSetInt(objectData, key, value) end
 --- @param objectData any
 --- @param key string (char*)
 --- @param value number (int)
---- @return void
---- @overload fun(value: number): any): string
+--- @return nil
+--- @overload fun(value: number): nil, any): nil, string
 --- @deprecated
 function ObjectValueAddInteger(objectData, key, value) end
 
@@ -1304,8 +1305,8 @@ function ObjectValueAddInteger(objectData, key, value) end
 --- @hash [0xF8B0F5A43E928C76](https://docs.fivem.net/natives/?_0xF8B0F5A43E928C76)
 --- @param arrayData any
 --- @param value boolean
---- @return void
---- @overload fun(value: boolean): any
+--- @return nil
+--- @overload fun(value: boolean): nil, any
 function DataarrayAddBool(arrayData, value) end
 
     
@@ -1315,8 +1316,8 @@ function DataarrayAddBool(arrayData, value) end
 --- @hash [0xF8B0F5A43E928C76](https://docs.fivem.net/natives/?_0xF8B0F5A43E928C76)
 --- @param arrayData any
 --- @param value boolean
---- @return void
---- @overload fun(value: boolean): any
+--- @return nil
+--- @overload fun(value: boolean): nil, any
 --- @deprecated
 function ArrayValueAddBoolean(arrayData, value) end
 

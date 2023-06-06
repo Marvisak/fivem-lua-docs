@@ -1,3 +1,4 @@
+--- @meta
 
 --- ```
 --- Gets the current ingame clock minute.  
@@ -44,8 +45,8 @@ function GetClockDayOfMonth() end
 ---
 --- @hash [0x4055E40BD2DBEC1D](https://docs.fivem.net/natives/?_0x4055E40BD2DBEC1D)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function PauseClock(toggle) end
 
     
@@ -57,8 +58,8 @@ function PauseClock(toggle) end
 --- @param hour number (int)
 --- @param minute number (int)
 --- @param second number (int)
---- @return void
---- @overload fun(hour: number, minute: number, second: number): void
+--- @return nil
+--- @overload fun(hour: number, minute: number, second: number): nil
 function SetClockTime(hour, minute, second) end
 
     
@@ -88,8 +89,8 @@ function GetClockSeconds() end
 ---
 --- @hash [0x50C7A99057A69748](https://docs.fivem.net/natives/?_0x50C7A99057A69748)
 ---
---- @return number, number, number, number, number, number
---- @overload fun(): number, number, number, number, number, number
+--- @return nil, number, number, number, number, number, number
+--- @overload fun(): nil, number, number, number, number, number, number
 function GetLocalTime() end
 
     
@@ -99,8 +100,8 @@ function GetLocalTime() end
 ---
 --- @hash [0x8117E09A19EEF4D3](https://docs.fivem.net/natives/?_0x8117E09A19EEF4D3)
 ---
---- @return number, number, number, number, number, number
---- @overload fun(): number, number, number, number, number, number
+--- @return nil, number, number, number, number, number, number
+--- @overload fun(): nil, number, number, number, number, number, number
 function GetUtcTime() end
 
     
@@ -111,8 +112,8 @@ function GetUtcTime() end
 ---
 --- @hash [0x8117E09A19EEF4D3](https://docs.fivem.net/natives/?_0x8117E09A19EEF4D3)
 ---
---- @return number, number, number, number, number, number
---- @overload fun(): number, number, number, number, number, number
+--- @return nil, number, number, number, number, number, number
+--- @overload fun(): nil, number, number, number, number, number, number
 --- @deprecated
 function GetUtcTime() end
 
@@ -132,8 +133,8 @@ function GetClockYear() end
 --- @param day number (int)
 --- @param month number (int)
 --- @param year number (int)
---- @return void
---- @overload fun(day: number, month: number, year: number): void
+--- @return nil
+--- @overload fun(day: number, month: number, year: number): nil
 function SetClockDate(day, month, year) end
 
     
@@ -152,8 +153,8 @@ function GetClockMonth() end
 --- @param hour number (int)
 --- @param minute number (int)
 --- @param second number (int)
---- @return void
---- @overload fun(hour: number, minute: number, second: number): void
+--- @return nil
+--- @overload fun(hour: number, minute: number, second: number): nil
 function AdvanceClockTimeTo(hour, minute, second) end
 
     
@@ -163,8 +164,8 @@ function AdvanceClockTimeTo(hour, minute, second) end
 --- @param hours number (int)
 --- @param minutes number (int)
 --- @param seconds number (int)
---- @return void
---- @overload fun(hours: number, minutes: number, seconds: number): void
+--- @return nil
+--- @overload fun(hours: number, minutes: number, seconds: number): nil
 function AddToClockTime(hours, minutes, seconds) end
 
     
@@ -200,8 +201,8 @@ function GetClockDayOfWeek() end
 ---
 --- @hash [0xDA488F299A5B164E](https://docs.fivem.net/natives/?_0xDA488F299A5B164E)
 ---
---- @return number, number, number, number, number, number
---- @overload fun(): number, number, number, number, number, number
+--- @return nil, number, number, number, number, number, number
+--- @overload fun(): nil, number, number, number, number, number, number
 function GetPosixTime() end
 
     

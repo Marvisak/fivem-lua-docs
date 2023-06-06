@@ -1,3 +1,4 @@
+--- @meta
 
 --- GetZoneAtCoords
 ---
@@ -31,8 +32,8 @@ function GetZonePopschedule(zoneId) end
 ---
 --- @hash [0x5C0DE367AA0D911C](https://docs.fivem.net/natives/?_0x5C0DE367AA0D911C)
 --- @param scheduleId number (int)
---- @return void
---- @overload fun(scheduleId: number): void
+--- @return nil
+--- @overload fun(scheduleId: number): nil
 function ClearPopscheduleOverrideVehicleModel(scheduleId) end
 
     
@@ -70,8 +71,8 @@ function GetZoneScumminess(zoneId) end
 --- @hash [0x5F7D596BAC2E7777](https://docs.fivem.net/natives/?_0x5F7D596BAC2E7777)
 --- @param scheduleId number (int)
 --- @param vehicleHash Hash
---- @return void
---- @overload fun(scheduleId: number, vehicleHash: Hash): void
+--- @return nil
+--- @overload fun(scheduleId: number, vehicleHash: Hash): nil
 function OverridePopscheduleVehicleModel(scheduleId, vehicleHash) end
 
     
@@ -199,8 +200,8 @@ function GetZoneFromNameId(zoneName) end
 --- @hash [0xBA5ECEEA120E5611](https://docs.fivem.net/natives/?_0xBA5ECEEA120E5611)
 --- @param zoneId number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(zoneId: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(zoneId: number, toggle: boolean): nil
 function SetZoneEnabled(zoneId, toggle) end
 
     

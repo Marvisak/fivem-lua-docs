@@ -1,3 +1,6 @@
+--- @meta
+
+
 --- Creates a new vector depending on the count of arguments.
 --- @param x number
 --- @param y number
@@ -293,7 +296,6 @@ end
 function quat(w, x, y, z)
 end
 
-
 --- Creates a new matrix depending on the count of arguments.
 ---
 --- [More info about matrices here](https://github.com/citizenfx/lua/tree/luaglm-dev/cfx#matrices)
@@ -313,7 +315,7 @@ end
 ---
 --- @overload fun(vec1: Vector4, vec2: Vector4): Matrix2x4
 --- @overload fun(vec1: Vector4, vec2: Vector4, vec3: Vector4): Matrix3x4
-function mat(vec1,vec2,vec3,vec4)
+function mat(vec1, vec2, vec3, vec4)
 end
 
 --- Create a new 2x2 matrix
@@ -322,7 +324,7 @@ end
 --- @param vec1 Vector2
 --- @param vec2 Vector2
 --- @return Matrix2x2
-function mat2x2(vec1,vec2)
+function mat2x2(vec1, vec2)
 end
 
 --- Create a new 3x2 matrix
@@ -332,7 +334,7 @@ end
 --- @param vec2 Vector2
 --- @param vec3 Vector2
 --- @return Matrix3x2
-function mat3x2(vec1,vec2,vec3)
+function mat3x2(vec1, vec2, vec3)
 end
 
 --- Create a new 4x2 matrix
@@ -343,7 +345,7 @@ end
 --- @param vec3 Vector2
 --- @param vec4 Vector2
 --- @return Matrix4x2
-function mat4x2(vec1,vec2,vec3,vec4)
+function mat4x2(vec1, vec2, vec3, vec4)
 end
 
 --- Create a new 2x3 matrix

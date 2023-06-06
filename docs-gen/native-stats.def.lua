@@ -1,3 +1,4 @@
+--- @meta
 
 --- ```
 --- NativeDB Introduced: v1868
@@ -8,8 +9,8 @@
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function N_0x0077f15613d36993(p0, p1, p2, p3) end
 
     
@@ -17,8 +18,8 @@ function N_0x0077f15613d36993(p0, p1, p2, p3) end
 ---
 --- @hash [0x015B03EE1C43E6EC](https://docs.fivem.net/natives/?_0x015B03EE1C43E6EC)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x015b03ee1c43e6ec(p0) end
 
     
@@ -32,8 +33,8 @@ function N_0x015b03ee1c43e6ec(p0) end
 --- @param p4 any
 --- @param p5 any
 --- @param p6 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any): nil
 function N_0x03c2eebb04b3fb72(p0, p1, p2, p3, p4, p5, p6) end
 
     
@@ -41,8 +42,8 @@ function N_0x03c2eebb04b3fb72(p0, p1, p2, p3, p4, p5, p6) end
 ---
 --- @hash [0x047CBED6F6F8B63C](https://docs.fivem.net/natives/?_0x047CBED6F6F8B63C)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function StatSetCheatIsActive() end
 
     
@@ -51,8 +52,8 @@ function StatSetCheatIsActive() end
 ---
 --- @hash [0x047CBED6F6F8B63C](https://docs.fivem.net/natives/?_0x047CBED6F6F8B63C)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x047cbed6f6f8b63c() end
 
@@ -63,8 +64,8 @@ function N_0x047cbed6f6f8b63c() end
 ---
 --- @hash [0x049F059625058A86](https://docs.fivem.net/natives/?_0x049F059625058A86)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function PlaystatsCasinoInsidetrack(p0) end
 
     
@@ -72,8 +73,8 @@ function PlaystatsCasinoInsidetrack(p0) end
 ---
 --- @hash [0x04D90BA8207ADA2D](https://docs.fivem.net/natives/?_0x04D90BA8207ADA2D)
 --- @param data any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 function PlaystatsRecoverContraband(data) end
 
     
@@ -82,8 +83,8 @@ function PlaystatsRecoverContraband(data) end
 ---
 --- @hash [0x04D90BA8207ADA2D](https://docs.fivem.net/natives/?_0x04D90BA8207ADA2D)
 --- @param data any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 --- @deprecated
 function N_0x04d90ba8207ada2d(data) end
 
@@ -92,8 +93,8 @@ function N_0x04d90ba8207ada2d(data) end
 ---
 --- @hash [0x06EAF70AE066441E](https://docs.fivem.net/natives/?_0x06EAF70AE066441E)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x06eaf70ae066441e(p0) end
 
     
@@ -103,8 +104,8 @@ function N_0x06eaf70ae066441e(p0) end
 ---
 --- @hash [0x098760C7461724CD](https://docs.fivem.net/natives/?_0x098760C7461724CD)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function PlaystatsStartOfflineMode() end
 
     
@@ -115,8 +116,8 @@ function PlaystatsStartOfflineMode() end
 ---
 --- @hash [0x098760C7461724CD](https://docs.fivem.net/natives/?_0x098760C7461724CD)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x098760c7461724cd() end
 
@@ -127,8 +128,8 @@ function N_0x098760c7461724cd() end
 ---
 --- @hash [0x0999F3F090EC5012](https://docs.fivem.net/natives/?_0x0999F3F090EC5012)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function PlaystatsCasinoChip(p0) end
 
     
@@ -140,8 +141,8 @@ function PlaystatsCasinoChip(p0) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 function PlaystatsChangeMcEmblem(p0, p1, p2, p3, p4) end
 
     
@@ -154,8 +155,8 @@ function PlaystatsChangeMcEmblem(p0, p1, p2, p3, p4) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 --- @deprecated
 function N_0x0a50d2604e05cb94(p0, p1, p2, p3, p4) end
 
@@ -164,8 +165,8 @@ function N_0x0a50d2604e05cb94(p0, p1, p2, p3, p4) end
 ---
 --- @hash [0x0A9C7F36E5D7B683](https://docs.fivem.net/natives/?_0x0A9C7F36E5D7B683)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x0a9c7f36e5d7b683(p0) end
 
     
@@ -179,8 +180,8 @@ function N_0x0a9c7f36e5d7b683(p0) end
 --- @param p4 any
 --- @param p5 any
 --- @param p6 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any): nil
 function N_0x0b565b0aae56a0e8(p0, p1, p2, p3, p4, p5, p6) end
 
     
@@ -199,8 +200,8 @@ function N_0x0b8b7f74bf061c6d() end
 ---
 --- @hash [0x0BC254FF3A911501](https://docs.fivem.net/natives/?_0x0BC254FF3A911501)
 --- @param data any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 function PlaystatsDarMissionEnd(data) end
 
     
@@ -210,8 +211,8 @@ function PlaystatsDarMissionEnd(data) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 number (float)
---- @return void
---- @overload fun(p0: any, p1: any, p2: number): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: number): nil
 function LeaderboardsWriteAddColumn(p0, p1, p2) end
 
     
@@ -222,8 +223,8 @@ function LeaderboardsWriteAddColumn(p0, p1, p2) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 number (float)
---- @return void
---- @overload fun(p0: any, p1: any, p2: number): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: number): nil
 --- @deprecated
 function N_0x0bca1d2c47b0d269(p0, p1, p2) end
 
@@ -234,8 +235,8 @@ function N_0x0bca1d2c47b0d269(p0, p1, p2) end
 ---
 --- @hash [0x0C432C1435F5E4FA](https://docs.fivem.net/natives/?_0x0C432C1435F5E4FA)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function PlaystatsCasinoLuckyseven(p0) end
 
     
@@ -244,8 +245,8 @@ function PlaystatsCasinoLuckyseven(p0) end
 --- @hash [0x0D01D20616FC73FB](https://docs.fivem.net/natives/?_0x0D01D20616FC73FB)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x0d01d20616fc73fb(p0, p1) end
 
     
@@ -262,8 +263,8 @@ function StatSlotIsLoaded(p0) end
 ---
 --- @hash [0x0EACDF8487D5155A](https://docs.fivem.net/natives/?_0x0EACDF8487D5155A)
 --- @param data any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 function PlaystatsGunrunMissionEnded(data) end
 
     
@@ -272,8 +273,8 @@ function PlaystatsGunrunMissionEnded(data) end
 ---
 --- @hash [0x0EACDF8487D5155A](https://docs.fivem.net/natives/?_0x0EACDF8487D5155A)
 --- @param data any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 --- @deprecated
 function N_0x0eacdf8487d5155a(data) end
 
@@ -283,8 +284,8 @@ function N_0x0eacdf8487d5155a(data) end
 --- @hash [0x0F71DE29AB2258F1](https://docs.fivem.net/natives/?_0x0F71DE29AB2258F1)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function PlaystatsFriendActivity(p0, p1) end
 
     
@@ -320,8 +321,8 @@ function LeaderboardsGetNumberOfColumns(p0, p1) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function PlaystatsCarclubChallenge(p0, p1, p2, p3) end
 
     
@@ -335,8 +336,8 @@ function PlaystatsCarclubChallenge(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 --- @deprecated
 function N_0x1187cb58d7f3bed7(p0, p1, p2, p3) end
 
@@ -358,8 +359,8 @@ function StatGetBool(statHash, outValue, p2) end
 --- @param statHash Hash
 --- @param value number (int)
 --- @param p2 number (int)
---- @return void
---- @overload fun(statHash: Hash, value: number, p2: number): void
+--- @return nil
+--- @overload fun(statHash: Hash, value: number, p2: number): nil
 function PresenceEventUpdatestatInt(statHash, value, p2) end
 
     
@@ -370,8 +371,8 @@ function PresenceEventUpdatestatInt(statHash, value, p2) end
 --- @param statHash Hash
 --- @param value number (int)
 --- @param p2 number (int)
---- @return void
---- @overload fun(statHash: Hash, value: number, p2: number): void
+--- @return nil
+--- @overload fun(statHash: Hash, value: number, p2: number): nil
 --- @deprecated
 function N_0x11ff1c80276097ed(statHash, value, p2) end
 
@@ -383,8 +384,8 @@ function N_0x11ff1c80276097ed(statHash, value, p2) end
 --- @param statHash Hash
 --- @param value number (int)
 --- @param p2 number (int)
---- @return void
---- @overload fun(statHash: Hash, value: number, p2: number): void
+--- @return nil
+--- @overload fun(statHash: Hash, value: number, p2: number): nil
 --- @deprecated
 function UpdateStatInt(statHash, value, p2) end
 
@@ -396,8 +397,8 @@ function UpdateStatInt(statHash, value, p2) end
 --- @param act number (int)
 --- @param player Player
 --- @param cm number (float)
---- @return void
---- @overload fun(amount: number, act: number, player: Player, cm: number): void
+--- @return nil
+--- @overload fun(amount: number, act: number, player: Player, cm: number): nil
 function PlaystatsRosBet(amount, act, player, cm) end
 
     
@@ -409,8 +410,8 @@ function PlaystatsRosBet(amount, act, player, cm) end
 --- @param act number (int)
 --- @param player Player
 --- @param cm number (float)
---- @return void
---- @overload fun(amount: number, act: number, player: Player, cm: number): void
+--- @return nil
+--- @overload fun(amount: number, act: number, player: Player, cm: number): nil
 --- @deprecated
 function N_0x121fb4dddc2d5291(amount, act, player, cm) end
 
@@ -419,8 +420,8 @@ function N_0x121fb4dddc2d5291(amount, act, player, cm) end
 ---
 --- @hash [0x14E0B2D1AD1044E0](https://docs.fivem.net/natives/?_0x14E0B2D1AD1044E0)
 ---
---- @return any, any, any, any
---- @overload fun(): any, any, any, any
+--- @return nil, any, any, any, any
+--- @overload fun(): nil, any, any, any, any
 function N_0x14e0b2d1ad1044e0() end
 
     
@@ -428,8 +429,8 @@ function N_0x14e0b2d1ad1044e0() end
 ---
 --- @hash [0x14EDA9EE27BD1626](https://docs.fivem.net/natives/?_0x14EDA9EE27BD1626)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x14eda9ee27bd1626(p0) end
 
     
@@ -437,8 +438,8 @@ function N_0x14eda9ee27bd1626(p0) end
 ---
 --- @hash [0x164C5FF663790845](https://docs.fivem.net/natives/?_0x164C5FF663790845)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x164c5ff663790845(p0) end
 
     
@@ -450,8 +451,8 @@ function N_0x164c5ff663790845(p0) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 function PlaystatsShopItem(p0, p1, p2, p3, p4) end
 
     
@@ -537,8 +538,8 @@ function StatSetGxtLabel(statName, value, save) end
 ---
 --- @hash [0x1A0D4A6C336B7BC5](https://docs.fivem.net/natives/?_0x1A0D4A6C336B7BC5)
 --- @param data any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 function PlaystatsCasinoMissionEnded(data) end
 
     
@@ -548,8 +549,8 @@ function PlaystatsCasinoMissionEnded(data) end
 ---
 --- @hash [0x1A67DFBF1F5C3835](https://docs.fivem.net/natives/?_0x1A67DFBF1F5C3835)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function PlaystatsRobberyPrep(p0) end
 
     
@@ -560,8 +561,8 @@ function PlaystatsRobberyPrep(p0) end
 ---
 --- @hash [0x1A67DFBF1F5C3835](https://docs.fivem.net/natives/?_0x1A67DFBF1F5C3835)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 --- @deprecated
 function N_0x1a67dfbf1f5c3835(p0) end
 
@@ -570,8 +571,8 @@ function N_0x1a67dfbf1f5c3835(p0) end
 ---
 --- @hash [0x1A7CE7CD3E653485](https://docs.fivem.net/natives/?_0x1A7CE7CD3E653485)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x1a7ce7cd3e653485(p0) end
 
     
@@ -596,8 +597,8 @@ function N_0x1a8ea222f9c67dbb(p0) end
 --- @param p3 any
 --- @param p4 any
 --- @param p5 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any): nil
 function PlaystatsCrateDropMissionDone(p0, p1, p2, p3, p4, p5) end
 
     
@@ -614,8 +615,8 @@ function PlaystatsCrateDropMissionDone(p0, p1, p2, p3, p4, p5) end
 --- @param p3 any
 --- @param p4 any
 --- @param p5 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any): nil
 --- @deprecated
 function N_0x1cae5d2e3f9a07f0(p0, p1, p2, p3, p4, p5) end
 
@@ -633,8 +634,8 @@ function N_0x1cae5d2e3f9a07f0(p0, p1, p2, p3, p4, p5) end
 --- @param p3 any
 --- @param p4 any
 --- @param p5 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any): nil
 --- @deprecated
 function PlaystatsCrateDrop(p0, p1, p2, p3, p4, p5) end
 
@@ -648,8 +649,8 @@ function PlaystatsCrateDrop(p0, p1, p2, p3, p4, p5) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p1: any, p2: any, p3: any): any
+--- @return nil
+--- @overload fun(p1: any, p2: any, p3: any): nil, any
 function PlaystatsH2InstanceEnd(data, p1, p2, p3) end
 
     
@@ -657,8 +658,8 @@ function PlaystatsH2InstanceEnd(data, p1, p2, p3) end
 ---
 --- @hash [0x203B381133817079](https://docs.fivem.net/natives/?_0x203B381133817079)
 --- @param data any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 function PlaystatsPiMenuHideSettings(data) end
 
     
@@ -667,8 +668,8 @@ function PlaystatsPiMenuHideSettings(data) end
 ---
 --- @hash [0x203B381133817079](https://docs.fivem.net/natives/?_0x203B381133817079)
 --- @param data any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 --- @deprecated
 function N_0x203b381133817079(data) end
 
@@ -690,8 +691,8 @@ function StatGetUserId(p0) end
 ---
 --- @hash [0x23A3CBCD50D54E47](https://docs.fivem.net/natives/?_0x23A3CBCD50D54E47)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function PlaystatsCasinoInsidetrackLight(p0) end
 
     
@@ -699,8 +700,8 @@ function PlaystatsCasinoInsidetrackLight(p0) end
 ---
 --- @hash [0x2605663BD4F23B5D](https://docs.fivem.net/natives/?_0x2605663BD4F23B5D)
 --- @param data any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 function PlaystatsDefendContraband(data) end
 
     
@@ -709,8 +710,8 @@ function PlaystatsDefendContraband(data) end
 ---
 --- @hash [0x2605663BD4F23B5D](https://docs.fivem.net/natives/?_0x2605663BD4F23B5D)
 --- @param data any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 --- @deprecated
 function N_0x2605663bd4f23b5d(data) end
 
@@ -729,8 +730,8 @@ function N_0x2605663bd4f23b5d(data) end
 ---
 --- @hash [0x26D7399B9587FE89](https://docs.fivem.net/natives/?_0x26D7399B9587FE89)
 --- @param p0 number (int)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function N_0x26d7399b9587fe89(p0) end
 
     
@@ -747,8 +748,8 @@ function N_0x26d7399b9587fe89(p0) end
 --- @param p7 any
 --- @param p8 any
 --- @param p9 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any, p9: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any, p9: any): nil
 function N_0x27aa1c973cacfe63(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9) end
 
     
@@ -758,8 +759,8 @@ function N_0x27aa1c973cacfe63(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9) end
 ---
 --- @hash [0x2818FF6638CB09DE](https://docs.fivem.net/natives/?_0x2818FF6638CB09DE)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x2818ff6638cb09de(p0) end
 
     
@@ -767,8 +768,8 @@ function N_0x2818ff6638cb09de(p0) end
 ---
 --- @hash [0x282B6739644F4347](https://docs.fivem.net/natives/?_0x282B6739644F4347)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x282b6739644f4347(p0) end
 
     
@@ -780,8 +781,8 @@ function N_0x282b6739644f4347(p0) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 function N_0x28ecb8ac2f607db2(p0, p1, p2, p3, p4) end
 
     
@@ -858,8 +859,8 @@ function N_0x2b4cdca6f07ff3da(index, spStat, charStat, character, section) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function PlaystatsImportExportMissionDone(p0, p1, p2, p3) end
 
     
@@ -871,8 +872,8 @@ function PlaystatsImportExportMissionDone(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 --- @deprecated
 function N_0x2b69f5074c894811(p0, p1, p2, p3) end
 
@@ -885,8 +886,8 @@ function N_0x2b69f5074c894811(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 --- @deprecated
 function PlaystatsImpExp(p0, p1, p2, p3) end
 
@@ -918,8 +919,8 @@ function StatSetDate(statName, value, numFields, save) end
 ---
 --- @hash [0x2CD90358F67D0AA8](https://docs.fivem.net/natives/?_0x2CD90358F67D0AA8)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x2cd90358f67d0aa8(p0) end
 
     
@@ -949,8 +950,8 @@ function N_0x2ce056ff3723f00b(statName) end
 ---
 --- @hash [0x2D7A9B577E72385E](https://docs.fivem.net/natives/?_0x2D7A9B577E72385E)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x2d7a9b577e72385e(p0) end
 
     
@@ -960,8 +961,8 @@ function N_0x2d7a9b577e72385e(p0) end
 ---
 --- @hash [0x2E0259BABC27A327](https://docs.fivem.net/natives/?_0x2E0259BABC27A327)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x2e0259babc27a327(p0) end
 
     
@@ -971,8 +972,8 @@ function N_0x2e0259babc27a327(p0) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function LeaderboardsWriteAddColumnLong(p0, p1, p2) end
 
     
@@ -983,8 +984,8 @@ function LeaderboardsWriteAddColumnLong(p0, p1, p2) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 --- @deprecated
 function N_0x2e65248609523599(p0, p1, p2) end
 
@@ -999,8 +1000,8 @@ function N_0x2e65248609523599(p0, p1, p2) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 function N_0x2fa3173480008493(p0, p1, p2, p3, p4) end
 
     
@@ -1021,8 +1022,8 @@ function LeaderboardsReadSuccessful(p0, p1, p2) end
 --- @param statHash Hash
 --- @param value number (float)
 --- @param p2 number (int)
---- @return void
---- @overload fun(statHash: Hash, value: number, p2: number): void
+--- @return nil
+--- @overload fun(statHash: Hash, value: number, p2: number): nil
 function PresenceEventUpdatestatFloat(statHash, value, p2) end
 
     
@@ -1033,8 +1034,8 @@ function PresenceEventUpdatestatFloat(statHash, value, p2) end
 --- @param statHash Hash
 --- @param value number (float)
 --- @param p2 number (int)
---- @return void
---- @overload fun(statHash: Hash, value: number, p2: number): void
+--- @return nil
+--- @overload fun(statHash: Hash, value: number, p2: number): nil
 --- @deprecated
 function N_0x30a6614c1f7799b8(statHash, value, p2) end
 
@@ -1046,8 +1047,8 @@ function N_0x30a6614c1f7799b8(statHash, value, p2) end
 --- @param statHash Hash
 --- @param value number (float)
 --- @param p2 number (int)
---- @return void
---- @overload fun(statHash: Hash, value: number, p2: number): void
+--- @return nil
+--- @overload fun(statHash: Hash, value: number, p2: number): nil
 --- @deprecated
 function UpdateStatFloat(statHash, value, p2) end
 
@@ -1058,8 +1059,8 @@ function UpdateStatFloat(statHash, value, p2) end
 ---
 --- @hash [0x316DB59CD14C1774](https://docs.fivem.net/natives/?_0x316DB59CD14C1774)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x316db59cd14c1774(p0) end
 
     
@@ -1069,8 +1070,8 @@ function N_0x316db59cd14c1774(p0) end
 ---
 --- @hash [0x320C35147D5B5DDD](https://docs.fivem.net/natives/?_0x320C35147D5B5DDD)
 --- @param data any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 function PlaystatsSmugMissionEnded(data) end
 
     
@@ -1135,8 +1136,8 @@ function N_0x34770b9ce0e03b91(p0, p1) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 function PlaystatsClothChange(p0, p1, p2, p3, p4) end
 
     
@@ -1156,8 +1157,8 @@ function StatGetPos(p0, p4) end
 ---
 --- @hash [0x35E39E5570358630](https://docs.fivem.net/natives/?_0x35E39E5570358630)
 --- @param data any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 function PlaystatsStoneHatchetEnd(data) end
 
     
@@ -1170,8 +1171,8 @@ function PlaystatsStoneHatchetEnd(data) end
 --- @param p1 number (int)
 --- @param p2 number (int)
 --- @param p3 number (int)
---- @return void
---- @overload fun(p0: boolean, p1: number, p2: number, p3: number): void
+--- @return nil
+--- @overload fun(p0: boolean, p1: number, p2: number, p3: number): nil
 function PlaystatsPassiveMode(p0, p1, p2, p3) end
 
     
@@ -1191,8 +1192,8 @@ function N_0x38491439b6ba7f7d(p0, p1) end
 ---
 --- @hash [0x38BAAA5DD4C9D19F](https://docs.fivem.net/natives/?_0x38BAAA5DD4C9D19F)
 --- @param value number (int)
---- @return void
---- @overload fun(value: number): void
+--- @return nil
+--- @overload fun(value: number): nil
 function N_0x38baaa5dd4c9d19f(value) end
 
     
@@ -1200,8 +1201,8 @@ function N_0x38baaa5dd4c9d19f(value) end
 ---
 --- @hash [0x3DE3AA516FB126A4](https://docs.fivem.net/natives/?_0x3DE3AA516FB126A4)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x3de3aa516fb126a4(p0) end
 
     
@@ -1211,8 +1212,8 @@ function N_0x3de3aa516fb126a4(p0) end
 ---
 --- @hash [0x3EAE97309727E7AD](https://docs.fivem.net/natives/?_0x3EAE97309727E7AD)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function PlaystatsCasinoBlackjack(p0) end
 
     
@@ -1220,8 +1221,8 @@ function PlaystatsCasinoBlackjack(p0) end
 ---
 --- @hash [0x3EBEAC6C3F81F6BD](https://docs.fivem.net/natives/?_0x3EBEAC6C3F81F6BD)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x3ebeac6c3f81f6bd(p0) end
 
     
@@ -1229,8 +1230,8 @@ function N_0x3ebeac6c3f81f6bd(p0) end
 ---
 --- @hash [0x419615486BBF1956](https://docs.fivem.net/natives/?_0x419615486BBF1956)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x419615486bbf1956(p0) end
 
     
@@ -1239,8 +1240,8 @@ function N_0x419615486bbf1956(p0) end
 --- @hash [0x428EAF89E24F6C36](https://docs.fivem.net/natives/?_0x428EAF89E24F6C36)
 --- @param statName Hash
 --- @param value number (float)
---- @return void
---- @overload fun(statName: Hash, value: number): void
+--- @return nil
+--- @overload fun(statName: Hash, value: number): nil
 function LeaderboardsDeaths(statName, value) end
 
     
@@ -1250,8 +1251,8 @@ function LeaderboardsDeaths(statName, value) end
 --- @hash [0x428EAF89E24F6C36](https://docs.fivem.net/natives/?_0x428EAF89E24F6C36)
 --- @param statName Hash
 --- @param value number (float)
---- @return void
---- @overload fun(statName: Hash, value: number): void
+--- @return nil
+--- @overload fun(statName: Hash, value: number): nil
 --- @deprecated
 function N_0x428eaf89e24f6c36(statName, value) end
 
@@ -1260,8 +1261,8 @@ function N_0x428eaf89e24f6c36(statName, value) end
 ---
 --- @hash [0x44919CC079BB60BF](https://docs.fivem.net/natives/?_0x44919CC079BB60BF)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x44919cc079bb60bf(p0) end
 
     
@@ -1269,8 +1270,8 @@ function N_0x44919cc079bb60bf(p0) end
 ---
 --- @hash [0x46326E13DA4E0546](https://docs.fivem.net/natives/?_0x46326E13DA4E0546)
 --- @param p0 any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 function PlaystatsDirectorMode(p0) end
 
     
@@ -1279,8 +1280,8 @@ function PlaystatsDirectorMode(p0) end
 ---
 --- @hash [0x46326E13DA4E0546](https://docs.fivem.net/natives/?_0x46326E13DA4E0546)
 --- @param p0 any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 --- @deprecated
 function N_0x46326e13da4e0546(p0) end
 
@@ -1291,8 +1292,8 @@ function N_0x46326e13da4e0546(p0) end
 --- @param amount number (int)
 --- @param type Hash
 --- @param category Hash
---- @return void
---- @overload fun(amount: number, type: Hash, category: Hash): void
+--- @return nil
+--- @overload fun(amount: number, type: Hash, category: Hash): nil
 function PlaystatsAwardXp(amount, type, category) end
 
     
@@ -1300,8 +1301,8 @@ function PlaystatsAwardXp(amount, type, category) end
 ---
 --- @hash [0x47B32F5611E6E483](https://docs.fivem.net/natives/?_0x47B32F5611E6E483)
 --- @param id number (int)
---- @return void
---- @overload fun(id: number): void
+--- @return nil
+--- @overload fun(id: number): nil
 function PlaystatsAwardBadsport(id) end
 
     
@@ -1310,8 +1311,8 @@ function PlaystatsAwardBadsport(id) end
 ---
 --- @hash [0x47B32F5611E6E483](https://docs.fivem.net/natives/?_0x47B32F5611E6E483)
 --- @param id number (int)
---- @return void
---- @overload fun(id: number): void
+--- @return nil
+--- @overload fun(id: number): nil
 --- @deprecated
 function N_0x47b32f5611e6e483(id) end
 
@@ -1345,8 +1346,8 @@ function StatDeleteSlot(p0) end
 ---
 --- @hash [0x4AFF7E02E485E92B](https://docs.fivem.net/natives/?_0x4AFF7E02E485E92B)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x4aff7e02e485e92b() end
 
     
@@ -1383,8 +1384,8 @@ function N_0x4c89fe2bdeb3f169() end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 function N_0x4dc416f246a41fc8(p0, p1, p2, p3, p4) end
 
     
@@ -1395,8 +1396,8 @@ function N_0x4dc416f246a41fc8(p0, p1, p2, p3, p4) end
 --- @hash [0x4FCDBD3F0A813C25](https://docs.fivem.net/natives/?_0x4FCDBD3F0A813C25)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x4fcdbd3f0a813c25(p0, p1) end
 
     
@@ -1425,8 +1426,8 @@ function N_0x4fef53183c3c6414() end
 --- @hash [0x5009DFD741329729](https://docs.fivem.net/natives/?_0x5009DFD741329729)
 --- @param action string (char*)
 --- @param value number (int)
---- @return void
---- @overload fun(action: string, value: number): void
+--- @return nil
+--- @overload fun(action: string, value: number): nil
 function PlaystatsBackgroundScriptAction(action, value) end
 
     
@@ -1436,8 +1437,8 @@ function PlaystatsBackgroundScriptAction(action, value) end
 --- @hash [0x5009DFD741329729](https://docs.fivem.net/natives/?_0x5009DFD741329729)
 --- @param action string (char*)
 --- @param value number (int)
---- @return void
---- @overload fun(action: string, value: number): void
+--- @return nil
+--- @overload fun(action: string, value: number): nil
 --- @deprecated
 function N_0x5009dfd741329729(action, value) end
 
@@ -1451,8 +1452,8 @@ function N_0x5009dfd741329729(action, value) end
 --- @param p3 any
 --- @param p4 any
 --- @param p5 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any): nil
 function PlaystatsEarnedMcPoints(p0, p1, p2, p3, p4, p5) end
 
     
@@ -1466,8 +1467,8 @@ function PlaystatsEarnedMcPoints(p0, p1, p2, p3, p4, p5) end
 --- @param p3 any
 --- @param p4 any
 --- @param p5 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any): nil
 --- @deprecated
 function N_0x501478855a6074ce(p0, p1, p2, p3, p4, p5) end
 
@@ -1476,8 +1477,8 @@ function N_0x501478855a6074ce(p0, p1, p2, p3, p4, p5) end
 ---
 --- @hash [0x516FC96EB88EEFE5](https://docs.fivem.net/natives/?_0x516FC96EB88EEFE5)
 --- @param p0 number (int)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function PlaystatsBanAlert(p0) end
 
     
@@ -1486,8 +1487,8 @@ function PlaystatsBanAlert(p0) end
 ---
 --- @hash [0x516FC96EB88EEFE5](https://docs.fivem.net/natives/?_0x516FC96EB88EEFE5)
 --- @param p0 number (int)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 --- @deprecated
 function N_0x516fc96eb88eefe5(p0) end
 
@@ -1503,8 +1504,8 @@ function N_0x516fc96eb88eefe5(p0) end
 --- @param p3 any
 --- @param p4 any
 --- @param p5 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any): nil
 function PlaystatsArcadegame(p0, p1, p2, p3, p4, p5) end
 
     
@@ -1514,8 +1515,8 @@ function PlaystatsArcadegame(p0, p1, p2, p3, p4, p5) end
 ---
 --- @hash [0x53C31853EC9531FF](https://docs.fivem.net/natives/?_0x53C31853EC9531FF)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x53c31853ec9531ff(p0) end
 
     
@@ -1523,8 +1524,8 @@ function N_0x53c31853ec9531ff(p0) end
 ---
 --- @hash [0x53CAE13E9B426993](https://docs.fivem.net/natives/?_0x53CAE13E9B426993)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x53cae13e9b426993(p0) end
 
     
@@ -1543,8 +1544,8 @@ function StatGetLicensePlate(statName) end
 ---
 --- @hash [0x55384438FC55AD8E](https://docs.fivem.net/natives/?_0x55384438FC55AD8E)
 --- @param value number (int)
---- @return void
---- @overload fun(value: number): void
+--- @return nil
+--- @overload fun(value: number): nil
 function N_0x55384438fc55ad8e(value) end
 
     
@@ -1583,8 +1584,8 @@ function N_0x567384dfa67029e6() end
 ---
 --- @hash [0x5688585E6D563CD8](https://docs.fivem.net/natives/?_0x5688585E6D563CD8)
 --- @param p0 number (int)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function N_0x5688585e6d563cd8(p0) end
 
     
@@ -1648,8 +1649,8 @@ function N_0x5bd5f255321c4aaf(p0) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 function N_0x5bf29846c6527c54(p0, p1, p2, p3, p4) end
 
     
@@ -1659,8 +1660,8 @@ function N_0x5bf29846c6527c54(p0, p1, p2, p3, p4) end
 ---
 --- @hash [0x5CDAED54B34B0ED0](https://docs.fivem.net/natives/?_0x5CDAED54B34B0ED0)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x5cdaed54b34b0ed0(p0) end
 
     
@@ -1679,8 +1680,8 @@ function Leaderboards2ReadByRadius(p1) end
 ---
 --- @hash [0x5DA3A8DE8CB6226F](https://docs.fivem.net/natives/?_0x5DA3A8DE8CB6226F)
 --- @param time number (int)
---- @return void
---- @overload fun(time: number): void
+--- @return nil
+--- @overload fun(time: number): nil
 function PlaystatsIdleKick(time) end
 
     
@@ -1691,8 +1692,8 @@ function PlaystatsIdleKick(time) end
 ---
 --- @hash [0x5DA3A8DE8CB6226F](https://docs.fivem.net/natives/?_0x5DA3A8DE8CB6226F)
 --- @param time number (int)
---- @return void
---- @overload fun(time: number): void
+--- @return nil
+--- @overload fun(time: number): nil
 --- @deprecated
 function N_0x5da3a8de8cb6226f(time) end
 
@@ -1716,8 +1717,8 @@ function N_0x5ead2bf6484852e4() end
 ---
 --- @hash [0x5FF2C33B13A02A11](https://docs.fivem.net/natives/?_0x5FF2C33B13A02A11)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x5ff2c33b13a02a11(p0) end
 
     
@@ -1725,8 +1726,8 @@ function N_0x5ff2c33b13a02a11(p0) end
 ---
 --- @hash [0x6058665D72302D3F](https://docs.fivem.net/natives/?_0x6058665D72302D3F)
 --- @param cheat string (char*)
---- @return void
---- @overload fun(cheat: string): void
+--- @return nil
+--- @overload fun(cheat: string): nil
 function PlaystatsCheatApplied(cheat) end
 
     
@@ -1734,8 +1735,8 @@ function PlaystatsCheatApplied(cheat) end
 ---
 --- @hash [0x60EEDC12AF66E846](https://docs.fivem.net/natives/?_0x60EEDC12AF66E846)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x60eedc12af66e846(p0) end
 
     
@@ -1783,8 +1784,8 @@ function GetPstatIntHash(index, spStat, charStat, character) end
 ---
 --- @hash [0x629526ABA383BCAA](https://docs.fivem.net/natives/?_0x629526ABA383BCAA)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x629526aba383bcaa() end
 
     
@@ -1795,8 +1796,8 @@ function N_0x629526aba383bcaa() end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): any
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil, any
 function N_0x6483c25849031c4f(p0, p1, p2, p3) end
 
     
@@ -1817,8 +1818,8 @@ function StatGetMaskedInt(p0, p1, p2, p3, p4) end
 ---
 --- @hash [0x6551B1F7F6CD46EA](https://docs.fivem.net/natives/?_0x6551B1F7F6CD46EA)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x6551b1f7f6cd46ea(p0) end
 
     
@@ -1828,8 +1829,8 @@ function N_0x6551b1f7f6cd46ea(p0) end
 ---
 --- @hash [0x6572ABA3DE1197FC](https://docs.fivem.net/natives/?_0x6572ABA3DE1197FC)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function PlaystatsCasinoRouletteLight(p0) end
 
     
@@ -1841,8 +1842,8 @@ function PlaystatsCasinoRouletteLight(p0) end
 --- @param p0 number (int)
 --- @param p1 number (int)
 --- @param p2 number (int)
---- @return void
---- @overload fun(p0: number, p1: number, p2: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: number, p2: number): nil
 function PlaystatsDroneUsage(p0, p1, p2) end
 
     
@@ -1855,8 +1856,8 @@ function PlaystatsDroneUsage(p0, p1, p2) end
 --- @param p1 number (int)
 --- @param p2 number (int)
 --- @param p3 number (int)
---- @return void
---- @overload fun(p0: number, p1: number, p2: number, p3: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: number, p2: number, p3: number): nil
 function PlaystatsSpectatorWheelSpin(p0, p1, p2, p3) end
 
     
@@ -1864,8 +1865,8 @@ function PlaystatsSpectatorWheelSpin(p0, p1, p2, p3) end
 ---
 --- @hash [0x678F86D8FC040BDB](https://docs.fivem.net/natives/?_0x678F86D8FC040BDB)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x678f86d8fc040bdb(p0) end
 
     
@@ -1877,8 +1878,8 @@ function N_0x678f86d8fc040bdb(p0) end
 --- @hash [0x68F01422BE1D838F](https://docs.fivem.net/natives/?_0x68F01422BE1D838F)
 --- @param profileSetting number (int)
 --- @param value number (int)
---- @return void
---- @overload fun(profileSetting: number, value: number): void
+--- @return nil
+--- @overload fun(profileSetting: number, value: number): nil
 function StatSetProfileSettingValue(profileSetting, value) end
 
     
@@ -1891,8 +1892,8 @@ function StatSetProfileSettingValue(profileSetting, value) end
 --- @hash [0x68F01422BE1D838F](https://docs.fivem.net/natives/?_0x68F01422BE1D838F)
 --- @param profileSetting number (int)
 --- @param value number (int)
---- @return void
---- @overload fun(profileSetting: number, value: number): void
+--- @return nil
+--- @overload fun(profileSetting: number, value: number): nil
 --- @deprecated
 function N_0x68f01422be1d838f(profileSetting, value) end
 
@@ -1906,8 +1907,8 @@ function N_0x68f01422be1d838f(profileSetting, value) end
 --- @hash [0x68F01422BE1D838F](https://docs.fivem.net/natives/?_0x68F01422BE1D838F)
 --- @param profileSetting number (int)
 --- @param value number (int)
---- @return void
---- @overload fun(profileSetting: number, value: number): void
+--- @return nil
+--- @overload fun(profileSetting: number, value: number): nil
 --- @deprecated
 function StatSetProfileSetting(profileSetting, value) end
 
@@ -1919,8 +1920,8 @@ function StatSetProfileSetting(profileSetting, value) end
 --- @hash [0x69C922B677621428](https://docs.fivem.net/natives/?_0x69C922B677621428)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function PlaystatsCarclubPrize(p0, p1) end
 
     
@@ -1932,8 +1933,8 @@ function PlaystatsCarclubPrize(p0, p1) end
 --- @hash [0x69C922B677621428](https://docs.fivem.net/natives/?_0x69C922B677621428)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 --- @deprecated
 function N_0x69c922b677621428(p0, p1) end
 
@@ -1944,8 +1945,8 @@ function N_0x69c922b677621428(p0, p1) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function PlaystatsOddjobDone(p0, p1, p2) end
 
     
@@ -1963,8 +1964,8 @@ function StatSetLicensePlate(statName, str) end
 ---
 --- @hash [0x6A60E43998228229](https://docs.fivem.net/natives/?_0x6A60E43998228229)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x6a60e43998228229(p0) end
 
     
@@ -1985,8 +1986,8 @@ function N_0x6a7f19756f1a9016() end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function N_0x6bc0acd0673acebe(p0, p1, p2) end
 
     
@@ -1998,8 +1999,8 @@ function N_0x6bc0acd0673acebe(p0, p1, p2) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 function N_0x6bccf9948492fd85(p0, p1, p2, p3, p4) end
 
     
@@ -2025,8 +2026,8 @@ function N_0x6e0a5253375c4584() end
 ---
 --- @hash [0x6F361B8889A792A3](https://docs.fivem.net/natives/?_0x6F361B8889A792A3)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x6f361b8889a792a3() end
 
     
@@ -2040,8 +2041,8 @@ function N_0x6f361b8889a792a3() end
 --- @param p2 number (int)
 --- @param p3 number (int)
 --- @param p4 number (int)
---- @return void
---- @overload fun(p0: number, p1: number, p2: number, p3: number, p4: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: number, p2: number, p3: number, p4: number): nil
 function PlaystatsArenaWarSpectator(p0, p1, p2, p3, p4) end
 
     
@@ -2049,8 +2050,8 @@ function PlaystatsArenaWarSpectator(p0, p1, p2, p3, p4) end
 ---
 --- @hash [0x7033EEFD9B28088E](https://docs.fivem.net/natives/?_0x7033EEFD9B28088E)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x7033eefd9b28088e(p0) end
 
     
@@ -2061,8 +2062,8 @@ function N_0x7033eefd9b28088e(p0) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(name: string, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(name: string, p1: any, p2: any, p3: any): nil
 function PlaystatsRandomMissionDone(name, p1, p2, p3) end
 
     
@@ -2074,8 +2075,8 @@ function PlaystatsRandomMissionDone(name, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(name: string, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(name: string, p1: any, p2: any, p3: any): nil
 --- @deprecated
 function N_0x71862b1d855f32e1(name, p1, p2, p3) end
 
@@ -2084,8 +2085,8 @@ function N_0x71862b1d855f32e1(name, p1, p2, p3) end
 ---
 --- @hash [0x71B008056E5692D6](https://docs.fivem.net/natives/?_0x71B008056E5692D6)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x71b008056e5692d6() end
 
     
@@ -2094,8 +2095,8 @@ function N_0x71b008056e5692d6() end
 --- @hash [0x723C1CE13FBFDB67](https://docs.fivem.net/natives/?_0x723C1CE13FBFDB67)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x723c1ce13fbfdb67(p0, p1) end
 
     
@@ -2103,8 +2104,8 @@ function N_0x723c1ce13fbfdb67(p0, p1) end
 ---
 --- @hash [0x73001E34F85137F8](https://docs.fivem.net/natives/?_0x73001E34F85137F8)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x73001e34f85137f8(p0) end
 
     
@@ -2146,8 +2147,8 @@ function StatGetInt(statHash, outValue, p2) end
 --- @hash [0x792271AB35C356A4](https://docs.fivem.net/natives/?_0x792271AB35C356A4)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function HiredLimo(p0, p1) end
 
     
@@ -2157,8 +2158,8 @@ function HiredLimo(p0, p1) end
 --- @hash [0x792271AB35C356A4](https://docs.fivem.net/natives/?_0x792271AB35C356A4)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 --- @deprecated
 function N_0x792271ab35c356a4(p0, p1) end
 
@@ -2167,8 +2168,8 @@ function N_0x792271ab35c356a4(p0, p1) end
 ---
 --- @hash [0x79AB33F0FBFAC40C](https://docs.fivem.net/natives/?_0x79AB33F0FBFAC40C)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function PlaystatsAcquiredHiddenPackage(p0) end
 
     
@@ -2177,8 +2178,8 @@ function PlaystatsAcquiredHiddenPackage(p0) end
 ---
 --- @hash [0x79AB33F0FBFAC40C](https://docs.fivem.net/natives/?_0x79AB33F0FBFAC40C)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 --- @deprecated
 function N_0x79ab33f0fbfac40c(p0) end
 
@@ -2196,8 +2197,8 @@ function N_0x79ab33f0fbfac40c(p0) end
 --- @hash [0x79D310A861697CC9](https://docs.fivem.net/natives/?_0x79D310A861697CC9)
 --- @param profileSetting number (int)
 --- @param settingValue number (int)
---- @return void
---- @overload fun(profileSetting: number, settingValue: number): void
+--- @return nil
+--- @overload fun(profileSetting: number, settingValue: number): nil
 function N_0x79d310a861697cc9(profileSetting, settingValue) end
 
     
@@ -2205,8 +2206,8 @@ function N_0x79d310a861697cc9(profileSetting, settingValue) end
 ---
 --- @hash [0x7B18DA61F6BAE9D5](https://docs.fivem.net/natives/?_0x7B18DA61F6BAE9D5)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x7b18da61f6bae9d5(p0) end
 
     
@@ -2232,8 +2233,8 @@ function StatSetMaskedInt(statName, p1, p2, p3, save) end
 --- @param p3 boolean
 --- @param p4 boolean
 --- @param p5 boolean
---- @return void
---- @overload fun(p1: any, p2: any, p3: boolean, p4: boolean, p5: boolean): any
+--- @return nil
+--- @overload fun(p1: any, p2: any, p3: boolean, p4: boolean, p5: boolean): nil, any
 function PlaystatsMissionOver(p0, p1, p2, p3, p4, p5) end
 
     
@@ -2252,8 +2253,8 @@ function LeaderboardsReadClear(p0, p1, p2) end
 ---
 --- @hash [0x7D36291161859389](https://docs.fivem.net/natives/?_0x7D36291161859389)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x7d36291161859389(p0) end
 
     
@@ -2270,8 +2271,8 @@ function StatSavePending() end
 ---
 --- @hash [0x7D8BA05688AD64C7](https://docs.fivem.net/natives/?_0x7D8BA05688AD64C7)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x7d8ba05688ad64c7(p0) end
 
     
@@ -2292,8 +2293,8 @@ function N_0x7e6946f68a38b74f(p0) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function N_0x7eec2a316c250073(p0, p1, p2) end
 
     
@@ -2366,8 +2367,8 @@ function GetPstatBoolHash(index, spStat, charStat, character) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function N_0x810b5fcc52ec7ff0(p0, p1, p2, p3) end
 
     
@@ -2377,8 +2378,8 @@ function N_0x810b5fcc52ec7ff0(p0, p1, p2, p3) end
 ---
 --- @hash [0x830C3A44EB3F2CF9](https://docs.fivem.net/natives/?_0x830C3A44EB3F2CF9)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x830c3a44eb3f2cf9(p0) end
 
     
@@ -2386,8 +2387,8 @@ function N_0x830c3a44eb3f2cf9(p0) end
 ---
 --- @hash [0x848B66100EE33B05](https://docs.fivem.net/natives/?_0x848B66100EE33B05)
 --- @param data any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 function PlaystatsDupeDetection(data) end
 
     
@@ -2396,8 +2397,8 @@ function PlaystatsDupeDetection(data) end
 ---
 --- @hash [0x848B66100EE33B05](https://docs.fivem.net/natives/?_0x848B66100EE33B05)
 --- @param data any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 --- @deprecated
 function N_0x848b66100ee33b05(data) end
 
@@ -2415,8 +2416,8 @@ function N_0x84a810b375e69c0e() end
 ---
 --- @hash [0x84DFC579C2FC214C](https://docs.fivem.net/natives/?_0x84DFC579C2FC214C)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x84dfc579c2fc214c(p0) end
 
     
@@ -2426,8 +2427,8 @@ function N_0x84dfc579c2fc214c(p0) end
 ---
 --- @hash [0x878FF156D36E9956](https://docs.fivem.net/natives/?_0x878FF156D36E9956)
 --- @param data any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 function PlaystatsEnterSessionPack(data) end
 
     
@@ -2435,8 +2436,8 @@ function PlaystatsEnterSessionPack(data) end
 ---
 --- @hash [0x88087EE1F28024AE](https://docs.fivem.net/natives/?_0x88087EE1F28024AE)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x88087ee1f28024ae(p0) end
 
     
@@ -2476,8 +2477,8 @@ function N_0x886913bbeaca68c1(data) end
 ---
 --- @hash [0x887DAD63CF5B7908](https://docs.fivem.net/natives/?_0x887DAD63CF5B7908)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function PlaystatsInventory(p0) end
 
     
@@ -2491,8 +2492,8 @@ function PlaystatsInventory(p0) end
 --- @param p4 any
 --- @param p5 any
 --- @param p6 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any): nil
 function N_0x8989cbd7b4e82534(p0, p1, p2, p3, p4, p5, p6) end
 
     
@@ -2502,8 +2503,8 @@ function N_0x8989cbd7b4e82534(p0, p1, p2, p3, p4, p5, p6) end
 ---
 --- @hash [0x8A800DACCC0DA55D](https://docs.fivem.net/natives/?_0x8A800DACCC0DA55D)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function PlaystatsStuntPerformedEventDisallowTrigger() end
 
     
@@ -2514,8 +2515,8 @@ function PlaystatsStuntPerformedEventDisallowTrigger() end
 ---
 --- @hash [0x8A800DACCC0DA55D](https://docs.fivem.net/natives/?_0x8A800DACCC0DA55D)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x8a800daccc0da55d() end
 
@@ -2545,8 +2546,8 @@ function N_0x8b9cdbd6c566c38c() end
 ---
 --- @hash [0x8C9D11605E59D955](https://docs.fivem.net/natives/?_0x8C9D11605E59D955)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x8c9d11605e59d955(p0) end
 
     
@@ -2565,8 +2566,8 @@ function StatSetUserId(statName, value, save) end
 ---
 --- @hash [0x8D8ADB562F09A245](https://docs.fivem.net/natives/?_0x8D8ADB562F09A245)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x8d8adb562f09a245(p0) end
 
     
@@ -2574,8 +2575,8 @@ function N_0x8d8adb562f09a245(p0) end
 ---
 --- @hash [0x8EC74CEB042E7CFF](https://docs.fivem.net/natives/?_0x8EC74CEB042E7CFF)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x8ec74ceb042e7cff(p0) end
 
     
@@ -2584,8 +2585,8 @@ function N_0x8ec74ceb042e7cff(p0) end
 --- @hash [0x90D0622866E80445](https://docs.fivem.net/natives/?_0x90D0622866E80445)
 --- @param element number (int)
 --- @param item string (char*)
---- @return void
---- @overload fun(element: number, item: string): void
+--- @return nil
+--- @overload fun(element: number, item: string): nil
 function PlaystatsQuickfixTool(element, item) end
 
     
@@ -2595,8 +2596,8 @@ function PlaystatsQuickfixTool(element, item) end
 --- @hash [0x90D0622866E80445](https://docs.fivem.net/natives/?_0x90D0622866E80445)
 --- @param element number (int)
 --- @param item string (char*)
---- @return void
---- @overload fun(element: number, item: string): void
+--- @return nil
+--- @overload fun(element: number, item: string): nil
 --- @deprecated
 function N_0x90d0622866e80445(element, item) end
 
@@ -2630,8 +2631,8 @@ function Leaderboards2ReadFriendsByRow(p2, p3, p4, p5) end
 ---
 --- @hash [0x928DBFB892638EF3](https://docs.fivem.net/natives/?_0x928DBFB892638EF3)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function PlaystatsStuntPerformedEventAllowTrigger() end
 
     
@@ -2642,8 +2643,8 @@ function PlaystatsStuntPerformedEventAllowTrigger() end
 ---
 --- @hash [0x928DBFB892638EF3](https://docs.fivem.net/natives/?_0x928DBFB892638EF3)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x928dbfb892638ef3() end
 
@@ -2659,8 +2660,8 @@ function N_0x928dbfb892638ef3() end
 --- @param p3 any
 --- @param p4 any
 --- @param p5 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any): nil
 function N_0x92fc0eedfac04a14(p0, p1, p2, p3, p4, p5) end
 
     
@@ -2668,8 +2669,8 @@ function N_0x92fc0eedfac04a14(p0, p1, p2, p3, p4, p5) end
 ---
 --- @hash [0x93054C88E6AA7C44](https://docs.fivem.net/natives/?_0x93054C88E6AA7C44)
 --- @param p0 any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 function PlaystatsNpcInvite(p0) end
 
     
@@ -2677,8 +2678,8 @@ function PlaystatsNpcInvite(p0) end
 ---
 --- @hash [0x930F504203F561C9](https://docs.fivem.net/natives/?_0x930F504203F561C9)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x930f504203f561c9(p0) end
 
     
@@ -2712,8 +2713,8 @@ function N_0x94f12abf9c79e339(p0) end
 ---
 --- @hash [0x95101C443A84E7F1](https://docs.fivem.net/natives/?_0x95101C443A84E7F1)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function PlaystatsCasinoRoulette(p0) end
 
     
@@ -2723,8 +2724,8 @@ function PlaystatsCasinoRoulette(p0) end
 ---
 --- @hash [0x9572BD4DD6B72122](https://docs.fivem.net/natives/?_0x9572BD4DD6B72122)
 --- @param modelHash Hash
---- @return void
---- @overload fun(modelHash: Hash): void
+--- @return nil
+--- @overload fun(modelHash: Hash): nil
 function PlaystatsPegasaircraft(modelHash) end
 
     
@@ -2734,8 +2735,8 @@ function PlaystatsPegasaircraft(modelHash) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function N_0x96e6d5150dbf1c09(p0, p1, p2) end
 
     
@@ -2743,8 +2744,8 @@ function N_0x96e6d5150dbf1c09(p0, p1, p2) end
 ---
 --- @hash [0x98E2BC1CA26287C3](https://docs.fivem.net/natives/?_0x98E2BC1CA26287C3)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x98e2bc1ca26287c3() end
 
     
@@ -2761,8 +2762,8 @@ function N_0x9a62ec95ae10e011() end
 ---
 --- @hash [0x9B4BD21D69B1E609](https://docs.fivem.net/natives/?_0x9B4BD21D69B1E609)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x9b4bd21d69b1e609() end
 
     
@@ -2771,8 +2772,8 @@ function N_0x9b4bd21d69b1e609() end
 --- @hash [0x9B5A68C6489E9909](https://docs.fivem.net/natives/?_0x9B5A68C6489E9909)
 --- @param statName Hash
 --- @param value number (float)
---- @return void
---- @overload fun(statName: Hash, value: number): void
+--- @return nil
+--- @overload fun(statName: Hash, value: number): nil
 function StatIncrement(statName, value) end
 
     
@@ -2784,8 +2785,8 @@ function StatIncrement(statName, value) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 function PlaystatsRaceCheckpoint(p0, p1, p2, p3, p4) end
 
     
@@ -2812,8 +2813,8 @@ function N_0x9ec8858184cd253a() end
 --- @hash [0xA071E0ED98F91286](https://docs.fivem.net/natives/?_0xA071E0ED98F91286)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function PlaystatsActivityDone(p0, p1) end
 
     
@@ -2823,8 +2824,8 @@ function PlaystatsActivityDone(p0, p1) end
 --- @hash [0xA071E0ED98F91286](https://docs.fivem.net/natives/?_0xA071E0ED98F91286)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 --- @deprecated
 function N_0xa071e0ed98f91286(p0, p1) end
 
@@ -2881,8 +2882,8 @@ function LeaderboardsReadClearAll() end
 --- @hash [0xA3C53804BDB68ED2](https://docs.fivem.net/natives/?_0xA3C53804BDB68ED2)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0xa3c53804bdb68ed2(p0, p1) end
 
     
@@ -2923,8 +2924,8 @@ function StatLoad(p0) end
 ---
 --- @hash [0xA6F54BB2FFCA35EA](https://docs.fivem.net/natives/?_0xA6F54BB2FFCA35EA)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xa6f54bb2ffca35ea(p0) end
 
     
@@ -2932,8 +2933,8 @@ function N_0xa6f54bb2ffca35ea(p0) end
 ---
 --- @hash [0xA736CF7FB7C5BFF4](https://docs.fivem.net/natives/?_0xA736CF7FB7C5BFF4)
 ---
---- @return any, any, any, any
---- @overload fun(): any, any, any, any
+--- @return nil, any, any, any, any
+--- @overload fun(): nil, any, any, any, any
 function N_0xa736cf7fb7c5bff4() end
 
     
@@ -2958,8 +2959,8 @@ function N_0xa761d4ac6115623d() end
 ---
 --- @hash [0xA78B8FA58200DA56](https://docs.fivem.net/natives/?_0xA78B8FA58200DA56)
 --- @param p0 number (int)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function N_0xa78b8fa58200da56(p0) end
 
     
@@ -2967,8 +2968,8 @@ function N_0xa78b8fa58200da56(p0) end
 ---
 --- @hash [0xA8733668D1047B51](https://docs.fivem.net/natives/?_0xA8733668D1047B51)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xa8733668d1047b51(p0) end
 
     
@@ -3009,8 +3010,8 @@ function Leaderboards2ReadByRow(p2, p4, p6) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function N_0xaa525dff66bb82f5(p0, p1, p2) end
 
     
@@ -3045,8 +3046,8 @@ function LeaderboardsReadPending(p0, p1, p2) end
 --- @param p7 any
 --- @param p8 any
 --- @param p9 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any, p9: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any, p9: any): nil
 function PlaystatsRaceToPointMissionDone(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9) end
 
     
@@ -3071,8 +3072,8 @@ function PlaystatsRaceToPointMissionDone(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9)
 --- @param p7 any
 --- @param p8 any
 --- @param p9 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any, p9: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any, p9: any): nil
 --- @deprecated
 function N_0xaddd1c754e2e2914(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9) end
 
@@ -3098,8 +3099,8 @@ function N_0xaddd1c754e2e2914(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9) end
 --- @param p7 any
 --- @param p8 any
 --- @param p9 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any, p9: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any, p9: any): nil
 --- @deprecated
 function PlaystatsRaceToPoint(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9) end
 
@@ -3119,8 +3120,8 @@ function Leaderboards2WriteData(p0) end
 --- @param p0 number (float)
 --- @param p1 number (float)
 --- @param p2 number (float)
---- @return void
---- @overload fun(p0: number, p1: number, p2: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: number, p2: number): nil
 function PlaystatsCrateCreated(p0, p1, p2) end
 
     
@@ -3131,8 +3132,8 @@ function PlaystatsCrateCreated(p0, p1, p2) end
 --- @param p0 number (float)
 --- @param p1 number (float)
 --- @param p2 number (float)
---- @return void
---- @overload fun(p0: number, p1: number, p2: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: number, p2: number): nil
 --- @deprecated
 function N_0xafc7e5e075a96f46(p0, p1, p2) end
 
@@ -3144,8 +3145,8 @@ function N_0xafc7e5e075a96f46(p0, p1, p2) end
 --- @param p0 number (float)
 --- @param p1 number (float)
 --- @param p2 number (float)
---- @return void
---- @overload fun(p0: number, p1: number, p2: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: number, p2: number): nil
 --- @deprecated
 function PlaystatsAmbientMissionCrateCreated(p0, p1, p2) end
 
@@ -3157,8 +3158,8 @@ function PlaystatsAmbientMissionCrateCreated(p0, p1, p2) end
 --- @param p0 number (float)
 --- @param p1 number (float)
 --- @param p2 number (float)
---- @return void
---- @overload fun(p0: number, p1: number, p2: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: number, p2: number): nil
 --- @deprecated
 function PlaystatsCrateCreated(p0, p1, p2) end
 
@@ -3170,8 +3171,8 @@ function PlaystatsCrateCreated(p0, p1, p2) end
 --- @param p0 number (float)
 --- @param p1 number (float)
 --- @param p2 number (float)
---- @return void
---- @overload fun(p0: number, p1: number, p2: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: number, p2: number): nil
 --- @deprecated
 function PlaystatsCrateCreatedMissionDone(p0, p1, p2) end
 
@@ -3201,8 +3202,8 @@ function N_0xb1d2bb1e1631f5b1() end
 ---
 --- @hash [0xB26F670685631727](https://docs.fivem.net/natives/?_0xB26F670685631727)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xb26f670685631727(p0) end
 
     
@@ -3241,8 +3242,8 @@ function N_0xb3da2606774a8e2d() end
 ---
 --- @hash [0xB475F27C6A994D65](https://docs.fivem.net/natives/?_0xB475F27C6A994D65)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function SetProfileSettingPrologueComplete() end
 
     
@@ -3251,8 +3252,8 @@ function SetProfileSettingPrologueComplete() end
 ---
 --- @hash [0xB475F27C6A994D65](https://docs.fivem.net/natives/?_0xB475F27C6A994D65)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xb475f27c6a994d65() end
 
@@ -3263,8 +3264,8 @@ function N_0xb475f27c6a994d65() end
 ---
 --- @hash [0xB479D9F0D48A1BC5](https://docs.fivem.net/natives/?_0xB479D9F0D48A1BC5)
 --- @param data any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 function PlaystatsArenaWarsEnded(data) end
 
     
@@ -3278,8 +3279,8 @@ function PlaystatsArenaWarsEnded(data) end
 --- @param p4 any
 --- @param p5 any
 --- @param p6 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any): nil
 function PlaystatsCopyRankIntoNewSlot(p0, p1, p2, p3, p4, p5, p6) end
 
     
@@ -3294,8 +3295,8 @@ function PlaystatsCopyRankIntoNewSlot(p0, p1, p2, p3, p4, p5, p6) end
 --- @param p4 any
 --- @param p5 any
 --- @param p6 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any): nil
 --- @deprecated
 function N_0xb7257ba2550ea10a(p0, p1, p2, p3, p4, p5, p6) end
 
@@ -3387,8 +3388,8 @@ function N_0xba52ff538ed2bc71(index, spStat, charStat, character, section) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function PlaystatsPropChange(p0, p1, p2, p3) end
 
     
@@ -3405,8 +3406,8 @@ function N_0xba9749cc94c1fd85() end
 ---
 --- @hash [0xBAA2F0490E146BE8](https://docs.fivem.net/natives/?_0xBAA2F0490E146BE8)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xbaa2f0490e146be8(p0) end
 
     
@@ -3416,8 +3417,8 @@ function N_0xbaa2f0490e146be8(p0) end
 ---
 --- @hash [0xBBA55BE9AAAABF44](https://docs.fivem.net/natives/?_0xBBA55BE9AAAABF44)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function PlaystatsRobberyFinale(p0) end
 
     
@@ -3428,8 +3429,8 @@ function PlaystatsRobberyFinale(p0) end
 ---
 --- @hash [0xBBA55BE9AAAABF44](https://docs.fivem.net/natives/?_0xBBA55BE9AAAABF44)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 --- @deprecated
 function N_0xbba55be9aaaabf44(p0) end
 
@@ -3458,8 +3459,8 @@ function StatSavePendingOrRequested() end
 --- @param p4 any
 --- @param p5 any
 --- @param p6 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any): nil
 function PlaystatsMatchStarted(p0, p1, p2, p3, p4, p5, p6) end
 
     
@@ -3476,8 +3477,8 @@ function N_0xbe3db208333d9844() end
 ---
 --- @hash [0xBE509B0A3693DE8B](https://docs.fivem.net/natives/?_0xBE509B0A3693DE8B)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function PlaystatsSpentPiCustomLoadout(amount) end
 
     
@@ -3486,8 +3487,8 @@ function PlaystatsSpentPiCustomLoadout(amount) end
 ---
 --- @hash [0xBE509B0A3693DE8B](https://docs.fivem.net/natives/?_0xBE509B0A3693DE8B)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 --- @deprecated
 function N_0xbe509b0a3693de8b(amount) end
 
@@ -3507,8 +3508,8 @@ function N_0xbed9f5693f34ed17(statName, p1, outValue) end
 ---
 --- @hash [0xBF371CD2B64212FD](https://docs.fivem.net/natives/?_0xBF371CD2B64212FD)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xbf371cd2b64212fd(p0) end
 
     
@@ -3527,8 +3528,8 @@ function LeaderboardsGetColumnType(p0, p1, p2) end
 ---
 --- @hash [0xBFAFDB5FAAA5C5AB](https://docs.fivem.net/natives/?_0xBFAFDB5FAAA5C5AB)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xbfafdb5faaa5c5ab(p0) end
 
     
@@ -3540,8 +3541,8 @@ function N_0xbfafdb5faaa5c5ab(p0) end
 ---
 --- @hash [0xC01D2470F22CDE5A](https://docs.fivem.net/natives/?_0xC01D2470F22CDE5A)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xc01d2470f22cde5a() end
 
     
@@ -3551,8 +3552,8 @@ function N_0xc01d2470f22cde5a() end
 ---
 --- @hash [0xC03FAB2C2F92289B](https://docs.fivem.net/natives/?_0xC03FAB2C2F92289B)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xc03fab2c2f92289b(p0) end
 
     
@@ -3569,8 +3570,8 @@ function N_0xc0e0d686ddfc6eae() end
 ---
 --- @hash [0xC141B8917E0017EC](https://docs.fivem.net/natives/?_0xC141B8917E0017EC)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xc141b8917e0017ec() end
 
     
@@ -3581,8 +3582,8 @@ function N_0xc141b8917e0017ec() end
 ---
 --- @hash [0xC14BD9F5337219B2](https://docs.fivem.net/natives/?_0xC14BD9F5337219B2)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xc14bd9f5337219b2(p0) end
 
     
@@ -3593,8 +3594,8 @@ function N_0xc14bd9f5337219b2(p0) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 boolean
---- @return void
---- @overload fun(p1: any, p2: any, p3: boolean): any
+--- @return nil
+--- @overload fun(p1: any, p2: any, p3: boolean): nil, any
 function PlaystatsMissionStarted(p0, p1, p2, p3) end
 
     
@@ -3604,8 +3605,8 @@ function PlaystatsMissionStarted(p0, p1, p2, p3) end
 ---
 --- @hash [0xC1E963C58664B556](https://docs.fivem.net/natives/?_0xC1E963C58664B556)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xc1e963c58664b556(p0) end
 
     
@@ -3723,8 +3724,8 @@ function GetPackedTitleUpdateBoolStatKey(index, spStat, charStat, character) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 function PlaystatsLeaveJobChain(p0, p1, p2, p3, p4) end
 
     
@@ -3737,8 +3738,8 @@ function PlaystatsLeaveJobChain(p0, p1, p2, p3, p4) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 --- @deprecated
 function N_0xc5be134ec7ba96a0(p0, p1, p2, p3, p4) end
 
@@ -3751,8 +3752,8 @@ function N_0xc5be134ec7ba96a0(p0, p1, p2, p3, p4) end
 ---
 --- @hash [0xC67E2DA1CBE759E2](https://docs.fivem.net/natives/?_0xC67E2DA1CBE759E2)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xc67e2da1cbe759e2() end
 
     
@@ -3789,8 +3790,8 @@ function N_0xc70ddce56d0d3a99() end
 ---
 --- @hash [0xC729991A9065376E](https://docs.fivem.net/natives/?_0xC729991A9065376E)
 --- @param data any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 function PlaystatsSellContraband(data) end
 
     
@@ -3799,8 +3800,8 @@ function PlaystatsSellContraband(data) end
 ---
 --- @hash [0xC729991A9065376E](https://docs.fivem.net/natives/?_0xC729991A9065376E)
 --- @param data any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 --- @deprecated
 function N_0xc729991a9065376e(data) end
 
@@ -3809,8 +3810,8 @@ function N_0xc729991a9065376e(data) end
 ---
 --- @hash [0xC7F2DE41D102BFB4](https://docs.fivem.net/natives/?_0xC7F2DE41D102BFB4)
 --- @param rank number (int)
---- @return void
---- @overload fun(rank: number): void
+--- @return nil
+--- @overload fun(rank: number): nil
 function PlaystatsRankUp(rank) end
 
     
@@ -3818,8 +3819,8 @@ function PlaystatsRankUp(rank) end
 ---
 --- @hash [0xC847B43F369AC0B5](https://docs.fivem.net/natives/?_0xC847B43F369AC0B5)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xc847b43f369ac0b5() end
 
     
@@ -3829,8 +3830,8 @@ function N_0xc847b43f369ac0b5() end
 ---
 --- @hash [0xC9001364B4388F22](https://docs.fivem.net/natives/?_0xC9001364B4388F22)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function PlaystatsCasinoThreecardpokerLight(p0) end
 
     
@@ -3841,8 +3842,8 @@ function PlaystatsCasinoThreecardpokerLight(p0) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p1: any, p2: any, p3: any): any
+--- @return nil
+--- @overload fun(p1: any, p2: any, p3: any): nil, any
 function PlaystatsMissionCheckpoint(p0, p1, p2, p3) end
 
     
@@ -3873,8 +3874,8 @@ function N_0xc980e62e33df1d5c() end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function PlaystatsHoldUpMissionDone(p0, p1, p2, p3) end
 
     
@@ -3886,8 +3887,8 @@ function PlaystatsHoldUpMissionDone(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 --- @deprecated
 function N_0xcb00196b31c39eb1(p0, p1, p2, p3) end
 
@@ -3900,8 +3901,8 @@ function N_0xcb00196b31c39eb1(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 --- @deprecated
 function PlaystatsHoldUp(p0, p1, p2, p3) end
 
@@ -3914,8 +3915,8 @@ function PlaystatsHoldUp(p0, p1, p2, p3) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 function N_0xcc25a4553dfbf9ea(p0, p1, p2, p3, p4) end
 
     
@@ -3934,8 +3935,8 @@ function N_0xcc25a4553dfbf9ea(p0, p1, p2, p3, p4) end
 --- @param p7 any
 --- @param p8 any
 --- @param p9 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any, p9: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any, p9: any): nil
 function PlaystatsCollectible(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9) end
 
     
@@ -3965,8 +3966,8 @@ function N_0xce5aa445aba8dee0(p0) end
 --- @param p0 any
 --- @param p1 any
 --- @param vehicleHash Hash
---- @return void
---- @overload fun(p0: any, p1: any, vehicleHash: Hash): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, vehicleHash: Hash): nil
 function OrderedBossVehicle(p0, p1, vehicleHash) end
 
     
@@ -3977,8 +3978,8 @@ function OrderedBossVehicle(p0, p1, vehicleHash) end
 --- @param p0 any
 --- @param p1 any
 --- @param vehicleHash Hash
---- @return void
---- @overload fun(p0: any, p1: any, vehicleHash: Hash): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, vehicleHash: Hash): nil
 --- @deprecated
 function N_0xcea553e35c2246e1(p0, p1, vehicleHash) end
 
@@ -3987,8 +3988,8 @@ function N_0xcea553e35c2246e1(p0, p1, vehicleHash) end
 ---
 --- @hash [0xD1032E482629049E](https://docs.fivem.net/natives/?_0xD1032E482629049E)
 --- @param joinType number (int)
---- @return void
---- @overload fun(joinType: number): void
+--- @return nil
+--- @overload fun(joinType: number): nil
 function PlaystatsSetJoinType(joinType) end
 
     
@@ -3997,8 +3998,8 @@ function PlaystatsSetJoinType(joinType) end
 ---
 --- @hash [0xD1032E482629049E](https://docs.fivem.net/natives/?_0xD1032E482629049E)
 --- @param joinType number (int)
---- @return void
---- @overload fun(joinType: number): void
+--- @return nil
+--- @overload fun(joinType: number): nil
 --- @deprecated
 function N_0xd1032e482629049e(joinType) end
 
@@ -4061,8 +4062,8 @@ function GetPackedTitleUpdateIntStatKey(index, spStat, charStat, character) end
 ---
 --- @hash [0xD1A1EE3B4FA8E760](https://docs.fivem.net/natives/?_0xD1A1EE3B4FA8E760)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xd1a1ee3b4fa8e760(p0) end
 
     
@@ -4072,8 +4073,8 @@ function N_0xd1a1ee3b4fa8e760(p0) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function N_0xd1c9b92bdd3f151d(p0, p1, p2) end
 
     
@@ -4086,8 +4087,8 @@ function N_0xd1c9b92bdd3f151d(p0, p1, p2) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function N_0xd4367d310f079db0(p0, p1, p2, p3) end
 
     
@@ -4095,8 +4096,8 @@ function N_0xd4367d310f079db0(p0, p1, p2, p3) end
 ---
 --- @hash [0xD4B02A6B476E1FDC](https://docs.fivem.net/natives/?_0xD4B02A6B476E1FDC)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function LeaderboardsClearCacheData() end
 
     
@@ -4106,8 +4107,8 @@ function LeaderboardsClearCacheData() end
 ---
 --- @hash [0xD5451C7BF151EB6F](https://docs.fivem.net/natives/?_0xD5451C7BF151EB6F)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function PlaystatsCasinoBlackjackLight(p0) end
 
     
@@ -4119,8 +4120,8 @@ function PlaystatsCasinoBlackjackLight(p0) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 function N_0xd558bec0bba7e8d2(p0, p1, p2, p3, p4) end
 
     
@@ -4128,8 +4129,8 @@ function N_0xd558bec0bba7e8d2(p0, p1, p2, p3, p4) end
 ---
 --- @hash [0xD6781E42755531F7](https://docs.fivem.net/natives/?_0xD6781E42755531F7)
 --- @param data any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 function PlaystatsBuyContraband(data) end
 
     
@@ -4138,8 +4139,8 @@ function PlaystatsBuyContraband(data) end
 ---
 --- @hash [0xD6781E42755531F7](https://docs.fivem.net/natives/?_0xD6781E42755531F7)
 --- @param data any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 --- @deprecated
 function N_0xd6781e42755531f7(data) end
 
@@ -4150,8 +4151,8 @@ function N_0xd6781e42755531f7(data) end
 ---
 --- @hash [0xD6CA58B3B53A0F22](https://docs.fivem.net/natives/?_0xD6CA58B3B53A0F22)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xd6ca58b3b53a0f22(p0) end
 
     
@@ -4172,8 +4173,8 @@ function StatGetFloat(statHash, outValue, p2) end
 ---
 --- @hash [0xD8AFB345A9C5CCBB](https://docs.fivem.net/natives/?_0xD8AFB345A9C5CCBB)
 --- @param data any
---- @return void
---- @overload fun(): any
+--- @return nil
+--- @overload fun(): nil, any
 function PlaystatsH2FmprepEnd(data) end
 
     
@@ -4184,8 +4185,8 @@ function PlaystatsH2FmprepEnd(data) end
 ---
 --- @hash [0xDAC073C7901F9E15](https://docs.fivem.net/natives/?_0xDAC073C7901F9E15)
 --- @param value number (int)
---- @return void
---- @overload fun(value: number): void
+--- @return nil
+--- @overload fun(value: number): nil
 function SetHasContentUnlocksFlags(value) end
 
     
@@ -4197,8 +4198,8 @@ function SetHasContentUnlocksFlags(value) end
 ---
 --- @hash [0xDAC073C7901F9E15](https://docs.fivem.net/natives/?_0xDAC073C7901F9E15)
 --- @param value number (int)
---- @return void
---- @overload fun(value: number): void
+--- @return nil
+--- @overload fun(value: number): nil
 --- @deprecated
 function N_0xdac073c7901f9e15(value) end
 
@@ -4207,8 +4208,8 @@ function N_0xdac073c7901f9e15(value) end
 ---
 --- @hash [0xDAF80797FC534BEC](https://docs.fivem.net/natives/?_0xDAF80797FC534BEC)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xdaf80797fc534bec(p0) end
 
     
@@ -4230,8 +4231,8 @@ function StatSetPos(statName, x, y, z, save) end
 --- @hash [0xDDF24D535060F811](https://docs.fivem.net/natives/?_0xDDF24D535060F811)
 --- @param scaleformHash Hash
 --- @param p1 number (int)
---- @return void
---- @overload fun(scaleformHash: Hash, p1: number): void
+--- @return nil
+--- @overload fun(scaleformHash: Hash, p1: number): nil
 function PlaystatsWebsiteVisited(scaleformHash, p1) end
 
     
@@ -4241,8 +4242,8 @@ function PlaystatsWebsiteVisited(scaleformHash, p1) end
 --- @hash [0xDDF24D535060F811](https://docs.fivem.net/natives/?_0xDDF24D535060F811)
 --- @param scaleformHash Hash
 --- @param p1 number (int)
---- @return void
---- @overload fun(scaleformHash: Hash, p1: number): void
+--- @return nil
+--- @overload fun(scaleformHash: Hash, p1: number): nil
 --- @deprecated
 function N_0xddf24d535060f811(scaleformHash, p1) end
 
@@ -4263,8 +4264,8 @@ function N_0xdeaaf77eb3687e97(p0, p1) end
 ---
 --- @hash [0xDFBD93BF2943E29B](https://docs.fivem.net/natives/?_0xDFBD93BF2943E29B)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xdfbd93bf2943e29b(p0) end
 
     
@@ -4274,8 +4275,8 @@ function N_0xdfbd93bf2943e29b(p0) end
 ---
 --- @hash [0xDFCDB14317A9B361](https://docs.fivem.net/natives/?_0xDFCDB14317A9B361)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xdfcdb14317a9b361(p0) end
 
     
@@ -4316,8 +4317,8 @@ function N_0xe0e854f5280fb769(statName) end
 ---
 --- @hash [0xE3261D791EB44ACB](https://docs.fivem.net/natives/?_0xE3261D791EB44ACB)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xe3261d791eb44acb(p0) end
 
     
@@ -4348,8 +4349,8 @@ function StatGetString(statHash, p1) end
 ---
 --- @hash [0xE60054A0FAE8227F](https://docs.fivem.net/natives/?_0xE60054A0FAE8227F)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function PlaystatsCasinoSlotmachineLight(p0) end
 
     
@@ -4379,8 +4380,8 @@ function N_0xe8853fbce7d8d0d6() end
 --- @param weaponHash Hash
 --- @param componentHashTo Hash
 --- @param componentHashFrom Hash
---- @return void
---- @overload fun(weaponHash: Hash, componentHashTo: Hash, componentHashFrom: Hash): void
+--- @return nil
+--- @overload fun(weaponHash: Hash, componentHashTo: Hash, componentHashFrom: Hash): nil
 function PlaystatsWeaponModeChange(weaponHash, componentHashTo, componentHashFrom) end
 
     
@@ -4391,8 +4392,8 @@ function PlaystatsWeaponModeChange(weaponHash, componentHashTo, componentHashFro
 --- @param weaponHash Hash
 --- @param componentHashTo Hash
 --- @param componentHashFrom Hash
---- @return void
---- @overload fun(weaponHash: Hash, componentHashTo: Hash, componentHashFrom: Hash): void
+--- @return nil
+--- @overload fun(weaponHash: Hash, componentHashTo: Hash, componentHashFrom: Hash): nil
 --- @deprecated
 function N_0xe95c8a1875a02ca4(weaponHash, componentHashTo, componentHashFrom) end
 
@@ -4426,8 +4427,8 @@ function N_0xecb41ac6ab754401() end
 ---
 --- @hash [0xEDBF6C9B0D2C65C8](https://docs.fivem.net/natives/?_0xEDBF6C9B0D2C65C8)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xedbf6c9b0d2c65c8(p0) end
 
     
@@ -4437,8 +4438,8 @@ function N_0xedbf6c9b0d2c65c8(p0) end
 ---
 --- @hash [0xEF5EC67D392B830A](https://docs.fivem.net/natives/?_0xEF5EC67D392B830A)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function PlaystatsCasinoSlotmachine(p0) end
 
     
@@ -4455,8 +4456,8 @@ function LeaderboardsGetCacheTime(p0) end
 ---
 --- @hash [0xF06A6F41CB445443](https://docs.fivem.net/natives/?_0xF06A6F41CB445443)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xf06a6f41cb445443(p0) end
 
     
@@ -4475,8 +4476,8 @@ function N_0xf11f01d98113536a(p0) end
 ---
 --- @hash [0xF1A1803D3476F215](https://docs.fivem.net/natives/?_0xF1A1803D3476F215)
 --- @param value number (int)
---- @return void
---- @overload fun(value: number): void
+--- @return nil
+--- @overload fun(value: number): nil
 function N_0xf1a1803d3476f215(value) end
 
     
@@ -4528,8 +4529,8 @@ function N_0xf2d4b2fe415aafc3(statName) end
 ---
 --- @hash [0xF434A10BA01C37D0](https://docs.fivem.net/natives/?_0xF434A10BA01C37D0)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function StatSetBlockSaves(toggle) end
 
     
@@ -4538,8 +4539,8 @@ function StatSetBlockSaves(toggle) end
 ---
 --- @hash [0xF434A10BA01C37D0](https://docs.fivem.net/natives/?_0xF434A10BA01C37D0)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0xf434a10ba01c37d0(toggle) end
 
@@ -4573,8 +4574,8 @@ function N_0xf4d8e7ac2a27758c(p0) end
 --- @hash [0xF4FF020A08BC8863](https://docs.fivem.net/natives/?_0xF4FF020A08BC8863)
 --- @param hash Hash
 --- @param p1 number (int)
---- @return void
---- @overload fun(hash: Hash, p1: number): void
+--- @return nil
+--- @overload fun(hash: Hash, p1: number): nil
 function PlaystatsHeistSaveCheat(hash, p1) end
 
     
@@ -4584,8 +4585,8 @@ function PlaystatsHeistSaveCheat(hash, p1) end
 --- @hash [0xF4FF020A08BC8863](https://docs.fivem.net/natives/?_0xF4FF020A08BC8863)
 --- @param hash Hash
 --- @param p1 number (int)
---- @return void
---- @overload fun(hash: Hash, p1: number): void
+--- @return nil
+--- @overload fun(hash: Hash, p1: number): nil
 --- @deprecated
 function N_0xf4ff020a08bc8863(hash, p1) end
 
@@ -4596,8 +4597,8 @@ function N_0xf4ff020a08bc8863(hash, p1) end
 --- @hash [0xF4FF020A08BC8863](https://docs.fivem.net/natives/?_0xF4FF020A08BC8863)
 --- @param hash Hash
 --- @param p1 number (int)
---- @return void
---- @overload fun(hash: Hash, p1: number): void
+--- @return nil
+--- @overload fun(hash: Hash, p1: number): nil
 --- @deprecated
 function PlaystatsHeistSaveCheat(hash, p1) end
 
@@ -4610,8 +4611,8 @@ function PlaystatsHeistSaveCheat(hash, p1) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 function N_0xf534d94dfa2ead26(p0, p1, p2, p3, p4) end
 
     
@@ -4619,8 +4620,8 @@ function N_0xf534d94dfa2ead26(p0, p1, p2, p3, p4) end
 ---
 --- @hash [0xF5BB8DAC426A52C0](https://docs.fivem.net/natives/?_0xF5BB8DAC426A52C0)
 ---
---- @return any, any, any, any
---- @overload fun(): any, any, any, any
+--- @return nil, any, any, any, any
+--- @overload fun(): nil, any, any, any, any
 function PlaystatsJobBend() end
 
     
@@ -4629,8 +4630,8 @@ function PlaystatsJobBend() end
 ---
 --- @hash [0xF5BB8DAC426A52C0](https://docs.fivem.net/natives/?_0xF5BB8DAC426A52C0)
 ---
---- @return any, any, any, any
---- @overload fun(): any, any, any, any
+--- @return nil, any, any, any, any
+--- @overload fun(): nil, any, any, any, any
 --- @deprecated
 function N_0xf5bb8dac426a52c0() end
 
@@ -4641,8 +4642,8 @@ function N_0xf5bb8dac426a52c0() end
 ---
 --- @hash [0xF6792800AC95350D](https://docs.fivem.net/natives/?_0xF6792800AC95350D)
 --- @param transactionId number (int)
---- @return void
---- @overload fun(transactionId: number): void
+--- @return nil
+--- @overload fun(transactionId: number): nil
 function SetSaveMigrationTransactionId(transactionId) end
 
     
@@ -4653,8 +4654,8 @@ function SetSaveMigrationTransactionId(transactionId) end
 ---
 --- @hash [0xF6792800AC95350D](https://docs.fivem.net/natives/?_0xF6792800AC95350D)
 --- @param transactionId number (int)
---- @return void
---- @overload fun(transactionId: number): void
+--- @return nil
+--- @overload fun(transactionId: number): nil
 --- @deprecated
 function N_0xf6792800ac95350d(transactionId) end
 
@@ -4665,8 +4666,8 @@ function N_0xf6792800ac95350d(transactionId) end
 ---
 --- @hash [0xF740FB339D471C35](https://docs.fivem.net/natives/?_0xF740FB339D471C35)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function PlaystatsCasinoThreecardpoker(p0) end
 
     
@@ -4674,8 +4675,8 @@ function PlaystatsCasinoThreecardpoker(p0) end
 ---
 --- @hash [0xF8C54A461C3E11DC](https://docs.fivem.net/natives/?_0xF8C54A461C3E11DC)
 ---
---- @return any, any, any, any
---- @overload fun(): any, any, any, any
+--- @return nil, any, any, any, any
+--- @overload fun(): nil, any, any, any, any
 function N_0xf8c54a461c3e11dc() end
 
     
@@ -4685,8 +4686,8 @@ function N_0xf8c54a461c3e11dc() end
 ---
 --- @hash [0xF9096193DF1F99D4](https://docs.fivem.net/natives/?_0xF9096193DF1F99D4)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xf9096193df1f99d4(p0) end
 
     
@@ -4705,8 +4706,8 @@ function N_0xf9f2922717b819ec() end
 ---
 --- @hash [0xFA5B74BAB8A7EF99](https://docs.fivem.net/natives/?_0xFA5B74BAB8A7EF99)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function PlaystatsExtraEvent(p0) end
 
     
@@ -4717,8 +4718,8 @@ function PlaystatsExtraEvent(p0) end
 ---
 --- @hash [0xFA5B74BAB8A7EF99](https://docs.fivem.net/natives/?_0xFA5B74BAB8A7EF99)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 --- @deprecated
 function N_0xfa5b74bab8a7ef99(p0) end
 
@@ -4727,8 +4728,8 @@ function N_0xfa5b74bab8a7ef99(p0) end
 ---
 --- @hash [0xFCC228E07217FCAC](https://docs.fivem.net/natives/?_0xFCC228E07217FCAC)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xfcc228e07217fcac(p0) end
 
     
@@ -4739,8 +4740,8 @@ function N_0xfcc228e07217fcac(p0) end
 --- @hash [0xFCCCAC2BD3C1F180](https://docs.fivem.net/natives/?_0xFCCCAC2BD3C1F180)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function PlaystatsCasinoStoryMissionEnded(p0, p1) end
 
     
@@ -4750,8 +4751,8 @@ function PlaystatsCasinoStoryMissionEnded(p0, p1) end
 ---
 --- @hash [0xFF14D6FEEC507BBE](https://docs.fivem.net/natives/?_0xFF14D6FEEC507BBE)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function PlaystatsCarclubPoints(p0) end
 
     
@@ -4762,8 +4763,8 @@ function PlaystatsCarclubPoints(p0) end
 ---
 --- @hash [0xFF14D6FEEC507BBE](https://docs.fivem.net/natives/?_0xFF14D6FEEC507BBE)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 --- @deprecated
 function N_0xff14d6feec507bbe(p0) end
 

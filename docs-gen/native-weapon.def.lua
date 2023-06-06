@@ -1,3 +1,4 @@
+--- @meta
 
 --- ```
 --- WEAPON::GET_AMMO_IN_PED_WEAPON(PLAYER::PLAYER_PED_ID(), a_0)  
@@ -45,8 +46,8 @@ function N_0x065d2aacad8cf7a4(weaponHash) end
 --- @param deselectWeapon boolean
 --- @param p3 boolean
 --- @param p4 boolean
---- @return void
---- @overload fun(ped: Ped, visible: boolean, deselectWeapon: boolean, p3: boolean, p4: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, visible: boolean, deselectWeapon: boolean, p3: boolean, p4: boolean): nil
 function SetPedCurrentWeaponVisible(ped, visible, deselectWeapon, p3, p4) end
 
     
@@ -103,8 +104,8 @@ function GetWeaponComponentTypeModel(componentHash) end
 ---
 --- @hash [0x0E98F88A24C5F4B8](https://docs.fivem.net/natives/?_0x0E98F88A24C5F4B8)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ClearPedLastWeaponDamage(ped) end
 
     
@@ -157,8 +158,8 @@ function GetCurrentPedVehicleWeapon(ped, weaponHash) end
 --- @hash [0x1055AC3A667F09D9](https://docs.fivem.net/natives/?_0x1055AC3A667F09D9)
 --- @param ped Ped
 --- @param animStyle Hash
---- @return void
---- @overload fun(ped: Ped, animStyle: Hash): void
+--- @return nil
+--- @overload fun(ped: Ped, animStyle: Hash): nil
 function SetWeaponAnimationOverride(ped, animStyle) end
 
     
@@ -186,8 +187,8 @@ function HasEntityBeenDamagedByWeapon(entity, weaponHash, weaponType) end
 --- @param ped Ped
 --- @param weaponHash Hash
 --- @param ammo number (int)
---- @return void
---- @overload fun(ped: Ped, weaponHash: Hash, ammo: number): void
+--- @return nil
+--- @overload fun(ped: Ped, weaponHash: Hash, ammo: number): nil
 function SetPedAmmo(ped, weaponHash, ammo) end
 
     
@@ -196,8 +197,8 @@ function SetPedAmmo(ped, weaponHash, ammo) end
 --- @hash [0x183DADC6AA953186](https://docs.fivem.net/natives/?_0x183DADC6AA953186)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedInfiniteAmmoClip(ped, toggle) end
 
     
@@ -205,8 +206,8 @@ function SetPedInfiniteAmmoClip(ped, toggle) end
 ---
 --- @hash [0x1E45B34ADEBEE48E](https://docs.fivem.net/natives/?_0x1E45B34ADEBEE48E)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function RemoveAllAirDefenseZones() end
 
     
@@ -215,8 +216,8 @@ function RemoveAllAirDefenseZones() end
 ---
 --- @hash [0x1E45B34ADEBEE48E](https://docs.fivem.net/natives/?_0x1E45B34ADEBEE48E)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x1e45b34adebee48e() end
 
@@ -227,8 +228,8 @@ function N_0x1e45b34adebee48e() end
 --- @param ped Ped
 --- @param weaponHash Hash
 --- @param componentHash Hash
---- @return void
---- @overload fun(ped: Ped, weaponHash: Hash, componentHash: Hash): void
+--- @return nil
+--- @overload fun(ped: Ped, weaponHash: Hash, componentHash: Hash): nil
 function RemoveWeaponComponentFromPed(ped, weaponHash, componentHash) end
 
     
@@ -241,8 +242,8 @@ function RemoveWeaponComponentFromPed(ped, weaponHash, componentHash) end
 --- @param yOffset number (float)
 --- @param zOffset number (float)
 --- @param ammoCount number (int)
---- @return void
---- @overload fun(ped: Ped, weaponHash: Hash, xOffset: number, yOffset: number, zOffset: number, ammoCount: number): void
+--- @return nil
+--- @overload fun(ped: Ped, weaponHash: Hash, xOffset: number, yOffset: number, zOffset: number, ammoCount: number): nil
 function SetPedDropsInventoryWeapon(ped, weaponHash, xOffset, yOffset, zOffset, ammoCount) end
 
     
@@ -261,8 +262,8 @@ function MakePedReload(ped) end
 --- @param ped Ped
 --- @param ammoType Hash
 --- @param ammo number (int)
---- @return void
---- @overload fun(ped: Ped, ammoType: Hash, ammo: number): void
+--- @return nil
+--- @overload fun(ped: Ped, ammoType: Hash, ammo: number): nil
 function AddAmmoToPedByType(ped, ammoType, ammo) end
 
     
@@ -273,8 +274,8 @@ function AddAmmoToPedByType(ped, ammoType, ammo) end
 --- @param ped Ped
 --- @param ammoType Hash
 --- @param ammo number (int)
---- @return void
---- @overload fun(ped: Ped, ammoType: Hash, ammo: number): void
+--- @return nil
+--- @overload fun(ped: Ped, ammoType: Hash, ammo: number): nil
 --- @deprecated
 function N_0x2472622ce1f2d45f(ped, ammoType, ammo) end
 
@@ -286,8 +287,8 @@ function N_0x2472622ce1f2d45f(ped, ammoType, ammo) end
 --- @param ped Ped
 --- @param ammoType Hash
 --- @param ammo number (int)
---- @return void
---- @overload fun(ped: Ped, ammoType: Hash, ammo: number): void
+--- @return nil
+--- @overload fun(ped: Ped, ammoType: Hash, ammo: number): nil
 --- @deprecated
 function AddPedAmmo(ped, ammoType, ammo) end
 
@@ -299,8 +300,8 @@ function AddPedAmmo(ped, ammoType, ammo) end
 --- @hash [0x24C024BA8379A70A](https://docs.fivem.net/natives/?_0x24C024BA8379A70A)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x24c024ba8379a70a(p0, p1) end
 
     
@@ -384,8 +385,8 @@ function GetWeaponDamage(weaponHash, componentHash) end
 --- @hash [0x33E179436C0B31DB](https://docs.fivem.net/natives/?_0x33E179436C0B31DB)
 --- @param weaponObject Object
 --- @param addonHash Hash
---- @return void
---- @overload fun(weaponObject: Object, addonHash: Hash): void
+--- @return nil
+--- @overload fun(weaponObject: Object, addonHash: Hash): nil
 function GiveWeaponComponentToWeaponObject(weaponObject, addonHash) end
 
     
@@ -462,8 +463,8 @@ function GetWeaponDamageType(weaponHash) end
 --- @param ped Ped
 --- @param toggle boolean
 --- @param weaponHash Hash
---- @return void
---- @overload fun(ped: Ped, toggle: boolean, weaponHash: Hash): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean, weaponHash: Hash): nil
 function SetPedInfiniteAmmo(ped, toggle, weaponHash) end
 
     
@@ -483,8 +484,8 @@ function GetWeapontypeSlot(weaponHash) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(zoneId: number, x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(zoneId: number, x: number, y: number, z: number): nil
 function FireAirDefenseWeapon(zoneId, x, y, z) end
 
     
@@ -496,8 +497,8 @@ function FireAirDefenseWeapon(zoneId, x, y, z) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(zoneId: number, x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(zoneId: number, x: number, y: number, z: number): nil
 --- @deprecated
 function N_0x44f1012b69313374(zoneId, x, y, z) end
 
@@ -526,8 +527,8 @@ function IsPedArmed(ped, typeFlags) end
 --- @hash [0x4757F00BC6323CFE](https://docs.fivem.net/natives/?_0x4757F00BC6323CFE)
 --- @param weaponHash Hash
 --- @param damageMultiplier number (float)
---- @return void
---- @overload fun(weaponHash: Hash, damageMultiplier: number): void
+--- @return nil
+--- @overload fun(weaponHash: Hash, damageMultiplier: number): nil
 function SetWeaponDamageModifier(weaponHash, damageMultiplier) end
 
     
@@ -538,8 +539,8 @@ function SetWeaponDamageModifier(weaponHash, damageMultiplier) end
 --- @hash [0x4757F00BC6323CFE](https://docs.fivem.net/natives/?_0x4757F00BC6323CFE)
 --- @param weaponHash Hash
 --- @param damageMultiplier number (float)
---- @return void
---- @overload fun(weaponHash: Hash, damageMultiplier: number): void
+--- @return nil
+--- @overload fun(weaponHash: Hash, damageMultiplier: number): nil
 --- @deprecated
 function N_0x4757f00bc6323cfe(weaponHash, damageMultiplier) end
 
@@ -551,8 +552,8 @@ function N_0x4757f00bc6323cfe(weaponHash, damageMultiplier) end
 --- @hash [0x4757F00BC6323CFE](https://docs.fivem.net/natives/?_0x4757F00BC6323CFE)
 --- @param weaponHash Hash
 --- @param damageMultiplier number (float)
---- @return void
---- @overload fun(weaponHash: Hash, damageMultiplier: number): void
+--- @return nil
+--- @overload fun(weaponHash: Hash, damageMultiplier: number): nil
 --- @deprecated
 function SetWeaponDamageModifierThisFrame(weaponHash, damageMultiplier) end
 
@@ -562,8 +563,8 @@ function SetWeaponDamageModifierThisFrame(weaponHash, damageMultiplier) end
 --- @hash [0x476AE72C1D19D1A8](https://docs.fivem.net/natives/?_0x476AE72C1D19D1A8)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedDropsWeaponsWhenDead(ped, toggle) end
 
     
@@ -571,8 +572,8 @@ function SetPedDropsWeaponsWhenDead(ped, toggle) end
 ---
 --- @hash [0x48164DBB970AC3F0](https://docs.fivem.net/natives/?_0x48164DBB970AC3F0)
 --- @param weaponObject Entity
---- @return void
---- @overload fun(weaponObject: Entity): void
+--- @return nil
+--- @overload fun(weaponObject: Entity): nil
 function RequestWeaponHighDetailModel(weaponObject) end
 
     
@@ -590,8 +591,8 @@ function RequestWeaponHighDetailModel(weaponObject) end
 --- @hash [0x4899CB088EDF59B8](https://docs.fivem.net/natives/?_0x4899CB088EDF59B8)
 --- @param ped Ped
 --- @param weaponHash Hash
---- @return void
---- @overload fun(ped: Ped, weaponHash: Hash): void
+--- @return nil
+--- @overload fun(ped: Ped, weaponHash: Hash): nil
 function RemoveWeaponFromPed(ped, weaponHash) end
 
     
@@ -602,8 +603,8 @@ function RemoveWeaponFromPed(ped, weaponHash) end
 --- @hash [0x4AE5AC8B852D642C](https://docs.fivem.net/natives/?_0x4AE5AC8B852D642C)
 --- @param weaponHash Hash
 --- @param multiplier number (float)
---- @return void
---- @overload fun(weaponHash: Hash, multiplier: number): void
+--- @return nil
+--- @overload fun(weaponHash: Hash, multiplier: number): nil
 function SetWeaponExplosionRadiusMultiplier(weaponHash, multiplier) end
 
     
@@ -659,8 +660,8 @@ function N_0x4d1cb8dc40208a17(componentHash, extraComponentIndex) end
 ---
 --- @hash [0x50276EF8172F5F12](https://docs.fivem.net/natives/?_0x50276EF8172F5F12)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function N_0x50276ef8172f5f12(ped) end
 
     
@@ -715,8 +716,8 @@ function N_0x50276ef8172f5f12(ped) end
 --- @param ped Ped
 --- @param weaponHash Hash
 --- @param tintIndex number (int)
---- @return void
---- @overload fun(ped: Ped, weaponHash: Hash, tintIndex: number): void
+--- @return nil
+--- @overload fun(ped: Ped, weaponHash: Hash, tintIndex: number): nil
 function SetPedWeaponTintIndex(ped, weaponHash, tintIndex) end
 
     
@@ -729,8 +730,8 @@ function SetPedWeaponTintIndex(ped, weaponHash, tintIndex) end
 --- @param weaponHash Hash
 --- @param p1 number (int)
 --- @param p2 number (int)
---- @return void
---- @overload fun(weaponHash: Hash, p1: number, p2: number): void
+--- @return nil
+--- @overload fun(weaponHash: Hash, p1: number, p2: number): nil
 function RequestWeaponAsset(weaponHash, p1, p2) end
 
     
@@ -810,8 +811,8 @@ function DoesWeaponTakeWeaponComponent(weaponHash, componentHash) end
 --- @param weaponObject Object
 --- @param camoComponentHash Hash
 --- @param colorIndex number (int)
---- @return void
---- @overload fun(weaponObject: Object, camoComponentHash: Hash, colorIndex: number): void
+--- @return nil
+--- @overload fun(weaponObject: Object, camoComponentHash: Hash, colorIndex: number): nil
 function SetWeaponObjectLiveryColor(weaponObject, camoComponentHash, colorIndex) end
 
     
@@ -822,8 +823,8 @@ function SetWeaponObjectLiveryColor(weaponObject, camoComponentHash, colorIndex)
 --- @param weaponObject Object
 --- @param camoComponentHash Hash
 --- @param colorIndex number (int)
---- @return void
---- @overload fun(weaponObject: Object, camoComponentHash: Hash, colorIndex: number): void
+--- @return nil
+--- @overload fun(weaponObject: Object, camoComponentHash: Hash, colorIndex: number): nil
 --- @deprecated
 function N_0x5da825a85d0ea6e6(weaponObject, camoComponentHash, colorIndex) end
 
@@ -843,8 +844,8 @@ function GetWeaponTintCount(weaponHash) end
 --- @param ped Ped
 --- @param ammoType Hash
 --- @param ammo number (int)
---- @return void
---- @overload fun(ped: Ped, ammoType: Hash, ammo: number): void
+--- @return nil
+--- @overload fun(ped: Ped, ammoType: Hash, ammo: number): nil
 function SetPedAmmoByType(ped, ammoType, ammo) end
 
     
@@ -885,8 +886,8 @@ function IsPedCurrentWeaponSilenced(ped) end
 --- @hash [0x68F8BE6AF5CDF8A6](https://docs.fivem.net/natives/?_0x68F8BE6AF5CDF8A6)
 --- @param ped Ped
 --- @param loadoutHash Hash
---- @return void
---- @overload fun(ped: Ped, loadoutHash: Hash): void
+--- @return nil
+--- @overload fun(ped: Ped, loadoutHash: Hash): nil
 function GiveLoadoutToPed(ped, loadoutHash) end
 
     
@@ -896,8 +897,8 @@ function GiveLoadoutToPed(ped, loadoutHash) end
 --- @hash [0x68F8BE6AF5CDF8A6](https://docs.fivem.net/natives/?_0x68F8BE6AF5CDF8A6)
 --- @param ped Ped
 --- @param loadoutHash Hash
---- @return void
---- @overload fun(ped: Ped, loadoutHash: Hash): void
+--- @return nil
+--- @overload fun(ped: Ped, loadoutHash: Hash): nil
 --- @deprecated
 function N_0x68f8be6af5cdf8a6(ped, loadoutHash) end
 
@@ -906,8 +907,8 @@ function N_0x68f8be6af5cdf8a6(ped, loadoutHash) end
 ---
 --- @hash [0x6B7513D9966FBEC0](https://docs.fivem.net/natives/?_0x6B7513D9966FBEC0)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function SetPedDropsWeapon(ped) end
 
     
@@ -932,8 +933,8 @@ function GetPedLastWeaponImpactCoord(ped, coords) end
 --- @hash [0x6F6981D2253C208F](https://docs.fivem.net/natives/?_0x6F6981D2253C208F)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function HidePedWeaponForScriptedCutscene(ped, toggle) end
 
     
@@ -979,8 +980,8 @@ function HasWeaponGotWeaponComponent(weapon, addonHash) end
 --- @param ped Ped
 --- @param weaponHash Hash
 --- @param ammo number (int)
---- @return void
---- @overload fun(ped: Ped, weaponHash: Hash, ammo: number): void
+--- @return nil
+--- @overload fun(ped: Ped, weaponHash: Hash, ammo: number): nil
 function AddAmmoToPed(ped, weaponHash, ammo) end
 
     
@@ -1033,8 +1034,8 @@ function GetMaxRangeOfCurrentPedWeapon(ped) end
 --- @param ped Ped
 --- @param xBias number (float)
 --- @param yBias number (float)
---- @return void
---- @overload fun(ped: Ped, xBias: number, yBias: number): void
+--- @return nil
+--- @overload fun(ped: Ped, xBias: number, yBias: number): nil
 function SetPedChanceOfFiringBlanks(ped, xBias, yBias) end
 
     
@@ -1192,8 +1193,8 @@ function CreateWeaponObject(weaponHash, ammoCount, x, y, z, showWorldModel, scal
 --- @hash [0x977CA98939E82E4B](https://docs.fivem.net/natives/?_0x977CA98939E82E4B)
 --- @param weaponObject Object
 --- @param p1 number (int)
---- @return void
---- @overload fun(weaponObject: Object, p1: number): void
+--- @return nil
+--- @overload fun(weaponObject: Object, p1: number): nil
 function N_0x977ca98939e82e4b(weaponObject, p1) end
 
     
@@ -1206,8 +1207,8 @@ function N_0x977ca98939e82e4b(weaponObject, p1) end
 --- @hash [0x988DB6FE9B3AC000](https://docs.fivem.net/natives/?_0x988DB6FE9B3AC000)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetFlashLightEnabled(ped, toggle) end
 
     
@@ -1258,8 +1259,8 @@ function N_0x9da58cdbf6bdbc08(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, weaponHash
 --- @param weaponHash Hash
 --- @param camoComponentHash Hash
 --- @param colorIndex number (int)
---- @return void
---- @overload fun(ped: Ped, weaponHash: Hash, camoComponentHash: Hash, colorIndex: number): void
+--- @return nil
+--- @overload fun(ped: Ped, weaponHash: Hash, camoComponentHash: Hash, colorIndex: number): nil
 function SetPedWeaponLiveryColor(ped, weaponHash, camoComponentHash, colorIndex) end
 
     
@@ -1271,8 +1272,8 @@ function SetPedWeaponLiveryColor(ped, weaponHash, camoComponentHash, colorIndex)
 --- @param weaponHash Hash
 --- @param camoComponentHash Hash
 --- @param colorIndex number (int)
---- @return void
---- @overload fun(ped: Ped, weaponHash: Hash, camoComponentHash: Hash, colorIndex: number): void
+--- @return nil
+--- @overload fun(ped: Ped, weaponHash: Hash, camoComponentHash: Hash, colorIndex: number): nil
 --- @deprecated
 function N_0x9fe5633880ecd8ed(ped, weaponHash, camoComponentHash, colorIndex) end
 
@@ -1305,8 +1306,8 @@ function GetMaxAmmoInClip(ped, weaponHash, p2) end
 --- @hash [0xA4EFEF9440A5B0EF](https://docs.fivem.net/natives/?_0xA4EFEF9440A5B0EF)
 --- @param ped Ped
 --- @param ammo number (int)
---- @return void
---- @overload fun(ped: Ped, ammo: number): void
+--- @return nil
+--- @overload fun(ped: Ped, ammo: number): nil
 function SetPedAmmoToDrop(ped, ammo) end
 
     
@@ -1314,8 +1315,8 @@ function SetPedAmmoToDrop(ped, ammo) end
 ---
 --- @hash [0xAA08EF13F341C8FC](https://docs.fivem.net/natives/?_0xAA08EF13F341C8FC)
 --- @param weaponHash Hash
---- @return void
---- @overload fun(weaponHash: Hash): void
+--- @return nil
+--- @overload fun(weaponHash: Hash): nil
 function RemoveWeaponAsset(weaponHash) end
 
     
@@ -1323,8 +1324,8 @@ function RemoveWeaponAsset(weaponHash) end
 ---
 --- @hash [0xAC678E40BE7C74D2](https://docs.fivem.net/natives/?_0xAC678E40BE7C74D2)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 function ClearEntityLastWeaponDamage(entity) end
 
     
@@ -1334,8 +1335,8 @@ function ClearEntityLastWeaponDamage(entity) end
 --- @param ped Ped
 --- @param weaponHash Hash
 --- @param bForceInHand boolean
---- @return void
---- @overload fun(ped: Ped, weaponHash: Hash, bForceInHand: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, weaponHash: Hash, bForceInHand: boolean): nil
 function SetCurrentPedWeapon(ped, weaponHash, bForceInHand) end
 
     
@@ -1344,8 +1345,8 @@ function SetCurrentPedWeapon(ped, weaponHash, bForceInHand) end
 --- @hash [0xB1FA61371AF7C4B7](https://docs.fivem.net/natives/?_0xB1FA61371AF7C4B7)
 --- @param weaponObject Object
 --- @param ped Ped
---- @return void
---- @overload fun(weaponObject: Object, ped: Ped): void
+--- @return nil
+--- @overload fun(weaponObject: Object, ped: Ped): nil
 function GiveWeaponObjectToPed(weaponObject, ped) end
 
     
@@ -1359,8 +1360,8 @@ function GiveWeaponObjectToPed(weaponObject, ped) end
 --- @param weaponHash Hash
 --- @param ammoCount number (int)
 --- @param bForceInHand boolean
---- @return void
---- @overload fun(ped: Ped, weaponHash: Hash, ammoCount: number, bForceInHand: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, weaponHash: Hash, ammoCount: number, bForceInHand: boolean): nil
 function GiveDelayedWeaponToPed(ped, weaponHash, ammoCount, bForceInHand) end
 
     
@@ -1402,8 +1403,8 @@ function N_0xb3ea4feabf41464b(weaponObject, camoComponentHash) end
 --- @param ped Ped
 --- @param weaponHash Hash
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, weaponHash: Hash, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, weaponHash: Hash, toggle: boolean): nil
 function SetCanPedEquipWeapon(ped, weaponHash, toggle) end
 
     
@@ -1414,8 +1415,8 @@ function SetCanPedEquipWeapon(ped, weaponHash, toggle) end
 --- @param ped Ped
 --- @param weaponHash Hash
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, weaponHash: Hash, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, weaponHash: Hash, toggle: boolean): nil
 --- @deprecated
 function N_0xb4771b9aaf4e68e4(ped, weaponHash, toggle) end
 
@@ -1427,8 +1428,8 @@ function N_0xb4771b9aaf4e68e4(ped, weaponHash, toggle) end
 --- @param ped Ped
 --- @param weaponHash Hash
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, weaponHash: Hash, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, weaponHash: Hash, toggle: boolean): nil
 --- @deprecated
 function SetCanPedSelectWeapon(ped, weaponHash, toggle) end
 
@@ -1487,8 +1488,8 @@ function CanUseWeaponOnParachute(weaponHash) end
 --- @param ammoCount number (int)
 --- @param isHidden boolean
 --- @param bForceInHand boolean
---- @return void
---- @overload fun(ped: Ped, weaponHash: Hash, ammoCount: number, isHidden: boolean, bForceInHand: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, weaponHash: Hash, ammoCount: number, isHidden: boolean, bForceInHand: boolean): nil
 function GiveWeaponToPed(ped, weaponHash, ammoCount, isHidden, bForceInHand) end
 
     
@@ -1519,8 +1520,8 @@ function HasPedGotWeaponComponent(ped, weaponHash, componentHash) end
 ---
 --- @hash [0xC8B46D7727D864AA](https://docs.fivem.net/natives/?_0xC8B46D7727D864AA)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function EnableLaserSightRendering(toggle) end
 
     
@@ -1584,8 +1585,8 @@ function SetFlashLightFadeDistance(distance) end
 --- @param ped Ped
 --- @param gadgetHash Hash
 --- @param p2 boolean
---- @return void
---- @overload fun(ped: Ped, gadgetHash: Hash, p2: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, gadgetHash: Hash, p2: boolean): nil
 function SetPedGadget(ped, gadgetHash, p2) end
 
     
@@ -1621,8 +1622,8 @@ function GetWeaponHudStats(weaponHash, outData) end
 --- @param ped Ped
 --- @param weaponHash Hash
 --- @param componentHash Hash
---- @return void
---- @overload fun(ped: Ped, weaponHash: Hash, componentHash: Hash): void
+--- @return nil
+--- @overload fun(ped: Ped, weaponHash: Hash, componentHash: Hash): nil
 function GiveWeaponComponentToPed(ped, weaponHash, componentHash) end
 
     
@@ -1695,8 +1696,8 @@ function SetAmmoInClip(ped, weaponHash, ammo) end
 ---
 --- @hash [0xE4DCEC7FD5B739A5](https://docs.fivem.net/natives/?_0xE4DCEC7FD5B739A5)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function N_0xe4dcec7fd5b739a5(ped) end
 
     
@@ -1704,8 +1705,8 @@ function N_0xe4dcec7fd5b739a5(ped) end
 ---
 --- @hash [0xE620FD3512A04F18](https://docs.fivem.net/natives/?_0xE620FD3512A04F18)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function SetPickupAmmoAmountScaler(p0) end
 
     
@@ -1714,8 +1715,8 @@ function SetPickupAmmoAmountScaler(p0) end
 ---
 --- @hash [0xE620FD3512A04F18](https://docs.fivem.net/natives/?_0xE620FD3512A04F18)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 --- @deprecated
 function N_0xe620fd3512a04f18(p0) end
 
@@ -1727,8 +1728,8 @@ function N_0xe620fd3512a04f18(p0) end
 --- @hash [0xE6D2CEDD370FF98E](https://docs.fivem.net/natives/?_0xE6D2CEDD370FF98E)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0xe6d2cedd370ff98e(p0, p1) end
 
     
@@ -1738,8 +1739,8 @@ function N_0xe6d2cedd370ff98e(p0, p1) end
 --- @param player Player
 --- @param zoneId number (int)
 --- @param enable boolean
---- @return void
---- @overload fun(player: Player, zoneId: number, enable: boolean): void
+--- @return nil
+--- @overload fun(player: Player, zoneId: number, enable: boolean): nil
 function SetPlayerAirDefenseZoneFlag(player, zoneId, enable) end
 
     
@@ -1750,8 +1751,8 @@ function SetPlayerAirDefenseZoneFlag(player, zoneId, enable) end
 --- @param player Player
 --- @param zoneId number (int)
 --- @param enable boolean
---- @return void
---- @overload fun(player: Player, zoneId: number, enable: boolean): void
+--- @return nil
+--- @overload fun(player: Player, zoneId: number, enable: boolean): nil
 --- @deprecated
 function N_0xecdc202b25e5cf48(player, zoneId, enable) end
 
@@ -1761,8 +1762,8 @@ function N_0xecdc202b25e5cf48(player, zoneId, enable) end
 --- @hash [0xEFF296097FF1E509](https://docs.fivem.net/natives/?_0xEFF296097FF1E509)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetCanPedEquipAllWeapons(ped, toggle) end
 
     
@@ -1772,8 +1773,8 @@ function SetCanPedEquipAllWeapons(ped, toggle) end
 --- @hash [0xEFF296097FF1E509](https://docs.fivem.net/natives/?_0xEFF296097FF1E509)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 --- @deprecated
 function N_0xeff296097ff1e509(ped, toggle) end
 
@@ -1818,8 +1819,8 @@ function N_0xf0a60040be558f2d(ped, weaponHash, camoComponentHash) end
 --- @hash [0xF25DF915FA38C5F3](https://docs.fivem.net/natives/?_0xF25DF915FA38C5F3)
 --- @param ped Ped
 --- @param p1 boolean
---- @return void
---- @overload fun(ped: Ped, p1: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean): nil
 function RemoveAllPedWeapons(ped, p1) end
 
     
@@ -1867,8 +1868,8 @@ function GetIsPedGadgetEquipped(ped, gadgetHash) end
 --- @hash [0xF7D82B0D66777611](https://docs.fivem.net/natives/?_0xF7D82B0D66777611)
 --- @param weaponObject Object
 --- @param addonHash Hash
---- @return void
---- @overload fun(weaponObject: Object, addonHash: Hash): void
+--- @return nil
+--- @overload fun(weaponObject: Object, addonHash: Hash): nil
 function RemoveWeaponComponentFromWeaponObject(weaponObject, addonHash) end
 
     
@@ -1877,8 +1878,8 @@ function RemoveWeaponComponentFromWeaponObject(weaponObject, addonHash) end
 --- @hash [0xF827589017D4E4A9](https://docs.fivem.net/natives/?_0xF827589017D4E4A9)
 --- @param weapon Object
 --- @param tintIndex number (int)
---- @return void
---- @overload fun(weapon: Object, tintIndex: number): void
+--- @return nil
+--- @overload fun(weapon: Object, tintIndex: number): nil
 function SetWeaponObjectTintIndex(weapon, tintIndex) end
 
     
@@ -1890,8 +1891,8 @@ function SetWeaponObjectTintIndex(weapon, tintIndex) end
 --- @param ped Ped
 --- @param weaponHash Hash
 --- @param p2 boolean
---- @return void
---- @overload fun(ped: Ped, weaponHash: Hash, p2: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, weaponHash: Hash, p2: boolean): nil
 function ExplodeProjectiles(ped, weaponHash, p2) end
 
     
@@ -1900,8 +1901,8 @@ function ExplodeProjectiles(ped, weaponHash, p2) end
 --- @hash [0xFC52E0F37E446528](https://docs.fivem.net/natives/?_0xFC52E0F37E446528)
 --- @param weaponHash Hash
 --- @param explode boolean
---- @return void
---- @overload fun(weaponHash: Hash, explode: boolean): void
+--- @return nil
+--- @overload fun(weaponHash: Hash, explode: boolean): nil
 function RemoveAllProjectilesOfType(weaponHash, explode) end
 
     

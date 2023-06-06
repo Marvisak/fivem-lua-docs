@@ -1,3 +1,4 @@
+--- @meta
 
 --- ```
 --- Gets the aggressiveness factor of the ocean waves.  
@@ -66,8 +67,8 @@ function TestVerticalProbeAgainstAllWater(x, y, z, flag, height) end
 ---
 --- @hash [0x547237AA71AB44DE](https://docs.fivem.net/natives/?_0x547237AA71AB44DE)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function N_0x547237aa71ab44de(p0) end
 
     
@@ -77,8 +78,8 @@ function N_0x547237aa71ab44de(p0) end
 ---
 --- @hash [0x5E5E99285AE812DB](https://docs.fivem.net/natives/?_0x5E5E99285AE812DB)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ResetDeepOceanScaler() end
 
     
@@ -89,8 +90,8 @@ function ResetDeepOceanScaler() end
 ---
 --- @hash [0x5E5E99285AE812DB](https://docs.fivem.net/natives/?_0x5E5E99285AE812DB)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x5e5e99285ae812db() end
 
@@ -102,8 +103,8 @@ function N_0x5e5e99285ae812db() end
 ---
 --- @hash [0x5E5E99285AE812DB](https://docs.fivem.net/natives/?_0x5E5E99285AE812DB)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function ResetWavesIntensity() end
 
@@ -115,8 +116,8 @@ function ResetWavesIntensity() end
 ---
 --- @hash [0x5E5E99285AE812DB](https://docs.fivem.net/natives/?_0x5E5E99285AE812DB)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function ResetCurrentIntensity() end
 
@@ -155,8 +156,8 @@ function GetWaterHeightNoWaves(x, y, z, height) end
 ---
 --- @hash [0xB1252E3E59A82AAF](https://docs.fivem.net/natives/?_0xB1252E3E59A82AAF)
 --- @param p0 number (int)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function RemoveCurrentRise(p0) end
 
     
@@ -167,8 +168,8 @@ function RemoveCurrentRise(p0) end
 ---
 --- @hash [0xB1252E3E59A82AAF](https://docs.fivem.net/natives/?_0xB1252E3E59A82AAF)
 --- @param p0 number (int)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 --- @deprecated
 function N_0xb1252e3e59a82aaf(p0) end
 
@@ -180,8 +181,8 @@ function N_0xb1252e3e59a82aaf(p0) end
 ---
 --- @hash [0xB96B00E976BE977F](https://docs.fivem.net/natives/?_0xB96B00E976BE977F)
 --- @param intensity number (float)
---- @return void
---- @overload fun(intensity: number): void
+--- @return nil
+--- @overload fun(intensity: number): nil
 function SetDeepOceanScaler(intensity) end
 
     
@@ -193,8 +194,8 @@ function SetDeepOceanScaler(intensity) end
 ---
 --- @hash [0xB96B00E976BE977F](https://docs.fivem.net/natives/?_0xB96B00E976BE977F)
 --- @param intensity number (float)
---- @return void
---- @overload fun(intensity: number): void
+--- @return nil
+--- @overload fun(intensity: number): nil
 --- @deprecated
 function N_0xb96b00e976be977f(intensity) end
 
@@ -207,8 +208,8 @@ function N_0xb96b00e976be977f(intensity) end
 ---
 --- @hash [0xB96B00E976BE977F](https://docs.fivem.net/natives/?_0xB96B00E976BE977F)
 --- @param intensity number (float)
---- @return void
---- @overload fun(intensity: number): void
+--- @return nil
+--- @overload fun(intensity: number): nil
 --- @deprecated
 function SetWavesIntensity(intensity) end
 
@@ -221,8 +222,8 @@ function SetWavesIntensity(intensity) end
 ---
 --- @hash [0xB96B00E976BE977F](https://docs.fivem.net/natives/?_0xB96B00E976BE977F)
 --- @param intensity number (float)
---- @return void
---- @overload fun(intensity: number): void
+--- @return nil
+--- @overload fun(intensity: number): nil
 --- @deprecated
 function SetCurrentIntensity(intensity) end
 
@@ -236,8 +237,8 @@ function SetCurrentIntensity(intensity) end
 --- @param y number (float)
 --- @param height number (float)
 --- @param radius number (float)
---- @return void
---- @overload fun(x: number, y: number, height: number, radius: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, height: number, radius: number): nil
 function ModifyWater(x, y, height, radius) end
 
     

@@ -1,3 +1,4 @@
+--- @meta
 
 --- ```
 --- Used to prepare a scene where the surrounding sound is muted or a bit changed. This does not play any sound.  
@@ -15,8 +16,8 @@ function StartAudioScene(scene) end
 ---
 --- @hash [0x0150B6FF25A9E2E5](https://docs.fivem.net/natives/?_0x0150B6FF25A9E2E5)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x0150b6ff25a9e2e5() end
 
     
@@ -25,8 +26,8 @@ function N_0x0150b6ff25a9e2e5() end
 --- @hash [0x01BB4D577D38BD9E](https://docs.fivem.net/natives/?_0x01BB4D577D38BD9E)
 --- @param vehicle Vehicle
 --- @param intensity number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, intensity: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, intensity: number): nil
 function SetVehicleAudioBodyDamageFactor(vehicle, intensity) end
 
     
@@ -36,8 +37,8 @@ function SetVehicleAudioBodyDamageFactor(vehicle, intensity) end
 --- @hash [0x01BB4D577D38BD9E](https://docs.fivem.net/natives/?_0x01BB4D577D38BD9E)
 --- @param vehicle Vehicle
 --- @param intensity number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, intensity: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, intensity: number): nil
 --- @deprecated
 function N_0x01bb4d577d38bd9e(vehicle, intensity) end
 
@@ -77,8 +78,8 @@ function PrepareSynchronizedAudioEventForScene(p0, p1) end
 ---
 --- @hash [0x02E93C796ABD3A97](https://docs.fivem.net/natives/?_0x02E93C796ABD3A97)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0x02e93c796abd3a97(p0) end
 
     
@@ -89,8 +90,8 @@ function N_0x02e93c796abd3a97(p0) end
 --- @hash [0x031ACB6ABA18C729](https://docs.fivem.net/natives/?_0x031ACB6ABA18C729)
 --- @param radioStation string (char*)
 --- @param trackListName string (char*)
---- @return void
---- @overload fun(radioStation: string, trackListName: string): void
+--- @return nil
+--- @overload fun(radioStation: string, trackListName: string): nil
 function UnlockRadioStationTrackList(radioStation, trackListName) end
 
     
@@ -102,8 +103,8 @@ function UnlockRadioStationTrackList(radioStation, trackListName) end
 --- @hash [0x031ACB6ABA18C729](https://docs.fivem.net/natives/?_0x031ACB6ABA18C729)
 --- @param radioStation string (char*)
 --- @param trackListName string (char*)
---- @return void
---- @overload fun(radioStation: string, trackListName: string): void
+--- @return nil
+--- @overload fun(radioStation: string, trackListName: string): nil
 --- @deprecated
 function N_0x031acb6aba18c729(radioStation, trackListName) end
 
@@ -124,8 +125,8 @@ function IsVehicleRadioLoud(vehicle) end
 --- @hash [0x0350E7E17BA767D0](https://docs.fivem.net/natives/?_0x0350E7E17BA767D0)
 --- @param vehicle Vehicle
 --- @param value number (int)
---- @return void
---- @overload fun(vehicle: Vehicle, value: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, value: number): nil
 function SetVehicleHornVariation(vehicle, value) end
 
     
@@ -137,8 +138,8 @@ function SetVehicleHornVariation(vehicle, value) end
 --- @hash [0x0350E7E17BA767D0](https://docs.fivem.net/natives/?_0x0350E7E17BA767D0)
 --- @param vehicle Vehicle
 --- @param value number (int)
---- @return void
---- @overload fun(vehicle: Vehicle, value: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, value: number): nil
 --- @deprecated
 function N_0x0350e7e17ba767d0(vehicle, value) end
 
@@ -151,8 +152,8 @@ function N_0x0350e7e17ba767d0(vehicle, value) end
 --- @hash [0x0350E7E17BA767D0](https://docs.fivem.net/natives/?_0x0350E7E17BA767D0)
 --- @param vehicle Vehicle
 --- @param value number (int)
---- @return void
---- @overload fun(vehicle: Vehicle, value: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, value: number): nil
 --- @deprecated
 function N_0xcda42c4bb9bde779(vehicle, value) end
 
@@ -185,8 +186,8 @@ function N_0xcda42c4bb9bde779(vehicle, value) end
 --- @hash [0x0355EF116C4C97B2](https://docs.fivem.net/natives/?_0x0355EF116C4C97B2)
 --- @param alarmName string (char*)
 --- @param p2 boolean
---- @return void
---- @overload fun(alarmName: string, p2: boolean): void
+--- @return nil
+--- @overload fun(alarmName: string, p2: boolean): nil
 function StartAlarm(alarmName, p2) end
 
     
@@ -202,8 +203,8 @@ function StartAlarm(alarmName, p2) end
 --- @hash [0x044DBAD7A7FA2BE5](https://docs.fivem.net/natives/?_0x044DBAD7A7FA2BE5)
 --- @param p0 string (char*)
 --- @param p1 string (char*)
---- @return void
---- @overload fun(p0: string, p1: string): void
+--- @return nil
+--- @overload fun(p0: string, p1: string): nil
 function SetPortalSettingsOverride(p0, p1) end
 
     
@@ -220,8 +221,8 @@ function SetPortalSettingsOverride(p0, p1) end
 --- @hash [0x044DBAD7A7FA2BE5](https://docs.fivem.net/natives/?_0x044DBAD7A7FA2BE5)
 --- @param p0 string (char*)
 --- @param p1 string (char*)
---- @return void
---- @overload fun(p0: string, p1: string): void
+--- @return nil
+--- @overload fun(p0: string, p1: string): nil
 --- @deprecated
 function N_0x044dbad7a7fa2be5(p0, p1) end
 
@@ -261,8 +262,8 @@ function N_0x0626a247d2405330() end
 ---
 --- @hash [0x062D5EAD4DA2FA6A](https://docs.fivem.net/natives/?_0x062D5EAD4DA2FA6A)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x062d5ead4da2fa6a() end
 
     
@@ -277,8 +278,8 @@ function N_0x062d5ead4da2fa6a() end
 --- @hash [0x0653B735BFBDFE87](https://docs.fivem.net/natives/?_0x0653B735BFBDFE87)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedAudioFootstepLoud(ped, toggle) end
 
     
@@ -294,8 +295,8 @@ function SetPedAudioFootstepLoud(ped, toggle) end
 --- @hash [0x0653B735BFBDFE87](https://docs.fivem.net/natives/?_0x0653B735BFBDFE87)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 --- @deprecated
 function N_0x0653b735bfbdfe87(ped, toggle) end
 
@@ -305,8 +306,8 @@ function N_0x0653b735bfbdfe87(ped, toggle) end
 --- @hash [0x06C0023BED16DD6B](https://docs.fivem.net/natives/?_0x06C0023BED16DD6B)
 --- @param doorHash Hash
 --- @param toggle boolean
---- @return void
---- @overload fun(doorHash: Hash, toggle: boolean): void
+--- @return nil
+--- @overload fun(doorHash: Hash, toggle: boolean): nil
 function SetScriptUpdateDoorAudio(doorHash, toggle) end
 
     
@@ -316,8 +317,8 @@ function SetScriptUpdateDoorAudio(doorHash, toggle) end
 --- @hash [0x06C0023BED16DD6B](https://docs.fivem.net/natives/?_0x06C0023BED16DD6B)
 --- @param doorHash Hash
 --- @param toggle boolean
---- @return void
---- @overload fun(doorHash: Hash, toggle: boolean): void
+--- @return nil
+--- @overload fun(doorHash: Hash, toggle: boolean): nil
 --- @deprecated
 function N_0x06c0023bed16dd6b(doorHash, toggle) end
 
@@ -326,8 +327,8 @@ function N_0x06c0023bed16dd6b(doorHash, toggle) end
 ---
 --- @hash [0x0B568201DD99F0EB](https://docs.fivem.net/natives/?_0x0B568201DD99F0EB)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0x0b568201dd99f0eb(p0) end
 
     
@@ -342,8 +343,8 @@ function N_0x0b568201dd99f0eb(p0) end
 --- @hash [0x0BABC1345ABBFB16](https://docs.fivem.net/natives/?_0x0BABC1345ABBFB16)
 --- @param ped Ped
 --- @param voiceGroupHash Hash
---- @return void
---- @overload fun(ped: Ped, voiceGroupHash: Hash): void
+--- @return nil
+--- @overload fun(ped: Ped, voiceGroupHash: Hash): nil
 function SetPedVoiceGroupRace(ped, voiceGroupHash) end
 
     
@@ -377,8 +378,8 @@ function N_0x0be4be946463f917(vehicle) end
 ---
 --- @hash [0x0EC92A1BF0857187](https://docs.fivem.net/natives/?_0x0EC92A1BF0857187)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ReleaseMissionAudioBank() end
 
     
@@ -406,8 +407,8 @@ function N_0x109697e2ffbac8a1() end
 ---
 --- @hash [0x1098355A16064BB3](https://docs.fivem.net/natives/?_0x1098355A16064BB3)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetMobileRadioEnabledDuringGameplay(toggle) end
 
     
@@ -415,8 +416,8 @@ function SetMobileRadioEnabledDuringGameplay(toggle) end
 ---
 --- @hash [0x11579D940949C49E](https://docs.fivem.net/natives/?_0x11579D940949C49E)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x11579d940949c49e(p0) end
 
     
@@ -425,8 +426,8 @@ function N_0x11579d940949c49e(p0) end
 --- @hash [0x120C48C614909FA4](https://docs.fivem.net/natives/?_0x120C48C614909FA4)
 --- @param p0 any
 --- @param p1 boolean
---- @return void
---- @overload fun(p1: boolean): any
+--- @return nil
+--- @overload fun(p1: boolean): nil, any
 function ClearAmbientZoneListState(p0, p1) end
 
     
@@ -435,8 +436,8 @@ function ClearAmbientZoneListState(p0, p1) end
 ---
 --- @hash [0x12561FCBB62D5B9C](https://docs.fivem.net/natives/?_0x12561FCBB62D5B9C)
 --- @param mode number (int)
---- @return void
---- @overload fun(mode: number): void
+--- @return nil
+--- @overload fun(mode: number): nil
 function SetAudioSpecialEffectMode(mode) end
 
     
@@ -446,8 +447,8 @@ function SetAudioSpecialEffectMode(mode) end
 ---
 --- @hash [0x12561FCBB62D5B9C](https://docs.fivem.net/natives/?_0x12561FCBB62D5B9C)
 --- @param mode number (int)
---- @return void
---- @overload fun(mode: number): void
+--- @return nil
+--- @overload fun(mode: number): nil
 --- @deprecated
 function N_0x12561fcbb62d5b9c(mode) end
 
@@ -456,8 +457,8 @@ function N_0x12561fcbb62d5b9c(mode) end
 ---
 --- @hash [0x13AD665062541A7E](https://docs.fivem.net/natives/?_0x13AD665062541A7E)
 --- @param voiceEffect string (char*)
---- @return void
---- @overload fun(voiceEffect: string): void
+--- @return nil
+--- @overload fun(voiceEffect: string): nil
 function OverrideTrevorRage(voiceEffect) end
 
     
@@ -466,8 +467,8 @@ function OverrideTrevorRage(voiceEffect) end
 --- @hash [0x149AEE66F0CB3A99](https://docs.fivem.net/natives/?_0x149AEE66F0CB3A99)
 --- @param p0 number (float)
 --- @param p1 number (float)
---- @return void
---- @overload fun(p0: number, p1: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: number): nil
 function N_0x149aee66f0cb3a99(p0, p1) end
 
     
@@ -480,8 +481,8 @@ function N_0x149aee66f0cb3a99(p0, p1) end
 --- @param entity Entity
 --- @param groupName string (char*)
 --- @param p2 number (float)
---- @return void
---- @overload fun(entity: Entity, groupName: string, p2: number): void
+--- @return nil
+--- @overload fun(entity: Entity, groupName: string, p2: number): nil
 function AddEntityToAudioMixGroup(entity, groupName, p2) end
 
     
@@ -495,8 +496,8 @@ function AddEntityToAudioMixGroup(entity, groupName, p2) end
 --- @param entity Entity
 --- @param groupName string (char*)
 --- @param p2 number (float)
---- @return void
---- @overload fun(entity: Entity, groupName: string, p2: number): void
+--- @return nil
+--- @overload fun(entity: Entity, groupName: string, p2: number): nil
 --- @deprecated
 function N_0x153973ab99fe8980(entity, groupName, p2) end
 
@@ -511,8 +512,8 @@ function N_0x153973ab99fe8980(entity, groupName, p2) end
 --- @param entity Entity
 --- @param groupName string (char*)
 --- @param p2 number (float)
---- @return void
---- @overload fun(entity: Entity, groupName: string, p2: number): void
+--- @return nil
+--- @overload fun(entity: Entity, groupName: string, p2: number): nil
 --- @deprecated
 function DynamicMixerRelatedFn(entity, groupName, p2) end
 
@@ -521,8 +522,8 @@ function DynamicMixerRelatedFn(entity, groupName, p2) end
 ---
 --- @hash [0x159B7318403A1CD8](https://docs.fivem.net/natives/?_0x159B7318403A1CD8)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x159b7318403a1cd8(p0) end
 
     
@@ -534,8 +535,8 @@ function N_0x159b7318403a1cd8(p0) end
 ---
 --- @hash [0x1654F24A88A8E3FE](https://docs.fivem.net/natives/?_0x1654F24A88A8E3FE)
 --- @param radioStation string (char*)
---- @return void
---- @overload fun(radioStation: string): void
+--- @return nil
+--- @overload fun(radioStation: string): nil
 function ClearCustomRadioTrackList(radioStation) end
 
     
@@ -548,8 +549,8 @@ function ClearCustomRadioTrackList(radioStation) end
 ---
 --- @hash [0x1654F24A88A8E3FE](https://docs.fivem.net/natives/?_0x1654F24A88A8E3FE)
 --- @param radioStation string (char*)
---- @return void
---- @overload fun(radioStation: string): void
+--- @return nil
+--- @overload fun(radioStation: string): nil
 --- @deprecated
 function N_0x1654f24a88a8e3fe(radioStation) end
 
@@ -568,8 +569,8 @@ function IsScriptedConversationOngoing() end
 --- @hash [0x18EB48CFC41F2EA0](https://docs.fivem.net/natives/?_0x18EB48CFC41F2EA0)
 --- @param entity Entity
 --- @param p1 number (float)
---- @return void
---- @overload fun(entity: Entity, p1: number): void
+--- @return nil
+--- @overload fun(entity: Entity, p1: number): nil
 function RemoveEntityFromAudioMixGroup(entity, p1) end
 
     
@@ -579,8 +580,8 @@ function RemoveEntityFromAudioMixGroup(entity, p1) end
 --- @hash [0x18EB48CFC41F2EA0](https://docs.fivem.net/natives/?_0x18EB48CFC41F2EA0)
 --- @param entity Entity
 --- @param p1 number (float)
---- @return void
---- @overload fun(entity: Entity, p1: number): void
+--- @return nil
+--- @overload fun(entity: Entity, p1: number): nil
 --- @deprecated
 function N_0x18eb48cfc41f2ea0(entity, p1) end
 
@@ -598,8 +599,8 @@ function IsMissionCompletePlaying() end
 ---
 --- @hash [0x19AF7ED9B9D23058](https://docs.fivem.net/natives/?_0x19AF7ED9B9D23058)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x19af7ed9b9d23058() end
 
     
@@ -607,8 +608,8 @@ function N_0x19af7ed9b9d23058() end
 ---
 --- @hash [0x19F21E63AE6EAE4E](https://docs.fivem.net/natives/?_0x19F21E63AE6EAE4E)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetUserRadioControlEnabled(toggle) end
 
     
@@ -618,8 +619,8 @@ function SetUserRadioControlEnabled(toggle) end
 --- @param ped Ped
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(ped: Ped, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: any, p2: any): nil
 function N_0x1b7abe26cbcbf8c7(ped, p1, p2) end
 
     
@@ -630,8 +631,8 @@ function N_0x1b7abe26cbcbf8c7(ped, p1, p2) end
 ---
 --- @hash [0x1B9025BDA76822B6](https://docs.fivem.net/natives/?_0x1B9025BDA76822B6)
 --- @param vehicle Vehicle
---- @return void
---- @overload fun(vehicle: Vehicle): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle): nil
 function BlipSiren(vehicle) end
 
     
@@ -642,8 +643,8 @@ function BlipSiren(vehicle) end
 --- @hash [0x1B9C0099CB942AC6](https://docs.fivem.net/natives/?_0x1B9C0099CB942AC6)
 --- @param vehicle Vehicle
 --- @param radioStation string (char*)
---- @return void
---- @overload fun(vehicle: Vehicle, radioStation: string): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, radioStation: string): nil
 function SetVehRadioStation(vehicle, radioStation) end
 
     
@@ -654,8 +655,8 @@ function SetVehRadioStation(vehicle, radioStation) end
 --- @hash [0x1C073274E065C6D2](https://docs.fivem.net/natives/?_0x1C073274E065C6D2)
 --- @param vehicle Vehicle
 --- @param toggle boolean
---- @return void
---- @overload fun(vehicle: Vehicle, toggle: boolean): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, toggle: boolean): nil
 function N_0x1c073274e065c6d2(vehicle, toggle) end
 
     
@@ -665,8 +666,8 @@ function N_0x1c073274e065c6d2(vehicle, toggle) end
 --- @param ambientZone string (char*)
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(ambientZone: string, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(ambientZone: string, p1: boolean, p2: boolean): nil
 function SetAmbientZoneStatePersistent(ambientZone, p1, p2) end
 
     
@@ -711,8 +712,8 @@ function LoadStream(streamName, soundSet) end
 --- @hash [0x1FEF0683B96EBCF2](https://docs.fivem.net/natives/?_0x1FEF0683B96EBCF2)
 --- @param vehicle Vehicle
 --- @param toggle boolean
---- @return void
---- @overload fun(vehicle: Vehicle, toggle: boolean): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, toggle: boolean): nil
 function SetSirenWithNoDriver(vehicle, toggle) end
 
     
@@ -722,8 +723,8 @@ function SetSirenWithNoDriver(vehicle, toggle) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number): nil
 function PlayStreamFromPosition(x, y, z) end
 
     
@@ -734,8 +735,8 @@ function PlayStreamFromPosition(x, y, z) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number): nil
 --- @deprecated
 function SpecialFrontendEqual(x, y, z) end
 
@@ -748,8 +749,8 @@ function SpecialFrontendEqual(x, y, z) end
 --- @hash [0x218DD44AAAC964FF](https://docs.fivem.net/natives/?_0x218DD44AAAC964FF)
 --- @param zoneName string (char*)
 --- @param p1 boolean
---- @return void
---- @overload fun(zoneName: string, p1: boolean): void
+--- @return nil
+--- @overload fun(zoneName: string, p1: boolean): nil
 function ClearAmbientZoneState(zoneName, p1) end
 
     
@@ -769,8 +770,8 @@ function IsAlarmPlaying(alarmName) end
 ---
 --- @hash [0x23641AFE870AF385](https://docs.fivem.net/natives/?_0x23641AFE870AF385)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function StartPreloadedConversation() end
 
     
@@ -779,8 +780,8 @@ function StartPreloadedConversation() end
 --- @hash [0x252E5F915EABB675](https://docs.fivem.net/natives/?_0x252E5F915EABB675)
 --- @param p0 boolean
 --- @param p1 boolean
---- @return void
---- @overload fun(p0: boolean, p1: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean, p1: boolean): nil
 function StartScriptPhoneConversation(p0, p1) end
 
     
@@ -795,8 +796,8 @@ function StartScriptPhoneConversation(p0, p1) end
 --- @hash [0x29DA3CA8D8B2692D](https://docs.fivem.net/natives/?_0x29DA3CA8D8B2692D)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedAudioFootstepQuiet(ped, toggle) end
 
     
@@ -812,8 +813,8 @@ function SetPedAudioFootstepQuiet(ped, toggle) end
 --- @hash [0x29DA3CA8D8B2692D](https://docs.fivem.net/natives/?_0x29DA3CA8D8B2692D)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 --- @deprecated
 function N_0x29da3ca8d8b2692d(ped, toggle) end
 
@@ -824,8 +825,8 @@ function N_0x29da3ca8d8b2692d(ped, toggle) end
 ---
 --- @hash [0x2ACABED337622DF2](https://docs.fivem.net/natives/?_0x2ACABED337622DF2)
 --- @param p0 string (char*)
---- @return void
---- @overload fun(p0: string): void
+--- @return nil
+--- @overload fun(p0: string): nil
 function N_0x2acabed337622df2(p0) end
 
     
@@ -845,8 +846,8 @@ function IsRadioStationVisible(radioStation) end
 --- @hash [0x2BE4BC731D039D5A](https://docs.fivem.net/natives/?_0x2BE4BC731D039D5A)
 --- @param vehicle Vehicle
 --- @param toggle boolean
---- @return void
---- @overload fun(vehicle: Vehicle, toggle: boolean): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, toggle: boolean): nil
 function EnableVehicleExhaustPops(vehicle, toggle) end
 
     
@@ -856,8 +857,8 @@ function EnableVehicleExhaustPops(vehicle, toggle) end
 --- @hash [0x2BE4BC731D039D5A](https://docs.fivem.net/natives/?_0x2BE4BC731D039D5A)
 --- @param vehicle Vehicle
 --- @param toggle boolean
---- @return void
---- @overload fun(vehicle: Vehicle, toggle: boolean): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, toggle: boolean): nil
 --- @deprecated
 function N_0x2be4bc731d039d5a(vehicle, toggle) end
 
@@ -866,8 +867,8 @@ function N_0x2be4bc731d039d5a(vehicle, toggle) end
 ---
 --- @hash [0x2C96CDB04FCA358E](https://docs.fivem.net/natives/?_0x2C96CDB04FCA358E)
 --- @param fadeTime number (float)
---- @return void
---- @overload fun(fadeTime: number): void
+--- @return nil
+--- @overload fun(fadeTime: number): nil
 function SetRadioFrontendFadeTime(fadeTime) end
 
     
@@ -876,8 +877,8 @@ function SetRadioFrontendFadeTime(fadeTime) end
 ---
 --- @hash [0x2C96CDB04FCA358E](https://docs.fivem.net/natives/?_0x2C96CDB04FCA358E)
 --- @param fadeTime number (float)
---- @return void
---- @overload fun(fadeTime: number): void
+--- @return nil
+--- @overload fun(fadeTime: number): nil
 --- @deprecated
 function N_0x2c96cdb04fca358e(fadeTime) end
 
@@ -890,8 +891,8 @@ function N_0x2c96cdb04fca358e(fadeTime) end
 --- @param radioStationName string (char*)
 --- @param mixName string (char*)
 --- @param p2 number (int)
---- @return void
---- @overload fun(radioStationName: string, mixName: string, p2: number): void
+--- @return nil
+--- @overload fun(radioStationName: string, mixName: string, p2: number): nil
 function SetRadioTrackMix(radioStationName, mixName, p2) end
 
     
@@ -922,8 +923,8 @@ function GetNetworkIdFromSoundId(soundId) end
 ---
 --- @hash [0x2F794A877ADD4C92](https://docs.fivem.net/natives/?_0x2F794A877ADD4C92)
 --- @param stop boolean
---- @return void
---- @overload fun(stop: boolean): void
+--- @return nil
+--- @overload fun(stop: boolean): nil
 function StopAllAlarms(stop) end
 
     
@@ -954,8 +955,8 @@ function RequestScriptAudioBank(p0, p1) end
 --- @hash [0x2F9D3834AEB9EF79](https://docs.fivem.net/natives/?_0x2F9D3834AEB9EF79)
 --- @param p0 string (char*)
 --- @param p1 number (float)
---- @return void
---- @overload fun(p0: string, p1: number): void
+--- @return nil
+--- @overload fun(p0: string, p1: number): nil
 function SetVariableOnStream(p0, p1) end
 
     
@@ -977,8 +978,8 @@ function N_0x30ca2ef91d15adf8() end
 --- @param p1 number (float)
 --- @param p2 number (float)
 --- @param p3 number (float)
---- @return void
---- @overload fun(p0: any, p1: number, p2: number, p3: number): void
+--- @return nil
+--- @overload fun(p0: any, p1: number, p2: number, p3: number): nil
 function N_0x33e3c6c6f2f0b506(p0, p1, p2, p3) end
 
     
@@ -986,8 +987,8 @@ function N_0x33e3c6c6f2f0b506(p0, p1, p2, p3) end
 ---
 --- @hash [0x344F393B027E38C3](https://docs.fivem.net/natives/?_0x344F393B027E38C3)
 --- @param radioStation string (char*)
---- @return void
---- @overload fun(radioStation: string): void
+--- @return nil
+--- @overload fun(radioStation: string): nil
 function FreezeRadioStation(radioStation) end
 
     
@@ -1032,8 +1033,8 @@ function N_0x34d66bc058019ce0(radioStationName) end
 --- @param voiceName string (char*)
 --- @param speechParam string (char*)
 --- @param p4 boolean
---- @return void
---- @overload fun(ped: Ped, speechName: string, voiceName: string, speechParam: string, p4: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, speechName: string, voiceName: string, speechParam: string, p4: boolean): nil
 function PlayPedAmbientSpeechWithVoiceNative(ped, speechName, voiceName, speechParam, p4) end
 
     
@@ -1051,8 +1052,8 @@ function PlayPedAmbientSpeechWithVoiceNative(ped, speechName, voiceName, speechP
 --- @param voiceName string (char*)
 --- @param speechParam string (char*)
 --- @param p4 boolean
---- @return void
---- @overload fun(ped: Ped, speechName: string, voiceName: string, speechParam: string, p4: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, speechName: string, voiceName: string, speechParam: string, p4: boolean): nil
 --- @deprecated
 function PlayAmbientSpeechWithVoice(ped, speechName, voiceName, speechParam, p4) end
 
@@ -1061,8 +1062,8 @@ function PlayAmbientSpeechWithVoice(ped, speechName, voiceName, speechParam, p4)
 ---
 --- @hash [0x353FC880830B88FA](https://docs.fivem.net/natives/?_0x353FC880830B88FA)
 --- @param soundId number (int)
---- @return void
---- @overload fun(soundId: number): void
+--- @return nil
+--- @overload fun(soundId: number): nil
 function ReleaseSoundId(soundId) end
 
     
@@ -1072,8 +1073,8 @@ function ReleaseSoundId(soundId) end
 ---
 --- @hash [0x395BF71085D1B1D9](https://docs.fivem.net/natives/?_0x395BF71085D1B1D9)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetAggressiveHorns(toggle) end
 
     
@@ -1086,8 +1087,8 @@ function SetAggressiveHorns(toggle) end
 --- @hash [0x399D2D3B33F1B8EB](https://docs.fivem.net/natives/?_0x399D2D3B33F1B8EB)
 --- @param emitterName string (char*)
 --- @param toggle boolean
---- @return void
---- @overload fun(emitterName: string, toggle: boolean): void
+--- @return nil
+--- @overload fun(emitterName: string, toggle: boolean): nil
 function SetStaticEmitterEnabled(emitterName, toggle) end
 
     
@@ -1105,8 +1106,8 @@ function N_0x3a48ab4445d499be() end
 --- @hash [0x3A539D52857EA82D](https://docs.fivem.net/natives/?_0x3A539D52857EA82D)
 --- @param vehicle Vehicle
 --- @param doorIndex number (int)
---- @return void
---- @overload fun(vehicle: Vehicle, doorIndex: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, doorIndex: number): nil
 function PlayVehicleDoorOpenSound(vehicle, doorIndex) end
 
     
@@ -1117,8 +1118,8 @@ function PlayVehicleDoorOpenSound(vehicle, doorIndex) end
 --- @param p1 boolean
 --- @param p2 boolean
 --- @param p3 boolean
---- @return void
---- @overload fun(p0: boolean, p1: boolean, p2: boolean, p3: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean, p1: boolean, p2: boolean, p3: boolean): nil
 function PreloadScriptConversation(p0, p1, p2, p3) end
 
     
@@ -1131,8 +1132,8 @@ function PreloadScriptConversation(p0, p1, p2, p3) end
 ---
 --- @hash [0x3B4BF5F0859204D9](https://docs.fivem.net/natives/?_0x3B4BF5F0859204D9)
 --- @param name string (char*)
---- @return void
---- @overload fun(name: string): void
+--- @return nil
+--- @overload fun(name: string): nil
 function SetCutsceneAudioOverride(name) end
 
     
@@ -1143,8 +1144,8 @@ function SetCutsceneAudioOverride(name) end
 --- @hash [0x3B988190C0AA6C0B](https://docs.fivem.net/natives/?_0x3B988190C0AA6C0B)
 --- @param vehicle Vehicle
 --- @param toggle boolean
---- @return void
---- @overload fun(vehicle: Vehicle, toggle: boolean): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, toggle: boolean): nil
 function SetVehicleRadioEnabled(vehicle, toggle) end
 
     
@@ -1152,8 +1153,8 @@ function SetVehicleRadioEnabled(vehicle, toggle) end
 ---
 --- @hash [0x3BD3F52BA9B1E4E8](https://docs.fivem.net/natives/?_0x3BD3F52BA9B1E4E8)
 --- @param active boolean
---- @return void
---- @overload fun(active: boolean): void
+--- @return nil
+--- @overload fun(active: boolean): nil
 function SetGpsActive(active) end
 
     
@@ -1196,8 +1197,8 @@ function SetGpsActive(active) end
 --- @param vehicle Vehicle
 --- @param override boolean
 --- @param hornHash number (int)
---- @return void
---- @overload fun(vehicle: Vehicle, override: boolean, hornHash: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, override: boolean, hornHash: number): nil
 function OverrideVehHorn(vehicle, override, hornHash) end
 
     
@@ -1207,8 +1208,8 @@ function OverrideVehHorn(vehicle, override, hornHash) end
 ---
 --- @hash [0x3E45765F3FBB582F](https://docs.fivem.net/natives/?_0x3E45765F3FBB582F)
 --- @param vehicle Vehicle
---- @return void
---- @overload fun(vehicle: Vehicle): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle): nil
 function SetVehHasRadioOverride(vehicle) end
 
     
@@ -1219,8 +1220,8 @@ function SetVehHasRadioOverride(vehicle) end
 ---
 --- @hash [0x3E45765F3FBB582F](https://docs.fivem.net/natives/?_0x3E45765F3FBB582F)
 --- @param vehicle Vehicle
---- @return void
---- @overload fun(vehicle: Vehicle): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle): nil
 --- @deprecated
 function N_0x3e45765f3fbb582f(vehicle) end
 
@@ -1285,8 +1286,8 @@ function N_0x40763ea7b9b783e7(p0, p1, p2) end
 ---
 --- @hash [0x40CF0D12D142A9E8](https://docs.fivem.net/natives/?_0x40CF0D12D142A9E8)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function SetPedScream(ped) end
 
     
@@ -1297,8 +1298,8 @@ function SetPedScream(ped) end
 ---
 --- @hash [0x40CF0D12D142A9E8](https://docs.fivem.net/natives/?_0x40CF0D12D142A9E8)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function N_0x40cf0d12d142a9e8(ped) end
 
@@ -1317,8 +1318,8 @@ function GetSoundId() end
 --- @hash [0x43FA0DFC5DF87815](https://docs.fivem.net/natives/?_0x43FA0DFC5DF87815)
 --- @param vehicle Vehicle
 --- @param p1 boolean
---- @return void
---- @overload fun(vehicle: Vehicle, p1: boolean): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, p1: boolean): nil
 function N_0x43fa0dfc5df87815(vehicle, p1) end
 
     
@@ -1331,8 +1332,8 @@ function N_0x43fa0dfc5df87815(vehicle, p1) end
 --- @hash [0x477D9DB48F889591](https://docs.fivem.net/natives/?_0x477D9DB48F889591)
 --- @param radioStationName string (char*)
 --- @param toggle boolean
---- @return void
---- @overload fun(radioStationName: string, toggle: boolean): void
+--- @return nil
+--- @overload fun(radioStationName: string, toggle: boolean): nil
 function LockRadioStation(radioStationName, toggle) end
 
     
@@ -1346,8 +1347,8 @@ function LockRadioStation(radioStationName, toggle) end
 --- @hash [0x477D9DB48F889591](https://docs.fivem.net/natives/?_0x477D9DB48F889591)
 --- @param radioStationName string (char*)
 --- @param toggle boolean
---- @return void
---- @overload fun(radioStationName: string, toggle: boolean): void
+--- @return nil
+--- @overload fun(radioStationName: string, toggle: boolean): nil
 --- @deprecated
 function N_0x94f2e83ead7e6b82(radioStationName, toggle) end
 
@@ -1362,8 +1363,8 @@ function N_0x94f2e83ead7e6b82(radioStationName, toggle) end
 --- @hash [0x477D9DB48F889591](https://docs.fivem.net/natives/?_0x477D9DB48F889591)
 --- @param radioStationName string (char*)
 --- @param toggle boolean
---- @return void
---- @overload fun(radioStationName: string, toggle: boolean): void
+--- @return nil
+--- @overload fun(radioStationName: string, toggle: boolean): nil
 --- @deprecated
 function SetRadioStationDisabled(radioStationName, toggle) end
 
@@ -1374,8 +1375,8 @@ function SetRadioStationDisabled(radioStationName, toggle) end
 ---
 --- @hash [0x47AED84213A47510](https://docs.fivem.net/natives/?_0x47AED84213A47510)
 --- @param enableMixes boolean
---- @return void
---- @overload fun(enableMixes: boolean): void
+--- @return nil
+--- @overload fun(enableMixes: boolean): nil
 function UpdateLsur(enableMixes) end
 
     
@@ -1425,8 +1426,8 @@ function N_0x49b99bf3fda89a7a(ped, speechName, unk) end
 --- @hash [0x4A04DE7CAB2739A1](https://docs.fivem.net/natives/?_0x4A04DE7CAB2739A1)
 --- @param vehicle Vehicle
 --- @param toggle boolean
---- @return void
---- @overload fun(vehicle: Vehicle, toggle: boolean): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, toggle: boolean): nil
 function SetVehicleBoostActive(vehicle, toggle) end
 
     
@@ -1436,8 +1437,8 @@ function SetVehicleBoostActive(vehicle, toggle) end
 ---
 --- @hash [0x4ADA3F19BE4A6047](https://docs.fivem.net/natives/?_0x4ADA3F19BE4A6047)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function SetPedTalk(ped) end
 
     
@@ -1448,8 +1449,8 @@ function SetPedTalk(ped) end
 ---
 --- @hash [0x4ADA3F19BE4A6047](https://docs.fivem.net/natives/?_0x4ADA3F19BE4A6047)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function N_0x4ada3f19be4a6047(ped) end
 
@@ -1463,8 +1464,8 @@ function N_0x4ada3f19be4a6047(ped) end
 --- @hash [0x4CAFEBFA21EC188D](https://docs.fivem.net/natives/?_0x4CAFEBFA21EC188D)
 --- @param radioStation string (char*)
 --- @param toggle boolean
---- @return void
---- @overload fun(radioStation: string, toggle: boolean): void
+--- @return nil
+--- @overload fun(radioStation: string, toggle: boolean): nil
 function SetRadioStationIsVisible(radioStation, toggle) end
 
     
@@ -1476,8 +1477,8 @@ function SetRadioStationIsVisible(radioStation, toggle) end
 --- @param radioStation string (char*)
 --- @param trackListName string (char*)
 --- @param milliseconds number (int)
---- @return void
---- @overload fun(radioStation: string, trackListName: string, milliseconds: number): void
+--- @return nil
+--- @overload fun(radioStation: string, trackListName: string, milliseconds: number): nil
 function ForceRadioTrackListPosition(radioStation, trackListName, milliseconds) end
 
     
@@ -1490,8 +1491,8 @@ function ForceRadioTrackListPosition(radioStation, trackListName, milliseconds) 
 --- @param radioStation string (char*)
 --- @param trackListName string (char*)
 --- @param milliseconds number (int)
---- @return void
---- @overload fun(radioStation: string, trackListName: string, milliseconds: number): void
+--- @return nil
+--- @overload fun(radioStation: string, trackListName: string, milliseconds: number): nil
 --- @deprecated
 function N_0x4e0af9114608257c(radioStation, trackListName, milliseconds) end
 
@@ -1512,8 +1513,8 @@ function N_0x4e0af9114608257c(radioStation, trackListName, milliseconds) end
 --- @param radioStation string (char*)
 --- @param trackListName string (char*)
 --- @param p2 boolean
---- @return void
---- @overload fun(radioStation: string, trackListName: string, p2: boolean): void
+--- @return nil
+--- @overload fun(radioStation: string, trackListName: string, p2: boolean): nil
 function SetCustomRadioTrackList(radioStation, trackListName, p2) end
 
     
@@ -1534,8 +1535,8 @@ function SetCustomRadioTrackList(radioStation, trackListName, p2) end
 --- @param radioStation string (char*)
 --- @param trackListName string (char*)
 --- @param p2 boolean
---- @return void
---- @overload fun(radioStation: string, trackListName: string, p2: boolean): void
+--- @return nil
+--- @overload fun(radioStation: string, trackListName: string, p2: boolean): nil
 --- @deprecated
 function N_0x4e404a9361f75bb2(radioStation, trackListName, p2) end
 
@@ -1561,8 +1562,8 @@ function GetStreamPlayTime() end
 --- @hash [0x4F0C413926060B38](https://docs.fivem.net/natives/?_0x4F0C413926060B38)
 --- @param vehicle Vehicle
 --- @param audioName string (char*)
---- @return void
---- @overload fun(vehicle: Vehicle, audioName: string): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, audioName: string): nil
 function ForceVehicleEngineAudio(vehicle, audioName) end
 
     
@@ -1579,8 +1580,8 @@ function ForceVehicleEngineAudio(vehicle, audioName) end
 --- @hash [0x4F0C413926060B38](https://docs.fivem.net/natives/?_0x4F0C413926060B38)
 --- @param vehicle Vehicle
 --- @param audioName string (char*)
---- @return void
---- @overload fun(vehicle: Vehicle, audioName: string): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, audioName: string): nil
 --- @deprecated
 function N_0x4f0c413926060b38(vehicle, audioName) end
 
@@ -1598,8 +1599,8 @@ function N_0x4f0c413926060b38(vehicle, audioName) end
 --- @hash [0x4F0C413926060B38](https://docs.fivem.net/natives/?_0x4F0C413926060B38)
 --- @param vehicle Vehicle
 --- @param audioName string (char*)
---- @return void
---- @overload fun(vehicle: Vehicle, audioName: string): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, audioName: string): nil
 --- @deprecated
 function SetVehicleAudio(vehicle, audioName) end
 
@@ -1644,8 +1645,8 @@ function N_0x544810ed9db6bbe6() end
 ---
 --- @hash [0x552369F549563AD5](https://docs.fivem.net/natives/?_0x552369F549563AD5)
 --- @param value boolean
---- @return void
---- @overload fun(value: boolean): void
+--- @return nil
+--- @overload fun(value: boolean): nil
 function DistantCopCarSirens(value) end
 
     
@@ -1657,8 +1658,8 @@ function DistantCopCarSirens(value) end
 ---
 --- @hash [0x552369F549563AD5](https://docs.fivem.net/natives/?_0x552369F549563AD5)
 --- @param value boolean
---- @return void
---- @overload fun(value: boolean): void
+--- @return nil
+--- @overload fun(value: boolean): nil
 --- @deprecated
 function N_0x552369f549563ad5(value) end
 
@@ -1671,8 +1672,8 @@ function N_0x552369f549563ad5(value) end
 ---
 --- @hash [0x552369F549563AD5](https://docs.fivem.net/natives/?_0x552369F549563AD5)
 --- @param value boolean
---- @return void
---- @overload fun(value: boolean): void
+--- @return nil
+--- @overload fun(value: boolean): nil
 --- @deprecated
 function ForceAmbientSiren(value) end
 
@@ -1686,8 +1687,8 @@ function ForceAmbientSiren(value) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function N_0x55ecf4d13d9903b0(p0, p1, p2, p3) end
 
     
@@ -1696,8 +1697,8 @@ function N_0x55ecf4d13d9903b0(p0, p1, p2, p3) end
 --- @hash [0x58BB377BEC7CD5F4](https://docs.fivem.net/natives/?_0x58BB377BEC7CD5F4)
 --- @param p0 boolean
 --- @param p1 boolean
---- @return void
---- @overload fun(p0: boolean, p1: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean, p1: boolean): nil
 function N_0x58bb377bec7cd5f4(p0, p1) end
 
     
@@ -1705,8 +1706,8 @@ function N_0x58bb377bec7cd5f4(p0, p1) end
 ---
 --- @hash [0x58FCE43488F9F5F4](https://docs.fivem.net/natives/?_0x58FCE43488F9F5F4)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function PlayStreamFrontend() end
 
     
@@ -1730,8 +1731,8 @@ function LoadStreamWithStartOffset(streamName, startOffset, soundSet) end
 --- @hash [0x59E7B488451F4D3A](https://docs.fivem.net/natives/?_0x59E7B488451F4D3A)
 --- @param vehicle Vehicle
 --- @param damageFactor number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, damageFactor: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, damageFactor: number): nil
 function SetVehicleAudioEngineDamageFactor(vehicle, damageFactor) end
 
     
@@ -1741,8 +1742,8 @@ function SetVehicleAudioEngineDamageFactor(vehicle, damageFactor) end
 --- @hash [0x59E7B488451F4D3A](https://docs.fivem.net/natives/?_0x59E7B488451F4D3A)
 --- @param vehicle Vehicle
 --- @param damageFactor number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, damageFactor: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, damageFactor: number): nil
 --- @deprecated
 function N_0x59e7b488451f4d3a(vehicle, damageFactor) end
 
@@ -1791,8 +1792,8 @@ function N_0x5b50abb1fe3746f4() end
 --- @param p3 any
 --- @param p4 any
 --- @param p5 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any): nil
 function N_0x5b9853296731e88d(p0, p1, p2, p3, p4, p5) end
 
     
@@ -1800,8 +1801,8 @@ function N_0x5b9853296731e88d(p0, p1, p2, p3, p4, p5) end
 ---
 --- @hash [0x5D2BFAAB8D956E0E](https://docs.fivem.net/natives/?_0x5D2BFAAB8D956E0E)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x5d2bfaab8d956e0e() end
 
     
@@ -1881,8 +1882,8 @@ function IsPlayerVehicleRadioEnabled() end
 --- @hash [0x6004BCB0E226AAEA](https://docs.fivem.net/natives/?_0x6004BCB0E226AAEA)
 --- @param p0 boolean
 --- @param p1 boolean
---- @return void
---- @overload fun(p0: boolean, p1: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean, p1: boolean): nil
 function PreloadScriptPhoneConversation(p0, p1) end
 
     
@@ -1890,8 +1891,8 @@ function PreloadScriptPhoneConversation(p0, p1) end
 ---
 --- @hash [0x61631F5DF50D1C34](https://docs.fivem.net/natives/?_0x61631F5DF50D1C34)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0x61631f5df50d1c34(p0) end
 
     
@@ -1900,8 +1901,8 @@ function N_0x61631f5df50d1c34(p0) end
 --- @hash [0x62A456AA4769EF34](https://docs.fivem.net/natives/?_0x62A456AA4769EF34)
 --- @param vehicle Vehicle
 --- @param doorIndex number (int)
---- @return void
---- @overload fun(vehicle: Vehicle, doorIndex: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, doorIndex: number): nil
 function PlayVehicleDoorCloseSound(vehicle, doorIndex) end
 
     
@@ -1912,8 +1913,8 @@ function PlayVehicleDoorCloseSound(vehicle, doorIndex) end
 --- @hash [0x651D3228960D08AF](https://docs.fivem.net/natives/?_0x651D3228960D08AF)
 --- @param emitterName string (char*)
 --- @param entity Entity
---- @return void
---- @overload fun(emitterName: string, entity: Entity): void
+--- @return nil
+--- @overload fun(emitterName: string, entity: Entity): nil
 function LinkStaticEmitterToEntity(emitterName, entity) end
 
     
@@ -1925,8 +1926,8 @@ function LinkStaticEmitterToEntity(emitterName, entity) end
 --- @hash [0x651D3228960D08AF](https://docs.fivem.net/natives/?_0x651D3228960D08AF)
 --- @param emitterName string (char*)
 --- @param entity Entity
---- @return void
---- @overload fun(emitterName: string, entity: Entity): void
+--- @return nil
+--- @overload fun(emitterName: string, entity: Entity): nil
 --- @deprecated
 function N_0x651d3228960d08af(emitterName, entity) end
 
@@ -1935,8 +1936,8 @@ function N_0x651d3228960d08af(emitterName, entity) end
 ---
 --- @hash [0x65475A218FFAA93D](https://docs.fivem.net/natives/?_0x65475A218FFAA93D)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ReleaseAmbientAudioBank() end
 
     
@@ -1948,8 +1949,8 @@ function ReleaseAmbientAudioBank() end
 ---
 --- @hash [0x66C3FB05206041BA](https://docs.fivem.net/natives/?_0x66C3FB05206041BA)
 --- @param vehicle Vehicle
---- @return void
---- @overload fun(vehicle: Vehicle): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle): nil
 function TriggerSiren(vehicle) end
 
     
@@ -1962,8 +1963,8 @@ function TriggerSiren(vehicle) end
 ---
 --- @hash [0x66C3FB05206041BA](https://docs.fivem.net/natives/?_0x66C3FB05206041BA)
 --- @param vehicle Vehicle
---- @return void
---- @overload fun(vehicle: Vehicle): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle): nil
 --- @deprecated
 function N_0x66c3fb05206041ba(vehicle) end
 
@@ -1998,8 +1999,8 @@ function GetNumberOfPassengerVoiceVariations(newsStory) end
 --- @param audioName string (char*)
 --- @param audioRef string (char*)
 --- @param p3 boolean
---- @return void
---- @overload fun(soundId: number, audioName: string, audioRef: string, p3: boolean): void
+--- @return nil
+--- @overload fun(soundId: number, audioName: string, audioRef: string, p3: boolean): nil
 function PlaySoundFrontend(soundId, audioName, audioRef, p3) end
 
     
@@ -2010,8 +2011,8 @@ function PlaySoundFrontend(soundId, audioName, audioRef, p3) end
 --- @param p1 boolean
 --- @param p2 boolean
 --- @param p3 boolean
---- @return void
---- @overload fun(p0: boolean, p1: boolean, p2: boolean, p3: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean, p1: boolean, p2: boolean, p3: boolean): nil
 function StartScriptConversation(p0, p1, p2, p3) end
 
     
@@ -2019,8 +2020,8 @@ function StartScriptConversation(p0, p1, p2, p3) end
 ---
 --- @hash [0x6C5AE23EFA885092](https://docs.fivem.net/natives/?_0x6C5AE23EFA885092)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function StopPedRingtone(ped) end
 
     
@@ -2034,8 +2035,8 @@ function StopPedRingtone(ped) end
 --- @hash [0x6C8065A3B780185B](https://docs.fivem.net/natives/?_0x6C8065A3B780185B)
 --- @param ped Ped
 --- @param name string (char*)
---- @return void
---- @overload fun(ped: Ped, name: string): void
+--- @return nil
+--- @overload fun(ped: Ped, name: string): nil
 function SetAmbientVoiceName(ped, name) end
 
     
@@ -2054,8 +2055,8 @@ function IsGameInControlOfMusic() end
 ---
 --- @hash [0x6DDBBDD98E2E9C25](https://docs.fivem.net/natives/?_0x6DDBBDD98E2E9C25)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function SkipRadioForward() end
 
     
@@ -2086,8 +2087,8 @@ function N_0x6f259f82d873b8b8() end
 --- @hash [0x6FDDAD856E36988A](https://docs.fivem.net/natives/?_0x6FDDAD856E36988A)
 --- @param vehicle Vehicle
 --- @param toggle boolean
---- @return void
---- @overload fun(vehicle: Vehicle, toggle: boolean): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, toggle: boolean): nil
 function N_0x6fddad856e36988a(vehicle, toggle) end
 
     
@@ -2108,8 +2109,8 @@ function TriggerMusicEvent(eventName) end
 --- @hash [0x70B8EC8FC108A634](https://docs.fivem.net/natives/?_0x70B8EC8FC108A634)
 --- @param p0 boolean
 --- @param p1 any
---- @return void
---- @overload fun(p0: boolean, p1: any): void
+--- @return nil
+--- @overload fun(p0: boolean, p1: any): nil
 function N_0x70b8ec8fc108a634(p0, p1) end
 
     
@@ -2130,8 +2131,8 @@ function IsAnySpeechPlaying(ped) end
 --- @hash [0x733ADF241531E5C2](https://docs.fivem.net/natives/?_0x733ADF241531E5C2)
 --- @param variableName string (char*)
 --- @param value number (float)
---- @return void
---- @overload fun(variableName: string, value: number): void
+--- @return nil
+--- @overload fun(variableName: string, value: number): nil
 function SetVariableOnUnderWaterStream(variableName, value) end
 
     
@@ -2144,8 +2145,8 @@ function SetVariableOnUnderWaterStream(variableName, value) end
 --- @hash [0x733ADF241531E5C2](https://docs.fivem.net/natives/?_0x733ADF241531E5C2)
 --- @param variableName string (char*)
 --- @param value number (float)
---- @return void
---- @overload fun(variableName: string, value: number): void
+--- @return nil
+--- @overload fun(variableName: string, value: number): nil
 --- @deprecated
 function N_0x733adf241531e5c2(variableName, value) end
 
@@ -2200,8 +2201,8 @@ function N_0x75262fd12d0a1c84(netId) end
 --- @hash [0x75773E11BA459E90](https://docs.fivem.net/natives/?_0x75773E11BA459E90)
 --- @param hash Hash
 --- @param toggle boolean
---- @return void
---- @overload fun(hash: Hash, toggle: boolean): void
+--- @return nil
+--- @overload fun(hash: Hash, toggle: boolean): nil
 function OverrideMicrophoneSettings(hash, toggle) end
 
     
@@ -2211,8 +2212,8 @@ function OverrideMicrophoneSettings(hash, toggle) end
 --- @hash [0x75773E11BA459E90](https://docs.fivem.net/natives/?_0x75773E11BA459E90)
 --- @param hash Hash
 --- @param toggle boolean
---- @return void
---- @overload fun(hash: Hash, toggle: boolean): void
+--- @return nil
+--- @overload fun(hash: Hash, toggle: boolean): nil
 --- @deprecated
 function N_0x75773e11ba459e90(hash, toggle) end
 
@@ -2222,8 +2223,8 @@ function N_0x75773e11ba459e90(hash, toggle) end
 --- @hash [0x76D683C108594D0E](https://docs.fivem.net/natives/?_0x76D683C108594D0E)
 --- @param vehicle Vehicle
 --- @param toggle boolean
---- @return void
---- @overload fun(vehicle: Vehicle, toggle: boolean): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, toggle: boolean): nil
 function SetHornEnabled(vehicle, toggle) end
 
     
@@ -2237,8 +2238,8 @@ function SetHornEnabled(vehicle, toggle) end
 --- @hash [0x774BD811F656A122](https://docs.fivem.net/natives/?_0x774BD811F656A122)
 --- @param radioStation string (char*)
 --- @param toggle boolean
---- @return void
---- @overload fun(radioStation: string, toggle: boolean): void
+--- @return nil
+--- @overload fun(radioStation: string, toggle: boolean): nil
 function SetRadioStationMusicOnly(radioStation, toggle) end
 
     
@@ -2253,8 +2254,8 @@ function SetRadioStationMusicOnly(radioStation, toggle) end
 --- @hash [0x774BD811F656A122](https://docs.fivem.net/natives/?_0x774BD811F656A122)
 --- @param radioStation string (char*)
 --- @param toggle boolean
---- @return void
---- @overload fun(radioStation: string, toggle: boolean): void
+--- @return nil
+--- @overload fun(radioStation: string, toggle: boolean): nil
 --- @deprecated
 function N_0x774bd811f656a122(radioStation, toggle) end
 
@@ -2263,8 +2264,8 @@ function N_0x774bd811f656a122(radioStation, toggle) end
 ---
 --- @hash [0x77ED170667F50170](https://docs.fivem.net/natives/?_0x77ED170667F50170)
 --- @param audioBank string (char*)
---- @return void
---- @overload fun(audioBank: string): void
+--- @return nil
+--- @overload fun(audioBank: string): nil
 function ReleaseNamedScriptAudioBank(audioBank) end
 
     
@@ -2272,8 +2273,8 @@ function ReleaseNamedScriptAudioBank(audioBank) end
 ---
 --- @hash [0x7A2D8AD0A9EB9C3F](https://docs.fivem.net/natives/?_0x7A2D8AD0A9EB9C3F)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ReleaseScriptAudioBank() end
 
     
@@ -2281,8 +2282,8 @@ function ReleaseScriptAudioBank() end
 ---
 --- @hash [0x7A73D05A607734C7](https://docs.fivem.net/natives/?_0x7A73D05A607734C7)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function StopCurrentPlayingSpeech(ped) end
 
     
@@ -2291,8 +2292,8 @@ function StopCurrentPlayingSpeech(ped) end
 ---
 --- @hash [0x7A73D05A607734C7](https://docs.fivem.net/natives/?_0x7A73D05A607734C7)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function N_0x7a73d05a607734c7(ped) end
 
@@ -2302,8 +2303,8 @@ function N_0x7a73d05a607734c7(ped) end
 ---
 --- @hash [0x7A73D05A607734C7](https://docs.fivem.net/natives/?_0x7A73D05A607734C7)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function SetPedMute(ped) end
 
@@ -2319,8 +2320,8 @@ function SetPedMute(ped) end
 --- @hash [0x7CDC8C3B89F661B3](https://docs.fivem.net/natives/?_0x7CDC8C3B89F661B3)
 --- @param ped Ped
 --- @param voiceGroupHash Hash
---- @return void
---- @overload fun(ped: Ped, voiceGroupHash: Hash): void
+--- @return nil
+--- @overload fun(ped: Ped, voiceGroupHash: Hash): nil
 function SetPedVoiceGroup(ped, voiceGroupHash) end
 
     
@@ -2336,8 +2337,8 @@ function SetPedVoiceGroup(ped, voiceGroupHash) end
 --- @hash [0x7CDC8C3B89F661B3](https://docs.fivem.net/natives/?_0x7CDC8C3B89F661B3)
 --- @param ped Ped
 --- @param voiceGroupHash Hash
---- @return void
---- @overload fun(ped: Ped, voiceGroupHash: Hash): void
+--- @return nil
+--- @overload fun(ped: Ped, voiceGroupHash: Hash): nil
 --- @deprecated
 function N_0x7cdc8c3b89f661b3(ped, voiceGroupHash) end
 
@@ -2349,8 +2350,8 @@ function N_0x7cdc8c3b89f661b3(ped, voiceGroupHash) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function N_0x7ec3c679d0e7e46b(p0, p1, p2, p3) end
 
     
@@ -2365,8 +2366,8 @@ function N_0x7ec3c679d0e7e46b(p0, p1, p2, p3) end
 --- @param p3 boolean
 --- @param p4 any
 --- @param p5 boolean
---- @return void
---- @overload fun(soundId: number, audioName: string, audioRef: string, p3: boolean, p4: any, p5: boolean): void
+--- @return nil
+--- @overload fun(soundId: number, audioName: string, audioRef: string, p3: boolean, p4: any, p5: boolean): nil
 function PlaySound(soundId, audioName, audioRef, p3, p4, p5) end
 
     
@@ -2374,8 +2375,8 @@ function PlaySound(soundId, audioName, audioRef, p3, p4, p5) end
 ---
 --- @hash [0x806058BBDC136E06](https://docs.fivem.net/natives/?_0x806058BBDC136E06)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function StopCutsceneAudio() end
 
     
@@ -2384,8 +2385,8 @@ function StopCutsceneAudio() end
 ---
 --- @hash [0x806058BBDC136E06](https://docs.fivem.net/natives/?_0x806058BBDC136E06)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x806058bbdc136e06() end
 
@@ -2414,8 +2415,8 @@ function N_0x3d120012440e6683() end
 ---
 --- @hash [0x8530AD776CD72B12](https://docs.fivem.net/natives/?_0x8530AD776CD72B12)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function PauseScriptedConversation(p0) end
 
     
@@ -2423,8 +2424,8 @@ function PauseScriptedConversation(p0) end
 ---
 --- @hash [0x88795F13FACDA88D](https://docs.fivem.net/natives/?_0x88795F13FACDA88D)
 --- @param radioStation string (char*)
---- @return void
---- @overload fun(radioStation: string): void
+--- @return nil
+--- @overload fun(radioStation: string): nil
 function SetInitialPlayerStation(radioStation) end
 
     
@@ -2432,8 +2433,8 @@ function SetInitialPlayerStation(radioStation) end
 ---
 --- @hash [0x89049DD63C08B5D1](https://docs.fivem.net/natives/?_0x89049DD63C08B5D1)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function PlayStreamFromPed(ped) end
 
     
@@ -2442,8 +2443,8 @@ function PlayStreamFromPed(ped) end
 ---
 --- @hash [0x89049DD63C08B5D1](https://docs.fivem.net/natives/?_0x89049DD63C08B5D1)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function N_0x89049dd63c08b5d1(ped) end
 
@@ -2453,8 +2454,8 @@ function N_0x89049dd63c08b5d1(ped) end
 --- @hash [0x892B6AB8F33606F5](https://docs.fivem.net/natives/?_0x892B6AB8F33606F5)
 --- @param p0 number (int)
 --- @param entity Entity
---- @return void
---- @overload fun(p0: number, entity: Entity): void
+--- @return nil
+--- @overload fun(p0: number, entity: Entity): nil
 function N_0x892b6ab8f33606f5(p0, entity) end
 
     
@@ -2467,8 +2468,8 @@ function N_0x892b6ab8f33606f5(p0, entity) end
 --- @param ped Ped
 --- @param p1 string (char*)
 --- @param p2 string (char*)
---- @return void
---- @overload fun(ped: Ped, p1: string, p2: string): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: string, p2: string): nil
 function InterruptConversationAndPause(ped, p1, p2) end
 
     
@@ -2482,8 +2483,8 @@ function InterruptConversationAndPause(ped, p1, p2) end
 --- @param ped Ped
 --- @param p1 string (char*)
 --- @param p2 string (char*)
---- @return void
---- @overload fun(ped: Ped, p1: string, p2: string): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: string, p2: string): nil
 --- @deprecated
 function N_0x8a694d7a68f8dc38(ped, p1, p2) end
 
@@ -2502,8 +2503,8 @@ function PlaySynchronizedAudioEvent(p0) end
 --- @hash [0x8BF907833BE275DE](https://docs.fivem.net/natives/?_0x8BF907833BE275DE)
 --- @param p0 number (float)
 --- @param p1 number (float)
---- @return void
---- @overload fun(p0: number, p1: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: number): nil
 function N_0x8bf907833be275de(p0, p1) end
 
     
@@ -2531,8 +2532,8 @@ function FindRadioStationIndex(stationNameHash) end
 --- @param isNetwork boolean
 --- @param range number (int)
 --- @param p8 boolean
---- @return void
---- @overload fun(soundId: number, audioName: string, x: number, y: number, z: number, audioRef: string, isNetwork: boolean, range: number, p8: boolean): void
+--- @return nil
+--- @overload fun(soundId: number, audioName: string, x: number, y: number, z: number, audioRef: string, isNetwork: boolean, range: number, p8: boolean): nil
 function PlaySoundFromCoord(soundId, audioName, x, y, z, audioRef, isNetwork, range, p8) end
 
     
@@ -2588,8 +2589,8 @@ function PlaySoundFromCoord(soundId, audioName, x, y, z, audioRef, isNetwork, ra
 --- @param ped Ped
 --- @param speechName string (char*)
 --- @param speechParam string (char*)
---- @return void
---- @overload fun(ped: Ped, speechName: string, speechParam: string): void
+--- @return nil
+--- @overload fun(ped: Ped, speechName: string, speechParam: string): nil
 function PlayPedAmbientSpeechNative(ped, speechName, speechParam) end
 
     
@@ -2646,8 +2647,8 @@ function PlayPedAmbientSpeechNative(ped, speechName, speechParam) end
 --- @param ped Ped
 --- @param speechName string (char*)
 --- @param speechParam string (char*)
---- @return void
---- @overload fun(ped: Ped, speechName: string, speechParam: string): void
+--- @return nil
+--- @overload fun(ped: Ped, speechName: string, speechParam: string): nil
 --- @deprecated
 function PlayAmbientSpeech1(ped, speechName, speechParam) end
 
@@ -2720,8 +2721,8 @@ function IsAmbientSpeechDisabled(ped) end
 --- @hash [0x950A154B8DAB6185](https://docs.fivem.net/natives/?_0x950A154B8DAB6185)
 --- @param p0 string (char*)
 --- @param p1 Entity
---- @return void
---- @overload fun(p0: string, p1: Entity): void
+--- @return nil
+--- @overload fun(p0: string, p1: Entity): nil
 function SetSynchronizedAudioEventPositionThisFrame(p0, p1) end
 
     
@@ -2752,8 +2753,8 @@ function SetSynchronizedAudioEventPositionThisFrame(p0, p1) end
 --- @hash [0x950A154B8DAB6185](https://docs.fivem.net/natives/?_0x950A154B8DAB6185)
 --- @param p0 string (char*)
 --- @param p1 Entity
---- @return void
---- @overload fun(p0: string, p1: Entity): void
+--- @return nil
+--- @overload fun(p0: string, p1: Entity): nil
 --- @deprecated
 function N_0x950a154b8dab6185(p0, p1) end
 
@@ -2776,8 +2777,8 @@ function N_0x950a154b8dab6185(p0, p1) end
 --- @hash [0x95D2D383D5396B8A](https://docs.fivem.net/natives/?_0x95D2D383D5396B8A)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedIsDrunk(ped, toggle) end
 
     
@@ -2792,8 +2793,8 @@ function SetPedIsDrunk(ped, toggle) end
 --- @param index number (int)
 --- @param ped Ped
 --- @param p2 string (char*)
---- @return void
---- @overload fun(index: number, ped: Ped, p2: string): void
+--- @return nil
+--- @overload fun(index: number, ped: Ped, p2: string): nil
 function AddPedToConversation(index, ped, p2) end
 
     
@@ -2801,8 +2802,8 @@ function AddPedToConversation(index, ped, p2) end
 ---
 --- @hash [0x9663FE6B7A61EB00](https://docs.fivem.net/natives/?_0x9663FE6B7A61EB00)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function SkipToNextScriptedConversationLine() end
 
     
@@ -2812,8 +2813,8 @@ function SkipToNextScriptedConversationLine() end
 --- @param p0 string (char*)
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: string, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: string, p1: boolean, p2: boolean): nil
 function SetAmbientZoneListState(p0, p1, p2) end
 
     
@@ -2824,8 +2825,8 @@ function SetAmbientZoneListState(p0, p1, p2) end
 --- @hash [0x97FFB4ADEED08066](https://docs.fivem.net/natives/?_0x97FFB4ADEED08066)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x97ffb4adeed08066(p0, p1) end
 
     
@@ -2834,8 +2835,8 @@ function N_0x97ffb4adeed08066(p0, p1) end
 --- @hash [0x9A53DED9921DE990](https://docs.fivem.net/natives/?_0x9A53DED9921DE990)
 --- @param ped Ped
 --- @param hash Hash
---- @return void
---- @overload fun(ped: Ped, hash: Hash): void
+--- @return nil
+--- @overload fun(ped: Ped, hash: Hash): nil
 function SetAmbientVoiceNameHash(ped, hash) end
 
     
@@ -2845,8 +2846,8 @@ function SetAmbientVoiceNameHash(ped, hash) end
 --- @hash [0x9A53DED9921DE990](https://docs.fivem.net/natives/?_0x9A53DED9921DE990)
 --- @param ped Ped
 --- @param hash Hash
---- @return void
---- @overload fun(ped: Ped, hash: Hash): void
+--- @return nil
+--- @overload fun(ped: Ped, hash: Hash): nil
 --- @deprecated
 function N_0x9a53ded9921de990(ped, hash) end
 
@@ -2855,8 +2856,8 @@ function N_0x9a53ded9921de990(ped, hash) end
 ---
 --- @hash [0x9AC92EED5E4793AB](https://docs.fivem.net/natives/?_0x9AC92EED5E4793AB)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x9ac92eed5e4793ab() end
 
     
@@ -2864,8 +2865,8 @@ function N_0x9ac92eed5e4793ab() end
 ---
 --- @hash [0x9AEB285D1818C9AC](https://docs.fivem.net/natives/?_0x9AEB285D1818C9AC)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function RestartScriptedConversation() end
 
     
@@ -2877,8 +2878,8 @@ function RestartScriptedConversation() end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function N_0x9bd7bd55e4533183(p0, p1, p2) end
 
     
@@ -2888,8 +2889,8 @@ function N_0x9bd7bd55e4533183(p0, p1, p2) end
 ---
 --- @hash [0x9C11908013EA4715](https://docs.fivem.net/natives/?_0x9C11908013EA4715)
 --- @param vehicle Vehicle
---- @return void
---- @overload fun(vehicle: Vehicle): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle): nil
 function SoundVehicleHornThisFrame(vehicle) end
 
     
@@ -2900,8 +2901,8 @@ function SoundVehicleHornThisFrame(vehicle) end
 ---
 --- @hash [0x9C11908013EA4715](https://docs.fivem.net/natives/?_0x9C11908013EA4715)
 --- @param vehicle Vehicle
---- @return void
---- @overload fun(vehicle: Vehicle): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle): nil
 --- @deprecated
 function N_0x9c11908013ea4715(vehicle) end
 
@@ -2913,8 +2914,8 @@ function N_0x9c11908013ea4715(vehicle) end
 --- @hash [0x9D3AF56E94C9AE98](https://docs.fivem.net/natives/?_0x9D3AF56E94C9AE98)
 --- @param vehicle Vehicle
 --- @param p1 number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, p1: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, p1: number): nil
 function N_0x9d3af56e94c9ae98(vehicle, p1) end
 
     
@@ -2923,8 +2924,8 @@ function N_0x9d3af56e94c9ae98(vehicle, p1) end
 --- @hash [0x9D64D7405520E3D3](https://docs.fivem.net/natives/?_0x9D64D7405520E3D3)
 --- @param ped Ped
 --- @param shaking boolean
---- @return void
---- @overload fun(ped: Ped, shaking: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, shaking: boolean): nil
 function StopPedSpeaking(ped, shaking) end
 
     
@@ -2955,8 +2956,8 @@ function PrepareAlarm(alarmName) end
 ---
 --- @hash [0xA018A12E5C5C2FA6](https://docs.fivem.net/natives/?_0xA018A12E5C5C2FA6)
 --- @param p0 any
---- @return any, any
---- @overload fun(p0: any): any, any
+--- @return nil, any, any
+--- @overload fun(p0: any): nil, any, any
 function InterruptConversation(p0) end
 
     
@@ -3000,8 +3001,8 @@ function IsRadioRetuning() end
 --- @hash [0xA1CADDCD98415A41](https://docs.fivem.net/natives/?_0xA1CADDCD98415A41)
 --- @param alarmName string (char*)
 --- @param toggle boolean
---- @return void
---- @overload fun(alarmName: string, toggle: boolean): void
+--- @return nil
+--- @overload fun(alarmName: string, toggle: boolean): nil
 function StopAlarm(alarmName, toggle) end
 
     
@@ -3009,8 +3010,8 @@ function StopAlarm(alarmName, toggle) end
 ---
 --- @hash [0xA3B0C41BA5CC0BB5](https://docs.fivem.net/natives/?_0xA3B0C41BA5CC0BB5)
 --- @param soundId number (int)
---- @return void
---- @overload fun(soundId: number): void
+--- @return nil
+--- @overload fun(soundId: number): nil
 function StopSound(soundId) end
 
     
@@ -3018,8 +3019,8 @@ function StopSound(soundId) end
 ---
 --- @hash [0xA4718A1419D18151](https://docs.fivem.net/natives/?_0xA4718A1419D18151)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function StopStream() end
 
     
@@ -3028,8 +3029,8 @@ function StopStream() end
 --- @hash [0xA5342D390CDA41D6](https://docs.fivem.net/natives/?_0xA5342D390CDA41D6)
 --- @param ped Ped
 --- @param p1 boolean
---- @return void
---- @overload fun(ped: Ped, p1: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean): nil
 function SetPedAudioGender(ped, p1) end
 
     
@@ -3039,8 +3040,8 @@ function SetPedAudioGender(ped, p1) end
 --- @hash [0xA5342D390CDA41D6](https://docs.fivem.net/natives/?_0xA5342D390CDA41D6)
 --- @param ped Ped
 --- @param p1 boolean
---- @return void
---- @overload fun(ped: Ped, p1: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean): nil
 --- @deprecated
 function N_0xa5342d390cda41d6(ped, p1) end
 
@@ -3058,8 +3059,8 @@ function GetPlayerRadioStationGenre() end
 ---
 --- @hash [0xA5F377B175A699C5](https://docs.fivem.net/natives/?_0xA5F377B175A699C5)
 --- @param time number (int)
---- @return void
---- @overload fun(time: number): void
+--- @return nil
+--- @overload fun(time: number): nil
 function SetAudioScriptCleanupTime(time) end
 
     
@@ -3068,8 +3069,8 @@ function SetAudioScriptCleanupTime(time) end
 ---
 --- @hash [0xA5F377B175A699C5](https://docs.fivem.net/natives/?_0xA5F377B175A699C5)
 --- @param time number (int)
---- @return void
---- @overload fun(time: number): void
+--- @return nil
+--- @overload fun(time: number): nil
 --- @deprecated
 function N_0xa5f377b175a699c5(time) end
 
@@ -3080,8 +3081,8 @@ function N_0xa5f377b175a699c5(time) end
 ---
 --- @hash [0xA619B168B8A8570F](https://docs.fivem.net/natives/?_0xA619B168B8A8570F)
 --- @param radioStation number (int)
---- @return void
---- @overload fun(radioStation: number): void
+--- @return nil
+--- @overload fun(radioStation: number): nil
 function SetRadioToStationIndex(radioStation) end
 
     
@@ -3093,8 +3094,8 @@ function SetRadioToStationIndex(radioStation) end
 ---
 --- @hash [0xA8638BE228D4751A](https://docs.fivem.net/natives/?_0xA8638BE228D4751A)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function UnregisterScriptWithAudio() end
 
     
@@ -3105,8 +3106,8 @@ function UnregisterScriptWithAudio() end
 --- @hash [0xA8A7D434AFB4B97B](https://docs.fivem.net/natives/?_0xA8A7D434AFB4B97B)
 --- @param p0 string (char*)
 --- @param p1 number (int)
---- @return void
---- @overload fun(p0: string, p1: number): void
+--- @return nil
+--- @overload fun(p0: string, p1: number): nil
 function N_0xa8a7d434afb4b97b(p0, p1) end
 
     
@@ -3115,8 +3116,8 @@ function N_0xa8a7d434afb4b97b(p0, p1) end
 --- @hash [0xA9A41C1E940FB0E8](https://docs.fivem.net/natives/?_0xA9A41C1E940FB0E8)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function DisablePedPainAudio(ped, toggle) end
 
     
@@ -3136,8 +3137,8 @@ function N_0xaa19f5572c38b564(p0) end
 --- @hash [0xAB6781A5F3101470](https://docs.fivem.net/natives/?_0xAB6781A5F3101470)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0xab6781a5f3101470(p0, p1) end
 
     
@@ -3177,8 +3178,8 @@ function GetVehicleHornHash(vehicle) end
 --- @hash [0xACF57305B12AF907](https://docs.fivem.net/natives/?_0xACF57305B12AF907)
 --- @param emitterName string (char*)
 --- @param radioStation string (char*)
---- @return void
---- @overload fun(emitterName: string, radioStation: string): void
+--- @return nil
+--- @overload fun(emitterName: string, radioStation: string): nil
 function SetEmitterRadioStation(emitterName, radioStation) end
 
     
@@ -3188,8 +3189,8 @@ function SetEmitterRadioStation(emitterName, radioStation) end
 --- @param soundId number (int)
 --- @param variableName string (char*)
 --- @param value number (float)
---- @return void
---- @overload fun(soundId: number, variableName: string, value: number): void
+--- @return nil
+--- @overload fun(soundId: number, variableName: string, value: number): nil
 function SetVariableOnSound(soundId, variableName, value) end
 
     
@@ -3204,8 +3205,8 @@ function SetVariableOnSound(soundId, variableName, value) end
 ---
 --- @hash [0xB138AAB8A70D3C69](https://docs.fivem.net/natives/?_0xB138AAB8A70D3C69)
 --- @param audioName string (char*)
---- @return void
---- @overload fun(audioName: string): void
+--- @return nil
+--- @overload fun(audioName: string): nil
 function PlayMissionCompleteAudio(audioName) end
 
     
@@ -3213,8 +3214,8 @@ function PlayMissionCompleteAudio(audioName) end
 ---
 --- @hash [0xB165AB7C248B2DC1](https://docs.fivem.net/natives/?_0xB165AB7C248B2DC1)
 --- @param newsStory number (int)
---- @return void
---- @overload fun(newsStory: number): void
+--- @return nil
+--- @overload fun(newsStory: number): nil
 function UnlockMissionNewsStory(newsStory) end
 
     
@@ -3233,8 +3234,8 @@ function GetRadioStationName(radioStation) end
 ---
 --- @hash [0xB32209EFFDC04913](https://docs.fivem.net/natives/?_0xB32209EFFDC04913)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ClearAllBrokenGlass() end
 
     
@@ -3255,8 +3256,8 @@ function IsMobilePhoneRadioActive() end
 --- @hash [0xB39786F201FEE30B](https://docs.fivem.net/natives/?_0xB39786F201FEE30B)
 --- @param radioStation string (char*)
 --- @param radioTrack string (char*)
---- @return void
---- @overload fun(radioStation: string, radioTrack: string): void
+--- @return nil
+--- @overload fun(radioStation: string, radioTrack: string): nil
 function SetRadioTrack(radioStation, radioTrack) end
 
     
@@ -3271,8 +3272,8 @@ function SetRadioTrack(radioStation, radioTrack) end
 ---
 --- @hash [0xB4BBFD9CD8B3922B](https://docs.fivem.net/natives/?_0xB4BBFD9CD8B3922B)
 --- @param p0 string (char*)
---- @return void
---- @overload fun(p0: string): void
+--- @return nil
+--- @overload fun(p0: string): nil
 function RemovePortalSettingsOverride(p0) end
 
     
@@ -3288,8 +3289,8 @@ function RemovePortalSettingsOverride(p0) end
 ---
 --- @hash [0xB4BBFD9CD8B3922B](https://docs.fivem.net/natives/?_0xB4BBFD9CD8B3922B)
 --- @param p0 string (char*)
---- @return void
---- @overload fun(p0: string): void
+--- @return nil
+--- @overload fun(p0: string): nil
 --- @deprecated
 function N_0xb4bbfd9cd8b3922b(p0) end
 
@@ -3298,8 +3299,8 @@ function N_0xb4bbfd9cd8b3922b(p0) end
 ---
 --- @hash [0xB4F90FAF7670B16F](https://docs.fivem.net/natives/?_0xB4F90FAF7670B16F)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function CancelCurrentPoliceReport() end
 
     
@@ -3308,8 +3309,8 @@ function CancelCurrentPoliceReport() end
 ---
 --- @hash [0xB4F90FAF7670B16F](https://docs.fivem.net/natives/?_0xB4F90FAF7670B16F)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xb4f90faf7670b16f() end
 
@@ -3319,8 +3320,8 @@ function N_0xb4f90faf7670b16f() end
 ---
 --- @hash [0xB4F90FAF7670B16F](https://docs.fivem.net/natives/?_0xB4F90FAF7670B16F)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function DisablePoliceReports() end
 
@@ -3329,8 +3330,8 @@ function DisablePoliceReports() end
 ---
 --- @hash [0xB542DE8C3D1CB210](https://docs.fivem.net/natives/?_0xB542DE8C3D1CB210)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0xb542de8c3d1cb210(p0) end
 
     
@@ -3358,8 +3359,8 @@ function IsAudioSceneActive(scene) end
 --- @param x3 number (float)
 --- @param y3 number (float)
 --- @param z3 number (float)
---- @return void
---- @overload fun(p0: boolean, x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, x3: number, y3: number, z3: number): void
+--- @return nil
+--- @overload fun(p0: boolean, x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, x3: number, y3: number, z3: number): nil
 function SetMicrophonePosition(p0, x1, y1, z1, x2, y2, z2, x3, y3, z3) end
 
     
@@ -3367,8 +3368,8 @@ function SetMicrophonePosition(p0, x1, y1, z1, x2, y2, z2, x3, y3, z3) end
 ---
 --- @hash [0xB70374A758007DFA](https://docs.fivem.net/natives/?_0xB70374A758007DFA)
 --- @param vehicle Vehicle
---- @return void
---- @overload fun(vehicle: Vehicle): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle): nil
 function PlayStreamFromVehicle(vehicle) end
 
     
@@ -3376,8 +3377,8 @@ function PlayStreamFromVehicle(vehicle) end
 ---
 --- @hash [0xB81CF134AEB56FFB](https://docs.fivem.net/natives/?_0xB81CF134AEB56FFB)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xb81cf134aeb56ffb() end
 
     
@@ -3385,8 +3386,8 @@ function N_0xb81cf134aeb56ffb() end
 ---
 --- @hash [0xB8BEC0CA6F0EDB0F](https://docs.fivem.net/natives/?_0xB8BEC0CA6F0EDB0F)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function StopCurrentPlayingAmbientSpeech(ped) end
 
     
@@ -3502,8 +3503,8 @@ function StopCurrentPlayingAmbientSpeech(ped) end
 --- @hash [0xB9EFD5C25018725A](https://docs.fivem.net/natives/?_0xB9EFD5C25018725A)
 --- @param flagName string (char*)
 --- @param toggle boolean
---- @return void
---- @overload fun(flagName: string, toggle: boolean): void
+--- @return nil
+--- @overload fun(flagName: string, toggle: boolean): nil
 function SetAudioFlag(flagName, toggle) end
 
     
@@ -3513,8 +3514,8 @@ function SetAudioFlag(flagName, toggle) end
 ---
 --- @hash [0xBAC7FC81A75EC1A1](https://docs.fivem.net/natives/?_0xBAC7FC81A75EC1A1)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function StopAudioScenes() end
 
     
@@ -3523,8 +3524,8 @@ function StopAudioScenes() end
 --- @hash [0xBB6F1CAEC68B0BCE](https://docs.fivem.net/natives/?_0xBB6F1CAEC68B0BCE)
 --- @param vehicle Vehicle
 --- @param toggle boolean
---- @return void
---- @overload fun(vehicle: Vehicle, toggle: boolean): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, toggle: boolean): nil
 function SetVehicleRadioLoud(vehicle, toggle) end
 
     
@@ -3588,8 +3589,8 @@ function SetVehicleRadioLoud(vehicle, toggle) end
 --- @param ped Ped
 --- @param painID number (int)
 --- @param p1 number (int)
---- @return void
---- @overload fun(ped: Ped, painID: number, p1: number): void
+--- @return nil
+--- @overload fun(ped: Ped, painID: number, p1: number): nil
 function PlayPain(ped, painID, p1) end
 
     
@@ -3600,8 +3601,8 @@ function PlayPain(ped, painID, p1) end
 --- @hash [0xBCC29F935ED07688](https://docs.fivem.net/natives/?_0xBCC29F935ED07688)
 --- @param variableName string (char*)
 --- @param value number (float)
---- @return void
---- @overload fun(variableName: string, value: number): void
+--- @return nil
+--- @overload fun(variableName: string, value: number): nil
 function SetVariableOnCutsceneAudio(variableName, value) end
 
     
@@ -3613,8 +3614,8 @@ function SetVariableOnCutsceneAudio(variableName, value) end
 --- @hash [0xBCC29F935ED07688](https://docs.fivem.net/natives/?_0xBCC29F935ED07688)
 --- @param variableName string (char*)
 --- @param value number (float)
---- @return void
---- @overload fun(variableName: string, value: number): void
+--- @return nil
+--- @overload fun(variableName: string, value: number): nil
 --- @deprecated
 function GetPlayerHeadsetSoundAlternate(variableName, value) end
 
@@ -3625,8 +3626,8 @@ function GetPlayerHeadsetSoundAlternate(variableName, value) end
 --- @param zoneName string (char*)
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(zoneName: string, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(zoneName: string, p1: boolean, p2: boolean): nil
 function SetAmbientZoneState(zoneName, p1, p2) end
 
     
@@ -3634,8 +3635,8 @@ function SetAmbientZoneState(zoneName, p1, p2) end
 ---
 --- @hash [0xBEF34B1D9624D5DD](https://docs.fivem.net/natives/?_0xBEF34B1D9624D5DD)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0xbef34b1d9624d5dd(p0) end
 
     
@@ -3643,8 +3644,8 @@ function N_0xbef34b1d9624d5dd(p0) end
 ---
 --- @hash [0xBF286C554784F3DF](https://docs.fivem.net/natives/?_0xBF286C554784F3DF)
 --- @param state boolean
---- @return void
---- @overload fun(state: boolean): void
+--- @return nil
+--- @overload fun(state: boolean): nil
 function SetMobilePhoneRadioState(state) end
 
     
@@ -3654,8 +3655,8 @@ function SetMobilePhoneRadioState(state) end
 --- @param ped Ped
 --- @param p1 boolean
 --- @param hash Hash
---- @return void
---- @overload fun(ped: Ped, p1: boolean, hash: Hash): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean, hash: Hash): nil
 function N_0xbf4dc1784be94dfa(ped, p1, hash) end
 
     
@@ -3664,8 +3665,8 @@ function N_0xbf4dc1784be94dfa(ped, p1, hash) end
 --- @hash [0xC15907D667F7CFB2](https://docs.fivem.net/natives/?_0xC15907D667F7CFB2)
 --- @param vehicle Vehicle
 --- @param toggle boolean
---- @return void
---- @overload fun(vehicle: Vehicle, toggle: boolean): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, toggle: boolean): nil
 function EnableStallWarningSounds(vehicle, toggle) end
 
     
@@ -3675,8 +3676,8 @@ function EnableStallWarningSounds(vehicle, toggle) end
 --- @hash [0xC15907D667F7CFB2](https://docs.fivem.net/natives/?_0xC15907D667F7CFB2)
 --- @param vehicle Vehicle
 --- @param toggle boolean
---- @return void
---- @overload fun(vehicle: Vehicle, toggle: boolean): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, toggle: boolean): nil
 --- @deprecated
 function N_0xc15907d667f7cfb2(vehicle, toggle) end
 
@@ -3687,8 +3688,8 @@ function N_0xc15907d667f7cfb2(vehicle, toggle) end
 ---
 --- @hash [0xC1805D05E6D4FE10](https://docs.fivem.net/natives/?_0xC1805D05E6D4FE10)
 --- @param vehicle Vehicle
---- @return void
---- @overload fun(vehicle: Vehicle): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle): nil
 function N_0xc1805d05e6d4fe10(vehicle) end
 
     
@@ -3696,8 +3697,8 @@ function N_0xc1805d05e6d4fe10(vehicle) end
 ---
 --- @hash [0xC1AA9F53CE982990](https://docs.fivem.net/natives/?_0xC1AA9F53CE982990)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetRadioAutoUnfreeze(toggle) end
 
     
@@ -3753,8 +3754,8 @@ function N_0xc265df9fb44a9fbd(pedHandle) end
 --- @param p10 boolean
 --- @param p11 boolean
 --- @param p12 boolean
---- @return void
---- @overload fun(index: number, p1: string, p2: string, p3: number, p4: number, p5: boolean, p6: boolean, p7: boolean, p8: boolean, p9: number, p10: boolean, p11: boolean, p12: boolean): void
+--- @return nil
+--- @overload fun(index: number, p1: string, p2: string, p3: number, p4: number, p5: boolean, p6: boolean, p7: boolean, p8: boolean, p9: number, p10: boolean, p11: boolean, p12: boolean): nil
 function AddLineToConversation(index, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12) end
 
     
@@ -3781,8 +3782,8 @@ function N_0xc64a06d939f826f5() end
 --- @param ped Ped
 --- @param speechName string (char*)
 --- @param speechParam string (char*)
---- @return void
---- @overload fun(ped: Ped, speechName: string, speechParam: string): void
+--- @return nil
+--- @overload fun(ped: Ped, speechName: string, speechParam: string): nil
 function PlayPedAmbientSpeechAndCloneNative(ped, speechName, speechParam) end
 
     
@@ -3797,8 +3798,8 @@ function PlayPedAmbientSpeechAndCloneNative(ped, speechName, speechParam) end
 --- @param ped Ped
 --- @param speechName string (char*)
 --- @param speechParam string (char*)
---- @return void
---- @overload fun(ped: Ped, speechName: string, speechParam: string): void
+--- @return nil
+--- @overload fun(ped: Ped, speechName: string, speechParam: string): nil
 --- @deprecated
 function PlayAmbientSpeech2(ped, speechName, speechParam) end
 
@@ -3809,8 +3810,8 @@ function PlayAmbientSpeech2(ped, speechName, speechParam) end
 ---
 --- @hash [0xC69EDA28699D5107](https://docs.fivem.net/natives/?_0xC69EDA28699D5107)
 --- @param stationName string (char*)
---- @return void
---- @overload fun(stationName: string): void
+--- @return nil
+--- @overload fun(stationName: string): nil
 function SetRadioToStationName(stationName) end
 
     
@@ -3818,8 +3819,8 @@ function SetRadioToStationName(stationName) end
 ---
 --- @hash [0xC6ED9D5092438D91](https://docs.fivem.net/natives/?_0xC6ED9D5092438D91)
 --- @param p0 number (int)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function RegisterScriptWithAudio(p0) end
 
     
@@ -3851,8 +3852,8 @@ function N_0xc8b1b2425604cdd0() end
 --- @param p1 number (float)
 --- @param p2 number (float)
 --- @param p3 number (float)
---- @return void
---- @overload fun(p1: number, p2: number, p3: number): any
+--- @return nil
+--- @overload fun(p1: number, p2: number, p3: number): nil, any
 function N_0xc8ede9bdbccba6d4(p0, p1, p2, p3) end
 
     
@@ -3862,8 +3863,8 @@ function N_0xc8ede9bdbccba6d4(p0, p1, p2, p3) end
 ---
 --- @hash [0xCA4CEA6AE0000A7E](https://docs.fivem.net/natives/?_0xCA4CEA6AE0000A7E)
 --- @param model Hash
---- @return void
---- @overload fun(model: Hash): void
+--- @return nil
+--- @overload fun(model: Hash): nil
 function PreloadVehicleAudio(model) end
 
     
@@ -3874,8 +3875,8 @@ function PreloadVehicleAudio(model) end
 ---
 --- @hash [0xCA4CEA6AE0000A7E](https://docs.fivem.net/natives/?_0xCA4CEA6AE0000A7E)
 --- @param model Hash
---- @return void
---- @overload fun(model: Hash): void
+--- @return nil
+--- @overload fun(model: Hash): nil
 --- @deprecated
 function N_0xca4cea6ae0000a7e(model) end
 
@@ -3888,8 +3889,8 @@ function N_0xca4cea6ae0000a7e(model) end
 --- @hash [0xCADA5A0D0702381E](https://docs.fivem.net/natives/?_0xCADA5A0D0702381E)
 --- @param soundName string (char*)
 --- @param soundsetName string (char*)
---- @return void
---- @overload fun(soundName: string, soundsetName: string): void
+--- @return nil
+--- @overload fun(soundName: string, soundsetName: string): nil
 function PlayDeferredSoundFrontend(soundName, soundsetName) end
 
     
@@ -3902,8 +3903,8 @@ function PlayDeferredSoundFrontend(soundName, soundsetName) end
 --- @hash [0xCADA5A0D0702381E](https://docs.fivem.net/natives/?_0xCADA5A0D0702381E)
 --- @param soundName string (char*)
 --- @param soundsetName string (char*)
---- @return void
---- @overload fun(soundName: string, soundsetName: string): void
+--- @return nil
+--- @overload fun(soundName: string, soundsetName: string): nil
 --- @deprecated
 function N_0xcada5a0d0702381e(soundName, soundsetName) end
 
@@ -3915,8 +3916,8 @@ function N_0xcada5a0d0702381e(soundName, soundsetName) end
 --- @hash [0xCC97B29285B1DC3B](https://docs.fivem.net/natives/?_0xCC97B29285B1DC3B)
 --- @param animal Ped
 --- @param mood number (int)
---- @return void
---- @overload fun(animal: Ped, mood: number): void
+--- @return nil
+--- @overload fun(animal: Ped, mood: number): nil
 function SetAnimalMood(animal, mood) end
 
     
@@ -3933,8 +3934,8 @@ function IsScriptedSpeechPlaying(p0) end
 ---
 --- @hash [0xCD536C4D33DCC900](https://docs.fivem.net/natives/?_0xCD536C4D33DCC900)
 --- @param play boolean
---- @return void
---- @overload fun(play: boolean): void
+--- @return nil
+--- @overload fun(play: boolean): nil
 function PlayEndCreditsMusic(play) end
 
     
@@ -3944,8 +3945,8 @@ function PlayEndCreditsMusic(play) end
 ---
 --- @hash [0xCE4AC0439F607045](https://docs.fivem.net/natives/?_0xCE4AC0439F607045)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ReleaseWeaponAudio() end
 
     
@@ -3953,8 +3954,8 @@ function ReleaseWeaponAudio() end
 ---
 --- @hash [0xD01005D2BA2EB778](https://docs.fivem.net/natives/?_0xD01005D2BA2EB778)
 --- @param p0 string (char*)
---- @return void
---- @overload fun(p0: string): void
+--- @return nil
+--- @overload fun(p0: string): nil
 function ActivateAudioSlowmoMode(p0) end
 
     
@@ -3963,8 +3964,8 @@ function ActivateAudioSlowmoMode(p0) end
 ---
 --- @hash [0xD01005D2BA2EB778](https://docs.fivem.net/natives/?_0xD01005D2BA2EB778)
 --- @param p0 string (char*)
---- @return void
---- @overload fun(p0: string): void
+--- @return nil
+--- @overload fun(p0: string): nil
 --- @deprecated
 function N_0xd01005d2ba2eb778(p0) end
 
@@ -3982,8 +3983,8 @@ function IsStreamPlaying() end
 ---
 --- @hash [0xD2C91A0B572AAE56](https://docs.fivem.net/natives/?_0xD2C91A0B572AAE56)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function CreateNewScriptedConversation() end
 
     
@@ -3992,8 +3993,8 @@ function CreateNewScriptedConversation() end
 --- @hash [0xD2CC78CD3D0B50F9](https://docs.fivem.net/natives/?_0xD2CC78CD3D0B50F9)
 --- @param hash Hash
 --- @param toggle boolean
---- @return void
---- @overload fun(hash: Hash, toggle: boolean): void
+--- @return nil
+--- @overload fun(hash: Hash, toggle: boolean): nil
 function OverridePlayerGroundMaterial(hash, toggle) end
 
     
@@ -4003,8 +4004,8 @@ function OverridePlayerGroundMaterial(hash, toggle) end
 --- @hash [0xD2CC78CD3D0B50F9](https://docs.fivem.net/natives/?_0xD2CC78CD3D0B50F9)
 --- @param hash Hash
 --- @param toggle boolean
---- @return void
---- @overload fun(hash: Hash, toggle: boolean): void
+--- @return nil
+--- @overload fun(hash: Hash, toggle: boolean): nil
 --- @deprecated
 function N_0xd2cc78cd3d0b50f9(hash, toggle) end
 
@@ -4013,8 +4014,8 @@ function N_0xd2cc78cd3d0b50f9(hash, toggle) end
 ---
 --- @hash [0xD2DCCD8E16E20997](https://docs.fivem.net/natives/?_0xD2DCCD8E16E20997)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xd2dccd8e16e20997(p0) end
 
     
@@ -4059,8 +4060,8 @@ function N_0x22fecb546c276a30(vehicle) end
 ---
 --- @hash [0xD57AAAE0E2214D11](https://docs.fivem.net/natives/?_0xD57AAAE0E2214D11)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function FreezeMicrophone() end
 
     
@@ -4069,8 +4070,8 @@ function FreezeMicrophone() end
 ---
 --- @hash [0xD57AAAE0E2214D11](https://docs.fivem.net/natives/?_0xD57AAAE0E2214D11)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xd57aaae0e2214d11() end
 
@@ -4088,8 +4089,8 @@ function StopScriptedConversation(p0) end
 ---
 --- @hash [0xDA07819E452FFE8F](https://docs.fivem.net/natives/?_0xDA07819E452FFE8F)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xda07819e452ffe8f(p0) end
 
     
@@ -4100,8 +4101,8 @@ function N_0xda07819e452ffe8f(p0) end
 ---
 --- @hash [0xDD6BCF9E94425DF9](https://docs.fivem.net/natives/?_0xDD6BCF9E94425DF9)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xdd6bcf9e94425df9() end
 
     
@@ -4109,8 +4110,8 @@ function N_0xdd6bcf9e94425df9() end
 ---
 --- @hash [0xDDC635D5B3262C56](https://docs.fivem.net/natives/?_0xDDC635D5B3262C56)
 --- @param p0 string (char*)
---- @return void
---- @overload fun(p0: string): void
+--- @return nil
+--- @overload fun(p0: string): nil
 function DeactivateAudioSlowmoMode(p0) end
 
     
@@ -4119,8 +4120,8 @@ function DeactivateAudioSlowmoMode(p0) end
 ---
 --- @hash [0xDDC635D5B3262C56](https://docs.fivem.net/natives/?_0xDDC635D5B3262C56)
 --- @param p0 string (char*)
---- @return void
---- @overload fun(p0: string): void
+--- @return nil
+--- @overload fun(p0: string): nil
 --- @deprecated
 function N_0xddc635d5b3262c56(p0) end
 
@@ -4138,8 +4139,8 @@ function IsScriptedConversationLoaded() end
 ---
 --- @hash [0xDFE8422B3B94E688](https://docs.fivem.net/natives/?_0xDFE8422B3B94E688)
 --- @param scene string (char*)
---- @return void
---- @overload fun(scene: string): void
+--- @return nil
+--- @overload fun(scene: string): nil
 function StopAudioScene(scene) end
 
     
@@ -4162,8 +4163,8 @@ function PlayPoliceReport(name, p1) end
 ---
 --- @hash [0xE4E6DD5566D28C82](https://docs.fivem.net/natives/?_0xE4E6DD5566D28C82)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xe4e6dd5566d28c82() end
 
     
@@ -4172,8 +4173,8 @@ function N_0xe4e6dd5566d28c82() end
 --- @hash [0xE5564483E407F914](https://docs.fivem.net/natives/?_0xE5564483E407F914)
 --- @param vehicle Vehicle
 --- @param p1 any
---- @return void
---- @overload fun(vehicle: Vehicle, p1: any): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, p1: any): nil
 function SetAudioVehiclePriority(vehicle, p1) end
 
     
@@ -4190,8 +4191,8 @@ function SetAudioVehiclePriority(vehicle, p1) end
 --- @param audioRef string (char*)
 --- @param isNetwork boolean
 --- @param p5 any
---- @return void
---- @overload fun(soundId: number, audioName: string, entity: Entity, audioRef: string, isNetwork: boolean, p5: any): void
+--- @return nil
+--- @overload fun(soundId: number, audioName: string, entity: Entity, audioRef: string, isNetwork: boolean, p5: any): nil
 function PlaySoundFromEntity(soundId, audioName, entity, audioRef, isNetwork, p5) end
 
     
@@ -4219,8 +4220,8 @@ function N_0xe73364db90778ffa() end
 ---
 --- @hash [0xE78503B10C4314E0](https://docs.fivem.net/natives/?_0xE78503B10C4314E0)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ResetTrevorRage() end
 
     
@@ -4249,8 +4250,8 @@ function GetPlayerRadioStationIndex() end
 --- @hash [0xEA241BB04110F091](https://docs.fivem.net/natives/?_0xEA241BB04110F091)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPlayerAngry(ped, toggle) end
 
     
@@ -4269,8 +4270,8 @@ function SetPlayerAngry(ped, toggle) end
 ---
 --- @hash [0xEBAA9B64D76356FD](https://docs.fivem.net/natives/?_0xEBAA9B64D76356FD)
 --- @param object Object
---- @return void
---- @overload fun(object: Object): void
+--- @return nil
+--- @overload fun(object: Object): nil
 function PlayStreamFromObject(object) end
 
     
@@ -4283,8 +4284,8 @@ function PlayStreamFromObject(object) end
 --- @param y number (float)
 --- @param z number (float)
 --- @param speechParam string (char*)
---- @return void
---- @overload fun(speechName: string, voiceName: string, x: number, y: number, z: number, speechParam: string): void
+--- @return nil
+--- @overload fun(speechName: string, voiceName: string, x: number, y: number, z: number, speechParam: string): nil
 function PlayAmbientSpeechFromPositionNative(speechName, voiceName, x, y, z, speechParam) end
 
     
@@ -4298,8 +4299,8 @@ function PlayAmbientSpeechFromPositionNative(speechName, voiceName, x, y, z, spe
 --- @param y number (float)
 --- @param z number (float)
 --- @param speechParam string (char*)
---- @return void
---- @overload fun(speechName: string, voiceName: string, x: number, y: number, z: number, speechParam: string): void
+--- @return nil
+--- @overload fun(speechName: string, voiceName: string, x: number, y: number, z: number, speechParam: string): nil
 --- @deprecated
 function N_0xed640017ed337e45(speechName, voiceName, x, y, z, speechParam) end
 
@@ -4314,8 +4315,8 @@ function N_0xed640017ed337e45(speechName, voiceName, x, y, z, speechParam) end
 --- @param y number (float)
 --- @param z number (float)
 --- @param speechParam string (char*)
---- @return void
---- @overload fun(speechName: string, voiceName: string, x: number, y: number, z: number, speechParam: string): void
+--- @return nil
+--- @overload fun(speechName: string, voiceName: string, x: number, y: number, z: number, speechParam: string): nil
 --- @deprecated
 function PlayAmbientSpeechAtCoords(speechName, voiceName, x, y, z, speechParam) end
 
@@ -4330,8 +4331,8 @@ function PlayAmbientSpeechAtCoords(speechName, voiceName, x, y, z, speechParam) 
 --- @param pedHandle Ped
 --- @param p1 number (int)
 --- @param speechName string (char*)
---- @return void
---- @overload fun(pedHandle: Ped, p1: number, speechName: string): void
+--- @return nil
+--- @overload fun(pedHandle: Ped, p1: number, speechName: string): nil
 function PlayAnimalVocalization(pedHandle, p1, speechName) end
 
     
@@ -4346,8 +4347,8 @@ function PlayAnimalVocalization(pedHandle, p1, speechName) end
 --- @param pedHandle Ped
 --- @param p1 number (int)
 --- @param speechName string (char*)
---- @return void
---- @overload fun(pedHandle: Ped, p1: number, speechName: string): void
+--- @return nil
+--- @overload fun(pedHandle: Ped, p1: number, speechName: string): nil
 --- @deprecated
 function N_0xee066c7006c49c0a(pedHandle, p1, speechName) end
 
@@ -4358,8 +4359,8 @@ function N_0xee066c7006c49c0a(pedHandle, p1, speechName) end
 --- @param scene string (char*)
 --- @param variable string (char*)
 --- @param value number (float)
---- @return void
---- @overload fun(scene: string, variable: string, value: number): void
+--- @return nil
+--- @overload fun(scene: string, variable: string, value: number): nil
 function SetAudioSceneVariable(scene, variable, value) end
 
     
@@ -4367,8 +4368,8 @@ function SetAudioSceneVariable(scene, variable, value) end
 ---
 --- @hash [0xF154B8D1775B2DEC](https://docs.fivem.net/natives/?_0xF154B8D1775B2DEC)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function BlockDeathJingle(toggle) end
 
     
@@ -4377,8 +4378,8 @@ function BlockDeathJingle(toggle) end
 ---
 --- @hash [0xF154B8D1775B2DEC](https://docs.fivem.net/natives/?_0xF154B8D1775B2DEC)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0xf154b8d1775b2dec(toggle) end
 
@@ -4416,8 +4417,8 @@ function MaxRadioStationIndex() end
 --- @param vehicle Vehicle
 --- @param p1 string (char*)
 --- @param p2 string (char*)
---- @return void
---- @overload fun(vehicle: Vehicle, p1: string, p2: string): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, p1: string, p2: string): nil
 function SetVehicleStartupRevSound(vehicle, p1, p2) end
 
     
@@ -4435,8 +4436,8 @@ function SetVehicleStartupRevSound(vehicle, p1, p2) end
 --- @param vehicle Vehicle
 --- @param p1 string (char*)
 --- @param p2 string (char*)
---- @return void
---- @overload fun(vehicle: Vehicle, p1: string, p2: string): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, p1: string, p2: string): nil
 --- @deprecated
 function N_0xf1f8157b8c3f171c(vehicle, p1, p2) end
 
@@ -4446,8 +4447,8 @@ function N_0xf1f8157b8c3f171c(vehicle, p1, p2) end
 --- @hash [0xF2A9CDABCEA04BD6](https://docs.fivem.net/natives/?_0xF2A9CDABCEA04BD6)
 --- @param p0 any
 --- @param p1 boolean
---- @return void
---- @overload fun(p1: boolean): any
+--- @return nil
+--- @overload fun(p1: boolean): nil, any
 function OverrideUnderwaterStream(p0, p1) end
 
     
@@ -4458,8 +4459,8 @@ function OverrideUnderwaterStream(p0, p1) end
 --- @hash [0xF3365489E0DD50F9](https://docs.fivem.net/natives/?_0xF3365489E0DD50F9)
 --- @param vehicle Vehicle
 --- @param toggle boolean
---- @return void
---- @overload fun(vehicle: Vehicle, toggle: boolean): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, toggle: boolean): nil
 function N_0xf3365489e0dd50f9(vehicle, toggle) end
 
     
@@ -4469,8 +4470,8 @@ function N_0xf3365489e0dd50f9(vehicle, toggle) end
 --- @param ambientZone string (char*)
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(ambientZone: string, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(ambientZone: string, p1: boolean, p2: boolean): nil
 function SetAmbientZoneListStatePersistent(ambientZone, p1, p2) end
 
     
@@ -4478,8 +4479,8 @@ function SetAmbientZoneListStatePersistent(ambientZone, p1, p2) end
 ---
 --- @hash [0xF54BB7B61036F335](https://docs.fivem.net/natives/?_0xF54BB7B61036F335)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ResetPedAudioFlags(ped) end
 
     
@@ -4490,8 +4491,8 @@ function ResetPedAudioFlags(ped) end
 --- @hash [0xF584CF8529B51434](https://docs.fivem.net/natives/?_0xF584CF8529B51434)
 --- @param vehicle Vehicle
 --- @param toggle boolean
---- @return void
---- @overload fun(vehicle: Vehicle, toggle: boolean): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, toggle: boolean): nil
 function SetSirenKeepOn(vehicle, toggle) end
 
     
@@ -4503,8 +4504,8 @@ function SetSirenKeepOn(vehicle, toggle) end
 --- @hash [0xF584CF8529B51434](https://docs.fivem.net/natives/?_0xF584CF8529B51434)
 --- @param vehicle Vehicle
 --- @param toggle boolean
---- @return void
---- @overload fun(vehicle: Vehicle, toggle: boolean): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, toggle: boolean): nil
 --- @deprecated
 function N_0xf584cf8529b51434(vehicle, toggle) end
 
@@ -4524,8 +4525,8 @@ function GetPlayerRadioStationName() end
 ---
 --- @hash [0xF7F26C6E9CC9EBB8](https://docs.fivem.net/natives/?_0xF7F26C6E9CC9EBB8)
 --- @param active boolean
---- @return void
---- @overload fun(active: boolean): void
+--- @return nil
+--- @overload fun(active: boolean): nil
 function SetFrontendRadioActive(active) end
 
     
@@ -4539,8 +4540,8 @@ function SetFrontendRadioActive(active) end
 --- @param ped Ped
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(ped: Ped, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean, p2: boolean): nil
 function N_0xf8ad2eed7c47e8fe(ped, p1, p2) end
 
     
@@ -4554,8 +4555,8 @@ function N_0xf8ad2eed7c47e8fe(ped, p1, p2) end
 --- @param ringtoneName string (char*)
 --- @param ped Ped
 --- @param p2 boolean
---- @return void
---- @overload fun(ringtoneName: string, ped: Ped, p2: boolean): void
+--- @return nil
+--- @overload fun(ringtoneName: string, ped: Ped, p2: boolean): nil
 function PlayPedRingtone(ringtoneName, ped, p2) end
 
     
@@ -4564,8 +4565,8 @@ function PlayPedRingtone(ringtoneName, ped, p2) end
 --- @hash [0xFA932DE350266EF8](https://docs.fivem.net/natives/?_0xFA932DE350266EF8)
 --- @param vehicle Vehicle
 --- @param toggle boolean
---- @return void
---- @overload fun(vehicle: Vehicle, toggle: boolean): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, toggle: boolean): nil
 function UseSirenAsHorn(vehicle, toggle) end
 
     
@@ -4588,8 +4589,8 @@ function HintScriptAudioBank(p0, p1) end
 --- @param y number (float)
 --- @param z number (float)
 --- @param radius number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number, radius: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, radius: number): nil
 function RecordBrokenGlass(x, y, z, radius) end
 
     
@@ -4601,8 +4602,8 @@ function RecordBrokenGlass(x, y, z, radius) end
 --- @param y number (float)
 --- @param z number (float)
 --- @param radius number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number, radius: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, radius: number): nil
 --- @deprecated
 function N_0xfbe20329593dec9d(x, y, z, radius) end
 
@@ -4611,8 +4612,8 @@ function N_0xfbe20329593dec9d(x, y, z, radius) end
 ---
 --- @hash [0xFC00454CF60B91DD](https://docs.fivem.net/natives/?_0xFC00454CF60B91DD)
 --- @param radioStation string (char*)
---- @return void
---- @overload fun(radioStation: string): void
+--- @return nil
+--- @overload fun(radioStation: string): nil
 function UnfreezeRadioStation(radioStation) end
 
     
@@ -4648,8 +4649,8 @@ function RequestAmbientAudioBank(p0, p1) end
 ---
 --- @hash [0xFF266D1D0EB1195D](https://docs.fivem.net/natives/?_0xFF266D1D0EB1195D)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xff266d1d0eb1195d() end
 
     
@@ -4660,8 +4661,8 @@ function N_0xff266d1d0eb1195d() end
 --- @hash [0xFF5E5EA2DCEEACF3](https://docs.fivem.net/natives/?_0xFF5E5EA2DCEEACF3)
 --- @param radioStation string (char*)
 --- @param trackListName string (char*)
---- @return void
---- @overload fun(radioStation: string, trackListName: string): void
+--- @return nil
+--- @overload fun(radioStation: string, trackListName: string): nil
 function LockRadioStationTrackList(radioStation, trackListName) end
 
     

@@ -1,3 +1,4 @@
+--- @meta
 
 --- ```
 --- 2 matches in 1 script - am_hold_up
@@ -6,8 +7,8 @@
 ---
 --- @hash [0x0032A6DBA562C518](https://docs.fivem.net/natives/?_0x0032A6DBA562C518)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x0032a6dba562c518() end
 
     
@@ -26,8 +27,8 @@ function N_0x0032a6dba562c518() end
 --- @hash [0x00A1CADD00108836](https://docs.fivem.net/natives/?_0x00A1CADD00108836)
 --- @param player Player
 --- @param model Hash
---- @return void
---- @overload fun(player: Player, model: Hash): void
+--- @return nil
+--- @overload fun(player: Player, model: Hash): nil
 function SetPlayerModel(player, model) end
 
     
@@ -35,8 +36,8 @@ function SetPlayerModel(player, model) end
 ---
 --- @hash [0x020E5F00CDA207BA](https://docs.fivem.net/natives/?_0x020E5F00CDA207BA)
 --- @param multiplier number (float)
---- @return void
---- @overload fun(multiplier: number): void
+--- @return nil
+--- @overload fun(multiplier: number): nil
 function SetWantedLevelMultiplier(multiplier) end
 
     
@@ -47,8 +48,8 @@ function SetWantedLevelMultiplier(multiplier) end
 --- @hash [0x0299FA38396A4940](https://docs.fivem.net/natives/?_0x0299FA38396A4940)
 --- @param player Player
 --- @param team number (int)
---- @return void
---- @overload fun(player: Player, team: number): void
+--- @return nil
+--- @overload fun(player: Player, team: number): nil
 function SetPlayerTeam(player, team) end
 
     
@@ -68,8 +69,8 @@ function IsPlayerTeleportActive() end
 --- @param ped Ped
 --- @param b2 boolean
 --- @param resetDamage boolean
---- @return void
---- @overload fun(player: Player, ped: Ped, b2: boolean, resetDamage: boolean): void
+--- @return nil
+--- @overload fun(player: Player, ped: Ped, b2: boolean, resetDamage: boolean): nil
 function ChangePlayerPed(player, ped, b2, resetDamage) end
 
     
@@ -78,8 +79,8 @@ function ChangePlayerPed(player, ped, b2, resetDamage) end
 --- @hash [0x056E0FE8534C2949](https://docs.fivem.net/natives/?_0x056E0FE8534C2949)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function SetAllRandomPedsFlee(player, toggle) end
 
     
@@ -101,8 +102,8 @@ function IsSpecialAbilityMeterFull(player) end
 --- @hash [0x0764486AEDE748DB](https://docs.fivem.net/natives/?_0x0764486AEDE748DB)
 --- @param player Player
 --- @param model Hash
---- @return void
---- @overload fun(player: Player, model: Hash): void
+--- @return nil
+--- @overload fun(player: Player, model: Hash): nil
 function SetPlayerReserveParachuteModelOverride(player, model) end
 
     
@@ -150,8 +151,8 @@ function GetPlayerGroup(player) end
 ---
 --- @hash [0x0F4CC924CF8C7B21](https://docs.fivem.net/natives/?_0x0F4CC924CF8C7B21)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function ClearPlayerParachuteVariationOverride(player) end
 
     
@@ -160,8 +161,8 @@ function ClearPlayerParachuteVariationOverride(player) end
 --- @hash [0x0FEE4F80AC44A726](https://docs.fivem.net/natives/?_0x0FEE4F80AC44A726)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function SetPlayerForcedAim(player, toggle) end
 
     
@@ -169,8 +170,8 @@ function SetPlayerForcedAim(player, toggle) end
 ---
 --- @hash [0x10C54E4389C12B42](https://docs.fivem.net/natives/?_0x10C54E4389C12B42)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function ClearPlayerParachutePackModelOverride(player) end
 
     
@@ -184,8 +185,8 @@ function ClearPlayerParachutePackModelOverride(player) end
 --- @hash [0x11D5F725F0E780E0](https://docs.fivem.net/natives/?_0x11D5F725F0E780E0)
 --- @param player Player
 --- @param flags number (int)
---- @return void
---- @overload fun(player: Player, flags: number): void
+--- @return nil
+--- @overload fun(player: Player, flags: number): nil
 function SetPlayerResetFlagPreferRearSeats(player, flags) end
 
     
@@ -208,8 +209,8 @@ function GetPlayerTargetEntity(player, entity) end
 ---
 --- @hash [0x14D913B777DFF5DA](https://docs.fivem.net/natives/?_0x14D913B777DFF5DA)
 --- @param value number (int)
---- @return void
---- @overload fun(value: number): void
+--- @return nil
+--- @overload fun(value: number): nil
 function SetPlayerClothLockCounter(value) end
 
     
@@ -219,8 +220,8 @@ function SetPlayerClothLockCounter(value) end
 ---
 --- @hash [0x17F7471EACA78290](https://docs.fivem.net/natives/?_0x17F7471EACA78290)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function SpecialAbilityDeplete(p0) end
 
     
@@ -231,8 +232,8 @@ function SpecialAbilityDeplete(p0) end
 ---
 --- @hash [0x17F7471EACA78290](https://docs.fivem.net/natives/?_0x17F7471EACA78290)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 --- @deprecated
 function N_0x17f7471eaca78290(p0) end
 
@@ -244,8 +245,8 @@ function N_0x17f7471eaca78290(p0) end
 --- @hash [0x181EC197DAEFE121](https://docs.fivem.net/natives/?_0x181EC197DAEFE121)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function EnableSpecialAbility(player, toggle) end
 
     
@@ -262,8 +263,8 @@ function GetPlayerSprintTimeRemaining(player) end
 ---
 --- @hash [0x19531C47A2ABD691](https://docs.fivem.net/natives/?_0x19531C47A2ABD691)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function ResetPlayerInputGait(player) end
 
     
@@ -318,8 +319,8 @@ function GetAchievementProgression(achievement) end
 --- @hash [0x1D506DBBBC51E64B](https://docs.fivem.net/natives/?_0x1D506DBBBC51E64B)
 --- @param player Player
 --- @param p1 boolean
---- @return void
---- @overload fun(player: Player, p1: boolean): void
+--- @return nil
+--- @overload fun(player: Player, p1: boolean): nil
 function SpecialAbilityDepleteMeter(player, p1) end
 
     
@@ -329,8 +330,8 @@ function SpecialAbilityDepleteMeter(player, p1) end
 ---
 --- @hash [0x1DD5897E2FA6E7C9](https://docs.fivem.net/natives/?_0x1DD5897E2FA6E7C9)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function PlayerDetachVirtualBound() end
 
     
@@ -338,8 +339,8 @@ function PlayerDetachVirtualBound() end
 ---
 --- @hash [0x1DE37BBF9E9CC14A](https://docs.fivem.net/natives/?_0x1DE37BBF9E9CC14A)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function SetPlayerMayNotEnterAnyVehicle(player) end
 
     
@@ -369,8 +370,8 @@ function HasPlayerDamagedAtLeastOnePed(player) end
 ---
 --- @hash [0x237440E46D918649](https://docs.fivem.net/natives/?_0x237440E46D918649)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x237440e46d918649(p0) end
 
     
@@ -379,8 +380,8 @@ function N_0x237440e46d918649(p0) end
 --- @hash [0x2382AB11450AE7BA](https://docs.fivem.net/natives/?_0x2382AB11450AE7BA)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x2382ab11450ae7ba(p0, p1) end
 
     
@@ -403,8 +404,8 @@ function IsPlayerWantedLevelGreater(player, wantedLevel) end
 --- @hash [0x239528EACDC3E7DE](https://docs.fivem.net/natives/?_0x239528EACDC3E7DE)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function SetPlayerInvincible(player, toggle) end
 
     
@@ -414,8 +415,8 @@ function SetPlayerInvincible(player, toggle) end
 ---
 --- @hash [0x290D248E25815AE8](https://docs.fivem.net/natives/?_0x290D248E25815AE8)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function ClearPlayerReserveParachuteModelOverride(player) end
 
     
@@ -439,8 +440,8 @@ function GetEntityPlayerIsFreeAimingAt(player, entity) end
 --- @hash [0x29961D490E5814FD](https://docs.fivem.net/natives/?_0x29961D490E5814FD)
 --- @param player Player
 --- @param range number (float)
---- @return void
---- @overload fun(player: Player, range: number): void
+--- @return nil
+--- @overload fun(player: Player, range: number): nil
 function SetPlayerLockonRangeOverride(player, range) end
 
     
@@ -448,8 +449,8 @@ function SetPlayerLockonRangeOverride(player, range) end
 ---
 --- @hash [0x2D03E13C460760D6](https://docs.fivem.net/natives/?_0x2D03E13C460760D6)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function ResetPlayerArrestState(player) end
 
     
@@ -458,8 +459,8 @@ function ResetPlayerArrestState(player) end
 --- @hash [0x2D83BC011CA14A3C](https://docs.fivem.net/natives/?_0x2D83BC011CA14A3C)
 --- @param player Player
 --- @param modifier number (float)
---- @return void
---- @overload fun(player: Player, modifier: number): void
+--- @return nil
+--- @overload fun(player: Player, modifier: number): nil
 function SetPlayerWeaponDefenseModifier(player, modifier) end
 
     
@@ -486,8 +487,8 @@ function IsPlayerFreeAiming(player) end
 --- @param player Player
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(player: Player, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(player: Player, p1: boolean, p2: boolean): nil
 function SpecialAbilityChargeSmall(player, p1, p2) end
 
     
@@ -496,8 +497,8 @@ function SpecialAbilityChargeSmall(player, p1, p2) end
 --- @hash [0x2E8AABFA40A84F8C](https://docs.fivem.net/natives/?_0x2E8AABFA40A84F8C)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function SetDisableAmbientMeleeMove(player, toggle) end
 
     
@@ -515,8 +516,8 @@ function GetPlayerCurrentStealthNoise(player) end
 --- @hash [0x2F41A3BAE005E5FA](https://docs.fivem.net/natives/?_0x2F41A3BAE005E5FA)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x2f41a3bae005e5fa(p0, p1) end
 
     
@@ -546,8 +547,8 @@ function N_0x2f41a3bae005e5fa(p0, p1) end
 ---
 --- @hash [0x2F7CEB6520288061](https://docs.fivem.net/natives/?_0x2F7CEB6520288061)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0x2f7ceb6520288061(p0) end
 
     
@@ -556,8 +557,8 @@ function N_0x2f7ceb6520288061(p0) end
 --- @hash [0x31E90B8873A4CD3B](https://docs.fivem.net/natives/?_0x31E90B8873A4CD3B)
 --- @param player Player
 --- @param p1 number (float)
---- @return void
---- @overload fun(player: Player, p1: number): void
+--- @return nil
+--- @overload fun(player: Player, p1: number): nil
 function N_0x31e90b8873a4cd3b(player, p1) end
 
     
@@ -568,8 +569,8 @@ function N_0x31e90b8873a4cd3b(player, p1) end
 --- @hash [0x32C62AA929C2DA6A](https://docs.fivem.net/natives/?_0x32C62AA929C2DA6A)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function SetPoliceIgnorePlayer(player, toggle) end
 
     
@@ -581,8 +582,8 @@ function SetPoliceIgnorePlayer(player, toggle) end
 --- @param player Player
 --- @param wantedLevel number (int)
 --- @param p2 boolean
---- @return void
---- @overload fun(player: Player, wantedLevel: number, p2: boolean): void
+--- @return nil
+--- @overload fun(player: Player, wantedLevel: number, p2: boolean): nil
 function SetPlayerWantedLevelNoDrop(player, wantedLevel, p2) end
 
     
@@ -590,8 +591,8 @@ function SetPlayerWantedLevelNoDrop(player, wantedLevel, p2) end
 ---
 --- @hash [0x36F1B38855F2A8DF](https://docs.fivem.net/natives/?_0x36F1B38855F2A8DF)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function N_0x36f1b38855f2a8df(player) end
 
     
@@ -613,8 +614,8 @@ function GetPlayerTeam(player) end
 ---
 --- @hash [0x375F0E738F861A94](https://docs.fivem.net/natives/?_0x375F0E738F861A94)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function SpecialAbilityReset(player) end
 
     
@@ -677,8 +678,8 @@ function N_0x38d28da81e4e9bf9(player) end
 --- @param player Player
 --- @param wantedLevel number (int)
 --- @param disableNoMission boolean
---- @return void
---- @overload fun(player: Player, wantedLevel: number, disableNoMission: boolean): void
+--- @return nil
+--- @overload fun(player: Player, wantedLevel: number, disableNoMission: boolean): nil
 function SetPlayerWantedLevel(player, wantedLevel, disableNoMission) end
 
     
@@ -699,8 +700,8 @@ function IsPlayerFreeAimingAtEntity(player, entity) end
 --- @hash [0x3C49C870E66F0A28](https://docs.fivem.net/natives/?_0x3C49C870E66F0A28)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function GivePlayerRagdollControl(player, toggle) end
 
     
@@ -715,8 +716,8 @@ function GivePlayerRagdollControl(player, toggle) end
 --- @hash [0x3DACA8DDC6FD4980](https://docs.fivem.net/natives/?_0x3DACA8DDC6FD4980)
 --- @param player Player
 --- @param p1 boolean
---- @return void
---- @overload fun(player: Player, p1: boolean): void
+--- @return nil
+--- @overload fun(player: Player, p1: boolean): nil
 function SpecialAbilityFillMeter(player, p1) end
 
     
@@ -781,8 +782,8 @@ function IsPlayerDead(player) end
 ---
 --- @hash [0x43286D561B72B8BF](https://docs.fivem.net/natives/?_0x43286D561B72B8BF)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetPoliceRadarBlips(toggle) end
 
     
@@ -816,8 +817,8 @@ function GetMaxWantedLevel() end
 ---
 --- @hash [0x4669B3ED80F24B4E](https://docs.fivem.net/natives/?_0x4669B3ED80F24B4E)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function N_0x4669b3ed80f24b4e(player) end
 
     
@@ -825,8 +826,8 @@ function N_0x4669b3ed80f24b4e(player) end
 ---
 --- @hash [0x471D2FF42A94B4F2](https://docs.fivem.net/natives/?_0x471D2FF42A94B4F2)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function SetAllRandomPedsFleeThisFrame(player) end
 
     
@@ -841,8 +842,8 @@ function SetAllRandomPedsFleeThisFrame(player) end
 --- @param rotationSpeed number (float)
 --- @param p4 boolean
 --- @param p5 boolean
---- @return void
---- @overload fun(player: Player, amount: number, gaitType: number, rotationSpeed: number, p4: boolean, p5: boolean): void
+--- @return nil
+--- @overload fun(player: Player, amount: number, gaitType: number, rotationSpeed: number, p4: boolean, p5: boolean): nil
 function SimulatePlayerInputGait(player, amount, gaitType, rotationSpeed, p4, p5) end
 
     
@@ -854,8 +855,8 @@ function SimulatePlayerInputGait(player, amount, gaitType, rotationSpeed, p4, p5
 --- @param player Player
 --- @param wantedLevel number (int)
 --- @param lossTime number (int)
---- @return void
---- @overload fun(player: Player, wantedLevel: number, lossTime: number): void
+--- @return nil
+--- @overload fun(player: Player, wantedLevel: number, lossTime: number): nil
 function SetWantedLevelHiddenEvasionTime(player, wantedLevel, lossTime) end
 
     
@@ -868,8 +869,8 @@ function SetWantedLevelHiddenEvasionTime(player, wantedLevel, lossTime) end
 --- @param player Player
 --- @param wantedLevel number (int)
 --- @param lossTime number (int)
---- @return void
---- @overload fun(player: Player, wantedLevel: number, lossTime: number): void
+--- @return nil
+--- @overload fun(player: Player, wantedLevel: number, lossTime: number): nil
 --- @deprecated
 function N_0x49b856b1360c47c7(player, wantedLevel, lossTime) end
 
@@ -894,8 +895,8 @@ function IsPlayerControlOn(player) end
 --- @hash [0x4A3DC7ECCC321032](https://docs.fivem.net/natives/?_0x4A3DC7ECCC321032)
 --- @param player Player
 --- @param modifier number (float)
---- @return void
---- @overload fun(player: Player, modifier: number): void
+--- @return nil
+--- @overload fun(player: Player, modifier: number): nil
 function SetPlayerMeleeWeaponDamageModifier(player, modifier) end
 
     
@@ -903,8 +904,8 @@ function SetPlayerMeleeWeaponDamageModifier(player, modifier) end
 ---
 --- @hash [0x4AACB96203D11A31](https://docs.fivem.net/natives/?_0x4AACB96203D11A31)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function ClearPlayerHasDamagedAtLeastOneNonAnimalPed(player) end
 
     
@@ -915,8 +916,8 @@ function ClearPlayerHasDamagedAtLeastOneNonAnimalPed(player) end
 --- @hash [0x4C60E6EFDAFF2462](https://docs.fivem.net/natives/?_0x4C60E6EFDAFF2462)
 --- @param player Player
 --- @param modifier number (float)
---- @return void
---- @overload fun(player: Player, modifier: number): void
+--- @return nil
+--- @overload fun(player: Player, modifier: number): nil
 function SetPlayerVehicleDefenseModifier(player, modifier) end
 
     
@@ -927,8 +928,8 @@ function SetPlayerVehicleDefenseModifier(player, modifier) end
 --- @hash [0x4C68DDDDF0097317](https://docs.fivem.net/natives/?_0x4C68DDDDF0097317)
 --- @param name string (char*)
 --- @param cleanupFlags number (int)
---- @return void
---- @overload fun(name: string, cleanupFlags: number): void
+--- @return nil
+--- @overload fun(name: string, cleanupFlags: number): nil
 function ForceCleanupForAllThreadsWithThisName(name, cleanupFlags) end
 
     
@@ -937,8 +938,8 @@ function ForceCleanupForAllThreadsWithThisName(name, cleanupFlags) end
 --- @hash [0x4E9021C1FCDD507A](https://docs.fivem.net/natives/?_0x4E9021C1FCDD507A)
 --- @param player Player
 --- @param value number (float)
---- @return void
---- @overload fun(player: Player, value: number): void
+--- @return nil
+--- @overload fun(player: Player, value: number): nil
 function SetPlayerStealthPerceptionModifier(player, value) end
 
     
@@ -972,8 +973,8 @@ function PlayerId() end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number): nil
 function ExtendWorldBoundaryForPlayer(x, y, z) end
 
     
@@ -988,8 +989,8 @@ function ExtendWorldBoundaryForPlayer(x, y, z) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number): nil
 --- @deprecated
 function N_0x5006d96c995a5827(x, y, z) end
 
@@ -1005,8 +1006,8 @@ function N_0x5006d96c995a5827(x, y, z) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number): nil
 --- @deprecated
 function ExpandWorldLimits(x, y, z) end
 
@@ -1051,8 +1052,8 @@ function GetPlayerPedScriptIndex(player) end
 --- @param position Vector3 (Vector3*)
 --- @param p2 boolean
 --- @param p3 boolean
---- @return void
---- @overload fun(player: Player, p2: boolean, p3: boolean): Vector3
+--- @return nil
+--- @overload fun(player: Player, p2: boolean, p3: boolean): nil, Vector3
 function SetPlayerWantedCentrePosition(player, position, p2, p3) end
 
     
@@ -1062,8 +1063,8 @@ function SetPlayerWantedCentrePosition(player, position, p2, p3) end
 ---
 --- @hash [0x5501B7A5CDB79D37](https://docs.fivem.net/natives/?_0x5501B7A5CDB79D37)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function N_0x5501b7a5cdb79d37(player) end
 
     
@@ -1073,8 +1074,8 @@ function N_0x5501b7a5cdb79d37(player) end
 --- @param player1 Player
 --- @param player2 Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player1: Player, player2: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player1: Player, player2: Player, toggle: boolean): nil
 function N_0x55fcc0c390620314(player1, player2, toggle) end
 
     
@@ -1102,8 +1103,8 @@ function N_0x56105e599cab0efa(player) end
 ---
 --- @hash [0x5702B917B99DB1CD](https://docs.fivem.net/natives/?_0x5702B917B99DB1CD)
 --- @param targetLevel number (int)
---- @return void
---- @overload fun(targetLevel: number): void
+--- @return nil
+--- @overload fun(targetLevel: number): nil
 function SetPlayerTargetLevel(targetLevel) end
 
     
@@ -1112,8 +1113,8 @@ function SetPlayerTargetLevel(targetLevel) end
 ---
 --- @hash [0x5702B917B99DB1CD](https://docs.fivem.net/natives/?_0x5702B917B99DB1CD)
 --- @param targetLevel number (int)
---- @return void
---- @overload fun(targetLevel: number): void
+--- @return nil
+--- @overload fun(targetLevel: number): nil
 --- @deprecated
 function N_0x5702b917b99db1cd(targetLevel) end
 
@@ -1123,8 +1124,8 @@ function N_0x5702b917b99db1cd(targetLevel) end
 --- @hash [0x596976B02B6B5700](https://docs.fivem.net/natives/?_0x596976B02B6B5700)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function SetIgnoreLowPriorityShockingEvents(player, toggle) end
 
     
@@ -1136,8 +1137,8 @@ function SetIgnoreLowPriorityShockingEvents(player, toggle) end
 --- @hash [0x5C8B2F450EE4328E](https://docs.fivem.net/natives/?_0x5C8B2F450EE4328E)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function SetPlayerLockon(player, toggle) end
 
     
@@ -1168,8 +1169,8 @@ function IsSystemUiBeingDisplayed() end
 --- @hash [0x5DB660B38DD98A31](https://docs.fivem.net/natives/?_0x5DB660B38DD98A31)
 --- @param player Player
 --- @param regenRate number (float)
---- @return void
---- @overload fun(player: Player, regenRate: number): void
+--- @return nil
+--- @overload fun(player: Player, regenRate: number): nil
 function SetPlayerHealthRechargeMultiplier(player, regenRate) end
 
     
@@ -1178,8 +1179,8 @@ function SetPlayerHealthRechargeMultiplier(player, regenRate) end
 --- @hash [0x5DC40A8869C22141](https://docs.fivem.net/natives/?_0x5DC40A8869C22141)
 --- @param player Player
 --- @param state boolean
---- @return void
---- @overload fun(player: Player, state: boolean): void
+--- @return nil
+--- @overload fun(player: Player, state: boolean): nil
 function SetPlayerBluetoothState(player, state) end
 
     
@@ -1189,8 +1190,8 @@ function SetPlayerBluetoothState(player, state) end
 --- @hash [0x5DC40A8869C22141](https://docs.fivem.net/natives/?_0x5DC40A8869C22141)
 --- @param player Player
 --- @param state boolean
---- @return void
---- @overload fun(player: Player, state: boolean): void
+--- @return nil
+--- @overload fun(player: Player, state: boolean): nil
 --- @deprecated
 function N_0x5dc40a8869c22141(player, state) end
 
@@ -1212,8 +1213,8 @@ function GetPlayerHasReserveParachute(player) end
 --- @hash [0x5E6CC07646BBEAB8](https://docs.fivem.net/natives/?_0x5E6CC07646BBEAB8)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function DisablePlayerFiring(player, toggle) end
 
     
@@ -1276,8 +1277,8 @@ function N_0x690a61a6d13583f6(player) end
 ---
 --- @hash [0x6A09D0D590A47D13](https://docs.fivem.net/natives/?_0x6A09D0D590A47D13)
 --- @param playerModel Hash
---- @return void
---- @overload fun(playerModel: Hash): void
+--- @return nil
+--- @overload fun(playerModel: Hash): nil
 function SpecialAbilityLock(playerModel) end
 
     
@@ -1286,8 +1287,8 @@ function SpecialAbilityLock(playerModel) end
 --- @hash [0x6BC97F4F4BB3C04B](https://docs.fivem.net/natives/?_0x6BC97F4F4BB3C04B)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function SetPlayerInvincibleKeepRagdollEnabled(player, toggle) end
 
     
@@ -1297,8 +1298,8 @@ function SetPlayerInvincibleKeepRagdollEnabled(player, toggle) end
 --- @hash [0x6BC97F4F4BB3C04B](https://docs.fivem.net/natives/?_0x6BC97F4F4BB3C04B)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 --- @deprecated
 function N_0x6bc97f4f4bb3c04b(player, toggle) end
 
@@ -1322,8 +1323,8 @@ function GetPlayerName(player) end
 --- @hash [0x6DB47AA77FD94E09](https://docs.fivem.net/natives/?_0x6DB47AA77FD94E09)
 --- @param player Player
 --- @param multiplier number (float)
---- @return void
---- @overload fun(player: Player, multiplier: number): void
+--- @return nil
+--- @overload fun(player: Player, multiplier: number): nil
 function SetRunSprintMultiplierForPlayer(player, multiplier) end
 
     
@@ -1349,8 +1350,8 @@ function N_0x6e4361ff3e8cd7ca(p0) end
 --- @hash [0x6E8834B52EC20C77](https://docs.fivem.net/natives/?_0x6E8834B52EC20C77)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function SetPlayerCanDoDriveBy(player, toggle) end
 
     
@@ -1359,8 +1360,8 @@ function SetPlayerCanDoDriveBy(player, toggle) end
 --- @hash [0x6E9C742F340CE5A2](https://docs.fivem.net/natives/?_0x6E9C742F340CE5A2)
 --- @param player Player
 --- @param tintIndex number (int*)
---- @return void
---- @overload fun(player: Player): number
+--- @return nil
+--- @overload fun(player: Player): nil, number
 function GetPlayerParachutePackTintIndex(player, tintIndex) end
 
     
@@ -1372,8 +1373,8 @@ function GetPlayerParachutePackTintIndex(player, tintIndex) end
 --- @param coordX number (float)
 --- @param coordY number (float)
 --- @param coordZ number (float)
---- @return void
---- @overload fun(coordX: number, coordY: number, coordZ: number): void
+--- @return nil
+--- @overload fun(coordX: number, coordY: number, coordZ: number): nil
 function N_0x70a382adec069dd3(coordX, coordY, coordZ) end
 
     
@@ -1383,8 +1384,8 @@ function N_0x70a382adec069dd3(coordX, coordY, coordZ) end
 ---
 --- @hash [0x7148E0F43D11F0D9](https://docs.fivem.net/natives/?_0x7148E0F43D11F0D9)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x7148e0f43d11f0d9() end
 
     
@@ -1404,8 +1405,8 @@ function IsPlayerLoggingInNp() end
 --- @hash [0x749FADDF97DFE930](https://docs.fivem.net/natives/?_0x749FADDF97DFE930)
 --- @param player Player
 --- @param p1 number (int)
---- @return void
---- @overload fun(player: Player, p1: number): void
+--- @return nil
+--- @overload fun(player: Player, p1: number): nil
 function SetPlayerClothPinFrames(player, p1) end
 
     
@@ -1431,8 +1432,8 @@ function SetPlayerClothPinFrames(player, p1) end
 --- @hash [0x75D3F7A1B0D9B145](https://docs.fivem.net/natives/?_0x75D3F7A1B0D9B145)
 --- @param player Player
 --- @param tintIndex number (int*)
---- @return void
---- @overload fun(player: Player): number
+--- @return nil
+--- @overload fun(player: Player): nil, number
 function GetPlayerParachuteTintIndex(player, tintIndex) end
 
     
@@ -1441,8 +1442,8 @@ function GetPlayerParachuteTintIndex(player, tintIndex) end
 --- @hash [0x75E7D505F2B15902](https://docs.fivem.net/natives/?_0x75E7D505F2B15902)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function SetPlayerForcedZoom(player, toggle) end
 
     
@@ -1451,8 +1452,8 @@ function SetPlayerForcedZoom(player, toggle) end
 --- @hash [0x7651BC64AE59E128](https://docs.fivem.net/natives/?_0x7651BC64AE59E128)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function SetPlayerForceSkipAimIntro(player, toggle) end
 
     
@@ -1463,8 +1464,8 @@ function SetPlayerForceSkipAimIntro(player, toggle) end
 --- @hash [0x77DFCCF5948B8C71](https://docs.fivem.net/natives/?_0x77DFCCF5948B8C71)
 --- @param player Player
 --- @param value number (int)
---- @return void
---- @overload fun(player: Player, value: number): void
+--- @return nil
+--- @overload fun(player: Player, value: number): nil
 function SetPlayerMaxArmour(player, value) end
 
     
@@ -1498,8 +1499,8 @@ function IsPlayerTargettingEntity(player, entity) end
 --- @param p3 any
 --- @param p4 any
 --- @param p5 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any): nil
 function N_0x7bae68775557ae0b(p0, p1, p2, p3, p4, p5) end
 
     
@@ -1533,8 +1534,8 @@ function N_0x7c814d2fb49f40c0() end
 ---
 --- @hash [0x7DDAB28D31FAC363](https://docs.fivem.net/natives/?_0x7DDAB28D31FAC363)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function SetPlayerHasReserveParachute(player) end
 
     
@@ -1552,8 +1553,8 @@ function N_0x7e07c78925d5fd96(p0) end
 --- @hash [0x8026FF78F208978A](https://docs.fivem.net/natives/?_0x8026FF78F208978A)
 --- @param player Player
 --- @param vehicle Vehicle
---- @return void
---- @overload fun(player: Player, vehicle: Vehicle): void
+--- @return nil
+--- @overload fun(player: Player, vehicle: Vehicle): nil
 function SetPlayerMayOnlyEnterThisVehicle(player, vehicle) end
 
     
@@ -1564,8 +1565,8 @@ function SetPlayerMayOnlyEnterThisVehicle(player, vehicle) end
 --- @param r number (int)
 --- @param g number (int)
 --- @param b number (int)
---- @return void
---- @overload fun(player: Player, r: number, g: number, b: number): void
+--- @return nil
+--- @overload fun(player: Player, r: number, g: number, b: number): nil
 function SetPlayerParachuteSmokeTrailColor(player, r, g, b) end
 
     
@@ -1575,8 +1576,8 @@ function SetPlayerParachuteSmokeTrailColor(player, r, g, b) end
 ---
 --- @hash [0x821FDC827D6F4090](https://docs.fivem.net/natives/?_0x821FDC827D6F4090)
 --- @param player any
---- @return void
---- @overload fun(player: any): void
+--- @return nil
+--- @overload fun(player: any): nil
 function SpecialAbilityActivate(player) end
 
     
@@ -1587,8 +1588,8 @@ function SpecialAbilityActivate(player) end
 ---
 --- @hash [0x821FDC827D6F4090](https://docs.fivem.net/natives/?_0x821FDC827D6F4090)
 --- @param player any
---- @return void
---- @overload fun(player: any): void
+--- @return nil
+--- @overload fun(player: any): nil
 --- @deprecated
 function N_0x821fdc827d6f4090(player) end
 
@@ -1599,8 +1600,8 @@ function N_0x821fdc827d6f4090(player) end
 ---
 --- @hash [0x823EC8E82BA45986](https://docs.fivem.net/natives/?_0x823EC8E82BA45986)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x823ec8e82ba45986(p0) end
 
     
@@ -1608,8 +1609,8 @@ function N_0x823ec8e82ba45986(p0) end
 ---
 --- @hash [0x8621390F0CDCFE1F](https://docs.fivem.net/natives/?_0x8621390F0CDCFE1F)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function AssistedMovementFlushRoute() end
 
     
@@ -1626,8 +1627,8 @@ function HasAchievementBeenPassed(achievement) end
 ---
 --- @hash [0x8753997EB5F6EE3F](https://docs.fivem.net/natives/?_0x8753997EB5F6EE3F)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function ClearPlayerParachuteModelOverride(player) end
 
     
@@ -1681,8 +1682,8 @@ function N_0x8bc515bae4aaf8ff(player) end
 --- @param player Player
 --- @param bHasControl boolean
 --- @param flags number (int)
---- @return void
---- @overload fun(player: Player, bHasControl: boolean, flags: number): void
+--- @return nil
+--- @overload fun(player: Player, bHasControl: boolean, flags: number): nil
 function SetPlayerControl(player, bHasControl, flags) end
 
     
@@ -1693,8 +1694,8 @@ function SetPlayerControl(player, bHasControl, flags) end
 --- @hash [0x8D768602ADEF2245](https://docs.fivem.net/natives/?_0x8D768602ADEF2245)
 --- @param player Player
 --- @param p1 number (float)
---- @return void
---- @overload fun(player: Player, p1: number): void
+--- @return nil
+--- @overload fun(player: Player, p1: number): nil
 function N_0x8d768602adef2245(player, p1) end
 
     
@@ -1703,8 +1704,8 @@ function N_0x8d768602adef2245(player, p1) end
 --- @hash [0x8EEDA153AD141BA4](https://docs.fivem.net/natives/?_0x8EEDA153AD141BA4)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function SetEveryoneIgnorePlayer(player, toggle) end
 
     
@@ -1726,8 +1727,8 @@ function IsPlayerReadyForCutscene(player) end
 --- @hash [0x9097EB6D4BB9A12A](https://docs.fivem.net/natives/?_0x9097EB6D4BB9A12A)
 --- @param player Player
 --- @param entity Entity
---- @return void
---- @overload fun(player: Player, entity: Entity): void
+--- @return nil
+--- @overload fun(player: Player, entity: Entity): nil
 function N_0x9097eb6d4bb9a12a(player, entity) end
 
     
@@ -1752,8 +1753,8 @@ function GetPlayerMaxArmour(player) end
 --- @hash [0x93B0FB27C9A04060](https://docs.fivem.net/natives/?_0x93B0FB27C9A04060)
 --- @param player Player
 --- @param tintIndex number (int)
---- @return void
---- @overload fun(player: Player, tintIndex: number): void
+--- @return nil
+--- @overload fun(player: Player, tintIndex: number): nil
 function SetPlayerParachutePackTintIndex(player, tintIndex) end
 
     
@@ -1764,8 +1765,8 @@ function SetPlayerParachutePackTintIndex(player, tintIndex) end
 ---
 --- @hash [0x94DD7888C10A979E](https://docs.fivem.net/natives/?_0x94DD7888C10A979E)
 --- @param unk boolean
---- @return void
---- @overload fun(unk: boolean): void
+--- @return nil
+--- @overload fun(unk: boolean): nil
 function DisplaySystemSigninUi(unk) end
 
     
@@ -1788,8 +1789,8 @@ function IsPlayerClimbing(player) end
 --- @hash [0x977DB4641F6FC3DB](https://docs.fivem.net/natives/?_0x977DB4641F6FC3DB)
 --- @param player Player
 --- @param model Hash
---- @return void
---- @overload fun(player: Player, model: Hash): void
+--- @return nil
+--- @overload fun(player: Player, model: Hash): nil
 function SetPlayerParachuteModelOverride(player, model) end
 
     
@@ -1812,8 +1813,8 @@ function GetCauseOfMostRecentForceCleanup() end
 --- @hash [0x9A987297ED8BD838](https://docs.fivem.net/natives/?_0x9A987297ED8BD838)
 --- @param player Player
 --- @param p1 number (int)
---- @return void
---- @overload fun(player: Player, p1: number): void
+--- @return nil
+--- @overload fun(player: Player, p1: number): nil
 function SwitchCrimeType(player, p1) end
 
     
@@ -1828,8 +1829,8 @@ function SwitchCrimeType(player, p1) end
 --- @hash [0x9A987297ED8BD838](https://docs.fivem.net/natives/?_0x9A987297ED8BD838)
 --- @param player Player
 --- @param p1 number (int)
---- @return void
---- @overload fun(player: Player, p1: number): void
+--- @return nil
+--- @overload fun(player: Player, p1: number): nil
 --- @deprecated
 function N_0x9a987297ed8bd838(player, p1) end
 
@@ -1841,8 +1842,8 @@ function N_0x9a987297ed8bd838(player, p1) end
 --- @hash [0x9B0BB33B04405E7A](https://docs.fivem.net/natives/?_0x9B0BB33B04405E7A)
 --- @param player Player
 --- @param difficulty number (float)
---- @return void
---- @overload fun(player: Player, difficulty: number): void
+--- @return nil
+--- @overload fun(player: Player, difficulty: number): nil
 function SetWantedLevelDifficulty(player, difficulty) end
 
     
@@ -1852,8 +1853,8 @@ function SetWantedLevelDifficulty(player, difficulty) end
 ---
 --- @hash [0x9CB5CE07A3968D5A](https://docs.fivem.net/natives/?_0x9CB5CE07A3968D5A)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function SpecialAbilityDeactivateFast(player) end
 
     
@@ -1874,8 +1875,8 @@ function IntToParticipantindex(value) end
 ---
 --- @hash [0x9EDD76E87D5D51BA](https://docs.fivem.net/natives/?_0x9EDD76E87D5D51BA)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function N_0x9edd76e87d5d51ba(player) end
 
     
@@ -1888,8 +1889,8 @@ function N_0x9edd76e87d5d51ba(player) end
 --- @hash [0x9F260BFB59ADBCA3](https://docs.fivem.net/natives/?_0x9F260BFB59ADBCA3)
 --- @param player Player
 --- @param entity Entity
---- @return void
---- @overload fun(player: Player, entity: Entity): void
+--- @return nil
+--- @overload fun(player: Player, entity: Entity): nil
 function N_0x9f260bfb59adbca3(player, entity) end
 
     
@@ -1898,8 +1899,8 @@ function N_0x9f260bfb59adbca3(player, entity) end
 --- @hash [0x9F343285A00B4BB6](https://docs.fivem.net/natives/?_0x9F343285A00B4BB6)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function SetAutoGiveParachuteWhenEnterPlane(player, toggle) end
 
     
@@ -1909,8 +1910,8 @@ function SetAutoGiveParachuteWhenEnterPlane(player, toggle) end
 ---
 --- @hash [0x9F7BBA2EA6372500](https://docs.fivem.net/natives/?_0x9F7BBA2EA6372500)
 --- @param index number (int)
---- @return void
---- @overload fun(index: number): void
+--- @return nil
+--- @overload fun(index: number): nil
 function SetPlayerClothPackageIndex(index) end
 
     
@@ -1919,8 +1920,8 @@ function SetPlayerClothPackageIndex(index) end
 --- @hash [0xA01B8075D8B92DF4](https://docs.fivem.net/natives/?_0xA01B8075D8B92DF4)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function SetPlayerSprint(player, toggle) end
 
     
@@ -1937,8 +1938,8 @@ function SetPlayerSprint(player, toggle) end
 --- @param player Player
 --- @param normalizedValue number (float)
 --- @param p2 boolean
---- @return void
---- @overload fun(player: Player, normalizedValue: number, p2: boolean): void
+--- @return nil
+--- @overload fun(player: Player, normalizedValue: number, p2: boolean): nil
 function SpecialAbilityChargeNormalized(player, normalizedValue, p2) end
 
     
@@ -1956,8 +1957,8 @@ function SpecialAbilityChargeNormalized(player, normalizedValue, p2) end
 --- @param player Player
 --- @param normalizedValue number (float)
 --- @param p2 boolean
---- @return void
---- @overload fun(player: Player, normalizedValue: number, p2: boolean): void
+--- @return nil
+--- @overload fun(player: Player, normalizedValue: number, p2: boolean): nil
 --- @deprecated
 function ResetSpecialAbilityControlsCinematic(player, normalizedValue, p2) end
 
@@ -2006,8 +2007,8 @@ function GetPlayerUnderwaterTimeRemaining(player) end
 --- @hash [0xA352C1B864CAFD33](https://docs.fivem.net/natives/?_0xA352C1B864CAFD33)
 --- @param player Player
 --- @param p1 number (float)
---- @return void
---- @overload fun(player: Player, p1: number): void
+--- @return nil
+--- @overload fun(player: Player, p1: number): nil
 function RestorePlayerStamina(player, p1) end
 
     
@@ -2033,8 +2034,8 @@ function RestorePlayerStamina(player, p1) end
 --- @hash [0xA3D0E54541D9A5E5](https://docs.fivem.net/natives/?_0xA3D0E54541D9A5E5)
 --- @param player Player
 --- @param tintIndex number (int)
---- @return void
---- @overload fun(player: Player, tintIndex: number): void
+--- @return nil
+--- @overload fun(player: Player, tintIndex: number): nil
 function SetPlayerParachuteTintIndex(player, tintIndex) end
 
     
@@ -2042,8 +2043,8 @@ function SetPlayerParachuteTintIndex(player, tintIndex) end
 ---
 --- @hash [0xA49C426ED0CA4AB7](https://docs.fivem.net/natives/?_0xA49C426ED0CA4AB7)
 --- @param multiplier number (float)
---- @return void
---- @overload fun(multiplier: number): void
+--- @return nil
+--- @overload fun(multiplier: number): nil
 function SetSpecialAbilityMultiplier(multiplier) end
 
     
@@ -2054,8 +2055,8 @@ function SetSpecialAbilityMultiplier(multiplier) end
 --- @hash [0xA50E117CDDF82F0C](https://docs.fivem.net/natives/?_0xA50E117CDDF82F0C)
 --- @param player Player
 --- @param modifier number (float)
---- @return void
---- @overload fun(player: Player, modifier: number): void
+--- @return nil
+--- @overload fun(player: Player, modifier: number): nil
 function SetPlayerVehicleDamageModifier(player, modifier) end
 
     
@@ -2074,8 +2075,8 @@ function GetPlayerIndex() end
 ---
 --- @hash [0xA6F312FCCE9C1DFE](https://docs.fivem.net/natives/?_0xA6F312FCCE9C1DFE)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function ResetPlayerStamina(player) end
 
     
@@ -2113,8 +2114,8 @@ function N_0xa72200f51875fea4() end
 --- @hash [0xA91C6F0FF7D16A13](https://docs.fivem.net/natives/?_0xA91C6F0FF7D16A13)
 --- @param player Player
 --- @param multiplier number (float)
---- @return void
---- @overload fun(player: Player, multiplier: number): void
+--- @return nil
+--- @overload fun(player: Player, multiplier: number): nil
 function SetSwimMultiplierForPlayer(player, multiplier) end
 
     
@@ -2122,8 +2123,8 @@ function SetSwimMultiplierForPlayer(player, multiplier) end
 ---
 --- @hash [0xAA5F02DB48D704B9](https://docs.fivem.net/natives/?_0xAA5F02DB48D704B9)
 --- @param maxWantedLevel number (int)
---- @return void
---- @overload fun(maxWantedLevel: number): void
+--- @return nil
+--- @overload fun(maxWantedLevel: number): nil
 function SetMaxWantedLevel(maxWantedLevel) end
 
     
@@ -2152,8 +2153,8 @@ function SetMaxWantedLevel(maxWantedLevel) end
 --- @param teleportWithVehicle boolean
 --- @param findCollisionLand boolean
 --- @param p7 boolean
---- @return void
---- @overload fun(player: Player, x: number, y: number, z: number, heading: number, teleportWithVehicle: boolean, findCollisionLand: boolean, p7: boolean): void
+--- @return nil
+--- @overload fun(player: Player, x: number, y: number, z: number, heading: number, teleportWithVehicle: boolean, findCollisionLand: boolean, p7: boolean): nil
 function StartPlayerTeleport(player, x, y, z, heading, teleportWithVehicle, findCollisionLand, p7) end
 
     
@@ -2163,8 +2164,8 @@ function StartPlayerTeleport(player, x, y, z, heading, teleportWithVehicle, find
 ---
 --- @hash [0xAD73CE5A09E42D12](https://docs.fivem.net/natives/?_0xAD73CE5A09E42D12)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function N_0xad73ce5a09e42d12(player) end
 
     
@@ -2175,8 +2176,8 @@ function N_0xad73ce5a09e42d12(player) end
 --- @hash [0xAE540335B4ABC4E2](https://docs.fivem.net/natives/?_0xAE540335B4ABC4E2)
 --- @param player Player
 --- @param modifier number (float)
---- @return void
---- @overload fun(player: Player, modifier: number): void
+--- @return nil
+--- @overload fun(player: Player, modifier: number): nil
 function SetPlayerMeleeWeaponDefenseModifier(player, modifier) end
 
     
@@ -2184,8 +2185,8 @@ function SetPlayerMeleeWeaponDefenseModifier(player, modifier) end
 ---
 --- @hash [0xAEBF081FFC0A0E5E](https://docs.fivem.net/natives/?_0xAEBF081FFC0A0E5E)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function AssistedMovementCloseRoute() end
 
     
@@ -2211,8 +2212,8 @@ function AssistedMovementCloseRoute() end
 --- @hash [0xAF04C87F5DC1DF38](https://docs.fivem.net/natives/?_0xAF04C87F5DC1DF38)
 --- @param player Player
 --- @param index number (int)
---- @return void
---- @overload fun(player: Player, index: number): void
+--- @return nil
+--- @overload fun(player: Player, index: number): nil
 function SetPlayerReserveParachuteTintIndex(player, index) end
 
     
@@ -2235,8 +2236,8 @@ function ArePlayerFlashingStarsAboutToDrop(player) end
 ---
 --- @hash [0xB1906895227793F3](https://docs.fivem.net/natives/?_0xB1906895227793F3)
 --- @param targetMode number (int)
---- @return void
---- @overload fun(targetMode: number): void
+--- @return nil
+--- @overload fun(targetMode: number): nil
 function SetPlayerTargetingMode(targetMode) end
 
     
@@ -2258,8 +2259,8 @@ function IsSpecialAbilityEnabled(player) end
 --- @hash [0xB214D570EAD7F81A](https://docs.fivem.net/natives/?_0xB214D570EAD7F81A)
 --- @param player Player
 --- @param p1 number (int)
---- @return void
---- @overload fun(player: Player, p1: number): void
+--- @return nil
+--- @overload fun(player: Player, p1: number): nil
 function SetSpecialAbility(player, p1) end
 
     
@@ -2271,8 +2272,8 @@ function SetSpecialAbility(player, p1) end
 --- @hash [0xB214D570EAD7F81A](https://docs.fivem.net/natives/?_0xB214D570EAD7F81A)
 --- @param player Player
 --- @param p1 number (int)
---- @return void
---- @overload fun(player: Player, p1: number): void
+--- @return nil
+--- @overload fun(player: Player, p1: number): nil
 --- @deprecated
 function N_0xb214d570ead7f81a(player, p1) end
 
@@ -2284,8 +2285,8 @@ function N_0xb214d570ead7f81a(player, p1) end
 --- @hash [0xB2C1A29588A9F47C](https://docs.fivem.net/natives/?_0xB2C1A29588A9F47C)
 --- @param player Player
 --- @param multiplier number (float)
---- @return void
---- @overload fun(player: Player, multiplier: number): void
+--- @return nil
+--- @overload fun(player: Player, multiplier: number): nil
 function SetPlayerSneakingNoiseMultiplier(player, multiplier) end
 
     
@@ -2296,8 +2297,8 @@ function SetPlayerSneakingNoiseMultiplier(player, multiplier) end
 ---
 --- @hash [0xB302540597885499](https://docs.fivem.net/natives/?_0xB302540597885499)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function ClearPlayerWantedLevel(player) end
 
     
@@ -2311,8 +2312,8 @@ function ClearPlayerWantedLevel(player) end
 ---
 --- @hash [0xB45EFF719D8427A6](https://docs.fivem.net/natives/?_0xB45EFF719D8427A6)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function N_0xb45eff719d8427a6(p0) end
 
     
@@ -2363,8 +2364,8 @@ function GetPlayerInvincible(player) end
 --- @param player Player
 --- @param p1 number (int)
 --- @param p2 boolean
---- @return void
---- @overload fun(player: Player, p1: number, p2: boolean): void
+--- @return nil
+--- @overload fun(player: Player, p1: number, p2: boolean): nil
 function SpecialAbilityChargeAbsolute(player, p1, p2) end
 
     
@@ -2375,8 +2376,8 @@ function SpecialAbilityChargeAbsolute(player, p1, p2) end
 ---
 --- @hash [0xB885852C39CC265D](https://docs.fivem.net/natives/?_0xB885852C39CC265D)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xb885852c39cc265d() end
 
     
@@ -2396,8 +2397,8 @@ function N_0xb9cf1f793a9f1bf1() end
 ---
 --- @hash [0xB9D0DD990DC141DD](https://docs.fivem.net/natives/?_0xB9D0DD990DC141DD)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function ResetWantedLevelDifficulty(player) end
 
     
@@ -2431,8 +2432,8 @@ function N_0xbc0753c9ca14b506(player, ms, p2) end
 ---
 --- @hash [0xBC8983F38F78ED51](https://docs.fivem.net/natives/?_0xBC8983F38F78ED51)
 --- @param cleanupFlags number (int)
---- @return void
---- @overload fun(cleanupFlags: number): void
+--- @return nil
+--- @overload fun(cleanupFlags: number): nil
 function ForceCleanup(cleanupFlags) end
 
     
@@ -2444,8 +2445,8 @@ function ForceCleanup(cleanupFlags) end
 ---
 --- @hash [0xBC9490CA15AEA8FB](https://docs.fivem.net/natives/?_0xBC9490CA15AEA8FB)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function N_0xbc9490ca15aea8fb(player) end
 
     
@@ -2454,8 +2455,8 @@ function N_0xbc9490ca15aea8fb(player) end
 --- @hash [0xBCFDE9EDE4CF27DC](https://docs.fivem.net/natives/?_0xBCFDE9EDE4CF27DC)
 --- @param player Player
 --- @param modifier number (float)
---- @return void
---- @overload fun(player: Player, modifier: number): void
+--- @return nil
+--- @overload fun(player: Player, modifier: number): nil
 function SetPlayerWeaponDefenseModifier_2(player, modifier) end
 
     
@@ -2465,8 +2466,8 @@ function SetPlayerWeaponDefenseModifier_2(player, modifier) end
 --- @hash [0xBCFDE9EDE4CF27DC](https://docs.fivem.net/natives/?_0xBCFDE9EDE4CF27DC)
 --- @param player Player
 --- @param modifier number (float)
---- @return void
---- @overload fun(player: Player, modifier: number): void
+--- @return nil
+--- @overload fun(player: Player, modifier: number): nil
 --- @deprecated
 function N_0xbcfde9ede4cf27dc(player, modifier) end
 
@@ -2487,8 +2488,8 @@ function GiveAchievementToPlayer(achievement) end
 ---
 --- @hash [0xBF9BD71691857E48](https://docs.fivem.net/natives/?_0xBF9BD71691857E48)
 --- @param duration number (int)
---- @return void
---- @overload fun(duration: number): void
+--- @return nil
+--- @overload fun(duration: number): nil
 function StartFiringAmnesty(duration) end
 
     
@@ -2496,8 +2497,8 @@ function StartFiringAmnesty(duration) end
 ---
 --- @hash [0xC142BE3BB9CE125F](https://docs.fivem.net/natives/?_0xC142BE3BB9CE125F)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function DisablePlayerVehicleRewards(player) end
 
     
@@ -2555,8 +2556,8 @@ function SetAchievementProgression(achievement, progress) end
 ---
 --- @hash [0xC3376F42B1FACCC6](https://docs.fivem.net/natives/?_0xC3376F42B1FACCC6)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function N_0xc3376f42b1faccc6(player) end
 
     
@@ -2567,8 +2568,8 @@ function N_0xc3376f42b1faccc6(player) end
 ---
 --- @hash [0xC3376F42B1FACCC6](https://docs.fivem.net/natives/?_0xC3376F42B1FACCC6)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 --- @deprecated
 function SetAreasGeneratorOrientation(player) end
 
@@ -2578,8 +2579,8 @@ function SetAreasGeneratorOrientation(player) end
 --- @hash [0xC388A0F065F5BC34](https://docs.fivem.net/natives/?_0xC388A0F065F5BC34)
 --- @param player Player
 --- @param limit number (float)
---- @return void
---- @overload fun(player: Player, limit: number): void
+--- @return nil
+--- @overload fun(player: Player, limit: number): nil
 function SetPlayerHealthRechargeLimit(player, limit) end
 
     
@@ -2589,8 +2590,8 @@ function SetPlayerHealthRechargeLimit(player, limit) end
 --- @hash [0xC388A0F065F5BC34](https://docs.fivem.net/natives/?_0xC388A0F065F5BC34)
 --- @param player Player
 --- @param limit number (float)
---- @return void
---- @overload fun(player: Player, limit: number): void
+--- @return nil
+--- @overload fun(player: Player, limit: number): nil
 --- @deprecated
 function N_0xc388a0f065f5bc34(player, limit) end
 
@@ -2601,8 +2602,8 @@ function N_0xc388a0f065f5bc34(player, limit) end
 ---
 --- @hash [0xC449EDED9D73009C](https://docs.fivem.net/natives/?_0xC449EDED9D73009C)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function StopPlayerTeleport() end
 
     
@@ -2611,8 +2612,8 @@ function StopPlayerTeleport() end
 --- @hash [0xC54C95DA968EC5B5](https://docs.fivem.net/natives/?_0xC54C95DA968EC5B5)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function SetPlayerSimulateAiming(player, toggle) end
 
     
@@ -2655,8 +2656,8 @@ function HasForceCleanupOccurred(cleanupFlags) end
 ---
 --- @hash [0xC9A763D8FE87436A](https://docs.fivem.net/natives/?_0xC9A763D8FE87436A)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function SpecialAbilityChargeOnMissionFailed(player) end
 
     
@@ -2667,8 +2668,8 @@ function SpecialAbilityChargeOnMissionFailed(player) end
 ---
 --- @hash [0xC9A763D8FE87436A](https://docs.fivem.net/natives/?_0xC9A763D8FE87436A)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 --- @deprecated
 function N_0xc9a763d8fe87436a(player) end
 
@@ -2682,8 +2683,8 @@ function N_0xc9a763d8fe87436a(player) end
 --- @hash [0xCA7DC8329F0A1E9E](https://docs.fivem.net/natives/?_0xCA7DC8329F0A1E9E)
 --- @param player Player
 --- @param multiplier number (float)
---- @return void
---- @overload fun(player: Player, multiplier: number): void
+--- @return nil
+--- @overload fun(player: Player, multiplier: number): nil
 function SetAirDragMultiplierForPlayersVehicle(player, multiplier) end
 
     
@@ -2694,8 +2695,8 @@ function SetAirDragMultiplierForPlayersVehicle(player, multiplier) end
 --- @hash [0xCAC57395B151135F](https://docs.fivem.net/natives/?_0xCAC57395B151135F)
 --- @param player Player
 --- @param p1 boolean
---- @return void
---- @overload fun(player: Player, p1: boolean): void
+--- @return nil
+--- @overload fun(player: Player, p1: boolean): nil
 function N_0xcac57395b151135f(player, p1) end
 
     
@@ -2716,8 +2717,8 @@ function N_0xcb645e85e97ea48b() end
 --- @hash [0xCE07B9F7817AADA3](https://docs.fivem.net/natives/?_0xCE07B9F7817AADA3)
 --- @param player Player
 --- @param modifier number (float)
---- @return void
---- @overload fun(player: Player, modifier: number): void
+--- @return nil
+--- @overload fun(player: Player, modifier: number): nil
 function SetPlayerWeaponDamageModifier(player, modifier) end
 
     
@@ -2726,8 +2727,8 @@ function SetPlayerWeaponDamageModifier(player, modifier) end
 --- @hash [0xD2B315B6689D537D](https://docs.fivem.net/natives/?_0xD2B315B6689D537D)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function SetAutoGiveScubaGearWhenExitVehicle(player, toggle) end
 
     
@@ -2737,8 +2738,8 @@ function SetAutoGiveScubaGearWhenExitVehicle(player, toggle) end
 --- @hash [0xD2B315B6689D537D](https://docs.fivem.net/natives/?_0xD2B315B6689D537D)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 --- @deprecated
 function N_0xd2b315b6689d537d(player, toggle) end
 
@@ -2750,8 +2751,8 @@ function N_0xd2b315b6689d537d(player, toggle) end
 --- @hash [0xD465A8599DFF6814](https://docs.fivem.net/natives/?_0xD465A8599DFF6814)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function SetPlayerCanUseCover(player, toggle) end
 
     
@@ -2795,8 +2796,8 @@ function HasPlayerLeftTheWorld(player) end
 --- @hash [0xD5A016BC3C09CF40](https://docs.fivem.net/natives/?_0xD5A016BC3C09CF40)
 --- @param player Player
 --- @param index number (int*)
---- @return void
---- @overload fun(player: Player): number
+--- @return nil
+--- @overload fun(player: Player): nil, number
 function GetPlayerReserveParachuteTintIndex(player, index) end
 
     
@@ -2807,8 +2808,8 @@ function GetPlayerReserveParachuteTintIndex(player, index) end
 --- @hash [0xD5E460AD7020A246](https://docs.fivem.net/natives/?_0xD5E460AD7020A246)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function SetPlayerCanBeHassledByGangs(player, toggle) end
 
     
@@ -2818,8 +2819,8 @@ function SetPlayerCanBeHassledByGangs(player, toggle) end
 ---
 --- @hash [0xD6A953C6D1492057](https://docs.fivem.net/natives/?_0xD6A953C6D1492057)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function SpecialAbilityDeactivate(player) end
 
     
@@ -2846,8 +2847,8 @@ function PlayerPedId() end
 --- @hash [0xD821056B9ACF8052](https://docs.fivem.net/natives/?_0xD821056B9ACF8052)
 --- @param player Player
 --- @param p1 any
---- @return void
---- @overload fun(player: Player, p1: any): void
+--- @return nil
+--- @overload fun(player: Player, p1: any): nil
 function N_0xd821056b9acf8052(player, p1) end
 
     
@@ -2862,8 +2863,8 @@ function N_0xd821056b9acf8052(player, p1) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 boolean
---- @return void
---- @overload fun(player: Player, p1: number, p2: any, p3: any, p4: boolean): void
+--- @return nil
+--- @overload fun(player: Player, p1: number, p2: any, p3: any, p4: boolean): nil
 function SetPlayerParachuteVariationOverride(player, p1, p2, p3, p4) end
 
     
@@ -2873,8 +2874,8 @@ function SetPlayerParachuteVariationOverride(player, p1, p2, p3, p4) end
 ---
 --- @hash [0xDA1DF03D5A315F4E](https://docs.fivem.net/natives/?_0xDA1DF03D5A315F4E)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ResetWorldBoundaryForPlayer() end
 
     
@@ -2883,8 +2884,8 @@ function ResetWorldBoundaryForPlayer() end
 --- @hash [0xDB172424876553F4](https://docs.fivem.net/natives/?_0xDB172424876553F4)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function SetDispatchCopsForPlayer(player, toggle) end
 
     
@@ -2902,8 +2903,8 @@ function GetTimeSincePlayerDroveAgainstTraffic(player) end
 --- @hash [0xDB89EF50FF25FCE9](https://docs.fivem.net/natives/?_0xDB89EF50FF25FCE9)
 --- @param player Player
 --- @param multiplier number (float)
---- @return void
---- @overload fun(player: Player, multiplier: number): void
+--- @return nil
+--- @overload fun(player: Player, multiplier: number): nil
 function SetPlayerNoiseMultiplier(player, multiplier) end
 
     
@@ -2911,8 +2912,8 @@ function SetPlayerNoiseMultiplier(player, multiplier) end
 ---
 --- @hash [0xDC64D2C53493ED12](https://docs.fivem.net/natives/?_0xDC64D2C53493ED12)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function ReportPoliceSpottedPlayer(player) end
 
     
@@ -2921,8 +2922,8 @@ function ReportPoliceSpottedPlayer(player) end
 ---
 --- @hash [0xDC64D2C53493ED12](https://docs.fivem.net/natives/?_0xDC64D2C53493ED12)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 --- @deprecated
 function N_0xdc64d2c53493ed12(player) end
 
@@ -2932,8 +2933,8 @@ function N_0xdc64d2c53493ed12(player) end
 --- @hash [0xDC80A4C2F18A2B64](https://docs.fivem.net/natives/?_0xDC80A4C2F18A2B64)
 --- @param player Player
 --- @param model Hash
---- @return void
---- @overload fun(player: Player, model: Hash): void
+--- @return nil
+--- @overload fun(player: Player, model: Hash): nil
 function SetPlayerParachutePackModelOverride(player, model) end
 
     
@@ -2976,8 +2977,8 @@ function N_0xdd2620b7b9d16ff1(player, p1) end
 --- @hash [0xDE45D1A1EF45EE61](https://docs.fivem.net/natives/?_0xDE45D1A1EF45EE61)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function N_0xde45d1a1ef45ee61(player, toggle) end
 
     
@@ -2987,8 +2988,8 @@ function N_0xde45d1a1ef45ee61(player, toggle) end
 --- @hash [0xDE45D1A1EF45EE61](https://docs.fivem.net/natives/?_0xDE45D1A1EF45EE61)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 --- @deprecated
 function SetHudAnimStopLevel(player, toggle) end
 
@@ -3011,8 +3012,8 @@ function CanPlayerStartMission(player) end
 --- @hash [0xE0A7D1E497FFCD6F](https://docs.fivem.net/natives/?_0xE0A7D1E497FFCD6F)
 --- @param player Player
 --- @param p1 boolean
---- @return void
---- @overload fun(player: Player, p1: boolean): void
+--- @return nil
+--- @overload fun(player: Player, p1: boolean): nil
 function SetPlayerWantedLevelNow(player, p1) end
 
     
@@ -3078,8 +3079,8 @@ function HasPlayerDamagedAtLeastOneNonAnimalPed(player) end
 ---
 --- @hash [0xE902EF951DCE178F](https://docs.fivem.net/natives/?_0xE902EF951DCE178F)
 --- @param player Player
---- @return number, number, number
---- @overload fun(player: Player): number, number, number
+--- @return nil, number, number, number
+--- @overload fun(player: Player): nil, number, number, number
 function GetPlayerRgbColour(player) end
 
     
@@ -3143,8 +3144,8 @@ function GetPlayerRgbColour(player) end
 --- @param player Player
 --- @param crimeType number (int)
 --- @param wantedLvlThresh number (int)
---- @return void
---- @overload fun(player: Player, crimeType: number, wantedLvlThresh: number): void
+--- @return nil
+--- @overload fun(player: Player, crimeType: number, wantedLvlThresh: number): nil
 function ReportCrime(player, crimeType, wantedLvlThresh) end
 
     
@@ -3159,8 +3160,8 @@ function ReportCrime(player, crimeType, wantedLvlThresh) end
 --- @hash [0xED481732DFF7E997](https://docs.fivem.net/natives/?_0xED481732DFF7E997)
 --- @param player Player
 --- @param p2 Ped
---- @return void
---- @overload fun(player: Player, p2: Ped): void
+--- @return nil
+--- @overload fun(player: Player, p2: Ped): nil
 function SpecialAbilityChargeContinuous(player, p2) end
 
     
@@ -3178,8 +3179,8 @@ function SpecialAbilityChargeContinuous(player, p2) end
 --- @param p5 number (float)
 --- @param p6 number (float)
 --- @param p7 number (float)
---- @return void
---- @overload fun(p0: number, p1: number, p2: number, p3: number, p4: number, p5: number, p6: number, p7: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: number, p2: number, p3: number, p4: number, p5: number, p6: number, p7: number): nil
 function PlayerAttachVirtualBound(p0, p1, p2, p3, p4, p5, p6, p7) end
 
     
@@ -3190,8 +3191,8 @@ function PlayerAttachVirtualBound(p0, p1, p2, p3, p4, p5, p6, p7) end
 --- @hash [0xEE4EBDD2593BA844](https://docs.fivem.net/natives/?_0xEE4EBDD2593BA844)
 --- @param player Player
 --- @param p1 boolean
---- @return void
---- @overload fun(player: Player, p1: boolean): void
+--- @return nil
+--- @overload fun(player: Player, p1: boolean): nil
 function SetPlayerHomingRocketDisabled(player, p1) end
 
     
@@ -3203,8 +3204,8 @@ function SetPlayerHomingRocketDisabled(player, p1) end
 --- @hash [0xEE4EBDD2593BA844](https://docs.fivem.net/natives/?_0xEE4EBDD2593BA844)
 --- @param player Player
 --- @param p1 boolean
---- @return void
---- @overload fun(player: Player, p1: boolean): void
+--- @return nil
+--- @overload fun(player: Player, p1: boolean): nil
 --- @deprecated
 function N_0xee4ebdd2593ba844(player, p1) end
 
@@ -3224,8 +3225,8 @@ function NetworkPlayerIdToInt() end
 ---
 --- @hash [0xEF56DBABD3CD4887](https://docs.fivem.net/natives/?_0xEF56DBABD3CD4887)
 --- @param player Player
---- @return number, number, number
---- @overload fun(player: Player): number, number, number
+--- @return nil, number, number, number
+--- @overload fun(player: Player): nil, number, number, number
 function GetPlayerParachuteSmokeTrailColor(player) end
 
     
@@ -3234,8 +3235,8 @@ function GetPlayerParachuteSmokeTrailColor(player) end
 --- @hash [0xEFD79FA81DFBA9CB](https://docs.fivem.net/natives/?_0xEFD79FA81DFBA9CB)
 --- @param player Player
 --- @param distance number (float)
---- @return void
---- @overload fun(player: Player, distance: number): void
+--- @return nil
+--- @overload fun(player: Player, distance: number): nil
 function SetPlayerFallDistance(player, distance) end
 
     
@@ -3245,8 +3246,8 @@ function SetPlayerFallDistance(player, distance) end
 --- @hash [0xEFD79FA81DFBA9CB](https://docs.fivem.net/natives/?_0xEFD79FA81DFBA9CB)
 --- @param player Player
 --- @param distance number (float)
---- @return void
---- @overload fun(player: Player, distance: number): void
+--- @return nil
+--- @overload fun(player: Player, distance: number): nil
 --- @deprecated
 function N_0xefd79fa81dfba9cb(player, distance) end
 
@@ -3255,8 +3256,8 @@ function N_0xefd79fa81dfba9cb(player, distance) end
 ---
 --- @hash [0xF0B67A4DE6AB5F98](https://docs.fivem.net/natives/?_0xF0B67A4DE6AB5F98)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function ClearPlayerHasDamagedAtLeastOnePed(player) end
 
     
@@ -3284,8 +3285,8 @@ function N_0xf10b44fd479d69f3(player, p1) end
 --- @param player Player
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(player: Player, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(player: Player, p1: boolean, p2: boolean): nil
 function SpecialAbilityChargeMedium(player, p1, p2) end
 
     
@@ -3295,8 +3296,8 @@ function SpecialAbilityChargeMedium(player, p1, p2) end
 ---
 --- @hash [0xF145F3BE2EFA9A3B](https://docs.fivem.net/natives/?_0xF145F3BE2EFA9A3B)
 --- @param playerModel Hash
---- @return void
---- @overload fun(playerModel: Hash): void
+--- @return nil
+--- @overload fun(playerModel: Hash): nil
 function SpecialAbilityUnlock(playerModel) end
 
     
@@ -3327,8 +3328,8 @@ function CanPedHearPlayer(player, ped) end
 --- @hash [0xF3AC26D3CC576528](https://docs.fivem.net/natives/?_0xF3AC26D3CC576528)
 --- @param player Player
 --- @param p2 boolean
---- @return void
---- @overload fun(player: Player, p2: boolean): void
+--- @return nil
+--- @overload fun(player: Player, p2: boolean): nil
 function RemovePlayerHelmet(player, p2) end
 
     
@@ -3337,8 +3338,8 @@ function RemovePlayerHelmet(player, p2) end
 --- @hash [0xF401B182DBA8AF53](https://docs.fivem.net/natives/?_0xF401B182DBA8AF53)
 --- @param player Player
 --- @param enabled boolean
---- @return void
---- @overload fun(player: Player, enabled: boolean): void
+--- @return nil
+--- @overload fun(player: Player, enabled: boolean): nil
 function SetPlayerCanLeaveParachuteSmokeTrail(player, enabled) end
 
     
@@ -3354,8 +3355,8 @@ function SetPlayerCanLeaveParachuteSmokeTrail(player, enabled) end
 --- @param player Player
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(player: Player, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(player: Player, p1: boolean, p2: boolean): nil
 function SpecialAbilityChargeLarge(player, p1, p2) end
 
     
@@ -3364,8 +3365,8 @@ function SpecialAbilityChargeLarge(player, p1, p2) end
 --- @hash [0xF745B37630DF176B](https://docs.fivem.net/natives/?_0xF745B37630DF176B)
 --- @param id number (int)
 --- @param cleanupFlags number (int)
---- @return void
---- @overload fun(id: number, cleanupFlags: number): void
+--- @return nil
+--- @overload fun(id: number, cleanupFlags: number): nil
 function ForceCleanupForThreadWithThisId(id, cleanupFlags) end
 
     
@@ -3382,8 +3383,8 @@ function IsPlayerPressingHorn(player) end
 ---
 --- @hash [0xFAC75988A7D078D3](https://docs.fivem.net/natives/?_0xFAC75988A7D078D3)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function N_0xfac75988a7d078d3(player) end
 
     
@@ -3403,8 +3404,8 @@ function GetWantedLevelThreshold(wantedLevel) end
 --- @hash [0xFF300C7649724A0B](https://docs.fivem.net/natives/?_0xFF300C7649724A0B)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 function SetPlayerLeavePedBehind(player, toggle) end
 
     
@@ -3414,8 +3415,8 @@ function SetPlayerLeavePedBehind(player, toggle) end
 --- @hash [0xFF300C7649724A0B](https://docs.fivem.net/natives/?_0xFF300C7649724A0B)
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, toggle: boolean): nil
 --- @deprecated
 function N_0xff300c7649724a0b(player, toggle) end
 
@@ -3426,8 +3427,8 @@ function N_0xff300c7649724a0b(player, toggle) end
 ---
 --- @hash [0xFFEE8FA29AB9A18E](https://docs.fivem.net/natives/?_0xFFEE8FA29AB9A18E)
 --- @param player Player
---- @return void
---- @overload fun(player: Player): void
+--- @return nil
+--- @overload fun(player: Player): nil
 function N_0xffee8fa29ab9a18e(player) end
 
     

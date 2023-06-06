@@ -7,30 +7,31 @@ export class Files {
   static readonly OUTPUT_DIR = 'docs-gen/'
   static readonly EXT = '.def.lua'
 
-  static async writeDoc (name: string, content: string): Promise<void> {
+  static async writeDoc(name: string, content: string): Promise<void> {
     const targetFileName = name + this.EXT
+    content = "--- @meta\n" + content;
     await fs.promises.writeFile(this.OUTPUT_DIR + targetFileName, content, 'utf-8')
     console.log(name + ' saved!')
     this.savedFileNames.add(targetFileName)
     return
   }
 
-  static async readFile (path: string): Promise<string | null> {
+  static async readFile(path: string): Promise<string | null> {
     if (fs.existsSync(path)) {
       return await fs.promises.readFile(path, 'utf8')
     }
     return null
   }
 
-  static async deleteFile (path: string): Promise<void> {
+  static async deleteFile(path: string): Promise<void> {
     return await fs.promises.unlink(path)
   }
 
-  static async getDocFileList (): Promise<string[]> {
+  static async getDocFileList(): Promise<string[]> {
     return await fs.promises.readdir(this.OUTPUT_DIR)
   }
 
-  static async deleteOldDocs (): Promise<void> {
+  static async deleteOldDocs(): Promise<void> {
     for (const existingDocFileName of await this.getDocFileList()) {
       if (!this.savedFileNames.has(existingDocFileName)) {
         if (existingDocFileName.split('.').filter(Boolean).slice(1).join('.') == 'def.lua') {

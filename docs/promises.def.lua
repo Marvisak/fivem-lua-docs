@@ -1,3 +1,6 @@
+--- @meta
+
+
 --[[ Example Usage
 
 ---For example, the promise expects a boolean.
@@ -13,19 +16,22 @@ local result = Citizen.Await(p)
 
 ]]
 
-local function p ()
+local function p()
     --- @class promise<T>
     local self = {}
+    --- @generic T
     --- @param obj self
     --- @param value T
     self.resolve = function(obj, value)
     end
 
+    --- @generic T
     --- @param obj self
     --- @param value T
     self.reject = function(obj, value)
     end
 
+    --- @generic T
     --- @param obj self
     --- @param cb any
     --- @param err any

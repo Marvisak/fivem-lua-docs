@@ -1,10 +1,15 @@
+--- @meta
+
+
+--- @alias HTTPMethods 'GET'|'HEAD'|'POST'|'PUT'|'DELETE'|'CONNECT'|'OPTIONS'|'TRACE'|'PATCH'
+
 --- PerformHttpRequest
 --- @param url string
---- @param cb fun(err:any, text:any, headers:any, reason:any):void
---- @param method string
---- @param data string
---- @param headers table<string, string>
---- @param options table
+--- @param cb fun(err:any, text:any, headers:any, reason:any):nil
+--- @param method? HTTPMethods
+--- @param data? string
+--- @param headers? table<string, string>
+--- @param options? table
 --- @overload fun(url:string, cb:fun(err:any, text:any, headers:any, reason:any), method: string, data:string, headers:table<string, string>)
 function PerformHttpRequest(url, cb, method, data, headers, options) end
 
@@ -17,20 +22,19 @@ HTTPHandlerResponse = function()
     self.write = function(response) end
     --- @param statusCode number
     --- @param headers table<string, string>
-    --- @overload fun(statusCode: number):void
+    --- @overload fun(statusCode: number):nil
     self.writeHead = function(statusCode, headers) end
     return self
 end
 
---- @alias HTTPMethods 'GET'|'HEAD'|'POST'|'PUT'|'DELETE'|'CONNECT'|'OPTIONS'|'TRACE'|'PATCH'
 
 --- @class HTTPHandlerRequest
 --- @field path string
 --- @field method HTTPMethods
 --- @field address string
 --- @field headers table<string,string>
---- @field setDataHandler fun(handler:fun(body: string):void):void
---- @field setCancelHandler fun(handler:fun():void):void
+--- @field setDataHandler fun(handler:fun(body: string):nil):nil
+--- @field setCancelHandler fun(handler:fun():nil):nil
 
---- @param handler fun(req:HTTPHandlerRequest,res:HTTPHandlerResponse):void
-function SetHttpHandler (handler) end
+--- @param handler fun(req:HTTPHandlerRequest,res:HTTPHandlerResponse):nil
+function SetHttpHandler(handler) end

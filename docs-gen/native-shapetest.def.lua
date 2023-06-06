@@ -1,3 +1,4 @@
+--- @meta
 
 --- See [`START_SHAPE_TEST_LOS_PROBE`](https://docs.fivem.net/natives/?_0x7EE9F5D83DD4F90E) for flags.
 ---
@@ -66,8 +67,8 @@ function Cast_3dRayPointToPoint(x1, y1, z1, x2, y2, z2, radius, flags, entity, p
 ---
 --- @hash [0x2B3334BCA57CD799](https://docs.fivem.net/natives/?_0x2B3334BCA57CD799)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 function ReleaseScriptGuidFromEntity(entity) end
 
     
@@ -77,8 +78,8 @@ function ReleaseScriptGuidFromEntity(entity) end
 ---
 --- @hash [0x2B3334BCA57CD799](https://docs.fivem.net/natives/?_0x2B3334BCA57CD799)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 --- @deprecated
 function N_0x2b3334bca57cd799(entity) end
 
@@ -89,8 +90,8 @@ function N_0x2b3334bca57cd799(entity) end
 ---
 --- @hash [0x2B3334BCA57CD799](https://docs.fivem.net/natives/?_0x2B3334BCA57CD799)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 --- @deprecated
 function ShapeTestResultEntity(entity) end
 

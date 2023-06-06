@@ -1,3 +1,4 @@
+--- @meta
 
 --- ```
 --- This loads the GTA:O dlc map parts (high end garages, apartments).
@@ -7,8 +8,8 @@
 ---
 --- @hash [0x0888C3502DBBEEF5](https://docs.fivem.net/natives/?_0x0888C3502DBBEEF5)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function OnEnterMp() end
 
     
@@ -21,8 +22,8 @@ function OnEnterMp() end
 ---
 --- @hash [0x0888C3502DBBEEF5](https://docs.fivem.net/natives/?_0x0888C3502DBBEEF5)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function LoadMpDlcMaps() end
 
@@ -158,8 +159,8 @@ function N_0xc4637a6d03c24cc3() end
 ---
 --- @hash [0xD7C10C4A637992C9](https://docs.fivem.net/natives/?_0xD7C10C4A637992C9)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function OnEnterSp() end
 
     
@@ -173,8 +174,8 @@ function OnEnterSp() end
 ---
 --- @hash [0xD7C10C4A637992C9](https://docs.fivem.net/natives/?_0xD7C10C4A637992C9)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xd7c10c4a637992c9() end
 
@@ -189,8 +190,8 @@ function N_0xd7c10c4a637992c9() end
 ---
 --- @hash [0xD7C10C4A637992C9](https://docs.fivem.net/natives/?_0xD7C10C4A637992C9)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function LoadSpDlcMaps() end
 

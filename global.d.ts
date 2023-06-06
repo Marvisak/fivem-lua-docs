@@ -7,7 +7,7 @@ declare const enum ApiTypes {
 
 declare const enum PrimitiveTypes {
   NUMBER = 'number',
-  VOID = 'void',
+  VOID = 'nil',
   VECTOR2 = 'vector2',
   VECTOR3 = 'vector3',
   VECTOR4 = 'vector4',
@@ -32,7 +32,7 @@ declare const enum DocTypes {
   BLIP = 'Blip',
   HASH = 'Hash',
   SCR_HANDLE = 'ScrHandle',
-  FUNCTION = 'fun',
+  FUNCTION = 'function',
 }
 
 

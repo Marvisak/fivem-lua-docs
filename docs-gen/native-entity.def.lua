@@ -1,3 +1,4 @@
+--- @meta
 
 --- ```
 --- Has the entity1 got a clear line of sight to the other entity2 from the direction entity1 is facing.  
@@ -22,8 +23,8 @@ function HasEntityClearLosToEntityInFront(entity1, entity2) end
 --- @param originalModel Hash
 --- @param newModel Hash
 --- @param p6 boolean
---- @return void
---- @overload fun(x: number, y: number, z: number, radius: number, originalModel: Hash, newModel: Hash, p6: boolean): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, radius: number, originalModel: Hash, newModel: Hash, p6: boolean): nil
 function RemoveModelSwap(x, y, z, radius, originalModel, newModel, p6) end
 
     
@@ -65,8 +66,8 @@ function DoesEntityHaveDrawable(entity) end
 --- @param deadFlag boolean
 --- @param ragdollFlag boolean
 --- @param clearArea boolean
---- @return void
---- @overload fun(entity: Entity, xPos: number, yPos: number, zPos: number, alive: boolean, deadFlag: boolean, ragdollFlag: boolean, clearArea: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, xPos: number, yPos: number, zPos: number, alive: boolean, deadFlag: boolean, ragdollFlag: boolean, clearArea: boolean): nil
 function SetEntityCoords(entity, xPos, yPos, zPos, alive, deadFlag, ragdollFlag, clearArea) end
 
     
@@ -98,8 +99,8 @@ function FindAnimEventPhase(animDictionary, animName, p2) end
 --- @hash [0x0A50A1EEDAD01E65](https://docs.fivem.net/natives/?_0x0A50A1EEDAD01E65)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 function SetEntityRecordsCollisions(entity, toggle) end
 
     
@@ -134,8 +135,8 @@ function IsEntityAMissionEntity(entity) end
 --- @hash [0x0DC7CABAB1E9B67E](https://docs.fivem.net/natives/?_0x0DC7CABAB1E9B67E)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 function SetEntityLoadCollisionFlag(entity, toggle) end
 
     
@@ -144,8 +145,8 @@ function SetEntityLoadCollisionFlag(entity, toggle) end
 --- @hash [0x0E46A3FCBDE2A1B1](https://docs.fivem.net/natives/?_0x0E46A3FCBDE2A1B1)
 --- @param entity Entity
 --- @param speed number (float)
---- @return void
---- @overload fun(entity: Entity, speed: number): void
+--- @return nil
+--- @overload fun(entity: Entity, speed: number): nil
 function SetEntityMaxSpeed(entity, speed) end
 
     
@@ -194,8 +195,8 @@ function IsEntityStatic(entity) end
 --- @param p3 any
 --- @param modelHash Hash
 --- @param p5 boolean
---- @return void
---- @overload fun(x: number, y: number, z: number, p3: any, modelHash: Hash, p5: boolean): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, p3: any, modelHash: Hash, p5: boolean): nil
 function CreateForcedObject(x, y, z, p3, modelHash, p5) end
 
     
@@ -219,8 +220,8 @@ function GetEntityMaxHealth(entity) end
 --- @hash [0x166E7CF68597D8B5](https://docs.fivem.net/natives/?_0x166E7CF68597D8B5)
 --- @param entity Entity
 --- @param value number (int)
---- @return void
---- @overload fun(entity: Entity, value: number): void
+--- @return nil
+--- @overload fun(entity: Entity, value: number): nil
 function SetEntityMaxHealth(entity, value) end
 
     
@@ -229,8 +230,8 @@ function SetEntityMaxHealth(entity, value) end
 --- @hash [0x1718DE8E3F2823CA](https://docs.fivem.net/natives/?_0x1718DE8E3F2823CA)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 function SetEntityDynamic(entity, toggle) end
 
     
@@ -239,8 +240,8 @@ function SetEntityDynamic(entity, toggle) end
 --- @hash [0x1760FFA8AB074D66](https://docs.fivem.net/natives/?_0x1760FFA8AB074D66)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 function SetEntityCanBeDamaged(entity, toggle) end
 
     
@@ -298,8 +299,8 @@ function GetOffsetFromEntityInWorldCoords(entity, offsetX, offsetY, offsetZ) end
 --- @param isDirectionRel boolean
 --- @param isForceRel boolean
 --- @param p8 boolean
---- @return void
---- @overload fun(entity: Entity, forceType: number, x: number, y: number, z: number, p5: boolean, isDirectionRel: boolean, isForceRel: boolean, p8: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, forceType: number, x: number, y: number, z: number, p5: boolean, isDirectionRel: boolean, isForceRel: boolean, p8: boolean): nil
 function ApplyForceToEntityCenterOfMass(entity, forceType, x, y, z, p5, isDirectionRel, isForceRel, p8) end
 
     
@@ -310,8 +311,8 @@ function ApplyForceToEntityCenterOfMass(entity, forceType, x, y, z, p5, isDirect
 --- @hash [0x1A092BB0C3808B96](https://docs.fivem.net/natives/?_0x1A092BB0C3808B96)
 --- @param entity Entity
 --- @param p1 boolean
---- @return void
---- @overload fun(entity: Entity, p1: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, p1: boolean): nil
 function N_0x1a092bb0c3808b96(entity, p1) end
 
     
@@ -321,8 +322,8 @@ function N_0x1a092bb0c3808b96(entity, p1) end
 --- @param entity Entity
 --- @param toggle boolean
 --- @param keepPhysics boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean, keepPhysics: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean, keepPhysics: boolean): nil
 function SetEntityCollision(entity, toggle, keepPhysics) end
 
     
@@ -335,8 +336,8 @@ function SetEntityCollision(entity, toggle, keepPhysics) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(entity: Entity, x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(entity: Entity, x: number, y: number, z: number): nil
 function SetEntityVelocity(entity, x, y, z) end
 
     
@@ -487,8 +488,8 @@ function GetOffsetFromEntityGivenWorldCoords(entity, posX, posY, posZ) end
 --- @param alive boolean
 --- @param deadFlag boolean
 --- @param ragdollFlag boolean
---- @return void
---- @overload fun(entity: Entity, xPos: number, yPos: number, zPos: number, alive: boolean, deadFlag: boolean, ragdollFlag: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, xPos: number, yPos: number, zPos: number, alive: boolean, deadFlag: boolean, ragdollFlag: boolean): nil
 function SetEntityCoordsNoOffset(entity, xPos, yPos, zPos, alive, deadFlag, ragdollFlag) end
 
     
@@ -498,8 +499,8 @@ function SetEntityCoordsNoOffset(entity, xPos, yPos, zPos, alive, deadFlag, ragd
 ---
 --- @hash [0x2595DD4236549CE3](https://docs.fivem.net/natives/?_0x2595DD4236549CE3)
 --- @param ped Ped (Ped*)
---- @return void
---- @overload fun(): Ped
+--- @return nil
+--- @overload fun(): nil, Ped
 function SetPedAsNoLongerNeeded(ped) end
 
     
@@ -533,8 +534,8 @@ function StopEntityAnim(entity, animation, animGroup, p3) end
 --- @param animDictionary string (char*)
 --- @param animName string (char*)
 --- @param speedMultiplier number (float)
---- @return void
---- @overload fun(entity: Entity, animDictionary: string, animName: string, speedMultiplier: number): void
+--- @return nil
+--- @overload fun(entity: Entity, animDictionary: string, animName: string, speedMultiplier: number): nil
 function SetEntityAnimSpeed(entity, animDictionary, animName, speedMultiplier) end
 
     
@@ -543,8 +544,8 @@ function SetEntityAnimSpeed(entity, animDictionary, animName, speedMultiplier) e
 --- @hash [0x295D82A8559F9150](https://docs.fivem.net/natives/?_0x295D82A8559F9150)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 function SetEntityMotionBlur(entity, toggle) end
 
     
@@ -555,8 +556,8 @@ function SetEntityMotionBlur(entity, toggle) end
 --- @hash [0x2C2E3DC128F44309](https://docs.fivem.net/natives/?_0x2C2E3DC128F44309)
 --- @param entity Entity
 --- @param p1 boolean
---- @return void
---- @overload fun(entity: Entity, p1: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, p1: boolean): nil
 function SetEntityDecalsDisabled(entity, p1) end
 
     
@@ -568,8 +569,8 @@ function SetEntityDecalsDisabled(entity, p1) end
 --- @hash [0x2C2E3DC128F44309](https://docs.fivem.net/natives/?_0x2C2E3DC128F44309)
 --- @param entity Entity
 --- @param p1 boolean
---- @return void
---- @overload fun(entity: Entity, p1: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, p1: boolean): nil
 --- @deprecated
 function N_0x2c2e3dc128f44309(entity, p1) end
 
@@ -598,8 +599,8 @@ function GetEntityAnimCurrentTime(entity, animDict, animName) end
 --- @hash [0x352E2B5CF420BF3B](https://docs.fivem.net/natives/?_0x352E2B5CF420BF3B)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x352e2b5cf420bf3b(p0, p1) end
 
     
@@ -608,8 +609,8 @@ function N_0x352e2b5cf420bf3b(p0, p1) end
 --- @hash [0x36F32DE87082343E](https://docs.fivem.net/natives/?_0x36F32DE87082343E)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x36f32de87082343e(p0, p1) end
 
     
@@ -633,8 +634,8 @@ function N_0x36f32de87082343e(p0, p1) end
 --- @hash [0x3882114BDE571AD4](https://docs.fivem.net/natives/?_0x3882114BDE571AD4)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 function SetEntityInvincible(entity, toggle) end
 
     
@@ -645,8 +646,8 @@ function SetEntityInvincible(entity, toggle) end
 --- @hash [0x3910051CCECDB00C](https://docs.fivem.net/natives/?_0x3910051CCECDB00C)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 function SetEntityCleanupByEngine(entity, toggle) end
 
     
@@ -658,8 +659,8 @@ function SetEntityCleanupByEngine(entity, toggle) end
 --- @hash [0x3910051CCECDB00C](https://docs.fivem.net/natives/?_0x3910051CCECDB00C)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 --- @deprecated
 function N_0x3910051ccecdb00c(entity, toggle) end
 
@@ -672,8 +673,8 @@ function N_0x3910051ccecdb00c(entity, toggle) end
 --- @hash [0x3910051CCECDB00C](https://docs.fivem.net/natives/?_0x3910051CCECDB00C)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 --- @deprecated
 function SetEntityRegister(entity, toggle) end
 
@@ -686,8 +687,8 @@ function SetEntityRegister(entity, toggle) end
 --- @hash [0x3910051CCECDB00C](https://docs.fivem.net/natives/?_0x3910051CCECDB00C)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 --- @deprecated
 function SetEntitySomething(entity, toggle) end
 
@@ -729,8 +730,8 @@ function N_0x394bde2a7bba031e(entity1, entity2, traceType) end
 --- @param radius number (float)
 --- @param model Hash
 --- @param p5 boolean
---- @return void
---- @overload fun(x: number, y: number, z: number, radius: number, model: Hash, p5: boolean): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, radius: number, model: Hash, p5: boolean): nil
 function CreateModelHideExcludingScriptObjects(x, y, z, radius, model, p5) end
 
     
@@ -740,8 +741,8 @@ function CreateModelHideExcludingScriptObjects(x, y, z, radius, model, p5) end
 ---
 --- @hash [0x3AE22DEB5BA5A3E6](https://docs.fivem.net/natives/?_0x3AE22DEB5BA5A3E6)
 --- @param object Object (Object*)
---- @return void
---- @overload fun(): Object
+--- @return nil
+--- @overload fun(): nil, Object
 function SetObjectAsNoLongerNeeded(object) end
 
     
@@ -751,8 +752,8 @@ function SetObjectAsNoLongerNeeded(object) end
 ---
 --- @hash [0x40FDEDB72F8293B2](https://docs.fivem.net/natives/?_0x40FDEDB72F8293B2)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 function ForceEntityAiAndAnimationUpdate(entity) end
 
     
@@ -772,8 +773,8 @@ function GetEntityLodDist(entity) end
 --- @hash [0x428CA6DBD1094446](https://docs.fivem.net/natives/?_0x428CA6DBD1094446)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 function FreezeEntityPosition(entity, toggle) end
 
     
@@ -797,8 +798,8 @@ function StopSynchronizedEntityAnim(entity, p1, p2) end
 --- @param animDictionary string (char*)
 --- @param animName string (char*)
 --- @param time number (float)
---- @return void
---- @overload fun(entity: Entity, animDictionary: string, animName: string, time: number): void
+--- @return nil
+--- @overload fun(entity: Entity, animDictionary: string, animName: string, time: number): nil
 function SetEntityAnimCurrentTime(entity, animDictionary, animName, time) end
 
     
@@ -808,8 +809,8 @@ function SetEntityAnimCurrentTime(entity, animDictionary, animName, time) end
 --- @param entity Entity
 --- @param alphaLevel number (int)
 --- @param skin boolean
---- @return void
---- @overload fun(entity: Entity, alphaLevel: number, skin: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, alphaLevel: number, skin: boolean): nil
 function SetEntityAlpha(entity, alphaLevel, skin) end
 
     
@@ -901,8 +902,8 @@ function GetEntityAttachedTo(entity) end
 ---
 --- @hash [0x490861B88F4FD846](https://docs.fivem.net/natives/?_0x490861B88F4FD846)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x490861b88f4fd846(p0) end
 
     
@@ -911,8 +912,8 @@ function N_0x490861b88f4fd846(p0) end
 --- @hash [0x4A4722448F18EEF5](https://docs.fivem.net/natives/?_0x4A4722448F18EEF5)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 function SetEntityHasGravity(entity, toggle) end
 
     
@@ -1025,8 +1026,8 @@ function IsEntityInArea(entity, x1, y1, z1, x2, y2, z2, p7, p8, p9) end
 --- @hash [0x57C5DB656185EAC4](https://docs.fivem.net/natives/?_0x57C5DB656185EAC4)
 --- @param entity Entity
 --- @param state number (int)
---- @return void
---- @overload fun(entity: Entity, state: number): void
+--- @return nil
+--- @overload fun(entity: Entity, state: number): nil
 function SetEntityTrafficlightOverride(entity, state) end
 
     
@@ -1037,8 +1038,8 @@ function SetEntityTrafficlightOverride(entity, state) end
 --- @hash [0x5927F96A78577363](https://docs.fivem.net/natives/?_0x5927F96A78577363)
 --- @param entity Entity
 --- @param value number (int)
---- @return void
---- @overload fun(entity: Entity, value: number): void
+--- @return nil
+--- @overload fun(entity: Entity, value: number): nil
 function SetEntityLodDist(entity, value) end
 
     
@@ -1073,8 +1074,8 @@ function GetEntityHeight(entity, X, Y, Z, atTop, inWorldCoords) end
 --- @hash [0x5C3B791D580E0BC2](https://docs.fivem.net/natives/?_0x5C3B791D580E0BC2)
 --- @param entity Entity
 --- @param p1 number (float)
---- @return void
---- @overload fun(entity: Entity, p1: number): void
+--- @return nil
+--- @overload fun(entity: Entity, p1: number): nil
 function N_0x5c3b791d580e0bc2(entity, p1) end
 
     
@@ -1096,8 +1097,8 @@ function GetLastMaterialHitByEntity(entity) end
 --- @param entityBone2 number (int)
 --- @param p4 boolean
 --- @param p5 boolean
---- @return void
---- @overload fun(entity1: Entity, entity2: Entity, entityBone: number, entityBone2: number, p4: boolean, p5: boolean): void
+--- @return nil
+--- @overload fun(entity1: Entity, entity2: Entity, entityBone: number, entityBone2: number, p4: boolean, p5: boolean): nil
 function AttachEntityBoneToEntityBone(entity1, entity2, entityBone, entityBone2, p4, p5) end
 
     
@@ -1111,8 +1112,8 @@ function AttachEntityBoneToEntityBone(entity1, entity2, entityBone, entityBone2,
 --- @param entityBone2 number (int)
 --- @param p4 boolean
 --- @param p5 boolean
---- @return void
---- @overload fun(entity1: Entity, entity2: Entity, entityBone: number, entityBone2: number, p4: boolean, p5: boolean): void
+--- @return nil
+--- @overload fun(entity1: Entity, entity2: Entity, entityBone: number, entityBone2: number, p4: boolean, p5: boolean): nil
 --- @deprecated
 function N_0x5c48b75732c8456c(entity1, entity2, entityBone, entityBone2, p4, p5) end
 
@@ -1145,8 +1146,8 @@ function HasEntityBeenDamagedByAnyPed(entity) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 function RemoveForcedObject(p0, p1, p2, p3, p4) end
 
     
@@ -1161,8 +1162,8 @@ function RemoveForcedObject(p0, p1, p2, p3, p4) end
 --- @param deadFlag boolean
 --- @param ragdollFlag boolean
 --- @param clearArea boolean
---- @return void
---- @overload fun(entity: Entity, xPos: number, yPos: number, zPos: number, alive: boolean, deadFlag: boolean, ragdollFlag: boolean, clearArea: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, xPos: number, yPos: number, zPos: number, alive: boolean, deadFlag: boolean, ragdollFlag: boolean, clearArea: boolean): nil
 function SetEntityCoordsWithoutPlantsReset(entity, xPos, yPos, zPos, alive, deadFlag, ragdollFlag, clearArea) end
 
     
@@ -1178,8 +1179,8 @@ function SetEntityCoordsWithoutPlantsReset(entity, xPos, yPos, zPos, alive, dead
 --- @param deadFlag boolean
 --- @param ragdollFlag boolean
 --- @param clearArea boolean
---- @return void
---- @overload fun(entity: Entity, xPos: number, yPos: number, zPos: number, alive: boolean, deadFlag: boolean, ragdollFlag: boolean, clearArea: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, xPos: number, yPos: number, zPos: number, alive: boolean, deadFlag: boolean, ragdollFlag: boolean, clearArea: boolean): nil
 --- @deprecated
 function SetEntityCoords_2(entity, xPos, yPos, zPos, alive, deadFlag, ragdollFlag, clearArea) end
 
@@ -1190,8 +1191,8 @@ function SetEntityCoords_2(entity, xPos, yPos, zPos, alive, deadFlag, ragdollFla
 ---
 --- @hash [0x629BFA74418D6239](https://docs.fivem.net/natives/?_0x629BFA74418D6239)
 --- @param vehicle Vehicle (Vehicle*)
---- @return void
---- @overload fun(): Vehicle
+--- @return nil
+--- @overload fun(): nil, Vehicle
 function SetVehicleAsNoLongerNeeded(vehicle) end
 
     
@@ -1202,8 +1203,8 @@ function SetVehicleAsNoLongerNeeded(vehicle) end
 --- @hash [0x68B562E124CC0AEF](https://docs.fivem.net/natives/?_0x68B562E124CC0AEF)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x68b562e124cc0aef(p0, p1) end
 
     
@@ -1214,8 +1215,8 @@ function N_0x68b562e124cc0aef(p0, p1) end
 --- @hash [0x694E00132F2823ED](https://docs.fivem.net/natives/?_0x694E00132F2823ED)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 function N_0x694e00132f2823ed(entity, toggle) end
 
     
@@ -1241,8 +1242,8 @@ function IsEntityAVehicle(entity) end
 --- @hash [0x6B76DC1F3AE6E6A3](https://docs.fivem.net/natives/?_0x6B76DC1F3AE6E6A3)
 --- @param entity Entity
 --- @param health number (int)
---- @return void
---- @overload fun(entity: Entity, health: number): void
+--- @return nil
+--- @overload fun(entity: Entity, health: number): nil
 function SetEntityHealth(entity, health) end
 
     
@@ -1264,8 +1265,8 @@ function SetEntityHealth(entity, health) end
 --- @param isPed boolean
 --- @param rotationOrder number (int)
 --- @param fixedRot boolean
---- @return void
---- @overload fun(entity1: Entity, entity2: Entity, boneIndex: number, xPos: number, yPos: number, zPos: number, xRot: number, yRot: number, zRot: number, p9: boolean, useSoftPinning: boolean, collision: boolean, isPed: boolean, rotationOrder: number, fixedRot: boolean): void
+--- @return nil
+--- @overload fun(entity1: Entity, entity2: Entity, boneIndex: number, xPos: number, yPos: number, zPos: number, xRot: number, yRot: number, zRot: number, p9: boolean, useSoftPinning: boolean, collision: boolean, isPed: boolean, rotationOrder: number, fixedRot: boolean): nil
 function AttachEntityToEntity(entity1, entity2, boneIndex, xPos, yPos, zPos, xRot, yRot, zRot, p9, useSoftPinning, collision, isPed, rotationOrder, fixedRot) end
 
     
@@ -1275,8 +1276,8 @@ function AttachEntityToEntity(entity1, entity2, boneIndex, xPos, yPos, zPos, xRo
 ---
 --- @hash [0x6CE177D014502E8A](https://docs.fivem.net/natives/?_0x6CE177D014502E8A)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 function EnableEntityUnk(entity) end
 
     
@@ -1287,8 +1288,8 @@ function EnableEntityUnk(entity) end
 ---
 --- @hash [0x6CE177D014502E8A](https://docs.fivem.net/natives/?_0x6CE177D014502E8A)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 --- @deprecated
 function N_0x6ce177d014502e8a(entity) end
 
@@ -1299,8 +1300,8 @@ function N_0x6ce177d014502e8a(entity) end
 --- @param entity Entity
 --- @param p1 boolean
 --- @param relationshipHash Hash
---- @return void
---- @overload fun(entity: Entity, p1: boolean, relationshipHash: Hash): void
+--- @return nil
+--- @overload fun(entity: Entity, p1: boolean, relationshipHash: Hash): nil
 function SetEntityOnlyDamagedByRelationshipGroup(entity, p1, relationshipHash) end
 
     
@@ -1331,8 +1332,8 @@ function DoesEntityExist(entity) end
 --- @hash [0x730F5F8D3F0F2050](https://docs.fivem.net/natives/?_0x730F5F8D3F0F2050)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 function SetEntityRenderScorched(entity, toggle) end
 
     
@@ -1385,8 +1386,8 @@ function DoesEntityHaveSkeletonData(entity) end
 --- @param y number (float)
 --- @param z number (float)
 --- @param w number (float)
---- @return void
---- @overload fun(entity: Entity, x: number, y: number, z: number, w: number): void
+--- @return nil
+--- @overload fun(entity: Entity, x: number, y: number, z: number, w: number): nil
 function SetEntityQuaternion(entity, x, y, z, w) end
 
     
@@ -1397,8 +1398,8 @@ function SetEntityQuaternion(entity, x, y, z, w) end
 ---
 --- @hash [0x78E8E3A640178255](https://docs.fivem.net/natives/?_0x78E8E3A640178255)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 function N_0x78e8e3a640178255(entity) end
 
     
@@ -1407,8 +1408,8 @@ function N_0x78e8e3a640178255(entity) end
 --- @hash [0x79F020FF9EDC0748](https://docs.fivem.net/natives/?_0x79F020FF9EDC0748)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 function SetEntityOnlyDamagedByPlayer(entity, toggle) end
 
     
@@ -1418,8 +1419,8 @@ function SetEntityOnlyDamagedByPlayer(entity, toggle) end
 ---
 --- @hash [0x7B3703D2D32DFA18](https://docs.fivem.net/natives/?_0x7B3703D2D32DFA18)
 --- @param entity Entity
---- @return number, number, number, number
---- @overload fun(entity: Entity): number, number, number, number
+--- @return nil, number, number, number, number
+--- @overload fun(entity: Entity): nil, number, number, number, number
 function GetEntityQuaternion(entity) end
 
     
@@ -1428,8 +1429,8 @@ function GetEntityQuaternion(entity) end
 --- @hash [0x7CFBA6A80BDF3874](https://docs.fivem.net/natives/?_0x7CFBA6A80BDF3874)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 function SetEntityLights(entity, toggle) end
 
     
@@ -1476,8 +1477,8 @@ function GetEntityRoll(entity) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(entity: Entity, x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(entity: Entity, x: number, y: number, z: number): nil
 function SetEntityAngularVelocity(entity, x, y, z) end
 
     
@@ -1491,8 +1492,8 @@ function SetEntityAngularVelocity(entity, x, y, z) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(entity: Entity, x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(entity: Entity, x: number, y: number, z: number): nil
 --- @deprecated
 function N_0x8339643499d1222e(entity, x, y, z) end
 
@@ -1532,8 +1533,8 @@ function N_0x846bf6291198a71e(entity) end
 --- @param yaw number (float)
 --- @param rotationOrder number (int)
 --- @param p5 boolean
---- @return void
---- @overload fun(entity: Entity, pitch: number, roll: number, yaw: number, rotationOrder: number, p5: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, pitch: number, roll: number, yaw: number, rotationOrder: number, p5: boolean): nil
 function SetEntityRotation(entity, pitch, roll, yaw, rotationOrder, p5) end
 
     
@@ -1570,8 +1571,8 @@ function IsEntityInAir(entity) end
 --- @param radius number (float)
 --- @param model Hash
 --- @param p5 boolean
---- @return void
---- @overload fun(x: number, y: number, z: number, radius: number, model: Hash, p5: boolean): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, radius: number, model: Hash, p5: boolean): nil
 function CreateModelHide(x, y, z, radius, model, p5) end
 
     
@@ -1628,8 +1629,8 @@ function IsEntityAnObject(entity) end
 --- @hash [0x8E2530AA8ADA980E](https://docs.fivem.net/natives/?_0x8E2530AA8ADA980E)
 --- @param entity Entity
 --- @param heading number (float)
---- @return void
---- @overload fun(entity: Entity, heading: number): void
+--- @return nil
+--- @overload fun(entity: Entity, heading: number): nil
 function SetEntityHeading(entity, heading) end
 
     
@@ -1646,8 +1647,8 @@ function SetEntityHeading(entity, heading) end
 --- @param originalModel Hash
 --- @param newModel Hash
 --- @param p6 boolean
---- @return void
---- @overload fun(x: number, y: number, z: number, radius: number, originalModel: Hash, newModel: Hash, p6: boolean): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, radius: number, originalModel: Hash, newModel: Hash, p6: boolean): nil
 function CreateModelSwap(x, y, z, radius, originalModel, newModel, p6) end
 
     
@@ -1675,8 +1676,8 @@ function GetEntityUprightValue(entity) end
 --- @param entity Entity
 --- @param dynamic boolean
 --- @param collision boolean
---- @return void
---- @overload fun(entity: Entity, dynamic: boolean, collision: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, dynamic: boolean, collision: boolean): nil
 function DetachEntity(entity, dynamic, collision) end
 
     
@@ -1696,8 +1697,8 @@ function GetEntitySpeedVector(entity, relative) end
 ---
 --- @hash [0x9B1E824FFBB7027A](https://docs.fivem.net/natives/?_0x9B1E824FFBB7027A)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 function ResetEntityAlpha(entity) end
 
     
@@ -1707,8 +1708,8 @@ function ResetEntityAlpha(entity) end
 --- @param entity Entity
 --- @param toggle boolean
 --- @param keepPhysics boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean, keepPhysics: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean, keepPhysics: boolean): nil
 function SetEntityCompletelyDisableCollision(entity, toggle, keepPhysics) end
 
     
@@ -1719,8 +1720,8 @@ function SetEntityCompletelyDisableCollision(entity, toggle, keepPhysics) end
 --- @param entity Entity
 --- @param toggle boolean
 --- @param keepPhysics boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean, keepPhysics: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean, keepPhysics: boolean): nil
 --- @deprecated
 function N_0x9ebc85ed0fffe51c(entity, toggle, keepPhysics) end
 
@@ -1732,8 +1733,8 @@ function N_0x9ebc85ed0fffe51c(entity, toggle, keepPhysics) end
 --- @param entity Entity
 --- @param toggle boolean
 --- @param keepPhysics boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean, keepPhysics: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean, keepPhysics: boolean): nil
 --- @deprecated
 function SetEntityCollision_2(entity, toggle, keepPhysics) end
 
@@ -1761,8 +1762,8 @@ function GetEntityModel(entity) end
 --- @param entity1 Entity
 --- @param entity2 Entity
 --- @param thisFrameOnly boolean
---- @return void
---- @overload fun(entity1: Entity, entity2: Entity, thisFrameOnly: boolean): void
+--- @return nil
+--- @overload fun(entity1: Entity, entity2: Entity, thisFrameOnly: boolean): nil
 function SetEntityNoCollisionEntity(entity1, entity2, thisFrameOnly) end
 
     
@@ -1782,8 +1783,8 @@ function GetEntityScript(entity, script) end
 ---
 --- @hash [0xA72CD9CA74A5ECBA](https://docs.fivem.net/natives/?_0xA72CD9CA74A5ECBA)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 function ClearEntityLastDamageEntity(entity) end
 
     
@@ -1792,8 +1793,8 @@ function ClearEntityLastDamageEntity(entity) end
 --- @hash [0xA80AE305E0A3044F](https://docs.fivem.net/natives/?_0xA80AE305E0A3044F)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 function SetCanClimbOnEntity(entity, toggle) end
 
     
@@ -1803,8 +1804,8 @@ function SetCanClimbOnEntity(entity, toggle) end
 --- @hash [0xA80AE305E0A3044F](https://docs.fivem.net/natives/?_0xA80AE305E0A3044F)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 --- @deprecated
 function N_0xa80ae305e0a3044f(entity, toggle) end
 
@@ -1814,8 +1815,8 @@ function N_0xa80ae305e0a3044f(entity, toggle) end
 --- @hash [0xACAD101E1FB66689](https://docs.fivem.net/natives/?_0xACAD101E1FB66689)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 function SetEntityAlwaysPrerender(entity, toggle) end
 
     
@@ -1827,8 +1828,8 @@ function SetEntityAlwaysPrerender(entity, toggle) end
 --- @param entity Entity
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(entity: Entity, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, p1: boolean, p2: boolean): nil
 function SetEntityAsMissionEntity(entity, p1, p2) end
 
     
@@ -1836,8 +1837,8 @@ function SetEntityAsMissionEntity(entity, p1, p2) end
 ---
 --- @hash [0xAE3CBE5BF394C9C9](https://docs.fivem.net/natives/?_0xAE3CBE5BF394C9C9)
 --- @param entity Entity (Entity*)
---- @return void
---- @overload fun(): Entity
+--- @return nil
+--- @overload fun(): nil, Entity
 function DeleteEntity(entity) end
 
     
@@ -1882,8 +1883,8 @@ function IsEntityAttachedToAnyPed(entity) end
 --- @hash [0xB17BC6453F6CF5AC](https://docs.fivem.net/natives/?_0xB17BC6453F6CF5AC)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0xb17bc6453f6cf5ac(p0, p1) end
 
     
@@ -1937,8 +1938,8 @@ function IsEntityInZone(entity, zone) end
 ---
 --- @hash [0xB736A491E64A32CF](https://docs.fivem.net/natives/?_0xB736A491E64A32CF)
 --- @param entity Entity (Entity*)
---- @return void
---- @overload fun(): Entity
+--- @return nil
+--- @overload fun(): nil, Entity
 function SetEntityAsNoLongerNeeded(entity) end
 
     
@@ -1992,8 +1993,8 @@ function GetEntityProofs(entity) end
 --- @hash [0xC34BC448DA29F5E9](https://docs.fivem.net/natives/?_0xC34BC448DA29F5E9)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 function N_0xc34bc448da29f5e9(entity, toggle) end
 
     
@@ -2026,8 +2027,8 @@ function N_0xc34bc448da29f5e9(entity, toggle) end
 --- @param collision boolean
 --- @param teleport boolean
 --- @param p18 number (int)
---- @return void
---- @overload fun(entity1: Entity, entity2: Entity, boneIndex1: number, boneIndex2: number, xPos1: number, yPos1: number, zPos1: number, xPos2: number, yPos2: number, zPos2: number, xRot: number, yRot: number, zRot: number, breakForce: number, fixedRot: boolean, p15: boolean, collision: boolean, teleport: boolean, p18: number): void
+--- @return nil
+--- @overload fun(entity1: Entity, entity2: Entity, boneIndex1: number, boneIndex2: number, xPos1: number, yPos1: number, zPos1: number, xPos2: number, yPos2: number, zPos2: number, xRot: number, yRot: number, zRot: number, breakForce: number, fixedRot: boolean, p15: boolean, collision: boolean, teleport: boolean, p18: number): nil
 function AttachEntityToEntityPhysically(entity1, entity2, boneIndex1, boneIndex2, xPos1, yPos1, zPos1, xPos2, yPos2, zPos2, xRot, yRot, zRot, breakForce, fixedRot, p15, collision, teleport, p18) end
 
     
@@ -2096,8 +2097,8 @@ function AttachEntityToEntityPhysically(entity1, entity2, boneIndex1, boneIndex2
 --- @param isForceRel boolean
 --- @param p12 boolean
 --- @param p13 boolean
---- @return void
---- @overload fun(entity: Entity, forceType: number, x: number, y: number, z: number, offX: number, offY: number, offZ: number, boneIndex: number, isDirectionRel: boolean, ignoreUpVec: boolean, isForceRel: boolean, p12: boolean, p13: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, forceType: number, x: number, y: number, z: number, offX: number, offY: number, offZ: number, boneIndex: number, isDirectionRel: boolean, ignoreUpVec: boolean, isForceRel: boolean, p12: boolean, p13: boolean): nil
 function ApplyForceToEntity(entity, forceType, x, y, z, offX, offY, offZ, boneIndex, isDirectionRel, ignoreUpVec, isForceRel, p12, p13) end
 
     
@@ -2212,8 +2213,8 @@ function GetWorldRotationOfEntityBone(entity, boneIndex) end
 --- @hash [0xCEA7C8E1B48FF68C](https://docs.fivem.net/natives/?_0xCEA7C8E1B48FF68C)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0xcea7c8e1b48ff68c(p0, p1) end
 
     
@@ -2251,8 +2252,8 @@ function IsEntityWaitingForWorldCollision(entity) end
 --- @hash [0xD3997889736FD899](https://docs.fivem.net/natives/?_0xD3997889736FD899)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 function SetEntityCanBeTargetedWithoutLos(entity, toggle) end
 
     
@@ -2290,8 +2291,8 @@ function IsEntityVisibleToScript(entity) end
 --- @hash [0xD7B80E7C3BEFC396](https://docs.fivem.net/natives/?_0xD7B80E7C3BEFC396)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0xd7b80e7c3befc396(p0, p1) end
 
     
@@ -2346,8 +2347,8 @@ function N_0xd95cc5d2ab15a09f(entity) end
 --- @param radius number (float)
 --- @param model Hash
 --- @param p5 boolean
---- @return void
---- @overload fun(x: number, y: number, z: number, radius: number, model: Hash, p5: boolean): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, radius: number, model: Hash, p5: boolean): nil
 function RemoveModelHide(x, y, z, radius, model, p5) end
 
     
@@ -2371,8 +2372,8 @@ function DoesEntityHavePhysics(entity) end
 --- @hash [0xDC6F8601FAF2E893](https://docs.fivem.net/natives/?_0xDC6F8601FAF2E893)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 function N_0xdc6f8601faf2e893(entity, toggle) end
 
     
@@ -2400,8 +2401,8 @@ function HasEntityBeenDamagedByAnyVehicle(entity) end
 --- @hash [0xE12ABE5E3A389A6C](https://docs.fivem.net/natives/?_0xE12ABE5E3A389A6C)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 function SetCanAutoVaultOnEntity(entity, toggle) end
 
     
@@ -2411,8 +2412,8 @@ function SetCanAutoVaultOnEntity(entity, toggle) end
 --- @hash [0xE12ABE5E3A389A6C](https://docs.fivem.net/natives/?_0xE12ABE5E3A389A6C)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 --- @deprecated
 function N_0xe12abe5e3a389a6c(entity, toggle) end
 
@@ -2423,8 +2424,8 @@ function N_0xe12abe5e3a389a6c(entity, toggle) end
 --- @param entity Entity
 --- @param bCanBeDamaged boolean
 --- @param relGroup number (int)
---- @return void
---- @overload fun(entity: Entity, bCanBeDamaged: boolean, relGroup: number): void
+--- @return nil
+--- @overload fun(entity: Entity, bCanBeDamaged: boolean, relGroup: number): nil
 function SetEntityCanBeDamagedByRelationshipGroup(entity, bCanBeDamaged, relGroup) end
 
     
@@ -2468,8 +2469,8 @@ function IsEntityOnScreen(entity) end
 --- @hash [0xE66377CDDADA4810](https://docs.fivem.net/natives/?_0xE66377CDDADA4810)
 --- @param entity Entity
 --- @param p1 boolean
---- @return void
---- @overload fun(entity: Entity, p1: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, p1: boolean): nil
 function N_0xe66377cddada4810(entity, p1) end
 
     
@@ -2511,8 +2512,8 @@ function HasCollisionLoadedAroundEntity(entity) end
 --- @param entity Entity
 --- @param p1 boolean
 --- @param p2 number (float)
---- @return void
---- @overload fun(entity: Entity, p1: boolean, p2: number): void
+--- @return nil
+--- @overload fun(entity: Entity, p1: boolean, p2: number): nil
 function SetEntityIsTargetPriority(entity, p1, p2) end
 
     
@@ -2522,8 +2523,8 @@ function SetEntityIsTargetPriority(entity, p1, p2) end
 --- @param entity Entity
 --- @param toggle boolean
 --- @param unk boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean, unk: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean, unk: boolean): nil
 function SetEntityVisible(entity, toggle, unk) end
 
     
@@ -2543,8 +2544,8 @@ function HasAnimEventFired(entity, actionHash) end
 ---
 --- @hash [0xECB2FC7235A7D137](https://docs.fivem.net/natives/?_0xECB2FC7235A7D137)
 --- @param entity Entity
---- @return Vector3, Vector3, Vector3, Vector3
---- @overload fun(entity: Entity): Vector3, Vector3, Vector3, Vector3
+--- @return nil, Vector3, Vector3, Vector3, Vector3
+--- @overload fun(entity: Entity): nil, Vector3, Vector3, Vector3, Vector3
 function GetEntityMatrix(entity) end
 
     
@@ -2597,8 +2598,8 @@ function IsEntityAttachedToEntity(from, to) end
 ---
 --- @hash [0xF4080490ADC51C6F](https://docs.fivem.net/natives/?_0xF4080490ADC51C6F)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 function ProcessEntityAttachments(entity) end
 
     
@@ -2627,8 +2628,8 @@ function GetEntityPopulationType(entity) end
 --- @param steamProof boolean
 --- @param p7 boolean
 --- @param drownProof boolean
---- @return void
---- @overload fun(entity: Entity, bulletProof: boolean, fireProof: boolean, explosionProof: boolean, collisionProof: boolean, meleeProof: boolean, steamProof: boolean, p7: boolean, drownProof: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, bulletProof: boolean, fireProof: boolean, explosionProof: boolean, collisionProof: boolean, meleeProof: boolean, steamProof: boolean, p7: boolean, drownProof: boolean): nil
 function SetEntityProofs(entity, bulletProof, fireProof, explosionProof, collisionProof, meleeProof, steamProof, p7, drownProof) end
 
     
@@ -2710,8 +2711,8 @@ function HasEntityClearLosToEntity(entity1, entity2, flags) end
 --- @param entityBone2 number (int)
 --- @param p4 boolean
 --- @param p5 boolean
---- @return void
---- @overload fun(entity1: Entity, entity2: Entity, entityBone: number, entityBone2: number, p4: boolean, p5: boolean): void
+--- @return nil
+--- @overload fun(entity1: Entity, entity2: Entity, entityBone: number, entityBone2: number, p4: boolean, p5: boolean): nil
 function AttachEntityBoneToEntityBonePhysically(entity1, entity2, entityBone, entityBone2, p4, p5) end
 
     
@@ -2725,8 +2726,8 @@ function AttachEntityBoneToEntityBonePhysically(entity1, entity2, entityBone, en
 --- @param entityBone2 number (int)
 --- @param p4 boolean
 --- @param p5 boolean
---- @return void
---- @overload fun(entity1: Entity, entity2: Entity, entityBone: number, entityBone2: number, p4: boolean, p5: boolean): void
+--- @return nil
+--- @overload fun(entity1: Entity, entity2: Entity, entityBone: number, entityBone2: number, p4: boolean, p5: boolean): nil
 --- @deprecated
 function N_0xfd1695c5d3b05439(entity1, entity2, entityBone, entityBone2, p4, p5) end
 

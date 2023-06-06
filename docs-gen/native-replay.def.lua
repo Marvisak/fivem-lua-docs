@@ -1,3 +1,4 @@
+--- @meta
 
 --- ```
 --- Sets (almost, not sure) all Rockstar Editor values (bIsRecording etc) to 0.  
@@ -5,8 +6,8 @@
 ---
 --- @hash [0x3353D13F09307691](https://docs.fivem.net/natives/?_0x3353D13F09307691)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ResetEditorValues() end
 
     
@@ -17,8 +18,8 @@ function ResetEditorValues() end
 ---
 --- @hash [0x3353D13F09307691](https://docs.fivem.net/natives/?_0x3353D13F09307691)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x3353d13f09307691() end
 
@@ -31,8 +32,8 @@ function N_0x3353d13f09307691() end
 ---
 --- @hash [0x49DA8145672B2725](https://docs.fivem.net/natives/?_0x49DA8145672B2725)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ActivateRockstarEditor() end
 
     
@@ -45,8 +46,8 @@ function ActivateRockstarEditor() end
 ---
 --- @hash [0x49DA8145672B2725](https://docs.fivem.net/natives/?_0x49DA8145672B2725)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x49da8145672b2725() end
 
@@ -57,8 +58,8 @@ function N_0x49da8145672b2725() end
 ---
 --- @hash [0x5AD3932DAEB1E5D3](https://docs.fivem.net/natives/?_0x5AD3932DAEB1E5D3)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x5ad3932daeb1e5d3() end
 
     
@@ -84,8 +85,8 @@ function N_0x5ad3932daeb1e5d3() end
 --- @hash [0x7E2BD3EF6C205F09](https://docs.fivem.net/natives/?_0x7E2BD3EF6C205F09)
 --- @param p0 string (char*)
 --- @param p1 boolean
---- @return void
---- @overload fun(p0: string, p1: boolean): void
+--- @return nil
+--- @overload fun(p0: string, p1: boolean): nil
 function N_0x7e2bd3ef6c205f09(p0, p1) end
 
     
@@ -104,8 +105,8 @@ function IsInteriorRenderingDisabled() end
 ---
 --- @hash [0xE058175F8EAFE79A](https://docs.fivem.net/natives/?_0xE058175F8EAFE79A)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0xe058175f8eafe79a(p0) end
 
     

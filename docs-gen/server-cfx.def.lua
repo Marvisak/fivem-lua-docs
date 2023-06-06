@@ -1,10 +1,11 @@
+--- @meta
 
 --- FlagServerAsPrivate
 ---
 --- @hash [0x13B6855D](https://docs.fivem.net/natives/?_0x13B6855D)
 --- @param private_ boolean
---- @return void
---- @overload fun(private_: boolean): void
+--- @return nil
+--- @overload fun(private_: boolean): nil
 function FlagServerAsPrivate(private_) end
 
     
@@ -41,8 +42,8 @@ function MumbleIsPlayerMuted(playerSrc) end
 --- @hash [0x1E35DBBA](https://docs.fivem.net/natives/?_0x1E35DBBA)
 --- @param playerSrc string (char*)
 --- @param reason string (char*)
---- @return void
---- @overload fun(playerSrc: string, reason: string): void
+--- @return nil
+--- @overload fun(playerSrc: string, reason: string): nil
 function TempBanPlayer(playerSrc, reason) end
 
     
@@ -77,8 +78,8 @@ function GetPasswordHash(password) end
 ---
 --- @hash [0x262663C5](https://docs.fivem.net/natives/?_0x262663C5)
 --- @param id number (int)
---- @return void
---- @overload fun(id: number): void
+--- @return nil
+--- @overload fun(id: number): nil
 function MumbleCreateChannel(id) end
 
     
@@ -87,17 +88,17 @@ function MumbleCreateChannel(id) end
 --- @hash [0x26AEB707](https://docs.fivem.net/natives/?_0x26AEB707)
 --- @param key string (char*)
 --- @param value number (int)
---- @return void
---- @overload fun(key: string, value: number): void
+--- @return nil
+--- @overload fun(key: string, value: number): nil
 function SetResourceKvpIntNoSync(key, value) end
 
     
 --- Registers a listener for console output messages.
 ---
 --- @hash [0x281B5448](https://docs.fivem.net/natives/?_0x281B5448)
---- @param listener fun
---- @return void
---- @overload fun(listener: fun): void
+--- @param listener function
+--- @return nil
+--- @overload fun(listener: function): nil
 function RegisterConsoleListener(listener) end
 
     
@@ -117,9 +118,9 @@ function RegisterConsoleListener(listener) end
 ---
 --- @hash [0x285B43CA](https://docs.fivem.net/natives/?_0x285B43CA)
 --- @param factoryId string (char*)
---- @param factoryFn fun
---- @return void
---- @overload fun(factoryId: string, factoryFn: fun): void
+--- @param factoryFn function
+--- @return nil
+--- @overload fun(factoryId: string, factoryFn: function): nil
 function RegisterResourceBuildTaskFactory(factoryId, factoryFn) end
 
     
@@ -149,8 +150,8 @@ function VerifyPasswordHash(password, hash) end
 --- @param eventTarget string (char*)
 --- @param eventPayload string (char*)
 --- @param payloadLength number (int)
---- @return void
---- @overload fun(eventName: string, eventTarget: string, eventPayload: string, payloadLength: number): void
+--- @return nil
+--- @overload fun(eventName: string, eventTarget: string, eventPayload: string, payloadLength: number): nil
 function TriggerClientEventInternal(eventName, eventTarget, eventPayload, payloadLength) end
 
     
@@ -173,8 +174,8 @@ function GetAllVehicles() end
 --- @hash [0x341B16D2](https://docs.fivem.net/natives/?_0x341B16D2)
 --- @param varName string (char*)
 --- @param value string (char*)
---- @return void
---- @overload fun(varName: string, value: string): void
+--- @return nil
+--- @overload fun(varName: string, value: string): nil
 function SetConvar(varName, value) end
 
     
@@ -183,8 +184,8 @@ function SetConvar(varName, value) end
 --- @hash [0x3517BFBE](https://docs.fivem.net/natives/?_0x3517BFBE)
 --- @param key string (char*)
 --- @param value number (float)
---- @return void
---- @overload fun(key: string, value: number): void
+--- @return nil
+--- @overload fun(key: string, value: number): nil
 function SetResourceKvpFloatNoSync(key, value) end
 
     
@@ -192,8 +193,8 @@ function SetResourceKvpFloatNoSync(key, value) end
 ---
 --- @hash [0x4152C90](https://docs.fivem.net/natives/?_0x4152C90)
 --- @param key string (char*)
---- @return void
---- @overload fun(key: string): void
+--- @return nil
+--- @overload fun(key: string): nil
 function DeleteResourceKvpNoSync(key) end
 
     
@@ -324,8 +325,8 @@ function GetAirDragMultiplierForPlayersVehicle(playerSrc) end
 --- @hash [0x635E5289](https://docs.fivem.net/natives/?_0x635E5289)
 --- @param entity Entity
 --- @param bucket number (int)
---- @return void
---- @overload fun(entity: Entity, bucket: number): void
+--- @return nil
+--- @overload fun(entity: Entity, bucket: number): nil
 function SetEntityRoutingBucket(entity, bucket) end
 
     
@@ -334,9 +335,9 @@ function SetEntityRoutingBucket(entity, bucket) end
 ---
 --- @hash [0x636F097F](https://docs.fivem.net/natives/?_0x636F097F)
 --- @param rootPath string (char*)
---- @param callback fun
---- @return void
---- @overload fun(rootPath: string, callback: fun): void
+--- @param callback function
+--- @return nil
+--- @overload fun(rootPath: string, callback: function): nil
 function ScanResourceRoot(rootPath, callback) end
 
     
@@ -356,8 +357,8 @@ function GetNumPlayerIndices() end
 --- @hash [0x6504EB38](https://docs.fivem.net/natives/?_0x6504EB38)
 --- @param playerSrc string (char*)
 --- @param bucket number (int)
---- @return void
---- @overload fun(playerSrc: string, bucket: number): void
+--- @return nil
+--- @overload fun(playerSrc: string, bucket: number): nil
 function SetPlayerRoutingBucket(playerSrc, bucket) end
 
     
@@ -419,8 +420,8 @@ function GetVehicleDoorStatus(vehicle) end
 --- @param eventPayload string (char*)
 --- @param payloadLength number (int)
 --- @param bps number (int)
---- @return void
---- @overload fun(eventName: string, eventTarget: string, eventPayload: string, payloadLength: number, bps: number): void
+--- @return nil
+--- @overload fun(eventName: string, eventTarget: string, eventPayload: string, payloadLength: number, bps: number): nil
 function TriggerLatentClientEventInternal(eventName, eventTarget, eventPayload, payloadLength, bps) end
 
     
@@ -438,8 +439,8 @@ function GetPlayerIdentifier(playerSrc, identifier) end
 ---
 --- @hash [0x7995539E](https://docs.fivem.net/natives/?_0x7995539E)
 --- @param playerSrc string (char*)
---- @return void
---- @overload fun(playerSrc: string): void
+--- @return nil
+--- @overload fun(playerSrc: string): nil
 function LoadPlayerCommerceDataExt(playerSrc) end
 
     
@@ -515,8 +516,8 @@ function IsPlayerEvadingWantedLevel(playerSrc) end
 --- @hash [0x8A2FBAD4](https://docs.fivem.net/natives/?_0x8A2FBAD4)
 --- @param playerSrc string (char*)
 --- @param radius number (float)
---- @return void
---- @overload fun(playerSrc: string, radius: number): void
+--- @return nil
+--- @overload fun(playerSrc: string, radius: number): nil
 function SetPlayerCullingRadius(playerSrc, radius) end
 
     
@@ -535,8 +536,8 @@ function PerformHttpRequestInternal(requestData, requestDataLength) end
 ---
 --- @hash [0x90892DED](https://docs.fivem.net/natives/?_0x90892DED)
 --- @param jsonString string (char*)
---- @return void
---- @overload fun(jsonString: string): void
+--- @return nil
+--- @overload fun(jsonString: string): nil
 function PrintStructuredTrace(jsonString) end
 
     
@@ -545,8 +546,8 @@ function PrintStructuredTrace(jsonString) end
 --- @hash [0x9338D547](https://docs.fivem.net/natives/?_0x9338D547)
 --- @param varName string (char*)
 --- @param value string (char*)
---- @return void
---- @overload fun(varName: string, value: string): void
+--- @return nil
+--- @overload fun(varName: string, value: string): nil
 function SetConvarServerInfo(varName, value) end
 
     
@@ -565,8 +566,8 @@ function GetTrainCarriageEngine(train) end
 --- @hash [0x96F93CCE](https://docs.fivem.net/natives/?_0x96F93CCE)
 --- @param playerSrc string (char*)
 --- @param skuId number (int)
---- @return void
---- @overload fun(playerSrc: string, skuId: number): void
+--- @return nil
+--- @overload fun(playerSrc: string, skuId: number): nil
 function RequestPlayerCommerceSession(playerSrc, skuId) end
 
     
@@ -609,8 +610,8 @@ function SaveResourceFile(resourceName, fileName, data, dataLength) end
 --- @hash [0xA0DBD08D](https://docs.fivem.net/natives/?_0xA0DBD08D)
 --- @param vehicle Vehicle
 --- @param color number (int*)
---- @return void
---- @overload fun(vehicle: Vehicle): number
+--- @return nil
+--- @overload fun(vehicle: Vehicle): nil, number
 function GetVehicleDashboardColour(vehicle, color) end
 
     
@@ -627,8 +628,8 @@ function GetVehicleDashboardColour(vehicle, color) end
 --- @hash [0xA0F2201F](https://docs.fivem.net/natives/?_0xA0F2201F)
 --- @param bucketId number (int)
 --- @param mode string (char*)
---- @return void
---- @overload fun(bucketId: number, mode: string): void
+--- @return nil
+--- @overload fun(bucketId: number, mode: string): nil
 function SetRoutingBucketEntityLockdownMode(bucketId, mode) end
 
     
@@ -670,8 +671,8 @@ function GetPlayerIdentifierByType(playerSrc, identifierType) end
 ---
 --- @hash [0xA8F63EAB](https://docs.fivem.net/natives/?_0xA8F63EAB)
 --- @param playerSrc string (char*)
---- @return void
---- @overload fun(playerSrc: string): void
+--- @return nil
+--- @overload fun(playerSrc: string): nil
 function LoadPlayerCommerceData(playerSrc) end
 
     
@@ -679,8 +680,8 @@ function LoadPlayerCommerceData(playerSrc) end
 ---
 --- @hash [0xB7BA82DC](https://docs.fivem.net/natives/?_0xB7BA82DC)
 --- @param mapName string (char*)
---- @return void
---- @overload fun(mapName: string): void
+--- @return nil
+--- @overload fun(mapName: string): nil
 function SetMapName(mapName) end
 
     
@@ -702,8 +703,8 @@ function GetAllPeds() end
 ---
 --- @hash [0xB88A73AD](https://docs.fivem.net/natives/?_0xB88A73AD)
 --- @param resourceName string (char*)
---- @return void
---- @overload fun(resourceName: string): void
+--- @return nil
+--- @overload fun(resourceName: string): nil
 function ScheduleResourceTick(resourceName) end
 
     
@@ -712,8 +713,8 @@ function ScheduleResourceTick(resourceName) end
 --- @hash [0xBA0613E1](https://docs.fivem.net/natives/?_0xBA0613E1)
 --- @param playerSrc string (char*)
 --- @param reason string (char*)
---- @return void
---- @overload fun(playerSrc: string, reason: string): void
+--- @return nil
+--- @overload fun(playerSrc: string, reason: string): nil
 function DropPlayer(playerSrc, reason) end
 
     
@@ -758,8 +759,8 @@ function GetPlayerFromIndex(index) end
 --- @hash [0xCC6C2EB1](https://docs.fivem.net/natives/?_0xCC6C2EB1)
 --- @param playerSrc number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(playerSrc: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(playerSrc: number, toggle: boolean): nil
 function MumbleSetPlayerMuted(playerSrc, toggle) end
 
     
@@ -768,8 +769,8 @@ function MumbleSetPlayerMuted(playerSrc, toggle) end
 --- @hash [0xCCFF3B6E](https://docs.fivem.net/natives/?_0xCCFF3B6E)
 --- @param vehicle Vehicle
 --- @param color number (int*)
---- @return void
---- @overload fun(vehicle: Vehicle): number
+--- @return nil
+--- @overload fun(vehicle: Vehicle): nil, number
 function GetVehicleInteriorColour(vehicle, color) end
 
     
@@ -778,8 +779,8 @@ function GetVehicleInteriorColour(vehicle, color) end
 --- @hash [0xCE51AC2C](https://docs.fivem.net/natives/?_0xCE51AC2C)
 --- @param bucketId number (int)
 --- @param mode boolean
---- @return void
---- @overload fun(bucketId: number, mode: boolean): void
+--- @return nil
+--- @overload fun(bucketId: number, mode: boolean): nil
 function SetRoutingBucketPopulationEnabled(bucketId, mode) end
 
     
@@ -788,8 +789,8 @@ function SetRoutingBucketPopulationEnabled(bucketId, mode) end
 --- @hash [0xCF9A2FF](https://docs.fivem.net/natives/?_0xCF9A2FF)
 --- @param key string (char*)
 --- @param value string (char*)
---- @return void
---- @overload fun(key: string, value: string): void
+--- @return nil
+--- @overload fun(key: string, value: string): nil
 function SetResourceKvpNoSync(key, value) end
 
     
@@ -799,8 +800,8 @@ function SetResourceKvpNoSync(key, value) end
 --- @hash [0xD3A183A3](https://docs.fivem.net/natives/?_0xD3A183A3)
 --- @param entity Entity
 --- @param radius number (float)
---- @return void
---- @overload fun(entity: Entity, radius: number): void
+--- @return nil
+--- @overload fun(entity: Entity, radius: number): nil
 function SetEntityDistanceCullingRadius(entity, radius) end
 
     
@@ -847,8 +848,8 @@ function DoesPlayerOwnSkuExt(playerSrc, skuId) end
 --- FlushResourceKvp(
 --- @hash [0xE27C97A0](https://docs.fivem.net/natives/?_0xE27C97A0)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function FlushResourceKvp() end
 
     
@@ -895,17 +896,17 @@ function GetEntityRoutingBucket(entity) end
 --- @hash [0xF292858C](https://docs.fivem.net/natives/?_0xF292858C)
 --- @param varName string (char*)
 --- @param value string (char*)
---- @return void
---- @overload fun(varName: string, value: string): void
+--- @return nil
+--- @overload fun(varName: string, value: string): nil
 function SetConvarReplicated(varName, value) end
 
     
 --- SetHttpHandler
 ---
 --- @hash [0xF5C6330C](https://docs.fivem.net/natives/?_0xF5C6330C)
---- @param handler fun
---- @return void
---- @overload fun(handler: fun): void
+--- @param handler function
+--- @return nil
+--- @overload fun(handler: function): nil
 function SetHttpHandler(handler) end
 
     
@@ -913,8 +914,8 @@ function SetHttpHandler(handler) end
 ---
 --- @hash [0xF90B7469](https://docs.fivem.net/natives/?_0xF90B7469)
 --- @param gametypeName string (char*)
---- @return void
---- @overload fun(gametypeName: string): void
+--- @return nil
+--- @overload fun(gametypeName: string): nil
 function SetGameType(gametypeName) end
 
     
@@ -922,8 +923,8 @@ function SetGameType(gametypeName) end
 ---
 --- @hash [0xF97B1C93](https://docs.fivem.net/natives/?_0xF97B1C93)
 --- @param enabled boolean
---- @return void
---- @overload fun(enabled: boolean): void
+--- @return nil
+--- @overload fun(enabled: boolean): nil
 function EnableEnhancedHostSupport(enabled) end
 
     

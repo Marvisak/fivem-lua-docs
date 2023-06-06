@@ -1,3 +1,6 @@
+--- @meta
+
+
 --- @class Cam
 local Cam = {}
 
@@ -69,63 +72,63 @@ local Vector4
 --- @field public w number
 local Quat
 
---- @shape Matrix2x2
+--- @class Matrix2x2
 --- @field public [1] Vector2
 --- @field public [2] Vector2
 local Matrix2x2
 
---- @shape Matrix3x2
+--- @class Matrix3x2
 --- @field public [1] Vector2
 --- @field public [2] Vector2
 --- @field public [3] Vector2
 local Matrix3x2
 
---- @shape Matrix4x2
+--- @class Matrix4x2
 --- @field public [1] Vector2
 --- @field public [2] Vector2
 --- @field public [3] Vector2
 --- @field public [4] Vector2
 local Matrix4x2
 
---- @shape Matrix2x3
+--- @class Matrix2x3
 --- @field public [1] Vector3
 --- @field public [2] Vector3
 local Matrix2x3
 
---- @shape Matrix3x3
+--- @class Matrix3x3
 --- @field public [1] Vector3
 --- @field public [2] Vector3
 --- @field public [3] Vector3
 local Matrix3x3
 
---- @shape Matrix4x3
+--- @class Matrix4x3
 --- @field public [1] Vector3
 --- @field public [2] Vector3
 --- @field public [3] Vector3
 --- @field public [4] Vector3
 local Matrix4x3
 
---- @shape Matrix2x4
+--- @class Matrix2x4
 --- @field public [1] Vector4
 --- @field public [2] Vector4
 local Matrix2x4
 
---- @shape Matrix3x4
+--- @class Matrix3x4
 --- @field public [1] Vector4
 --- @field public [2] Vector4
 --- @field public [3] Vector4
 local Matrix3x4
 
---- @shape Matrix4x4
+--- @class Matrix4x4
 --- @field public [1] Vector4
 --- @field public [2] Vector4
 --- @field public [3] Vector4
 --- @field public [4] Vector4
 local Matrix4x4
 
---- @shape EventHandlerData
+--- @class EventHandlerData
 --- @field key number
 --- @field name string
 
---- @shape RegisteredCommandInfo
+--- @class RegisteredCommandInfo
 --- @field name string

@@ -1,3 +1,4 @@
+--- @meta
 
 --- GetInteriorRoomName
 --- @usage local playerPed = PlayerPedId()
@@ -21,8 +22,8 @@ function GetInteriorRoomName(interiorId, roomIndex) end
 ---
 --- @hash [0x11A5B7ED](https://docs.fivem.net/natives/?_0x11A5B7ED)
 --- @param index number (int)
---- @return void
---- @overload fun(index: number): void
+--- @return nil
+--- @overload fun(index: number): nil
 function ResetMapZoomDataLevel(index) end
 
     
@@ -33,8 +34,8 @@ function ResetMapZoomDataLevel(index) end
 --- @param class_ string (char*)
 --- @param fieldName string (char*)
 --- @param value Vector3
---- @return void
---- @overload fun(vehicle: Vehicle, class_: string, fieldName: string, value: Vector3): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, class_: string, fieldName: string, value: Vector3): nil
 function SetVehicleHandlingVector(vehicle, class_, fieldName, value) end
 
     
@@ -45,8 +46,8 @@ function SetVehicleHandlingVector(vehicle, class_, fieldName, value) end
 --- @param eventPayload string (char*)
 --- @param payloadLength number (int)
 --- @param bps number (int)
---- @return void
---- @overload fun(eventName: string, eventPayload: string, payloadLength: number, bps: number): void
+--- @return nil
+--- @overload fun(eventName: string, eventPayload: string, payloadLength: number, bps: number): nil
 function TriggerLatentServerEventInternal(eventName, eventPayload, payloadLength, bps) end
 
     
@@ -109,8 +110,8 @@ function GetVehicleWheelieState(vehicle) end
 ---
 --- @hash [0x1493DCC1](https://docs.fivem.net/natives/?_0x1493DCC1)
 --- @param kvsKey string (char*)
---- @return void
---- @overload fun(kvsKey: string): void
+--- @return nil
+--- @overload fun(kvsKey: string): nil
 function RegisterStreamingFileFromKvs(kvsKey) end
 
     
@@ -157,8 +158,8 @@ function GetDuiHandle(duiObject) end
 --- @param red number (int)
 --- @param green number (int)
 --- @param blue number (int)
---- @return void
---- @overload fun(vehicle: Vehicle, red: number, green: number, blue: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, red: number, green: number, blue: number): nil
 function SetVehicleXenonLightsCustomColor(vehicle, red, green, blue) end
 
     
@@ -167,8 +168,8 @@ function SetVehicleXenonLightsCustomColor(vehicle, red, green, blue) end
 ---
 --- @hash [0x1722C938](https://docs.fivem.net/natives/?_0x1722C938)
 --- @param manualShutdown boolean
---- @return void
---- @overload fun(manualShutdown: boolean): void
+--- @return nil
+--- @overload fun(manualShutdown: boolean): nil
 function SetManualShutdownLoadingScreenNui(manualShutdown) end
 
     
@@ -185,8 +186,8 @@ function GetVehicleDashboardFuel() end
 ---
 --- @hash [0x19D81F4E](https://docs.fivem.net/natives/?_0x19D81F4E)
 --- @param tex number (long)
---- @return void
---- @overload fun(tex: number): void
+--- @return nil
+--- @overload fun(tex: number): nil
 function CommitRuntimeTexture(tex) end
 
     
@@ -195,8 +196,8 @@ function CommitRuntimeTexture(tex) end
 --- @hash [0x1A963E58](https://docs.fivem.net/natives/?_0x1A963E58)
 --- @param vehicle Vehicle
 --- @param gravity number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, gravity: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, gravity: number): nil
 function SetVehicleGravityAmount(vehicle, gravity) end
 
     
@@ -204,8 +205,8 @@ function SetVehicleGravityAmount(vehicle, gravity) end
 ---
 --- @hash [0x1B1052E2](https://docs.fivem.net/natives/?_0x1B1052E2)
 --- @param distance number (float)
---- @return void
---- @overload fun(distance: number): void
+--- @return nil
+--- @overload fun(distance: number): nil
 function MumbleSetAudioInputDistance(distance) end
 
     
@@ -214,8 +215,8 @@ function MumbleSetAudioInputDistance(distance) end
 ---
 --- @hash [0x1B3A363](https://docs.fivem.net/natives/?_0x1B3A363)
 --- @param fileName string (char*)
---- @return void
---- @overload fun(fileName: string): void
+--- @return nil
+--- @overload fun(fileName: string): nil
 function RegisterFontFile(fileName) end
 
     
@@ -224,8 +225,8 @@ function RegisterFontFile(fileName) end
 --- @hash [0x1D735B93](https://docs.fivem.net/natives/?_0x1D735B93)
 --- @param duiObject number (long)
 --- @param button string (char*)
---- @return void
---- @overload fun(duiObject: number, button: string): void
+--- @return nil
+--- @overload fun(duiObject: number, button: string): nil
 function SendDuiMouseUp(duiObject, button) end
 
     
@@ -266,8 +267,8 @@ function GetVehicleDashboardOilTemp() end
 --- @hash [0x20B1B3E6](https://docs.fivem.net/natives/?_0x20B1B3E6)
 --- @param vehicle Vehicle
 --- @param gear number (int)
---- @return void
---- @overload fun(vehicle: Vehicle, gear: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, gear: number): nil
 function SetVehicleHighGear(vehicle, gear) end
 
     
@@ -293,8 +294,8 @@ function MumbleGetVoiceChannelFromServerId(serverId) end
 ---
 --- @hash [0x231523B7](https://docs.fivem.net/natives/?_0x231523B7)
 --- @param channel number (int)
---- @return void
---- @overload fun(channel: number): void
+--- @return nil
+--- @overload fun(channel: number): nil
 function MumbleRemoveVoiceChannelListen(channel) end
 
     
@@ -328,8 +329,8 @@ function CreateDui(url, width, height) end
 --- @param train Vehicle
 --- @param doorIndex number (int)
 --- @param ratio number (float)
---- @return void
---- @overload fun(train: Vehicle, doorIndex: number, ratio: number): void
+--- @return nil
+--- @overload fun(train: Vehicle, doorIndex: number, ratio: number): nil
 function SetTrainDoorOpenRatio(train, doorIndex, ratio) end
 
     
@@ -338,8 +339,8 @@ function SetTrainDoorOpenRatio(train, doorIndex, ratio) end
 --- @hash [0x25F2B65F](https://docs.fivem.net/natives/?_0x25F2B65F)
 --- @param targetId number (int)
 --- @param serverId number (int)
---- @return void
---- @overload fun(targetId: number, serverId: number): void
+--- @return nil
+--- @overload fun(targetId: number, serverId: number): nil
 function MumbleAddVoiceTargetPlayerByServerId(targetId, serverId) end
 
     
@@ -350,8 +351,8 @@ function MumbleAddVoiceTargetPlayerByServerId(targetId, serverId) end
 --- @hash [0x268DB867](https://docs.fivem.net/natives/?_0x268DB867)
 --- @param targetId number (int)
 --- @param channel number (int)
---- @return void
---- @overload fun(targetId: number, channel: number): void
+--- @return nil
+--- @overload fun(targetId: number, channel: number): nil
 function MumbleRemoveVoiceTargetChannel(targetId, channel) end
 
     
@@ -361,8 +362,8 @@ function MumbleRemoveVoiceTargetChannel(targetId, channel) end
 ---
 --- @hash [0x2703D582](https://docs.fivem.net/natives/?_0x2703D582)
 --- @param network boolean
---- @return void
---- @overload fun(network: boolean): void
+--- @return nil
+--- @overload fun(network: boolean): nil
 function SetWeatherOwnedByNetwork(network) end
 
     
@@ -391,8 +392,8 @@ function GetPlayerMeleeWeaponDefenseModifier(playerId) end
 ---
 --- @hash [0x2867ED8C](https://docs.fivem.net/natives/?_0x2867ED8C)
 --- @param vehicle Vehicle
---- @return void
---- @overload fun(vehicle: Vehicle): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle): nil
 function ClearVehicleXenonLightsCustomColor(vehicle) end
 
     
@@ -401,8 +402,8 @@ function ClearVehicleXenonLightsCustomColor(vehicle) end
 --- @hash [0x289DA860](https://docs.fivem.net/natives/?_0x289DA860)
 --- @param entryKey Hash
 --- @param entryText string (char*)
---- @return void
---- @overload fun(entryKey: Hash, entryText: string): void
+--- @return nil
+--- @overload fun(entryKey: Hash, entryText: string): nil
 function AddTextEntryByHash(entryKey, entryText) end
 
     
@@ -434,8 +435,8 @@ function SetRuntimeTextureImage(tex, fileName) end
 --- @param interiorId number (int)
 --- @param portalIndex number (int)
 --- @param roomFrom number (int)
---- @return void
---- @overload fun(interiorId: number, portalIndex: number, roomFrom: number): void
+--- @return nil
+--- @overload fun(interiorId: number, portalIndex: number, roomFrom: number): nil
 function SetInteriorPortalRoomFrom(interiorId, portalIndex, roomFrom) end
 
     
@@ -444,8 +445,8 @@ function SetInteriorPortalRoomFrom(interiorId, portalIndex, roomFrom) end
 --- @hash [0x2A01A8FC](https://docs.fivem.net/natives/?_0x2A01A8FC)
 --- @param vehicle Vehicle
 --- @param rpm number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, rpm: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, rpm: number): nil
 function SetVehicleCurrentRpm(vehicle, rpm) end
 
     
@@ -453,8 +454,8 @@ function SetVehicleCurrentRpm(vehicle, rpm) end
 ---
 --- @hash [0x2A7B50E](https://docs.fivem.net/natives/?_0x2A7B50E)
 --- @param state boolean
---- @return void
---- @overload fun(state: boolean): void
+--- @return nil
+--- @overload fun(state: boolean): nil
 function SetWeaponsNoAutoswap(state) end
 
     
@@ -516,8 +517,8 @@ function GetGamePool(poolName) end
 --- @param class_ string (char*)
 --- @param fieldName string (char*)
 --- @param value any
---- @return void
---- @overload fun(vehicle: Vehicle, class_: string, fieldName: string, value: any): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, class_: string, fieldName: string, value: any): nil
 function SetVehicleHandlingField(vehicle, class_, fieldName, value) end
 
     
@@ -557,8 +558,8 @@ function GetNetworkWalkMode() end
 --- @param duiObject number (long)
 --- @param deltaY number (int)
 --- @param deltaX number (int)
---- @return void
---- @overload fun(duiObject: number, deltaY: number, deltaX: number): void
+--- @return nil
+--- @overload fun(duiObject: number, deltaY: number, deltaX: number): nil
 function SendDuiMouseWheel(duiObject, deltaY, deltaX) end
 
     
@@ -589,8 +590,8 @@ function GetVehicleWheelXrot(vehicle, wheelIndex) end
 --- @hash [0x2F70ACED](https://docs.fivem.net/natives/?_0x2F70ACED)
 --- @param vehicle Vehicle
 --- @param clutch number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, clutch: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, clutch: number): nil
 function SetVehicleClutch(vehicle, clutch) end
 
     
@@ -619,8 +620,8 @@ function GetMapdataEntityHandle(mapDataHash, entityInternalIdx, entityHandle) en
 ---
 --- @hash [0x311150E5](https://docs.fivem.net/natives/?_0x311150E5)
 --- @param state boolean
---- @return void
---- @overload fun(state: boolean): void
+--- @return nil
+--- @overload fun(state: boolean): nil
 function SetWeaponsNoAutoreload(state) end
 
     
@@ -639,8 +640,8 @@ function SetWeaponsNoAutoreload(state) end
 --- @param interiorId number (int)
 --- @param roomIndex number (int)
 --- @param timecycleHash number (int)
---- @return void
---- @overload fun(interiorId: number, roomIndex: number, timecycleHash: number): void
+--- @return nil
+--- @overload fun(interiorId: number, roomIndex: number, timecycleHash: number): nil
 function SetInteriorRoomTimecycle(interiorId, roomIndex, timecycleHash) end
 
     
@@ -654,8 +655,8 @@ function SetInteriorRoomTimecycle(interiorId, roomIndex, timecycleHash) end
 --- en
 --- @hash [0x322B1192](https://docs.fivem.net/natives/?_0x322B1192)
 --- @param interiorId number (int)
---- @return number, number, number, number, number, number
---- @overload fun(interiorId: number): number, number, number, number, number, number
+--- @return nil, number, number, number, number, number, number
+--- @overload fun(interiorId: number): nil, number, number, number, number, number, number
 function GetInteriorEntitiesExtents(interiorId) end
 
     
@@ -664,8 +665,8 @@ function GetInteriorEntitiesExtents(interiorId) end
 --- @hash [0x32C5355A](https://docs.fivem.net/natives/?_0x32C5355A)
 --- @param targetId number (int)
 --- @param player Player
---- @return void
---- @overload fun(targetId: number, player: Player): void
+--- @return nil
+--- @overload fun(targetId: number, player: Player): nil
 function MumbleAddVoiceTargetPlayer(targetId, player) end
 
     
@@ -674,8 +675,8 @@ function MumbleAddVoiceTargetPlayer(targetId, player) end
 --- @hash [0x32CA01C3](https://docs.fivem.net/natives/?_0x32CA01C3)
 --- @param entryKey string (char*)
 --- @param entryText string (char*)
---- @return void
---- @overload fun(entryKey: string, entryText: string): void
+--- @return nil
+--- @overload fun(entryKey: string, entryText: string): nil
 function AddTextEntry(entryKey, entryText) end
 
     
@@ -720,8 +721,8 @@ function GetRuntimeTextureHeight(tex) end
 ---
 --- @hash [0x35E62B6A](https://docs.fivem.net/natives/?_0x35E62B6A)
 --- @param text string (char*)
---- @return void
---- @overload fun(text: string): void
+--- @return nil
+--- @overload fun(text: string): nil
 function SetDiscordRichPresenceAssetSmallText(text) end
 
     
@@ -732,8 +733,8 @@ function SetDiscordRichPresenceAssetSmallText(text) end
 --- @param vehicle Vehicle
 --- @param wheelIndex number (int)
 --- @param speed number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, wheelIndex: number, speed: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, wheelIndex: number, speed: number): nil
 function SetVehicleWheelRotationSpeed(vehicle, wheelIndex, speed) end
 
     
@@ -742,8 +743,8 @@ function SetVehicleWheelRotationSpeed(vehicle, wheelIndex, speed) end
 ---
 --- @hash [0x36CA2554](https://docs.fivem.net/natives/?_0x36CA2554)
 --- @param value number (int)
---- @return void
---- @overload fun(value: number): void
+--- @return nil
+--- @overload fun(value: number): nil
 function SetMillisecondsPerGameMinute(value) end
 
     
@@ -818,9 +819,9 @@ function GetVehicleWheelTractionVectorLength(vehicle, wheelIndex) end
 --- 	}
 --- end
 --- @hash [0x3C2F9037](https://docs.fivem.net/natives/?_0x3C2F9037)
---- @param factory fun
---- @return void
---- @overload fun(factory: fun): void
+--- @param factory function
+--- @return nil
+--- @overload fun(factory: function): nil
 function RegisterArchetypes(factory) end
 
     
@@ -828,8 +829,8 @@ function RegisterArchetypes(factory) end
 ---
 --- @hash [0x3C407D53](https://docs.fivem.net/natives/?_0x3C407D53)
 --- @param findHandle number (int)
---- @return void
---- @overload fun(findHandle: number): void
+--- @return nil
+--- @overload fun(findHandle: number): nil
 function EndFindPickup(findHandle) end
 
     
@@ -862,8 +863,8 @@ function GetVehicleWheelIsPowered(vehicle, wheelIndex) end
 ---
 --- @hash [0x3D5AB7F0](https://docs.fivem.net/natives/?_0x3D5AB7F0)
 --- @param state boolean
---- @return void
---- @overload fun(state: boolean): void
+--- @return nil
+--- @overload fun(state: boolean): nil
 function DisableIdleCamera(state) end
 
     
@@ -887,8 +888,8 @@ function SelectEntityAtCursor(hitFlags, precise) end
 --- @param posY number (float)
 --- @param sizeX number (float)
 --- @param sizeY number (float)
---- @return void
---- @overload fun(name: string, alignX: string, alignY: string, posX: number, posY: number, sizeX: number, sizeY: number): void
+--- @return nil
+--- @overload fun(name: string, alignX: string, alignY: string, posX: number, posY: number, sizeX: number, sizeY: number): nil
 function SetMinimapComponentPosition(name, alignX, alignY, posX, posY, sizeX, sizeY) end
 
     
@@ -914,8 +915,8 @@ function GetInteriorPortalRoomTo(interiorId, portalIndex) end
 ---
 --- @hash [0x3FF5E5F8](https://docs.fivem.net/natives/?_0x3FF5E5F8)
 --- @param keepInput boolean
---- @return void
---- @overload fun(keepInput: boolean): void
+--- @return nil
+--- @overload fun(keepInput: boolean): nil
 function SetNuiFocusKeepInput(keepInput) end
 
     
@@ -968,9 +969,9 @@ function FindNextPickup(findHandle, outEntity) end
 --- At this time, this function **should not be used in a live environment**.
 ---
 --- @hash [0x410DA7D3](https://docs.fivem.net/natives/?_0x410DA7D3)
---- @param factory fun
---- @return void
---- @overload fun(factory: fun): void
+--- @param factory function
+--- @return nil
+--- @overload fun(factory: function): nil
 function RegisterEntities(factory) end
 
     
@@ -983,8 +984,8 @@ function RegisterEntities(factory) end
 --- @param scrollSpeed number (float)
 --- @param tilesX number (float)
 --- @param tilesY number (float)
---- @return void
---- @overload fun(index: number, zoomScale: number, zoomSpeed: number, scrollSpeed: number, tilesX: number, tilesY: number): void
+--- @return nil
+--- @overload fun(index: number, zoomScale: number, zoomSpeed: number, scrollSpeed: number, tilesX: number, tilesY: number): nil
 function SetMapZoomDataLevel(index, zoomScale, zoomSpeed, scrollSpeed, tilesX, tilesY) end
 
     
@@ -993,8 +994,8 @@ function SetMapZoomDataLevel(index, zoomScale, zoomSpeed, scrollSpeed, tilesX, t
 --- @hash [0x46F6B38B](https://docs.fivem.net/natives/?_0x46F6B38B)
 --- @param modelHash Hash
 --- @param personalityHash Hash
---- @return void
---- @overload fun(modelHash: Hash, personalityHash: Hash): void
+--- @return nil
+--- @overload fun(modelHash: Hash, personalityHash: Hash): nil
 function SetPedModelPersonality(modelHash, personalityHash) end
 
     
@@ -1013,8 +1014,8 @@ function GetEntityArchetypeName(entity) end
 --- @param vehicle Vehicle
 --- @param wheelIndex number (int)
 --- @param value number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, wheelIndex: number, value: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, wheelIndex: number, value: number): nil
 function SetVehicleWheelTireColliderWidth(vehicle, wheelIndex, value) end
 
     
@@ -1026,8 +1027,8 @@ function SetVehicleWheelTireColliderWidth(vehicle, wheelIndex, value) end
 --- @param class_ string (char*)
 --- @param fieldName string (char*)
 --- @param value number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, class_: string, fieldName: string, value: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, class_: string, fieldName: string, value: number): nil
 function SetVehicleHandlingFloat(vehicle, class_, fieldName, value) end
 
     
@@ -1088,8 +1089,8 @@ function SetFlyThroughWindscreenParams(vehMinSpeed, unkMinSpeed, unkModifier, mi
 --- @hash [0x4D386C9E](https://docs.fivem.net/natives/?_0x4D386C9E)
 --- @param targetId number (int)
 --- @param channel number (int)
---- @return void
---- @overload fun(targetId: number, channel: number): void
+--- @return nil
+--- @overload fun(targetId: number, channel: number): nil
 function MumbleAddVoiceTargetChannel(targetId, channel) end
 
     
@@ -1129,8 +1130,8 @@ function FindNextObject(findHandle, outEntity) end
 --- @param bbMaxX number (float)
 --- @param bbMaxY number (float)
 --- @param bbMaxZ number (float)
---- @return void
---- @overload fun(interiorId: number, roomIndex: number, bbMinX: number, bbMinY: number, bbMinZ: number, bbMaxX: number, bbMaxY: number, bbMaxZ: number): void
+--- @return nil
+--- @overload fun(interiorId: number, roomIndex: number, bbMinX: number, bbMinY: number, bbMinZ: number, bbMaxX: number, bbMaxY: number, bbMaxZ: number): nil
 function SetInteriorRoomExtents(interiorId, roomIndex, bbMinX, bbMinY, bbMinZ, bbMaxX, bbMaxY, bbMaxZ) end
 
     
@@ -1163,8 +1164,8 @@ function GetVehicleDashboardLights() end
 ---
 --- @hash [0x5261A01A](https://docs.fivem.net/natives/?_0x5261A01A)
 --- @param shader number (int)
---- @return void
---- @overload fun(shader: number): void
+--- @return nil
+--- @overload fun(shader: number): nil
 function SetEntityDrawOutlineShader(shader) end
 
     
@@ -1184,8 +1185,8 @@ function SetVehicleWheelSize(vehicle, size) end
 ---
 --- @hash [0x53DFD530](https://docs.fivem.net/natives/?_0x53DFD530)
 --- @param assetName string (char*)
---- @return void
---- @overload fun(assetName: string): void
+--- @return nil
+--- @overload fun(assetName: string): nil
 function SetDiscordRichPresenceAsset(assetName) end
 
     
@@ -1203,8 +1204,8 @@ function GetVehicleWheelHealth(vehicle, wheelIndex) end
 ---
 --- @hash [0x55188D2D](https://docs.fivem.net/natives/?_0x55188D2D)
 --- @param enabled boolean
---- @return void
---- @overload fun(enabled: boolean): void
+--- @return nil
+--- @overload fun(enabled: boolean): nil
 function SetNetworkWalkMode(enabled) end
 
     
@@ -1222,8 +1223,8 @@ function SetNetworkWalkMode(enabled) end
 --- @param interiorId number (int)
 --- @param roomIndex number (int)
 --- @param flag number (int)
---- @return void
---- @overload fun(interiorId: number, roomIndex: number, flag: number): void
+--- @return nil
+--- @overload fun(interiorId: number, roomIndex: number, flag: number): nil
 function SetInteriorRoomFlag(interiorId, roomIndex, flag) end
 
     
@@ -1241,8 +1242,8 @@ function SetInteriorRoomFlag(interiorId, roomIndex, flag) end
 --- @param interiorId number (int)
 --- @param portalIndex number (int)
 --- @param roomTo number (int)
---- @return void
---- @overload fun(interiorId: number, portalIndex: number, roomTo: number): void
+--- @return nil
+--- @overload fun(interiorId: number, portalIndex: number, roomTo: number): nil
 function SetInteriorPortalRoomTo(interiorId, portalIndex, roomTo) end
 
     
@@ -1256,8 +1257,8 @@ function SetInteriorPortalRoomTo(interiorId, portalIndex, roomTo) end
 --- en
 --- @hash [0x5A039998](https://docs.fivem.net/natives/?_0x5A039998)
 --- @param interiorId number (int)
---- @return number, number, number, number
---- @overload fun(interiorId: number): number, number, number, number
+--- @return nil, number, number, number, number
+--- @overload fun(interiorId: number): nil, number, number, number, number
 function GetInteriorRotation(interiorId) end
 
     
@@ -1266,8 +1267,8 @@ function GetInteriorRotation(interiorId) end
 --- @hash [0x5B98AE30](https://docs.fivem.net/natives/?_0x5B98AE30)
 --- @param hasFocus boolean
 --- @param hasCursor boolean
---- @return void
---- @overload fun(hasFocus: boolean, hasCursor: boolean): void
+--- @return nil
+--- @overload fun(hasFocus: boolean, hasCursor: boolean): nil
 function SetNuiFocus(hasFocus, hasCursor) end
 
     
@@ -1276,8 +1277,8 @@ function SetNuiFocus(hasFocus, hasCursor) end
 --- @hash [0x5D01F191](https://docs.fivem.net/natives/?_0x5D01F191)
 --- @param duiObject number (long)
 --- @param button string (char*)
---- @return void
---- @overload fun(duiObject: number, button: string): void
+--- @return nil
+--- @overload fun(duiObject: number, button: string): nil
 function SendDuiMouseDown(duiObject, button) end
 
     
@@ -1294,8 +1295,8 @@ function GetWeaponRecoilShakeAmplitude(weaponHash) end
 ---
 --- @hash [0x5EA72E76](https://docs.fivem.net/natives/?_0x5EA72E76)
 --- @param targetId number (int)
---- @return void
---- @overload fun(targetId: number): void
+--- @return nil
+--- @overload fun(targetId: number): nil
 function MumbleClearVoiceTargetChannels(targetId) end
 
     
@@ -1304,8 +1305,8 @@ function MumbleClearVoiceTargetChannels(targetId) end
 --- @hash [0x5F3A3574](https://docs.fivem.net/natives/?_0x5F3A3574)
 --- @param vehicle Vehicle
 --- @param value boolean
---- @return void
---- @overload fun(vehicle: Vehicle, value: boolean): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, value: boolean): nil
 function SetVehicleAutoRepairDisabled(vehicle, value) end
 
     
@@ -1329,8 +1330,8 @@ function GetVehicleFuelLevel(vehicle) end
 ---
 --- @hash [0x5FB53015](https://docs.fivem.net/natives/?_0x5FB53015)
 --- @param type number (int)
---- @return void
---- @overload fun(type: number): void
+--- @return nil
+--- @overload fun(type: number): nil
 function SetMinimapType(type) end
 
     
@@ -1341,8 +1342,8 @@ function SetMinimapType(type) end
 --- @hash [0x61C309E3](https://docs.fivem.net/natives/?_0x61C309E3)
 --- @param player Player
 --- @param volume number (float)
---- @return void
---- @overload fun(player: Player, volume: number): void
+--- @return nil
+--- @overload fun(player: Player, volume: number): nil
 function MumbleSetVolumeOverride(player, volume) end
 
     
@@ -1361,8 +1362,8 @@ function MumbleSetVolumeOverride(player, volume) end
 --- MumbleSetAudioInputIntent(`speech`
 --- @hash [0x6383526B](https://docs.fivem.net/natives/?_0x6383526B)
 --- @param intentHash Hash
---- @return void
---- @overload fun(intentHash: Hash): void
+--- @return nil
+--- @overload fun(intentHash: Hash): nil
 function MumbleSetAudioInputIntent(intentHash) end
 
     
@@ -1392,8 +1393,8 @@ function GetVehicleHandlingFloat(vehicle, class_, fieldName) end
 --- @hash [0x6485615E](https://docs.fivem.net/natives/?_0x6485615E)
 --- @param vehicle Vehicle
 --- @param pressure number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, pressure: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, pressure: number): nil
 function SetVehicleTurboPressure(vehicle, pressure) end
 
     
@@ -1452,8 +1453,8 @@ function IsBigmapFull() end
 --- @hash [0x69B680A7](https://docs.fivem.net/natives/?_0x69B680A7)
 --- @param rope number (int)
 --- @param lengthChangeRate number (float)
---- @return void
---- @overload fun(rope: number, lengthChangeRate: number): void
+--- @return nil
+--- @overload fun(rope: number, lengthChangeRate: number): nil
 function SetRopeLengthChangeRate(rope, lengthChangeRate) end
 
     
@@ -1470,8 +1471,8 @@ function GetPedMovementClipset(ped) end
 ---
 --- @hash [0x6A02254D](https://docs.fivem.net/natives/?_0x6A02254D)
 --- @param appId string (char*)
---- @return void
---- @overload fun(appId: string): void
+--- @return nil
+--- @overload fun(appId: string): nil
 function SetDiscordAppId(appId) end
 
     
@@ -1484,8 +1485,8 @@ function SetDiscordAppId(appId) end
 --- @param xScale number (float)
 --- @param yScale number (float)
 --- @param alpha number (float)
---- @return void
---- @overload fun(miniMap: number, x: number, y: number, xScale: number, yScale: number, alpha: number): void
+--- @return nil
+--- @overload fun(miniMap: number, x: number, y: number, xScale: number, yScale: number, alpha: number): nil
 function SetMinimapOverlayDisplay(miniMap, x, y, xScale, yScale, alpha) end
 
     
@@ -1521,8 +1522,8 @@ function GetInteriorRoomFlag(interiorId, roomIndex) end
 --- @hash [0x6BC189AC](https://docs.fivem.net/natives/?_0x6BC189AC)
 --- @param entity Entity
 --- @param data string (char*)
---- @return void
---- @overload fun(entity: Entity, data: string): void
+--- @return nil
+--- @overload fun(entity: Entity, data: string): nil
 function ExperimentalLoadCloneSync(entity, data) end
 
     
@@ -1531,8 +1532,8 @@ function ExperimentalLoadCloneSync(entity, data) end
 --- @hash [0x6C93C4A9](https://docs.fivem.net/natives/?_0x6C93C4A9)
 --- @param vehicle Vehicle
 --- @param temperature number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, temperature: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, temperature: number): nil
 function SetVehicleEngineTemperature(vehicle, temperature) end
 
     
@@ -1540,8 +1541,8 @@ function SetVehicleEngineTemperature(vehicle, temperature) end
 ---
 --- @hash [0x6D712937](https://docs.fivem.net/natives/?_0x6D712937)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ResetFlyThroughWindscreenParams() end
 
     
@@ -1561,8 +1562,8 @@ function GetVehicleWheelBrakePressure(vehicle, wheelIndex) end
 ---
 --- @hash [0x74C597D9](https://docs.fivem.net/natives/?_0x74C597D9)
 --- @param distance number (float)
---- @return void
---- @overload fun(distance: number): void
+--- @return nil
+--- @overload fun(distance: number): nil
 function MumbleSetAudioOutputDistance(distance) end
 
     
@@ -1570,8 +1571,8 @@ function MumbleSetAudioOutputDistance(distance) end
 ---
 --- @hash [0x74E927B0](https://docs.fivem.net/natives/?_0x74E927B0)
 --- @param value number (float)
---- @return void
---- @overload fun(value: number): void
+--- @return nil
+--- @overload fun(value: number): nil
 function MumbleSetTalkerProximity(value) end
 
     
@@ -1593,8 +1594,8 @@ function GetAllRopes() end
 --- @hash [0x76180407](https://docs.fivem.net/natives/?_0x76180407)
 --- @param entity Entity
 --- @param enabled boolean
---- @return void
---- @overload fun(entity: Entity, enabled: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, enabled: boolean): nil
 function SetEntityDrawOutline(entity, enabled) end
 
     
@@ -1602,8 +1603,8 @@ function SetEntityDrawOutline(entity, enabled) end
 ---
 --- @hash [0x7635B349](https://docs.fivem.net/natives/?_0x7635B349)
 --- @param state boolean
---- @return void
---- @overload fun(state: boolean): void
+--- @return nil
+--- @overload fun(state: boolean): nil
 function SetFlashLightKeepOnWhileMoving(state) end
 
     
@@ -1617,8 +1618,8 @@ function SetFlashLightKeepOnWhileMoving(state) end
 --- en
 --- @hash [0x77A435B0](https://docs.fivem.net/natives/?_0x77A435B0)
 --- @param interiorId number (int)
---- @return number, number, number
---- @overload fun(interiorId: number): number, number, number
+--- @return nil, number, number, number
+--- @overload fun(interiorId: number): nil, number, number, number
 function GetInteriorPosition(interiorId) end
 
     
@@ -1638,8 +1639,8 @@ function GetScenarioPedDensityMultiplier() end
 --- @param effectSlot number (int)
 --- @param paramIndex number (int)
 --- @param paramValue number (int)
---- @return void
---- @overload fun(submixId: number, effectSlot: number, paramIndex: number, paramValue: number): void
+--- @return nil
+--- @overload fun(submixId: number, effectSlot: number, paramIndex: number, paramValue: number): nil
 function SetAudioSubmixEffectParamInt(submixId, effectSlot, paramIndex, paramValue) end
 
     
@@ -1648,8 +1649,8 @@ function SetAudioSubmixEffectParamInt(submixId, effectSlot, paramIndex, paramVal
 ---
 --- @hash [0x780DA86](https://docs.fivem.net/natives/?_0x780DA86)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function EnterCursorMode() end
 
     
@@ -1705,8 +1706,8 @@ function GetPlayerVehicleDamageModifier(playerId) end
 --- @hash [0x79780FD2](https://docs.fivem.net/natives/?_0x79780FD2)
 --- @param plateIndex number (int)
 --- @param pattern string (char*)
---- @return void
---- @overload fun(plateIndex: number, pattern: string): void
+--- @return nil
+--- @overload fun(plateIndex: number, pattern: string): nil
 function SetDefaultVehicleNumberPlateTextPattern(plateIndex, pattern) end
 
     
@@ -1714,8 +1715,8 @@ function SetDefaultVehicleNumberPlateTextPattern(plateIndex, pattern) end
 ---
 --- @hash [0x79A12861](https://docs.fivem.net/natives/?_0x79A12861)
 --- @param modelHash Hash
---- @return void
---- @overload fun(modelHash: Hash): void
+--- @return nil
+--- @overload fun(modelHash: Hash): nil
 function ResetPedModelPersonality(modelHash) end
 
     
@@ -1723,8 +1724,8 @@ function ResetPedModelPersonality(modelHash) end
 ---
 --- @hash [0x7A27BC93](https://docs.fivem.net/natives/?_0x7A27BC93)
 --- @param enabled boolean
---- @return void
---- @overload fun(enabled: boolean): void
+--- @return nil
+--- @overload fun(enabled: boolean): nil
 function SetMpGamerTagsUseVehicleBehavior(enabled) end
 
     
@@ -1752,8 +1753,8 @@ function GetRandomVehicleDensityMultiplier() end
 ---
 --- @hash [0x7BCAA6E7](https://docs.fivem.net/natives/?_0x7BCAA6E7)
 --- @param handle number (int)
---- @return void
---- @overload fun(handle: number): void
+--- @return nil
+--- @overload fun(handle: number): nil
 function RemoveDryVolume(handle) end
 
     
@@ -1761,8 +1762,8 @@ function RemoveDryVolume(handle) end
 ---
 --- @hash [0x7BDCBD45](https://docs.fivem.net/natives/?_0x7BDCBD45)
 --- @param presenceState string (char*)
---- @return void
---- @overload fun(presenceState: string): void
+--- @return nil
+--- @overload fun(presenceState: string): nil
 function SetRichPresence(presenceState) end
 
     
@@ -1799,8 +1800,8 @@ function GetVehicleLightMultiplier(vehicle) end
 --- @param ratePerSecond number (float)
 --- @param headlightRotation number (float)
 --- @param invertRotation boolean
---- @return void
---- @overload fun(modelHash: Hash, ratePerSecond: number, headlightRotation: number, invertRotation: boolean): void
+--- @return nil
+--- @overload fun(modelHash: Hash, ratePerSecond: number, headlightRotation: number, invertRotation: boolean): nil
 function SetModelHeadlightConfiguration(modelHash, ratePerSecond, headlightRotation, invertRotation) end
 
     
@@ -1812,8 +1813,8 @@ function SetModelHeadlightConfiguration(modelHash, ratePerSecond, headlightRotat
 --- @param class_ string (char*)
 --- @param fieldName string (char*)
 --- @param value Vector3
---- @return void
---- @overload fun(vehicle: string, class_: string, fieldName: string, value: Vector3): void
+--- @return nil
+--- @overload fun(vehicle: string, class_: string, fieldName: string, value: Vector3): nil
 function SetHandlingVector(vehicle, class_, fieldName, value) end
 
     
@@ -1824,8 +1825,8 @@ function SetHandlingVector(vehicle, class_, fieldName, value) end
 --- @hash [0x7FA03E76](https://docs.fivem.net/natives/?_0x7FA03E76)
 --- @param vehicle Vehicle
 --- @param can boolean
---- @return void
---- @overload fun(vehicle: Vehicle, can: boolean): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, can: boolean): nil
 function OverrideVehiclePedsCanStandOnTopFlag(vehicle, can) end
 
     
@@ -1835,8 +1836,8 @@ function OverrideVehiclePedsCanStandOnTopFlag(vehicle, can) end
 ---
 --- @hash [0x7FB46432](https://docs.fivem.net/natives/?_0x7FB46432)
 --- @param callbackType string (char*)
---- @return void
---- @overload fun(callbackType: string): void
+--- @return nil
+--- @overload fun(callbackType: string): nil
 function UnregisterRawNuiCallback(callbackType) end
 
     
@@ -1846,8 +1847,8 @@ function UnregisterRawNuiCallback(callbackType) end
 --- @param eventName string (char*)
 --- @param eventPayload string (char*)
 --- @param payloadLength number (int)
---- @return void
---- @overload fun(eventName: string, eventPayload: string, payloadLength: number): void
+--- @return nil
+--- @overload fun(eventName: string, eventPayload: string, payloadLength: number): nil
 function TriggerServerEventInternal(eventName, eventPayload, payloadLength) end
 
     
@@ -1876,8 +1877,8 @@ function ResetMapdataEntityMatrix(mapDataHash, entityInternalIdx) end
 --- @param rearRightVolume number (float)
 --- @param channel5Volume number (float)
 --- @param channel6Volume number (float)
---- @return void
---- @overload fun(submixId: number, outputSlot: number, frontLeftVolume: number, frontRightVolume: number, rearLeftVolume: number, rearRightVolume: number, channel5Volume: number, channel6Volume: number): void
+--- @return nil
+--- @overload fun(submixId: number, outputSlot: number, frontLeftVolume: number, frontRightVolume: number, rearLeftVolume: number, rearRightVolume: number, channel5Volume: number, channel6Volume: number): nil
 function SetAudioSubmixOutputVolumes(submixId, outputSlot, frontLeftVolume, frontRightVolume, rearLeftVolume, rearRightVolume, channel5Volume, channel6Volume) end
 
     
@@ -1934,8 +1935,8 @@ function GetPlayerVehicleDefenseModifier(playerId) end
 --- @param portalIndex number (int)
 --- @param entityIndex number (int)
 --- @param flag number (int)
---- @return void
---- @overload fun(interiorId: number, portalIndex: number, entityIndex: number, flag: number): void
+--- @return nil
+--- @overload fun(interiorId: number, portalIndex: number, entityIndex: number, flag: number): nil
 function SetInteriorPortalEntityFlag(interiorId, portalIndex, entityIndex, flag) end
 
     
@@ -1952,8 +1953,8 @@ function MumbleGetTalkerProximity() end
 ---
 --- @hash [0x8555DCBA](https://docs.fivem.net/natives/?_0x8555DCBA)
 --- @param targetId number (int)
---- @return void
---- @overload fun(targetId: number): void
+--- @return nil
+--- @overload fun(targetId: number): nil
 function MumbleClearVoiceTarget(targetId) end
 
     
@@ -1961,8 +1962,8 @@ function MumbleClearVoiceTarget(targetId) end
 ---
 --- @hash [0x85A10FFD](https://docs.fivem.net/natives/?_0x85A10FFD)
 --- @param ignore boolean
---- @return void
---- @overload fun(ignore: boolean): void
+--- @return nil
+--- @overload fun(ignore: boolean): nil
 function SetIgnoreVehicleOwnershipForStowing(ignore) end
 
     
@@ -1973,8 +1974,8 @@ function SetIgnoreVehicleOwnershipForStowing(ignore) end
 --- @param vehicle Vehicle
 --- @param wheelIndex number (int)
 --- @param length number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, wheelIndex: number, length: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, wheelIndex: number, length: number): nil
 function SetVehicleWheelTractionVectorLength(vehicle, wheelIndex, length) end
 
     
@@ -1982,8 +1983,8 @@ function SetVehicleWheelTractionVectorLength(vehicle, wheelIndex, length) end
 ---
 --- @hash [0x8737EEE8](https://docs.fivem.net/natives/?_0x8737EEE8)
 --- @param channel number (int)
---- @return void
---- @overload fun(channel: number): void
+--- @return nil
+--- @overload fun(channel: number): nil
 function MumbleSetVoiceChannel(channel) end
 
     
@@ -2010,8 +2011,8 @@ function MumbleSetVoiceChannel(channel) end
 --- @param posX number (float)
 --- @param posY number (float)
 --- @param posZ number (float)
---- @return void
---- @overload fun(interiorId: number, portalIndex: number, cornerIndex: number, posX: number, posY: number, posZ: number): void
+--- @return nil
+--- @overload fun(interiorId: number, portalIndex: number, cornerIndex: number, posX: number, posY: number, posZ: number): nil
 function SetInteriorPortalCornerPosition(interiorId, portalIndex, cornerIndex, posX, posY, posZ) end
 
     
@@ -2039,8 +2040,8 @@ function FindNextVehicle(findHandle, outEntity) end
 --- @param interiorId number (int)
 --- @param portalIndex number (int)
 --- @param flag number (int)
---- @return void
---- @overload fun(interiorId: number, portalIndex: number, flag: number): void
+--- @return nil
+--- @overload fun(interiorId: number, portalIndex: number, flag: number): nil
 function SetInteriorPortalFlag(interiorId, portalIndex, flag) end
 
     
@@ -2051,8 +2052,8 @@ function SetInteriorPortalFlag(interiorId, portalIndex, flag) end
 --- @hash [0x88CD646F](https://docs.fivem.net/natives/?_0x88CD646F)
 --- @param targetId number (int)
 --- @param player Player
---- @return void
---- @overload fun(targetId: number, player: Player): void
+--- @return nil
+--- @overload fun(targetId: number, player: Player): nil
 function MumbleRemoveVoiceTargetPlayer(targetId, player) end
 
     
@@ -2063,8 +2064,8 @@ function MumbleRemoveVoiceTargetPlayer(targetId, player) end
 --- @param class_ string (char*)
 --- @param fieldName string (char*)
 --- @param value number (int)
---- @return void
---- @overload fun(vehicle: string, class_: string, fieldName: string, value: number): void
+--- @return nil
+--- @overload fun(vehicle: string, class_: string, fieldName: string, value: number): nil
 function SetHandlingInt(vehicle, class_, fieldName, value) end
 
     
@@ -2114,8 +2115,8 @@ function StartFindExternalKvp(resourceName, prefix) end
 ---
 --- @hash [0x8F57A89D](https://docs.fivem.net/natives/?_0x8F57A89D)
 --- @param camera Cam
---- @return Vector3, Vector3, Vector3, Vector3
---- @overload fun(camera: Cam): Vector3, Vector3, Vector3, Vector3
+--- @return nil, Vector3, Vector3, Vector3, Vector3
+--- @overload fun(camera: Cam): nil, Vector3, Vector3, Vector3, Vector3
 function GetCamMatrix(camera) end
 
     
@@ -2138,8 +2139,8 @@ function GetExternalKvpString(resource, key) end
 ---
 --- @hash [0x90A9E0B2](https://docs.fivem.net/natives/?_0x90A9E0B2)
 --- @param flag boolean
---- @return void
---- @overload fun(flag: boolean): void
+--- @return nil
+--- @overload fun(flag: boolean): nil
 function OverridePedsCanStandOnTopFlag(flag) end
 
     
@@ -2148,8 +2149,8 @@ function OverridePedsCanStandOnTopFlag(flag) end
 --- @hash [0x90D1CAD1](https://docs.fivem.net/natives/?_0x90D1CAD1)
 --- @param vehicle Vehicle
 --- @param level number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, level: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, level: number): nil
 function SetVehicleOilLevel(vehicle, level) end
 
     
@@ -2161,8 +2162,8 @@ function SetVehicleOilLevel(vehicle, level) end
 --- @param class_ string (char*)
 --- @param fieldName string (char*)
 --- @param value number (float)
---- @return void
---- @overload fun(vehicle: string, class_: string, fieldName: string, value: number): void
+--- @return nil
+--- @overload fun(vehicle: string, class_: string, fieldName: string, value: number): nil
 function SetHandlingFloat(vehicle, class_, fieldName, value) end
 
     
@@ -2170,8 +2171,8 @@ function SetHandlingFloat(vehicle, class_, fieldName, value) end
 ---
 --- @hash [0x912E21DA](https://docs.fivem.net/natives/?_0x912E21DA)
 --- @param targetId number (int)
---- @return void
---- @overload fun(targetId: number): void
+--- @return nil
+--- @overload fun(targetId: number): nil
 function MumbleClearVoiceTargetPlayers(targetId) end
 
     
@@ -2179,8 +2180,8 @@ function MumbleClearVoiceTargetPlayers(targetId) end
 ---
 --- @hash [0x9227415A](https://docs.fivem.net/natives/?_0x9227415A)
 --- @param findHandle number (int)
---- @return void
---- @overload fun(findHandle: number): void
+--- @return nil
+--- @overload fun(findHandle: number): nil
 function EndFindVehicle(findHandle) end
 
     
@@ -2191,8 +2192,8 @@ function EndFindVehicle(findHandle) end
 --- @hash [0x930BD34B](https://docs.fivem.net/natives/?_0x930BD34B)
 --- @param targetId number (int)
 --- @param serverId number (int)
---- @return void
---- @overload fun(targetId: number, serverId: number): void
+--- @return nil
+--- @overload fun(targetId: number, serverId: number): nil
 function MumbleRemoveVoiceTargetPlayerByServerId(targetId, serverId) end
 
     
@@ -2209,8 +2210,8 @@ function GetVehicleSteeringScale(vehicle) end
 ---
 --- @hash [0x960A4A95](https://docs.fivem.net/natives/?_0x960A4A95)
 --- @param targetId number (int)
---- @return void
---- @overload fun(targetId: number): void
+--- @return nil
+--- @overload fun(targetId: number): nil
 function MumbleSetVoiceTarget(targetId) end
 
     
@@ -2218,8 +2219,8 @@ function MumbleSetVoiceTarget(targetId) end
 ---
 --- @hash [0x9615C2AD](https://docs.fivem.net/natives/?_0x9615C2AD)
 --- @param findHandle number (int)
---- @return void
---- @overload fun(findHandle: number): void
+--- @return nil
+--- @overload fun(findHandle: number): nil
 function EndFindPed(findHandle) end
 
     
@@ -2246,8 +2247,8 @@ function IsNuiFocused() end
 --- @hash [0x9864312F](https://docs.fivem.net/natives/?_0x9864312F)
 --- @param weaponHash Hash
 --- @param amplitude number (float)
---- @return void
---- @overload fun(weaponHash: Hash, amplitude: number): void
+--- @return nil
+--- @overload fun(weaponHash: Hash, amplitude: number): nil
 function SetWeaponRecoilShakeAmplitude(weaponHash, amplitude) end
 
     
@@ -2297,8 +2298,8 @@ function GetInteriorPortalEntityArchetype(interiorId, portalIndex, entityIndex) 
 --- @param effectSlot number (int)
 --- @param paramIndex number (int)
 --- @param paramValue number (float)
---- @return void
---- @overload fun(submixId: number, effectSlot: number, paramIndex: number, paramValue: number): void
+--- @return nil
+--- @overload fun(submixId: number, effectSlot: number, paramIndex: number, paramValue: number): nil
 function SetAudioSubmixEffectParamFloat(submixId, effectSlot, paramIndex, paramValue) end
 
     
@@ -2327,8 +2328,8 @@ function GetVehicleDashboardSpeed(vehicle) end
 --- @param interiorId number (int)
 --- @param portalIndex number (int)
 --- @param entityIndex number (int)
---- @return number, number, number
---- @overload fun(interiorId: number, portalIndex: number, entityIndex: number): number, number, number
+--- @return nil, number, number, number
+--- @overload fun(interiorId: number, portalIndex: number, entityIndex: number): nil, number, number, number
 function GetInteriorPortalEntityPosition(interiorId, portalIndex, entityIndex) end
 
     
@@ -2388,8 +2389,8 @@ function GetInteriorPortalEntityFlag(interiorId, portalIndex, entityIndex) end
 --- @param interiorId number (int)
 --- @param portalIndex number (int)
 --- @param entityIndex number (int)
---- @return number, number, number, number
---- @overload fun(interiorId: number, portalIndex: number, entityIndex: number): number, number, number, number
+--- @return nil, number, number, number, number
+--- @overload fun(interiorId: number, portalIndex: number, entityIndex: number): nil, number, number, number, number
 function GetInteriorPortalEntityRotation(interiorId, portalIndex, entityIndex) end
 
     
@@ -2397,8 +2398,8 @@ function GetInteriorPortalEntityRotation(interiorId, portalIndex, entityIndex) e
 ---
 --- @hash [0xA085CB10](https://docs.fivem.net/natives/?_0xA085CB10)
 --- @param duiObject number (long)
---- @return void
---- @overload fun(duiObject: number): void
+--- @return nil
+--- @overload fun(duiObject: number): nil
 function DestroyDui(duiObject) end
 
     
@@ -2466,8 +2467,8 @@ function IsVehicleInteriorLightOn(vehicle) end
 ---
 --- @hash [0xA42A3DBF](https://docs.fivem.net/natives/?_0xA42A3DBF)
 --- @param value number (int)
---- @return void
---- @overload fun(value: number): void
+--- @return nil
+--- @overload fun(value: number): nil
 function SetAimCooldown(value) end
 
     
@@ -2478,8 +2479,8 @@ function SetAimCooldown(value) end
 --- @param origTxn string (char*)
 --- @param newTxd string (char*)
 --- @param newTxn string (char*)
---- @return void
---- @overload fun(origTxd: string, origTxn: string, newTxd: string, newTxn: string): void
+--- @return nil
+--- @overload fun(origTxd: string, origTxn: string, newTxd: string, newTxn: string): nil
 function AddReplaceTexture(origTxd, origTxn, newTxd, newTxn) end
 
     
@@ -2498,8 +2499,8 @@ function IsVehicleWanted(vehicle) end
 --- @param name string (char*)
 --- @param path string (char*)
 --- @param data string (char*)
---- @return void
---- @overload fun(name: string, path: string, data: string): void
+--- @return nil
+--- @overload fun(name: string, path: string, data: string): nil
 function SetSnakeoilForEntry(name, path, data) end
 
     
@@ -2535,8 +2536,8 @@ function GetRopeFlags(rope) end
 --- @hash [0xA896B20A](https://docs.fivem.net/natives/?_0xA896B20A)
 --- @param origTxd string (char*)
 --- @param origTxn string (char*)
---- @return void
---- @overload fun(origTxd: string, origTxn: string): void
+--- @return nil
+--- @overload fun(origTxd: string, origTxn: string): nil
 function RemoveReplaceTexture(origTxd, origTxn) end
 
     
@@ -2544,9 +2545,9 @@ function RemoveReplaceTexture(origTxd, origTxn) end
 ---
 --- @hash [0xA8AE9C2F](https://docs.fivem.net/natives/?_0xA8AE9C2F)
 --- @param callbackType string (char*)
---- @param callback fun
---- @return void
---- @overload fun(callbackType: string, callback: fun): void
+--- @param callback function
+--- @return nil
+--- @overload fun(callbackType: string, callback: function): nil
 function RegisterRawNuiCallback(callbackType, callback) end
 
     
@@ -2555,8 +2556,8 @@ function RegisterRawNuiCallback(callbackType, callback) end
 ---
 --- @hash [0xA9C92CDC](https://docs.fivem.net/natives/?_0xA9C92CDC)
 --- @param state boolean
---- @return void
---- @overload fun(state: boolean): void
+--- @return nil
+--- @overload fun(state: boolean): nil
 function DisableWorldhorizonRendering(state) end
 
     
@@ -2614,8 +2615,8 @@ function GetInteriorPortalRoomFrom(interiorId, portalIndex) end
 --- @hash [0xAAA94D53](https://docs.fivem.net/natives/?_0xAAA94D53)
 --- @param submixId number (int)
 --- @param effectSlot number (int)
---- @return void
---- @overload fun(submixId: number, effectSlot: number): void
+--- @return nil
+--- @overload fun(submixId: number, effectSlot: number): nil
 function SetAudioSubmixEffectRadioFx(submixId, effectSlot) end
 
     
@@ -2639,8 +2640,8 @@ function FindNextPed(findHandle, outEntity) end
 --- @param g number (int)
 --- @param b number (int)
 --- @param a number (int)
---- @return void
---- @overload fun(tex: number, x: number, y: number, r: number, g: number, b: number, a: number): void
+--- @return nil
+--- @overload fun(tex: number, x: number, y: number, r: number, g: number, b: number, a: number): nil
 function SetRuntimeTexturePixel(tex, x, y, r, g, b, a) end
 
     
@@ -2649,8 +2650,8 @@ function SetRuntimeTexturePixel(tex, x, y, r, g, b, a) end
 --- @hash [0xAC6E290D](https://docs.fivem.net/natives/?_0xAC6E290D)
 --- @param submixId number (int)
 --- @param outputSubmixId number (int)
---- @return void
---- @overload fun(submixId: number, outputSubmixId: number): void
+--- @return nil
+--- @overload fun(submixId: number, outputSubmixId: number): nil
 function AddAudioSubmixOutput(submixId, outputSubmixId) end
 
     
@@ -2685,8 +2686,8 @@ function RegisterFontId(fontName) end
 ---
 --- @hash [0xADECF19E](https://docs.fivem.net/natives/?_0xADECF19E)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function LeaveCursorMode() end
 
     
@@ -2706,8 +2707,8 @@ function SelectEntityAtPos(fracX, fracY, hitFlags, precise) end
 ---
 --- @hash [0xB029D2FA](https://docs.fivem.net/natives/?_0xB029D2FA)
 --- @param text string (char*)
---- @return void
---- @overload fun(text: string): void
+--- @return nil
+--- @overload fun(text: string): nil
 function SetDiscordRichPresenceAssetText(text) end
 
     
@@ -2727,8 +2728,8 @@ function CreateRuntimeTextureFromDuiHandle(txd, txn, duiHandle) end
 ---
 --- @hash [0xB1622B17](https://docs.fivem.net/natives/?_0xB1622B17)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function DisableEditorRuntime() end
 
     
@@ -2738,8 +2739,8 @@ function DisableEditorRuntime() end
 --- @param vehicle Vehicle
 --- @param wheelIndex number (int)
 --- @param health number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, wheelIndex: number, health: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, wheelIndex: number, health: number): nil
 function SetVehicleWheelHealth(vehicle, wheelIndex, health) end
 
     
@@ -2752,8 +2753,8 @@ function SetVehicleWheelHealth(vehicle, wheelIndex, health) end
 --- @hash [0xB3439A01](https://docs.fivem.net/natives/?_0xB3439A01)
 --- @param vehicle Vehicle
 --- @param newHeight number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, newHeight: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, newHeight: number): nil
 function SetVehicleSuspensionHeight(vehicle, newHeight) end
 
     
@@ -2764,8 +2765,8 @@ function SetVehicleSuspensionHeight(vehicle, newHeight) end
 --- @param green number (int)
 --- @param blue number (int)
 --- @param alpha number (int)
---- @return void
---- @overload fun(red: number, green: number, blue: number, alpha: number): void
+--- @return nil
+--- @overload fun(red: number, green: number, blue: number, alpha: number): nil
 function SetEntityDrawOutlineColor(red, green, blue, alpha) end
 
     
@@ -2818,8 +2819,8 @@ function MumbleIsConnected() end
 --- @param g number (int)
 --- @param b number (int)
 --- @param a number (int)
---- @return void
---- @overload fun(x1: number, y1: number, x2: number, y2: number, width: number, r: number, g: number, b: number, a: number): void
+--- @return nil
+--- @overload fun(x1: number, y1: number, x2: number, y2: number, width: number, r: number, g: number, b: number, a: number): nil
 function DrawLine_2d(x1, y1, x2, y2, width, r, g, b, a) end
 
     
@@ -2827,8 +2828,8 @@ function DrawLine_2d(x1, y1, x2, y2, width, r, g, b, a) end
 ---
 --- @hash [0xB8B4490C](https://docs.fivem.net/natives/?_0xB8B4490C)
 --- @param type number (int)
---- @return void
---- @overload fun(type: number): void
+--- @return nil
+--- @overload fun(type: number): nil
 function SetMinimapClipType(type) end
 
     
@@ -2836,8 +2837,8 @@ function SetMinimapClipType(type) end
 ---
 --- @hash [0xB9234AFB](https://docs.fivem.net/natives/?_0xB9234AFB)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ShutdownLoadingScreenNui() end
 
     
@@ -2847,8 +2848,8 @@ function ShutdownLoadingScreenNui() end
 --- @param vehicle Vehicle
 --- @param wheelIndex number (int)
 --- @param value number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, wheelIndex: number, value: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, wheelIndex: number, value: number): nil
 function SetVehicleWheelTireColliderSize(vehicle, wheelIndex, value) end
 
     
@@ -2870,8 +2871,8 @@ function GetPedFaceFeature(ped, index) end
 --- @hash [0xBA970511](https://docs.fivem.net/natives/?_0xBA970511)
 --- @param vehicle Vehicle
 --- @param level number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, level: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, level: number): nil
 function SetVehicleFuelLevel(vehicle, level) end
 
     
@@ -2884,8 +2885,8 @@ function SetVehicleFuelLevel(vehicle, level) end
 --- @param vehicle Vehicle
 --- @param wheelIndex number (int)
 --- @param powered boolean
---- @return void
---- @overload fun(vehicle: Vehicle, wheelIndex: number, powered: boolean): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, wheelIndex: number, powered: boolean): nil
 function SetVehicleWheelIsPowered(vehicle, wheelIndex, powered) end
 
     
@@ -2904,8 +2905,8 @@ function SetVehicleWheelIsPowered(vehicle, wheelIndex, powered) end
 --- @param vehicle Vehicle
 --- @param wheelIndex number (int)
 --- @param offset number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, wheelIndex: number, offset: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, wheelIndex: number, offset: number): nil
 function SetVehicleWheelXOffset(vehicle, wheelIndex, offset) end
 
     
@@ -2913,8 +2914,8 @@ function SetVehicleWheelXOffset(vehicle, wheelIndex, offset) end
 ---
 --- @hash [0xBDBA226F](https://docs.fivem.net/natives/?_0xBDBA226F)
 ---
---- @return number, number
---- @overload fun(): number, number
+--- @return nil, number, number
+--- @overload fun(): nil, number, number
 function GetNuiCursorPosition() end
 
     
@@ -2922,8 +2923,8 @@ function GetNuiCursorPosition() end
 ---
 --- @hash [0xBF847807](https://docs.fivem.net/natives/?_0xBF847807)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function MumbleClearVoiceChannel() end
 
     
@@ -2932,8 +2933,8 @@ function MumbleClearVoiceChannel() end
 --- @hash [0xC108EE6F](https://docs.fivem.net/natives/?_0xC108EE6F)
 --- @param vehicle Vehicle
 --- @param time number (int)
---- @return void
---- @overload fun(vehicle: Vehicle, time: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, time: number): nil
 function SetVehicleAlarmTimeLeft(vehicle, time) end
 
     
@@ -2944,8 +2945,8 @@ function SetVehicleAlarmTimeLeft(vehicle, time) end
 --- @param class_ string (char*)
 --- @param fieldName string (char*)
 --- @param value number (int)
---- @return void
---- @overload fun(vehicle: Vehicle, class_: string, fieldName: string, value: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, class_: string, fieldName: string, value: number): nil
 function SetVehicleHandlingInt(vehicle, class_, fieldName, value) end
 
     
@@ -2954,8 +2955,8 @@ function SetVehicleHandlingInt(vehicle, class_, fieldName, value) end
 ---
 --- @hash [0xC383871D](https://docs.fivem.net/natives/?_0xC383871D)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function EnableEditorRuntime() end
 
     
@@ -2987,9 +2988,9 @@ function GetPedHeadOverlayData(ped, index) end
 ---
 --- @hash [0xC59B980C](https://docs.fivem.net/natives/?_0xC59B980C)
 --- @param callbackType string (char*)
---- @param callback fun
---- @return void
---- @overload fun(callbackType: string, callback: fun): void
+--- @param callback function
+--- @return nil
+--- @overload fun(callbackType: string, callback: function): nil
 function RegisterNuiCallback(callbackType, callback) end
 
     
@@ -3000,8 +3001,8 @@ function RegisterNuiCallback(callbackType, callback) end
 --- @param vehicle Vehicle
 --- @param wheelIndex number (int)
 --- @param power number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, wheelIndex: number, power: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, wheelIndex: number, power: number): nil
 function SetVehicleWheelPower(vehicle, wheelIndex, power) end
 
     
@@ -3046,8 +3047,8 @@ function GetWeaponComponentAccuracyModifier(componentHash) end
 --- @param vehicle Vehicle
 --- @param wheelIndex number (int)
 --- @param value number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, wheelIndex: number, value: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, wheelIndex: number, value: number): nil
 function SetVehicleWheelYRotation(vehicle, wheelIndex, value) end
 
     
@@ -3058,8 +3059,8 @@ function SetVehicleWheelYRotation(vehicle, wheelIndex, value) end
 --- @param vehicle Vehicle
 --- @param wheelIndex number (int)
 --- @param value number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, wheelIndex: number, value: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, wheelIndex: number, value: number): nil
 --- @deprecated
 function SetVehicleWheelXrot(vehicle, wheelIndex, value) end
 
@@ -3104,8 +3105,8 @@ function GetInteriorPortalFlag(interiorId, portalIndex) end
 ---
 --- @hash [0xC79F44BF](https://docs.fivem.net/natives/?_0xC79F44BF)
 --- @param channel number (int)
---- @return void
---- @overload fun(channel: number): void
+--- @return nil
+--- @overload fun(channel: number): nil
 function MumbleAddVoiceChannelListen(channel) end
 
     
@@ -3129,8 +3130,8 @@ function MumbleAddVoiceChannelListen(channel) end
 --- @hash [0xC81D0659](https://docs.fivem.net/natives/?_0xC81D0659)
 --- @param screenX number (float)
 --- @param screenY number (float)
---- @return Vector3, Vector3
---- @overload fun(screenX: number, screenY: number): Vector3, Vector3
+--- @return nil, Vector3, Vector3
+--- @overload fun(screenX: number, screenY: number): nil, Vector3, Vector3
 function GetWorldCoordFromScreenCoord(screenX, screenY) end
 
     
@@ -3158,8 +3159,8 @@ function GetRuntimeTexturePitch(tex) end
 --- @param index number (int)
 --- @param label string (char*)
 --- @param url string (char*)
---- @return void
---- @overload fun(index: number, label: string, url: string): void
+--- @return nil
+--- @overload fun(index: number, label: string, url: string): nil
 function SetDiscordRichPresenceAction(index, label, url) end
 
     
@@ -3177,8 +3178,8 @@ function GetVehicleWheelXOffset(vehicle, wheelIndex) end
 ---
 --- @hash [0xCD03CDA9](https://docs.fivem.net/natives/?_0xCD03CDA9)
 --- @param callbackType string (char*)
---- @return void
---- @overload fun(callbackType: string): void
+--- @return nil
+--- @overload fun(callbackType: string): nil
 function RegisterNuiCallbackType(callbackType) end
 
     
@@ -3187,8 +3188,8 @@ function RegisterNuiCallbackType(callbackType) end
 --- @hash [0xCD380DA9](https://docs.fivem.net/natives/?_0xCD380DA9)
 --- @param duiObject number (long)
 --- @param jsonString string (char*)
---- @return void
---- @overload fun(duiObject: number, jsonString: string): void
+--- @return nil
+--- @overload fun(duiObject: number, jsonString: string): nil
 function SendDuiMessage(duiObject, jsonString) end
 
     
@@ -3197,8 +3198,8 @@ function SendDuiMessage(duiObject, jsonString) end
 --- @hash [0xCE8E25B4](https://docs.fivem.net/natives/?_0xCE8E25B4)
 --- @param serverId number (int)
 --- @param volume number (float)
---- @return void
---- @overload fun(serverId: number, volume: number): void
+--- @return nil
+--- @overload fun(serverId: number, volume: number): nil
 function MumbleSetVolumeOverrideByServerId(serverId, volume) end
 
     
@@ -3210,8 +3211,8 @@ function MumbleSetVolumeOverrideByServerId(serverId, volume) end
 --- @param resourceName string (char*)
 --- @param fileName string (char*)
 --- @param cacheString string (char*)
---- @return void
---- @overload fun(resourceName: string, fileName: string, cacheString: string): void
+--- @return nil
+--- @overload fun(resourceName: string, fileName: string, cacheString: string): nil
 function RegisterStreamingFileFromCache(resourceName, fileName, cacheString) end
 
     
@@ -3288,8 +3289,8 @@ function GetVehicleCurrentAcceleration(vehicle) end
 --- @hash [0xD1D31681](https://docs.fivem.net/natives/?_0xD1D31681)
 --- @param name string (char*)
 --- @param value number (float)
---- @return void
---- @overload fun(name: string, value: number): void
+--- @return nil
+--- @overload fun(name: string, value: number): nil
 function SetVisualSettingFloat(name, value) end
 
     
@@ -3321,8 +3322,8 @@ function GetMapdataFromHashKey(mapdataHandle) end
 --- @param vehicle Vehicle
 --- @param wheelIndex number (int)
 --- @param flags number (int)
---- @return void
---- @overload fun(vehicle: Vehicle, wheelIndex: number, flags: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, wheelIndex: number, flags: number): nil
 function SetVehicleWheelFlags(vehicle, wheelIndex, flags) end
 
     
@@ -3349,8 +3350,8 @@ function ExperimentalLoadCloneCreate(data, objectId, tree) end
 --- OverridePopGroups(nil
 --- @hash [0xD3BC438F](https://docs.fivem.net/natives/?_0xD3BC438F)
 --- @param path string (char*)
---- @return void
---- @overload fun(path: string): void
+--- @return nil
+--- @overload fun(path: string): nil
 function OverridePopGroups(path) end
 
     
@@ -3358,8 +3359,8 @@ function OverridePopGroups(path) end
 ---
 --- @hash [0xD4D1BA63](https://docs.fivem.net/natives/?_0xD4D1BA63)
 --- @param forceOpen boolean
---- @return void
---- @overload fun(forceOpen: boolean): void
+--- @return nil
+--- @overload fun(forceOpen: boolean): nil
 function SetTrainsForceDoorsOpen(forceOpen) end
 
     
@@ -3367,8 +3368,8 @@ function SetTrainsForceDoorsOpen(forceOpen) end
 ---
 --- @hash [0xD61676B3](https://docs.fivem.net/natives/?_0xD61676B3)
 --- @param distance number (float)
---- @return void
---- @overload fun(distance: number): void
+--- @return nil
+--- @overload fun(distance: number): nil
 function SetMpGamerTagsVisibleDistance(distance) end
 
     
@@ -3420,8 +3421,8 @@ function GetAllVehicleModels() end
 --- @param description string (char*)
 --- @param defaultMapper string (char*)
 --- @param defaultParameter string (char*)
---- @return void
---- @overload fun(commandString: string, description: string, defaultMapper: string, defaultParameter: string): void
+--- @return nil
+--- @overload fun(commandString: string, description: string, defaultMapper: string, defaultParameter: string): nil
 function RegisterKeyMapping(commandString, description, defaultMapper, defaultParameter) end
 
     
@@ -3429,8 +3430,8 @@ function RegisterKeyMapping(commandString, description, defaultMapper, defaultPa
 ---
 --- @hash [0xD932A3F3](https://docs.fivem.net/natives/?_0xD932A3F3)
 --- @param state boolean
---- @return void
---- @overload fun(state: boolean): void
+--- @return nil
+--- @overload fun(state: boolean): nil
 function MumbleSetActive(state) end
 
     
@@ -3449,8 +3450,8 @@ function GetWeaponDamageModifier(weaponHash) end
 --- @param duiObject number (long)
 --- @param x number (int)
 --- @param y number (int)
---- @return void
---- @overload fun(duiObject: number, x: number, y: number): void
+--- @return nil
+--- @overload fun(duiObject: number, x: number, y: number): nil
 function SendDuiMouseMove(duiObject, x, y) end
 
     
@@ -3476,8 +3477,8 @@ function GetVehicleNextGear(vehicle) end
 ---
 --- @hash [0xDEDA4E50](https://docs.fivem.net/natives/?_0xDEDA4E50)
 --- @param findHandle number (int)
---- @return void
---- @overload fun(findHandle: number): void
+--- @return nil
+--- @overload fun(findHandle: number): nil
 function EndFindObject(findHandle) end
 
     
@@ -3487,8 +3488,8 @@ function EndFindObject(findHandle) end
 ---
 --- @hash [0xDF62CFE2](https://docs.fivem.net/natives/?_0xDF62CFE2)
 --- @param vehicle Vehicle
---- @return void
---- @overload fun(vehicle: Vehicle): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle): nil
 function ResetVehiclePedsCanStandOnTopFlag(vehicle) end
 
     
@@ -3577,8 +3578,8 @@ function GetPlayerStamina(playerId) end
 ---
 --- @hash [0xE62FC73](https://docs.fivem.net/natives/?_0xE62FC73)
 --- @param shouldCreate boolean
---- @return void
---- @overload fun(shouldCreate: boolean): void
+--- @return nil
+--- @overload fun(shouldCreate: boolean): nil
 function SetRopesCreateNetworkWorldState(shouldCreate) end
 
     
@@ -3586,8 +3587,8 @@ function SetRopesCreateNetworkWorldState(shouldCreate) end
 ---
 --- @hash [0xE6E16170](https://docs.fivem.net/natives/?_0xE6E16170)
 --- @param enabled boolean
---- @return void
---- @overload fun(enabled: boolean): void
+--- @return nil
+--- @overload fun(enabled: boolean): nil
 function ForceSnowPass(enabled) end
 
     
@@ -3596,8 +3597,8 @@ function ForceSnowPass(enabled) end
 --- @hash [0xE6EB2CD8](https://docs.fivem.net/natives/?_0xE6EB2CD8)
 --- @param address string (char*)
 --- @param port number (int)
---- @return void
---- @overload fun(address: string, port: number): void
+--- @return nil
+--- @overload fun(address: string, port: number): nil
 function MumbleSetServerAddress(address, port) end
 
     
@@ -3662,8 +3663,8 @@ function GetVehicleCurrentRpm(vehicle) end
 --- @param vehicle Vehicle
 --- @param wheelIndex number (int)
 --- @param pressure number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, wheelIndex: number, pressure: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, wheelIndex: number, pressure: number): nil
 function SetVehicleWheelBrakePressure(vehicle, wheelIndex, pressure) end
 
     
@@ -3728,8 +3729,8 @@ function GetVehicleWheelRotationSpeed(vehicle, wheelIndex) end
 --- @hash [0xEAB8DB65](https://docs.fivem.net/natives/?_0xEAB8DB65)
 --- @param vehicle Vehicle
 --- @param state number (int)
---- @return void
---- @overload fun(vehicle: Vehicle, state: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, state: number): nil
 function SetVehicleWheelieState(vehicle, state) end
 
     
@@ -3775,8 +3776,8 @@ function DrawGizmo(matrixPtr, id) end
 --- @hash [0xEB46596F](https://docs.fivem.net/natives/?_0xEB46596F)
 --- @param vehicle Vehicle
 --- @param scale number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, scale: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, scale: number): nil
 function SetVehicleSteeringScale(vehicle, scale) end
 
     
@@ -3792,8 +3793,8 @@ function SetVehicleSteeringScale(vehicle, scale) end
 --- @param g number (int)
 --- @param b number (int)
 --- @param a number (int)
---- @return void
---- @overload fun(x: number, y: number, width: number, height: number, rotation: number, r: number, g: number, b: number, a: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, width: number, height: number, rotation: number, r: number, g: number, b: number, a: number): nil
 function DrawRectRotated(x, y, width, height, rotation, r, g, b, a) end
 
     
@@ -3878,8 +3879,8 @@ function GetRopeTimeMultiplier(rope) end
 --- @param vehicle Vehicle
 --- @param wheelIndex number (int)
 --- @param value number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, wheelIndex: number, value: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, wheelIndex: number, value: number): nil
 function SetVehicleWheelRimColliderSize(vehicle, wheelIndex, value) end
 
     
@@ -3892,8 +3893,8 @@ function SetVehicleWheelRimColliderSize(vehicle, wheelIndex, value) end
 --- @hash [0xF44BFB95](https://docs.fivem.net/natives/?_0xF44BFB95)
 --- @param registerAs string (char*)
 --- @param url string (char*)
---- @return void
---- @overload fun(registerAs: string, url: string): void
+--- @return nil
+--- @overload fun(registerAs: string, url: string): nil
 function RegisterStreamingFileFromUrl(registerAs, url) end
 
     
@@ -3919,8 +3920,8 @@ function GetPedDensityMultiplier() end
 ---
 --- @hash [0xF61D04C4](https://docs.fivem.net/natives/?_0xF61D04C4)
 --- @param assetName string (char*)
---- @return void
---- @overload fun(assetName: string): void
+--- @return nil
+--- @overload fun(assetName: string): nil
 function SetDiscordRichPresenceAssetSmall(assetName) end
 
     
@@ -3963,8 +3964,8 @@ function HasMinimapOverlayLoaded(id) end
 --- @hash [0xF761D9F3](https://docs.fivem.net/natives/?_0xF761D9F3)
 --- @param duiObject number (long)
 --- @param url string (char*)
---- @return void
---- @overload fun(duiObject: number, url: string): void
+--- @return nil
+--- @overload fun(duiObject: number, url: string): nil
 function SetDuiUrl(duiObject, url) end
 
     
@@ -3983,8 +3984,8 @@ function SetDuiUrl(duiObject, url) end
 --- @param interiorId number (int)
 --- @param portalIndex number (int)
 --- @param cornerIndex number (int)
---- @return number, number, number
---- @overload fun(interiorId: number, portalIndex: number, cornerIndex: number): number, number, number
+--- @return nil, number, number, number
+--- @overload fun(interiorId: number, portalIndex: number, cornerIndex: number): nil, number, number, number
 function GetInteriorPortalCornerPosition(interiorId, portalIndex, cornerIndex) end
 
     
@@ -4037,8 +4038,8 @@ function GetWeaponComponentReticuleHash(componentHash) end
 --- @hash [0xF9E795DD](https://docs.fivem.net/natives/?_0xF9E795DD)
 --- @param interiorId number (int)
 --- @param roomIndex number (int)
---- @return number, number, number, number, number, number
---- @overload fun(interiorId: number, roomIndex: number): number, number, number, number, number, number
+--- @return nil, number, number, number, number, number, number
+--- @overload fun(interiorId: number, roomIndex: number): nil, number, number, number, number, number, number
 function GetInteriorRoomExtents(interiorId, roomIndex) end
 
     
@@ -4085,8 +4086,8 @@ function FindFirstPed(outEntity) end
 --- @param atX number (float)
 --- @param atY number (float)
 --- @param atZ number (float)
---- @return void
---- @overload fun(entity: Entity, forwardX: number, forwardY: number, forwardZ: number, rightX: number, rightY: number, rightZ: number, upX: number, upY: number, upZ: number, atX: number, atY: number, atZ: number): void
+--- @return nil
+--- @overload fun(entity: Entity, forwardX: number, forwardY: number, forwardZ: number, rightX: number, rightY: number, rightZ: number, upX: number, upY: number, upZ: number, atX: number, atY: number, atZ: number): nil
 function SetEntityMatrix(entity, forwardX, forwardY, forwardZ, rightX, rightY, rightZ, upX, upY, upZ, atX, atY, atZ) end
 
     
@@ -4108,8 +4109,8 @@ function GetVehicleHandlingVector(vehicle, class_, fieldName) end
 --- @hash [0xFC02CAF6](https://docs.fivem.net/natives/?_0xFC02CAF6)
 --- @param player Player
 --- @param state boolean
---- @return void
---- @overload fun(player: Player, state: boolean): void
+--- @return nil
+--- @overload fun(player: Player, state: boolean): nil
 function SetPlayerTalkingOverride(player, state) end
 
     
@@ -4120,8 +4121,8 @@ function SetPlayerTalkingOverride(player, state) end
 --- @param mapdata number (int)
 --- @param entity number (int)
 --- @param entityDef table (object)
---- @return void
---- @overload fun(mapdata: number, entity: number, entityDef: table): void
+--- @return nil
+--- @overload fun(mapdata: number, entity: number, entityDef: table): nil
 function UpdateMapdataEntity(mapdata, entity, entityDef) end
 
     
@@ -4148,8 +4149,8 @@ function GetPedModelPersonality(modelHash) end
 --- @hash [0xFE3A3054](https://docs.fivem.net/natives/?_0xFE3A3054)
 --- @param serverId number (int)
 --- @param submixId number (int)
---- @return void
---- @overload fun(serverId: number, submixId: number): void
+--- @return nil
+--- @overload fun(serverId: number, submixId: number): nil
 function MumbleSetSubmixForServerId(serverId, submixId) end
 
     
@@ -4161,8 +4162,8 @@ function MumbleSetSubmixForServerId(serverId, submixId) end
 --- @param class_ string (char*)
 --- @param fieldName string (char*)
 --- @param value any
---- @return void
---- @overload fun(vehicle: string, class_: string, fieldName: string, value: any): void
+--- @return nil
+--- @overload fun(vehicle: string, class_: string, fieldName: string, value: any): nil
 function SetHandlingField(vehicle, class_, fieldName, value) end
 
     
@@ -4192,8 +4193,8 @@ function GetParkedVehicleDensityMultiplier() end
 --- @hash [0xFFCCC2EA](https://docs.fivem.net/natives/?_0xFFCCC2EA)
 --- @param vehicle Vehicle
 --- @param angle number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, angle: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, angle: number): nil
 function SetVehicleSteeringAngle(vehicle, angle) end
 
     

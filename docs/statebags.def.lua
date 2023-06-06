@@ -1,18 +1,20 @@
+--- @meta
+
 
 GlobalState = --[[---@type StateBag]] {}
 
---- @shape StateBagSetter
---- @overload fun(obj: self, key: string, value: any):void
---- @overload fun(obj: self, key: string, value: any, replicated: boolean):void
+--- @class StateBagSetter
+--- @overload fun(obj: self, key: string, value: any):nil
+--- @overload fun(obj: self, key: string, value: any, replicated: boolean):nil
 
---- @shape StateBag
+--- @class StateBag
 --- @field set StateBagSetter
 --- @field [string] any
 
---- @shape StateBagEntity: Entity
+--- @class StateBagEntity: Entity
 --- @field state StateBag
 
---- @shape StateBagPlayer: Player
+--- @class StateBagPlayer: Player
 --- @field Ped Ped
 --- @field Dead boolean
 --- @field Pos Vector3

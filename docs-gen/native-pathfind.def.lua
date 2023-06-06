@@ -1,3 +1,4 @@
+--- @meta
 
 --- See [`IS_POINT_IN_ANGLED_AREA`](https://docs.fivem.net/natives/?_0x2A70BAE8883E4C81) for the definition of an angled area.
 --- 
@@ -15,8 +16,8 @@
 --- @param y2 number (float)
 --- @param z2 number (float)
 --- @param width number (float)
---- @return void
---- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, width: number): void
+--- @return nil
+--- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, width: number): nil
 function SetRoadsBackToOriginalInAngledArea(x1, y1, z1, x2, y2, z2, width) end
 
     
@@ -99,8 +100,8 @@ function N_0x07fb139b592fa687(x1, y1, x2, y2) end
 ---
 --- @hash [0x0B919E1FB47CC4E0](https://docs.fivem.net/natives/?_0x0B919E1FB47CC4E0)
 --- @param multiplier number (float)
---- @return void
---- @overload fun(multiplier: number): void
+--- @return nil
+--- @overload fun(multiplier: number): nil
 function SetAmbientPedRangeMultiplierThisFrame(multiplier) end
 
     
@@ -109,8 +110,8 @@ function SetAmbientPedRangeMultiplierThisFrame(multiplier) end
 ---
 --- @hash [0x0B919E1FB47CC4E0](https://docs.fivem.net/natives/?_0x0B919E1FB47CC4E0)
 --- @param multiplier number (float)
---- @return void
---- @overload fun(multiplier: number): void
+--- @return nil
+--- @overload fun(multiplier: number): nil
 --- @deprecated
 function N_0x0b919e1fb47cc4e0(multiplier) end
 
@@ -147,8 +148,8 @@ function N_0x0eaeb0db4b132399(p0) end
 --- @param p6 number (float)
 --- @param p7 number (float)
 --- @param p8 any
---- @return void
---- @overload fun(p0: any, p1: number, p2: number, p3: number, p4: number, p5: number, p6: number, p7: number, p8: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: number, p2: number, p3: number, p4: number, p5: number, p6: number, p7: number, p8: any): nil
 function UpdateNavmeshBlockingObject(p0, p1, p2, p3, p4, p5, p6, p7, p8) end
 
     
@@ -226,8 +227,8 @@ function N_0x16f46fb18c8009e4(x, y, z, p3, outPosition) end
 --- @param unknown1 boolean
 --- @param unknown2 boolean
 --- @param unknown3 boolean
---- @return void
---- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, width: number, unknown1: boolean, unknown2: boolean, unknown3: boolean): void
+--- @return nil
+--- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, width: number, unknown1: boolean, unknown2: boolean, unknown3: boolean): nil
 function SetRoadsInAngledArea(x1, y1, z1, x2, y2, z2, width, unknown1, unknown2, unknown3) end
 
     
@@ -257,8 +258,8 @@ function IsVehicleNodeIdValid(vehicleNodeId) end
 --- @param p3 number (float)
 --- @param p4 number (float)
 --- @param p5 number (float)
---- @return void
---- @overload fun(p0: number, p1: number, p2: number, p3: number, p4: number, p5: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: number, p2: number, p3: number, p4: number, p5: number): nil
 function SetRoadsBackToOriginal(p0, p1, p2, p3, p4, p5) end
 
     
@@ -268,8 +269,8 @@ function SetRoadsBackToOriginal(p0, p1, p2, p3, p4, p5) end
 ---
 --- @hash [0x1FC289A0C3FF470F](https://docs.fivem.net/natives/?_0x1FC289A0C3FF470F)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetIgnoreSecondaryRouteNodes(toggle) end
 
     
@@ -280,8 +281,8 @@ function SetIgnoreSecondaryRouteNodes(toggle) end
 ---
 --- @hash [0x1FC289A0C3FF470F](https://docs.fivem.net/natives/?_0x1FC289A0C3FF470F)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0x1fc289a0c3ff470f(toggle) end
 
@@ -292,8 +293,8 @@ function N_0x1fc289a0c3ff470f(toggle) end
 ---
 --- @hash [0x228E5C6AD4D74BFD](https://docs.fivem.net/natives/?_0x228E5C6AD4D74BFD)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetAllPathsCacheBoundingstruct(toggle) end
 
     
@@ -304,8 +305,8 @@ function SetAllPathsCacheBoundingstruct(toggle) end
 ---
 --- @hash [0x228E5C6AD4D74BFD](https://docs.fivem.net/natives/?_0x228E5C6AD4D74BFD)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0x228e5c6ad4d74bfd(toggle) end
 
@@ -361,8 +362,8 @@ function GetClosestVehicleNode(x, y, z, outPosition, nodeType, p5, p6) end
 ---
 --- @hash [0x2801D0012266DF07](https://docs.fivem.net/natives/?_0x2801D0012266DF07)
 --- @param index number (int)
---- @return void
---- @overload fun(index: number): void
+--- @return nil
+--- @overload fun(index: number): nil
 function ClearGpsDisabledZoneAtIndex(index) end
 
     
@@ -371,8 +372,8 @@ function ClearGpsDisabledZoneAtIndex(index) end
 ---
 --- @hash [0x2801D0012266DF07](https://docs.fivem.net/natives/?_0x2801D0012266DF07)
 --- @param index number (int)
---- @return void
---- @overload fun(index: number): void
+--- @return nil
+--- @overload fun(index: number): nil
 --- @deprecated
 function N_0x2801d0012266df07(index) end
 
@@ -382,8 +383,8 @@ function N_0x2801d0012266df07(index) end
 ---
 --- @hash [0x2801D0012266DF07](https://docs.fivem.net/natives/?_0x2801D0012266DF07)
 --- @param index number (int)
---- @return void
---- @overload fun(index: number): void
+--- @return nil
+--- @overload fun(index: number): nil
 --- @deprecated
 function ClearGpsDisabledZoneAtIndex(index) end
 
@@ -442,8 +443,8 @@ function GetClosestMajorVehicleNode(x, y, z, outPosition, unknown1, unknown2) en
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return Hash, Hash
---- @overload fun(x: number, y: number, z: number): Hash, Hash
+--- @return nil, Hash, Hash
+--- @overload fun(x: number, y: number, z: number): nil, Hash, Hash
 function GetStreetNameAtCoord(x, y, z) end
 
     
@@ -485,8 +486,8 @@ function N_0x336511a34f2e5185(x, y) end
 --- @param y2 number (float)
 --- @param z2 number (float)
 --- @param unknown boolean
---- @return void
---- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, unknown: boolean): void
+--- @return nil
+--- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, unknown: boolean): nil
 function SetPedPathsInArea(x1, y1, z1, x2, y2, z2, unknown) end
 
     
@@ -526,8 +527,8 @@ function N_0x3599d741c9ac6310(x1, y1, x2, y2) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param radius number (float)
---- @return void
---- @overload fun(x: number, y: number, radius: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, radius: number): nil
 function AddNavmeshRequiredRegion(x, y, radius) end
 
     
@@ -557,8 +558,8 @@ function GetNthClosestVehicleNodeFavourDirection(x, y, z, desiredX, desiredY, de
 ---
 --- @hash [0x46399A7895957C0E](https://docs.fivem.net/natives/?_0x46399A7895957C0E)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function RemoveNavmeshBlockingObject(p0) end
 
     
@@ -572,8 +573,8 @@ function RemoveNavmeshBlockingObject(p0) end
 --- @param p4 any
 --- @param p5 any
 --- @param p6 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any): nil
 function DisableNavmeshInArea(p0, p1, p2, p3, p4, p5, p6) end
 
     
@@ -641,8 +642,8 @@ function GetNthClosestVehicleNodeIdWithHeading(x, y, z, nthClosest, p6, p7, p8) 
 --- @hash [0x703123E5E7D429C2](https://docs.fivem.net/natives/?_0x703123E5E7D429C2)
 --- @param nodeId number (int)
 --- @param outPosition Vector3 (Vector3*)
---- @return void
---- @overload fun(nodeId: number): Vector3
+--- @return nil
+--- @overload fun(nodeId: number): nil, Vector3
 function GetVehicleNodePosition(nodeId, outPosition) end
 
     
@@ -674,8 +675,8 @@ function N_0x705a844002b39dc0() end
 ---
 --- @hash [0x72751156E7678833](https://docs.fivem.net/natives/?_0x72751156E7678833)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetIgnoreNoGpsFlag(toggle) end
 
     
@@ -770,8 +771,8 @@ function N_0x8abe8608576d9ce3(x1, y1, x2, y2) end
 ---
 --- @hash [0x916F0A3CDEC3445E](https://docs.fivem.net/natives/?_0x916F0A3CDEC3445E)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function RemoveNavmeshRequiredRegions() end
 
     
@@ -886,8 +887,8 @@ function GetSupportsGpsRouteFlag(nodeID) end
 --- @param p4 any
 --- @param p5 any
 --- @param p6 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any): nil
 function N_0xaa76052dda9bfc3e(p0, p1, p2, p3, p4, p5, p6) end
 
     
@@ -970,8 +971,8 @@ function N_0xbbb45c3cf5c8aa85() end
 --- @param z2 number (float)
 --- @param nodeEnabled boolean
 --- @param unknown2 boolean
---- @return void
---- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, nodeEnabled: boolean, unknown2: boolean): void
+--- @return nil
+--- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, nodeEnabled: boolean, unknown2: boolean): nil
 function SetRoadsInArea(x1, y1, z1, x2, y2, z2, nodeEnabled, unknown2) end
 
     
@@ -993,8 +994,8 @@ function SetRoadsInArea(x1, y1, z1, x2, y2, z2, nodeEnabled, unknown2) end
 --- @param y2 number (float)
 --- @param z2 number (float)
 --- @param index number (int)
---- @return void
---- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, index: number): void
+--- @return nil
+--- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, index: number): nil
 function SetGpsDisabledZoneAtIndex(x1, y1, z1, x2, y2, z2, index) end
 
     
@@ -1017,8 +1018,8 @@ function SetGpsDisabledZoneAtIndex(x1, y1, z1, x2, y2, z2, index) end
 --- @param y2 number (float)
 --- @param z2 number (float)
 --- @param index number (int)
---- @return void
---- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, index: number): void
+--- @return nil
+--- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, index: number): nil
 --- @deprecated
 function N_0xd0bc1c6fb18ee154(x1, y1, z1, x2, y2, z2, index) end
 
@@ -1060,8 +1061,8 @@ function N_0xd3a6a0ef48823a8c(index) end
 --- @param x2 number (float)
 --- @param y2 number (float)
 --- @param z2 number (float)
---- @return void
---- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number): void
+--- @return nil
+--- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number): nil
 function SetGpsDisabledZone(x1, y1, z1, x2, y2, z2) end
 
     
@@ -1076,8 +1077,8 @@ function SetGpsDisabledZone(x1, y1, z1, x2, y2, z2) end
 --- @param p3 any
 --- @param p4 any
 --- @param p5 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any): nil
 function SetPedPathsBackToOriginal(p0, p1, p2, p3, p4, p5) end
 
     
@@ -1131,8 +1132,8 @@ function N_0xf3162836c28f9da5(result, p1, p2, p3) end
 ---
 --- @hash [0xF74B1FFA4A15FBEA](https://docs.fivem.net/natives/?_0xF74B1FFA4A15FBEA)
 --- @param type number (int)
---- @return void
---- @overload fun(type: number): void
+--- @return nil
+--- @overload fun(type: number): nil
 function SetAiGlobalPathNodesType(type) end
 
     

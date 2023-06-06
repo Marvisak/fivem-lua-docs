@@ -1,3 +1,4 @@
+--- @meta
 
 --- IsPedUsingActionMode
 ---
@@ -17,8 +18,8 @@ function IsPedUsingActionMode(ped) end
 ---
 --- @hash [0x013E5CFC38CD5387](https://docs.fivem.net/natives/?_0x013E5CFC38CD5387)
 --- @param makeupColorIndex number (int)
---- @return number, number, number
---- @overload fun(makeupColorIndex: number): number, number, number
+--- @return nil, number, number, number
+--- @overload fun(makeupColorIndex: number): nil, number, number, number
 function GetPedMakeupRgbColor(makeupColorIndex) end
 
     
@@ -32,8 +33,8 @@ function GetPedMakeupRgbColor(makeupColorIndex) end
 ---
 --- @hash [0x013E5CFC38CD5387](https://docs.fivem.net/natives/?_0x013E5CFC38CD5387)
 --- @param makeupColorIndex number (int)
---- @return number, number, number
---- @overload fun(makeupColorIndex: number): number, number, number
+--- @return nil, number, number, number
+--- @overload fun(makeupColorIndex: number): nil, number, number, number
 --- @deprecated
 function N_0x013e5cfc38cd5387(makeupColorIndex) end
 
@@ -48,8 +49,8 @@ function N_0x013e5cfc38cd5387(makeupColorIndex) end
 ---
 --- @hash [0x013E5CFC38CD5387](https://docs.fivem.net/natives/?_0x013E5CFC38CD5387)
 --- @param makeupColorIndex number (int)
---- @return number, number, number
---- @overload fun(makeupColorIndex: number): number, number, number
+--- @return nil, number, number, number
+--- @overload fun(makeupColorIndex: number): nil, number, number, number
 --- @deprecated
 function GetMakeupRgbColor(makeupColorIndex) end
 
@@ -59,8 +60,8 @@ function GetMakeupRgbColor(makeupColorIndex) end
 --- @hash [0x01A898D26E2333DD](https://docs.fivem.net/natives/?_0x01A898D26E2333DD)
 --- @param ped Ped
 --- @param value number (float)
---- @return void
---- @overload fun(ped: Ped, value: number): void
+--- @return nil
+--- @overload fun(ped: Ped, value: number): nil
 function SetPedMinMoveBlendRatio(ped, value) end
 
     
@@ -68,8 +69,8 @@ function SetPedMinMoveBlendRatio(ped, value) end
 ---
 --- @hash [0x01F6594B923B9251](https://docs.fivem.net/natives/?_0x01F6594B923B9251)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function SetPedRagdollForceFall(ped) end
 
     
@@ -87,8 +88,8 @@ function IsPedOnFoot(ped) end
 --- @hash [0x02A0C9720B854BFA](https://docs.fivem.net/natives/?_0x02A0C9720B854BFA)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedAsEnemy(ped, toggle) end
 
     
@@ -99,8 +100,8 @@ function SetPedAsEnemy(ped, toggle) end
 --- @hash [0x030983CA930B692D](https://docs.fivem.net/natives/?_0x030983CA930B692D)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedDucking(ped, toggle) end
 
     
@@ -173,8 +174,8 @@ function N_0x06087579e7aa85a9(p0, p1, p2, p3, p4, p5) end
 --- @hash [0x061CB768363D6424](https://docs.fivem.net/natives/?_0x061CB768363D6424)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function N_0x061cb768363d6424(ped, toggle) end
 
     
@@ -185,8 +186,8 @@ function N_0x061cb768363d6424(ped, toggle) end
 --- @hash [0x0703B9079823DA4A](https://docs.fivem.net/natives/?_0x0703B9079823DA4A)
 --- @param ped Ped
 --- @param responseType number (int)
---- @return void
---- @overload fun(ped: Ped, responseType: number): void
+--- @return nil
+--- @overload fun(ped: Ped, responseType: number): nil
 function SetPedTargetLossResponse(ped, responseType) end
 
     
@@ -216,8 +217,8 @@ function IsAnyPedNearPoint(x, y, z, radius) end
 --- @hash [0x085BF80FA50A39D1](https://docs.fivem.net/natives/?_0x085BF80FA50A39D1)
 --- @param ped Ped
 --- @param value number (float)
---- @return void
---- @overload fun(ped: Ped, value: number): void
+--- @return nil
+--- @overload fun(ped: Ped, value: number): nil
 function SetPedMoveRateOverride(ped, value) end
 
     
@@ -229,8 +230,8 @@ function SetPedMoveRateOverride(ped, value) end
 --- @hash [0x0943E5B8E078E76E](https://docs.fivem.net/natives/?_0x0943E5B8E078E76E)
 --- @param ped Ped
 --- @param propId number (int)
---- @return void
---- @overload fun(ped: Ped, propId: number): void
+--- @return nil
+--- @overload fun(ped: Ped, propId: number): nil
 function ClearPedProp(ped, propId) end
 
     
@@ -263,8 +264,8 @@ function N_0x09e7eca981d9b210(colorID) end
 --- @hash [0x0A986918B102B448](https://docs.fivem.net/natives/?_0x0A986918B102B448)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedMotionBlur(ped, toggle) end
 
     
@@ -273,8 +274,8 @@ function SetPedMotionBlur(ped, toggle) end
 --- @hash [0x0B3E35AC043707D9](https://docs.fivem.net/natives/?_0x0B3E35AC043707D9)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x0b3e35ac043707d9(p0, p1) end
 
     
@@ -292,8 +293,8 @@ function IsPedInAnyPoliceVehicle(ped) end
 --- @hash [0x0BDDB8D9EC6BCF3C](https://docs.fivem.net/natives/?_0x0BDDB8D9EC6BCF3C)
 --- @param ped Ped
 --- @param index number (int)
---- @return void
---- @overload fun(ped: Ped, index: number): void
+--- @return nil
+--- @overload fun(ped: Ped, index: number): nil
 function SetPedGroupMemberPassengerIndex(ped, index) end
 
     
@@ -301,8 +302,8 @@ function SetPedGroupMemberPassengerIndex(ped, index) end
 ---
 --- @hash [0x0E5173C163976E38](https://docs.fivem.net/natives/?_0x0E5173C163976E38)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ClearPedDecorations(ped) end
 
     
@@ -311,8 +312,8 @@ function ClearPedDecorations(ped) end
 --- @hash [0x0EB0585D15254740](https://docs.fivem.net/natives/?_0x0EB0585D15254740)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedCanPlayAmbientBaseAnims(ped, toggle) end
 
     
@@ -322,8 +323,8 @@ function SetPedCanPlayAmbientBaseAnims(ped, toggle) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function N_0x0f62619393661d6e(p0, p1, p2) end
 
     
@@ -331,8 +332,8 @@ function N_0x0f62619393661d6e(p0, p1, p2) end
 ---
 --- @hash [0x102E68B2024D536D](https://docs.fivem.net/natives/?_0x102E68B2024D536D)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetCreateRandomCops(toggle) end
 
     
@@ -352,8 +353,8 @@ function SetCreateRandomCops(toggle) end
 --- @hash [0x110F526AB784111F](https://docs.fivem.net/natives/?_0x110F526AB784111F)
 --- @param ped Ped
 --- @param p1 number (float)
---- @return void
---- @overload fun(ped: Ped, p1: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: number): nil
 function N_0x110f526ab784111f(ped, p1) end
 
     
@@ -363,8 +364,8 @@ function N_0x110f526ab784111f(ped, p1) end
 --- @param ped Ped
 --- @param radius number (float)
 --- @param maxFriends number (int)
---- @return void
---- @overload fun(ped: Ped, radius: number, maxFriends: number): void
+--- @return nil
+--- @overload fun(ped: Ped, radius: number, maxFriends: number): nil
 function SetPedToInformRespectedFriends(ped, radius, maxFriends) end
 
     
@@ -393,8 +394,8 @@ function WasPedSkeletonUpdated(ped) end
 --- @hash [0x1216E0BFA72CC703](https://docs.fivem.net/natives/?_0x1216E0BFA72CC703)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x1216e0bfa72cc703(p0, p1) end
 
     
@@ -413,8 +414,8 @@ function IsPedAPlayer(ped) end
 ---
 --- @hash [0x1280804F7CFD2D6C](https://docs.fivem.net/natives/?_0x1280804F7CFD2D6C)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ClearPedParachutePackVariation(ped) end
 
     
@@ -423,8 +424,8 @@ function ClearPedParachutePackVariation(ped) end
 ---
 --- @hash [0x1280804F7CFD2D6C](https://docs.fivem.net/natives/?_0x1280804F7CFD2D6C)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function N_0x1280804f7cfd2d6c(ped) end
 
@@ -446,8 +447,8 @@ function CanPedRagdoll(ped) end
 --- @hash [0x129466ED55140F8D](https://docs.fivem.net/natives/?_0x129466ED55140F8D)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetForceFootstepUpdate(ped, toggle) end
 
     
@@ -457,8 +458,8 @@ function SetForceFootstepUpdate(ped, toggle) end
 --- @hash [0x129466ED55140F8D](https://docs.fivem.net/natives/?_0x129466ED55140F8D)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 --- @deprecated
 function N_0x129466ed55140f8d(ped, toggle) end
 
@@ -471,8 +472,8 @@ function N_0x129466ed55140f8d(ped, toggle) end
 --- @param mother Ped
 --- @param fathersSide number (float)
 --- @param mothersSide number (float)
---- @return void
---- @overload fun(ped: Ped, father: Ped, mother: Ped, fathersSide: number, mothersSide: number): void
+--- @return nil
+--- @overload fun(ped: Ped, father: Ped, mother: Ped, fathersSide: number, mothersSide: number): nil
 function SetPedBlendFromParents(ped, father, mother, fathersSide, mothersSide) end
 
     
@@ -480,8 +481,8 @@ function SetPedBlendFromParents(ped, father, mother, fathersSide, mothersSide) e
 ---
 --- @hash [0x13E940F88470FA51](https://docs.fivem.net/natives/?_0x13E940F88470FA51)
 --- @param asset string (char*)
---- @return void
---- @overload fun(asset: string): void
+--- @return nil
+--- @overload fun(asset: string): nil
 function RemoveActionModeAsset(asset) end
 
     
@@ -542,8 +543,8 @@ function GetPedIlluminatedClothingGlowIntensity(ped) end
 --- @param ped Ped
 --- @param targetPed Ped
 --- @param p2 any
---- @return void
---- @overload fun(ped: Ped, targetPed: Ped, p2: any): void
+--- @return nil
+--- @overload fun(ped: Ped, targetPed: Ped, p2: any): nil
 function ClonePedToTargetEx(ped, targetPed, p2) end
 
     
@@ -554,8 +555,8 @@ function ClonePedToTargetEx(ped, targetPed, p2) end
 --- @param ped Ped
 --- @param targetPed Ped
 --- @param p2 any
---- @return void
---- @overload fun(ped: Ped, targetPed: Ped, p2: any): void
+--- @return nil
+--- @overload fun(ped: Ped, targetPed: Ped, p2: any): nil
 --- @deprecated
 function N_0x148b08c2d2acb884(ped, targetPed, p2) end
 
@@ -566,8 +567,8 @@ function N_0x148b08c2d2acb884(ped, targetPed, p2) end
 ---
 --- @hash [0x14F19A8782C8071E](https://docs.fivem.net/natives/?_0x14F19A8782C8071E)
 --- @param value boolean
---- @return void
---- @overload fun(value: boolean): void
+--- @return nil
+--- @overload fun(value: boolean): nil
 function SetScenarioPedsToBeReturnedByNextCommand(value) end
 
     
@@ -576,8 +577,8 @@ function SetScenarioPedsToBeReturnedByNextCommand(value) end
 --- @hash [0x1509C089ADC208BF](https://docs.fivem.net/natives/?_0x1509C089ADC208BF)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedSteersAroundObjects(ped, toggle) end
 
     
@@ -585,8 +586,8 @@ function SetPedSteersAroundObjects(ped, toggle) end
 ---
 --- @hash [0x16E42E800B472221](https://docs.fivem.net/natives/?_0x16E42E800B472221)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ForcePedToOpenParachute(ped) end
 
     
@@ -1114,8 +1115,8 @@ function GetMeleeTargetForPed(ped) end
 --- @param ped Ped
 --- @param flagId number (int)
 --- @param value boolean
---- @return void
---- @overload fun(ped: Ped, flagId: number, value: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, flagId: number, value: boolean): nil
 function SetPedConfigFlag(ped, flagId, value) end
 
     
@@ -1126,8 +1127,8 @@ function SetPedConfigFlag(ped, flagId, value) end
 --- @hash [0x1A330D297AAC6BC1](https://docs.fivem.net/natives/?_0x1A330D297AAC6BC1)
 --- @param ped Ped
 --- @param p1 number (int)
---- @return void
---- @overload fun(ped: Ped, p1: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: number): nil
 function N_0x1a330d297aac6bc1(ped, p1) end
 
     
@@ -1135,8 +1136,8 @@ function N_0x1a330d297aac6bc1(ped, p1) end
 ---
 --- @hash [0x1B1E2A40A65B8521](https://docs.fivem.net/natives/?_0x1B1E2A40A65B8521)
 --- @param value number (float)
---- @return void
---- @overload fun(value: number): void
+--- @return nil
+--- @overload fun(value: number): nil
 function SetAiWeaponDamageModifier(value) end
 
     
@@ -1183,8 +1184,8 @@ function IsPedHangingOnToVehicle(ped) end
 --- @param ped Ped
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(ped: Ped, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean, p2: boolean): nil
 function SetPedCanSmashGlass(ped, p1, p2) end
 
     
@@ -1195,8 +1196,8 @@ function SetPedCanSmashGlass(ped, p1, p2) end
 --- @param p1 number (float)
 --- @param p2 number (float)
 --- @param p3 number (float)
---- @return void
---- @overload fun(groupId: number, p1: number, p2: number, p3: number): void
+--- @return nil
+--- @overload fun(groupId: number, p1: number, p2: number, p3: number): nil
 function SetGroupFormationSpacing(groupId, p1, p2, p3) end
 
     
@@ -1249,8 +1250,8 @@ function N_0x1e98817b311ae98a(ped) end
 --- @hash [0x2016C603D6B8987C](https://docs.fivem.net/natives/?_0x2016C603D6B8987C)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function N_0x2016c603d6b8987c(ped, toggle) end
 
     
@@ -1258,8 +1259,8 @@ function N_0x2016c603d6b8987c(ped, toggle) end
 ---
 --- @hash [0x20510814175EA477](https://docs.fivem.net/natives/?_0x20510814175EA477)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ResetPedStrafeClipset(ped) end
 
     
@@ -1279,8 +1280,8 @@ function GetPedRagdollBoneIndex(ped, bone) end
 --- @param ped Ped
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(ped: Ped, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean, p2: boolean): nil
 function ForcePedAiAndAnimationUpdate(ped, p1, p2) end
 
     
@@ -1291,8 +1292,8 @@ function ForcePedAiAndAnimationUpdate(ped, p1, p2) end
 --- @param ped Ped
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(ped: Ped, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean, p2: boolean): nil
 --- @deprecated
 function N_0x2208438012482a1a(ped, p1, p2) end
 
@@ -1301,8 +1302,8 @@ function N_0x2208438012482a1a(ped, p1, p2) end
 ---
 --- @hash [0x22EF8FF8778030EB](https://docs.fivem.net/natives/?_0x22EF8FF8778030EB)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ResetPedInVehicleContext(ped) end
 
     
@@ -1358,8 +1359,8 @@ function IsSynchronizedSceneRunning(sceneId) end
 --- @hash [0x2622E35B77D3ACA2](https://docs.fivem.net/natives/?_0x2622E35B77D3ACA2)
 --- @param ped Ped
 --- @param clipSet string (char*)
---- @return void
---- @overload fun(ped: Ped, clipSet: string): void
+--- @return nil
+--- @overload fun(ped: Ped, clipSet: string): nil
 function SetPedWeaponMovementClipset(ped, clipSet) end
 
     
@@ -1393,8 +1394,8 @@ function SetPedWeaponMovementClipset(ped, clipSet) end
 --- @param drawableId number (int)
 --- @param textureId number (int)
 --- @param paletteId number (int)
---- @return void
---- @overload fun(ped: Ped, componentId: number, drawableId: number, textureId: number, paletteId: number): void
+--- @return nil
+--- @overload fun(ped: Ped, componentId: number, drawableId: number, textureId: number, paletteId: number): nil
 function SetPedComponentVariation(ped, componentId, drawableId, textureId, paletteId) end
 
     
@@ -1410,8 +1411,8 @@ function SetPedComponentVariation(ped, componentId, drawableId, textureId, palet
 --- @hash [0x26695EC767728D84](https://docs.fivem.net/natives/?_0x26695EC767728D84)
 --- @param ped Ped
 --- @param flags number (int)
---- @return void
---- @overload fun(ped: Ped, flags: number): void
+--- @return nil
+--- @overload fun(ped: Ped, flags: number): nil
 function SetRagdollBlockingFlags(ped, flags) end
 
     
@@ -1428,8 +1429,8 @@ function SetRagdollBlockingFlags(ped, flags) end
 --- @hash [0x26695EC767728D84](https://docs.fivem.net/natives/?_0x26695EC767728D84)
 --- @param ped Ped
 --- @param flags number (int)
---- @return void
---- @overload fun(ped: Ped, flags: number): void
+--- @return nil
+--- @overload fun(ped: Ped, flags: number): nil
 --- @deprecated
 function N_0x26695ec767728d84(ped, flags) end
 
@@ -1447,8 +1448,8 @@ function N_0x26695ec767728d84(ped, flags) end
 --- @hash [0x26695EC767728D84](https://docs.fivem.net/natives/?_0x26695EC767728D84)
 --- @param ped Ped
 --- @param flags number (int)
---- @return void
---- @overload fun(ped: Ped, flags: number): void
+--- @return nil
+--- @overload fun(ped: Ped, flags: number): nil
 --- @deprecated
 function SetPedRagdollBlockingFlags(ped, flags) end
 
@@ -1493,8 +1494,8 @@ function N_0x26af0e8e30bd2a2c(ped) end
 --- @hash [0x26D83693ED99291C](https://docs.fivem.net/natives/?_0x26D83693ED99291C)
 --- @param ped Ped
 --- @param propIndex number (int)
---- @return void
---- @overload fun(ped: Ped, propIndex: number): void
+--- @return nil
+--- @overload fun(ped: Ped, propIndex: number): nil
 function SetPedHelmetPropIndex(ped, propIndex) end
 
     
@@ -1504,8 +1505,8 @@ function SetPedHelmetPropIndex(ped, propIndex) end
 --- @param sceneID number (int)
 --- @param entity Entity
 --- @param boneIndex number (int)
---- @return void
---- @overload fun(sceneID: number, entity: Entity, boneIndex: number): void
+--- @return nil
+--- @overload fun(sceneID: number, entity: Entity, boneIndex: number): nil
 function AttachSynchronizedSceneToEntity(sceneID, entity, boneIndex) end
 
     
@@ -1514,8 +1515,8 @@ function AttachSynchronizedSceneToEntity(sceneID, entity, boneIndex) end
 --- @hash [0x2735233A786B1BEF](https://docs.fivem.net/natives/?_0x2735233A786B1BEF)
 --- @param ped Ped
 --- @param p1 number (float)
---- @return void
---- @overload fun(ped: Ped, p1: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: number): nil
 function N_0x2735233a786b1bef(ped, p1) end
 
     
@@ -1579,8 +1580,8 @@ function GetNumberOfPedDrawableVariations(ped, componentId) end
 --- @hash [0x27B0405F59637D1F](https://docs.fivem.net/natives/?_0x27B0405F59637D1F)
 --- @param ped Ped
 --- @param sweat number (float)
---- @return void
---- @overload fun(ped: Ped, sweat: number): void
+--- @return nil
+--- @overload fun(ped: Ped, sweat: number): nil
 function SetPedSweat(ped, sweat) end
 
     
@@ -1588,8 +1589,8 @@ function SetPedSweat(ped, sweat) end
 ---
 --- @hash [0x280C7E3AC7F56E90](https://docs.fivem.net/natives/?_0x280C7E3AC7F56E90)
 --- @param randomInt number (int)
---- @return number, number, number
---- @overload fun(randomInt: number): number, number, number
+--- @return nil, number, number, number
+--- @overload fun(randomInt: number): nil, number, number, number
 function SpawnpointsGetSearchResult(randomInt) end
 
     
@@ -1598,8 +1599,8 @@ function SpawnpointsGetSearchResult(randomInt) end
 ---
 --- @hash [0x280C7E3AC7F56E90](https://docs.fivem.net/natives/?_0x280C7E3AC7F56E90)
 --- @param randomInt number (int)
---- @return number, number, number
---- @overload fun(randomInt: number): number, number, number
+--- @return nil, number, number, number
+--- @overload fun(randomInt: number): nil, number, number, number
 --- @deprecated
 function N_0x280c7e3ac7f56e90(randomInt) end
 
@@ -1612,8 +1613,8 @@ function N_0x280c7e3ac7f56e90(randomInt) end
 --- @param z number (float)
 --- @param range number (float)
 --- @param p4 number (int)
---- @return void
---- @overload fun(x: number, y: number, z: number, range: number, p4: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, range: number, p4: number): nil
 function SetScenarioPedsSpawnInSphereArea(x, y, z, range, p4) end
 
     
@@ -1622,8 +1623,8 @@ function SetScenarioPedsSpawnInSphereArea(x, y, z, range, p4) end
 --- @hash [0x288DF530C92DAD6F](https://docs.fivem.net/natives/?_0x288DF530C92DAD6F)
 --- @param ped Ped
 --- @param value number (float)
---- @return void
---- @overload fun(ped: Ped, value: number): void
+--- @return nil
+--- @overload fun(ped: Ped, value: number): nil
 function N_0x288df530c92dad6f(ped, value) end
 
     
@@ -1631,8 +1632,8 @@ function N_0x288df530c92dad6f(ped, value) end
 ---
 --- @hash [0x290E2780BB7AA598](https://docs.fivem.net/natives/?_0x290E2780BB7AA598)
 --- @param asset string (char*)
---- @return void
---- @overload fun(asset: string): void
+--- @return nil
+--- @overload fun(asset: string): nil
 function RequestActionModeAsset(asset) end
 
     
@@ -1650,8 +1651,8 @@ function IsPedInAnyHeli(ped) end
 --- @hash [0x29A28F3F8CF6D854](https://docs.fivem.net/natives/?_0x29A28F3F8CF6D854)
 --- @param ped Ped
 --- @param clipSet string (char*)
---- @return void
---- @overload fun(ped: Ped, clipSet: string): void
+--- @return nil
+--- @overload fun(ped: Ped, clipSet: string): nil
 function SetPedStrafeClipset(ped, clipSet) end
 
     
@@ -1659,8 +1660,8 @@ function SetPedStrafeClipset(ped, clipSet) end
 ---
 --- @hash [0x2A0A62FCDEE16D4F](https://docs.fivem.net/natives/?_0x2A0A62FCDEE16D4F)
 --- @param asset string (char*)
---- @return void
---- @overload fun(asset: string): void
+--- @return nil
+--- @overload fun(asset: string): nil
 function RequestStealthModeAsset(asset) end
 
     
@@ -1669,8 +1670,8 @@ function RequestStealthModeAsset(asset) end
 --- @hash [0x2A30922C90C9B42C](https://docs.fivem.net/natives/?_0x2A30922C90C9B42C)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedDiesInVehicle(ped, toggle) end
 
     
@@ -1679,8 +1680,8 @@ function SetPedDiesInVehicle(ped, toggle) end
 --- @hash [0x2A7819605465FBCE](https://docs.fivem.net/natives/?_0x2A7819605465FBCE)
 --- @param ped Ped
 --- @param groupId number (int)
---- @return void
---- @overload fun(ped: Ped, groupId: number): void
+--- @return nil
+--- @overload fun(ped: Ped, groupId: number): nil
 function SetPedAsGroupLeader(ped, groupId) end
 
     
@@ -1749,8 +1750,8 @@ function IsPedPropValid(ped, componentId, drawableId, TextureId) end
 --- @hash [0x2B5AA717A181FB4C](https://docs.fivem.net/natives/?_0x2B5AA717A181FB4C)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedAoBlobRendering(ped, toggle) end
 
     
@@ -1762,8 +1763,8 @@ function SetPedAoBlobRendering(ped, toggle) end
 --- @hash [0x2B5AA717A181FB4C](https://docs.fivem.net/natives/?_0x2B5AA717A181FB4C)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 --- @deprecated
 function N_0x2b5aa717a181fb4c(ped, toggle) end
 
@@ -1773,8 +1774,8 @@ function N_0x2b5aa717a181fb4c(ped, toggle) end
 --- @hash [0x2B694AFCF64E6994](https://docs.fivem.net/natives/?_0x2B694AFCF64E6994)
 --- @param ped Ped
 --- @param p1 boolean
---- @return void
---- @overload fun(ped: Ped, p1: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean): nil
 function N_0x2b694afcf64e6994(ped, p1) end
 
     
@@ -1783,8 +1784,8 @@ function N_0x2b694afcf64e6994(ped, p1) end
 --- @hash [0x2BC338A7B21F4608](https://docs.fivem.net/natives/?_0x2BC338A7B21F4608)
 --- @param ped Ped
 --- @param p1 boolean
---- @return void
---- @overload fun(ped: Ped, p1: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean): nil
 function RequestPedVehicleVisibilityTracking(ped, p1) end
 
     
@@ -1794,8 +1795,8 @@ function RequestPedVehicleVisibilityTracking(ped, p1) end
 --- @hash [0x2BC338A7B21F4608](https://docs.fivem.net/natives/?_0x2BC338A7B21F4608)
 --- @param ped Ped
 --- @param p1 boolean
---- @return void
---- @overload fun(ped: Ped, p1: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean): nil
 --- @deprecated
 function GetPedFloodInvincibility(ped, p1) end
 
@@ -1809,8 +1810,8 @@ function GetPedFloodInvincibility(ped, p1) end
 --- @hash [0x2D05CED3A38D0F3A](https://docs.fivem.net/natives/?_0x2D05CED3A38D0F3A)
 --- @param ped Ped
 --- @param weaponHash Hash
---- @return void
---- @overload fun(ped: Ped, weaponHash: Hash): void
+--- @return nil
+--- @overload fun(ped: Ped, weaponHash: Hash): nil
 function ExplodePedHead(ped, weaponHash) end
 
     
@@ -1819,8 +1820,8 @@ function ExplodePedHead(ped, weaponHash) end
 --- @hash [0x2DB492222FB21E26](https://docs.fivem.net/natives/?_0x2DB492222FB21E26)
 --- @param ped Ped
 --- @param value number (float)
---- @return void
---- @overload fun(ped: Ped, value: number): void
+--- @return nil
+--- @overload fun(ped: Ped, value: number): nil
 function SetPedVisualFieldMinAngle(ped, value) end
 
     
@@ -1835,8 +1836,8 @@ function SetPedVisualFieldMinAngle(ped, value) end
 --- @param interiorFlags number (int)
 --- @param scale number (float)
 --- @param duration number (int)
---- @return void
---- @overload fun(p0: number, p1: number, p2: number, p3: number, p4: number, interiorFlags: number, scale: number, duration: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: number, p2: number, p3: number, p4: number, interiorFlags: number, scale: number, duration: number): nil
 function SpawnpointsStartSearch(p0, p1, p2, p3, p4, interiorFlags, scale, duration) end
 
     
@@ -1852,8 +1853,8 @@ function SpawnpointsStartSearch(p0, p1, p2, p3, p4, interiorFlags, scale, durati
 --- @param interiorFlags number (int)
 --- @param scale number (float)
 --- @param duration number (int)
---- @return void
---- @overload fun(p0: number, p1: number, p2: number, p3: number, p4: number, interiorFlags: number, scale: number, duration: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: number, p2: number, p3: number, p4: number, interiorFlags: number, scale: number, duration: number): nil
 --- @deprecated
 function N_0x2df9038c90ad5264(p0, p1, p2, p3, p4, interiorFlags, scale, duration) end
 
@@ -1872,8 +1873,8 @@ function N_0x2dfc81c9b9608549(ped, p1) end
 ---
 --- @hash [0x2E05208086BA0651](https://docs.fivem.net/natives/?_0x2E05208086BA0651)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ClearPedNonCreationArea() end
 
     
@@ -1895,8 +1896,8 @@ function IsPedInAnyBoat(ped) end
 --- @param pedHandle Ped
 --- @param groupHandle number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(pedHandle: Ped, groupHandle: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(pedHandle: Ped, groupHandle: number, toggle: boolean): nil
 function SetPedCanTeleportToGroupLeader(pedHandle, groupHandle, toggle) end
 
     
@@ -1910,8 +1911,8 @@ function SetPedCanTeleportToGroupLeader(pedHandle, groupHandle, toggle) end
 --- @param p4 number (float)
 --- @param p5 number (float)
 --- @param p6 number (float)
---- @return void
---- @overload fun(p0: number, p1: number, p2: number, p3: number, p4: number, p5: number, p6: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: number, p2: number, p3: number, p4: number, p5: number, p6: number): nil
 function N_0x2f074c904d85129e(p0, p1, p2, p3, p4, p5, p6) end
 
     
@@ -1923,8 +1924,8 @@ function N_0x2f074c904d85129e(p0, p1, p2, p3, p4, p5, p6) end
 --- @hash [0x2F25D9AEFA34FBA2](https://docs.fivem.net/natives/?_0x2F25D9AEFA34FBA2)
 --- @param ped Ped
 --- @param target Ped
---- @return void
---- @overload fun(ped: Ped, target: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped, target: Ped): nil
 function RegisterTarget(ped, target) end
 
     
@@ -1933,8 +1934,8 @@ function RegisterTarget(ped, target) end
 --- @hash [0x2F3C3D9F50681DE4](https://docs.fivem.net/natives/?_0x2F3C3D9F50681DE4)
 --- @param p0 any
 --- @param p1 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean): nil
 function N_0x2f3c3d9f50681de4(p0, p1) end
 
     
@@ -1943,8 +1944,8 @@ function N_0x2f3c3d9f50681de4(p0, p1) end
 --- @hash [0x31D16B74C6E29D66](https://docs.fivem.net/natives/?_0x31D16B74C6E29D66)
 --- @param p0 any
 --- @param p1 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean): nil
 function RemoveScenarioBlockingArea(p0, p1) end
 
     
@@ -1982,8 +1983,8 @@ function N_0x32c27a11307b01cc(ped, p1) end
 --- @param p2 number (float)
 --- @param p3 number (float)
 --- @param p4 any
---- @return void
---- @overload fun(ped: Ped, p1: any, p2: number, p3: number): any
+--- @return nil
+--- @overload fun(ped: Ped, p1: any, p2: number, p3: number): nil, any
 function ApplyPedBloodByZone(ped, p1, p2, p3, p4) end
 
     
@@ -1996,8 +1997,8 @@ function ApplyPedBloodByZone(ped, p1, p2, p3, p4) end
 --- @param p2 number (float)
 --- @param p3 number (float)
 --- @param p4 any
---- @return void
---- @overload fun(ped: Ped, p1: any, p2: number, p3: number): any
+--- @return nil
+--- @overload fun(ped: Ped, p1: any, p2: number, p3: number): nil, any
 --- @deprecated
 function N_0x3311e47b91edcbbc(ped, p1, p2, p3, p4) end
 
@@ -2017,8 +2018,8 @@ function IsPedDeadOrDying(ped, p1) end
 --- @hash [0x332B562EEDA62399](https://docs.fivem.net/natives/?_0x332B562EEDA62399)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedToLoadCover(ped, toggle) end
 
     
@@ -2027,8 +2028,8 @@ function SetPedToLoadCover(ped, toggle) end
 --- @hash [0x333FC8DB079B7186](https://docs.fivem.net/natives/?_0x333FC8DB079B7186)
 --- @param ped Ped
 --- @param tintIndex number (int)
---- @return void
---- @overload fun(ped: Ped, tintIndex: number): void
+--- @return nil
+--- @overload fun(ped: Ped, tintIndex: number): nil
 function SetPedParachuteTintIndex(ped, tintIndex) end
 
     
@@ -2050,8 +2051,8 @@ function N_0x336b3d200ab007cb(p0, p1, p2, p3, p4) end
 --- @hash [0x33A60D8BDD6E508C](https://docs.fivem.net/natives/?_0x33A60D8BDD6E508C)
 --- @param ped Ped
 --- @param p1 boolean
---- @return void
---- @overload fun(ped: Ped, p1: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean): nil
 function SetPedCanPlayInjuredAnims(ped, p1) end
 
     
@@ -2061,8 +2062,8 @@ function SetPedCanPlayInjuredAnims(ped, p1) end
 --- @hash [0x33A60D8BDD6E508C](https://docs.fivem.net/natives/?_0x33A60D8BDD6E508C)
 --- @param ped Ped
 --- @param p1 boolean
---- @return void
---- @overload fun(ped: Ped, p1: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean): nil
 --- @deprecated
 function N_0x33a60d8bdd6e508c(ped, p1) end
 
@@ -2072,8 +2073,8 @@ function N_0x33a60d8bdd6e508c(ped, p1) end
 --- @hash [0x33A8F7F7D5F7F33C](https://docs.fivem.net/natives/?_0x33A8F7F7D5F7F33C)
 --- @param ped Ped
 --- @param value number (float)
---- @return void
---- @overload fun(ped: Ped, value: number): void
+--- @return nil
+--- @overload fun(ped: Ped, value: number): nil
 function SetPedHearingRange(ped, value) end
 
     
@@ -2097,8 +2098,8 @@ function IsPedShooting(ped) end
 --- @hash [0x364DF566EC833DE2](https://docs.fivem.net/natives/?_0x364DF566EC833DE2)
 --- @param ped Ped
 --- @param value number (float)
---- @return void
---- @overload fun(ped: Ped, value: number): void
+--- @return nil
+--- @overload fun(ped: Ped, value: number): nil
 function SetPedCapsule(ped, value) end
 
     
@@ -2132,8 +2133,8 @@ function N_0x36b77bb84687c318(ped, weaponHash) end
 ---
 --- @hash [0x36C6984C3ED0C911](https://docs.fivem.net/natives/?_0x36C6984C3ED0C911)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function SetPedScubaGearVariation(ped) end
 
     
@@ -2142,8 +2143,8 @@ function SetPedScubaGearVariation(ped) end
 ---
 --- @hash [0x36C6984C3ED0C911](https://docs.fivem.net/natives/?_0x36C6984C3ED0C911)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function N_0x36c6984c3ed0c911(ped) end
 
@@ -2182,8 +2183,8 @@ function GetPedAccuracy(ped) end
 --- @hash [0x394B9CD12435C981](https://docs.fivem.net/natives/?_0x394B9CD12435C981)
 --- @param sceneID number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(sceneID: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(sceneID: number, toggle: boolean): nil
 function SetSynchronizedSceneHoldLastFrame(sceneID, toggle) end
 
     
@@ -2193,8 +2194,8 @@ function SetSynchronizedSceneHoldLastFrame(sceneID, toggle) end
 --- @hash [0x394B9CD12435C981](https://docs.fivem.net/natives/?_0x394B9CD12435C981)
 --- @param sceneID number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(sceneID: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(sceneID: number, toggle: boolean): nil
 --- @deprecated
 function N_0x394b9cd12435c981(sceneID, toggle) end
 
@@ -2205,8 +2206,8 @@ function N_0x394b9cd12435c981(sceneID, toggle) end
 --- @hash [0x394B9CD12435C981](https://docs.fivem.net/natives/?_0x394B9CD12435C981)
 --- @param sceneID number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(sceneID: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(sceneID: number, toggle: boolean): nil
 --- @deprecated
 function SetSynchronizedSceneOcclusionPortal(sceneID, toggle) end
 
@@ -2247,8 +2248,8 @@ function SetSynchronizedSceneOcclusionPortal(sceneID, toggle) end
 --- @param variation number (int)
 --- @param fadeIn boolean
 --- @param decalName string (char*)
---- @return void
---- @overload fun(ped: Ped, damageZone: number, xOffset: number, yOffset: number, heading: number, scale: number, alpha: number, variation: number, fadeIn: boolean, decalName: string): void
+--- @return nil
+--- @overload fun(ped: Ped, damageZone: number, xOffset: number, yOffset: number, heading: number, scale: number, alpha: number, variation: number, fadeIn: boolean, decalName: string): nil
 function ApplyPedDamageDecal(ped, damageZone, xOffset, yOffset, heading, scale, alpha, variation, fadeIn, decalName) end
 
     
@@ -2299,8 +2300,8 @@ function N_0x39d55a620fcb6a3a(ped, slot, drawableId, textureId) end
 ---
 --- @hash [0x3AC1F7B898F30C05](https://docs.fivem.net/natives/?_0x3AC1F7B898F30C05)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ResetPedVisibleDamage(ped) end
 
     
@@ -2309,8 +2310,8 @@ function ResetPedVisibleDamage(ped) end
 --- @hash [0x3B6405E8AB34A907](https://docs.fivem.net/natives/?_0x3B6405E8AB34A907)
 --- @param ped Ped
 --- @param angle number (float)
---- @return void
---- @overload fun(ped: Ped, angle: number): void
+--- @return nil
+--- @overload fun(ped: Ped, angle: number): nil
 function SetPedVisualFieldCenterAngle(ped, angle) end
 
     
@@ -2319,8 +2320,8 @@ function SetPedVisualFieldCenterAngle(ped, angle) end
 --- @hash [0x3C028C636A414ED9](https://docs.fivem.net/natives/?_0x3C028C636A414ED9)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedAllowVehiclesOverride(ped, toggle) end
 
     
@@ -2344,8 +2345,8 @@ function GetPedDefensiveAreaPosition(ped, p1) end
 --- @hash [0x3C606747B23E497B](https://docs.fivem.net/natives/?_0x3C606747B23E497B)
 --- @param ped Ped
 --- @param p1 number (int)
---- @return void
---- @overload fun(ped: Ped, p1: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: number): nil
 function SetPedCombatRange(ped, p1) end
 
     
@@ -2374,8 +2375,8 @@ function N_0x3c67506996001f5e() end
 --- @hash [0x3DBFC55D5C9BB447](https://docs.fivem.net/natives/?_0x3DBFC55D5C9BB447)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedNeverLeavesGroup(ped, toggle) end
 
     
@@ -2413,8 +2414,8 @@ function CanCreateRandomPed(unk) end
 --- @hash [0x3E9679C1DFCF422C](https://docs.fivem.net/natives/?_0x3E9679C1DFCF422C)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x3e9679c1dfcf422c(p0, p1) end
 
     
@@ -2806,8 +2807,8 @@ function GetPedMoney(ped) end
 --- @param p1 boolean
 --- @param p2 number (int)
 --- @param p3 number (int)
---- @return void
---- @overload fun(ped: Ped, p1: boolean, p2: number, p3: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean, p2: number, p3: number): nil
 function SetPedHelmetUnk(ped, p1, p2, p3) end
 
     
@@ -2819,8 +2820,8 @@ function SetPedHelmetUnk(ped, p1, p2, p3) end
 --- @param p1 boolean
 --- @param p2 number (int)
 --- @param p3 number (int)
---- @return void
---- @overload fun(ped: Ped, p1: boolean, p2: number, p3: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean, p2: number, p3: number): nil
 --- @deprecated
 function N_0x3f7325574e41b44d(ped, p1, p2, p3) end
 
@@ -2832,8 +2833,8 @@ function N_0x3f7325574e41b44d(ped, p1, p2, p3) end
 --- @hash [0x4102C7858CFEE4E4](https://docs.fivem.net/natives/?_0x4102C7858CFEE4E4)
 --- @param groupHandle number (int)
 --- @param separationRange number (float)
---- @return void
---- @overload fun(groupHandle: number, separationRange: number): void
+--- @return nil
+--- @overload fun(groupHandle: number, separationRange: number): nil
 function SetGroupSeparationRange(groupHandle, separationRange) end
 
     
@@ -2854,8 +2855,8 @@ function N_0x412f1364fa066cfb(p0) end
 --- @param p2 number (float)
 --- @param p3 number (float)
 --- @param p4 boolean
---- @return void
---- @overload fun(ped: Ped, p1: number, p2: number, p3: number, p4: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: number, p2: number, p3: number, p4: boolean): nil
 function SetPedDefensiveAreaDirection(ped, p1, p2, p3, p4) end
 
     
@@ -2884,8 +2885,8 @@ function IsPedEvasiveDiving(ped, evadingEntity) end
 --- @hash [0x418EF2A1BCE56685](https://docs.fivem.net/natives/?_0x418EF2A1BCE56685)
 --- @param startImmediately boolean
 --- @param messageId number (int)
---- @return void
---- @overload fun(startImmediately: boolean, messageId: number): void
+--- @return nil
+--- @overload fun(startImmediately: boolean, messageId: number): nil
 function CreateNmMessage(startImmediately, messageId) end
 
     
@@ -2894,8 +2895,8 @@ function CreateNmMessage(startImmediately, messageId) end
 --- @hash [0x425AECF167663F48](https://docs.fivem.net/natives/?_0x425AECF167663F48)
 --- @param ped Ped
 --- @param p1 boolean
---- @return void
---- @overload fun(ped: Ped, p1: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean): nil
 function N_0x425aecf167663f48(ped, p1) end
 
     
@@ -2913,8 +2914,8 @@ function GetPedRelationshipGroupDefaultHash(ped) end
 --- @hash [0x4328652AE5769C71](https://docs.fivem.net/natives/?_0x4328652AE5769C71)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedCanBeTargetedWithoutLos(ped, toggle) end
 
     
@@ -2923,8 +2924,8 @@ function SetPedCanBeTargetedWithoutLos(ped, toggle) end
 --- @hash [0x433083750C5E064A](https://docs.fivem.net/natives/?_0x433083750C5E064A)
 --- @param ped Ped
 --- @param value number (float)
---- @return void
---- @overload fun(ped: Ped, value: number): void
+--- @return nil
+--- @overload fun(ped: Ped, value: number): nil
 function SetPedMaxMoveBlendRatio(ped, value) end
 
     
@@ -2942,8 +2943,8 @@ function IsPedJumpingOutOfVehicle(ped) end
 --- @hash [0x43C851690662113D](https://docs.fivem.net/natives/?_0x43C851690662113D)
 --- @param ped Ped
 --- @param value number (float)
---- @return void
---- @overload fun(ped: Ped, value: number): void
+--- @return nil
+--- @overload fun(ped: Ped, value: number): nil
 function SetPedMaxTimeInWater(ped, value) end
 
     
@@ -2951,8 +2952,8 @@ function SetPedMaxTimeInWater(ped, value) end
 ---
 --- @hash [0x444CB7D7DBE6973D](https://docs.fivem.net/natives/?_0x444CB7D7DBE6973D)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetCreateRandomCopsOnScenarios(toggle) end
 
     
@@ -2974,8 +2975,8 @@ function RegisterPedheadshot(ped) end
 --- @hash [0x44CB6447D2571AA0](https://docs.fivem.net/natives/?_0x44CB6447D2571AA0)
 --- @param ped Ped
 --- @param height number (float)
---- @return void
---- @overload fun(ped: Ped, height: number): void
+--- @return nil
+--- @overload fun(ped: Ped, height: number): nil
 function SetPedWetnessHeight(ped, height) end
 
     
@@ -3032,8 +3033,8 @@ function N_0x451d05012ccec234(ped) end
 ---
 --- @hash [0x45BBCBA77C29A841](https://docs.fivem.net/natives/?_0x45BBCBA77C29A841)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function KnockPedOffVehicle(ped) end
 
     
@@ -3043,8 +3044,8 @@ function KnockPedOffVehicle(ped) end
 ---
 --- @hash [0x45EEE61580806D63](https://docs.fivem.net/natives/?_0x45EEE61580806D63)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function SetPedDefaultComponentVariation(ped) end
 
     
@@ -3063,8 +3064,8 @@ function IsPedOnMount(ped) end
 ---
 --- @hash [0x4668D80430D6C299](https://docs.fivem.net/natives/?_0x4668D80430D6C299)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function FinalizeHeadBlend(ped) end
 
     
@@ -3073,8 +3074,8 @@ function FinalizeHeadBlend(ped) end
 ---
 --- @hash [0x4668D80430D6C299](https://docs.fivem.net/natives/?_0x4668D80430D6C299)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function N_0x4668d80430d6c299(ped) end
 
@@ -3125,8 +3126,8 @@ function N_0x46b05bcae43856b0(ped, flag) end
 --- @param damagePack string (char*)
 --- @param damage number (float)
 --- @param mult number (float)
---- @return void
---- @overload fun(ped: Ped, damagePack: string, damage: number, mult: number): void
+--- @return nil
+--- @overload fun(ped: Ped, damagePack: string, damage: number, mult: number): nil
 function ApplyPedDamagePack(ped, damagePack, damage, mult) end
 
     
@@ -3134,8 +3135,8 @@ function ApplyPedDamagePack(ped, damagePack, damage, mult) end
 ---
 --- @hash [0x46E56A7CD1D63C3F](https://docs.fivem.net/natives/?_0x46E56A7CD1D63C3F)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ResetAiMeleeWeaponDamageModifier() end
 
     
@@ -3144,8 +3145,8 @@ function ResetAiMeleeWeaponDamageModifier() end
 --- @hash [0x46F2193B3AD1D891](https://docs.fivem.net/natives/?_0x46F2193B3AD1D891)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedSteersAroundPeds(ped, toggle) end
 
     
@@ -3162,8 +3163,8 @@ function GetPedMaxHealth(ped) end
 ---
 --- @hash [0x4759CC730F947C81](https://docs.fivem.net/natives/?_0x4759CC730F947C81)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function InstantlyFillPedPopulation() end
 
     
@@ -3172,8 +3173,8 @@ function InstantlyFillPedPopulation() end
 ---
 --- @hash [0x4759CC730F947C81](https://docs.fivem.net/natives/?_0x4759CC730F947C81)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x4759cc730f947c81() end
 
@@ -3198,8 +3199,8 @@ function IsPedRagdoll(ped) end
 ---
 --- @hash [0x4852FC386E2E1BB5](https://docs.fivem.net/natives/?_0x4852FC386E2E1BB5)
 --- @param hairColorIndex number (int)
---- @return number, number, number
---- @overload fun(hairColorIndex: number): number, number, number
+--- @return nil, number, number, number
+--- @overload fun(hairColorIndex: number): nil, number, number, number
 function GetPedHairRgbColor(hairColorIndex) end
 
     
@@ -3213,8 +3214,8 @@ function GetPedHairRgbColor(hairColorIndex) end
 ---
 --- @hash [0x4852FC386E2E1BB5](https://docs.fivem.net/natives/?_0x4852FC386E2E1BB5)
 --- @param hairColorIndex number (int)
---- @return number, number, number
---- @overload fun(hairColorIndex: number): number, number, number
+--- @return nil, number, number, number
+--- @overload fun(hairColorIndex: number): nil, number, number, number
 --- @deprecated
 function N_0x4852fc386e2e1bb5(hairColorIndex) end
 
@@ -3229,8 +3230,8 @@ function N_0x4852fc386e2e1bb5(hairColorIndex) end
 ---
 --- @hash [0x4852FC386E2E1BB5](https://docs.fivem.net/natives/?_0x4852FC386E2E1BB5)
 --- @param hairColorIndex number (int)
---- @return number, number, number
---- @overload fun(hairColorIndex: number): number, number, number
+--- @return nil, number, number, number
+--- @overload fun(hairColorIndex: number): nil, number, number, number
 --- @deprecated
 function GetHairRgbColor(hairColorIndex) end
 
@@ -3275,8 +3276,8 @@ function IsPedInCombat(ped, target) end
 --- @param overlayID number (int)
 --- @param index number (int)
 --- @param opacity number (float)
---- @return void
---- @overload fun(ped: Ped, overlayID: number, index: number, opacity: number): void
+--- @return nil
+--- @overload fun(ped: Ped, overlayID: number, index: number, opacity: number): nil
 function SetPedHeadOverlay(ped, overlayID, index, opacity) end
 
     
@@ -3295,8 +3296,8 @@ function SetPedHeadOverlay(ped, overlayID, index, opacity) end
 --- @param colorType number (int)
 --- @param colorID number (int)
 --- @param secondColorID number (int)
---- @return void
---- @overload fun(ped: Ped, overlayID: number, colorType: number, colorID: number, secondColorID: number): void
+--- @return nil
+--- @overload fun(ped: Ped, overlayID: number, colorType: number, colorID: number, secondColorID: number): nil
 function SetPedHeadOverlayColor(ped, overlayID, colorType, colorID, secondColorID) end
 
     
@@ -3307,8 +3308,8 @@ function SetPedHeadOverlayColor(ped, overlayID, colorType, colorID, secondColorI
 --- @hash [0x49E50BDB8BA4DAB2](https://docs.fivem.net/natives/?_0x49E50BDB8BA4DAB2)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function N_0x49e50bdb8ba4dab2(ped, toggle) end
 
     
@@ -3325,8 +3326,8 @@ function IsPedJacking(ped) end
 ---
 --- @hash [0x4AFE3690D7E0B5AC](https://docs.fivem.net/natives/?_0x4AFE3690D7E0B5AC)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ClearPedDriveByClipsetOverride(ped) end
 
     
@@ -3365,8 +3366,8 @@ function IsPedTracked(ped) end
 --- @param ped Ped
 --- @param colorID number (int)
 --- @param highlightColorID number (int)
---- @return void
---- @overload fun(ped: Ped, colorID: number, highlightColorID: number): void
+--- @return nil
+--- @overload fun(ped: Ped, colorID: number, highlightColorID: number): nil
 function SetPedHairColor(ped, colorID, highlightColorID) end
 
     
@@ -3380,8 +3381,8 @@ function SetPedHairColor(ped, colorID, highlightColorID) end
 --- @hash [0x4D9CA1009AFBD057](https://docs.fivem.net/natives/?_0x4D9CA1009AFBD057)
 --- @param ped Ped
 --- @param combatMovement number (int)
---- @return void
---- @overload fun(ped: Ped, combatMovement: number): void
+--- @return nil
+--- @overload fun(ped: Ped, combatMovement: number): nil
 function SetPedCombatMovement(ped, combatMovement) end
 
     
@@ -3446,8 +3447,8 @@ function IsPedInMeleeCombat(ped) end
 --- @hash [0x4E90D746056E273D](https://docs.fivem.net/natives/?_0x4E90D746056E273D)
 --- @param ped Ped
 --- @param intensity number (float)
---- @return void
---- @overload fun(ped: Ped, intensity: number): void
+--- @return nil
+--- @overload fun(ped: Ped, intensity: number): nil
 function SetPedEmissiveIntensity(ped, intensity) end
 
     
@@ -3498,8 +3499,8 @@ function SetPedEmissiveIntensity(ped, intensity) end
 --- @hash [0x4E90D746056E273D](https://docs.fivem.net/natives/?_0x4E90D746056E273D)
 --- @param ped Ped
 --- @param intensity number (float)
---- @return void
---- @overload fun(ped: Ped, intensity: number): void
+--- @return nil
+--- @overload fun(ped: Ped, intensity: number): nil
 --- @deprecated
 function N_0x4e90d746056e273d(ped, intensity) end
 
@@ -3551,8 +3552,8 @@ function N_0x4e90d746056e273d(ped, intensity) end
 --- @hash [0x4E90D746056E273D](https://docs.fivem.net/natives/?_0x4E90D746056E273D)
 --- @param ped Ped
 --- @param intensity number (float)
---- @return void
---- @overload fun(ped: Ped, intensity: number): void
+--- @return nil
+--- @overload fun(ped: Ped, intensity: number): nil
 --- @deprecated
 function SetPedIlluminatedClothingGlowIntensity(ped, intensity) end
 
@@ -3571,8 +3572,8 @@ function SetPedIlluminatedClothingGlowIntensity(ped, intensity) end
 --- @param p8 number (float)
 --- @param p9 boolean
 --- @param p10 boolean
---- @return void
---- @overload fun(ped: Ped, attachPed: Ped, p2: number, p3: number, p4: number, p5: number, p6: number, p7: number, p8: number, p9: boolean, p10: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, attachPed: Ped, p2: number, p3: number, p4: number, p5: number, p6: number, p7: number, p8: number, p9: boolean, p10: boolean): nil
 function SetPedDefensiveAreaAttachedToPed(ped, attachPed, p2, p3, p4, p5, p6, p7, p8, p9, p10) end
 
     
@@ -3585,8 +3586,8 @@ function SetPedDefensiveAreaAttachedToPed(ped, attachPed, p2, p3, p4, p5, p6, p7
 --- @param p3 number (float)
 --- @param p4 number (float)
 --- @param p5 number (float)
---- @return void
---- @overload fun(ped: Ped, p1: number, p2: number, p3: number, p4: number, p5: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: number, p2: number, p3: number, p4: number, p5: number): nil
 function SetPedBoundsOrientation(ped, p1, p2, p3, p4, p5) end
 
     
@@ -3608,8 +3609,8 @@ function IsPedBeingStunned(ped, p1) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number): nil
 function SetScriptedConversionCoordThisFrame(x, y, z) end
 
     
@@ -3651,8 +3652,8 @@ function SetScriptedConversionCoordThisFrame(x, y, z) end
 --- @hash [0x50B56988B170AFDF](https://docs.fivem.net/natives/?_0x50B56988B170AFDF)
 --- @param ped Ped
 --- @param index number (int)
---- @return void
---- @overload fun(ped: Ped, index: number): void
+--- @return nil
+--- @overload fun(ped: Ped, index: number): nil
 function SetPedEyeColor(ped, index) end
 
     
@@ -3703,8 +3704,8 @@ function CanKnockPedOffVehicle(ped) end
 --- @param ped Ped
 --- @param p1 number (int)
 --- @param p2 string (char*)
---- @return void
---- @overload fun(ped: Ped, p1: number, p2: string): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: number, p2: string): nil
 function ClearPedDamageDecalByZone(ped, p1, p2) end
 
     
@@ -3718,8 +3719,8 @@ function ClearPedDamageDecalByZone(ped, p1, p2) end
 --- @param ped Ped
 --- @param p1 number (int)
 --- @param p2 string (char*)
---- @return void
---- @overload fun(ped: Ped, p1: number, p2: string): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: number, p2: string): nil
 --- @deprecated
 function N_0x523c79aeefcc4a2a(ped, p1, p2) end
 
@@ -3729,8 +3730,8 @@ function N_0x523c79aeefcc4a2a(ped, p1, p2) end
 --- @hash [0x52D59AB61DDC05DD](https://docs.fivem.net/natives/?_0x52D59AB61DDC05DD)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedHighlyPerceptive(ped, toggle) end
 
     
@@ -3740,8 +3741,8 @@ function SetPedHighlyPerceptive(ped, toggle) end
 --- @hash [0x52D59AB61DDC05DD](https://docs.fivem.net/natives/?_0x52D59AB61DDC05DD)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 --- @deprecated
 function N_0x52d59ab61ddc05dd(ped, toggle) end
 
@@ -3798,8 +3799,8 @@ function GetCombatFloat(ped, p1) end
 --- @hash [0x530071295899A8C6](https://docs.fivem.net/natives/?_0x530071295899A8C6)
 --- @param ped Ped
 --- @param context Hash
---- @return void
---- @overload fun(ped: Ped, context: Hash): void
+--- @return nil
+--- @overload fun(ped: Ped, context: Hash): nil
 function SetPedInVehicleContext(ped, context) end
 
     
@@ -3856,8 +3857,8 @@ function GetJackTarget(ped) end
 --- @param cannotRemove boolean
 --- @param helmetFlag number (int)
 --- @param textureIndex number (int)
---- @return void
---- @overload fun(ped: Ped, cannotRemove: boolean, helmetFlag: number, textureIndex: number): void
+--- @return nil
+--- @overload fun(ped: Ped, cannotRemove: boolean, helmetFlag: number, textureIndex: number): nil
 function GivePedHelmet(ped, cannotRemove, helmetFlag, textureIndex) end
 
     
@@ -3875,8 +3876,8 @@ function IsPedDiving(ped) end
 --- @hash [0x560A43136EB58105](https://docs.fivem.net/natives/?_0x560A43136EB58105)
 --- @param ped Ped
 --- @param canWearHelmet boolean
---- @return void
---- @overload fun(ped: Ped, canWearHelmet: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, canWearHelmet: boolean): nil
 function SetPedHelmet(ped, canWearHelmet) end
 
     
@@ -3885,8 +3886,8 @@ function SetPedHelmet(ped, canWearHelmet) end
 --- @hash [0x5615E0C5EB2BC6E2](https://docs.fivem.net/natives/?_0x5615E0C5EB2BC6E2)
 --- @param group Hash
 --- @param p1 boolean
---- @return void
---- @overload fun(group: Hash, p1: boolean): void
+--- @return nil
+--- @overload fun(group: Hash, p1: boolean): nil
 function SetRelationshipGroupDontAffectWantedLevel(group, p1) end
 
     
@@ -3896,8 +3897,8 @@ function SetRelationshipGroupDontAffectWantedLevel(group, p1) end
 --- @hash [0x5615E0C5EB2BC6E2](https://docs.fivem.net/natives/?_0x5615E0C5EB2BC6E2)
 --- @param group Hash
 --- @param p1 boolean
---- @return void
---- @overload fun(group: Hash, p1: boolean): void
+--- @return nil
+--- @overload fun(group: Hash, p1: boolean): nil
 --- @deprecated
 function N_0x5615e0c5eb2bc6e2(group, p1) end
 
@@ -3908,8 +3909,8 @@ function N_0x5615e0c5eb2bc6e2(group, p1) end
 --- @param ped Ped
 --- @param collection Hash
 --- @param overlay Hash
---- @return void
---- @overload fun(ped: Ped, collection: Hash, overlay: Hash): void
+--- @return nil
+--- @overload fun(ped: Ped, collection: Hash, overlay: Hash): nil
 function AddPedDecorationFromHashesInCorona(ped, collection, overlay) end
 
     
@@ -3920,8 +3921,8 @@ function AddPedDecorationFromHashesInCorona(ped, collection, overlay) end
 --- @param ped Ped
 --- @param collection Hash
 --- @param overlay Hash
---- @return void
---- @overload fun(ped: Ped, collection: Hash, overlay: Hash): void
+--- @return nil
+--- @overload fun(ped: Ped, collection: Hash, overlay: Hash): nil
 --- @deprecated
 function N_0x5619bfa07cfd7833(ped, collection, overlay) end
 
@@ -3933,8 +3934,8 @@ function N_0x5619bfa07cfd7833(ped, collection, overlay) end
 --- @param ped Ped
 --- @param collection Hash
 --- @param overlay Hash
---- @return void
---- @overload fun(ped: Ped, collection: Hash, overlay: Hash): void
+--- @return nil
+--- @overload fun(ped: Ped, collection: Hash, overlay: Hash): nil
 --- @deprecated
 function SetPedFacialDecoration(ped, collection, overlay) end
 
@@ -3957,8 +3958,8 @@ function SetPedFacialDecoration(ped, collection, overlay) end
 --- @hash [0x5687C7F05B39E401](https://docs.fivem.net/natives/?_0x5687C7F05B39E401)
 --- @param ped Ped
 --- @param animDict string (char*)
---- @return void
---- @overload fun(ped: Ped, animDict: string): void
+--- @return nil
+--- @overload fun(ped: Ped, animDict: string): nil
 function SetFacialClipsetOverride(ped, animDict) end
 
     
@@ -3981,8 +3982,8 @@ function SetFacialClipsetOverride(ped, animDict) end
 --- @hash [0x5687C7F05B39E401](https://docs.fivem.net/natives/?_0x5687C7F05B39E401)
 --- @param ped Ped
 --- @param animDict string (char*)
---- @return void
---- @overload fun(ped: Ped, animDict: string): void
+--- @return nil
+--- @overload fun(ped: Ped, animDict: string): nil
 --- @deprecated
 function N_0x5687c7f05b39e401(ped, animDict) end
 
@@ -3992,8 +3993,8 @@ function N_0x5687c7f05b39e401(ped, animDict) end
 --- @hash [0x56CEF0AC79073BDE](https://docs.fivem.net/natives/?_0x56CEF0AC79073BDE)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedDiesInWater(ped, toggle) end
 
     
@@ -4004,8 +4005,8 @@ function SetPedDiesInWater(ped, toggle) end
 --- @hash [0x56E3B78C5408D9F4](https://docs.fivem.net/natives/?_0x56E3B78C5408D9F4)
 --- @param ped Ped
 --- @param p1 number (int)
---- @return void
---- @overload fun(ped: Ped, p1: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: number): nil
 function ClearPedBloodDamageByZone(ped, p1) end
 
     
@@ -4017,8 +4018,8 @@ function ClearPedBloodDamageByZone(ped, p1) end
 --- @hash [0x56E3B78C5408D9F4](https://docs.fivem.net/natives/?_0x56E3B78C5408D9F4)
 --- @param ped Ped
 --- @param p1 number (int)
---- @return void
---- @overload fun(ped: Ped, p1: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: number): nil
 --- @deprecated
 function N_0x56e3b78c5408d9f4(ped, p1) end
 
@@ -4027,8 +4028,8 @@ function N_0x56e3b78c5408d9f4(ped, p1) end
 ---
 --- @hash [0x570389D1C3DE3C6B](https://docs.fivem.net/natives/?_0x570389D1C3DE3C6B)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function SetPedIncreasedAvoidanceRadius(ped) end
 
     
@@ -4037,8 +4038,8 @@ function SetPedIncreasedAvoidanceRadius(ped) end
 ---
 --- @hash [0x570389D1C3DE3C6B](https://docs.fivem.net/natives/?_0x570389D1C3DE3C6B)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function N_0x570389d1c3de3c6b(ped) end
 
@@ -4048,8 +4049,8 @@ function N_0x570389d1c3de3c6b(ped) end
 --- @hash [0x576594E8D64375E2](https://docs.fivem.net/natives/?_0x576594E8D64375E2)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedBlocksPathingWhenDead(ped, toggle) end
 
     
@@ -4059,8 +4060,8 @@ function SetPedBlocksPathingWhenDead(ped, toggle) end
 --- @hash [0x576594E8D64375E2](https://docs.fivem.net/natives/?_0x576594E8D64375E2)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 --- @deprecated
 function N_0x576594e8d64375e2(ped, toggle) end
 
@@ -4088,8 +4089,8 @@ function IsPedInGroup(ped) end
 --- @hash [0x5917BBA32D06C230](https://docs.fivem.net/natives/?_0x5917BBA32D06C230)
 --- @param ped Ped
 --- @param p1 number (float)
---- @return void
---- @overload fun(ped: Ped, p1: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: number): nil
 function SetScriptedAnimSeatOffset(ped, p1) end
 
     
@@ -4108,8 +4109,8 @@ function IsPedHurt(ped) end
 ---
 --- @hash [0x5A7F62FDA59759BD](https://docs.fivem.net/natives/?_0x5A7F62FDA59759BD)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x5a7f62fda59759bd() end
 
     
@@ -4117,8 +4118,8 @@ function N_0x5a7f62fda59759bd() end
 ---
 --- @hash [0x5AAB586FFEC0FD96](https://docs.fivem.net/natives/?_0x5AAB586FFEC0FD96)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ReleasePedPreloadVariationData(ped) end
 
     
@@ -4127,8 +4128,8 @@ function ReleasePedPreloadVariationData(ped) end
 ---
 --- @hash [0x5AAB586FFEC0FD96](https://docs.fivem.net/natives/?_0x5AAB586FFEC0FD96)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function N_0x5aab586ffec0fd96(ped) end
 
@@ -4138,8 +4139,8 @@ function N_0x5aab586ffec0fd96(ped) end
 --- @hash [0x5B6010B3CBC29095](https://docs.fivem.net/natives/?_0x5B6010B3CBC29095)
 --- @param p0 any
 --- @param p1 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean): nil
 function N_0x5b6010b3cbc29095(p0, p1) end
 
     
@@ -4150,8 +4151,8 @@ function N_0x5b6010b3cbc29095(p0, p1) end
 --- @hash [0x5BA652A0CD14DF2F](https://docs.fivem.net/natives/?_0x5BA652A0CD14DF2F)
 --- @param ped Ped
 --- @param amount number (int)
---- @return void
---- @overload fun(ped: Ped, amount: number): void
+--- @return nil
+--- @overload fun(ped: Ped, amount: number): nil
 function AddArmourToPed(ped, amount) end
 
     
@@ -4160,8 +4161,8 @@ function AddArmourToPed(ped, amount) end
 --- @hash [0x5BA7919BED300023](https://docs.fivem.net/natives/?_0x5BA7919BED300023)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedDiesWhenInjured(ped, toggle) end
 
     
@@ -4199,8 +4200,8 @@ function IsPedHeadtrackingPed(ped1, ped2) end
 ---
 --- @hash [0x5D517B27CF6ECD04](https://docs.fivem.net/natives/?_0x5D517B27CF6ECD04)
 --- @param id number (int)
---- @return void
---- @overload fun(id: number): void
+--- @return nil
+--- @overload fun(id: number): nil
 function ReleasePedheadshotImgUpload(id) end
 
     
@@ -4209,8 +4210,8 @@ function ReleasePedheadshotImgUpload(id) end
 ---
 --- @hash [0x5D517B27CF6ECD04](https://docs.fivem.net/natives/?_0x5D517B27CF6ECD04)
 --- @param id number (int)
---- @return void
---- @overload fun(id: number): void
+--- @return nil
+--- @overload fun(id: number): nil
 --- @deprecated
 function N_0x5d517b27cf6ecd04(id) end
 
@@ -4235,8 +4236,8 @@ function N_0x5d517b27cf6ecd04(id) end
 --- @param relationship number (int)
 --- @param group1 Hash
 --- @param group2 Hash
---- @return void
---- @overload fun(relationship: number, group1: Hash, group2: Hash): void
+--- @return nil
+--- @overload fun(relationship: number, group1: Hash, group2: Hash): nil
 function ClearRelationshipBetweenGroups(relationship, group1, group2) end
 
     
@@ -4302,8 +4303,8 @@ function GetNumParentPedsOfType(type) end
 --- @param ped Ped
 --- @param collection Hash
 --- @param overlay Hash
---- @return void
---- @overload fun(ped: Ped, collection: Hash, overlay: Hash): void
+--- @return nil
+--- @overload fun(ped: Ped, collection: Hash, overlay: Hash): nil
 function AddPedDecorationFromHashes(ped, collection, overlay) end
 
     
@@ -4337,8 +4338,8 @@ function AddPedDecorationFromHashes(ped, collection, overlay) end
 --- @param ped Ped
 --- @param collection Hash
 --- @param overlay Hash
---- @return void
---- @overload fun(ped: Ped, collection: Hash, overlay: Hash): void
+--- @return nil
+--- @overload fun(ped: Ped, collection: Hash, overlay: Hash): nil
 --- @deprecated
 function ApplyPedOverlay(ped, collection, overlay) end
 
@@ -4373,8 +4374,8 @@ function ApplyPedOverlay(ped, collection, overlay) end
 --- @param ped Ped
 --- @param collection Hash
 --- @param overlay Hash
---- @return void
---- @overload fun(ped: Ped, collection: Hash, overlay: Hash): void
+--- @return nil
+--- @overload fun(ped: Ped, collection: Hash, overlay: Hash): nil
 --- @deprecated
 function SetPedDecoration(ped, collection, overlay) end
 
@@ -4405,8 +4406,8 @@ function IsPedInAnyPlane(ped) end
 ---
 --- @hash [0x600048C60D5C2C51](https://docs.fivem.net/natives/?_0x600048C60D5C2C51)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function DisablePedHeatscaleOverride(ped) end
 
     
@@ -4415,8 +4416,8 @@ function DisablePedHeatscaleOverride(ped) end
 ---
 --- @hash [0x600048C60D5C2C51](https://docs.fivem.net/natives/?_0x600048C60D5C2C51)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function N_0x600048c60d5c2c51(ped) end
 
@@ -4471,8 +4472,8 @@ function IsPedInCover(ped, exceptUseWeapon) end
 --- @hash [0x614DA022990752DC](https://docs.fivem.net/natives/?_0x614DA022990752DC)
 --- @param ped Ped
 --- @param shootRate number (int)
---- @return void
---- @overload fun(ped: Ped, shootRate: number): void
+--- @return nil
+--- @overload fun(ped: Ped, shootRate: number): nil
 function SetPedShootRate(ped, shootRate) end
 
     
@@ -4521,8 +4522,8 @@ function IsPedRespondingToEvent(ped, event) end
 --- @param ped Ped
 --- @param p1 any
 --- @param p2 boolean
---- @return void
---- @overload fun(ped: Ped, p1: any, p2: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: any, p2: boolean): nil
 function HidePedBloodDamageByZone(ped, p1, p2) end
 
     
@@ -4533,8 +4534,8 @@ function HidePedBloodDamageByZone(ped, p1, p2) end
 --- @param ped Ped
 --- @param p1 any
 --- @param p2 boolean
---- @return void
---- @overload fun(ped: Ped, p1: any, p2: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: any, p2: boolean): nil
 --- @deprecated
 function N_0x62ab793144de75dc(ped, p1, p2) end
 
@@ -4572,8 +4573,8 @@ function N_0x62ec273d00187dca(x, y, z, radius, object) end
 --- @hash [0x6373D1349925A70E](https://docs.fivem.net/natives/?_0x6373D1349925A70E)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedCanPlayAmbientAnims(ped, toggle) end
 
     
@@ -4583,8 +4584,8 @@ function SetPedCanPlayAmbientAnims(ped, toggle) end
 ---
 --- @hash [0x637822DC2AFEEBF8](https://docs.fivem.net/natives/?_0x637822DC2AFEEBF8)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ClearFacialClipsetOverride(ped) end
 
     
@@ -4595,8 +4596,8 @@ function ClearFacialClipsetOverride(ped) end
 ---
 --- @hash [0x637822DC2AFEEBF8](https://docs.fivem.net/natives/?_0x637822DC2AFEEBF8)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function N_0x637822dc2afeebf8(ped) end
 
@@ -4606,8 +4607,8 @@ function N_0x637822dc2afeebf8(ped) end
 --- @hash [0x638C03B0F9878F57](https://docs.fivem.net/natives/?_0x638C03B0F9878F57)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedCanBeTargetedWhenInjured(ped, toggle) end
 
     
@@ -4615,8 +4616,8 @@ function SetPedCanBeTargetedWhenInjured(ped, toggle) end
 ---
 --- @hash [0x63DAB4CCB3273205](https://docs.fivem.net/natives/?_0x63DAB4CCB3273205)
 --- @param groupHandle number (int)
---- @return void
---- @overload fun(groupHandle: number): void
+--- @return nil
+--- @overload fun(groupHandle: number): nil
 function ResetGroupFormationDefaultSpacing(groupHandle) end
 
     
@@ -4625,8 +4626,8 @@ function ResetGroupFormationDefaultSpacing(groupHandle) end
 --- @hash [0x63F58F7C80513AAD](https://docs.fivem.net/natives/?_0x63F58F7C80513AAD)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedCanBeTargetted(ped, toggle) end
 
     
@@ -4654,8 +4655,8 @@ function GetPedDiesInWater(ped) end
 ---
 --- @hash [0x6585D955A68452A5](https://docs.fivem.net/natives/?_0x6585D955A68452A5)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ClearPedEnvDirt(ped) end
 
     
@@ -4664,8 +4665,8 @@ function ClearPedEnvDirt(ped) end
 ---
 --- @hash [0x6585D955A68452A5](https://docs.fivem.net/natives/?_0x6585D955A68452A5)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function N_0x6585d955a68452a5(ped) end
 
@@ -4674,8 +4675,8 @@ function N_0x6585d955a68452a5(ped) end
 ---
 --- @hash [0x66460DEDDD417254](https://docs.fivem.net/natives/?_0x66460DEDDD417254)
 --- @param modifier number (float)
---- @return void
---- @overload fun(modifier: number): void
+--- @return nil
+--- @overload fun(modifier: number): nil
 function SetAiMeleeWeaponDamageModifier(modifier) end
 
     
@@ -4684,8 +4685,8 @@ function SetAiMeleeWeaponDamageModifier(modifier) end
 --- @hash [0x6647C5F6F5792496](https://docs.fivem.net/natives/?_0x6647C5F6F5792496)
 --- @param ped Ped
 --- @param p1 boolean
---- @return void
---- @overload fun(ped: Ped, p1: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean): nil
 function SetPedCanTorsoVehicleIk(ped, p1) end
 
     
@@ -4695,8 +4696,8 @@ function SetPedCanTorsoVehicleIk(ped, p1) end
 --- @hash [0x6647C5F6F5792496](https://docs.fivem.net/natives/?_0x6647C5F6F5792496)
 --- @param ped Ped
 --- @param p1 boolean
---- @return void
---- @overload fun(ped: Ped, p1: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean): nil
 --- @deprecated
 function N_0x6647c5f6f5792496(ped, p1) end
 
@@ -4770,8 +4771,8 @@ function ClonePed_2(ped, heading, isNetwork, bScriptHostPed, p4) end
 --- @param ped Ped
 --- @param player Player
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, player: Player, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, player: Player, toggle: boolean): nil
 function SetPedCanBeTargettedByPlayer(ped, player, toggle) end
 
     
@@ -4844,8 +4845,8 @@ function N_0x68772db2b2526f9f(ped, x, y, z, radius) end
 ---
 --- @hash [0x687C0B594907D2E8](https://docs.fivem.net/natives/?_0x687C0B594907D2E8)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ClearPedStoredHatProp(ped) end
 
     
@@ -4854,8 +4855,8 @@ function ClearPedStoredHatProp(ped) end
 ---
 --- @hash [0x687C0B594907D2E8](https://docs.fivem.net/natives/?_0x687C0B594907D2E8)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function N_0x687c0b594907d2e8(ped) end
 
@@ -4901,8 +4902,8 @@ function GetFirstParentIdForPedType(type) end
 --- @param ped Ped
 --- @param damageAmount number (int)
 --- @param armorFirst boolean
---- @return void
---- @overload fun(ped: Ped, damageAmount: number, armorFirst: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, damageAmount: number, armorFirst: boolean): nil
 function ApplyDamageToPed(ped, damageAmount, armorFirst) end
 
     
@@ -4957,8 +4958,8 @@ function GetPlayerPedIsFollowing(ped) end
 --- @param pitch number (float)
 --- @param yaw number (float)
 --- @param p7 boolean
---- @return void
---- @overload fun(sceneID: number, x: number, y: number, z: number, roll: number, pitch: number, yaw: number, p7: boolean): void
+--- @return nil
+--- @overload fun(sceneID: number, x: number, y: number, z: number, roll: number, pitch: number, yaw: number, p7: boolean): nil
 function SetSynchronizedSceneOrigin(sceneID, x, y, z, roll, pitch, yaw, p7) end
 
     
@@ -4966,8 +4967,8 @@ function SetSynchronizedSceneOrigin(sceneID, x, y, z, roll, pitch, yaw, p7) end
 ---
 --- @hash [0x6B0E6172C9A4D902](https://docs.fivem.net/natives/?_0x6B0E6172C9A4D902)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function SetAmbientPedsDropMoney(p0) end
 
     
@@ -4976,8 +4977,8 @@ function SetAmbientPedsDropMoney(p0) end
 ---
 --- @hash [0x6B0E6172C9A4D902](https://docs.fivem.net/natives/?_0x6B0E6172C9A4D902)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 --- @deprecated
 function N_0x6b0e6172c9a4d902(p0) end
 
@@ -4987,8 +4988,8 @@ function N_0x6b0e6172c9a4d902(p0) end
 --- @hash [0x6B7A646C242A7059](https://docs.fivem.net/natives/?_0x6B7A646C242A7059)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedCanEvasiveDive(ped, toggle) end
 
     
@@ -4997,8 +4998,8 @@ function SetPedCanEvasiveDive(ped, toggle) end
 --- @hash [0x6BA428C528D9E522](https://docs.fivem.net/natives/?_0x6BA428C528D9E522)
 --- @param ped Ped
 --- @param value number (float)
---- @return void
---- @overload fun(ped: Ped, value: number): void
+--- @return nil
+--- @overload fun(ped: Ped, value: number): nil
 function SetPedMaxTimeUnderwater(ped, value) end
 
     
@@ -5007,8 +5008,8 @@ function SetPedMaxTimeUnderwater(ped, value) end
 --- @hash [0x6C3B4D6D13B4C841](https://docs.fivem.net/natives/?_0x6C3B4D6D13B4C841)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedCanArmIk(ped, toggle) end
 
     
@@ -5020,8 +5021,8 @@ function SetPedCanArmIk(ped, toggle) end
 --- @param animName string (char*)
 --- @param p3 number (float)
 --- @param p4 boolean
---- @return void
---- @overload fun(ped: Ped, animDict: string, animName: string, p3: number, p4: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, animDict: string, animName: string, p3: number, p4: boolean): nil
 function SetPedAlternateWalkAnim(ped, animDict, animName, p3, p4) end
 
     
@@ -5063,8 +5064,8 @@ function CanPedSeePed(ped1, ped2) end
 ---
 --- @hash [0x6D38F1F04CBB37EA](https://docs.fivem.net/natives/?_0x6D38F1F04CBB37EA)
 --- @param sceneID number (int)
---- @return void
---- @overload fun(sceneID: number): void
+--- @return nil
+--- @overload fun(sceneID: number): nil
 function DetachSynchronizedScene(sceneID) end
 
     
@@ -5128,8 +5129,8 @@ function IsPedInAnyTrain(ped) end
 --- @param p2 boolean
 --- @param p3 boolean
 --- @param p4 boolean
---- @return void
---- @overload fun(ped: Ped, p1: boolean, p2: boolean, p3: boolean, p4: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean, p2: boolean, p3: boolean, p4: boolean): nil
 function KnockOffPedProp(ped, p1, p2, p3, p4) end
 
     
@@ -5138,8 +5139,8 @@ function KnockOffPedProp(ped, p1, p2, p3, p4) end
 --- @hash [0x70793BDCA1E854D4](https://docs.fivem.net/natives/?_0x70793BDCA1E854D4)
 --- @param ped Ped
 --- @param value number (float)
---- @return void
---- @overload fun(ped: Ped, value: number): void
+--- @return nil
+--- @overload fun(ped: Ped, value: number): nil
 function SetPedVisualFieldMaxAngle(ped, value) end
 
     
@@ -5162,8 +5163,8 @@ function IsPedheadshotReady(id) end
 --- @param ped Ped
 --- @param attributeFlags number (int)
 --- @param enable boolean
---- @return void
---- @overload fun(ped: Ped, attributeFlags: number, enable: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, attributeFlags: number, enable: boolean): nil
 function SetPedFleeAttributes(ped, attributeFlags, enable) end
 
     
@@ -5172,8 +5173,8 @@ function SetPedFleeAttributes(ped, attributeFlags, enable) end
 --- @hash [0x711794453CFD692B](https://docs.fivem.net/natives/?_0x711794453CFD692B)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x711794453cfd692b(p0, p1) end
 
     
@@ -5212,8 +5213,8 @@ function N_0x711794453cfd692b(p0, p1) end
 --- @param ped Ped
 --- @param index number (int)
 --- @param scale number (float)
---- @return void
---- @overload fun(ped: Ped, index: number, scale: number): void
+--- @return nil
+--- @overload fun(ped: Ped, index: number, scale: number): nil
 function SetPedFaceFeature(ped, index, scale) end
 
     
@@ -5226,8 +5227,8 @@ function SetPedFaceFeature(ped, index, scale) end
 ---
 --- @hash [0x71BC8E838B9C6035](https://docs.fivem.net/natives/?_0x71BC8E838B9C6035)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ResurrectPed(ped) end
 
     
@@ -5258,8 +5259,8 @@ function N_0x71eab450d86954a1(ped) end
 --- @param shapeMix number (float)
 --- @param skinMix number (float)
 --- @param thirdMix number (float)
---- @return void
---- @overload fun(ped: Ped, shapeMix: number, skinMix: number, thirdMix: number): void
+--- @return nil
+--- @overload fun(ped: Ped, shapeMix: number, skinMix: number, thirdMix: number): nil
 function UpdatePedHeadBlendData(ped, shapeMix, skinMix, thirdMix) end
 
     
@@ -5267,8 +5268,8 @@ function UpdatePedHeadBlendData(ped, shapeMix, skinMix, thirdMix) end
 ---
 --- @hash [0x726256CC1EEB182F](https://docs.fivem.net/natives/?_0x726256CC1EEB182F)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ClearFacialIdleAnimOverride(ped) end
 
     
@@ -5276,8 +5277,8 @@ function ClearFacialIdleAnimOverride(ped) end
 ---
 --- @hash [0x733C87D4CE22BEA2](https://docs.fivem.net/natives/?_0x733C87D4CE22BEA2)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function N_0x733c87d4ce22bea2(ped) end
 
     
@@ -5286,8 +5287,8 @@ function N_0x733c87d4ce22bea2(ped) end
 --- @hash [0x734292F4F0ABF6D0](https://docs.fivem.net/natives/?_0x734292F4F0ABF6D0)
 --- @param sceneID number (int)
 --- @param phase number (float)
---- @return void
---- @overload fun(sceneID: number, phase: number): void
+--- @return nil
+--- @overload fun(sceneID: number, phase: number): nil
 function SetSynchronizedScenePhase(sceneID, phase) end
 
     
@@ -5327,8 +5328,8 @@ function HasStreamedPedAssetsLoaded(ped) end
 --- @hash [0x73518ECE2485412B](https://docs.fivem.net/natives/?_0x73518ECE2485412B)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedCanLegIk(ped, toggle) end
 
     
@@ -5339,8 +5340,8 @@ function SetPedCanLegIk(ped, toggle) end
 --- @hash [0x74D4E028107450A9](https://docs.fivem.net/natives/?_0x74D4E028107450A9)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function RemovePedDefensiveArea(ped, toggle) end
 
     
@@ -5351,8 +5352,8 @@ function RemovePedDefensiveArea(ped, toggle) end
 --- @hash [0x75BA1CB3B7D40CAF](https://docs.fivem.net/natives/?_0x75BA1CB3B7D40CAF)
 --- @param ped Ped
 --- @param p1 boolean
---- @return void
---- @overload fun(ped: Ped, p1: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean): nil
 function N_0x75ba1cb3b7d40caf(ped, p1) end
 
     
@@ -5389,8 +5390,8 @@ function N_0x76bba2cee66d47e9(ped) end
 --- @hash [0x781DE8FA214E87D2](https://docs.fivem.net/natives/?_0x781DE8FA214E87D2)
 --- @param ped Ped
 --- @param name string (char*)
---- @return void
---- @overload fun(ped: Ped, name: string): void
+--- @return nil
+--- @overload fun(ped: Ped, name: string): nil
 function SetMovementModeOverride(ped, name) end
 
     
@@ -5402,8 +5403,8 @@ function SetMovementModeOverride(ped, name) end
 --- @hash [0x781DE8FA214E87D2](https://docs.fivem.net/natives/?_0x781DE8FA214E87D2)
 --- @param ped Ped
 --- @param name string (char*)
---- @return void
---- @overload fun(ped: Ped, name: string): void
+--- @return nil
+--- @overload fun(ped: Ped, name: string): nil
 --- @deprecated
 function N_0x781de8fa214e87d2(ped, name) end
 
@@ -5433,8 +5434,8 @@ function N_0x784002a632822099(ped) end
 --- @hash [0x78C4E9961DB3EB5B](https://docs.fivem.net/natives/?_0x78C4E9961DB3EB5B)
 --- @param ped Ped
 --- @param p1 number (int)
---- @return void
---- @overload fun(ped: Ped, p1: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: number): nil
 function SetPedClothPackageIndex(ped, p1) end
 
     
@@ -5444,8 +5445,8 @@ function SetPedClothPackageIndex(ped, p1) end
 --- @hash [0x78C4E9961DB3EB5B](https://docs.fivem.net/natives/?_0x78C4E9961DB3EB5B)
 --- @param ped Ped
 --- @param p1 number (int)
---- @return void
---- @overload fun(ped: Ped, p1: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: number): nil
 --- @deprecated
 function N_0x78c4e9961db3eb5b(ped, p1) end
 
@@ -5457,8 +5458,8 @@ function N_0x78c4e9961db3eb5b(ped, p1) end
 --- @hash [0x78D0B67629D75856](https://docs.fivem.net/natives/?_0x78D0B67629D75856)
 --- @param ped Ped
 --- @param angle number (float)
---- @return void
---- @overload fun(ped: Ped, angle: number): void
+--- @return nil
+--- @overload fun(ped: Ped, angle: number): nil
 function SetPedVisualFieldMaxElevationAngle(ped, angle) end
 
     
@@ -5496,8 +5497,8 @@ function GetPedParachuteState(ped) end
 --- @hash [0x7A276EB2C224D70F](https://docs.fivem.net/natives/?_0x7A276EB2C224D70F)
 --- @param ped Ped
 --- @param angle number (float)
---- @return void
---- @overload fun(ped: Ped, angle: number): void
+--- @return nil
+--- @overload fun(ped: Ped, angle: number): nil
 function SetPedVisualFieldMinElevationAngle(ped, angle) end
 
     
@@ -5506,8 +5507,8 @@ function SetPedVisualFieldMinElevationAngle(ped, angle) end
 --- @hash [0x7A556143A1C03898](https://docs.fivem.net/natives/?_0x7A556143A1C03898)
 --- @param p0 number (float)
 --- @param p1 number (float)
---- @return void
---- @overload fun(p0: number, p1: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: number): nil
 function SetScenarioPedDensityMultiplierThisFrame(p0, p1) end
 
     
@@ -5518,8 +5519,8 @@ function SetScenarioPedDensityMultiplierThisFrame(p0, p1) end
 --- @hash [0x7A6535691B477C48](https://docs.fivem.net/natives/?_0x7A6535691B477C48)
 --- @param ped Ped
 --- @param state number (int)
---- @return void
---- @overload fun(ped: Ped, state: number): void
+--- @return nil
+--- @overload fun(ped: Ped, state: number): nil
 function SetPedCanBeKnockedOffVehicle(ped, state) end
 
     
@@ -5530,8 +5531,8 @@ function SetPedCanBeKnockedOffVehicle(ped, state) end
 --- @hash [0x7AEFB85C1D49DEB6](https://docs.fivem.net/natives/?_0x7AEFB85C1D49DEB6)
 --- @param ped Ped
 --- @param accuracy number (int)
---- @return void
---- @overload fun(ped: Ped, accuracy: number): void
+--- @return nil
+--- @overload fun(ped: Ped, accuracy: number): nil
 function SetPedAccuracy(ped, accuracy) end
 
     
@@ -5559,8 +5560,8 @@ function DoesGroupExist(groupId) end
 ---
 --- @hash [0x7D7A2E43E74E2EB8](https://docs.fivem.net/natives/?_0x7D7A2E43E74E2EB8)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function RequestPedVisibilityTracking(ped) end
 
     
@@ -5569,8 +5570,8 @@ function RequestPedVisibilityTracking(ped) end
 ---
 --- @hash [0x7D7A2E43E74E2EB8](https://docs.fivem.net/natives/?_0x7D7A2E43E74E2EB8)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function N_0x7d7a2e43e74e2eb8(ped) end
 
@@ -5669,8 +5670,8 @@ function N_0x7f2f4f13ac5257ef(sceneID) end
 --- @hash [0x7FB17BA2E7DECA5B](https://docs.fivem.net/natives/?_0x7FB17BA2E7DECA5B)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedGeneratesDeadBodyEvents(ped, toggle) end
 
     
@@ -5680,8 +5681,8 @@ function SetPedGeneratesDeadBodyEvents(ped, toggle) end
 ---
 --- @hash [0x80054D7FCC70EEC6](https://docs.fivem.net/natives/?_0x80054D7FCC70EEC6)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function N_0x80054d7fcc70eec6(ped) end
 
     
@@ -5712,8 +5713,8 @@ function GetVehiclePedIsTryingToEnter(ped) end
 --- @param p2 number (float)
 --- @param p3 number (float)
 --- @param p4 any
---- @return void
---- @overload fun(ped: Ped, p1: any, p2: number, p3: number, p4: any): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: any, p2: number, p3: number, p4: any): nil
 function ApplyPedBloodDamageByZone(ped, p1, p2, p3, p4) end
 
     
@@ -5726,8 +5727,8 @@ function ApplyPedBloodDamageByZone(ped, p1, p2, p3, p4) end
 --- @param p2 number (float)
 --- @param p3 number (float)
 --- @param p4 any
---- @return void
---- @overload fun(ped: Ped, p1: any, p2: number, p3: number, p4: any): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: any, p2: number, p3: number, p4: any): nil
 --- @deprecated
 function N_0x816f6981c60bf53b(ped, p1, p2, p3, p4) end
 
@@ -5757,8 +5758,8 @@ function N_0x81aa517fbba05d39(ped) end
 --- @hash [0x820E9892A77E97CD](https://docs.fivem.net/natives/?_0x820E9892A77E97CD)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x820e9892a77e97cd(p0, p1) end
 
     
@@ -5779,8 +5780,8 @@ function IsPedSittingInAnyVehicle(ped) end
 --- @hash [0x82A3D6D9CC2CB8E3](https://docs.fivem.net/natives/?_0x82A3D6D9CC2CB8E3)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function SetPedClothProne(p0, p1) end
 
     
@@ -5790,8 +5791,8 @@ function SetPedClothProne(p0, p1) end
 --- @hash [0x82A3D6D9CC2CB8E3](https://docs.fivem.net/natives/?_0x82A3D6D9CC2CB8E3)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 --- @deprecated
 function N_0x82a3d6d9cc2cb8e3(p0, p1) end
 
@@ -5801,8 +5802,8 @@ function N_0x82a3d6d9cc2cb8e3(p0, p1) end
 --- @hash [0x83A169EABCDB10A2](https://docs.fivem.net/natives/?_0x83A169EABCDB10A2)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x83a169eabcdb10a2(p0, p1) end
 
     
@@ -5818,8 +5819,8 @@ function N_0x83a169eabcdb10a2(p0, p1) end
 --- @param yRot number (float)
 --- @param zRot number (float)
 --- @param woundType string (char*)
---- @return void
---- @overload fun(ped: Ped, boneIndex: number, xRot: number, yRot: number, zRot: number, woundType: string): void
+--- @return nil
+--- @overload fun(ped: Ped, boneIndex: number, xRot: number, yRot: number, zRot: number, woundType: string): nil
 function ApplyPedBlood(ped, boneIndex, xRot, yRot, zRot, woundType) end
 
     
@@ -5828,8 +5829,8 @@ function ApplyPedBlood(ped, boneIndex, xRot, yRot, zRot, woundType) end
 --- @hash [0x8421EB4DA7E391B9](https://docs.fivem.net/natives/?_0x8421EB4DA7E391B9)
 --- @param ped Ped
 --- @param itemSet any
---- @return void
---- @overload fun(ped: Ped, itemSet: any): void
+--- @return nil
+--- @overload fun(ped: Ped, itemSet: any): nil
 function SetPedPreferredCoverSet(ped, itemSet) end
 
     
@@ -5839,8 +5840,8 @@ function SetPedPreferredCoverSet(ped, itemSet) end
 --- @hash [0x8421EB4DA7E391B9](https://docs.fivem.net/natives/?_0x8421EB4DA7E391B9)
 --- @param ped Ped
 --- @param itemSet any
---- @return void
---- @overload fun(ped: Ped, itemSet: any): void
+--- @return nil
+--- @overload fun(ped: Ped, itemSet: any): nil
 --- @deprecated
 function N_0x8421eb4da7e391b9(ped, itemSet) end
 
@@ -5892,8 +5893,8 @@ function IsPedBeingStealthKilled(ped) end
 --- @param posX number (float)
 --- @param posY number (float)
 --- @param posZ number (float)
---- @return void
---- @overload fun(ped: Ped, posX: number, posY: number, posZ: number): void
+--- @return nil
+--- @overload fun(ped: Ped, posX: number, posY: number, posZ: number): nil
 function SetPedCoordsNoGang(ped, posX, posY, posZ) end
 
     
@@ -5950,8 +5951,8 @@ function N_0x876928dddfccc9cd() end
 ---
 --- @hash [0x87DDEB611B329A9C](https://docs.fivem.net/natives/?_0x87DDEB611B329A9C)
 --- @param multiplier number (float)
---- @return void
---- @overload fun(multiplier: number): void
+--- @return nil
+--- @overload fun(multiplier: number): nil
 function N_0x87ddeb611b329a9c(multiplier) end
 
     
@@ -5971,8 +5972,8 @@ function IsScubaGearLightEnabled(ped) end
 --- @hash [0x8844BBFCE30AA9E9](https://docs.fivem.net/natives/?_0x8844BBFCE30AA9E9)
 --- @param ped Ped
 --- @param p1 number (float)
---- @return void
---- @overload fun(ped: Ped, p1: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: number): nil
 function ClearPedAlternateWalkAnim(ped, p1) end
 
     
@@ -5984,8 +5985,8 @@ function ClearPedAlternateWalkAnim(ped, p1) end
 --- @param ped Ped
 --- @param p1 boolean
 --- @param action string (char*)
---- @return void
---- @overload fun(ped: Ped, p1: boolean, action: string): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean, action: string): nil
 function SetPedStealthMovement(ped, p1, action) end
 
     
@@ -6036,8 +6037,8 @@ function N_0x8a24b067d175a7bd(x1, y1, z1, x2, y2, z2) end
 ---
 --- @hash [0x8A4986851C4EF6E7](https://docs.fivem.net/natives/?_0x8A4986851C4EF6E7)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetCreateRandomCopsNotOnScenarios(toggle) end
 
     
@@ -6120,8 +6121,8 @@ function CreateParachuteObject(ped, p1, p2) end
 ---
 --- @hash [0x8D8ACD8388CD99CE](https://docs.fivem.net/natives/?_0x8D8ACD8388CD99CE)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ReviveInjuredPed(ped) end
 
     
@@ -6131,8 +6132,8 @@ function ReviveInjuredPed(ped) end
 ---
 --- @hash [0x8DE69FE35CA09A45](https://docs.fivem.net/natives/?_0x8DE69FE35CA09A45)
 --- @param groupID number (int)
---- @return any, number
---- @overload fun(groupID: number): any, number
+--- @return nil, any, number
+--- @overload fun(groupID: number): nil, any, number
 function GetGroupSize(groupID) end
 
     
@@ -6140,8 +6141,8 @@ function GetGroupSize(groupID) end
 ---
 --- @hash [0x8EB2F69076AF7053](https://docs.fivem.net/natives/?_0x8EB2F69076AF7053)
 --- @param groupId number (int)
---- @return void
---- @overload fun(groupId: number): void
+--- @return nil
+--- @overload fun(groupId: number): nil
 function RemoveGroup(groupId) end
 
     
@@ -6149,8 +6150,8 @@ function RemoveGroup(groupId) end
 ---
 --- @hash [0x8EF6B7AC68E2F01B](https://docs.fivem.net/natives/?_0x8EF6B7AC68E2F01B)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ClearPedLastDamageBone(ped) end
 
     
@@ -6172,8 +6173,8 @@ function GetNumberOfPedTextureVariations(ped, componentId, drawableId) end
 ---
 --- @hash [0x8FE22675A5A45817](https://docs.fivem.net/natives/?_0x8FE22675A5A45817)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ClearPedBloodDamage(ped) end
 
     
@@ -6208,8 +6209,8 @@ function CreateGroup(unused) end
 --- @param animationName string (char*)
 --- @param p4 number (float)
 --- @param p5 boolean
---- @return void
---- @overload fun(ped: Ped, stance: number, animDictionary: string, animationName: string, p4: number, p5: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, stance: number, animDictionary: string, animationName: string, p4: number, p5: boolean): nil
 function SetPedAlternateMovementAnim(ped, stance, animDictionary, animationName, p4, p5) end
 
     
@@ -6238,8 +6239,8 @@ function IsTrackedPedVisible(ped) end
 ---
 --- @hash [0x9219857D21F0E842](https://docs.fivem.net/natives/?_0x9219857D21F0E842)
 --- @param asset string (char*)
---- @return void
---- @overload fun(asset: string): void
+--- @return nil
+--- @overload fun(asset: string): nil
 function RemoveStealthModeAsset(asset) end
 
     
@@ -6250,8 +6251,8 @@ function RemoveStealthModeAsset(asset) end
 --- @hash [0x9222F300BF8354FE](https://docs.fivem.net/natives/?_0x9222F300BF8354FE)
 --- @param ped Ped
 --- @param radius number (float)
---- @return void
---- @overload fun(ped: Ped, radius: number): void
+--- @return nil
+--- @overload fun(ped: Ped, radius: number): nil
 function RegisterHatedTargetsAroundPed(ped, radius) end
 
     
@@ -6278,8 +6279,8 @@ function RegisterHatedTargetsAroundPed(ped, radius) end
 --- @param drawableId number (int)
 --- @param textureId number (int)
 --- @param attach boolean
---- @return void
---- @overload fun(ped: Ped, componentId: number, drawableId: number, textureId: number, attach: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, componentId: number, drawableId: number, textureId: number, attach: boolean): nil
 function SetPedPropIndex(ped, componentId, drawableId, textureId, attach) end
 
     
@@ -6336,8 +6337,8 @@ function GetPedKiller(ped) end
 --- @param skinMix number (float)
 --- @param thirdMix number (float)
 --- @param isParent boolean
---- @return void
---- @overload fun(ped: Ped, shapeFirstID: number, shapeSecondID: number, shapeThirdID: number, skinFirstID: number, skinSecondID: number, skinThirdID: number, shapeMix: number, skinMix: number, thirdMix: number, isParent: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, shapeFirstID: number, shapeSecondID: number, shapeThirdID: number, skinFirstID: number, skinSecondID: number, skinThirdID: number, shapeMix: number, skinMix: number, thirdMix: number, isParent: boolean): nil
 function SetPedHeadBlendData(ped, shapeFirstID, shapeSecondID, shapeThirdID, skinFirstID, skinSecondID, skinThirdID, shapeMix, skinMix, thirdMix, isParent) end
 
     
@@ -6368,8 +6369,8 @@ function GetPedArmour(ped) end
 --- @hash [0x94D94BF1A75AED3D](https://docs.fivem.net/natives/?_0x94D94BF1A75AED3D)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedPlaysHeadOnHornAnimWhenDiesInVehicle(ped, toggle) end
 
     
@@ -6382,8 +6383,8 @@ function SetPedPlaysHeadOnHornAnimWhenDiesInVehicle(ped, toggle) end
 --- @param vehicle Vehicle
 --- @param seatIndex number (int)
 --- @param flags number (int)
---- @return void
---- @overload fun(ped: Ped, vehicle: Vehicle, seatIndex: number, flags: number): void
+--- @return nil
+--- @overload fun(ped: Ped, vehicle: Vehicle, seatIndex: number, flags: number): nil
 function SetPedVehicleForcedSeatUsage(ped, vehicle, seatIndex, flags) end
 
     
@@ -6397,8 +6398,8 @@ function SetPedVehicleForcedSeatUsage(ped, vehicle, seatIndex, flags) end
 --- @param vehicle Vehicle
 --- @param seatIndex number (int)
 --- @param flags number (int)
---- @return void
---- @overload fun(ped: Ped, vehicle: Vehicle, seatIndex: number, flags: number): void
+--- @return nil
+--- @overload fun(ped: Ped, vehicle: Vehicle, seatIndex: number, flags: number): nil
 --- @deprecated
 function N_0x952f06beecd775cc(ped, vehicle, seatIndex, flags) end
 
@@ -6469,8 +6470,8 @@ function N_0x953563ce563143af(ped) end
 ---
 --- @hash [0x95E3D6257B166CF2](https://docs.fivem.net/natives/?_0x95E3D6257B166CF2)
 --- @param multiplier number (float)
---- @return void
---- @overload fun(multiplier: number): void
+--- @return nil
+--- @overload fun(multiplier: number): nil
 function SetPedDensityMultiplierThisFrame(multiplier) end
 
     
@@ -6480,8 +6481,8 @@ function SetPedDensityMultiplierThisFrame(multiplier) end
 ---
 --- @hash [0x9614299DCB53E54B](https://docs.fivem.net/natives/?_0x9614299DCB53E54B)
 --- @param ped Ped (Ped*)
---- @return void
---- @overload fun(): Ped
+--- @return nil
+--- @overload fun(): nil, Ped
 function DeletePed(ped) end
 
     
@@ -6493,8 +6494,8 @@ function DeletePed(ped) end
 --- @param y number (float)
 --- @param z number (float)
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, x: number, y: number, z: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, x: number, y: number, z: number, toggle: boolean): nil
 function SetPedShootsAtCoord(ped, x, y, z, toggle) end
 
     
@@ -6504,8 +6505,8 @@ function SetPedShootsAtCoord(ped, x, y, z, toggle) end
 ---
 --- @hash [0x96B1361D9B24C2FF](https://docs.fivem.net/natives/?_0x96B1361D9B24C2FF)
 --- @param id number (int)
---- @return void
---- @overload fun(id: number): void
+--- @return nil
+--- @overload fun(id: number): nil
 function UnregisterPedheadshot(id) end
 
     
@@ -6514,8 +6515,8 @@ function UnregisterPedheadshot(id) end
 --- @hash [0x971D38760FBC02EF](https://docs.fivem.net/natives/?_0x971D38760FBC02EF)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedKeepTask(ped, toggle) end
 
     
@@ -6524,8 +6525,8 @@ function SetPedKeepTask(ped, toggle) end
 --- @hash [0x97A790315D3831FD](https://docs.fivem.net/natives/?_0x97A790315D3831FD)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedEnableWeaponBlocking(ped, toggle) end
 
     
@@ -6533,8 +6534,8 @@ function SetPedEnableWeaponBlocking(ped, toggle) end
 ---
 --- @hash [0x97B0DB5B4AA74E77](https://docs.fivem.net/natives/?_0x97B0DB5B4AA74E77)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ResetPedWeaponMovementClipset(ped) end
 
     
@@ -6546,8 +6547,8 @@ function ResetPedWeaponMovementClipset(ped) end
 --- @hash [0x98EFA132A4117BE1](https://docs.fivem.net/natives/?_0x98EFA132A4117BE1)
 --- @param ped Ped
 --- @param name string (char*)
---- @return void
---- @overload fun(ped: Ped, name: string): void
+--- @return nil
+--- @overload fun(ped: Ped, name: string): nil
 function SetPedNameDebug(ped, name) end
 
     
@@ -6555,8 +6556,8 @@ function SetPedNameDebug(ped, name) end
 ---
 --- @hash [0x9911F4A24485F653](https://docs.fivem.net/natives/?_0x9911F4A24485F653)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0x9911f4a24485f653(p0) end
 
     
@@ -6587,8 +6588,8 @@ function IsPedBeingJacked(ped) end
 --- @hash [0x9A77DFD295E29B09](https://docs.fivem.net/natives/?_0x9A77DFD295E29B09)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function N_0x9a77dfd295e29b09(ped, toggle) end
 
     
@@ -6626,8 +6627,8 @@ function GetVehiclePedIsIn(ped, lastVehicle) end
 --- @hash [0x9AC577F5A12AD8A9](https://docs.fivem.net/natives/?_0x9AC577F5A12AD8A9)
 --- @param ped Ped
 --- @param patternHash Hash
---- @return void
---- @overload fun(ped: Ped, patternHash: Hash): void
+--- @return nil
+--- @overload fun(ped: Ped, patternHash: Hash): nil
 function SetPedFiringPattern(ped, patternHash) end
 
     
@@ -6640,8 +6641,8 @@ function SetPedFiringPattern(ped, patternHash) end
 --- @param posX number (float)
 --- @param posY number (float)
 --- @param posZ number (float)
---- @return void
---- @overload fun(ped: Ped, posX: number, posY: number, posZ: number): void
+--- @return nil
+--- @overload fun(ped: Ped, posX: number, posY: number, posZ: number): nil
 function SetPedCoordsKeepVehicle(ped, posX, posY, posZ) end
 
     
@@ -6699,8 +6700,8 @@ function N_0x9c6a6c19b6c0c496(ped, p1) end
 ---
 --- @hash [0x9C720776DAA43E7E](https://docs.fivem.net/natives/?_0x9C720776DAA43E7E)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ClearPedWetness(ped) end
 
     
@@ -6709,8 +6710,8 @@ function ClearPedWetness(ped) end
 --- @hash [0x9C74B0BC831B753A](https://docs.fivem.net/natives/?_0x9C74B0BC831B753A)
 --- @param ped Ped
 --- @param range number (float)
---- @return void
---- @overload fun(ped: Ped, range: number): void
+--- @return nil
+--- @overload fun(ped: Ped, range: number): nil
 function SetPedVisualFieldPeripheralRange(ped, range) end
 
     
@@ -6724,8 +6725,8 @@ function SetPedVisualFieldPeripheralRange(ped, range) end
 --- @param radius number (float)
 --- @param p5 boolean
 --- @param p6 boolean
---- @return void
---- @overload fun(ped: Ped, x: number, y: number, z: number, radius: number, p5: boolean, p6: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, x: number, y: number, z: number, radius: number, p5: boolean, p6: boolean): nil
 function SetPedSphereDefensiveArea(ped, x, y, z, radius, p5, p6) end
 
     
@@ -6758,8 +6759,8 @@ function N_0x9d728c1e12bf5518(ped) end
 --- @hash [0x9DBA107B4937F809](https://docs.fivem.net/natives/?_0x9DBA107B4937F809)
 --- @param ped Ped
 --- @param p1 string (char*)
---- @return void
---- @overload fun(ped: Ped, p1: string): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: string): nil
 function SetPedCoverClipsetOverride(ped, p1) end
 
     
@@ -6773,8 +6774,8 @@ function SetPedCoverClipsetOverride(ped, p1) end
 --- @hash [0x9DBA107B4937F809](https://docs.fivem.net/natives/?_0x9DBA107B4937F809)
 --- @param ped Ped
 --- @param p1 string (char*)
---- @return void
---- @overload fun(ped: Ped, p1: string): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: string): nil
 --- @deprecated
 function N_0x9dba107b4937f809(ped, p1) end
 
@@ -6824,8 +6825,8 @@ function GetRelationshipBetweenGroups(group1, group2) end
 ---
 --- @hash [0x9E8C908F41584ECD](https://docs.fivem.net/natives/?_0x9E8C908F41584ECD)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function SetPedMoveAnimsBlendOut(ped) end
 
     
@@ -6834,8 +6835,8 @@ function SetPedMoveAnimsBlendOut(ped) end
 --- @hash [0x9F3480FE65DB31B5](https://docs.fivem.net/natives/?_0x9F3480FE65DB31B5)
 --- @param ped Ped
 --- @param groupId number (int)
---- @return void
---- @overload fun(ped: Ped, groupId: number): void
+--- @return nil
+--- @overload fun(ped: Ped, groupId: number): nil
 function SetPedAsGroupMember(ped, groupId) end
 
     
@@ -6878,8 +6879,8 @@ function IsPedGoingIntoCover(ped) end
 --- @param ped Ped
 --- @param attributeIndex number (int)
 --- @param enabled boolean
---- @return void
---- @overload fun(ped: Ped, attributeIndex: number, enabled: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, attributeIndex: number, enabled: boolean): nil
 function SetPedCombatAttributes(ped, attributeIndex, enabled) end
 
     
@@ -6890,8 +6891,8 @@ function SetPedCombatAttributes(ped, attributeIndex, enabled) end
 --- @hash [0x9F8AA94D6D97DBF4](https://docs.fivem.net/natives/?_0x9F8AA94D6D97DBF4)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetBlockingOfNonTemporaryEvents(ped, toggle) end
 
     
@@ -6899,8 +6900,8 @@ function SetBlockingOfNonTemporaryEvents(ped, toggle) end
 ---
 --- @hash [0x9FA4664CF62E47E8](https://docs.fivem.net/natives/?_0x9FA4664CF62E47E8)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ResetPedRagdollTimer(ped) end
 
     
@@ -6962,8 +6963,8 @@ function GetTattooZone(collection, overlay) end
 --- @hash [0x9FF447B6B6AD960A](https://docs.fivem.net/natives/?_0x9FF447B6B6AD960A)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedGravity(ped, toggle) end
 
     
@@ -6998,8 +6999,8 @@ function IsAnyPedShootingInArea(x1, y1, z1, x2, y2, z2, p6, p7) end
 ---
 --- @hash [0xA21C118553BBDF02](https://docs.fivem.net/natives/?_0xA21C118553BBDF02)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function DisableHeadBlendPaletteColor(ped) end
 
     
@@ -7008,8 +7009,8 @@ function DisableHeadBlendPaletteColor(ped) end
 ---
 --- @hash [0xA21C118553BBDF02](https://docs.fivem.net/natives/?_0xA21C118553BBDF02)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function N_0xa21c118553bbdf02(ped) end
 
@@ -7018,8 +7019,8 @@ function N_0xa21c118553bbdf02(ped) end
 ---
 --- @hash [0xA3A9299C4F2ADB98](https://docs.fivem.net/natives/?_0xA3A9299C4F2ADB98)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function SetPedShouldPlayNormalScenarioExit(ped) end
 
     
@@ -7028,8 +7029,8 @@ function SetPedShouldPlayNormalScenarioExit(ped) end
 ---
 --- @hash [0xA3A9299C4F2ADB98](https://docs.fivem.net/natives/?_0xA3A9299C4F2ADB98)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function N_0xa3a9299c4f2adb98(ped) end
 
@@ -7073,8 +7074,8 @@ function N_0xa3f3564a5b3646c0(ped) end
 ---
 --- @hash [0xA52D5247A4227E14](https://docs.fivem.net/natives/?_0xA52D5247A4227E14)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xa52d5247a4227e14(p0) end
 
     
@@ -7085,8 +7086,8 @@ function N_0xa52d5247a4227e14(p0) end
 --- @hash [0xA549131166868ED3](https://docs.fivem.net/natives/?_0xA549131166868ED3)
 --- @param ped Ped
 --- @param p1 string (char*)
---- @return void
---- @overload fun(ped: Ped, p1: string): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: string): nil
 function SetPedCowerHash(ped, p1) end
 
     
@@ -7148,8 +7149,8 @@ function N_0xa635c11b8c44afc2() end
 --- @hash [0xA660FAF550EB37E5](https://docs.fivem.net/natives/?_0xA660FAF550EB37E5)
 --- @param p0 any
 --- @param p1 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean): nil
 function N_0xa660faf550eb37e5(p0, p1) end
 
     
@@ -7176,8 +7177,8 @@ function GetNumberOfPedPropTextureVariations(ped, propId, drawableId) end
 --- @hash [0xA731F608CA104E3C](https://docs.fivem.net/natives/?_0xA731F608CA104E3C)
 --- @param driver Ped
 --- @param aggressiveness number (float)
---- @return void
---- @overload fun(driver: Ped, aggressiveness: number): void
+--- @return nil
+--- @overload fun(driver: Ped, aggressiveness: number): nil
 function SetDriverAggressiveness(driver, aggressiveness) end
 
     
@@ -7186,8 +7187,8 @@ function SetDriverAggressiveness(driver, aggressiveness) end
 --- @hash [0xA7B2458D0AD6DED8](https://docs.fivem.net/natives/?_0xA7B2458D0AD6DED8)
 --- @param ped Ped
 --- @param instantly boolean
---- @return void
---- @overload fun(ped: Ped, instantly: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, instantly: boolean): nil
 function RemovePedHelmet(ped, instantly) end
 
     
@@ -7209,8 +7210,8 @@ function IsPedSittingInVehicle(ped, vehicle) end
 --- @hash [0xA9B61A329BFDCBEA](https://docs.fivem.net/natives/?_0xA9B61A329BFDCBEA)
 --- @param p0 any
 --- @param p1 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean): nil
 function N_0xa9b61a329bfdcbea(p0, p1) end
 
     
@@ -7223,8 +7224,8 @@ function N_0xa9b61a329bfdcbea(p0, p1) end
 --- @hash [0xA9C8960E8684C1B5](https://docs.fivem.net/natives/?_0xA9C8960E8684C1B5)
 --- @param ped Ped
 --- @param amount number (int)
---- @return void
---- @overload fun(ped: Ped, amount: number): void
+--- @return nil
+--- @overload fun(ped: Ped, amount: number): nil
 function SetPedMoney(ped, amount) end
 
     
@@ -7233,8 +7234,8 @@ function SetPedMoney(ped, amount) end
 --- @hash [0xAA5A7ECE2AA8FE70](https://docs.fivem.net/natives/?_0xAA5A7ECE2AA8FE70)
 --- @param ped Ped
 --- @param heading number (float)
---- @return void
---- @overload fun(ped: Ped, heading: number): void
+--- @return nil
+--- @overload fun(ped: Ped, heading: number): nil
 function SetPedDesiredHeading(ped, heading) end
 
     
@@ -7243,8 +7244,8 @@ function SetPedDesiredHeading(ped, heading) end
 --- @hash [0xAA74EC0CB0AAEA2C](https://docs.fivem.net/natives/?_0xAA74EC0CB0AAEA2C)
 --- @param ped Ped
 --- @param transitionSpeed number (float)
---- @return void
---- @overload fun(ped: Ped, transitionSpeed: number): void
+--- @return nil
+--- @overload fun(ped: Ped, transitionSpeed: number): nil
 function ResetPedMovementClipset(ped, transitionSpeed) end
 
     
@@ -7276,8 +7277,8 @@ function SetPedPinnedDown(ped, pinned, i) end
 ---
 --- @hash [0xAC6D445B994DF95E](https://docs.fivem.net/natives/?_0xAC6D445B994DF95E)
 --- @param ped Ped (Ped*)
---- @return void
---- @overload fun(): Ped
+--- @return nil
+--- @overload fun(): nil, Ped
 function RemovePedElegantly(ped) end
 
     
@@ -7292,8 +7293,8 @@ function RemovePedElegantly(ped) end
 --- @param hash Hash
 --- @param p4 any
 --- @param p5 any
---- @return void
---- @overload fun(ped: Ped, p1: any, p2: number, hash: Hash, p4: any, p5: any): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: any, p2: number, hash: Hash, p4: any, p5: any): nil
 function N_0xad27d957598e49e9(ped, p1, p2, hash, p4, p5) end
 
     
@@ -7302,8 +7303,8 @@ function N_0xad27d957598e49e9(ped, p1, p2, hash, p4, p5) end
 --- @hash [0xADB3F206518799E8](https://docs.fivem.net/natives/?_0xADB3F206518799E8)
 --- @param ped Ped
 --- @param hash Hash
---- @return void
---- @overload fun(ped: Ped, hash: Hash): void
+--- @return nil
+--- @overload fun(ped: Ped, hash: Hash): nil
 function SetPedRelationshipGroupDefaultHash(ped, hash) end
 
     
@@ -7383,8 +7384,8 @@ function SetPedToRagdoll(ped, time1, time2, ragdollType, p4, p5, p6) end
 --- @param ped Ped
 --- @param clipSet string (char*)
 --- @param transitionSpeed number (float)
---- @return void
---- @overload fun(ped: Ped, clipSet: string, transitionSpeed: number): void
+--- @return nil
+--- @overload fun(ped: Ped, clipSet: string, transitionSpeed: number): nil
 function SetPedMovementClipset(ped, clipSet, transitionSpeed) end
 
     
@@ -7405,8 +7406,8 @@ function GetPedResetFlag(ped, flagId) end
 --- @hash [0xAFC976FD0580C7B3](https://docs.fivem.net/natives/?_0xAFC976FD0580C7B3)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function N_0xafc976fd0580c7b3(ped, toggle) end
 
     
@@ -7414,8 +7415,8 @@ function N_0xafc976fd0580c7b3(ped, toggle) end
 ---
 --- @hash [0xAFF4710E2A0A6C12](https://docs.fivem.net/natives/?_0xAFF4710E2A0A6C12)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function DropAmbientProp(ped) end
 
     
@@ -7424,8 +7425,8 @@ function DropAmbientProp(ped) end
 ---
 --- @hash [0xAFF4710E2A0A6C12](https://docs.fivem.net/natives/?_0xAFF4710E2A0A6C12)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function N_0xaff4710e2a0a6c12(ped) end
 
@@ -7435,8 +7436,8 @@ function N_0xaff4710e2a0a6c12(ped) end
 --- @hash [0xB128377056A54E2A](https://docs.fivem.net/natives/?_0xB128377056A54E2A)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedCanRagdoll(ped, toggle) end
 
     
@@ -7461,8 +7462,8 @@ function SetPedCanRagdoll(ped, toggle) end
 ---
 --- @hash [0xB158DFCCC56E5C5B](https://docs.fivem.net/natives/?_0xB158DFCCC56E5C5B)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function GivePedNmMessage(ped) end
 
     
@@ -7473,8 +7474,8 @@ function GivePedNmMessage(ped) end
 --- @hash [0xB195FFA8042FC5C3](https://docs.fivem.net/natives/?_0xB195FFA8042FC5C3)
 --- @param driver Ped
 --- @param ability number (float)
---- @return void
---- @overload fun(driver: Ped, ability: number): void
+--- @return nil
+--- @overload fun(driver: Ped, ability: number): nil
 function SetDriverAbility(driver, ability) end
 
     
@@ -7483,8 +7484,8 @@ function SetDriverAbility(driver, ability) end
 --- @hash [0xB282749D5E028163](https://docs.fivem.net/natives/?_0xB282749D5E028163)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0xb282749d5e028163(p0, p1) end
 
     
@@ -7501,8 +7502,8 @@ function N_0xb282749d5e028163(p0, p1) end
 --- @param interiorFlags number (int)
 --- @param scale number (float)
 --- @param duration number (int)
---- @return void
---- @overload fun(x: number, y: number, z: number, p3: number, p4: number, p5: number, p6: number, interiorFlags: number, scale: number, duration: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, p3: number, p4: number, p5: number, p6: number, interiorFlags: number, scale: number, duration: number): nil
 function SpawnpointsStartSearchInAngledArea(x, y, z, p3, p4, p5, p6, interiorFlags, scale, duration) end
 
     
@@ -7520,8 +7521,8 @@ function SpawnpointsStartSearchInAngledArea(x, y, z, p3, p4, p5, p6, interiorFla
 --- @param interiorFlags number (int)
 --- @param scale number (float)
 --- @param duration number (int)
---- @return void
---- @overload fun(x: number, y: number, z: number, p3: number, p4: number, p5: number, p6: number, interiorFlags: number, scale: number, duration: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, p3: number, p4: number, p5: number, p6: number, interiorFlags: number, scale: number, duration: number): nil
 --- @deprecated
 function N_0xb2aff10216defa2f(x, y, z, p3, p4, p5, p6, interiorFlags, scale, duration) end
 
@@ -7547,8 +7548,8 @@ function IsPedDoingDriveby(ped) end
 ---
 --- @hash [0xB3352E018D6F89DF](https://docs.fivem.net/natives/?_0xB3352E018D6F89DF)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function N_0xb3352e018d6f89df(toggle) end
 
     
@@ -7563,8 +7564,8 @@ function N_0xb3352e018d6f89df(toggle) end
 --- @param ped Ped
 --- @param toggle boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean, p2: boolean): nil
 function SetCanAttackFriendly(ped, toggle, p2) end
 
     
@@ -7572,8 +7573,8 @@ function SetCanAttackFriendly(ped, toggle, p2) end
 ---
 --- @hash [0xB47BD05FA66B40CF](https://docs.fivem.net/natives/?_0xB47BD05FA66B40CF)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function StopAnyPedModelBeingSuppressed() end
 
     
@@ -7601,8 +7602,8 @@ function CreateRandomPed(posX, posY, posZ) end
 ---
 --- @hash [0xB50EB4CCB29704AC](https://docs.fivem.net/natives/?_0xB50EB4CCB29704AC)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ClearPedScubaGearVariation(ped) end
 
     
@@ -7611,8 +7612,8 @@ function ClearPedScubaGearVariation(ped) end
 ---
 --- @hash [0xB50EB4CCB29704AC](https://docs.fivem.net/natives/?_0xB50EB4CCB29704AC)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function N_0xb50eb4ccb29704ac(ped) end
 
@@ -7622,8 +7623,8 @@ function N_0xb50eb4ccb29704ac(ped) end
 ---
 --- @hash [0xB50EB4CCB29704AC](https://docs.fivem.net/natives/?_0xB50EB4CCB29704AC)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function RemovePedScubaGearNow(ped) end
 
@@ -7634,8 +7635,8 @@ function RemovePedScubaGearNow(ped) end
 ---
 --- @hash [0xB5485E4907B53019](https://docs.fivem.net/natives/?_0xB5485E4907B53019)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function SetPedWetnessEnabledThisFrame(ped) end
 
     
@@ -7643,8 +7644,8 @@ function SetPedWetnessEnabledThisFrame(ped) end
 ---
 --- @hash [0xB6BA2444AB393DA2](https://docs.fivem.net/natives/?_0xB6BA2444AB393DA2)
 --- @param groupHash Hash
---- @return void
---- @overload fun(groupHash: Hash): void
+--- @return nil
+--- @overload fun(groupHash: Hash): nil
 function RemoveRelationshipGroup(groupHash) end
 
     
@@ -7653,8 +7654,8 @@ function RemoveRelationshipGroup(groupHash) end
 --- @hash [0xB6C49F8A5E295A5D](https://docs.fivem.net/natives/?_0xB6C49F8A5E295A5D)
 --- @param sceneID number (int)
 --- @param rate number (float)
---- @return void
---- @overload fun(sceneID: number, rate: number): void
+--- @return nil
+--- @overload fun(sceneID: number, rate: number): nil
 function SetSynchronizedSceneRate(sceneID, rate) end
 
     
@@ -7663,8 +7664,8 @@ function SetSynchronizedSceneRate(sceneID, rate) end
 --- @hash [0xB782F8238512BAD5](https://docs.fivem.net/natives/?_0xB782F8238512BAD5)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any): any
+--- @return nil
+--- @overload fun(p0: any): nil, any
 function SpawnpointsGetSearchResultFlags(p0, p1) end
 
     
@@ -7674,8 +7675,8 @@ function SpawnpointsGetSearchResultFlags(p0, p1) end
 --- @hash [0xB782F8238512BAD5](https://docs.fivem.net/natives/?_0xB782F8238512BAD5)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any): any
+--- @return nil
+--- @overload fun(p0: any): nil, any
 --- @deprecated
 function N_0xb782f8238512bad5(p0, p1) end
 
@@ -7789,8 +7790,8 @@ function N_0xba8805a1108a2515(ped) end
 --- @hash [0xBAF20C5432058024](https://docs.fivem.net/natives/?_0xBAF20C5432058024)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedCanPlayGestureAnims(ped, toggle) end
 
     
@@ -7801,8 +7802,8 @@ function SetPedCanPlayGestureAnims(ped, toggle) end
 --- @hash [0xBB03C38DD3FB7FFD](https://docs.fivem.net/natives/?_0xBB03C38DD3FB7FFD)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedAsCop(ped, toggle) end
 
     
@@ -7821,8 +7822,8 @@ function IsPedGettingIntoAVehicle(ped) end
 ---
 --- @hash [0xBB8DE8CF6A8DD8BB](https://docs.fivem.net/natives/?_0xBB8DE8CF6A8DD8BB)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ResetPedLastVehicle(ped) end
 
     
@@ -7840,8 +7841,8 @@ function IsPedFleeing(ped) end
 --- @hash [0xBC0ED94165A48BC2](https://docs.fivem.net/natives/?_0xBC0ED94165A48BC2)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedGetOutUpsideDownVehicle(ped, toggle) end
 
     
@@ -7869,8 +7870,8 @@ function GetAnimInitialOffsetPosition(animDict, animName, x, y, z, xRot, yRot, z
 --- @param ped Ped
 --- @param team number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, team: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, team: number, toggle: boolean): nil
 function SetPedCanBeTargettedByTeam(ped, team, toggle) end
 
     
@@ -7893,8 +7894,8 @@ function SetPedCanBeTargettedByTeam(ped, team, toggle) end
 --- @param relationship number (int)
 --- @param group1 Hash
 --- @param group2 Hash
---- @return void
---- @overload fun(relationship: number, group1: Hash, group2: Hash): void
+--- @return nil
+--- @overload fun(relationship: number, group1: Hash, group2: Hash): nil
 function SetRelationshipBetweenGroups(relationship, group1, group2) end
 
     
@@ -7907,8 +7908,8 @@ function SetRelationshipBetweenGroups(relationship, group1, group2) end
 --- @hash [0xBF29516833893561](https://docs.fivem.net/natives/?_0xBF29516833893561)
 --- @param ped Ped
 --- @param value number (float)
---- @return void
---- @overload fun(ped: Ped, value: number): void
+--- @return nil
+--- @overload fun(ped: Ped, value: number): nil
 function SetPedEnveffScale(ped, value) end
 
     
@@ -7926,8 +7927,8 @@ function IsPedSwimmingUnderWater(ped) end
 --- @hash [0xC0E78D5C2CE3EB25](https://docs.fivem.net/natives/?_0xC0E78D5C2CE3EB25)
 --- @param ped Ped
 --- @param helmetFlag number (int)
---- @return void
---- @overload fun(ped: Ped, helmetFlag: number): void
+--- @return nil
+--- @overload fun(ped: Ped, helmetFlag: number): nil
 function SetPedHelmetFlag(ped, helmetFlag) end
 
     
@@ -7936,8 +7937,8 @@ function SetPedHelmetFlag(ped, helmetFlag) end
 --- @hash [0xC11C18092C5530DC](https://docs.fivem.net/natives/?_0xC11C18092C5530DC)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedCanHeadIk(ped, toggle) end
 
     
@@ -7945,8 +7946,8 @@ function SetPedCanHeadIk(ped, toggle) end
 ---
 --- @hash [0xC158D28142A34608](https://docs.fivem.net/natives/?_0xC158D28142A34608)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function StopPedWeaponFiringWhenDropped(ped) end
 
     
@@ -7955,8 +7956,8 @@ function StopPedWeaponFiringWhenDropped(ped) end
 --- @hash [0xC1670E958EEE24E5](https://docs.fivem.net/natives/?_0xC1670E958EEE24E5)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedCanBeDraggedOut(ped, toggle) end
 
     
@@ -7967,8 +7968,8 @@ function SetPedCanBeDraggedOut(ped, toggle) end
 --- @param ped Ped
 --- @param flagId number (int)
 --- @param doReset boolean
---- @return void
---- @overload fun(ped: Ped, flagId: number, doReset: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, flagId: number, doReset: boolean): nil
 function SetPedResetFlag(ped, flagId, doReset) end
 
     
@@ -7977,8 +7978,8 @@ function SetPedResetFlag(ped, flagId, doReset) end
 --- @hash [0xC1F6EBF9A3D55538](https://docs.fivem.net/natives/?_0xC1F6EBF9A3D55538)
 --- @param ped Ped
 --- @param heatScale number (float)
---- @return void
---- @overload fun(ped: Ped, heatScale: number): void
+--- @return nil
+--- @overload fun(ped: Ped, heatScale: number): nil
 function SetPedHeatscaleOverride(ped, heatScale) end
 
     
@@ -7988,8 +7989,8 @@ function SetPedHeatscaleOverride(ped, heatScale) end
 --- @hash [0xC1F6EBF9A3D55538](https://docs.fivem.net/natives/?_0xC1F6EBF9A3D55538)
 --- @param ped Ped
 --- @param heatScale number (float)
---- @return void
---- @overload fun(ped: Ped, heatScale: number): void
+--- @return nil
+--- @overload fun(ped: Ped, heatScale: number): nil
 --- @deprecated
 function N_0xc1f6ebf9a3d55538(ped, heatScale) end
 
@@ -7998,8 +7999,8 @@ function N_0xc1f6ebf9a3d55538(ped, heatScale) end
 ---
 --- @hash [0xC2EE020F5FB4DB53](https://docs.fivem.net/natives/?_0xC2EE020F5FB4DB53)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function N_0xc2ee020f5fb4db53(ped) end
 
     
@@ -8027,8 +8028,8 @@ function N_0xc30bdaee47256c13(p0) end
 --- @param p7 any
 --- @param blendInDuration number (int)
 --- @param blendOutDuration number (int)
---- @return void
---- @overload fun(ped: Ped, ikIndex: number, entityLookAt: Entity, boneLookAt: number, offsetX: number, offsetY: number, offsetZ: number, p7: any, blendInDuration: number, blendOutDuration: number): void
+--- @return nil
+--- @overload fun(ped: Ped, ikIndex: number, entityLookAt: Entity, boneLookAt: number, offsetX: number, offsetY: number, offsetZ: number, p7: any, blendInDuration: number, blendOutDuration: number): nil
 function SetIkTarget(ped, ikIndex, entityLookAt, boneLookAt, offsetX, offsetY, offsetZ, p7, blendInDuration, blendOutDuration) end
 
     
@@ -8086,8 +8087,8 @@ function GetClosestPed(x, y, z, radius, p4, p5, outPed, p7, p8, pedType) end
 --- @hash [0xC396F5B86FF9FEBD](https://docs.fivem.net/natives/?_0xC396F5B86FF9FEBD)
 --- @param ped Ped
 --- @param mode number (int)
---- @return void
---- @overload fun(ped: Ped, mode: number): void
+--- @return nil
+--- @overload fun(ped: Ped, mode: number): nil
 function SetPedLegIkMode(ped, mode) end
 
     
@@ -8098,8 +8099,8 @@ function SetPedLegIkMode(ped, mode) end
 ---
 --- @hash [0xC44AA05345C992C6](https://docs.fivem.net/natives/?_0xC44AA05345C992C6)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function SetPedRandomProps(ped) end
 
     
@@ -8108,8 +8109,8 @@ function SetPedRandomProps(ped) end
 --- @hash [0xC514825C507E3736](https://docs.fivem.net/natives/?_0xC514825C507E3736)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedCanPeekInCover(ped, toggle) end
 
     
@@ -8118,8 +8119,8 @@ function SetPedCanPeekInCover(ped, toggle) end
 --- @hash [0xC52E0F855C58FC2E](https://docs.fivem.net/natives/?_0xC52E0F855C58FC2E)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetEnableBoundAnkles(ped, toggle) end
 
     
@@ -8156,8 +8157,8 @@ function IsPedPlantingBomb(ped) end
 --- @hash [0xC7622C0D36B2FDA8](https://docs.fivem.net/natives/?_0xC7622C0D36B2FDA8)
 --- @param ped Ped
 --- @param p1 number (int)
---- @return void
---- @overload fun(ped: Ped, p1: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: number): nil
 function SetPedCombatAbility(ped, p1) end
 
     
@@ -8167,8 +8168,8 @@ function SetPedCombatAbility(ped, p1) end
 ---
 --- @hash [0xC79196DCB36F6121](https://docs.fivem.net/natives/?_0xC79196DCB36F6121)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ClearPedCoverClipsetOverride(ped) end
 
     
@@ -8179,8 +8180,8 @@ function ClearPedCoverClipsetOverride(ped) end
 ---
 --- @hash [0xC79196DCB36F6121](https://docs.fivem.net/natives/?_0xC79196DCB36F6121)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function N_0xc79196dcb36f6121(ped) end
 
@@ -8190,8 +8191,8 @@ function N_0xc79196dcb36f6121(ped) end
 --- @hash [0xC7EF1BA83230BA07](https://docs.fivem.net/natives/?_0xC7EF1BA83230BA07)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedCanBeShotInVehicle(ped, toggle) end
 
     
@@ -8208,8 +8209,8 @@ function SetPedCanBeShotInVehicle(ped, toggle) end
 --- @param p7 number (float)
 --- @param p8 boolean
 --- @param p9 boolean
---- @return void
---- @overload fun(ped: Ped, p1: number, p2: number, p3: number, p4: number, p5: number, p6: number, p7: number, p8: boolean, p9: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: number, p2: number, p3: number, p4: number, p5: number, p6: number, p7: number, p8: boolean, p9: boolean): nil
 function SetPedAngledDefensiveArea(ped, p1, p2, p3, p4, p5, p6, p7, p8, p9) end
 
     
@@ -8218,8 +8219,8 @@ function SetPedAngledDefensiveArea(ped, p1, p2, p3, p4, p5, p6, p7, p8, p9) end
 --- @hash [0xC80A74AC829DDD92](https://docs.fivem.net/natives/?_0xC80A74AC829DDD92)
 --- @param ped Ped
 --- @param hash Hash
---- @return void
---- @overload fun(ped: Ped, hash: Hash): void
+--- @return nil
+--- @overload fun(ped: Ped, hash: Hash): nil
 function SetPedRelationshipGroupHash(ped, hash) end
 
     
@@ -8233,8 +8234,8 @@ function SetPedRelationshipGroupHash(ped, hash) end
 --- @hash [0xC8A9481A01E63C28](https://docs.fivem.net/natives/?_0xC8A9481A01E63C28)
 --- @param ped Ped
 --- @param p1 number (int)
---- @return void
---- @overload fun(ped: Ped, p1: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: number): nil
 function SetPedRandomComponentVariation(ped, p1) end
 
     
@@ -8256,8 +8257,8 @@ function IsPedModel(ped, modelHash) end
 --- @hash [0xCB7553CDCEF4A735](https://docs.fivem.net/natives/?_0xCB7553CDCEF4A735)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedCanCowerInCover(ped, toggle) end
 
     
@@ -8268,8 +8269,8 @@ function SetPedCanCowerInCover(ped, toggle) end
 --- @param p1 boolean
 --- @param type number (int)
 --- @param p3 number (int)
---- @return void
---- @overload fun(ped: Ped, p1: boolean, type: number, p3: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean, type: number, p3: number): nil
 function SetForceStepType(ped, p1, type, p3) end
 
     
@@ -8281,8 +8282,8 @@ function SetForceStepType(ped, p1, type, p3) end
 --- @param p1 boolean
 --- @param type number (int)
 --- @param p3 number (int)
---- @return void
---- @overload fun(ped: Ped, p1: boolean, type: number, p3: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean, type: number, p3: number): nil
 --- @deprecated
 function N_0xcb968b53fc7f916d(ped, p1, type, p3) end
 
@@ -8315,8 +8316,8 @@ function N_0xcc6e3b6bb69501f1(groupHash) end
 --- @param g number (int)
 --- @param b number (int)
 --- @param id number (int)
---- @return void
---- @overload fun(ped: Ped, r: number, g: number, b: number, id: number): void
+--- @return nil
+--- @overload fun(ped: Ped, r: number, g: number, b: number, id: number): nil
 function SetHeadBlendPaletteColor(ped, r, g, b, id) end
 
     
@@ -8329,8 +8330,8 @@ function SetHeadBlendPaletteColor(ped, r, g, b, id) end
 --- @param g number (int)
 --- @param b number (int)
 --- @param id number (int)
---- @return void
---- @overload fun(ped: Ped, r: number, g: number, b: number, id: number): void
+--- @return nil
+--- @overload fun(ped: Ped, r: number, g: number, b: number, id: number): nil
 --- @deprecated
 function N_0xcc9682b8951c5229(ped, r, g, b, id) end
 
@@ -8342,8 +8343,8 @@ function N_0xcc9682b8951c5229(ped, r, g, b, id) end
 --- @hash [0xCD018C591F94CB43](https://docs.fivem.net/natives/?_0xCD018C591F94CB43)
 --- @param ped Ped
 --- @param p1 boolean
---- @return void
---- @overload fun(ped: Ped, p1: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean): nil
 function N_0xcd018c591f94cb43(ped, p1) end
 
     
@@ -8357,8 +8358,8 @@ function N_0xcd018c591f94cb43(ped, p1) end
 --- @hash [0xCD17B554996A8D9E](https://docs.fivem.net/natives/?_0xCD17B554996A8D9E)
 --- @param ped Ped
 --- @param lookAt Ped
---- @return void
---- @overload fun(ped: Ped, lookAt: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped, lookAt: Ped): nil
 function SetPedPrimaryLookat(ped, lookAt) end
 
     
@@ -8380,8 +8381,8 @@ function GetDeadPedPickupCoords(ped, p1, p2) end
 ---
 --- @hash [0xCD8A7537A9B52F06](https://docs.fivem.net/natives/?_0xCD8A7537A9B52F06)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ClearAllPedProps(ped) end
 
     
@@ -8389,8 +8390,8 @@ function ClearAllPedProps(ped) end
 ---
 --- @hash [0xCD9CC7E200A52A6F](https://docs.fivem.net/natives/?_0xCD9CC7E200A52A6F)
 --- @param scene number (int)
---- @return void
---- @overload fun(scene: number): void
+--- @return nil
+--- @overload fun(scene: number): nil
 function DisposeSynchronizedScene(scene) end
 
     
@@ -8399,8 +8400,8 @@ function DisposeSynchronizedScene(scene) end
 ---
 --- @hash [0xCD9CC7E200A52A6F](https://docs.fivem.net/natives/?_0xCD9CC7E200A52A6F)
 --- @param scene number (int)
---- @return void
---- @overload fun(scene: number): void
+--- @return nil
+--- @overload fun(scene: number): nil
 --- @deprecated
 function N_0xcd9cc7e200a52a6f(scene) end
 
@@ -8420,8 +8421,8 @@ function N_0xcd9cc7e200a52a6f(scene) end
 --- @hash [0xCE2F5FC3AF7E8C1E](https://docs.fivem.net/natives/?_0xCE2F5FC3AF7E8C1E)
 --- @param groupId number (int)
 --- @param formationType number (int)
---- @return void
---- @overload fun(groupId: number, formationType: number): void
+--- @return nil
+--- @overload fun(groupId: number, formationType: number): nil
 function SetGroupFormation(groupId, formationType) end
 
     
@@ -8434,8 +8435,8 @@ function SetGroupFormation(groupId, formationType) end
 --- @hash [0xCEA04D83135264CC](https://docs.fivem.net/natives/?_0xCEA04D83135264CC)
 --- @param ped Ped
 --- @param amount number (int)
---- @return void
---- @overload fun(ped: Ped, amount: number): void
+--- @return nil
+--- @overload fun(ped: Ped, amount: number): nil
 function SetPedArmour(ped, amount) end
 
     
@@ -8444,8 +8445,8 @@ function SetPedArmour(ped, amount) end
 --- @hash [0xCEDA60A74219D064](https://docs.fivem.net/natives/?_0xCEDA60A74219D064)
 --- @param p0 any
 --- @param p1 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean): nil
 function N_0xceda60a74219d064(p0, p1) end
 
     
@@ -8572,8 +8573,8 @@ function N_0xd1f7ca1535d22818() end
 --- @hash [0xD2C5AA0C0E8D0F1E](https://docs.fivem.net/natives/?_0xD2C5AA0C0E8D0F1E)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetEnablePedEnveffScale(ped, toggle) end
 
     
@@ -8581,8 +8582,8 @@ function SetEnablePedEnveffScale(ped, toggle) end
 ---
 --- @hash [0xD33DAA36272177C4](https://docs.fivem.net/natives/?_0xD33DAA36272177C4)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function N_0xd33daa36272177c4(ped) end
 
     
@@ -8590,8 +8591,8 @@ function N_0xd33daa36272177c4(ped) end
 ---
 --- @hash [0xD37401D78A929A49](https://docs.fivem.net/natives/?_0xD37401D78A929A49)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function RemoveScenarioBlockingAreas() end
 
     
@@ -8623,8 +8624,8 @@ function CreatePed(pedType, modelHash, x, y, z, heading, isNetwork, bScriptHostP
 --- @param r number (int)
 --- @param g number (int)
 --- @param b number (int)
---- @return void
---- @overload fun(ped: Ped, r: number, g: number, b: number): void
+--- @return nil
+--- @overload fun(ped: Ped, r: number, g: number, b: number): nil
 function SetPedEnveffColorModulator(ped, r, g, b) end
 
     
@@ -8639,8 +8640,8 @@ function SetPedEnveffColorModulator(ped, r, g, b) end
 --- @param r number (int)
 --- @param g number (int)
 --- @param b number (int)
---- @return void
---- @overload fun(ped: Ped, r: number, g: number, b: number): void
+--- @return nil
+--- @overload fun(ped: Ped, r: number, g: number, b: number): nil
 --- @deprecated
 function N_0xd69411aa0cebf9e9(ped, r, g, b) end
 
@@ -8672,8 +8673,8 @@ function IsPedFacingPed(ped, otherPed, angle) end
 --- @hash [0xD718A22995E2B4BC](https://docs.fivem.net/natives/?_0xD718A22995E2B4BC)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedDiesInSinkingVehicle(ped, toggle) end
 
     
@@ -8696,8 +8697,8 @@ function GetPedLastDamageBone(ped, outBone) end
 --- @param p1 boolean
 --- @param p2 number (int)
 --- @param action string (char*)
---- @return void
---- @overload fun(ped: Ped, p1: boolean, p2: number, action: string): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean, p2: number, action: string): nil
 function SetPedUsingActionMode(ped, p1, p2, action) end
 
     
@@ -8759,8 +8760,8 @@ function IsPedFatallyInjured(ped) end
 --- @hash [0xD86D101FCFD00A4B](https://docs.fivem.net/natives/?_0xD86D101FCFD00A4B)
 --- @param ped Ped
 --- @param flags number (int)
---- @return void
---- @overload fun(ped: Ped, flags: number): void
+--- @return nil
+--- @overload fun(ped: Ped, flags: number): nil
 function ClearRagdollBlockingFlags(ped, flags) end
 
     
@@ -8772,8 +8773,8 @@ function ClearRagdollBlockingFlags(ped, flags) end
 --- @hash [0xD86D101FCFD00A4B](https://docs.fivem.net/natives/?_0xD86D101FCFD00A4B)
 --- @param ped Ped
 --- @param flags number (int)
---- @return void
---- @overload fun(ped: Ped, flags: number): void
+--- @return nil
+--- @overload fun(ped: Ped, flags: number): nil
 --- @deprecated
 function N_0xd86d101fcfd00a4b(ped, flags) end
 
@@ -8786,8 +8787,8 @@ function N_0xd86d101fcfd00a4b(ped, flags) end
 --- @hash [0xD86D101FCFD00A4B](https://docs.fivem.net/natives/?_0xD86D101FCFD00A4B)
 --- @param ped Ped
 --- @param flags number (int)
---- @return void
---- @overload fun(ped: Ped, flags: number): void
+--- @return nil
+--- @overload fun(ped: Ped, flags: number): nil
 --- @deprecated
 function ResetPedRagdollBlockingFlags(ped, flags) end
 
@@ -8802,8 +8803,8 @@ function ResetPedRagdollBlockingFlags(ped, flags) end
 --- @param z number (float)
 --- @param min number (float)
 --- @param max number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number, min: number, max: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, min: number, max: number): nil
 function SetPopControlSphereThisFrame(x, y, z, min, max) end
 
     
@@ -8818,8 +8819,8 @@ function SetPopControlSphereThisFrame(x, y, z, min, max) end
 --- @param z number (float)
 --- @param min number (float)
 --- @param max number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number, min: number, max: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, min: number, max: number): nil
 --- @deprecated
 function N_0xd8c3be3ee94caf2d(x, y, z, min, max) end
 
@@ -8830,8 +8831,8 @@ function N_0xd8c3be3ee94caf2d(x, y, z, min, max) end
 --- @param ped Ped
 --- @param stance number (int)
 --- @param p2 number (float)
---- @return void
---- @overload fun(ped: Ped, stance: number, p2: number): void
+--- @return nil
+--- @overload fun(ped: Ped, stance: number, p2: number): nil
 function ClearPedAlternateMovementAnim(ped, stance, p2) end
 
     
@@ -8840,8 +8841,8 @@ function ClearPedAlternateMovementAnim(ped, stance, p2) end
 --- @hash [0xD9A897A4C6C2974F](https://docs.fivem.net/natives/?_0xD9A897A4C6C2974F)
 --- @param sceneID number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(sceneID: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(sceneID: number, toggle: boolean): nil
 function SetSynchronizedSceneLooped(sceneID, toggle) end
 
     
@@ -8850,8 +8851,8 @@ function SetSynchronizedSceneLooped(sceneID, toggle) end
 --- @hash [0xDA1F1B7BE1A8766F](https://docs.fivem.net/natives/?_0xDA1F1B7BE1A8766F)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedAllowedToDuck(ped, toggle) end
 
     
@@ -8873,8 +8874,8 @@ function GetPedheadshotTxdString(id) end
 --- @hash [0xDBA71115ED9941A6](https://docs.fivem.net/natives/?_0xDBA71115ED9941A6)
 --- @param ped Ped
 --- @param value number (int)
---- @return void
---- @overload fun(ped: Ped, value: number): void
+--- @return nil
+--- @overload fun(ped: Ped, value: number): nil
 function SetPedAlertness(ped, value) end
 
     
@@ -8883,8 +8884,8 @@ function SetPedAlertness(ped, value) end
 --- @hash [0xDC2C5C242AAC342B](https://docs.fivem.net/natives/?_0xDC2C5C242AAC342B)
 --- @param ped Ped
 --- @param multiplier number (float)
---- @return void
---- @overload fun(ped: Ped, multiplier: number): void
+--- @return nil
+--- @overload fun(ped: Ped, multiplier: number): nil
 function SetPedLodMultiplier(ped, multiplier) end
 
     
@@ -8919,8 +8920,8 @@ function N_0xdcca191df9980fd7(ped) end
 --- @hash [0xDDF803377F94AAA8](https://docs.fivem.net/natives/?_0xDDF803377F94AAA8)
 --- @param ped Ped
 --- @param animGroupGesture string (char*)
---- @return void
---- @overload fun(ped: Ped, animGroupGesture: string): void
+--- @return nil
+--- @overload fun(ped: Ped, animGroupGesture: string): nil
 function SetPedGestureGroup(ped, animGroupGesture) end
 
     
@@ -8940,8 +8941,8 @@ function GetPedCombatMovement(ped) end
 --- @hash [0xDED5AF5A0EA4B297](https://docs.fivem.net/natives/?_0xDED5AF5A0EA4B297)
 --- @param driver Ped
 --- @param modifier number (float)
---- @return void
---- @overload fun(driver: Ped, modifier: number): void
+--- @return nil
+--- @overload fun(driver: Ped, modifier: number): nil
 function SetDriverRacingModifier(driver, modifier) end
 
     
@@ -8953,8 +8954,8 @@ function SetDriverRacingModifier(driver, modifier) end
 --- @hash [0xDED5AF5A0EA4B297](https://docs.fivem.net/natives/?_0xDED5AF5A0EA4B297)
 --- @param driver Ped
 --- @param modifier number (float)
---- @return void
---- @overload fun(driver: Ped, modifier: number): void
+--- @return nil
+--- @overload fun(driver: Ped, modifier: number): nil
 --- @deprecated
 function N_0xded5af5a0ea4b297(driver, modifier) end
 
@@ -8966,8 +8967,8 @@ function N_0xded5af5a0ea4b297(driver, modifier) end
 --- @hash [0xDF1AF8B5D56542FA](https://docs.fivem.net/natives/?_0xDF1AF8B5D56542FA)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetEnableHandcuffs(ped, toggle) end
 
     
@@ -8976,8 +8977,8 @@ function SetEnableHandcuffs(ped, toggle) end
 --- @hash [0xDF993EE5E90ABA25](https://docs.fivem.net/natives/?_0xDF993EE5E90ABA25)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedCanRagdollFromPlayerImpact(ped, toggle) end
 
     
@@ -8987,8 +8988,8 @@ function SetPedCanRagdollFromPlayerImpact(ped, toggle) end
 ---
 --- @hash [0xDFE68C4B787E1BFB](https://docs.fivem.net/natives/?_0xDFE68C4B787E1BFB)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function N_0xdfe68c4b787e1bfb(ped) end
 
     
@@ -9053,8 +9054,8 @@ function GetPedPropTextureIndex(ped, componentId) end
 --- @hash [0xE163A4BCE4DE6F11](https://docs.fivem.net/natives/?_0xE163A4BCE4DE6F11)
 --- @param model Hash
 --- @param toggle boolean
---- @return void
---- @overload fun(model: Hash, toggle: boolean): void
+--- @return nil
+--- @overload fun(model: Hash, toggle: boolean): nil
 function SetPedModelIsSuppressed(model, toggle) end
 
     
@@ -9064,8 +9065,8 @@ function SetPedModelIsSuppressed(model, toggle) end
 --- @param ped Ped
 --- @param animName string (char*)
 --- @param animDict string (char*)
---- @return void
---- @overload fun(ped: Ped, animName: string, animDict: string): void
+--- @return nil
+--- @overload fun(ped: Ped, animName: string, animDict: string): nil
 function PlayFacialAnim(ped, animName, animDict) end
 
     
@@ -9073,8 +9074,8 @@ function PlayFacialAnim(ped, animName, animDict) end
 ---
 --- @hash [0xE3B27E70CEAB9F0C](https://docs.fivem.net/natives/?_0xE3B27E70CEAB9F0C)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ClearPedDecorationsLeaveScars(ped) end
 
     
@@ -9083,8 +9084,8 @@ function ClearPedDecorationsLeaveScars(ped) end
 ---
 --- @hash [0xE3B27E70CEAB9F0C](https://docs.fivem.net/natives/?_0xE3B27E70CEAB9F0C)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function N_0xe3b27e70ceab9f0c(ped) end
 
@@ -9094,8 +9095,8 @@ function N_0xe3b27e70ceab9f0c(ped) end
 ---
 --- @hash [0xE3B27E70CEAB9F0C](https://docs.fivem.net/natives/?_0xE3B27E70CEAB9F0C)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function ClearPedFacialDecorations(ped) end
 
@@ -9127,8 +9128,8 @@ function GetPedPaletteVariation(ped, componentId) end
 --- @hash [0xE43A13C9E4CCCBCF](https://docs.fivem.net/natives/?_0xE43A13C9E4CCCBCF)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function BlockPedDeadBodyShockingEvents(ped, toggle) end
 
     
@@ -9138,8 +9139,8 @@ function BlockPedDeadBodyShockingEvents(ped, toggle) end
 --- @hash [0xE43A13C9E4CCCBCF](https://docs.fivem.net/natives/?_0xE43A13C9E4CCCBCF)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 --- @deprecated
 function N_0xe43a13c9e4cccbcf(ped, toggle) end
 
@@ -9154,8 +9155,8 @@ function N_0xe43a13c9e4cccbcf(ped, toggle) end
 --- @param zOffset number (float)
 --- @param radius number (float)
 --- @param p6 boolean
---- @return void
---- @overload fun(ped: Ped, target: Vehicle, xOffset: number, yOffset: number, zOffset: number, radius: number, p6: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, target: Vehicle, xOffset: number, yOffset: number, zOffset: number, radius: number, p6: boolean): nil
 function SetPedDefensiveSphereAttachedToVehicle(ped, target, xOffset, yOffset, zOffset, radius, p6) end
 
     
@@ -9170,8 +9171,8 @@ function SetPedDefensiveSphereAttachedToVehicle(ped, target, xOffset, yOffset, z
 --- @param zOffset number (float)
 --- @param radius number (float)
 --- @param p6 boolean
---- @return void
---- @overload fun(ped: Ped, target: Vehicle, xOffset: number, yOffset: number, zOffset: number, radius: number, p6: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, target: Vehicle, xOffset: number, yOffset: number, zOffset: number, radius: number, p6: boolean): nil
 --- @deprecated
 function N_0xe4723db6e736ccff(ped, target, xOffset, yOffset, zOffset, radius, p6) end
 
@@ -9209,8 +9210,8 @@ function GetNumHairColors() end
 ---
 --- @hash [0xE6CA85E7259CE16B](https://docs.fivem.net/natives/?_0xE6CA85E7259CE16B)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ClearAllPedVehicleForcedSeatUsage(ped) end
 
     
@@ -9219,8 +9220,8 @@ function ClearAllPedVehicleForcedSeatUsage(ped) end
 ---
 --- @hash [0xE6CA85E7259CE16B](https://docs.fivem.net/natives/?_0xE6CA85E7259CE16B)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function N_0xe6ca85e7259ce16b(ped) end
 
@@ -9270,8 +9271,8 @@ function IsPedComponentVariationValid(ped, componentId, drawableId, textureId) e
 --- @param ped Ped
 --- @param loseProps boolean
 --- @param p2 number (int)
---- @return void
---- @overload fun(ped: Ped, loseProps: boolean, p2: number): void
+--- @return nil
+--- @overload fun(ped: Ped, loseProps: boolean, p2: number): nil
 function SetPedCanLosePropsOnDamage(ped, loseProps, p2) end
 
     
@@ -9287,8 +9288,8 @@ function SetPedCanLosePropsOnDamage(ped, loseProps, p2) end
 --- @param ped Ped
 --- @param loseProps boolean
 --- @param p2 number (int)
---- @return void
---- @overload fun(ped: Ped, loseProps: boolean, p2: number): void
+--- @return nil
+--- @overload fun(ped: Ped, loseProps: boolean, p2: number): nil
 --- @deprecated
 function N_0xe861d0b05c7662b8(ped, loseProps, p2) end
 
@@ -9298,8 +9299,8 @@ function N_0xe861d0b05c7662b8(ped, loseProps, p2) end
 --- @hash [0xE88DA0751C22A2AD](https://docs.fivem.net/natives/?_0xE88DA0751C22A2AD)
 --- @param ped Ped
 --- @param p1 any
---- @return void
---- @overload fun(ped: Ped, p1: any): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: any): nil
 function SetPedReserveParachuteTintIndex(ped, p1) end
 
     
@@ -9328,8 +9329,8 @@ function N_0xe8a169e666cbc541() end
 --- @hash [0xE906EC930F5FE7C8](https://docs.fivem.net/natives/?_0xE906EC930F5FE7C8)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0xe906ec930f5fe7c8(p0, p1) end
 
     
@@ -9340,8 +9341,8 @@ function N_0xe906ec930f5fe7c8(p0, p1) end
 --- @hash [0xE952D6431689AD9A](https://docs.fivem.net/natives/?_0xE952D6431689AD9A)
 --- @param ped Ped
 --- @param targetPed Ped
---- @return void
---- @overload fun(ped: Ped, targetPed: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped, targetPed: Ped): nil
 function ClonePedToTarget(ped, targetPed) end
 
     
@@ -9353,8 +9354,8 @@ function ClonePedToTarget(ped, targetPed) end
 --- @hash [0xE952D6431689AD9A](https://docs.fivem.net/natives/?_0xE952D6431689AD9A)
 --- @param ped Ped
 --- @param targetPed Ped
---- @return void
---- @overload fun(ped: Ped, targetPed: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped, targetPed: Ped): nil
 --- @deprecated
 function AssignPlayerToPed(ped, targetPed) end
 
@@ -9372,8 +9373,8 @@ function HasStealthModeAssetLoaded(asset) end
 ---
 --- @hash [0xEA16670E7BA4743C](https://docs.fivem.net/natives/?_0xEA16670E7BA4743C)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ResetAiWeaponDamageModifier() end
 
     
@@ -9410,8 +9411,8 @@ function CanPedInCombatSeeTarget(ped, target) end
 --- @hash [0xEAF5F7E5AE7C6C9D](https://docs.fivem.net/natives/?_0xEAF5F7E5AE7C6C9D)
 --- @param ped Ped
 --- @param outTintIndex number (int*)
---- @return void
---- @overload fun(ped: Ped): number
+--- @return nil
+--- @overload fun(ped: Ped): nil, number
 function GetPedParachuteTintIndex(ped, outTintIndex) end
 
     
@@ -9420,8 +9421,8 @@ function GetPedParachuteTintIndex(ped, outTintIndex) end
 --- @hash [0xEB6FB9D48DDE23EC](https://docs.fivem.net/natives/?_0xEB6FB9D48DDE23EC)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedSteersAroundVehicles(ped, toggle) end
 
     
@@ -9496,8 +9497,8 @@ function N_0xebd0edba5be957cf(ped) end
 --- @hash [0xEBD76F2359F190AC](https://docs.fivem.net/natives/?_0xEBD76F2359F190AC)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedSuffersCriticalHits(ped, toggle) end
 
     
@@ -9506,8 +9507,8 @@ function SetPedSuffersCriticalHits(ped, toggle) end
 --- @hash [0xEC4686EC06434678](https://docs.fivem.net/natives/?_0xEC4686EC06434678)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedCanUseAutoConversationLookat(ped, toggle) end
 
     
@@ -9519,8 +9520,8 @@ function SetPedCanUseAutoConversationLookat(ped, toggle) end
 --- @hash [0xEC4B4B3B9908052A](https://docs.fivem.net/natives/?_0xEC4B4B3B9908052A)
 --- @param ped Ped
 --- @param unk number (float)
---- @return void
---- @overload fun(ped: Ped, unk: number): void
+--- @return nil
+--- @overload fun(ped: Ped, unk: number): nil
 function N_0xec4b4b3b9908052a(ped, unk) end
 
     
@@ -9565,8 +9566,8 @@ function N_0xec6935ebe0847b90(p0, p1, p2, p3) end
 --- @hash [0xED34AB6C5CB36520](https://docs.fivem.net/natives/?_0xED34AB6C5CB36520)
 --- @param ped Ped
 --- @param clipset string (char*)
---- @return void
---- @overload fun(ped: Ped, clipset: string): void
+--- @return nil
+--- @overload fun(ped: Ped, clipset: string): nil
 function SetPedDriveByClipsetOverride(ped, clipset) end
 
     
@@ -9576,8 +9577,8 @@ function SetPedDriveByClipsetOverride(ped, clipset) end
 ---
 --- @hash [0xED3C76ADFA6D07C4](https://docs.fivem.net/natives/?_0xED3C76ADFA6D07C4)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function N_0xed3c76adfa6d07c4(ped) end
 
     
@@ -9605,8 +9606,8 @@ function N_0xed6d8e27a43b8cde(colorId) end
 ---
 --- @hash [0xED74007FFB146BC2](https://docs.fivem.net/natives/?_0xED74007FFB146BC2)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function RemovePedFromGroup(ped) end
 
     
@@ -9615,8 +9616,8 @@ function RemovePedFromGroup(ped) end
 --- @hash [0xED7F7EFE9FABF340](https://docs.fivem.net/natives/?_0xED7F7EFE9FABF340)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedCanSwitchWeapon(ped, toggle) end
 
     
@@ -9625,8 +9626,8 @@ function SetPedCanSwitchWeapon(ped, toggle) end
 --- @hash [0xEDF4079F9D54C9A1](https://docs.fivem.net/natives/?_0xEDF4079F9D54C9A1)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedStayInVehicleWhenJacked(ped, toggle) end
 
     
@@ -9641,8 +9642,8 @@ function SetPedStayInVehicleWhenJacked(ped, toggle) end
 --- @param x2 number (float)
 --- @param y2 number (float)
 --- @param z2 number (float)
---- @return void
---- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number): void
+--- @return nil
+--- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number): nil
 function SetPedNonCreationArea(x1, y1, z1, x2, y2, z2) end
 
     
@@ -9653,8 +9654,8 @@ function SetPedNonCreationArea(x1, y1, z1, x2, y2, z2) end
 --- @hash [0xEE2476B9EE4A094F](https://docs.fivem.net/natives/?_0xEE2476B9EE4A094F)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetEnableScubaGearLight(ped, toggle) end
 
     
@@ -9663,8 +9664,8 @@ function SetEnableScubaGearLight(ped, toggle) end
 --- @hash [0xEEB64139BA29A7CF](https://docs.fivem.net/natives/?_0xEEB64139BA29A7CF)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedDiesInstantlyInWater(ped, toggle) end
 
     
@@ -9706,8 +9707,8 @@ function N_0xeeed8fafec331a70(ped, p1, p2, p3) end
 --- @param p6 any
 --- @param p7 number (float)
 --- @param p8 any
---- @return void
---- @overload fun(ped: Ped, p1: any, p2: number, p3: number, p4: number, p5: number, p6: any, p7: number): any
+--- @return nil
+--- @overload fun(ped: Ped, p1: any, p2: number, p3: number, p4: number, p5: number, p6: any, p7: number): nil, any
 function ApplyPedBloodSpecific(ped, p1, p2, p3, p4, p5, p6, p7, p8) end
 
     
@@ -9724,8 +9725,8 @@ function ApplyPedBloodSpecific(ped, p1, p2, p3, p4, p5, p6, p7, p8) end
 --- @param p6 any
 --- @param p7 number (float)
 --- @param p8 any
---- @return void
---- @overload fun(ped: Ped, p1: any, p2: number, p3: number, p4: number, p5: number, p6: any, p7: number): any
+--- @return nil
+--- @overload fun(ped: Ped, p1: any, p2: number, p3: number, p4: number, p5: number, p6: any, p7: number): nil, any
 --- @deprecated
 function N_0xef0d582cbf2d9b0f(ped, p1, p2, p3, p4, p5, p6, p7, p8) end
 
@@ -9773,8 +9774,8 @@ function N_0xf033419d1b81fae8(p0) end
 --- @hash [0xF0A4F1BBF4FA7497](https://docs.fivem.net/natives/?_0xF0A4F1BBF4FA7497)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedRagdollOnCollision(ped, toggle) end
 
     
@@ -9803,8 +9804,8 @@ function N_0xf0daef2f545bee25(id) end
 --- @hash [0xF107E836A70DCE05](https://docs.fivem.net/natives/?_0xF107E836A70DCE05)
 --- @param ped Ped
 --- @param value number (float)
---- @return void
---- @overload fun(ped: Ped, value: number): void
+--- @return nil
+--- @overload fun(ped: Ped, value: number): nil
 function SetPedIdRange(ped, value) end
 
     
@@ -9813,8 +9814,8 @@ function SetPedIdRange(ped, value) end
 --- @hash [0xF1550C4BD22582E2](https://docs.fivem.net/natives/?_0xF1550C4BD22582E2)
 --- @param ped Ped
 --- @param textureIndex number (int)
---- @return void
---- @overload fun(ped: Ped, textureIndex: number): void
+--- @return nil
+--- @overload fun(ped: Ped, textureIndex: number): nil
 function SetPedHelmetTextureIndex(ped, textureIndex) end
 
     
@@ -9833,8 +9834,8 @@ function GetPedGroupIndex(ped) end
 ---
 --- @hash [0xF1C03A5352243A30](https://docs.fivem.net/natives/?_0xF1C03A5352243A30)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function SetPedShouldPlayImmediateScenarioExit(ped) end
 
     
@@ -9843,8 +9844,8 @@ function SetPedShouldPlayImmediateScenarioExit(ped) end
 ---
 --- @hash [0xF1C03A5352243A30](https://docs.fivem.net/natives/?_0xF1C03A5352243A30)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function N_0xf1c03a5352243a30(ped) end
 
@@ -9896,8 +9897,8 @@ function ForcePedMotionState(ped, motionStateHash, p2, p3, p4) end
 --- @hash [0xF29CF591C4BF6CEE](https://docs.fivem.net/natives/?_0xF29CF591C4BF6CEE)
 --- @param ped Ped
 --- @param value number (float)
---- @return void
---- @overload fun(ped: Ped, value: number): void
+--- @return nil
+--- @overload fun(ped: Ped, value: number): nil
 function SetPedSeeingRange(ped, value) end
 
     
@@ -9906,8 +9907,8 @@ function SetPedSeeingRange(ped, value) end
 --- @hash [0xF2B7106D37947CE0](https://docs.fivem.net/natives/?_0xF2B7106D37947CE0)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetPedCanTorsoIk(ped, toggle) end
 
     
@@ -9919,8 +9920,8 @@ function SetPedCanTorsoIk(ped, toggle) end
 ---
 --- @hash [0xF2BEBCDFAFDAA19E](https://docs.fivem.net/natives/?_0xF2BEBCDFAFDAA19E)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function N_0xf2bebcdfafdaa19e(toggle) end
 
     
@@ -9992,8 +9993,8 @@ function N_0xf445de8da80a1792() end
 --- @hash [0xF5846EDB26A98A24](https://docs.fivem.net/natives/?_0xF5846EDB26A98A24)
 --- @param ped Ped
 --- @param p1 boolean
---- @return void
---- @overload fun(ped: Ped, p1: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean): nil
 function SetPedCanTorsoReactIk(ped, p1) end
 
     
@@ -10003,8 +10004,8 @@ function SetPedCanTorsoReactIk(ped, p1) end
 --- @hash [0xF5846EDB26A98A24](https://docs.fivem.net/natives/?_0xF5846EDB26A98A24)
 --- @param ped Ped
 --- @param p1 boolean
---- @return void
---- @overload fun(ped: Ped, p1: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean): nil
 --- @deprecated
 function N_0xf5846edb26a98a24(ped, p1) end
 
@@ -10017,8 +10018,8 @@ function N_0xf5846edb26a98a24(ped, p1) end
 --- @hash [0xF5F6378C4F3419D3](https://docs.fivem.net/natives/?_0xF5F6378C4F3419D3)
 --- @param ped Ped
 --- @param value number (int)
---- @return void
---- @overload fun(ped: Ped, value: number): void
+--- @return nil
+--- @overload fun(ped: Ped, value: number): nil
 function SetPedMaxHealth(ped, value) end
 
     
@@ -10065,8 +10066,8 @@ function GetPedAlertness(ped) end
 --- @param ped Ped
 --- @param vehicle Vehicle
 --- @param seatIndex number (int)
---- @return void
---- @overload fun(ped: Ped, vehicle: Vehicle, seatIndex: number): void
+--- @return nil
+--- @overload fun(ped: Ped, vehicle: Vehicle, seatIndex: number): nil
 function SetPedIntoVehicle(ped, vehicle, seatIndex) end
 
     
@@ -10074,8 +10075,8 @@ function SetPedIntoVehicle(ped, vehicle, seatIndex) end
 ---
 --- @hash [0xF79F9DEF0AADE61A](https://docs.fivem.net/natives/?_0xF79F9DEF0AADE61A)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ReleasePedPreloadPropData(ped) end
 
     
@@ -10084,8 +10085,8 @@ function ReleasePedPreloadPropData(ped) end
 ---
 --- @hash [0xF79F9DEF0AADE61A](https://docs.fivem.net/natives/?_0xF79F9DEF0AADE61A)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function N_0xf79f9def0aade61a(ped) end
 
@@ -10098,8 +10099,8 @@ function N_0xf79f9def0aade61a(ped) end
 --- @param ped Ped
 --- @param toggle boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean, p2: boolean): nil
 function SetPedCanPlayVisemeAnims(ped, toggle, p2) end
 
     
@@ -10139,8 +10140,8 @@ function WasPedKilledByStealth(ped) end
 --- @hash [0xF99F62004024D506](https://docs.fivem.net/natives/?_0xF99F62004024D506)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function SetEnableScuba(ped, toggle) end
 
     
@@ -10153,8 +10154,8 @@ function SetEnableScuba(ped, toggle) end
 --- @hash [0xF9ACF4A08098EA25](https://docs.fivem.net/natives/?_0xF9ACF4A08098EA25)
 --- @param ped Ped
 --- @param p1 boolean
---- @return void
---- @overload fun(ped: Ped, p1: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean): nil
 function N_0xf9acf4a08098ea25(ped, p1) end
 
     
@@ -10168,8 +10169,8 @@ function N_0xf9acf4a08098ea25(ped, p1) end
 --- @param zOffset number (float)
 --- @param radius number (float)
 --- @param p6 boolean
---- @return void
---- @overload fun(ped: Ped, target: Ped, xOffset: number, yOffset: number, zOffset: number, radius: number, p6: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, target: Ped, xOffset: number, yOffset: number, zOffset: number, radius: number, p6: boolean): nil
 function SetPedDefensiveSphereAttachedToPed(ped, target, xOffset, yOffset, zOffset, radius, p6) end
 
     
@@ -10184,8 +10185,8 @@ function SetPedDefensiveSphereAttachedToPed(ped, target, xOffset, yOffset, zOffs
 --- @param zOffset number (float)
 --- @param radius number (float)
 --- @param p6 boolean
---- @return void
---- @overload fun(ped: Ped, target: Ped, xOffset: number, yOffset: number, zOffset: number, radius: number, p6: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, target: Ped, xOffset: number, yOffset: number, zOffset: number, radius: number, p6: boolean): nil
 --- @deprecated
 function N_0xf9b8f91aad3b953e(ped, target, xOffset, yOffset, zOffset, radius, p6) end
 
@@ -10206,8 +10207,8 @@ function GetPedCombatRange(ped) end
 --- @hash [0xFA0675AB151073FA](https://docs.fivem.net/natives/?_0xFA0675AB151073FA)
 --- @param ped Ped
 --- @param ms number (int)
---- @return void
---- @overload fun(ped: Ped, ms: number): void
+--- @return nil
+--- @overload fun(ped: Ped, ms: number): nil
 function SetPedMinGroundTimeForStungun(ped, ms) end
 
     
@@ -10220,8 +10221,8 @@ function SetPedMinGroundTimeForStungun(ped, ms) end
 --- @hash [0xFAB944D4D481ACCB](https://docs.fivem.net/natives/?_0xFAB944D4D481ACCB)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function N_0xfab944d4d481accb(ped, toggle) end
 
     
@@ -10276,8 +10277,8 @@ function N_0xfcf37a457cb96dc0(ped, x, y, z, p4) end
 --- @hash [0xFD325494792302D7](https://docs.fivem.net/natives/?_0xFD325494792302D7)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function N_0xfd325494792302d7(ped, toggle) end
 
     
@@ -10287,8 +10288,8 @@ function N_0xfd325494792302d7(ped, toggle) end
 --- @hash [0xFD325494792302D7](https://docs.fivem.net/natives/?_0xFD325494792302D7)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 --- @deprecated
 function SetTimeExclusiveDisplayTexture(ped, toggle) end
 
@@ -10306,8 +10307,8 @@ function IsPedPerformingStealthKill(ped) end
 ---
 --- @hash [0xFDDB234CF74073D9](https://docs.fivem.net/natives/?_0xFDDB234CF74073D9)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function RemovePedPreferredCoverSet(ped) end
 
     
@@ -10316,8 +10317,8 @@ function RemovePedPreferredCoverSet(ped) end
 ---
 --- @hash [0xFDDB234CF74073D9](https://docs.fivem.net/natives/?_0xFDDB234CF74073D9)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function N_0xfddb234cf74073d9(ped) end
 
@@ -10361,8 +10362,8 @@ function N_0xfec9a3b1820f3331(ped) end
 ---
 --- @hash [0xFEE4A5459472A9F8](https://docs.fivem.net/natives/?_0xFEE4A5459472A9F8)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function SpawnpointsCancelSearch() end
 
     
@@ -10371,8 +10372,8 @@ function SpawnpointsCancelSearch() end
 ---
 --- @hash [0xFEE4A5459472A9F8](https://docs.fivem.net/natives/?_0xFEE4A5459472A9F8)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xfee4a5459472a9f8() end
 
@@ -10426,8 +10427,8 @@ function GetPedType(ped) end
 ---
 --- @hash [0xFF287323B0E2C69A](https://docs.fivem.net/natives/?_0xFF287323B0E2C69A)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function FreezePedCameraRotation(ped) end
 
     
@@ -10436,8 +10437,8 @@ function FreezePedCameraRotation(ped) end
 ---
 --- @hash [0xFF287323B0E2C69A](https://docs.fivem.net/natives/?_0xFF287323B0E2C69A)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function N_0xff287323b0e2c69a(ped) end
 
@@ -10448,8 +10449,8 @@ function N_0xff287323b0e2c69a(ped) end
 --- @param ped Ped
 --- @param combatType number (int)
 --- @param p2 number (float)
---- @return void
---- @overload fun(ped: Ped, combatType: number, p2: number): void
+--- @return nil
+--- @overload fun(ped: Ped, combatType: number, p2: number): nil
 function SetCombatFloat(ped, combatType, p2) end
 
     
@@ -10460,8 +10461,8 @@ function SetCombatFloat(ped, combatType, p2) end
 --- @hash [0xFF4803BC019852D9](https://docs.fivem.net/natives/?_0xFF4803BC019852D9)
 --- @param p0 number (float)
 --- @param p1 any
---- @return void
---- @overload fun(p0: number, p1: any): void
+--- @return nil
+--- @overload fun(p0: number, p1: any): nil
 function N_0xff4803bc019852d9(p0, p1) end
 
     
@@ -10471,7 +10472,7 @@ function N_0xff4803bc019852d9(p0, p1) end
 --- @param ped Ped
 --- @param animName string (char*)
 --- @param animDict string (char*)
---- @return void
+--- @return nil
 --- @overload fun(ped: Ped, animName: string, animDict: number): void
 function SetFacialIdleAnimOverride(ped, animName, animDict) end
 

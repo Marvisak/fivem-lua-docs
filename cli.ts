@@ -17,7 +17,7 @@ let generatedFileContents: Record<ApiTypes, Record<string, string>> = {
   [ApiTypes.NATIVE]: {}
 }
 
-function parseAllMethodsInNamespace (methodObj: NativeDeclaration) {
+function parseAllMethodsInNamespace(methodObj: NativeDeclaration) {
   let methods: ParsedMethod[] = Parser.parseMethod(methodObj)
   if (methods !== null) {
     for (const method of methods) {

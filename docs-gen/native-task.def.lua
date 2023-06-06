@@ -1,3 +1,4 @@
+--- @meta
 
 --- WaypointRecordingGetSpeedAtPoint
 ---
@@ -29,8 +30,8 @@ function GetSequenceProgress(ped) end
 --- @hash [0x02C8E5B49848664E](https://docs.fivem.net/natives/?_0x02C8E5B49848664E)
 --- @param scenarioGroup string (char*)
 --- @param p1 boolean
---- @return void
---- @overload fun(scenarioGroup: string, p1: boolean): void
+--- @return nil
+--- @overload fun(scenarioGroup: string, p1: boolean): nil
 function SetScenarioGroupEnabled(scenarioGroup, p1) end
 
     
@@ -41,8 +42,8 @@ function SetScenarioGroupEnabled(scenarioGroup, p1) end
 --- @param p1 number (float)
 --- @param p2 any
 --- @param p3 boolean
---- @return void
---- @overload fun(p0: any, p1: number, p2: any, p3: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: number, p2: any, p3: boolean): nil
 function SetAnimRate(p0, p1, p2, p3) end
 
     
@@ -61,8 +62,8 @@ function SetAnimRate(p0, p1, p2, p3) end
 --- @param p9 boolean
 --- @param p10 boolean
 --- @param p11 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: number, p3: number, p4: number, p5: number, p6: boolean, p7: number, p8: number, p9: boolean, p10: boolean, p11: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: number, p3: number, p4: number, p5: number, p6: boolean, p7: number, p8: number, p9: boolean, p10: boolean, p11: any): nil
 function TaskGoToEntityWhileAimingAtCoord(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11) end
 
     
@@ -75,8 +76,8 @@ function TaskGoToEntityWhileAimingAtCoord(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9
 --- @param p3 number (float)
 --- @param p4 boolean
 --- @param p5 any
---- @return void
---- @overload fun(p0: any, p1: number, p2: number, p3: number, p4: boolean, p5: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: number, p2: number, p3: number, p4: boolean, p5: any): nil
 function WaypointPlaybackStartShootingAtCoord(p0, p1, p2, p3, p4, p5) end
 
     
@@ -85,8 +86,8 @@ function WaypointPlaybackStartShootingAtCoord(p0, p1, p2, p3, p4, p5) end
 --- @hash [0x0729BAC1B8C64317](https://docs.fivem.net/natives/?_0x0729BAC1B8C64317)
 --- @param ped Ped
 --- @param thrust number (float)
---- @return void
---- @overload fun(ped: Ped, thrust: number): void
+--- @return nil
+--- @overload fun(ped: Ped, thrust: number): nil
 function SetParachuteTaskThrust(ped, thrust) end
 
     
@@ -98,8 +99,8 @@ function SetParachuteTaskThrust(ped, thrust) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 function TaskFollowWaypointRecording(p0, p1, p2, p3, p4) end
 
     
@@ -119,8 +120,8 @@ function TaskFollowWaypointRecording(p0, p1, p2, p3, p4) end
 --- @param target Entity
 --- @param duration number (int)
 --- @param firingPattern Hash
---- @return void
---- @overload fun(entity: Entity, target: Entity, duration: number, firingPattern: Hash): void
+--- @return nil
+--- @overload fun(entity: Entity, target: Entity, duration: number, firingPattern: Hash): nil
 function TaskShootAtEntity(entity, target, duration, firingPattern) end
 
     
@@ -133,8 +134,8 @@ function TaskShootAtEntity(entity, target, duration, firingPattern) end
 --- @hash [0x09693B0312F91649](https://docs.fivem.net/natives/?_0x09693B0312F91649)
 --- @param ped Ped
 --- @param unused number (float)
---- @return void
---- @overload fun(ped: Ped, unused: number): void
+--- @return nil
+--- @overload fun(ped: Ped, unused: number): nil
 function TaskRappelFromHeli(ped, unused) end
 
     
@@ -167,8 +168,8 @@ function DoesScenarioOfTypeExistInArea(p0, p1, p2, p3, p4, p5) end
 --- @hash [0x0AE4086104E067B1](https://docs.fivem.net/natives/?_0x0AE4086104E067B1)
 --- @param ped Ped
 --- @param unused boolean
---- @return void
---- @overload fun(ped: Ped, unused: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, unused: boolean): nil
 function TaskJump(ped, unused) end
 
     
@@ -176,8 +177,8 @@ function TaskJump(ped, unused) end
 ---
 --- @hash [0x0D40EE2A7F2B2D6D](https://docs.fivem.net/natives/?_0x0D40EE2A7F2B2D6D)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ResetScenarioTypesEnabled() end
 
     
@@ -187,8 +188,8 @@ function ResetScenarioTypesEnabled() end
 --- @param p0 any
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: boolean): nil
 function WaypointPlaybackPause(p0, p1, p2) end
 
     
@@ -211,8 +212,8 @@ function WaypointPlaybackPause(p0, p1, p2) end
 --- @param mode number (int)
 --- @param radius number (float)
 --- @param keepEngineOn boolean
---- @return void
---- @overload fun(ped: Ped, vehicle: Vehicle, x: number, y: number, z: number, heading: number, mode: number, radius: number, keepEngineOn: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, vehicle: Vehicle, x: number, y: number, z: number, heading: number, mode: number, radius: number, keepEngineOn: boolean): nil
 function TaskVehiclePark(ped, vehicle, x, y, z, heading, mode, radius, keepEngineOn) end
 
     
@@ -234,8 +235,8 @@ function TaskVehiclePark(ped, vehicle, x, y, z, heading, mode, radius, keepEngin
 ---
 --- @hash [0x0F804F1DB19B9689](https://docs.fivem.net/natives/?_0x0F804F1DB19B9689)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function TaskClearLookAt(ped) end
 
     
@@ -263,8 +264,8 @@ function TaskClearLookAt(ped) end
 --- @param minDistance number (float)
 --- @param p7 number (int)
 --- @param noRoadsDistance number (float)
---- @return void
---- @overload fun(ped: Ped, vehicle: Vehicle, targetVehicle: Vehicle, mode: number, speed: number, drivingStyle: number, minDistance: number, p7: number, noRoadsDistance: number): void
+--- @return nil
+--- @overload fun(ped: Ped, vehicle: Vehicle, targetVehicle: Vehicle, mode: number, speed: number, drivingStyle: number, minDistance: number, p7: number, noRoadsDistance: number): nil
 function TaskVehicleEscort(ped, vehicle, targetVehicle, mode, speed, drivingStyle, minDistance, p7, noRoadsDistance) end
 
     
@@ -288,8 +289,8 @@ function N_0x0ffb3c758e8c07b9(ped, p1) end
 --- @param ped Ped
 --- @param target Ped
 --- @param p2 number (float)
---- @return void
---- @overload fun(ped: Ped, target: Ped, p2: number): void
+--- @return nil
+--- @overload fun(ped: Ped, target: Ped, p2: number): nil
 function TaskVehicleShootAtPed(ped, target, p2) end
 
     
@@ -311,8 +312,8 @@ function TaskVehicleShootAtPed(ped, target, p2) end
 --- @param flags any
 --- @param p13 boolean
 --- @param firingPattern Hash
---- @return void
---- @overload fun(ped: Ped, x: number, y: number, z: number, aimAtX: number, aimAtY: number, aimAtZ: number, moveSpeed: number, shoot: boolean, p9: number, p10: number, p11: boolean, flags: any, p13: boolean, firingPattern: Hash): void
+--- @return nil
+--- @overload fun(ped: Ped, x: number, y: number, z: number, aimAtX: number, aimAtY: number, aimAtZ: number, moveSpeed: number, shoot: boolean, p9: number, p10: number, p11: boolean, flags: any, p13: boolean, firingPattern: Hash): nil
 function TaskGoToCoordWhileAimingAtCoord(ped, x, y, z, aimAtX, aimAtY, aimAtZ, moveSpeed, shoot, p9, p10, p11, flags, p13, firingPattern) end
 
     
@@ -321,8 +322,8 @@ function TaskGoToCoordWhileAimingAtCoord(ped, x, y, z, aimAtX, aimAtY, aimAtZ, m
 --- @hash [0x121F0593E0A431D7](https://docs.fivem.net/natives/?_0x121F0593E0A431D7)
 --- @param vehicle Vehicle
 --- @param speed number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, speed: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, speed: number): nil
 function VehicleWaypointPlaybackOverrideSpeed(vehicle, speed) end
 
     
@@ -367,8 +368,8 @@ function VehicleWaypointPlaybackOverrideSpeed(vehicle, speed) end
 --- @param ped Ped
 --- @param p4 number (float)
 --- @param p5 number (float)
---- @return any, any, any
---- @overload fun(ped: Ped, p4: number, p5: number): any, any, any
+--- @return nil, any, any, any
+--- @overload fun(ped: Ped, p4: number, p5: number): nil, any, any, any
 function TaskScriptedAnimation(ped, p4, p5) end
 
     
@@ -376,8 +377,8 @@ function TaskScriptedAnimation(ped, p4, p5) end
 ---
 --- @hash [0x13945951E16EF912](https://docs.fivem.net/natives/?_0x13945951E16EF912)
 --- @param dist number (float)
---- @return void
---- @overload fun(dist: number): void
+--- @return nil
+--- @overload fun(dist: number): nil
 function AssistedMovementOverrideLoadDistanceThisFrame(dist) end
 
     
@@ -415,8 +416,8 @@ function AssistedMovementOverrideLoadDistanceThisFrame(dist) end
 --- @param scenarioName string (char*)
 --- @param unkDelay number (int)
 --- @param playEnterAnim boolean
---- @return void
---- @overload fun(ped: Ped, scenarioName: string, unkDelay: number, playEnterAnim: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, scenarioName: string, unkDelay: number, playEnterAnim: boolean): nil
 function TaskStartScenarioInPlace(ped, scenarioName, unkDelay, playEnterAnim) end
 
     
@@ -431,8 +432,8 @@ function TaskStartScenarioInPlace(ped, scenarioName, unkDelay, playEnterAnim) en
 --- @param speed number (float)
 --- @param driveMode number (int)
 --- @param stopRange number (float)
---- @return void
---- @overload fun(ped: Ped, vehicle: Vehicle, x: number, y: number, z: number, speed: number, driveMode: number, stopRange: number): void
+--- @return nil
+--- @overload fun(ped: Ped, vehicle: Vehicle, x: number, y: number, z: number, speed: number, driveMode: number, stopRange: number): nil
 function TaskVehicleDriveToCoordLongrange(ped, vehicle, x, y, z, speed, driveMode, stopRange) end
 
     
@@ -458,8 +459,8 @@ function TaskVehicleDriveToCoordLongrange(ped, vehicle, x, y, z, speed, driveMod
 --- @param drivingStyle number (int)
 --- @param p10 number (float)
 --- @param p11 any
---- @return void
---- @overload fun(pedDriver: Ped, boat: Vehicle, p2: any, p3: any, x: number, y: number, z: number, p7: any, maxSpeed: number, drivingStyle: number, p10: number, p11: any): void
+--- @return nil
+--- @overload fun(pedDriver: Ped, boat: Vehicle, p2: any, p3: any, x: number, y: number, z: number, p7: any, maxSpeed: number, drivingStyle: number, p10: number, p11: any): nil
 function TaskBoatMission(pedDriver, boat, p2, p3, x, y, z, p7, maxSpeed, drivingStyle, p10, p11) end
 
     
@@ -477,8 +478,8 @@ function TaskBoatMission(pedDriver, boat, p2, p3, x, y, z, p7, maxSpeed, driving
 --- @param stoppingRange number (float)
 --- @param persistFollowing boolean
 --- @param unk number (float)
---- @return void
---- @overload fun(ped: Ped, x: number, y: number, z: number, speed: number, timeout: number, stoppingRange: number, persistFollowing: boolean, unk: number): void
+--- @return nil
+--- @overload fun(ped: Ped, x: number, y: number, z: number, speed: number, timeout: number, stoppingRange: number, persistFollowing: boolean, unk: number): nil
 function TaskFollowNavMeshToCoord(ped, x, y, z, speed, timeout, stoppingRange, persistFollowing, unk) end
 
     
@@ -486,8 +487,8 @@ function TaskFollowNavMeshToCoord(ped, x, y, z, speed, timeout, stoppingRange, p
 ---
 --- @hash [0x176CECF6F920D707](https://docs.fivem.net/natives/?_0x176CECF6F920D707)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ClearPedSecondaryTask(ped) end
 
     
@@ -506,8 +507,8 @@ function ClearPedSecondaryTask(ped) end
 --- @param unkY number (float)
 --- @param unkZ number (float)
 --- @param unk_40000f number (float)
---- @return void
---- @overload fun(ped: Ped, x: number, y: number, z: number, speed: number, timeout: number, unkFloat: number, unkInt: number, unkX: number, unkY: number, unkZ: number, unk_40000f: number): void
+--- @return nil
+--- @overload fun(ped: Ped, x: number, y: number, z: number, speed: number, timeout: number, unkFloat: number, unkInt: number, unkX: number, unkY: number, unkZ: number, unk_40000f: number): nil
 function TaskFollowNavMeshToCoordAdvanced(ped, x, y, z, speed, timeout, unkFloat, unkInt, unkX, unkY, unkZ, unk_40000f) end
 
     
@@ -533,8 +534,8 @@ function TaskFollowNavMeshToCoordAdvanced(ped, x, y, z, speed, timeout, unkFloat
 --- @param speed number (float)
 --- @param behaviorFlag number (int)
 --- @param stoppingRange number (float)
---- @return void
---- @overload fun(ped: Ped, vehicle: Vehicle, x: number, y: number, z: number, speed: number, behaviorFlag: number, stoppingRange: number): void
+--- @return nil
+--- @overload fun(ped: Ped, vehicle: Vehicle, x: number, y: number, z: number, speed: number, behaviorFlag: number, stoppingRange: number): nil
 function TaskVehicleGotoNavmesh(ped, vehicle, x, y, z, speed, behaviorFlag, stoppingRange) end
 
     
@@ -543,8 +544,8 @@ function TaskVehicleGotoNavmesh(ped, vehicle, x, y, z, speed, behaviorFlag, stop
 --- @hash [0x19D1B791CB3670FE](https://docs.fivem.net/natives/?_0x19D1B791CB3670FE)
 --- @param ped Ped
 --- @param ped2 Ped
---- @return void
---- @overload fun(ped: Ped, ped2: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped, ped2: Ped): nil
 function TaskAgitatedAction(ped, ped2) end
 
     
@@ -554,8 +555,8 @@ function TaskAgitatedAction(ped, ped2) end
 --- @hash [0x19D1B791CB3670FE](https://docs.fivem.net/natives/?_0x19D1B791CB3670FE)
 --- @param ped Ped
 --- @param ped2 Ped
---- @return void
---- @overload fun(ped: Ped, ped2: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped, ped2: Ped): nil
 --- @deprecated
 function N_0x19d1b791cb3670fe(ped, ped2) end
 
@@ -572,8 +573,8 @@ function N_0x19d1b791cb3670fe(ped, ped2) end
 --- @param p3 number (float)
 --- @param p4 number (float)
 --- @param p5 boolean
---- @return void
---- @overload fun(ped: Ped, meleeTarget: Ped, p2: number, p3: number, p4: number, p5: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, meleeTarget: Ped, p2: number, p3: number, p4: number, p5: boolean): nil
 function TaskPutPedDirectlyIntoMelee(ped, meleeTarget, p2, p3, p4, p5) end
 
     
@@ -594,8 +595,8 @@ function TaskPutPedDirectlyIntoMelee(ped, meleeTarget, p2, p3, p4, p5) end
 --- @param p9 any
 --- @param p10 any
 --- @param p11 any
---- @return void
---- @overload fun(ped: Ped, x: number, y: number, z: number, speed: number, p5: any, p6: boolean, walkingStyle: number, p8: number, p9: any, p10: any, p11: any): void
+--- @return nil
+--- @overload fun(ped: Ped, x: number, y: number, z: number, speed: number, p5: any, p6: boolean, walkingStyle: number, p8: number, p9: any, p10: any, p11: any): nil
 function TaskGoToCoordAnyMeansExtraParams(ped, x, y, z, speed, p5, p6, walkingStyle, p8, p9, p10, p11) end
 
     
@@ -609,8 +610,8 @@ function TaskGoToCoordAnyMeansExtraParams(ped, x, y, z, speed, p5, p6, walkingSt
 --- @param y number (float)
 --- @param z number (float)
 --- @param duration number (int)
---- @return void
---- @overload fun(ped: Ped, x: number, y: number, z: number, duration: number): void
+--- @return nil
+--- @overload fun(ped: Ped, x: number, y: number, z: number, duration: number): nil
 function TaskTurnPedToFaceCoord(ped, x, y, z, duration) end
 
     
@@ -633,8 +634,8 @@ function TaskTurnPedToFaceCoord(ped, x, y, z, duration) end
 --- @param radius number (float)
 --- @param altitude number (int)
 --- @param p7 number (int)
---- @return void
---- @overload fun(pilot: Ped, vehicle: Vehicle, entityToFollow: Entity, targetSpeed: number, p4: number, radius: number, altitude: number, p7: number): void
+--- @return nil
+--- @overload fun(pilot: Ped, vehicle: Vehicle, entityToFollow: Entity, targetSpeed: number, p4: number, radius: number, altitude: number, p7: number): nil
 function TaskVehicleHeliProtect(pilot, vehicle, entityToFollow, targetSpeed, p4, radius, altitude, p7) end
 
     
@@ -646,8 +647,8 @@ function TaskVehicleHeliProtect(pilot, vehicle, entityToFollow, targetSpeed, p4,
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number): nil
 function TaskExtendRoute(x, y, z) end
 
     
@@ -656,8 +657,8 @@ function TaskExtendRoute(x, y, z) end
 --- @hash [0x1E982AC8716912C5](https://docs.fivem.net/natives/?_0x1E982AC8716912C5)
 --- @param ped Ped
 --- @param p1 number (float)
---- @return void
---- @overload fun(ped: Ped, p1: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: number): nil
 function SetPedDesiredMoveBlendRatio(ped, p1) end
 
     
@@ -683,8 +684,8 @@ function GetPhoneGestureAnimTotalTime(ped) end
 --- @param p7 any
 --- @param p8 any
 --- @param p9 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any, p9: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any, p9: any): nil
 function N_0x1f351cf1c6475734(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9) end
 
     
@@ -705,8 +706,8 @@ function N_0x1f351cf1c6475734(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9) end
 --- @param vehicle Vehicle
 --- @param p7 number (float)
 --- @param p8 number (float)
---- @return void
---- @overload fun(ped: Ped, anim: string, p2: string, p3: string, p4: string, p5: number, vehicle: Vehicle, p7: number, p8: number): void
+--- @return nil
+--- @overload fun(ped: Ped, anim: string, p2: string, p3: string, p4: string, p5: number, vehicle: Vehicle, p7: number, p8: number): nil
 function TaskSweepAimEntity(ped, anim, p2, p3, p4, p5, vehicle, p7, p8) end
 
     
@@ -718,8 +719,8 @@ function TaskSweepAimEntity(ped, anim, p2, p3, p4, p5, vehicle, p7, p8) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 boolean
---- @return void
---- @overload fun(p0: any, p1: number, p2: any, p3: any, p4: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: number, p2: any, p3: any, p4: boolean): nil
 function SetAnimWeight(p0, p1, p2, p3, p4) end
 
     
@@ -729,8 +730,8 @@ function SetAnimWeight(p0, p1, p2, p3, p4) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p1: any, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: boolean): nil
 function WaypointPlaybackStartAimingAtPed(p0, p1, p2) end
 
     
@@ -747,8 +748,8 @@ function WaypointPlaybackStartAimingAtPed(p0, p1, p2) end
 --- @param fleeTime any
 --- @param p4 boolean
 --- @param p5 boolean
---- @return void
---- @overload fun(ped: Ped, fleeTarget: Ped, distance: number, fleeTime: any, p4: boolean, p5: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, fleeTarget: Ped, distance: number, fleeTime: any, p4: boolean, p5: boolean): nil
 function TaskSmartFleePed(ped, fleeTarget, distance, fleeTime, p4, p5) end
 
     
@@ -757,8 +758,8 @@ function TaskSmartFleePed(ped, fleeTarget, distance, fleeTime, p4, p5) end
 --- @hash [0x23083260DEC3A551](https://docs.fivem.net/natives/?_0x23083260DEC3A551)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function AddPatrolRouteLink(p0, p1) end
 
     
@@ -824,8 +825,8 @@ function AddPatrolRouteLink(p0, p1) end
 --- @param targetHeading number (float)
 --- @param maxZ number (float)
 --- @param minZ number (float)
---- @return void
---- @overload fun(pilot: Ped, aircraft: Vehicle, targetVehicle: Vehicle, targetPed: Ped, destinationX: number, destinationY: number, destinationZ: number, missionFlag: number, angularDrag: number, unk: number, targetHeading: number, maxZ: number, minZ: number): void
+--- @return nil
+--- @overload fun(pilot: Ped, aircraft: Vehicle, targetVehicle: Vehicle, targetPed: Ped, destinationX: number, destinationY: number, destinationZ: number, missionFlag: number, angularDrag: number, unk: number, targetHeading: number, maxZ: number, minZ: number): nil
 function TaskPlaneMission(pilot, aircraft, targetVehicle, targetPed, destinationX, destinationY, destinationZ, missionFlag, angularDrag, unk, targetHeading, maxZ, minZ) end
 
     
@@ -836,8 +837,8 @@ function TaskPlaneMission(pilot, aircraft, targetVehicle, targetPed, destination
 --- @param p1 boolean
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: any, p3: any): nil
 function WaypointPlaybackResume(p0, p1, p2, p3) end
 
     
@@ -871,8 +872,8 @@ function GetPedWaypointProgress(ped) end
 --- @param z number (float)
 --- @param distance number (float)
 --- @param duration number (int)
---- @return void
---- @overload fun(ped: Ped, x: number, y: number, z: number, distance: number, duration: number): void
+--- @return nil
+--- @overload fun(ped: Ped, x: number, y: number, z: number, distance: number, duration: number): nil
 function TaskUseNearestScenarioToCoord(ped, x, y, z, distance, duration) end
 
     
@@ -904,8 +905,8 @@ function PedHasUseScenarioTask(ped) end
 --- @param p11 any
 --- @param p12 any
 --- @param p13 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any, p9: any, p10: any, p11: any, p12: any, p13: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any, p9: any, p10: any, p11: any, p12: any, p13: any): nil
 function N_0x29682e2ccf21e9b5(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13) end
 
     
@@ -925,8 +926,8 @@ function IsPedGettingUp(ped) end
 --- @param p1 number (float)
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: number, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: number, p2: any, p3: any): nil
 function TaskCombatHatedTargetsAroundPedTimed(p0, p1, p2, p3) end
 
     
@@ -938,8 +939,8 @@ function TaskCombatHatedTargetsAroundPedTimed(p0, p1, p2, p3) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(pilot: Ped, entityToFollow: Entity, x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(pilot: Ped, entityToFollow: Entity, x: number, y: number, z: number): nil
 function TaskPlaneChase(pilot, entityToFollow, x, y, z) end
 
     
@@ -955,8 +956,8 @@ function TaskPlaneChase(pilot, entityToFollow, x, y, z) end
 --- @param p3 boolean
 --- @param animDict string (char*)
 --- @param flags number (int)
---- @return void
---- @overload fun(ped: Ped, task: string, multiplier: number, p3: boolean, animDict: string, flags: number): void
+--- @return nil
+--- @overload fun(ped: Ped, task: string, multiplier: number, p3: boolean, animDict: string, flags: number): nil
 function TaskMoveNetworkByName(ped, task, multiplier, p3, animDict, flags) end
 
     
@@ -973,8 +974,8 @@ function TaskMoveNetworkByName(ped, task, multiplier, p3, animDict, flags) end
 --- @param p3 boolean
 --- @param animDict string (char*)
 --- @param flags number (int)
---- @return void
---- @overload fun(ped: Ped, task: string, multiplier: number, p3: boolean, animDict: string, flags: number): void
+--- @return nil
+--- @overload fun(ped: Ped, task: string, multiplier: number, p3: boolean, animDict: string, flags: number): nil
 --- @deprecated
 function N_0x2d537ba194896636(ped, task, multiplier, p3, animDict, flags) end
 
@@ -992,8 +993,8 @@ function N_0x2d537ba194896636(ped, task, multiplier, p3, animDict, flags) end
 --- @param p3 boolean
 --- @param animDict string (char*)
 --- @param flags number (int)
---- @return void
---- @overload fun(ped: Ped, task: string, multiplier: number, p3: boolean, animDict: string, flags: number): void
+--- @return nil
+--- @overload fun(ped: Ped, task: string, multiplier: number, p3: boolean, animDict: string, flags: number): nil
 --- @deprecated
 function TaskMoveNetwork(ped, task, multiplier, p3, animDict, flags) end
 
@@ -1018,8 +1019,8 @@ function TaskMoveNetwork(ped, task, multiplier, p3, animDict, flags) end
 --- @param pedAccuracy number (int)
 --- @param p8 boolean
 --- @param firingPattern Hash
---- @return void
---- @overload fun(driverPed: Ped, targetPed: Ped, targetVehicle: Vehicle, targetX: number, targetY: number, targetZ: number, distanceToShoot: number, pedAccuracy: number, p8: boolean, firingPattern: Hash): void
+--- @return nil
+--- @overload fun(driverPed: Ped, targetPed: Ped, targetVehicle: Vehicle, targetX: number, targetY: number, targetZ: number, distanceToShoot: number, pedAccuracy: number, p8: boolean, firingPattern: Hash): nil
 function TaskDriveBy(driverPed, targetPed, targetVehicle, targetX, targetY, targetZ, distanceToShoot, pedAccuracy, p8, firingPattern) end
 
     
@@ -1052,8 +1053,8 @@ function WaypointRecordingGetCoord(name, point, coord) end
 --- @param timeout number (int)
 --- @param stoppingRange number (float)
 --- @param persistFollowing boolean
---- @return void
---- @overload fun(ped: Ped, entity: Entity, offsetX: number, offsetY: number, offsetZ: number, movementSpeed: number, timeout: number, stoppingRange: number, persistFollowing: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, entity: Entity, offsetX: number, offsetY: number, offsetZ: number, movementSpeed: number, timeout: number, stoppingRange: number, persistFollowing: boolean): nil
 function TaskFollowToOffsetOfEntity(ped, entity, offsetX, offsetY, offsetZ, movementSpeed, timeout, stoppingRange, persistFollowing) end
 
     
@@ -1101,8 +1102,8 @@ function N_0x30ed88d5e0c56a37(ped) end
 --- @param p7 number (float)
 --- @param p8 boolean
 --- @param p9 number (float)
---- @return void
---- @overload fun(ped: Ped, vehicle: Vehicle, WPRecording: string, p3: number, p4: number, p5: number, p6: number, p7: number, p8: boolean, p9: number): void
+--- @return nil
+--- @overload fun(ped: Ped, vehicle: Vehicle, WPRecording: string, p3: number, p4: number, p5: number, p6: number, p7: number, p8: boolean, p9: number): nil
 function TaskVehicleFollowWaypointRecording(ped, vehicle, WPRecording, p3, p4, p5, p6, p7, p8, p9) end
 
     
@@ -1117,8 +1118,8 @@ function TaskVehicleFollowWaypointRecording(ped, vehicle, WPRecording, p3, p4, p
 --- @param zOffset number (float)
 --- @param moveBlendRatio number (float)
 --- @param useNavmesh boolean
---- @return void
---- @overload fun(ped: Ped, entity: Entity, duration: number, xOffset: number, yOffset: number, zOffset: number, moveBlendRatio: number, useNavmesh: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, entity: Entity, duration: number, xOffset: number, yOffset: number, zOffset: number, moveBlendRatio: number, useNavmesh: boolean): nil
 function TaskGotoEntityOffsetXy(ped, entity, duration, xOffset, yOffset, zOffset, moveBlendRatio, useNavmesh) end
 
     
@@ -1135,8 +1136,8 @@ function IsMoveBlendRatioStill(ped) end
 ---
 --- @hash [0x3548536485DD792B](https://docs.fivem.net/natives/?_0x3548536485DD792B)
 --- @param route string (char*)
---- @return void
---- @overload fun(route: string): void
+--- @return nil
+--- @overload fun(route: string): nil
 function AssistedMovementRemoveRoute(route) end
 
     
@@ -1185,8 +1186,8 @@ function IsScenarioGroupEnabled(scenarioGroup) end
 --- @param ped Ped
 --- @param signalName string (char*)
 --- @param value number (float)
---- @return void
---- @overload fun(ped: Ped, signalName: string, value: number): void
+--- @return nil
+--- @overload fun(ped: Ped, signalName: string, value: number): nil
 function SetTaskMoveNetworkSignalFloat_2(ped, signalName, value) end
 
     
@@ -1194,8 +1195,8 @@ function SetTaskMoveNetworkSignalFloat_2(ped, signalName, value) end
 ---
 --- @hash [0x3841422E9C488D8C](https://docs.fivem.net/natives/?_0x3841422E9C488D8C)
 --- @param taskSequenceId number (int*)
---- @return void
---- @overload fun(): number
+--- @return nil
+--- @overload fun(): nil, number
 function ClearSequenceTask(taskSequenceId) end
 
     
@@ -1204,8 +1205,8 @@ function ClearSequenceTask(taskSequenceId) end
 --- @hash [0x38FE1EC73743793C](https://docs.fivem.net/natives/?_0x38FE1EC73743793C)
 --- @param ped Ped
 --- @param avoidWater boolean
---- @return void
---- @overload fun(ped: Ped, avoidWater: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, avoidWater: boolean): nil
 function SetPedPathPreferToAvoidWater(ped, avoidWater) end
 
     
@@ -1227,8 +1228,8 @@ function SetPedPathPreferToAvoidWater(ped, avoidWater) end
 --- @param z2 number (float)
 --- @param p7 any
 --- @param p8 boolean
---- @return void
---- @overload fun(ped: Ped, x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, p7: any, p8: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, p7: any, p8: boolean): nil
 function TaskSeekCoverToCoords(ped, x1, y1, z1, x2, y2, z2, p7, p8) end
 
     
@@ -1236,8 +1237,8 @@ function TaskSeekCoverToCoords(ped, x1, y1, z1, x2, y2, z2, p7, p8) end
 ---
 --- @hash [0x39E72BC99E6360CB](https://docs.fivem.net/natives/?_0x39E72BC99E6360CB)
 --- @param taskSequenceId number (int)
---- @return void
---- @overload fun(taskSequenceId: number): void
+--- @return nil
+--- @overload fun(taskSequenceId: number): nil
 function CloseSequenceTask(taskSequenceId) end
 
     
@@ -1278,8 +1279,8 @@ function GetClipSetForScriptedGunTask(p0) end
 --- @hash [0x3C08A8E30363B353](https://docs.fivem.net/natives/?_0x3C08A8E30363B353)
 --- @param driver Ped
 --- @param targetEnt Entity
---- @return void
---- @overload fun(driver: Ped, targetEnt: Entity): void
+--- @return nil
+--- @overload fun(driver: Ped, targetEnt: Entity): nil
 function TaskVehicleChase(driver, targetEnt) end
 
     
@@ -1301,8 +1302,8 @@ function TaskVehicleChase(driver, targetEnt) end
 --- @param p4 boolean
 --- @param animDict string (char*)
 --- @param flags number (int)
---- @return void
---- @overload fun(ped: Ped, p3: number, p4: boolean, flags: number): string): any): string
+--- @return nil
+--- @overload fun(ped: Ped, p3: number, p4: boolean, flags: number): nil, string): nil, any): nil, string
 function TaskMoveNetworkByNameWithInitParams(ped, p1, data, p3, p4, animDict, flags) end
 
     
@@ -1325,8 +1326,8 @@ function TaskMoveNetworkByNameWithInitParams(ped, p1, data, p3, p4, animDict, fl
 --- @param p4 boolean
 --- @param animDict string (char*)
 --- @param flags number (int)
---- @return void
---- @overload fun(ped: Ped, p3: number, p4: boolean, flags: number): string): any): string
+--- @return nil
+--- @overload fun(ped: Ped, p3: number, p4: boolean, flags: number): nil, string): nil, any): nil, string
 --- @deprecated
 function TaskMoveNetworkScripted(ped, p1, data, p3, p4, animDict, flags) end
 
@@ -1356,8 +1357,8 @@ function N_0x3e38e28a1d80ddf6(ped) end
 --- @hash [0x3EB1FE9E8E908E15](https://docs.fivem.net/natives/?_0x3EB1FE9E8E908E15)
 --- @param ped Ped
 --- @param duration number (int)
---- @return void
---- @overload fun(ped: Ped, duration: number): void
+--- @return nil
+--- @overload fun(ped: Ped, duration: number): nil
 function TaskCower(ped, duration) end
 
     
@@ -1367,8 +1368,8 @@ function TaskCower(ped, duration) end
 ---
 --- @hash [0x3FA00D4F4641BFAE](https://docs.fivem.net/natives/?_0x3FA00D4F4641BFAE)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function TaskStopPhoneGestureAnimation(ped) end
 
     
@@ -1379,8 +1380,8 @@ function TaskStopPhoneGestureAnimation(ped) end
 ---
 --- @hash [0x3FA00D4F4641BFAE](https://docs.fivem.net/natives/?_0x3FA00D4F4641BFAE)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function TaskStopPhoneGestureAnimation(ped) end
 
@@ -1390,8 +1391,8 @@ function TaskStopPhoneGestureAnimation(ped) end
 --- @hash [0x404A5AA9B9F0B746](https://docs.fivem.net/natives/?_0x404A5AA9B9F0B746)
 --- @param p0 any
 --- @param p1 number (float)
---- @return void
---- @overload fun(p0: any, p1: number): void
+--- @return nil
+--- @overload fun(p0: any, p1: number): nil
 function SetDriveTaskMaxCruiseSpeed(p0, p1) end
 
     
@@ -1418,8 +1419,8 @@ function GetVehicleWaypointTargetPoint(vehicle) end
 --- @param p8 boolean
 --- @param p9 any
 --- @param p10 boolean
---- @return void
---- @overload fun(ped: Ped, x: number, y: number, z: number, timeout: any, p5: boolean, p6: number, p7: boolean, p8: boolean, p9: any, p10: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, x: number, y: number, z: number, timeout: any, p5: boolean, p6: number, p7: boolean, p8: boolean, p9: any, p10: boolean): nil
 function TaskPutPedDirectlyIntoCover(ped, x, y, z, timeout, p5, p6, p7, p8, p9, p10) end
 
     
@@ -1427,8 +1428,8 @@ function TaskPutPedDirectlyIntoCover(ped, x, y, z, timeout, p5, p6, p7, p8, p9, 
 ---
 --- @hash [0x4202BBCB8684563D](https://docs.fivem.net/natives/?_0x4202BBCB8684563D)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ResetExclusiveScenarioGroup() end
 
     
@@ -1437,8 +1438,8 @@ function ResetExclusiveScenarioGroup() end
 --- @hash [0x4455517B28441E60](https://docs.fivem.net/natives/?_0x4455517B28441E60)
 --- @param ped Ped
 --- @param avoidFire boolean
---- @return void
---- @overload fun(ped: Ped, avoidFire: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, avoidFire: boolean): nil
 function SetPedPathAvoidFire(ped, avoidFire) end
 
     
@@ -1449,8 +1450,8 @@ function SetPedPathAvoidFire(ped, avoidFire) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(ped: Ped, x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(ped: Ped, x: number, y: number, z: number): nil
 function TaskVehicleAimAtCoord(ped, x, y, z) end
 
     
@@ -1471,8 +1472,8 @@ function GetTaskMoveNetworkSignalFloat(ped, signalName) end
 --- @hash [0x452419CBD838065B](https://docs.fivem.net/natives/?_0x452419CBD838065B)
 --- @param ped Ped
 --- @param eventHandle number (int)
---- @return void
---- @overload fun(ped: Ped, eventHandle: number): void
+--- @return nil
+--- @overload fun(ped: Ped, eventHandle: number): nil
 function TaskShockingEventReact(ped, eventHandle) end
 
     
@@ -1489,8 +1490,8 @@ function TaskShockingEventReact(ped, eventHandle) end
 --- @param p7 boolean
 --- @param p8 boolean
 --- @param p9 boolean
---- @return void
---- @overload fun(playerX: number, playerY: number, playerZ: number, radiusX: number, radiusY: number, radiusZ: number, p6: boolean, p7: boolean, p8: boolean, p9: boolean): void
+--- @return nil
+--- @overload fun(playerX: number, playerY: number, playerZ: number, radiusX: number, radiusY: number, radiusZ: number, p6: boolean, p7: boolean, p8: boolean, p9: boolean): nil
 function AddCoverBlockingArea(playerX, playerY, playerZ, radiusX, radiusY, radiusZ, p6, p7, p8, p9) end
 
     
@@ -1505,8 +1506,8 @@ function AddCoverBlockingArea(playerX, playerY, playerZ, radiusX, radiusY, radiu
 --- @param z number (float)
 --- @param duration number (int)
 --- @param firingPattern Hash
---- @return void
---- @overload fun(ped: Ped, x: number, y: number, z: number, duration: number, firingPattern: Hash): void
+--- @return nil
+--- @overload fun(ped: Ped, x: number, y: number, z: number, duration: number, firingPattern: Hash): nil
 function TaskShootAtCoord(ped, x, y, z, duration, firingPattern) end
 
     
@@ -1523,8 +1524,8 @@ function GetPhoneGestureAnimCurrentTime(ped) end
 ---
 --- @hash [0x47EFA040EBB8E2EA](https://docs.fivem.net/natives/?_0x47EFA040EBB8E2EA)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function WaypointPlaybackStopAimingOrShooting(p0) end
 
     
@@ -1535,8 +1536,8 @@ function WaypointPlaybackStopAimingOrShooting(p0) end
 --- @param vehicle Vehicle
 --- @param speed number (float)
 --- @param drivingStyle number (int)
---- @return void
---- @overload fun(ped: Ped, vehicle: Vehicle, speed: number, drivingStyle: number): void
+--- @return nil
+--- @overload fun(ped: Ped, vehicle: Vehicle, speed: number, drivingStyle: number): nil
 function TaskVehicleDriveWander(ped, vehicle, speed, drivingStyle) end
 
     
@@ -1550,8 +1551,8 @@ function TaskVehicleDriveWander(ped, vehicle, speed, drivingStyle) end
 --- @param p1 number (float)
 --- @param p2 number (float)
 --- @param p3 boolean
---- @return void
---- @overload fun(p0: Ped, p1: number, p2: number, p3: boolean): void
+--- @return nil
+--- @overload fun(p0: Ped, p1: number, p2: number, p3: boolean): nil
 function TaskGuardCurrentPosition(p0, p1, p2, p3) end
 
     
@@ -1566,8 +1567,8 @@ function TaskGuardCurrentPosition(p0, p1, p2, p3) end
 --- @param z number (float)
 --- @param radius number (float)
 --- @param p5 any
---- @return void
---- @overload fun(ped: Ped, x: number, y: number, z: number, radius: number, p5: any): void
+--- @return nil
+--- @overload fun(ped: Ped, x: number, y: number, z: number, radius: number, p5: any): nil
 function TaskCombatHatedTargetsInArea(ped, x, y, z, radius, p5) end
 
     
@@ -1577,8 +1578,8 @@ function TaskCombatHatedTargetsInArea(ped, x, y, z, radius, p5) end
 --- @param ped Ped
 --- @param state Hash
 --- @param p2 boolean
---- @return void
---- @overload fun(ped: Ped, state: Hash, p2: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, state: Hash, p2: boolean): nil
 function TaskForceMotionState(ped, state, p2) end
 
     
@@ -1588,8 +1589,8 @@ function TaskForceMotionState(ped, state, p2) end
 --- @param ped Ped
 --- @param p1 number (int)
 --- @param flags number (int)
---- @return void
---- @overload fun(ped: Ped, p1: number, flags: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: number, flags: number): nil
 function TaskLeaveAnyVehicle(ped, p1, flags) end
 
     
@@ -1601,8 +1602,8 @@ function TaskLeaveAnyVehicle(ped, p1, flags) end
 --- @param y number (float)
 --- @param z number (float)
 --- @param p4 number (float)
---- @return void
---- @overload fun(ped: Ped, x: number, y: number, z: number, p4: number): void
+--- @return nil
+--- @overload fun(ped: Ped, x: number, y: number, z: number, p4: number): nil
 function TaskVehicleShootAtCoord(ped, x, y, z, p4) end
 
     
@@ -1640,8 +1641,8 @@ function GetActiveVehicleMissionType(vehicle) end
 ---
 --- @hash [0x535E97E1F7FC0C6A](https://docs.fivem.net/natives/?_0x535E97E1F7FC0C6A)
 --- @param scenarioGroup string (char*)
---- @return void
---- @overload fun(scenarioGroup: string): void
+--- @return nil
+--- @overload fun(scenarioGroup: string): nil
 function SetExclusiveScenarioGroup(scenarioGroup) end
 
     
@@ -1655,8 +1656,8 @@ function SetExclusiveScenarioGroup(scenarioGroup) end
 ---
 --- @hash [0x53DDC75BC3AC0A90](https://docs.fivem.net/natives/?_0x53DDC75BC3AC0A90)
 --- @param vehicle Vehicle
---- @return void
---- @overload fun(vehicle: Vehicle): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle): nil
 function N_0x53ddc75bc3ac0a90(vehicle) end
 
     
@@ -1674,8 +1675,8 @@ function IsPedSprinting(ped) end
 --- @hash [0x58C70CF3A41E4AE7](https://docs.fivem.net/natives/?_0x58C70CF3A41E4AE7)
 --- @param taskSequenceId number (int)
 --- @param repeat_ boolean
---- @return void
---- @overload fun(taskSequenceId: number, repeat_: boolean): void
+--- @return nil
+--- @overload fun(taskSequenceId: number, repeat_: boolean): nil
 function SetSequenceToRepeat(taskSequenceId, repeat_) end
 
     
@@ -1688,8 +1689,8 @@ function SetSequenceToRepeat(taskSequenceId, repeat_) end
 --- @param z number (float)
 --- @param radius number (float)
 --- @param p5 any
---- @return void
---- @overload fun(ped: Ped, x: number, y: number, z: number, radius: number, p5: any): void
+--- @return nil
+--- @overload fun(ped: Ped, x: number, y: number, z: number, radius: number, p5: any): nil
 function TaskUseNearestScenarioToCoordWarp(ped, x, y, z, radius, p5) end
 
     
@@ -1719,8 +1720,8 @@ function GetScriptedCoverPointCoords(coverpoint) end
 --- @param ped Ped
 --- @param speed number (float)
 --- @param unknown number (int)
---- @return void
---- @overload fun(ped: Ped, speed: number, unknown: number): void
+--- @return nil
+--- @overload fun(ped: Ped, speed: number, unknown: number): nil
 function TaskFollowPointRoute(ped, speed, unknown) end
 
     
@@ -1731,8 +1732,8 @@ function TaskFollowPointRoute(ped, speed, unknown) end
 --- @param p1 boolean
 --- @param p2 number (float)
 --- @param p3 number (float)
---- @return void
---- @overload fun(name: string, p1: boolean, p2: number, p3: number): void
+--- @return nil
+--- @overload fun(name: string, p1: boolean, p2: number, p3: number): nil
 function UseWaypointRecordingAsAssistedMovementRoute(name, p1, p2, p3) end
 
     
@@ -1746,8 +1747,8 @@ function UseWaypointRecordingAsAssistedMovementRoute(name, p1, p2, p3) end
 --- @param heading number (float)
 --- @param p5 number (float)
 --- @param p6 number (float)
---- @return void
---- @overload fun(ped: Ped, x: number, y: number, z: number, heading: number, p5: number, p6: number): void
+--- @return nil
+--- @overload fun(ped: Ped, x: number, y: number, z: number, heading: number, p5: number, p6: number): nil
 function TaskPedSlideToCoordHdgRate(ped, x, y, z, heading, p5, p6) end
 
     
@@ -1769,8 +1770,8 @@ function DoesScenarioExistInArea(x, y, z, radius, b) end
 --- @hash [0x5ABA3986D90D8A3B](https://docs.fivem.net/natives/?_0x5ABA3986D90D8A3B)
 --- @param ped Ped
 --- @param taskSequenceId number (int)
---- @return void
---- @overload fun(ped: Ped, taskSequenceId: number): void
+--- @return nil
+--- @overload fun(ped: Ped, taskSequenceId: number): nil
 function TaskPerformSequence(ped, taskSequenceId) end
 
     
@@ -1782,8 +1783,8 @@ function TaskPerformSequence(ped, taskSequenceId) end
 --- @param ped Ped
 --- @param entity Entity
 --- @param duration number (int)
---- @return void
---- @overload fun(ped: Ped, entity: Entity, duration: number): void
+--- @return nil
+--- @overload fun(ped: Ped, entity: Entity, duration: number): nil
 function TaskTurnPedToFaceEntity(ped, entity, duration) end
 
     
@@ -1802,8 +1803,8 @@ function TaskTurnPedToFaceEntity(ped, entity, duration) end
 --- @param p6 boolean
 --- @param walkingStyle number (int)
 --- @param p8 number (float)
---- @return void
---- @overload fun(ped: Ped, x: number, y: number, z: number, speed: number, p5: any, p6: boolean, walkingStyle: number, p8: number): void
+--- @return nil
+--- @overload fun(ped: Ped, x: number, y: number, z: number, speed: number, p5: any, p6: boolean, walkingStyle: number, p8: number): nil
 function TaskGoToCoordAnyMeans(ped, x, y, z, speed, p5, p6, walkingStyle, p8) end
 
     
@@ -1812,8 +1813,8 @@ function TaskGoToCoordAnyMeans(ped, x, y, z, speed, p5, p6, walkingStyle, p8) en
 --- @hash [0x5C9B84BD7D31D908](https://docs.fivem.net/natives/?_0x5C9B84BD7D31D908)
 --- @param driver Ped
 --- @param cruiseSpeed number (float)
---- @return void
---- @overload fun(driver: Ped, cruiseSpeed: number): void
+--- @return nil
+--- @overload fun(driver: Ped, cruiseSpeed: number): nil
 function SetDriveTaskCruiseSpeed(driver, cruiseSpeed) end
 
     
@@ -1821,8 +1822,8 @@ function SetDriveTaskCruiseSpeed(driver, cruiseSpeed) end
 ---
 --- @hash [0x5CEB25A7D2848963](https://docs.fivem.net/natives/?_0x5CEB25A7D2848963)
 --- @param vehicle Vehicle
---- @return void
---- @overload fun(vehicle: Vehicle): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle): nil
 function VehicleWaypointPlaybackUseDefaultSpeed(vehicle) end
 
     
@@ -1835,8 +1836,8 @@ function VehicleWaypointPlaybackUseDefaultSpeed(vehicle) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(ped: Ped, x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(ped: Ped, x: number, y: number, z: number): nil
 function AddVehicleSubtaskAttackCoord(ped, x, y, z) end
 
     
@@ -1845,8 +1846,8 @@ function AddVehicleSubtaskAttackCoord(ped, x, y, z) end
 --- @hash [0x5EE02954A14C69DB](https://docs.fivem.net/natives/?_0x5EE02954A14C69DB)
 --- @param ped Ped
 --- @param duration number (int)
---- @return void
---- @overload fun(ped: Ped, duration: number): void
+--- @return nil
+--- @overload fun(ped: Ped, duration: number): nil
 function TaskUseMobilePhoneTimed(ped, duration) end
 
     
@@ -1856,8 +1857,8 @@ function TaskUseMobilePhoneTimed(ped, duration) end
 ---
 --- @hash [0x601736CFE536B0A0](https://docs.fivem.net/natives/?_0x601736CFE536B0A0)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function TaskSkyDive(ped) end
 
     
@@ -1876,8 +1877,8 @@ function AssistedMovementIsRouteLoaded(route) end
 ---
 --- @hash [0x6100B3CEFD43452E](https://docs.fivem.net/natives/?_0x6100B3CEFD43452E)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x6100b3cefd43452e(p0) end
 
     
@@ -1891,8 +1892,8 @@ function N_0x6100b3cefd43452e(p0) end
 --- @param p4 number (float)
 --- @param p5 number (float)
 --- @param p6 any
---- @return void
---- @overload fun(entity1: Entity, entity2: Entity, p2: number, p3: number, p4: number, p5: number, p6: any): void
+--- @return nil
+--- @overload fun(entity1: Entity, entity2: Entity, p2: number, p3: number, p4: number, p5: number, p6: any): nil
 function TaskGoStraightToCoordRelativeToEntity(entity1, entity2, p2, p3, p4, p5, p6) end
 
     
@@ -1928,8 +1929,8 @@ function N_0x621c6e4729388e41(ped) end
 --- @hash [0x62D2916F56B9CD2D](https://docs.fivem.net/natives/?_0x62D2916F56B9CD2D)
 --- @param ped Ped
 --- @param unused boolean
---- @return void
---- @overload fun(ped: Ped, unused: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, unused: boolean): nil
 function TaskReloadWeapon(ped, unused) end
 
     
@@ -1947,8 +1948,8 @@ function GetNavmeshRouteResult(ped) end
 --- @hash [0x639B642FACBE4EDD](https://docs.fivem.net/natives/?_0x639B642FACBE4EDD)
 --- @param ped Ped
 --- @param distance number (float)
---- @return void
---- @overload fun(ped: Ped, distance: number): void
+--- @return nil
+--- @overload fun(ped: Ped, distance: number): nil
 function SetTaskVehicleChaseIdealPursuitDistance(ped, distance) end
 
     
@@ -1966,8 +1967,8 @@ function SetTaskVehicleChaseIdealPursuitDistance(ped, distance) end
 --- @param p6 number (float)
 --- @param p7 number (float)
 --- @param DriveAgainstTraffic boolean
---- @return void
---- @overload fun(driver: Ped, vehicle: Vehicle, vehicleTarget: Vehicle, missionType: number, p4: number, p5: any, p6: number, p7: number, DriveAgainstTraffic: boolean): void
+--- @return nil
+--- @overload fun(driver: Ped, vehicle: Vehicle, vehicleTarget: Vehicle, missionType: number, p4: number, p5: any, p6: number, p7: number, DriveAgainstTraffic: boolean): nil
 function TaskVehicleMission(driver, vehicle, vehicleTarget, missionType, p4, p5, p6, p7, DriveAgainstTraffic) end
 
     
@@ -1975,8 +1976,8 @@ function TaskVehicleMission(driver, vehicle, vehicleTarget, missionType, p4, p5,
 ---
 --- @hash [0x6599D834B12D0800](https://docs.fivem.net/natives/?_0x6599D834B12D0800)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function WaypointPlaybackUseDefaultSpeed(p0) end
 
     
@@ -1990,8 +1991,8 @@ function WaypointPlaybackUseDefaultSpeed(p0) end
 --- @param time number (int)
 --- @param p5 boolean
 --- @param p6 boolean
---- @return void
---- @overload fun(ped: Ped, x: number, y: number, z: number, time: number, p5: boolean, p6: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, x: number, y: number, z: number, time: number, p5: boolean, p6: boolean): nil
 function TaskAimGunAtCoord(ped, x, y, z, time, p5, p6) end
 
     
@@ -1999,8 +2000,8 @@ function TaskAimGunAtCoord(ped, x, y, z, time, p5, p6) end
 ---
 --- @hash [0x67406F2C8F87FC4F](https://docs.fivem.net/natives/?_0x67406F2C8F87FC4F)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function UncuffPed(ped) end
 
     
@@ -2013,8 +2014,8 @@ function UncuffPed(ped) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function TaskWanderSpecific(p0, p1, p2, p3) end
 
     
@@ -2030,8 +2031,8 @@ function TaskWanderSpecific(p0, p1, p2, p3) end
 --- @param duration number (int)
 --- @param unknown1 number (int)
 --- @param unknown2 number (int)
---- @return void
---- @overload fun(ped: Ped, lookAt: Entity, duration: number, unknown1: number, unknown2: number): void
+--- @return nil
+--- @overload fun(ped: Ped, lookAt: Entity, duration: number, unknown1: number, unknown2: number): nil
 function TaskLookAtEntity(ped, lookAt, duration, unknown1, unknown2) end
 
     
@@ -2047,8 +2048,8 @@ function TaskLookAtEntity(ped, lookAt, duration, unknown1, unknown2) end
 --- @param vehicle Vehicle
 --- @param animationSet string (char*)
 --- @param animationName string (char*)
---- @return void
---- @overload fun(vehicle: Vehicle, animationSet: string, animationName: string): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, animationSet: string, animationName: string): nil
 function TaskVehiclePlayAnim(vehicle, animationSet, animationName) end
 
     
@@ -2067,8 +2068,8 @@ function TaskVehiclePlayAnim(vehicle, animationSet, animationName) end
 --- @param speed number (float)
 --- @param p5 number (float)
 --- @param p6 number (int)
---- @return void
---- @overload fun(entity: Entity, target: Entity, duration: number, distance: number, speed: number, p5: number, p6: number): void
+--- @return nil
+--- @overload fun(entity: Entity, target: Entity, duration: number, distance: number, speed: number, p5: number, p6: number): nil
 function TaskGoToEntity(entity, target, duration, distance, speed, p5, p6) end
 
     
@@ -2078,8 +2079,8 @@ function TaskGoToEntity(entity, target, duration, distance, speed, p5, p6) end
 ---
 --- @hash [0x6C6B148586F934F7](https://docs.fivem.net/natives/?_0x6C6B148586F934F7)
 --- @param height number (float)
---- @return void
---- @overload fun(height: number): void
+--- @return nil
+--- @overload fun(height: number): nil
 function SetGlobalMinBirdFlightHeight(height) end
 
     
@@ -2093,8 +2094,8 @@ function SetGlobalMinBirdFlightHeight(height) end
 --- @param duration number (int)
 --- @param p5 any
 --- @param p6 any
---- @return void
---- @overload fun(entity: Entity, x: number, y: number, z: number, duration: number, p5: any, p6: any): void
+--- @return nil
+--- @overload fun(entity: Entity, x: number, y: number, z: number, duration: number, p5: any, p6: any): nil
 function TaskLookAtCoord(entity, x, y, z, duration, p5, p6) end
 
     
@@ -2105,8 +2106,8 @@ function TaskLookAtCoord(entity, x, y, z, duration, p5, p6) end
 --- @param p1 boolean
 --- @param p2 any
 --- @param p3 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: any, p3: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: any, p3: boolean): nil
 function SetAnimLooped(p0, p1, p2, p3) end
 
     
@@ -2159,8 +2160,8 @@ function N_0x717e4d1f2048376d(ped) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(ped: Ped, x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(ped: Ped, x: number, y: number, z: number): nil
 function TaskThrowProjectile(ped, x, y, z) end
 
     
@@ -2169,8 +2170,8 @@ function TaskThrowProjectile(ped, x, y, z) end
 --- @hash [0x72C896464915D1B1](https://docs.fivem.net/natives/?_0x72C896464915D1B1)
 --- @param ped Ped
 --- @param fleeTarget Ped
---- @return void
---- @overload fun(ped: Ped, fleeTarget: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped, fleeTarget: Ped): nil
 function TaskReactAndFleePed(ped, fleeTarget) end
 
     
@@ -2180,8 +2181,8 @@ function TaskReactAndFleePed(ped, fleeTarget) end
 --- @param ped Ped
 --- @param animDict string (char*)
 --- @param animName string (char*)
---- @return void
---- @overload fun(ped: Ped, animDict: string, animName: string): void
+--- @return nil
+--- @overload fun(ped: Ped, animDict: string, animName: string): nil
 function PlayAnimOnRunningScenario(ped, animDict, animName) end
 
     
@@ -2203,8 +2204,8 @@ function IsPedCuffed(ped) end
 --- @param z number (float)
 --- @param duration number (int)
 --- @param p5 boolean
---- @return void
---- @overload fun(ped: Ped, x: number, y: number, z: number, duration: number, p5: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, x: number, y: number, z: number, duration: number, p5: boolean): nil
 function TaskSeekCoverFromPos(ped, x, y, z, duration, p5) end
 
     
@@ -2218,8 +2219,8 @@ function TaskSeekCoverFromPos(ped, x, y, z, duration, p5) end
 ---
 --- @hash [0x7767DD9D65E91319](https://docs.fivem.net/natives/?_0x7767DD9D65E91319)
 --- @param patrolRoute string (char*)
---- @return void
---- @overload fun(patrolRoute: string): void
+--- @return nil
+--- @overload fun(patrolRoute: string): nil
 function DeletePatrolRoute(patrolRoute) end
 
     
@@ -2229,8 +2230,8 @@ function DeletePatrolRoute(patrolRoute) end
 --- @param p0 any
 --- @param p4 number (float)
 --- @param p5 number (float)
---- @return any, any, any
---- @overload fun(p0: any, p4: number, p5: number): any, any, any
+--- @return nil, any, any, any
+--- @overload fun(p0: any, p4: number, p5: number): nil, any, any, any
 function PlayEntityScriptedAnim(p0, p4, p5) end
 
     
@@ -2239,8 +2240,8 @@ function PlayEntityScriptedAnim(p0, p4, p5) end
 --- @hash [0x77A5B103C87F476E](https://docs.fivem.net/natives/?_0x77A5B103C87F476E)
 --- @param ped Ped
 --- @param Toggle boolean
---- @return void
---- @overload fun(ped: Ped, Toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, Toggle: boolean): nil
 function SetPedPathCanUseLadders(ped, Toggle) end
 
     
@@ -2278,8 +2279,8 @@ function IsScenarioOccupied(p0, p1, p2, p3, p4) end
 --- @param p2 number (float)
 --- @param p3 number (float)
 --- @param p4 number (float)
---- @return void
---- @overload fun(p0: any, p1: any, p2: number, p3: number, p4: number): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: number, p3: number, p4: number): nil
 function TaskExitCover(p0, p1, p2, p3, p4) end
 
     
@@ -2290,8 +2291,8 @@ function TaskExitCover(p0, p1, p2, p3, p4) end
 --- @param scriptTask Hash
 --- @param p2 boolean
 --- @param p3 boolean
---- @return void
---- @overload fun(ped: Ped, scriptTask: Hash, p2: boolean, p3: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, scriptTask: Hash, p2: boolean, p3: boolean): nil
 function TaskAimGunScripted(ped, scriptTask, p2, p3) end
 
     
@@ -2307,8 +2308,8 @@ function TaskAimGunScripted(ped, scriptTask, p2, p3) end
 --- @hash [0x7AA80209BDA643EB](https://docs.fivem.net/natives/?_0x7AA80209BDA643EB)
 --- @param ped Ped
 --- @param vehicle Vehicle
---- @return void
---- @overload fun(ped: Ped, vehicle: Vehicle): void
+--- @return nil
+--- @overload fun(ped: Ped, vehicle: Vehicle): nil
 function TaskShuffleToNextVehicleSeat(ped, vehicle) end
 
     
@@ -2322,8 +2323,8 @@ function TaskShuffleToNextVehicleSeat(ped, vehicle) end
 --- @param p8 number (float)
 --- @param p9 number (float)
 --- @param p10 number (float)
---- @return any, any, any, any
---- @overload fun(p0: any, p5: any, p6: number, p7: number, p8: number, p9: number, p10: number): any, any, any, any
+--- @return nil, any, any, any, any
+--- @overload fun(p0: any, p5: any, p6: number, p7: number, p8: number, p9: number, p10: number): nil, any, any, any, any
 function TaskSweepAimPosition(p0, p5, p6, p7, p8, p9, p10) end
 
     
@@ -2336,8 +2337,8 @@ function TaskSweepAimPosition(p0, p5, p6, p7, p8, p9, p10) end
 --- @param ped Ped
 --- @param radius number (float)
 --- @param p2 number (int)
---- @return void
---- @overload fun(ped: Ped, radius: number, p2: number): void
+--- @return nil
+--- @overload fun(ped: Ped, radius: number, p2: number): nil
 function TaskCombatHatedTargetsAroundPed(ped, radius, p2) end
 
     
@@ -2347,8 +2348,8 @@ function TaskCombatHatedTargetsAroundPed(ped, radius, p2) end
 --- @param p0 any
 --- @param p1 number (float)
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p1: number, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: number, p2: boolean): nil
 function WaypointPlaybackOverrideSpeed(p0, p1, p2) end
 
     
@@ -2356,8 +2357,8 @@ function WaypointPlaybackOverrideSpeed(p0, p1, p2) end
 ---
 --- @hash [0x7F93691AB4B92272](https://docs.fivem.net/natives/?_0x7F93691AB4B92272)
 --- @param vehicle Vehicle
---- @return void
---- @overload fun(vehicle: Vehicle): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle): nil
 function TaskEveryoneLeaveVehicle(vehicle) end
 
     
@@ -2367,8 +2368,8 @@ function TaskEveryoneLeaveVehicle(vehicle) end
 ---
 --- @hash [0x817268968605947A](https://docs.fivem.net/natives/?_0x817268968605947A)
 --- @param route string (char*)
---- @return void
---- @overload fun(route: string): void
+--- @return nil
+--- @overload fun(route: string): nil
 function AssistedMovementRequestRoute(route) end
 
     
@@ -2393,8 +2394,8 @@ function AssistedMovementRequestRoute(route) end
 --- @param animTime number (float)
 --- @param p14 any
 --- @param p15 any
---- @return void
---- @overload fun(ped: Ped, animDict: string, animName: string, posX: number, posY: number, posZ: number, rotX: number, rotY: number, rotZ: number, animEnterSpeed: number, animExitSpeed: number, duration: number, flag: any, animTime: number, p14: any, p15: any): void
+--- @return nil
+--- @overload fun(ped: Ped, animDict: string, animName: string, posX: number, posY: number, posZ: number, rotX: number, rotY: number, rotZ: number, animEnterSpeed: number, animExitSpeed: number, duration: number, flag: any, animTime: number, p14: any, p15: any): nil
 function TaskPlayAnimAdvanced(ped, animDict, animName, posX, posY, posZ, rotX, rotY, rotZ, animEnterSpeed, animExitSpeed, duration, flag, animTime, p14, p15) end
 
     
@@ -2402,8 +2403,8 @@ function TaskPlayAnimAdvanced(ped, animDict, animName, posX, posY, posZ, rotX, r
 ---
 --- @hash [0x841142A1376E9006](https://docs.fivem.net/natives/?_0x841142A1376E9006)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function TaskFlushRoute() end
 
     
@@ -2415,8 +2416,8 @@ function TaskFlushRoute() end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function N_0x8423541e8b3a1589(p0, p1, p2) end
 
     
@@ -2427,8 +2428,8 @@ function N_0x8423541e8b3a1589(p0, p1, p2) end
 --- @param target Ped
 --- @param duration number (int)
 --- @param p3 boolean
---- @return void
---- @overload fun(ped: Ped, target: Ped, duration: number, p3: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, target: Ped, duration: number, p3: boolean): nil
 function TaskSeekCoverFromPed(ped, target, duration, p3) end
 
     
@@ -2446,8 +2447,8 @@ function GetPedDesiredMoveBlendRatio(ped) end
 --- @hash [0x85F462BADC7DA47F](https://docs.fivem.net/natives/?_0x85F462BADC7DA47F)
 --- @param ped Ped
 --- @param ped2 Ped
---- @return void
---- @overload fun(ped: Ped, ped2: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped, ped2: Ped): nil
 function AddVehicleSubtaskAttackPed(ped, ped2) end
 
     
@@ -2462,8 +2463,8 @@ function AddVehicleSubtaskAttackPed(ped, ped2) end
 --- @param p5 any
 --- @param p6 boolean
 --- @param p7 boolean
---- @return void
---- @overload fun(p0: any, p1: any, p2: number, p3: number, p4: number, p5: any, p6: boolean, p7: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: number, p3: number, p4: number, p5: any, p6: boolean, p7: boolean): nil
 function TaskAimGunScriptedWithTarget(p0, p1, p2, p3, p4, p5, p6, p7) end
 
     
@@ -2475,8 +2476,8 @@ function TaskAimGunScriptedWithTarget(p0, p1, p2, p3, p4, p5, p6, p7) end
 --- @param ped Ped
 --- @param p1 string (char*)
 --- @param value number (float)
---- @return void
---- @overload fun(ped: Ped, p1: string, value: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: string, value: number): nil
 function N_0x8634cef2522d987b(ped, p1, value) end
 
     
@@ -2496,8 +2497,8 @@ function IsDrivebyTaskUnderneathDrivingTask(ped) end
 --- @hash [0x88E32DB8C1A4AA4B](https://docs.fivem.net/natives/?_0x88E32DB8C1A4AA4B)
 --- @param ped Ped
 --- @param modifier number (float)
---- @return void
---- @overload fun(ped: Ped, modifier: number): void
+--- @return nil
+--- @overload fun(ped: Ped, modifier: number): nil
 function SetPedPathClimbCostModifier(ped, modifier) end
 
     
@@ -2509,8 +2510,8 @@ function SetPedPathClimbCostModifier(ped, modifier) end
 --- @hash [0x88E32DB8C1A4AA4B](https://docs.fivem.net/natives/?_0x88E32DB8C1A4AA4B)
 --- @param ped Ped
 --- @param modifier number (float)
---- @return void
---- @overload fun(ped: Ped, modifier: number): void
+--- @return nil
+--- @overload fun(ped: Ped, modifier: number): nil
 --- @deprecated
 function N_0x88e32db8c1a4aa4b(ped, modifier) end
 
@@ -2522,8 +2523,8 @@ function N_0x88e32db8c1a4aa4b(ped, modifier) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function TaskPerformSequenceFromProgress(p0, p1, p2, p3) end
 
     
@@ -2535,8 +2536,8 @@ function TaskPerformSequenceFromProgress(p0, p1, p2, p3) end
 --- @param p2 number (float)
 --- @param p3 number (float)
 --- @param p4 boolean
---- @return void
---- @overload fun(p0: any, p1: number, p2: number, p3: number, p4: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: number, p2: number, p3: number, p4: boolean): nil
 function WaypointPlaybackStartAimingAtCoord(p0, p1, p2, p3, p4) end
 
     
@@ -2547,8 +2548,8 @@ function WaypointPlaybackStartAimingAtCoord(p0, p1, p2, p3, p4) end
 --- @hash [0x89D9FCC2435112F1](https://docs.fivem.net/natives/?_0x89D9FCC2435112F1)
 --- @param ped Ped
 --- @param unused boolean
---- @return void
---- @overload fun(ped: Ped, unused: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, unused: boolean): nil
 function TaskClimb(ped, unused) end
 
     
@@ -2556,8 +2557,8 @@ function TaskClimb(ped, unused) end
 ---
 --- @hash [0x8A4E6AC373666BC5](https://docs.fivem.net/natives/?_0x8A4E6AC373666BC5)
 --- @param vehicle Vehicle
---- @return void
---- @overload fun(vehicle: Vehicle): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle): nil
 function VehicleWaypointPlaybackPause(vehicle) end
 
     
@@ -2566,8 +2567,8 @@ function VehicleWaypointPlaybackPause(vehicle) end
 --- @hash [0x8C33220C8D78CA0D](https://docs.fivem.net/natives/?_0x8C33220C8D78CA0D)
 --- @param ped Ped
 --- @param taskSequenceId number (int)
---- @return void
---- @overload fun(ped: Ped, taskSequenceId: number): void
+--- @return nil
+--- @overload fun(ped: Ped, taskSequenceId: number): nil
 function TaskPerformSequenceLocally(ped, taskSequenceId) end
 
     
@@ -2577,8 +2578,8 @@ function TaskPerformSequenceLocally(ped, taskSequenceId) end
 --- @hash [0x8C33220C8D78CA0D](https://docs.fivem.net/natives/?_0x8C33220C8D78CA0D)
 --- @param ped Ped
 --- @param taskSequenceId number (int)
---- @return void
---- @overload fun(ped: Ped, taskSequenceId: number): void
+--- @return nil
+--- @overload fun(ped: Ped, taskSequenceId: number): nil
 --- @deprecated
 function N_0x8c33220c8d78ca0d(ped, taskSequenceId) end
 
@@ -2597,8 +2598,8 @@ function N_0x8c33220c8d78ca0d(ped, taskSequenceId) end
 --- @param p5 number (float)
 --- @param p6 number (float)
 --- @param p7 number (float)
---- @return void
---- @overload fun(ped: Ped, target: Ped, p2: any, p3: number, p4: number, p5: number, p6: number, p7: number): void
+--- @return nil
+--- @overload fun(ped: Ped, target: Ped, p2: any, p3: number, p4: number, p5: number, p6: number, p7: number): nil
 function TaskChatToPed(ped, target, p2, p3, p4, p5, p6, p7) end
 
     
@@ -2609,8 +2610,8 @@ function TaskChatToPed(ped, target, p2, p3, p4, p5, p6, p7) end
 --- @param duration any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(ped: Ped, duration: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(ped: Ped, duration: any, p2: any, p3: any): nil
 function SetHighFallTask(ped, duration, p2, p3) end
 
     
@@ -2619,8 +2620,8 @@ function SetHighFallTask(ped, duration, p2, p3) end
 --- @hash [0x8E06A6FE76C9EFF4](https://docs.fivem.net/natives/?_0x8E06A6FE76C9EFF4)
 --- @param ped Ped
 --- @param Toggle boolean
---- @return void
---- @overload fun(ped: Ped, Toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, Toggle: boolean): nil
 function SetPedPathCanUseClimbovers(ped, Toggle) end
 
     
@@ -2647,8 +2648,8 @@ function SetPedPathCanUseClimbovers(ped, Toggle) end
 --- @param y2 number (float)
 --- @param z2 number (float)
 --- @param p8 number (int)
---- @return void
---- @overload fun(p0: number, p1: string, x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, p8: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: string, x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, p8: number): nil
 function AddPatrolRouteNode(p0, p1, x1, y1, z1, x2, y2, z2, p8) end
 
     
@@ -2680,8 +2681,8 @@ function AddPatrolRouteNode(p0, p1, x1, y1, z1, x2, y2, z2, p8) end
 --- @param p5 number (float)
 --- @param p6 boolean
 --- @param p7 boolean
---- @return void
---- @overload fun(ped: Ped, animDict: string, animation: string, boneMaskType: string, p4: number, p5: number, p6: boolean, p7: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, animDict: string, animation: string, boneMaskType: string, p4: number, p5: number, p6: boolean, p7: boolean): nil
 function TaskPlayPhoneGestureAnimation(ped, animDict, animation, boneMaskType, p4, p5, p6, p7) end
 
     
@@ -2696,8 +2697,8 @@ function TaskPlayPhoneGestureAnimation(ped, animDict, animation, boneMaskType, p
 --- @param ped Ped
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(ped: Ped, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean, p2: boolean): nil
 function SetPedCanPlayAmbientIdles(ped, p1, p2) end
 
     
@@ -2713,8 +2714,8 @@ function SetPedCanPlayAmbientIdles(ped, p1, p2) end
 --- @param ped Ped
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(ped: Ped, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean, p2: boolean): nil
 --- @deprecated
 function N_0x8fd89a6240813fd0(ped, p1, p2) end
 
@@ -2739,8 +2740,8 @@ function IsPedBeingArrested(ped) end
 --- @hash [0x90D2156198831D69](https://docs.fivem.net/natives/?_0x90D2156198831D69)
 --- @param ped Ped
 --- @param toggle boolean
---- @return void
---- @overload fun(ped: Ped, toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, toggle: boolean): nil
 function TaskSetBlockingOfNonTemporaryEvents(ped, toggle) end
 
     
@@ -2751,8 +2752,8 @@ function TaskSetBlockingOfNonTemporaryEvents(ped, toggle) end
 --- @hash [0x919BE13EED931959](https://docs.fivem.net/natives/?_0x919BE13EED931959)
 --- @param ped Ped
 --- @param time number (int)
---- @return void
---- @overload fun(ped: Ped, time: number): void
+--- @return nil
+--- @overload fun(ped: Ped, time: number): nil
 function TaskStandStill(ped, time) end
 
     
@@ -2786,8 +2787,8 @@ function N_0x921ce12c489c4c41(ped) end
 --- @param p4 any
 --- @param p5 any
 --- @param p6 any
---- @return void
---- @overload fun(pilot: Ped, aircraft: Vehicle, p2: any, p3: any, p4: any, p5: any, p6: any): void
+--- @return nil
+--- @overload fun(pilot: Ped, aircraft: Vehicle, p2: any, p3: any, p4: any, p5: any, p6: any): nil
 function TaskPlaneTaxi(pilot, aircraft, p2, p3, p4, p5, p6) end
 
     
@@ -2802,8 +2803,8 @@ function TaskPlaneTaxi(pilot, aircraft, p2, p3, p4, p5, p6) end
 --- @param p4 any
 --- @param p5 any
 --- @param p6 any
---- @return void
---- @overload fun(pilot: Ped, aircraft: Vehicle, p2: any, p3: any, p4: any, p5: any, p6: any): void
+--- @return nil
+--- @overload fun(pilot: Ped, aircraft: Vehicle, p2: any, p3: any, p4: any, p5: any, p6: any): nil
 --- @deprecated
 function N_0x92c360b5f15d2302(pilot, aircraft, p2, p3, p4, p5, p6) end
 
@@ -2816,8 +2817,8 @@ function N_0x92c360b5f15d2302(pilot, aircraft, p2, p3, p4, p5, p6) end
 --- @param p2 number (float)
 --- @param p3 number (float)
 --- @param p4 number (float)
---- @return void
---- @overload fun(p0: any, p1: number, p2: number, p3: number, p4: number): void
+--- @return nil
+--- @overload fun(p0: any, p1: number, p2: number, p3: number, p4: number): nil
 function TaskSetSphereDefensiveArea(p0, p1, p2, p3, p4) end
 
     
@@ -2832,8 +2833,8 @@ function TaskSetSphereDefensiveArea(p0, p1, p2, p3, p4) end
 --- @param ped Ped
 --- @param heading number (float)
 --- @param timeout number (int)
---- @return void
---- @overload fun(ped: Ped, heading: number, timeout: number): void
+--- @return nil
+--- @overload fun(ped: Ped, heading: number, timeout: number): nil
 function TaskAchieveHeading(ped, heading, timeout) end
 
     
@@ -2844,8 +2845,8 @@ function TaskAchieveHeading(ped, heading, timeout) end
 --- @param ped Ped
 --- @param p2 number (int)
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, ped: Ped, p2: number, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, ped: Ped, p2: number, p3: any): nil
 function TaskCombatPedTimed(p0, ped, p2, p3) end
 
     
@@ -2861,8 +2862,8 @@ function TaskCombatPedTimed(p0, ped, p2, p3) end
 --- @param minDistance number (float)
 --- @param p7 number (float)
 --- @param DriveAgainstTraffic boolean
---- @return void
---- @overload fun(ped: Ped, vehicle: Vehicle, pedTarget: Ped, missionType: number, maxSpeed: number, drivingStyle: number, minDistance: number, p7: number, DriveAgainstTraffic: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, vehicle: Vehicle, pedTarget: Ped, missionType: number, maxSpeed: number, drivingStyle: number, minDistance: number, p7: number, DriveAgainstTraffic: boolean): nil
 function TaskVehicleMissionPedTarget(ped, vehicle, pedTarget, missionType, maxSpeed, drivingStyle, minDistance, p7, DriveAgainstTraffic) end
 
     
@@ -2879,8 +2880,8 @@ function TaskVehicleMissionPedTarget(ped, vehicle, pedTarget, missionType, maxSp
 --- @param time number (int)
 --- @param p6 boolean
 --- @param p7 boolean
---- @return void
---- @overload fun(ped: Ped, x: number, y: number, z: number, distance: number, time: number, p6: boolean, p7: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, x: number, y: number, z: number, distance: number, time: number, p6: boolean, p7: boolean): nil
 function TaskSmartFleeCoord(ped, x, y, z, distance, time, p6, p7) end
 
     
@@ -2888,8 +2889,8 @@ function TaskSmartFleeCoord(ped, x, y, z, distance, time, p6, p7) end
 ---
 --- @hash [0x95A6C46A31D1917D](https://docs.fivem.net/natives/?_0x95A6C46A31D1917D)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function TaskClearDefensiveArea(p0) end
 
     
@@ -2903,8 +2904,8 @@ function TaskClearDefensiveArea(p0) end
 --- @param timeOut number (int)
 --- @param seat number (int)
 --- @param speed number (float)
---- @return void
---- @overload fun(ped: Ped, vehicle: Vehicle, timeOut: number, seat: number, speed: number): void
+--- @return nil
+--- @overload fun(ped: Ped, vehicle: Vehicle, timeOut: number, seat: number, speed: number): nil
 function TaskOpenVehicleDoor(ped, vehicle, timeOut, seat, speed) end
 
     
@@ -2916,8 +2917,8 @@ function TaskOpenVehicleDoor(ped, vehicle, timeOut, seat, speed) end
 --- @param y number (float)
 --- @param z number (float)
 --- @param heading number (float)
---- @return void
---- @overload fun(ped: Ped, x: number, y: number, z: number, heading: number): void
+--- @return nil
+--- @overload fun(ped: Ped, x: number, y: number, z: number, heading: number): nil
 function TaskPlantBomb(ped, x, y, z, heading) end
 
     
@@ -2930,8 +2931,8 @@ function TaskPlantBomb(ped, x, y, z, heading) end
 --- @param p3 number (float)
 --- @param p4 number (float)
 --- @param p5 boolean
---- @return void
---- @overload fun(p0: Ped, p1: Ped, p2: number, p3: number, p4: number, p5: boolean): void
+--- @return nil
+--- @overload fun(p0: Ped, p1: Ped, p2: number, p3: number, p4: number, p5: boolean): nil
 function UpdateTaskAimGunScriptedTarget(p0, p1, p2, p3, p4, p5) end
 
     
@@ -2952,8 +2953,8 @@ function UpdateTaskAimGunScriptedTarget(p0, p1, p2, p3, p4, p5) end
 --- @param p7 boolean
 --- @param p8 boolean
 --- @param firingPattern Hash
---- @return void
---- @overload fun(ped: Ped, entityToWalkTo: Entity, entityToAimAt: Entity, speed: number, shootatEntity: boolean, p5: number, p6: number, p7: boolean, p8: boolean, firingPattern: Hash): void
+--- @return nil
+--- @overload fun(ped: Ped, entityToWalkTo: Entity, entityToAimAt: Entity, speed: number, shootatEntity: boolean, p5: number, p6: number, p7: boolean, p8: boolean, firingPattern: Hash): nil
 function TaskGoToEntityWhileAimingAtEntity(ped, entityToWalkTo, entityToAimAt, speed, shootatEntity, p5, p6, p7, p8, firingPattern) end
 
     
@@ -2966,8 +2967,8 @@ function TaskGoToEntityWhileAimingAtEntity(ped, entityToWalkTo, entityToAimAt, s
 --- @param p3 number (float)
 --- @param p4 number (float)
 --- @param p5 any
---- @return void
---- @overload fun(p0: any, p1: number, p2: number, p3: number, p4: number, p5: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: number, p2: number, p3: number, p4: number, p5: any): nil
 function TaskUseNearestScenarioChainToCoordWarp(p0, p1, p2, p3, p4, p5) end
 
     
@@ -2978,8 +2979,8 @@ function TaskUseNearestScenarioChainToCoordWarp(p0, p1, p2, p3, p4, p5) end
 --- @param animDictionary string (char*)
 --- @param animationName string (char*)
 --- @param p3 number (float)
---- @return void
---- @overload fun(ped: Ped, animDictionary: string, animationName: string, p3: number): void
+--- @return nil
+--- @overload fun(ped: Ped, animDictionary: string, animationName: string, p3: number): nil
 function StopAnimTask(ped, animDictionary, animationName, p3) end
 
     
@@ -2998,8 +2999,8 @@ function GetVehicleWaypointProgress(vehicle) end
 --- @param ped Ped
 --- @param vehicle Vehicle
 --- @param seatIndex number (int)
---- @return void
---- @overload fun(ped: Ped, vehicle: Vehicle, seatIndex: number): void
+--- @return nil
+--- @overload fun(ped: Ped, vehicle: Vehicle, seatIndex: number): nil
 function TaskWarpPedIntoVehicle(ped, vehicle, seatIndex) end
 
     
@@ -3012,8 +3013,8 @@ function TaskWarpPedIntoVehicle(ped, vehicle, seatIndex) end
 --- @param entity Entity
 --- @param duration number (int)
 --- @param p3 boolean
---- @return void
---- @overload fun(ped: Ped, entity: Entity, duration: number, p3: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, entity: Entity, duration: number, p3: boolean): nil
 function TaskAimGunAtEntity(ped, entity, duration, p3) end
 
     
@@ -3022,8 +3023,8 @@ function TaskAimGunAtEntity(ped, entity, duration, p3) end
 --- @hash [0x9C00E77AF14B2DFF](https://docs.fivem.net/natives/?_0x9C00E77AF14B2DFF)
 --- @param ped Ped
 --- @param boat Vehicle
---- @return void
---- @overload fun(ped: Ped, boat: Vehicle): void
+--- @return nil
+--- @overload fun(ped: Ped, boat: Vehicle): nil
 function TaskGetOffBoat(ped, boat) end
 
     
@@ -3033,8 +3034,8 @@ function TaskGetOffBoat(ped, boat) end
 --- @hash [0x9C00E77AF14B2DFF](https://docs.fivem.net/natives/?_0x9C00E77AF14B2DFF)
 --- @param ped Ped
 --- @param boat Vehicle
---- @return void
---- @overload fun(ped: Ped, boat: Vehicle): void
+--- @return nil
+--- @overload fun(ped: Ped, boat: Vehicle): nil
 --- @deprecated
 function TaskGetOffBoat(ped, boat) end
 
@@ -3057,8 +3058,8 @@ function N_0x9d252648778160df(p0) end
 ---
 --- @hash [0x9EEFB62EB27B5792](https://docs.fivem.net/natives/?_0x9EEFB62EB27B5792)
 --- @param name string (char*)
---- @return void
---- @overload fun(name: string): void
+--- @return nil
+--- @overload fun(name: string): nil
 function RequestWaypointRecording(name) end
 
     
@@ -3071,8 +3072,8 @@ function RequestWaypointRecording(name) end
 --- @param p3 number (float)
 --- @param p4 number (float)
 --- @param p5 any
---- @return void
---- @overload fun(p0: any, p1: number, p2: number, p3: number, p4: number, p5: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: number, p2: number, p3: number, p4: number, p5: any): nil
 function TaskUseNearestScenarioChainToCoord(p0, p1, p2, p3, p4, p5) end
 
     
@@ -3081,8 +3082,8 @@ function TaskUseNearestScenarioChainToCoord(p0, p1, p2, p3, p4, p5) end
 --- @hash [0xA21C51255B205245](https://docs.fivem.net/natives/?_0xA21C51255B205245)
 --- @param ped Ped
 --- @param p1 boolean
---- @return void
---- @overload fun(ped: Ped, p1: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean): nil
 function TaskSwapWeapon(ped, p1) end
 
     
@@ -3123,8 +3124,8 @@ function IsMountedWeaponTaskUnderneathDrivingTask(ped) end
 ---
 --- @hash [0xA36BFB5EE89F3D82](https://docs.fivem.net/natives/?_0xA36BFB5EE89F3D82)
 --- @param patrolRoute string (char*)
---- @return void
---- @overload fun(patrolRoute: string): void
+--- @return nil
+--- @overload fun(patrolRoute: string): nil
 function OpenPatrolRoute(patrolRoute) end
 
     
@@ -3170,8 +3171,8 @@ function OpenPatrolRoute(patrolRoute) end
 --- @param unkFlag number (int)
 --- @param aimingFlag number (int)
 --- @param firingPattern Hash
---- @return void
---- @overload fun(pedHandle: Ped, goToLocationX: number, goToLocationY: number, goToLocationZ: number, focusLocationX: number, focusLocationY: number, focusLocationZ: number, speed: number, shootAtEnemies: boolean, distanceToStopAt: number, noRoadsDistance: number, unkTrue: boolean, unkFlag: number, aimingFlag: number, firingPattern: Hash): void
+--- @return nil
+--- @overload fun(pedHandle: Ped, goToLocationX: number, goToLocationY: number, goToLocationZ: number, focusLocationX: number, focusLocationY: number, focusLocationZ: number, speed: number, shootAtEnemies: boolean, distanceToStopAt: number, noRoadsDistance: number, unkTrue: boolean, unkFlag: number, aimingFlag: number, firingPattern: Hash): nil
 function TaskGoToCoordAndAimAtHatedEntitiesNearCoord(pedHandle, goToLocationX, goToLocationY, goToLocationZ, focusLocationX, focusLocationY, focusLocationZ, speed, shootAtEnemies, distanceToStopAt, noRoadsDistance, unkTrue, unkFlag, aimingFlag, firingPattern) end
 
     
@@ -3225,8 +3226,8 @@ function DoesScriptedCoverPointExistAtCoords(x, y, z) end
 --- @hash [0xA98FCAFD7893C834](https://docs.fivem.net/natives/?_0xA98FCAFD7893C834)
 --- @param ped Ped
 --- @param duration number (int)
---- @return void
---- @overload fun(ped: Ped, duration: number): void
+--- @return nil
+--- @overload fun(ped: Ped, duration: number): nil
 function UpdateTaskHandsUpDuration(ped, duration) end
 
     
@@ -3244,8 +3245,8 @@ function UpdateTaskHandsUpDuration(ped, duration) end
 --- @param target Entity
 --- @param distanceToStopAt number (float)
 --- @param StartAimingDist number (float)
---- @return void
---- @overload fun(ped: Ped, target: Entity, distanceToStopAt: number, StartAimingDist: number): void
+--- @return nil
+--- @overload fun(ped: Ped, target: Entity, distanceToStopAt: number, StartAimingDist: number): nil
 function TaskGotoEntityAiming(ped, target, distanceToStopAt, StartAimingDist) end
 
     
@@ -3282,8 +3283,8 @@ function IsPedActiveInScenario(ped) end
 --- @param actionType Hash
 --- @param p3 number (float)
 --- @param p4 any
---- @return void
---- @overload fun(killer: Ped, target: Ped, actionType: Hash, p3: number, p4: any): void
+--- @return nil
+--- @overload fun(killer: Ped, target: Ped, actionType: Hash, p3: number, p4: any): nil
 function TaskStealthKill(killer, target, actionType, p3, p4) end
 
     
@@ -3291,8 +3292,8 @@ function TaskStealthKill(killer, target, actionType, p3, p4) end
 ---
 --- @hash [0xAAA34F8A7CB32098](https://docs.fivem.net/natives/?_0xAAA34F8A7CB32098)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ClearPedTasksImmediately(ped) end
 
     
@@ -3334,8 +3335,8 @@ function IsPedStill(ped) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(pilot: Ped, entityToFollow: Entity, x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(pilot: Ped, entityToFollow: Entity, x: number, y: number, z: number): nil
 function TaskHeliChase(pilot, entityToFollow, x, y, z) end
 
     
@@ -3347,8 +3348,8 @@ function TaskHeliChase(pilot, entityToFollow, x, y, z) end
 --- @hash [0xAC96609B9995EDF8](https://docs.fivem.net/natives/?_0xAC96609B9995EDF8)
 --- @param p0 boolean
 --- @param p1 boolean
---- @return void
---- @overload fun(p0: boolean, p1: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean, p1: boolean): nil
 function TaskToggleDuck(p0, p1) end
 
     
@@ -3363,8 +3364,8 @@ function TaskToggleDuck(p0, p1) end
 --- @param z number (float)
 --- @param heading number (float)
 --- @param scenarioName string (char*)
---- @return void
---- @overload fun(ped: Ped, x: number, y: number, z: number, heading: number, scenarioName: string): void
+--- @return nil
+--- @overload fun(ped: Ped, x: number, y: number, z: number, heading: number, scenarioName: string): nil
 function TaskStandGuard(ped, x, y, z, heading, scenarioName) end
 
     
@@ -3372,8 +3373,8 @@ function TaskStandGuard(ped, x, y, z, heading, scenarioName) end
 ---
 --- @hash [0xAE287C923D891715](https://docs.fivem.net/natives/?_0xAE287C923D891715)
 --- @param coverpoint ScrHandle
---- @return void
---- @overload fun(coverpoint: ScrHandle): void
+--- @return nil
+--- @overload fun(coverpoint: ScrHandle): nil
 function RemoveCoverPoint(coverpoint) end
 
     
@@ -3381,8 +3382,8 @@ function RemoveCoverPoint(coverpoint) end
 ---
 --- @hash [0xAF8A443CCC8018DC](https://docs.fivem.net/natives/?_0xAF8A443CCC8018DC)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function CreatePatrolRoute() end
 
     
@@ -3390,8 +3391,8 @@ function CreatePatrolRoute() end
 ---
 --- @hash [0xB043ECA801B8CBC1](https://docs.fivem.net/natives/?_0xB043ECA801B8CBC1)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ClosePatrolRoute() end
 
     
@@ -3413,8 +3414,8 @@ function GetIsTaskActive(ped, taskIndex) end
 --- @param ped Ped
 --- @param signalName string (char*)
 --- @param value boolean
---- @return void
---- @overload fun(ped: Ped, signalName: string, value: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, signalName: string, value: boolean): nil
 function SetTaskMoveNetworkSignalBool(ped, signalName, value) end
 
     
@@ -3425,8 +3426,8 @@ function SetTaskMoveNetworkSignalBool(ped, signalName, value) end
 --- @param ped Ped
 --- @param signalName string (char*)
 --- @param value boolean
---- @return void
---- @overload fun(ped: Ped, signalName: string, value: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, signalName: string, value: boolean): nil
 --- @deprecated
 function N_0xb0a6cfd2c69c1088(ped, signalName, value) end
 
@@ -3438,8 +3439,8 @@ function N_0xb0a6cfd2c69c1088(ped, signalName, value) end
 --- @param ped Ped
 --- @param signalName string (char*)
 --- @param value boolean
---- @return void
---- @overload fun(ped: Ped, signalName: string, value: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, signalName: string, value: boolean): nil
 --- @deprecated
 function SetTaskPropertyBool(ped, signalName, value) end
 
@@ -3461,8 +3462,8 @@ function SetTaskPropertyBool(ped, signalName, value) end
 --- @param p11 boolean
 --- @param p12 any
 --- @param p13 any
---- @return void
---- @overload fun(p0: any, p1: number, p2: number, p3: number, p4: any, p5: number, p6: boolean, p7: number, p8: number, p9: boolean, p10: any, p11: boolean, p12: any, p13: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: number, p2: number, p3: number, p4: any, p5: number, p6: boolean, p7: number, p8: number, p9: boolean, p10: any, p11: boolean, p12: any, p13: any): nil
 function TaskGoToCoordWhileAimingAtEntity(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13) end
 
     
@@ -3475,8 +3476,8 @@ function TaskGoToCoordWhileAimingAtEntity(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(ped: Ped, x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(ped: Ped, x: number, y: number, z: number): nil
 function TaskParachuteToTarget(ped, x, y, z) end
 
     
@@ -3491,8 +3492,8 @@ function TaskParachuteToTarget(ped, x, y, z) end
 --- @param p3 number (float)
 --- @param p4 number (float)
 --- @param p5 number (float)
---- @return void
---- @overload fun(pilot: Ped, heli1: Vehicle, heli2: Vehicle, p3: number, p4: number, p5: number): void
+--- @return nil
+--- @overload fun(pilot: Ped, heli1: Vehicle, heli2: Vehicle, p3: number, p4: number, p5: number): nil
 function TaskHeliEscortHeli(pilot, heli1, heli2, p3, p4, p5) end
 
     
@@ -3538,8 +3539,8 @@ function WaypointRecordingGetClosestWaypoint(name, x, y, z, point) end
 --- @hash [0xB6C987F9285A3814](https://docs.fivem.net/natives/?_0xB6C987F9285A3814)
 --- @param ped Ped
 --- @param p1 number (int)
---- @return void
---- @overload fun(ped: Ped, p1: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: number): nil
 function TaskClimbLadder(ped, p1) end
 
     
@@ -3570,8 +3571,8 @@ function IsPlayingPhoneGestureAnim(ped) end
 --- @param p10 any
 --- @param p11 any
 --- @param p12 any
---- @return void
---- @overload fun(ped: Ped, x: number, y: number, z: number, speed: number, p5: any, p6: boolean, walkingStyle: number, p8: number, p9: any, p10: any, p11: any, p12: any): void
+--- @return nil
+--- @overload fun(ped: Ped, x: number, y: number, z: number, speed: number, p5: any, p6: boolean, walkingStyle: number, p8: number, p9: any, p10: any, p11: any, p12: any): nil
 function TaskGoToCoordAnyMeansExtraParamsWithCruiseSpeed(ped, x, y, z, speed, p5, p6, walkingStyle, p8, p9, p10, p11, p12) end
 
     
@@ -3582,8 +3583,8 @@ function TaskGoToCoordAnyMeansExtraParamsWithCruiseSpeed(ped, x, y, z, speed, p5
 --- @param p1 number (float)
 --- @param p2 number (float)
 --- @param p3 number (float)
---- @return void
---- @overload fun(p0: any, p1: number, p2: number, p3: number): void
+--- @return nil
+--- @overload fun(p0: any, p1: number, p2: number, p3: number): nil
 function UpdateTaskSweepAimPosition(p0, p1, p2, p3) end
 
     
@@ -3596,8 +3597,8 @@ function UpdateTaskSweepAimPosition(p0, p1, p2, p3) end
 --- @param ped Ped
 --- @param p1 number (float)
 --- @param p2 number (int)
---- @return void
---- @overload fun(ped: Ped, p1: number, p2: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: number, p2: number): nil
 function TaskWanderStandard(ped, p1, p2) end
 
     
@@ -3615,8 +3616,8 @@ function TaskWanderStandard(ped, p1, p2) end
 --- @hash [0xBD2A8EC3AF4DE7DB](https://docs.fivem.net/natives/?_0xBD2A8EC3AF4DE7DB)
 --- @param ped Ped
 --- @param p1 number (int)
---- @return void
---- @overload fun(ped: Ped, p1: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: number): nil
 function TaskUseMobilePhone(ped, p1) end
 
     
@@ -3645,8 +3646,8 @@ function TaskUseMobilePhone(ped, p1) end
 --- @param p2 any
 --- @param p3 boolean
 --- @param p4 boolean
---- @return void
---- @overload fun(ped: Ped, p1: string, p2: any, p3: boolean, p4: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: string, p2: any, p3: boolean, p4: boolean): nil
 function TaskPatrol(ped, p1, p2, p3, p4) end
 
     
@@ -3661,8 +3662,8 @@ function TaskPatrol(ped, p1, p2, p3, p4) end
 --- @param runwayEndX number (float)
 --- @param runwayEndY number (float)
 --- @param runwayEndZ number (float)
---- @return void
---- @overload fun(pilot: Ped, plane: Vehicle, runwayStartX: number, runwayStartY: number, runwayStartZ: number, runwayEndX: number, runwayEndY: number, runwayEndZ: number): void
+--- @return nil
+--- @overload fun(pilot: Ped, plane: Vehicle, runwayStartX: number, runwayStartY: number, runwayStartZ: number, runwayEndX: number, runwayEndY: number, runwayEndZ: number): nil
 function TaskPlaneLand(pilot, plane, runwayStartX, runwayStartY, runwayStartZ, runwayEndX, runwayEndY, runwayEndZ) end
 
     
@@ -3680,8 +3681,8 @@ function TaskPlaneLand(pilot, plane, runwayStartX, runwayStartY, runwayStartZ, r
 --- @param speed number (float)
 --- @param flag number (int)
 --- @param p6 any
---- @return void
---- @overload fun(ped: Ped, vehicle: Vehicle, timeout: number, seatIndex: number, speed: number, flag: number, p6: any): void
+--- @return nil
+--- @overload fun(ped: Ped, vehicle: Vehicle, timeout: number, seatIndex: number, speed: number, flag: number, p6: any): nil
 function TaskEnterVehicle(ped, vehicle, timeout, seatIndex, speed, flag, p6) end
 
     
@@ -3701,8 +3702,8 @@ function TaskEnterVehicle(ped, vehicle, timeout, seatIndex, speed, flag, p6) end
 --- @param y number (float)
 --- @param z number (float)
 --- @param p5 any
---- @return void
---- @overload fun(p0: any, submarine: Vehicle, x: number, y: number, z: number, p5: any): void
+--- @return nil
+--- @overload fun(p0: any, submarine: Vehicle, x: number, y: number, z: number, p5: any): nil
 function TaskSubmarineGotoAndStop(p0, submarine, x, y, z, p5) end
 
     
@@ -3713,8 +3714,8 @@ function TaskSubmarineGotoAndStop(p0, submarine, x, y, z, p5) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(ped: Ped, x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(ped: Ped, x: number, y: number, z: number): nil
 function SetParachuteTaskTarget(ped, x, y, z) end
 
     
@@ -3722,8 +3723,8 @@ function SetParachuteTaskTarget(ped, x, y, z) end
 ---
 --- @hash [0xC35B5CDB2824CF69](https://docs.fivem.net/natives/?_0xC35B5CDB2824CF69)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ClearDrivebyTaskUnderneathDrivingTask(ped) end
 
     
@@ -3765,8 +3766,8 @@ function ClearDrivebyTaskUnderneathDrivingTask(ped) end
 --- @param vehicle Vehicle
 --- @param action number (int)
 --- @param time number (int)
---- @return void
---- @overload fun(driver: Ped, vehicle: Vehicle, action: number, time: number): void
+--- @return nil
+--- @overload fun(driver: Ped, vehicle: Vehicle, action: number, time: number): nil
 function TaskVehicleTempAction(driver, vehicle, action, time) end
 
     
@@ -3817,8 +3818,8 @@ function GetNavmeshRouteDistanceRemaining(ped) end
 --- @param p8 number (float)
 --- @param p9 number (float)
 --- @param p10 number (float)
---- @return void
---- @overload fun(p0: Ped, p1: number, p2: number, p3: number, p4: number, p5: number, p6: any, p7: number, p8: number, p9: number, p10: number): void
+--- @return nil
+--- @overload fun(p0: Ped, p1: number, p2: number, p3: number, p4: number, p5: number, p6: any, p7: number, p8: number, p9: number, p10: number): nil
 function TaskGuardSphereDefensiveArea(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10) end
 
     
@@ -3843,8 +3844,8 @@ function GetIsWaypointRecordingLoaded(name) end
 --- @param ped Ped
 --- @param flag number (int)
 --- @param set boolean
---- @return void
---- @overload fun(ped: Ped, flag: number, set: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, flag: number, set: boolean): nil
 function SetTaskVehicleChaseBehaviorFlag(ped, flag, set) end
 
     
@@ -3864,8 +3865,8 @@ function SetTaskVehicleChaseBehaviorFlag(ped, flag, set) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(shootingPed: Ped, targetPed: Ped, targetVehicle: Vehicle, x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(shootingPed: Ped, targetPed: Ped, targetVehicle: Vehicle, x: number, y: number, z: number): nil
 function SetMountedWeaponTarget(shootingPed, targetPed, targetVehicle, x, y, z) end
 
     
@@ -3879,8 +3880,8 @@ function SetMountedWeaponTarget(shootingPed, targetPed, targetVehicle, x, y, z) 
 --- @param target Ped
 --- @param time number (int)
 --- @param p3 number (int)
---- @return void
---- @overload fun(ped: Ped, target: Ped, time: number, p3: number): void
+--- @return nil
+--- @overload fun(ped: Ped, target: Ped, time: number, p3: number): nil
 function TaskWrithe(ped, target, time, p3) end
 
     
@@ -3915,8 +3916,8 @@ function N_0xd01015c7316ae176(ped, name) end
 --- @param z number (float)
 --- @param heading number (float)
 --- @param duration number (float)
---- @return void
---- @overload fun(ped: Ped, x: number, y: number, z: number, heading: number, duration: number): void
+--- @return nil
+--- @overload fun(ped: Ped, x: number, y: number, z: number, heading: number, duration: number): nil
 function TaskPedSlideToCoord(ped, x, y, z, heading, duration) end
 
     
@@ -3930,8 +3931,8 @@ function TaskPedSlideToCoord(ped, x, y, z, heading, duration) end
 --- @param p4 number (float)
 --- @param p5 number (float)
 --- @param p6 any
---- @return void
---- @overload fun(p0: any, p1: number, p2: number, p3: number, p4: number, p5: number, p6: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: number, p2: number, p3: number, p4: number, p5: number, p6: any): nil
 function TaskGuardAssignedDefensiveArea(p0, p1, p2, p3, p4, p5, p6) end
 
     
@@ -3948,8 +3949,8 @@ function TaskGuardAssignedDefensiveArea(p0, p1, p2, p3, p4, p5, p6) end
 --- @hash [0xD2F1C53C97EE81AB](https://docs.fivem.net/natives/?_0xD2F1C53C97EE81AB)
 --- @param ped Ped
 --- @param p1 boolean
---- @return void
---- @overload fun(ped: Ped, p1: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: boolean): nil
 function TaskParachute(ped, p1) end
 
     
@@ -3969,8 +3970,8 @@ function TaskParachute(ped, p1) end
 --- @param ped Ped
 --- @param vehicle Vehicle
 --- @param flags number (int)
---- @return void
---- @overload fun(ped: Ped, vehicle: Vehicle, flags: number): void
+--- @return nil
+--- @overload fun(ped: Ped, vehicle: Vehicle, flags: number): nil
 function TaskLeaveVehicle(ped, vehicle, flags) end
 
     
@@ -3984,8 +3985,8 @@ function TaskLeaveVehicle(ped, vehicle, flags) end
 --- @param p4 number (float)
 --- @param p5 any
 --- @param p6 boolean
---- @return void
---- @overload fun(p0: any, p1: any, p2: number, p3: number, p4: number, p5: any, p6: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: number, p3: number, p4: number, p5: any, p6: boolean): nil
 function TaskSeekCoverToCoverPoint(p0, p1, p2, p3, p4, p5, p6) end
 
     
@@ -4003,8 +4004,8 @@ function IsMoveBlendRatioRunning(ped) end
 --- @hash [0xD5002D78B7162E1B](https://docs.fivem.net/natives/?_0xD5002D78B7162E1B)
 --- @param route string (char*)
 --- @param props number (int)
---- @return void
---- @overload fun(route: string, props: number): void
+--- @return nil
+--- @overload fun(route: string, props: number): nil
 function AssistedMovementSetRouteProperties(route, props) end
 
     
@@ -4027,8 +4028,8 @@ function AssistedMovementSetRouteProperties(route, props) end
 --- @param p10 boolean
 --- @param animDict string (char*)
 --- @param flags number (int)
---- @return void
---- @overload fun(ped: Ped, p1: string, p2: number, p3: number, p4: number, p5: number, p6: number, p7: number, p8: any, p9: number, p10: boolean, animDict: string, flags: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: string, p2: number, p3: number, p4: number, p5: number, p6: number, p7: number, p8: any, p9: number, p10: boolean, animDict: string, flags: number): nil
 function TaskMoveNetworkAdvancedByName(ped, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, animDict, flags) end
 
     
@@ -4052,8 +4053,8 @@ function TaskMoveNetworkAdvancedByName(ped, p1, p2, p3, p4, p5, p6, p7, p8, p9, 
 --- @param p10 boolean
 --- @param animDict string (char*)
 --- @param flags number (int)
---- @return void
---- @overload fun(ped: Ped, p1: string, p2: number, p3: number, p4: number, p5: number, p6: number, p7: number, p8: any, p9: number, p10: boolean, animDict: string, flags: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: string, p2: number, p3: number, p4: number, p5: number, p6: number, p7: number, p8: any, p9: number, p10: boolean, animDict: string, flags: number): nil
 --- @deprecated
 function N_0xd5b35bea41919acb(ped, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, animDict, flags) end
 
@@ -4078,8 +4079,8 @@ function N_0xd5b35bea41919acb(ped, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, anim
 --- @param p10 boolean
 --- @param animDict string (char*)
 --- @param flags number (int)
---- @return void
---- @overload fun(ped: Ped, p1: string, p2: number, p3: number, p4: number, p5: number, p6: number, p7: number, p8: any, p9: number, p10: boolean, animDict: string, flags: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: string, p2: number, p3: number, p4: number, p5: number, p6: number, p7: number, p8: any, p9: number, p10: boolean, animDict: string, flags: number): nil
 --- @deprecated
 function TaskMoveNetworkAdvanced(ped, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, animDict, flags) end
 
@@ -4096,8 +4097,8 @@ function TaskMoveNetworkAdvanced(ped, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, a
 --- @param ped Ped
 --- @param signalName string (char*)
 --- @param value number (float)
---- @return void
---- @overload fun(ped: Ped, signalName: string, value: number): void
+--- @return nil
+--- @overload fun(ped: Ped, signalName: string, value: number): nil
 function SetTaskMoveNetworkSignalFloat(ped, signalName, value) end
 
     
@@ -4114,8 +4115,8 @@ function SetTaskMoveNetworkSignalFloat(ped, signalName, value) end
 --- @param ped Ped
 --- @param signalName string (char*)
 --- @param value number (float)
---- @return void
---- @overload fun(ped: Ped, signalName: string, value: number): void
+--- @return nil
+--- @overload fun(ped: Ped, signalName: string, value: number): nil
 --- @deprecated
 function N_0xd5bb4025ae449a4e(ped, signalName, value) end
 
@@ -4133,8 +4134,8 @@ function N_0xd5bb4025ae449a4e(ped, signalName, value) end
 --- @param ped Ped
 --- @param signalName string (char*)
 --- @param value number (float)
---- @return void
---- @overload fun(ped: Ped, signalName: string, value: number): void
+--- @return nil
+--- @overload fun(ped: Ped, signalName: string, value: number): nil
 --- @deprecated
 function SetTaskPropertyFloat(ped, signalName, value) end
 
@@ -4166,8 +4167,8 @@ function AddCoverPoint(p0, p1, p2, p3, p4, p5, p6, p7) end
 --- @param timeout number (int)
 --- @param targetHeading number (float)
 --- @param distanceToSlide number (float)
---- @return void
---- @overload fun(ped: Ped, x: number, y: number, z: number, speed: number, timeout: number, targetHeading: number, distanceToSlide: number): void
+--- @return nil
+--- @overload fun(ped: Ped, x: number, y: number, z: number, speed: number, timeout: number, targetHeading: number, distanceToSlide: number): nil
 function TaskGoStraightToCoord(ped, x, y, z, speed, timeout, targetHeading, distanceToSlide) end
 
     
@@ -4183,8 +4184,8 @@ function TaskGoStraightToCoord(ped, x, y, z, speed, timeout, targetHeading, dist
 --- @hash [0xDACE1BE37D88AF67](https://docs.fivem.net/natives/?_0xDACE1BE37D88AF67)
 --- @param ped Ped
 --- @param drivingStyle number (int)
---- @return void
---- @overload fun(ped: Ped, drivingStyle: number): void
+--- @return nil
+--- @overload fun(ped: Ped, drivingStyle: number): nil
 function SetDriveTaskDrivingStyle(ped, drivingStyle) end
 
     
@@ -4224,8 +4225,8 @@ function SetDriveTaskDrivingStyle(ped, drivingStyle) end
 --- @param unk2 number (int)
 --- @param unk3 number (float)
 --- @param landingFlags number (int)
---- @return void
---- @overload fun(pilot: Ped, aircraft: Vehicle, targetVehicle: Vehicle, targetPed: Ped, destinationX: number, destinationY: number, destinationZ: number, missionFlag: number, maxSpeed: number, landingRadius: number, targetHeading: number, unk1: number, unk2: number, unk3: number, landingFlags: number): void
+--- @return nil
+--- @overload fun(pilot: Ped, aircraft: Vehicle, targetVehicle: Vehicle, targetPed: Ped, destinationX: number, destinationY: number, destinationZ: number, missionFlag: number, maxSpeed: number, landingRadius: number, targetHeading: number, unk1: number, unk2: number, unk3: number, landingFlags: number): nil
 function TaskHeliMission(pilot, aircraft, targetVehicle, targetPed, destinationX, destinationY, destinationZ, missionFlag, maxSpeed, landingRadius, targetHeading, unk1, unk2, unk3, landingFlags) end
 
     
@@ -4233,8 +4234,8 @@ function TaskHeliMission(pilot, aircraft, targetVehicle, targetPed, destinationX
 ---
 --- @hash [0xDB6708C0B46F56D8](https://docs.fivem.net/natives/?_0xDB6708C0B46F56D8)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function RemoveAllCoverBlockingAreas() end
 
     
@@ -4246,8 +4247,8 @@ function RemoveAllCoverBlockingAreas() end
 ---
 --- @hash [0xDBBC7A2432524127](https://docs.fivem.net/natives/?_0xDBBC7A2432524127)
 --- @param vehicle Vehicle
---- @return void
---- @overload fun(vehicle: Vehicle): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle): nil
 function ClearVehicleTasks(vehicle) end
 
     
@@ -4260,8 +4261,8 @@ function ClearVehicleTasks(vehicle) end
 ---
 --- @hash [0xDBBC7A2432524127](https://docs.fivem.net/natives/?_0xDBBC7A2432524127)
 --- @param vehicle Vehicle
---- @return void
---- @overload fun(vehicle: Vehicle): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle): nil
 --- @deprecated
 function N_0xdbbc7a2432524127(vehicle) end
 
@@ -4270,8 +4271,8 @@ function N_0xdbbc7a2432524127(vehicle) end
 ---
 --- @hash [0xDC04FCAA7839D492](https://docs.fivem.net/natives/?_0xDC04FCAA7839D492)
 --- @param vehicle Vehicle
---- @return void
---- @overload fun(vehicle: Vehicle): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle): nil
 function VehicleWaypointPlaybackResume(vehicle) end
 
     
@@ -4291,8 +4292,8 @@ function ControlMountedWeapon(ped) end
 ---
 --- @hash [0xDD902D0349AFAD3A](https://docs.fivem.net/natives/?_0xDD902D0349AFAD3A)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ResetScenarioGroupsEnabled() end
 
     
@@ -4305,8 +4306,8 @@ function ResetScenarioGroupsEnabled() end
 --- @param p1 number (float)
 --- @param p2 any
 --- @param p3 boolean
---- @return void
---- @overload fun(entity: Entity, p1: number, p2: any, p3: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, p1: number, p2: any, p3: boolean): nil
 function SetAnimPhase(entity, p1, p2, p3) end
 
     
@@ -4320,8 +4321,8 @@ function SetAnimPhase(entity, p1, p2, p3) end
 --- @param p1 number (float)
 --- @param p2 any
 --- @param p3 boolean
---- @return void
---- @overload fun(entity: Entity, p1: number, p2: any, p3: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, p1: number, p2: any, p3: boolean): nil
 --- @deprecated
 function N_0xddf3cb5a0a4c0b49(entity, p1, p2, p3) end
 
@@ -4336,8 +4337,8 @@ function N_0xddf3cb5a0a4c0b49(entity, p1, p2, p3) end
 --- @param p1 number (float)
 --- @param p2 any
 --- @param p3 boolean
---- @return void
---- @overload fun(entity: Entity, p1: number, p2: any, p3: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, p1: number, p2: any, p3: boolean): nil
 --- @deprecated
 function SetAnimPlaybackTime(entity, p1, p2, p3) end
 
@@ -4403,8 +4404,8 @@ function IsWaypointPlaybackGoingOnForPed(p0) end
 --- @param radius number (float)
 --- @param minimalLength number (int)
 --- @param timeBetweenWalks number (float)
---- @return void
---- @overload fun(ped: Ped, x: number, y: number, z: number, radius: number, minimalLength: number, timeBetweenWalks: number): void
+--- @return nil
+--- @overload fun(ped: Ped, x: number, y: number, z: number, radius: number, minimalLength: number, timeBetweenWalks: number): nil
 function TaskWanderInArea(ped, x, y, z, radius, minimalLength, timeBetweenWalks) end
 
     
@@ -4412,8 +4413,8 @@ function TaskWanderInArea(ped, x, y, z, radius, minimalLength, timeBetweenWalks)
 ---
 --- @hash [0xE1EF3C1216AFF2CD](https://docs.fivem.net/natives/?_0xE1EF3C1216AFF2CD)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function ClearPedTasks(ped) end
 
     
@@ -4438,8 +4439,8 @@ function ClearPedTasks(ped) end
 --- @param drivingMode number (int)
 --- @param stopRange number (float)
 --- @param p10 number (float)
---- @return void
---- @overload fun(ped: Ped, vehicle: Vehicle, x: number, y: number, z: number, speed: number, p6: any, vehicleModel: Hash, drivingMode: number, stopRange: number, p10: number): void
+--- @return nil
+--- @overload fun(ped: Ped, vehicle: Vehicle, x: number, y: number, z: number, speed: number, p6: any, vehicleModel: Hash, drivingMode: number, stopRange: number, p10: number): nil
 function TaskVehicleDriveToCoord(ped, vehicle, x, y, z, speed, p6, vehicleModel, drivingMode, stopRange, p10) end
 
     
@@ -4448,8 +4449,8 @@ function TaskVehicleDriveToCoord(ped, vehicle, x, y, z, speed, p6, vehicleModel,
 --- @hash [0xE361C5C71C431A4F](https://docs.fivem.net/natives/?_0xE361C5C71C431A4F)
 --- @param ped Ped
 --- @param Toggle boolean
---- @return void
---- @overload fun(ped: Ped, Toggle: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, Toggle: boolean): nil
 function SetPedPathCanDropFromHeight(ped, Toggle) end
 
     
@@ -4463,8 +4464,8 @@ function SetPedPathCanDropFromHeight(ped, Toggle) end
 --- @param y number (float)
 --- @param z number (float)
 --- @param duration number (int)
---- @return void
---- @overload fun(ped: Ped, p1: any, p2: any, x: number, y: number, z: number, duration: number): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: any, p2: any, x: number, y: number, z: number, duration: number): nil
 function TaskGotoEntityOffset(ped, p1, p2, x, y, z, duration) end
 
     
@@ -4473,8 +4474,8 @@ function TaskGotoEntityOffset(ped, p1, p2, x, y, z, duration) end
 --- @hash [0xE41885592B08B097](https://docs.fivem.net/natives/?_0xE41885592B08B097)
 --- @param ped Ped
 --- @param target Ped
---- @return void
---- @overload fun(ped: Ped, target: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped, target: Ped): nil
 function TaskVehicleAimAtPed(ped, target) end
 
     
@@ -4494,8 +4495,8 @@ function IsPedStrafing(ped) end
 --- @hash [0xE4973DBDBE6E44B3](https://docs.fivem.net/natives/?_0xE4973DBDBE6E44B3)
 --- @param ped Ped
 --- @param entity Entity
---- @return void
---- @overload fun(ped: Ped, entity: Entity): void
+--- @return nil
+--- @overload fun(ped: Ped, entity: Entity): nil
 function UpdateTaskSweepAimEntity(ped, entity) end
 
     
@@ -4510,8 +4511,8 @@ function UpdateTaskSweepAimEntity(ped, entity) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(shootingPed: Ped, targetPed: Ped, targetVehicle: Vehicle, x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(shootingPed: Ped, targetPed: Ped, targetVehicle: Vehicle, x: number, y: number, z: number): nil
 function SetDrivebyTaskTarget(shootingPed, targetPed, targetVehicle, x, y, z) end
 
     
@@ -4521,8 +4522,8 @@ function SetDrivebyTaskTarget(shootingPed, targetPed, targetVehicle, x, y, z) en
 ---
 --- @hash [0xE5DA8615A6180789](https://docs.fivem.net/natives/?_0xE5DA8615A6180789)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function TaskStayInCover(ped) end
 
     
@@ -4542,8 +4543,8 @@ function GetPedWaypointDistance(p0) end
 --- @param p1 any
 --- @param p2 boolean
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: boolean, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: boolean, p3: any): nil
 function WaypointPlaybackStartShootingAtPed(p0, p1, p2, p3) end
 
     
@@ -4555,8 +4556,8 @@ function WaypointPlaybackStartShootingAtPed(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 boolean
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: boolean, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: boolean, p3: any): nil
 --- @deprecated
 function N_0xe70ba7b90f8390dc(p0, p1, p2, p3) end
 
@@ -4567,8 +4568,8 @@ function N_0xe70ba7b90f8390dc(p0, p1, p2, p3) end
 --- @hash [0xE73A266DB0CA9042](https://docs.fivem.net/natives/?_0xE73A266DB0CA9042)
 --- @param ped Ped
 --- @param ms number (int)
---- @return void
---- @overload fun(ped: Ped, ms: number): void
+--- @return nil
+--- @overload fun(ped: Ped, ms: number): nil
 function TaskPause(ped, ms) end
 
     
@@ -4576,8 +4577,8 @@ function TaskPause(ped, ms) end
 ---
 --- @hash [0xE8854A4326B9E12B](https://docs.fivem.net/natives/?_0xE8854A4326B9E12B)
 --- @param taskSequenceId number (int*)
---- @return void
---- @overload fun(): number
+--- @return nil
+--- @overload fun(): nil, number
 function OpenSequenceTask(taskSequenceId) end
 
     
@@ -4643,8 +4644,8 @@ function OpenSequenceTask(taskSequenceId) end
 --- @param lockX boolean
 --- @param lockY boolean
 --- @param lockZ boolean
---- @return void
---- @overload fun(ped: Ped, animDictionary: string, animationName: string, blendInSpeed: number, blendOutSpeed: number, duration: number, flag: number, playbackRate: number, lockX: boolean, lockY: boolean, lockZ: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, animDictionary: string, animationName: string, blendInSpeed: number, blendOutSpeed: number, duration: number, flag: number, playbackRate: number, lockX: boolean, lockY: boolean, lockZ: boolean): nil
 function TaskPlayAnim(ped, animDictionary, animationName, blendInSpeed, blendOutSpeed, duration, flag, playbackRate, lockX, lockY, lockZ) end
 
     
@@ -4672,8 +4673,8 @@ function TaskPlayAnim(ped, animDictionary, animationName, blendInSpeed, blendOut
 --- @param ropeId number (int)
 --- @param clipset string (char*)
 --- @param p10 any
---- @return void
---- @overload fun(ped: Ped, x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, minZ: number, ropeId: number, clipset: string, p10: any): void
+--- @return nil
+--- @overload fun(ped: Ped, x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, minZ: number, ropeId: number, clipset: string, p10: any): nil
 function TaskRappelDownWall(ped, x1, y1, z1, x2, y2, z2, minZ, ropeId, clipset, p10) end
 
     
@@ -4702,8 +4703,8 @@ function TaskRappelDownWall(ped, x1, y1, z1, x2, y2, z2, minZ, ropeId, clipset, 
 --- @param ropeId number (int)
 --- @param clipset string (char*)
 --- @param p10 any
---- @return void
---- @overload fun(ped: Ped, x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, minZ: number, ropeId: number, clipset: string, p10: any): void
+--- @return nil
+--- @overload fun(ped: Ped, x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, minZ: number, ropeId: number, clipset: string, p10: any): nil
 --- @deprecated
 function N_0xeaf66acddc794793(ped, x1, y1, z1, x2, y2, z2, minZ, ropeId, clipset, p10) end
 
@@ -4745,8 +4746,8 @@ function N_0xeaf66acddc794793(ped, x1, y1, z1, x2, y2, z2, minZ, ropeId, clipset
 --- @hash [0xEB47EC4E34FB7EE1](https://docs.fivem.net/natives/?_0xEB47EC4E34FB7EE1)
 --- @param scenarioType string (char*)
 --- @param toggle boolean
---- @return void
---- @overload fun(scenarioType: string, toggle: boolean): void
+--- @return nil
+--- @overload fun(scenarioType: string, toggle: boolean): nil
 function SetScenarioTypeEnabled(scenarioType, toggle) end
 
     
@@ -4757,8 +4758,8 @@ function SetScenarioTypeEnabled(scenarioType, toggle) end
 --- @hash [0xEB8517DDA73720DA](https://docs.fivem.net/natives/?_0xEB8517DDA73720DA)
 --- @param ped Ped
 --- @param p1 Hash
---- @return void
---- @overload fun(ped: Ped, p1: Hash): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: Hash): nil
 function TaskSetDecisionMaker(ped, p1) end
 
     
@@ -4782,8 +4783,8 @@ function SetPedWaypointRouteOffset(p0, p1, p2, p3) end
 --- @param ped Ped
 --- @param p1 number (int)
 --- @param p2 boolean
---- @return void
---- @overload fun(ped: Ped, p1: number, p2: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, p1: number, p2: boolean): nil
 function StopAnimPlayback(ped, p1, p2) end
 
     
@@ -4802,8 +4803,8 @@ function StopAnimPlayback(ped, p1, p2) end
 --- @param flag number (int)
 --- @param playbackRate number (float)
 --- @param p9 any
---- @return void
---- @overload fun(ped: Ped, scene: number, animDictionary: string, animationName: string, speed: number, speedMultiplier: number, duration: number, flag: number, playbackRate: number, p9: any): void
+--- @return nil
+--- @overload fun(ped: Ped, scene: number, animDictionary: string, animationName: string, speed: number, speedMultiplier: number, duration: number, flag: number, playbackRate: number, p9: any): nil
 function TaskSynchronizedScene(ped, scene, animDictionary, animationName, speed, speedMultiplier, duration, flag, playbackRate, p9) end
 
     
@@ -4821,8 +4822,8 @@ function TaskSynchronizedScene(ped, scene, animDictionary, animationName, speed,
 --- @param p8 number (float)
 --- @param p9 number (float)
 --- @param DriveAgainstTraffic boolean
---- @return void
---- @overload fun(ped: Ped, vehicle: Vehicle, x: number, y: number, z: number, p5: number, p6: number, p7: number, p8: number, p9: number, DriveAgainstTraffic: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, vehicle: Vehicle, x: number, y: number, z: number, p5: number, p6: number, p7: number, p8: number, p9: number, DriveAgainstTraffic: boolean): nil
 function TaskVehicleMissionCoorsTarget(ped, vehicle, x, y, z, p5, p6, p7, p8, p9, DriveAgainstTraffic) end
 
     
@@ -4846,8 +4847,8 @@ function IsMoveBlendRatioWalking(ped) end
 --- @param targetPed Ped
 --- @param p2 number (int)
 --- @param p3 number (int)
---- @return void
---- @overload fun(ped: Ped, targetPed: Ped, p2: number, p3: number): void
+--- @return nil
+--- @overload fun(ped: Ped, targetPed: Ped, p2: number, p3: number): nil
 function TaskCombatPed(ped, targetPed, p2, p3) end
 
     
@@ -4855,8 +4856,8 @@ function TaskCombatPed(ped, targetPed, p2, p3) end
 ---
 --- @hash [0xF1B9F16E89E2C93A](https://docs.fivem.net/natives/?_0xF1B9F16E89E2C93A)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function SetNextDesiredMoveState(p0) end
 
     
@@ -4872,8 +4873,8 @@ function SetNextDesiredMoveState(p0) end
 --- @param facingPed Ped
 --- @param p3 number (int)
 --- @param p4 boolean
---- @return void
---- @overload fun(ped: Ped, duration: number, facingPed: Ped, p3: number, p4: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, duration: number, facingPed: Ped, p3: number, p4: boolean): nil
 function TaskHandsUp(ped, duration, facingPed, p3, p4) end
 
     
@@ -4882,8 +4883,8 @@ function TaskHandsUp(ped, duration, facingPed, p3, p4) end
 --- @hash [0xF35425A4204367EC](https://docs.fivem.net/natives/?_0xF35425A4204367EC)
 --- @param ped Ped
 --- @param mayEnterWater boolean
---- @return void
---- @overload fun(ped: Ped, mayEnterWater: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, mayEnterWater: boolean): nil
 function SetPedPathMayEnterWater(ped, mayEnterWater) end
 
     
@@ -4893,8 +4894,8 @@ function SetPedPathMayEnterWater(ped, mayEnterWater) end
 --- @hash [0xF35425A4204367EC](https://docs.fivem.net/natives/?_0xF35425A4204367EC)
 --- @param ped Ped
 --- @param mayEnterWater boolean
---- @return void
---- @overload fun(ped: Ped, mayEnterWater: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, mayEnterWater: boolean): nil
 --- @deprecated
 function SetPedPathsWidthPlant(ped, mayEnterWater) end
 
@@ -4913,8 +4914,8 @@ function SetPedPathsWidthPlant(ped, mayEnterWater) end
 --- @hash [0xF3B9A78A178572B1](https://docs.fivem.net/natives/?_0xF3B9A78A178572B1)
 --- @param ped Ped
 --- @param target Ped
---- @return void
---- @overload fun(ped: Ped, target: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped, target: Ped): nil
 function TaskArrestPed(ped, target) end
 
     
@@ -4942,8 +4943,8 @@ function IsWaypointPlaybackGoingOnForVehicle(vehicle) end
 --- @param p7 any
 --- @param p8 any
 --- @param p9 any
---- @return void
---- @overload fun(ped: Ped, vehicle: Vehicle, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any, p9: any): void
+--- @return nil
+--- @overload fun(ped: Ped, vehicle: Vehicle, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any, p9: any): nil
 function TaskPlaneGotoPreciseVtol(ped, vehicle, p2, p3, p4, p5, p6, p7, p8, p9) end
 
     
@@ -5012,8 +5013,8 @@ function DoesScenarioGroupExist(scenarioGroup) end
 --- @param duration number (int)
 --- @param sittingScenario boolean
 --- @param teleport boolean
---- @return void
---- @overload fun(ped: Ped, scenarioName: string, x: number, y: number, z: number, heading: number, duration: number, sittingScenario: boolean, teleport: boolean): void
+--- @return nil
+--- @overload fun(ped: Ped, scenarioName: string, x: number, y: number, z: number, heading: number, duration: number, sittingScenario: boolean, teleport: boolean): nil
 function TaskStartScenarioAtPosition(ped, scenarioName, x, y, z, heading, duration, sittingScenario, teleport) end
 
     
@@ -5027,8 +5028,8 @@ function TaskStartScenarioAtPosition(ped, scenarioName, x, y, z, heading, durati
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number): nil
 function N_0xfa83ca6776038f64(x, y, z) end
 
     
@@ -5044,8 +5045,8 @@ function N_0xfa83ca6776038f64(x, y, z) end
 --- @param speed number (float)
 --- @param drivingStyle number (int)
 --- @param minDistance number (int)
---- @return void
---- @overload fun(driver: Ped, vehicle: Vehicle, targetEntity: Entity, speed: number, drivingStyle: number, minDistance: number): void
+--- @return nil
+--- @overload fun(driver: Ped, vehicle: Vehicle, targetEntity: Entity, speed: number, drivingStyle: number, minDistance: number): nil
 function TaskVehicleFollow(driver, vehicle, targetEntity, speed, drivingStyle, minDistance) end
 
     
@@ -5062,8 +5063,8 @@ function TaskVehicleFollow(driver, vehicle, targetEntity, speed, drivingStyle, m
 --- @param speed number (float)
 --- @param drivingStyle number (int)
 --- @param minDistance number (int)
---- @return void
---- @overload fun(driver: Ped, vehicle: Vehicle, targetEntity: Entity, speed: number, drivingStyle: number, minDistance: number): void
+--- @return nil
+--- @overload fun(driver: Ped, vehicle: Vehicle, targetEntity: Entity, speed: number, drivingStyle: number, minDistance: number): nil
 --- @deprecated
 function TaskVehicleFollow(driver, vehicle, targetEntity, speed, drivingStyle, minDistance) end
 
@@ -5072,8 +5073,8 @@ function TaskVehicleFollow(driver, vehicle, targetEntity, speed, drivingStyle, m
 ---
 --- @hash [0xFF1B8B4AA1C25DC8](https://docs.fivem.net/natives/?_0xFF1B8B4AA1C25DC8)
 --- @param name string (char*)
---- @return void
---- @overload fun(name: string): void
+--- @return nil
+--- @overload fun(name: string): nil
 function RemoveWaypointRecording(name) end
 
     

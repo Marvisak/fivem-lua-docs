@@ -1,3 +1,4 @@
+--- @meta
 
 --- ```
 --- NativeDB Introduced: v1868
@@ -5,8 +6,8 @@
 ---
 --- @hash [0x006E4B040ED37EC3](https://docs.fivem.net/natives/?_0x006E4B040ED37EC3)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x006e4b040ed37ec3(p0) end
 
     
@@ -67,8 +68,8 @@ function N_0x0378c08504160d0d(object) end
 --- @param rate number (float)
 --- @param requestDoor boolean
 --- @param forceUpdate boolean
---- @return void
---- @overload fun(doorHash: Hash, rate: number, requestDoor: boolean, forceUpdate: boolean): void
+--- @return nil
+--- @overload fun(doorHash: Hash, rate: number, requestDoor: boolean, forceUpdate: boolean): nil
 function DoorSystemSetAutomaticRate(doorHash, rate, requestDoor, forceUpdate) end
 
     
@@ -80,8 +81,8 @@ function DoorSystemSetAutomaticRate(doorHash, rate, requestDoor, forceUpdate) en
 --- @param rate number (float)
 --- @param requestDoor boolean
 --- @param forceUpdate boolean
---- @return void
---- @overload fun(doorHash: Hash, rate: number, requestDoor: boolean, forceUpdate: boolean): void
+--- @return nil
+--- @overload fun(doorHash: Hash, rate: number, requestDoor: boolean, forceUpdate: boolean): nil
 --- @deprecated
 function N_0x03c27e13b42a0e82(doorHash, rate, requestDoor, forceUpdate) end
 
@@ -108,8 +109,8 @@ function N_0x03c27e13b42a0e82(doorHash, rate, requestDoor, forceUpdate) end
 --- @param value number (int)
 --- @param amount number (int)
 --- @param model Hash
---- @return void
---- @overload fun(x: number, y: number, z: number, value: number, amount: number, model: Hash): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, value: number, amount: number, model: Hash): nil
 function CreateMoneyPickups(x, y, z, value, amount, model) end
 
     
@@ -118,8 +119,8 @@ function CreateMoneyPickups(x, y, z, value, amount, model) end
 --- @hash [0x0596843B34B95CE5](https://docs.fivem.net/natives/?_0x0596843B34B95CE5)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x0596843b34b95ce5(p0, p1) end
 
     
@@ -159,8 +160,8 @@ function GetWeaponHashFromPickup(pickupHash) end
 --- @hash [0x0BF3B3BD47D79C08](https://docs.fivem.net/natives/?_0x0BF3B3BD47D79C08)
 --- @param modelHash Hash
 --- @param p1 number (int)
---- @return void
---- @overload fun(modelHash: Hash, p1: number): void
+--- @return nil
+--- @overload fun(modelHash: Hash, p1: number): nil
 function SetMaxNumPortablePickupsCarriedByPlayer(modelHash, p1) end
 
     
@@ -170,8 +171,8 @@ function SetMaxNumPortablePickupsCarriedByPlayer(modelHash, p1) end
 --- @hash [0x0BF3B3BD47D79C08](https://docs.fivem.net/natives/?_0x0BF3B3BD47D79C08)
 --- @param modelHash Hash
 --- @param p1 number (int)
---- @return void
---- @overload fun(modelHash: Hash, p1: number): void
+--- @return nil
+--- @overload fun(modelHash: Hash, p1: number): nil
 --- @deprecated
 function N_0x0bf3b3bd47d79c08(modelHash, p1) end
 
@@ -339,8 +340,8 @@ function N_0x1761dc5d8471cbaa(garageHash, player, p2) end
 --- @param peds boolean
 --- @param objects boolean
 --- @param isNetwork boolean
---- @return void
---- @overload fun(garageHash: Hash, vehicles: boolean, peds: boolean, objects: boolean, isNetwork: boolean): void
+--- @return nil
+--- @overload fun(garageHash: Hash, vehicles: boolean, peds: boolean, objects: boolean, isNetwork: boolean): nil
 function ClearObjectsInsideGarage(garageHash, vehicles, peds, objects, isNetwork) end
 
     
@@ -353,8 +354,8 @@ function ClearObjectsInsideGarage(garageHash, vehicles, peds, objects, isNetwork
 --- @param peds boolean
 --- @param objects boolean
 --- @param isNetwork boolean
---- @return void
---- @overload fun(garageHash: Hash, vehicles: boolean, peds: boolean, objects: boolean, isNetwork: boolean): void
+--- @return nil
+--- @overload fun(garageHash: Hash, vehicles: boolean, peds: boolean, objects: boolean, isNetwork: boolean): nil
 --- @deprecated
 function N_0x190428512b240692(garageHash, vehicles, peds, objects, isNetwork) end
 
@@ -366,8 +367,8 @@ function N_0x190428512b240692(garageHash, vehicles, peds, objects, isNetwork) en
 --- @hash [0x1A6CBB06E2D0D79D](https://docs.fivem.net/natives/?_0x1A6CBB06E2D0D79D)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x1a6cbb06e2d0d79d(p0, p1) end
 
     
@@ -376,8 +377,8 @@ function N_0x1a6cbb06e2d0d79d(p0, p1) end
 --- @hash [0x1C1B69FAE509BA97](https://docs.fivem.net/natives/?_0x1C1B69FAE509BA97)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function SetPickupUncollectable(p0, p1) end
 
     
@@ -387,8 +388,8 @@ function SetPickupUncollectable(p0, p1) end
 --- @hash [0x1C1B69FAE509BA97](https://docs.fivem.net/natives/?_0x1C1B69FAE509BA97)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 --- @deprecated
 function N_0x1c1b69fae509ba97(p0, p1) end
 
@@ -400,8 +401,8 @@ function N_0x1c1b69fae509ba97(p0, p1) end
 --- @hash [0x1C57C94A6446492A](https://docs.fivem.net/natives/?_0x1C57C94A6446492A)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x1c57c94a6446492a(p0, p1) end
 
     
@@ -410,8 +411,8 @@ function N_0x1c57c94a6446492a(p0, p1) end
 --- @hash [0x1E3F1B1B891A2AAA](https://docs.fivem.net/natives/?_0x1E3F1B1B891A2AAA)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x1e3f1b1b891a2aaa(p0, p1) end
 
     
@@ -548,8 +549,8 @@ function GetDesObjectAnimProgress(object) end
 --- @hash [0x27F248C3FEBFAAD3](https://docs.fivem.net/natives/?_0x27F248C3FEBFAAD3)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x27f248c3febfaad3(p0, p1) end
 
     
@@ -559,8 +560,8 @@ function N_0x27f248c3febfaad3(p0, p1) end
 ---
 --- @hash [0x27F9D613092159CF](https://docs.fivem.net/natives/?_0x27F9D613092159CF)
 --- @param pickupHash Hash
---- @return void
---- @overload fun(pickupHash: Hash): void
+--- @return nil
+--- @overload fun(pickupHash: Hash): nil
 function RemoveAllPickupsOfType(pickupHash) end
 
     
@@ -637,8 +638,8 @@ function SlideObject(object, toX, toY, toZ, speedX, speedY, speedZ, collision) e
 --- @hash [0x31574B1B41268673](https://docs.fivem.net/natives/?_0x31574B1B41268673)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x31574b1b41268673(p0, p1) end
 
     
@@ -646,8 +647,8 @@ function N_0x31574b1b41268673(p0, p1) end
 ---
 --- @hash [0x318516E02DE3ECE2](https://docs.fivem.net/natives/?_0x318516E02DE3ECE2)
 --- @param multiplier number (float)
---- @return void
---- @overload fun(multiplier: number): void
+--- @return nil
+--- @overload fun(multiplier: number): nil
 function SetPickupGenerationRangeMultiplier(multiplier) end
 
     
@@ -656,8 +657,8 @@ function SetPickupGenerationRangeMultiplier(multiplier) end
 ---
 --- @hash [0x318516E02DE3ECE2](https://docs.fivem.net/natives/?_0x318516E02DE3ECE2)
 --- @param multiplier number (float)
---- @return void
---- @overload fun(multiplier: number): void
+--- @return nil
+--- @overload fun(multiplier: number): nil
 --- @deprecated
 function N_0x318516e02de3ece2(multiplier) end
 
@@ -666,8 +667,8 @@ function N_0x318516e02de3ece2(multiplier) end
 ---
 --- @hash [0x31F924B53EADDF65](https://docs.fivem.net/natives/?_0x31F924B53EADDF65)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0x31f924b53eaddf65(p0) end
 
     
@@ -675,8 +676,8 @@ function N_0x31f924b53eaddf65(p0) end
 ---
 --- @hash [0x3288D8ACAECD2AB2](https://docs.fivem.net/natives/?_0x3288D8ACAECD2AB2)
 --- @param pickup Pickup
---- @return void
---- @overload fun(pickup: Pickup): void
+--- @return nil
+--- @overload fun(pickup: Pickup): nil
 function RemovePickup(pickup) end
 
     
@@ -696,8 +697,8 @@ function RemovePickup(pickup) end
 --- @param y number (float)
 --- @param z number (float)
 --- @param colorIndex number (int)
---- @return void
---- @overload fun(x: number, y: number, z: number, colorIndex: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, colorIndex: number): nil
 function RenderFakePickupGlow(x, y, z, colorIndex) end
 
     
@@ -718,8 +719,8 @@ function RenderFakePickupGlow(x, y, z, colorIndex) end
 --- @param y number (float)
 --- @param z number (float)
 --- @param colorIndex number (int)
---- @return void
---- @overload fun(x: number, y: number, z: number, colorIndex: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, colorIndex: number): nil
 --- @deprecated
 function N_0x3430676b11cdf21d(x, y, z, colorIndex) end
 
@@ -741,8 +742,8 @@ function N_0x3430676b11cdf21d(x, y, z, colorIndex) end
 --- @param y number (float)
 --- @param z number (float)
 --- @param colorIndex number (int)
---- @return void
---- @overload fun(x: number, y: number, z: number, colorIndex: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, colorIndex: number): nil
 --- @deprecated
 function HighlightPlacementCoords(x, y, z, colorIndex) end
 
@@ -777,8 +778,8 @@ function N_0x372ef6699146a1e4(garageHash, entity, p2, p3) end
 ---
 --- @hash [0x394CD08E31313C28](https://docs.fivem.net/natives/?_0x394CD08E31313C28)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x394cd08e31313c28() end
 
     
@@ -800,8 +801,8 @@ function IsAnyObjectNearPoint(x, y, z, range, p4) end
 --- @hash [0x39A5FB7EAF150840](https://docs.fivem.net/natives/?_0x39A5FB7EAF150840)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x39a5fb7eaf150840(p0, p1) end
 
     
@@ -818,8 +819,8 @@ function N_0x39a5fb7eaf150840(p0, p1) end
 --- @param R number (int)
 --- @param G number (int)
 --- @param B number (int)
---- @return void
---- @overload fun(object: Object, toggle: boolean, R: number, G: number, B: number): void
+--- @return nil
+--- @overload fun(object: Object, toggle: boolean, R: number, G: number, B: number): nil
 function N_0x3b2fd68db5f8331c(object, toggle, R, G, B) end
 
     
@@ -837,8 +838,8 @@ function N_0x3b2fd68db5f8331c(object, toggle, R, G, B) end
 --- @param R number (int)
 --- @param G number (int)
 --- @param B number (int)
---- @return void
---- @overload fun(object: Object, toggle: boolean, R: number, G: number, B: number): void
+--- @return nil
+--- @overload fun(object: Object, toggle: boolean, R: number, G: number, B: number): nil
 --- @deprecated
 function SetObjectColour(object, toggle, R, G, B) end
 
@@ -860,8 +861,8 @@ function N_0x3bd770d281982db5(p0, p1) end
 --- @hash [0x3ED2B83AB2E82799](https://docs.fivem.net/natives/?_0x3ED2B83AB2E82799)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function SetPickupHiddenWhenUncollectable(p0, p1) end
 
     
@@ -871,8 +872,8 @@ function SetPickupHiddenWhenUncollectable(p0, p1) end
 --- @hash [0x3ED2B83AB2E82799](https://docs.fivem.net/natives/?_0x3ED2B83AB2E82799)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 --- @deprecated
 function N_0x3ed2b83ab2e82799(p0, p1) end
 
@@ -882,8 +883,8 @@ function N_0x3ed2b83ab2e82799(p0, p1) end
 --- @hash [0x406137F8EF90EAF5](https://docs.fivem.net/natives/?_0x406137F8EF90EAF5)
 --- @param object Object
 --- @param toggle boolean
---- @return void
---- @overload fun(object: Object, toggle: boolean): void
+--- @return nil
+--- @overload fun(object: Object, toggle: boolean): nil
 function SetActivateObjectPhysicsAsSoonAsItIsUnfrozen(object, toggle) end
 
     
@@ -949,8 +950,8 @@ function N_0x46494a2475701343(x, y, z, radius, modelHash, p5) end
 ---
 --- @hash [0x464D8E1427156FE4](https://docs.fivem.net/natives/?_0x464D8E1427156FE4)
 --- @param doorHash Hash
---- @return void
---- @overload fun(doorHash: Hash): void
+--- @return nil
+--- @overload fun(doorHash: Hash): nil
 function RemoveDoorFromSystem(doorHash) end
 
     
@@ -959,8 +960,8 @@ function RemoveDoorFromSystem(doorHash) end
 --- @hash [0x46F3ADD1E2D5BAF2](https://docs.fivem.net/natives/?_0x46F3ADD1E2D5BAF2)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x46f3add1e2d5baf2(p0, p1) end
 
     
@@ -968,8 +969,8 @@ function N_0x46f3add1e2d5baf2(p0, p1) end
 ---
 --- @hash [0x4A39DB43E47CF3AA](https://docs.fivem.net/natives/?_0x4A39DB43E47CF3AA)
 --- @param object Object
---- @return void
---- @overload fun(object: Object): void
+--- @return nil
+--- @overload fun(object: Object): nil
 function RemoveObjectHighDetailModel(object) end
 
     
@@ -978,8 +979,8 @@ function RemoveObjectHighDetailModel(object) end
 ---
 --- @hash [0x4A39DB43E47CF3AA](https://docs.fivem.net/natives/?_0x4A39DB43E47CF3AA)
 --- @param object Object
---- @return void
---- @overload fun(object: Object): void
+--- @return nil
+--- @overload fun(object: Object): nil
 --- @deprecated
 function N_0x4a39db43e47cf3aa(object) end
 
@@ -1011,8 +1012,8 @@ function N_0x4bc2854478f3a749(doorHash) end
 --- @hash [0x4C134B4DF76025D0](https://docs.fivem.net/natives/?_0x4C134B4DF76025D0)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x4c134b4df76025d0(p0, p1) end
 
     
@@ -1023,8 +1024,8 @@ function N_0x4c134b4df76025d0(p0, p1) end
 --- @hash [0x4D89D607CB3DD1D2](https://docs.fivem.net/natives/?_0x4D89D607CB3DD1D2)
 --- @param object Object
 --- @param toggle boolean
---- @return void
---- @overload fun(object: Object, toggle: boolean): void
+--- @return nil
+--- @overload fun(object: Object, toggle: boolean): nil
 function SetObjectAllowLowLodBuoyancy(object, toggle) end
 
     
@@ -1036,8 +1037,8 @@ function SetObjectAllowLowLodBuoyancy(object, toggle) end
 --- @hash [0x4D89D607CB3DD1D2](https://docs.fivem.net/natives/?_0x4D89D607CB3DD1D2)
 --- @param object Object
 --- @param toggle boolean
---- @return void
---- @overload fun(object: Object, toggle: boolean): void
+--- @return nil
+--- @overload fun(object: Object, toggle: boolean): nil
 --- @deprecated
 function N_0x4d89d607cb3dd1d2(object, toggle) end
 
@@ -1050,8 +1051,8 @@ function N_0x4d89d607cb3dd1d2(object, toggle) end
 --- @hash [0x4D89D607CB3DD1D2](https://docs.fivem.net/natives/?_0x4D89D607CB3DD1D2)
 --- @param object Object
 --- @param toggle boolean
---- @return void
---- @overload fun(object: Object, toggle: boolean): void
+--- @return nil
+--- @overload fun(object: Object, toggle: boolean): nil
 --- @deprecated
 function SetObjectCanClimbOn(object, toggle) end
 
@@ -1147,8 +1148,8 @@ function DoesDesObjectExist(object) end
 ---
 --- @hash [0x539E0AE3E6634B9F](https://docs.fivem.net/natives/?_0x539E0AE3E6634B9F)
 --- @param object Object (Object*)
---- @return void
---- @overload fun(): Object
+--- @return nil
+--- @overload fun(): nil, Object
 function DeleteObject(object) end
 
     
@@ -1158,8 +1159,8 @@ function DeleteObject(object) end
 --- @param object Object
 --- @param p1 any
 --- @param p2 boolean
---- @return void
---- @overload fun(object: Object, p1: any, p2: boolean): void
+--- @return nil
+--- @overload fun(object: Object, p1: any, p2: boolean): nil
 function SetTeamPickupObject(object, p1, p2) end
 
     
@@ -1212,8 +1213,8 @@ function PlaceObjectOnGroundProperly(object) end
 --- @hash [0x5C29F698D404C5E1](https://docs.fivem.net/natives/?_0x5C29F698D404C5E1)
 --- @param object Object
 --- @param state number (int)
---- @return void
---- @overload fun(object: Object, state: number): void
+--- @return nil
+--- @overload fun(object: Object, state: number): nil
 function SetStateOfRayfireMapObject(object, state) end
 
     
@@ -1230,8 +1231,8 @@ function SetStateOfRayfireMapObject(object, state) end
 --- @hash [0x5C29F698D404C5E1](https://docs.fivem.net/natives/?_0x5C29F698D404C5E1)
 --- @param object Object
 --- @param state number (int)
---- @return void
---- @overload fun(object: Object, state: number): void
+--- @return nil
+--- @overload fun(object: Object, state: number): nil
 --- @deprecated
 function N_0x5c29f698d404c5e1(object, state) end
 
@@ -1249,8 +1250,8 @@ function N_0x5c29f698d404c5e1(object, state) end
 --- @hash [0x5C29F698D404C5E1](https://docs.fivem.net/natives/?_0x5C29F698D404C5E1)
 --- @param object Object
 --- @param state number (int)
---- @return void
---- @overload fun(object: Object, state: number): void
+--- @return nil
+--- @overload fun(object: Object, state: number): nil
 --- @deprecated
 function SetDesObjectState(object, state) end
 
@@ -1314,8 +1315,8 @@ function SetObjectLightColor(object, p1, r, g, b) end
 --- @param player Player
 --- @param pickupHash Hash
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, pickupHash: Hash, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, pickupHash: Hash, toggle: boolean): nil
 function ToggleUsePickupsForPlayer(player, pickupHash, toggle) end
 
     
@@ -1335,8 +1336,8 @@ function ToggleUsePickupsForPlayer(player, pickupHash, toggle) end
 --- @param player Player
 --- @param pickupHash Hash
 --- @param toggle boolean
---- @return void
---- @overload fun(player: Player, pickupHash: Hash, toggle: boolean): void
+--- @return nil
+--- @overload fun(player: Player, pickupHash: Hash, toggle: boolean): nil
 --- @deprecated
 function N_0x616093ec6b139dd9(player, pickupHash, toggle) end
 
@@ -1345,8 +1346,8 @@ function N_0x616093ec6b139dd9(player, pickupHash, toggle) end
 ---
 --- @hash [0x62454A641B41F3C5](https://docs.fivem.net/natives/?_0x62454A641B41F3C5)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x62454a641b41f3c5(p0) end
 
     
@@ -1357,8 +1358,8 @@ function N_0x62454a641b41f3c5(p0) end
 --- @hash [0x63ECF581BC70E363](https://docs.fivem.net/natives/?_0x63ECF581BC70E363)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x63ecf581bc70e363(p0, p1) end
 
     
@@ -1367,8 +1368,8 @@ function N_0x63ecf581bc70e363(p0, p1) end
 --- @hash [0x641F272B52E2F0F8](https://docs.fivem.net/natives/?_0x641F272B52E2F0F8)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x641f272b52e2f0f8(p0, p1) end
 
     
@@ -1399,8 +1400,8 @@ function N_0x65499865fca6e5ec(doorHash) end
 --- @hash [0x659F9D71F52843F8](https://docs.fivem.net/natives/?_0x659F9D71F52843F8)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x659f9d71f52843f8(p0, p1) end
 
     
@@ -1408,8 +1409,8 @@ function N_0x659f9d71f52843f8(p0, p1) end
 ---
 --- @hash [0x66A49D021870FE88](https://docs.fivem.net/natives/?_0x66A49D021870FE88)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x66a49d021870fe88() end
 
     
@@ -1478,8 +1479,8 @@ function N_0x673ed815d6e323b7(garageHash, p1, p2, p3, p4) end
 --- @param state number (int)
 --- @param requestDoor boolean
 --- @param forceUpdate boolean
---- @return void
---- @overload fun(doorHash: Hash, state: number, requestDoor: boolean, forceUpdate: boolean): void
+--- @return nil
+--- @overload fun(doorHash: Hash, state: number, requestDoor: boolean, forceUpdate: boolean): nil
 function DoorSystemSetDoorState(doorHash, state, requestDoor, forceUpdate) end
 
     
@@ -1501,8 +1502,8 @@ function DoorSystemSetDoorState(doorHash, state, requestDoor, forceUpdate) end
 --- @param state number (int)
 --- @param requestDoor boolean
 --- @param forceUpdate boolean
---- @return void
---- @overload fun(doorHash: Hash, state: number, requestDoor: boolean, forceUpdate: boolean): void
+--- @return nil
+--- @overload fun(doorHash: Hash, state: number, requestDoor: boolean, forceUpdate: boolean): nil
 --- @deprecated
 function N_0x6bab9442830c7f53(doorHash, state, requestDoor, forceUpdate) end
 
@@ -1525,8 +1526,8 @@ function N_0x6bab9442830c7f53(doorHash, state, requestDoor, forceUpdate) end
 --- @param state number (int)
 --- @param requestDoor boolean
 --- @param forceUpdate boolean
---- @return void
---- @overload fun(doorHash: Hash, state: number, requestDoor: boolean, forceUpdate: boolean): void
+--- @return nil
+--- @overload fun(doorHash: Hash, state: number, requestDoor: boolean, forceUpdate: boolean): nil
 --- @deprecated
 function SetDoorAccelerationLimit(doorHash, state, requestDoor, forceUpdate) end
 
@@ -1559,8 +1560,8 @@ function GetSafePickupCoords(x, y, z, p3, p4) end
 --- @param p5 boolean
 --- @param scriptDoor boolean
 --- @param isLocal boolean
---- @return void
---- @overload fun(doorHash: Hash, modelHash: Hash, x: number, y: number, z: number, p5: boolean, scriptDoor: boolean, isLocal: boolean): void
+--- @return nil
+--- @overload fun(doorHash: Hash, modelHash: Hash, x: number, y: number, z: number, p5: boolean, scriptDoor: boolean, isLocal: boolean): nil
 function AddDoorToSystem(doorHash, modelHash, x, y, z, p5, scriptDoor, isLocal) end
 
     
@@ -1570,8 +1571,8 @@ function AddDoorToSystem(doorHash, modelHash, x, y, z, p5, scriptDoor, isLocal) 
 ---
 --- @hash [0x701FDA1E82076BA4](https://docs.fivem.net/natives/?_0x701FDA1E82076BA4)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x701fda1e82076ba4() end
 
     
@@ -1582,8 +1583,8 @@ function N_0x701fda1e82076ba4() end
 --- @hash [0x734E1714D077DA9A](https://docs.fivem.net/natives/?_0x734E1714D077DA9A)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x734e1714d077da9a(p0, p1) end
 
     
@@ -1591,8 +1592,8 @@ function N_0x734e1714d077da9a(p0, p1) end
 ---
 --- @hash [0x758A5C1B3B1E1990](https://docs.fivem.net/natives/?_0x758A5C1B3B1E1990)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function ForcePickupRegenerate(p0) end
 
     
@@ -1601,8 +1602,8 @@ function ForcePickupRegenerate(p0) end
 ---
 --- @hash [0x758A5C1B3B1E1990](https://docs.fivem.net/natives/?_0x758A5C1B3B1E1990)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 --- @deprecated
 function N_0x758a5c1b3b1e1990(p0) end
 
@@ -1625,8 +1626,8 @@ function HasClosestObjectOfTypeBeenBroken(p0, p1, p2, p3, modelHash, p5) end
 ---
 --- @hash [0x762DB2D380B48D04](https://docs.fivem.net/natives/?_0x762DB2D380B48D04)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x762db2d380b48d04(p0) end
 
     
@@ -1636,8 +1637,8 @@ function N_0x762db2d380b48d04(p0) end
 --- @hash [0x77F33F2CCF64B3AA](https://docs.fivem.net/natives/?_0x77F33F2CCF64B3AA)
 --- @param object Object
 --- @param toggle boolean
---- @return void
---- @overload fun(object: Object, toggle: boolean): void
+--- @return nil
+--- @overload fun(object: Object, toggle: boolean): nil
 function SetObjectForceVehiclesToAvoid(object, toggle) end
 
     
@@ -1648,8 +1649,8 @@ function SetObjectForceVehiclesToAvoid(object, toggle) end
 --- @hash [0x77F33F2CCF64B3AA](https://docs.fivem.net/natives/?_0x77F33F2CCF64B3AA)
 --- @param object Object
 --- @param toggle boolean
---- @return void
---- @overload fun(object: Object, toggle: boolean): void
+--- @return nil
+--- @overload fun(object: Object, toggle: boolean): nil
 --- @deprecated
 function N_0x77f33f2ccf64b3aa(object, toggle) end
 
@@ -1661,8 +1662,8 @@ function N_0x77f33f2ccf64b3aa(object, toggle) end
 --- @hash [0x77F33F2CCF64B3AA](https://docs.fivem.net/natives/?_0x77F33F2CCF64B3AA)
 --- @param object Object
 --- @param toggle boolean
---- @return void
---- @overload fun(object: Object, toggle: boolean): void
+--- @return nil
+--- @overload fun(object: Object, toggle: boolean): nil
 --- @deprecated
 function SetObjectSomething(object, toggle) end
 
@@ -1672,8 +1673,8 @@ function SetObjectSomething(object, toggle) end
 --- @hash [0x78015C9B4B3ECC9D](https://docs.fivem.net/natives/?_0x78015C9B4B3ECC9D)
 --- @param pickup Pickup
 --- @param duration number (int)
---- @return void
---- @overload fun(pickup: Pickup, duration: number): void
+--- @return nil
+--- @overload fun(pickup: Pickup, duration: number): nil
 function SetPickupRegenerationTime(pickup, duration) end
 
     
@@ -1685,8 +1686,8 @@ function SetPickupRegenerationTime(pickup, duration) end
 ---
 --- @hash [0x7813E8B8C4AE4799](https://docs.fivem.net/natives/?_0x7813E8B8C4AE4799)
 --- @param pickup Pickup
---- @return void
---- @overload fun(pickup: Pickup): void
+--- @return nil
+--- @overload fun(pickup: Pickup): nil
 function N_0x7813e8b8c4ae4799(pickup) end
 
     
@@ -1694,8 +1695,8 @@ function N_0x7813e8b8c4ae4799(pickup) end
 ---
 --- @hash [0x78857FC65CADB909](https://docs.fivem.net/natives/?_0x78857FC65CADB909)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function SetLocalPlayerCanCollectPortablePickups(p0) end
 
     
@@ -1704,8 +1705,8 @@ function SetLocalPlayerCanCollectPortablePickups(p0) end
 ---
 --- @hash [0x78857FC65CADB909](https://docs.fivem.net/natives/?_0x78857FC65CADB909)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 --- @deprecated
 function N_0x78857fc65cadb909(p0) end
 
@@ -1724,8 +1725,8 @@ function HasPickupBeenCollected(pickup) end
 --- @hash [0x826D1EE4D1CAFC78](https://docs.fivem.net/natives/?_0x826D1EE4D1CAFC78)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x826d1ee4d1cafc78(p0, p1) end
 
     
@@ -1736,8 +1737,8 @@ function N_0x826d1ee4d1cafc78(p0, p1) end
 --- @hash [0x834344A414C7C85D](https://docs.fivem.net/natives/?_0x834344A414C7C85D)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x834344a414c7c85d(p0, p1) end
 
     
@@ -1746,8 +1747,8 @@ function N_0x834344a414c7c85d(p0, p1) end
 --- @hash [0x858EC9FD25DE04AA](https://docs.fivem.net/natives/?_0x858EC9FD25DE04AA)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x858ec9fd25de04aa(p0, p1) end
 
     
@@ -1784,8 +1785,8 @@ function N_0x85b6c850546fdde2(garageHash, p1, p2, p3, p4) end
 --- @hash [0x867458251D47CCB2](https://docs.fivem.net/natives/?_0x867458251D47CCB2)
 --- @param pickup Pickup
 --- @param toggle boolean
---- @return void
---- @overload fun(pickup: Pickup, toggle: boolean): void
+--- @return nil
+--- @overload fun(pickup: Pickup, toggle: boolean): nil
 function HidePortablePickupWhenDetached(pickup, toggle) end
 
     
@@ -1795,8 +1796,8 @@ function HidePortablePickupWhenDetached(pickup, toggle) end
 --- @hash [0x867458251D47CCB2](https://docs.fivem.net/natives/?_0x867458251D47CCB2)
 --- @param pickup Pickup
 --- @param toggle boolean
---- @return void
---- @overload fun(pickup: Pickup, toggle: boolean): void
+--- @return nil
+--- @overload fun(pickup: Pickup, toggle: boolean): nil
 --- @deprecated
 function N_0x867458251d47ccb2(pickup, toggle) end
 
@@ -1807,8 +1808,8 @@ function N_0x867458251d47ccb2(pickup, toggle) end
 --- @hash [0x867458251D47CCB2](https://docs.fivem.net/natives/?_0x867458251D47CCB2)
 --- @param pickup Pickup
 --- @param toggle boolean
---- @return void
---- @overload fun(pickup: Pickup, toggle: boolean): void
+--- @return nil
+--- @overload fun(pickup: Pickup, toggle: boolean): nil
 --- @deprecated
 function HidePickup(pickup, toggle) end
 
@@ -1819,8 +1820,8 @@ function HidePickup(pickup, toggle) end
 ---
 --- @hash [0x8881C98A31117998](https://docs.fivem.net/natives/?_0x8881C98A31117998)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x8881c98a31117998(p0) end
 
     
@@ -1831,8 +1832,8 @@ function N_0x8881c98a31117998(p0) end
 ---
 --- @hash [0x8881C98A31117998](https://docs.fivem.net/natives/?_0x8881C98A31117998)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 --- @deprecated
 function N_0xa90e7227a9303fa9(p0) end
 
@@ -1845,8 +1846,8 @@ function N_0xa90e7227a9303fa9(p0) end
 --- @hash [0x88EAEC617CD26926](https://docs.fivem.net/natives/?_0x88EAEC617CD26926)
 --- @param modelHash Hash
 --- @param toggle boolean
---- @return void
---- @overload fun(modelHash: Hash, toggle: boolean): void
+--- @return nil
+--- @overload fun(modelHash: Hash, toggle: boolean): nil
 function SetLocalPlayerCanUsePickupsWithThisModel(modelHash, toggle) end
 
     
@@ -1859,8 +1860,8 @@ function SetLocalPlayerCanUsePickupsWithThisModel(modelHash, toggle) end
 --- @hash [0x88EAEC617CD26926](https://docs.fivem.net/natives/?_0x88EAEC617CD26926)
 --- @param modelHash Hash
 --- @param toggle boolean
---- @return void
---- @overload fun(modelHash: Hash, toggle: boolean): void
+--- @return nil
+--- @overload fun(modelHash: Hash, toggle: boolean): nil
 --- @deprecated
 function N_0x88eaec617cd26926(modelHash, toggle) end
 
@@ -1932,8 +1933,8 @@ function GetDesObjectState(object) end
 --- @hash [0x8A7391690F5AFD81](https://docs.fivem.net/natives/?_0x8A7391690F5AFD81)
 --- @param object Object
 --- @param targettable boolean
---- @return void
---- @overload fun(object: Object, targettable: boolean): void
+--- @return nil
+--- @overload fun(object: Object, targettable: boolean): nil
 function SetObjectTargettable(object, targettable) end
 
     
@@ -1974,8 +1975,8 @@ function IsObjectNearPoint(objectHash, x, y, z, range) end
 ---
 --- @hash [0x8CAAB2BD3EA58BD4](https://docs.fivem.net/natives/?_0x8CAAB2BD3EA58BD4)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x8caab2bd3ea58bd4(p0) end
 
     
@@ -1985,8 +1986,8 @@ function N_0x8caab2bd3ea58bd4(p0) end
 ---
 --- @hash [0x8CFF648FBD7330F1](https://docs.fivem.net/natives/?_0x8CFF648FBD7330F1)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x8cff648fbd7330f1(p0) end
 
     
@@ -1995,8 +1996,8 @@ function N_0x8cff648fbd7330f1(p0) end
 --- @hash [0x8DC39368BDD57755](https://docs.fivem.net/natives/?_0x8DC39368BDD57755)
 --- @param pickupObject Object
 --- @param ped Ped
---- @return void
---- @overload fun(pickupObject: Object, ped: Ped): void
+--- @return nil
+--- @overload fun(pickupObject: Object, ped: Ped): nil
 function AttachPortablePickupToPed(pickupObject, ped) end
 
     
@@ -2007,8 +2008,8 @@ function AttachPortablePickupToPed(pickupObject, ped) end
 --- @hash [0x8DCA505A5C196F05](https://docs.fivem.net/natives/?_0x8DCA505A5C196F05)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x8dca505a5c196f05(p0, p1) end
 
     
@@ -2035,8 +2036,8 @@ function IsGarageEmpty(garageHash, p1, p2) end
 --- @param entity Object
 --- @param toggle boolean
 --- @param p2 number (int)
---- @return void
---- @overload fun(entity: Object, toggle: boolean, p2: number): void
+--- @return nil
+--- @overload fun(entity: Object, toggle: boolean, p2: number): nil
 function SetEnableArenaPropPhysics(entity, toggle, p2) end
 
     
@@ -2053,8 +2054,8 @@ function SetEnableArenaPropPhysics(entity, toggle, p2) end
 --- @param entity Object
 --- @param toggle boolean
 --- @param p2 number (int)
---- @return void
---- @overload fun(entity: Object, toggle: boolean, p2: number): void
+--- @return nil
+--- @overload fun(entity: Object, toggle: boolean, p2: number): nil
 --- @deprecated
 function N_0x911024442f4898f0(entity, toggle, p2) end
 
@@ -2065,8 +2066,8 @@ function N_0x911024442f4898f0(entity, toggle, p2) end
 --- @param object Object
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(object: Object, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(object: Object, p1: boolean, p2: boolean): nil
 function PreventCollectionOfPortablePickup(object, p1, p2) end
 
     
@@ -2077,8 +2078,8 @@ function PreventCollectionOfPortablePickup(object, p1, p2) end
 --- @param object Object
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(object: Object, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(object: Object, p1: boolean, p2: boolean): nil
 --- @deprecated
 function N_0x92aefb5f6e294023(object, p1, p2) end
 
@@ -2100,8 +2101,8 @@ function N_0x92aefb5f6e294023(object, p1, p2) end
 --- @hash [0x96EE0EBA0163DF80](https://docs.fivem.net/natives/?_0x96EE0EBA0163DF80)
 --- @param object Object
 --- @param intensity number (int)
---- @return void
---- @overload fun(object: Object, intensity: number): void
+--- @return nil
+--- @overload fun(object: Object, intensity: number): nil
 function SetObjectStuntPropSpeedup(object, intensity) end
 
     
@@ -2123,8 +2124,8 @@ function SetObjectStuntPropSpeedup(object, intensity) end
 --- @hash [0x96EE0EBA0163DF80](https://docs.fivem.net/natives/?_0x96EE0EBA0163DF80)
 --- @param object Object
 --- @param intensity number (int)
---- @return void
---- @overload fun(object: Object, intensity: number): void
+--- @return nil
+--- @overload fun(object: Object, intensity: number): nil
 --- @deprecated
 function N_0x96ee0eba0163df80(object, intensity) end
 
@@ -2154,8 +2155,8 @@ function N_0x96ee0eba0163df80(object, intensity) end
 --- @hash [0x971DA0055324D033](https://docs.fivem.net/natives/?_0x971DA0055324D033)
 --- @param object Object
 --- @param textureVariation number (int)
---- @return void
---- @overload fun(object: Object, textureVariation: number): void
+--- @return nil
+--- @overload fun(object: Object, textureVariation: number): nil
 function SetObjectTextureVariation(object, textureVariation) end
 
     
@@ -2185,8 +2186,8 @@ function SetObjectTextureVariation(object, textureVariation) end
 --- @hash [0x971DA0055324D033](https://docs.fivem.net/natives/?_0x971DA0055324D033)
 --- @param object Object
 --- @param textureVariation number (int)
---- @return void
---- @overload fun(object: Object, textureVariation: number): void
+--- @return nil
+--- @overload fun(object: Object, textureVariation: number): nil
 --- @deprecated
 function N_0x971da0055324d033(object, textureVariation) end
 
@@ -2217,8 +2218,8 @@ function N_0x971da0055324d033(object, textureVariation) end
 --- @hash [0x971DA0055324D033](https://docs.fivem.net/natives/?_0x971DA0055324D033)
 --- @param object Object
 --- @param textureVariation number (int)
---- @return void
---- @overload fun(object: Object, textureVariation: number): void
+--- @return nil
+--- @overload fun(object: Object, textureVariation: number): nil
 --- @deprecated
 function SetObjectTextureVariant(object, textureVariation) end
 
@@ -2257,8 +2258,8 @@ function CreateObjectNoOffset(modelHash, x, y, z, isNetwork, netMissionEntity, d
 --- @param xRotMult number (float)
 --- @param yRotMult number (float)
 --- @param zRotMult number (float)
---- @return void
---- @overload fun(modelHash: Hash, x: number, y: number, z: number, locked: boolean, xRotMult: number, yRotMult: number, zRotMult: number): void
+--- @return nil
+--- @overload fun(modelHash: Hash, x: number, y: number, z: number, locked: boolean, xRotMult: number, yRotMult: number, zRotMult: number): nil
 function DoorControl(modelHash, x, y, z, locked, xRotMult, yRotMult, zRotMult) end
 
     
@@ -2269,8 +2270,8 @@ function DoorControl(modelHash, x, y, z, locked, xRotMult, yRotMult, zRotMult) e
 --- @param distance number (float)
 --- @param requestDoor boolean
 --- @param forceUpdate boolean
---- @return void
---- @overload fun(doorHash: Hash, distance: number, requestDoor: boolean, forceUpdate: boolean): void
+--- @return nil
+--- @overload fun(doorHash: Hash, distance: number, requestDoor: boolean, forceUpdate: boolean): nil
 function DoorSystemSetAutomaticDistance(doorHash, distance, requestDoor, forceUpdate) end
 
     
@@ -2282,8 +2283,8 @@ function DoorSystemSetAutomaticDistance(doorHash, distance, requestDoor, forceUp
 --- @param distance number (float)
 --- @param requestDoor boolean
 --- @param forceUpdate boolean
---- @return void
---- @overload fun(doorHash: Hash, distance: number, requestDoor: boolean, forceUpdate: boolean): void
+--- @return nil
+--- @overload fun(doorHash: Hash, distance: number, requestDoor: boolean, forceUpdate: boolean): nil
 --- @deprecated
 function N_0x9ba001cb45cbf627(doorHash, distance, requestDoor, forceUpdate) end
 
@@ -2334,8 +2335,8 @@ function N_0x9c93764223e29c50(pickupHash, posX, posY, posZ, flags, value, modelH
 --- @param p0 any
 --- @param p1 number (float)
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p1: number, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: number, p2: boolean): nil
 function N_0xa08fe5e49bdc39dd(p0, p1, p2) end
 
     
@@ -2345,8 +2346,8 @@ function N_0xa08fe5e49bdc39dd(p0, p1, p2) end
 ---
 --- @hash [0xA2C1F5E92AFE49ED](https://docs.fivem.net/natives/?_0xA2C1F5E92AFE49ED)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xa2c1f5e92afe49ed() end
 
     
@@ -2355,8 +2356,8 @@ function N_0xa2c1f5e92afe49ed() end
 --- @hash [0xA85A21582451E951](https://docs.fivem.net/natives/?_0xA85A21582451E951)
 --- @param doorHash Hash
 --- @param p1 boolean
---- @return void
---- @overload fun(doorHash: Hash, p1: boolean): void
+--- @return nil
+--- @overload fun(doorHash: Hash, p1: boolean): nil
 function N_0xa85a21582451e951(doorHash, p1) end
 
     
@@ -2367,8 +2368,8 @@ function N_0xa85a21582451e951(doorHash, p1) end
 --- @hash [0xAA059C615DE9DD03](https://docs.fivem.net/natives/?_0xAA059C615DE9DD03)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0xaa059c615de9dd03(p0, p1) end
 
     
@@ -2378,8 +2379,8 @@ function N_0xaa059c615de9dd03(p0, p1) end
 ---
 --- @hash [0xABDABF4E1EDECBFA](https://docs.fivem.net/natives/?_0xABDABF4E1EDECBFA)
 --- @param value boolean
---- @return void
---- @overload fun(value: boolean): void
+--- @return nil
+--- @overload fun(value: boolean): nil
 function SetUnkGlobalBoolRelatedToDamage(value) end
 
     
@@ -2389,8 +2390,8 @@ function SetUnkGlobalBoolRelatedToDamage(value) end
 ---
 --- @hash [0xADBE4809F19F927A](https://docs.fivem.net/natives/?_0xADBE4809F19F927A)
 --- @param object Object
---- @return void
---- @overload fun(object: Object): void
+--- @return nil
+--- @overload fun(object: Object): nil
 function MarkObjectForDeletion(object) end
 
     
@@ -2437,8 +2438,8 @@ function N_0xafe24e4d29249e4a(object, p1, p2, p3) end
 --- @param toggle boolean
 --- @param p2 number (int)
 --- @param ped Ped
---- @return void
---- @overload fun(entity: Object, toggle: boolean, p2: number, ped: Ped): void
+--- @return nil
+--- @overload fun(entity: Object, toggle: boolean, p2: number, ped: Ped): nil
 function SetEnableArenaPropPhysicsOnPed(entity, toggle, p2, ped) end
 
     
@@ -2452,8 +2453,8 @@ function SetEnableArenaPropPhysicsOnPed(entity, toggle, p2, ped) end
 --- @param toggle boolean
 --- @param p2 number (int)
 --- @param ped Ped
---- @return void
---- @overload fun(entity: Object, toggle: boolean, p2: number, ped: Ped): void
+--- @return nil
+--- @overload fun(entity: Object, toggle: boolean, p2: number, ped: Ped): nil
 --- @deprecated
 function N_0xb20834a7dd3d8896(entity, toggle, p2, ped) end
 
@@ -2462,8 +2463,8 @@ function N_0xb20834a7dd3d8896(entity, toggle, p2, ped) end
 ---
 --- @hash [0xB252BC036B525623](https://docs.fivem.net/natives/?_0xB252BC036B525623)
 --- @param object Object
---- @return void
---- @overload fun(object: Object): void
+--- @return nil
+--- @overload fun(object: Object): nil
 function TrackObjectVisibility(object) end
 
     
@@ -2472,8 +2473,8 @@ function TrackObjectVisibility(object) end
 --- @hash [0xB2D0BDE54F0E8E5A](https://docs.fivem.net/natives/?_0xB2D0BDE54F0E8E5A)
 --- @param object Object
 --- @param toggle boolean
---- @return void
---- @overload fun(object: Object, toggle: boolean): void
+--- @return nil
+--- @overload fun(object: Object, toggle: boolean): nil
 function N_0xb2d0bde54f0e8e5a(object, toggle) end
 
     
@@ -2556,8 +2557,8 @@ function GetDesObject(x, y, z, radius, name) end
 --- @hash [0xB5B7742424BD4445](https://docs.fivem.net/natives/?_0xB5B7742424BD4445)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0xb5b7742424bd4445(p0, p1) end
 
     
@@ -2571,8 +2572,8 @@ function N_0xb5b7742424bd4445(p0, p1) end
 --- @param ajar number (float)
 --- @param requestDoor boolean
 --- @param forceUpdate boolean
---- @return void
---- @overload fun(doorHash: Hash, ajar: number, requestDoor: boolean, forceUpdate: boolean): void
+--- @return nil
+--- @overload fun(doorHash: Hash, ajar: number, requestDoor: boolean, forceUpdate: boolean): nil
 function DoorSystemSetOpenRatio(doorHash, ajar, requestDoor, forceUpdate) end
 
     
@@ -2587,8 +2588,8 @@ function DoorSystemSetOpenRatio(doorHash, ajar, requestDoor, forceUpdate) end
 --- @param ajar number (float)
 --- @param requestDoor boolean
 --- @param forceUpdate boolean
---- @return void
---- @overload fun(doorHash: Hash, ajar: number, requestDoor: boolean, forceUpdate: boolean): void
+--- @return nil
+--- @overload fun(doorHash: Hash, ajar: number, requestDoor: boolean, forceUpdate: boolean): nil
 --- @deprecated
 function N_0xb6e6fba95c7324ac(doorHash, ajar, requestDoor, forceUpdate) end
 
@@ -2604,8 +2605,8 @@ function N_0xb6e6fba95c7324ac(doorHash, ajar, requestDoor, forceUpdate) end
 --- @param ajar number (float)
 --- @param requestDoor boolean
 --- @param forceUpdate boolean
---- @return void
---- @overload fun(doorHash: Hash, ajar: number, requestDoor: boolean, forceUpdate: boolean): void
+--- @return nil
+--- @overload fun(doorHash: Hash, ajar: number, requestDoor: boolean, forceUpdate: boolean): nil
 --- @deprecated
 function SetDoorAjarAngle(doorHash, ajar, requestDoor, forceUpdate) end
 
@@ -2630,8 +2631,8 @@ function GetObjectFragmentDamageHealth(p0, p1) end
 ---
 --- @hash [0xB7C6D80FB371659A](https://docs.fivem.net/natives/?_0xB7C6D80FB371659A)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xb7c6d80fb371659a() end
 
     
@@ -2642,8 +2643,8 @@ function N_0xb7c6d80fb371659a() end
 --- @hash [0xBCE595371A5FBAAF](https://docs.fivem.net/natives/?_0xBCE595371A5FBAAF)
 --- @param object Object
 --- @param toggle boolean
---- @return void
---- @overload fun(object: Object, toggle: boolean): void
+--- @return nil
+--- @overload fun(object: Object, toggle: boolean): nil
 function SetCreateWeaponObjectLightSource(object, toggle) end
 
     
@@ -2655,8 +2656,8 @@ function SetCreateWeaponObjectLightSource(object, toggle) end
 --- @hash [0xBCE595371A5FBAAF](https://docs.fivem.net/natives/?_0xBCE595371A5FBAAF)
 --- @param object Object
 --- @param toggle boolean
---- @return void
---- @overload fun(object: Object, toggle: boolean): void
+--- @return nil
+--- @overload fun(object: Object, toggle: boolean): nil
 --- @deprecated
 function N_0xbce595371a5fbaaf(object, toggle) end
 
@@ -2684,8 +2685,8 @@ function DoesObjectOfTypeExistAtCoords(x, y, z, radius, hash, p5) end
 --- @hash [0xBFFE53AE7E67FCDC](https://docs.fivem.net/natives/?_0xBFFE53AE7E67FCDC)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0xbffe53ae7e67fcdc(p0, p1) end
 
     
@@ -2742,8 +2743,8 @@ function DoesDoorExist(doorHash) end
 --- @param removed boolean
 --- @param requestDoor boolean
 --- @param forceUpdate boolean
---- @return void
---- @overload fun(doorHash: Hash, removed: boolean, requestDoor: boolean, forceUpdate: boolean): void
+--- @return nil
+--- @overload fun(doorHash: Hash, removed: boolean, requestDoor: boolean, forceUpdate: boolean): nil
 function DoorSystemSetSpringRemoved(doorHash, removed, requestDoor, forceUpdate) end
 
     
@@ -2755,8 +2756,8 @@ function DoorSystemSetSpringRemoved(doorHash, removed, requestDoor, forceUpdate)
 --- @param removed boolean
 --- @param requestDoor boolean
 --- @param forceUpdate boolean
---- @return void
---- @overload fun(doorHash: Hash, removed: boolean, requestDoor: boolean, forceUpdate: boolean): void
+--- @return nil
+--- @overload fun(doorHash: Hash, removed: boolean, requestDoor: boolean, forceUpdate: boolean): nil
 --- @deprecated
 function N_0xc485e07e4f0b7958(doorHash, removed, requestDoor, forceUpdate) end
 
@@ -2775,8 +2776,8 @@ function IsDoorClosed(doorHash) end
 --- @hash [0xC6033D32241F6FB5](https://docs.fivem.net/natives/?_0xC6033D32241F6FB5)
 --- @param object Object
 --- @param toggle boolean
---- @return void
---- @overload fun(object: Object, toggle: boolean): void
+--- @return nil
+--- @overload fun(object: Object, toggle: boolean): nil
 function N_0xc6033d32241f6fb5(object, toggle) end
 
     
@@ -2784,8 +2785,8 @@ function N_0xc6033d32241f6fb5(object, toggle) end
 ---
 --- @hash [0xC7F29CA00F46350E](https://docs.fivem.net/natives/?_0xC7F29CA00F46350E)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0xc7f29ca00f46350e(p0) end
 
     
@@ -2793,8 +2794,8 @@ function N_0xc7f29ca00f46350e(p0) end
 ---
 --- @hash [0xCF463D1E9A0AECB1](https://docs.fivem.net/natives/?_0xCF463D1E9A0AECB1)
 --- @param pickupObject Object
---- @return void
---- @overload fun(pickupObject: Object): void
+--- @return nil
+--- @overload fun(pickupObject: Object): nil
 function DetachPortablePickupFromPed(pickupObject) end
 
     
@@ -2805,8 +2806,8 @@ function DetachPortablePickupFromPed(pickupObject) end
 --- @hash [0xD05A3241B9A86F19](https://docs.fivem.net/natives/?_0xD05A3241B9A86F19)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0xd05a3241b9a86f19(p0, p1) end
 
     
@@ -2824,8 +2825,8 @@ function N_0xd05a3241b9a86f19(p0, p1) end
 --- @param y number (float)
 --- @param z number (float)
 --- @param radius number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number, radius: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, radius: number): nil
 function N_0xd4a7a435b3710d05(x, y, z, radius) end
 
     
@@ -2878,8 +2879,8 @@ function N_0xd76eeef746057fd6(object) end
 --- @hash [0xD9B71952F78A2640](https://docs.fivem.net/natives/?_0xD9B71952F78A2640)
 --- @param doorHash Hash
 --- @param toggle boolean
---- @return void
---- @overload fun(doorHash: Hash, toggle: boolean): void
+--- @return nil
+--- @overload fun(doorHash: Hash, toggle: boolean): nil
 function DoorSystemSetHoldOpen(doorHash, toggle) end
 
     
@@ -2889,8 +2890,8 @@ function DoorSystemSetHoldOpen(doorHash, toggle) end
 --- @hash [0xD9B71952F78A2640](https://docs.fivem.net/natives/?_0xD9B71952F78A2640)
 --- @param doorHash Hash
 --- @param toggle boolean
---- @return void
---- @overload fun(doorHash: Hash, toggle: boolean): void
+--- @return nil
+--- @overload fun(doorHash: Hash, toggle: boolean): nil
 --- @deprecated
 function N_0xd9b71952f78a2640(doorHash, toggle) end
 
@@ -2909,8 +2910,8 @@ function DoesPickupObjectExist(pickupObject) end
 --- @hash [0xDA05194260CDCDF9](https://docs.fivem.net/natives/?_0xDA05194260CDCDF9)
 --- @param garageHash Hash
 --- @param isNetwork boolean
---- @return void
---- @overload fun(garageHash: Hash, isNetwork: boolean): void
+--- @return nil
+--- @overload fun(garageHash: Hash, isNetwork: boolean): nil
 function ClearGarageArea(garageHash, isNetwork) end
 
     
@@ -2920,8 +2921,8 @@ function ClearGarageArea(garageHash, isNetwork) end
 --- @hash [0xDA05194260CDCDF9](https://docs.fivem.net/natives/?_0xDA05194260CDCDF9)
 --- @param garageHash Hash
 --- @param isNetwork boolean
---- @return void
---- @overload fun(garageHash: Hash, isNetwork: boolean): void
+--- @return nil
+--- @overload fun(garageHash: Hash, isNetwork: boolean): nil
 --- @deprecated
 function N_0xda05194260cdcdf9(garageHash, isNetwork) end
 
@@ -2940,8 +2941,8 @@ function N_0xdb41d07a45a6d4b7(p0) end
 --- @hash [0xDF6CA0330F2E737B](https://docs.fivem.net/natives/?_0xDF6CA0330F2E737B)
 --- @param object Object
 --- @param duration number (float)
---- @return void
---- @overload fun(object: Object, duration: number): void
+--- @return nil
+--- @overload fun(object: Object, duration: number): nil
 function SetObjectStuntPropDuration(object, duration) end
 
     
@@ -2951,8 +2952,8 @@ function SetObjectStuntPropDuration(object, duration) end
 --- @hash [0xDF6CA0330F2E737B](https://docs.fivem.net/natives/?_0xDF6CA0330F2E737B)
 --- @param object Object
 --- @param duration number (float)
---- @return void
---- @overload fun(object: Object, duration: number): void
+--- @return nil
+--- @overload fun(object: Object, duration: number): nil
 --- @deprecated
 function N_0xdf6ca0330f2e737b(object, duration) end
 
@@ -2985,8 +2986,8 @@ function N_0xdf97cdd4fc08fd34(doorHash) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function N_0xe05f6aeefeb0bb02(p0, p1, p2) end
 
     
@@ -3015,8 +3016,8 @@ function GetClosestObjectOfType(x, y, z, radius, modelHash, isMission, p6, p7) e
 --- @param p0 Object
 --- @param p1 any
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: Object, p1: any, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: Object, p1: any, p2: boolean): nil
 function BreakObjectFragmentChild(p0, p1, p2) end
 
     
@@ -3027,8 +3028,8 @@ function BreakObjectFragmentChild(p0, p1, p2) end
 --- @param p0 Object
 --- @param p1 any
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: Object, p1: any, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: Object, p1: any, p2: boolean): nil
 --- @deprecated
 function N_0xe7e4c198b0185900(p0, p1, p2) end
 
@@ -3069,8 +3070,8 @@ function DoorSystemGetAutomaticDistance(doorHash) end
 --- @hash [0xEB6F1A9B5510A5D2](https://docs.fivem.net/natives/?_0xEB6F1A9B5510A5D2)
 --- @param p0 any
 --- @param p1 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean): nil
 function N_0xeb6f1a9b5510a5d2(p0, p1) end
 
     
@@ -3087,8 +3088,8 @@ function N_0xeb6f1a9b5510a5d2(p0, p1) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return boolean, number
---- @overload fun(type: Hash, x: number, y: number, z: number): boolean, number
+--- @return nil, boolean, number
+--- @overload fun(type: Hash, x: number, y: number, z: number): nil, boolean, number
 function GetStateOfClosestDoorOfType(type, x, y, z) end
 
     
@@ -3151,8 +3152,8 @@ function N_0xf12e33034d887f66(x, y, z, radius, modelHash, textureVariation) end
 --- @hash [0xF2E1A7133DD356A6](https://docs.fivem.net/natives/?_0xF2E1A7133DD356A6)
 --- @param garageHash Hash
 --- @param toggle boolean
---- @return void
---- @overload fun(garageHash: Hash, toggle: boolean): void
+--- @return nil
+--- @overload fun(garageHash: Hash, toggle: boolean): nil
 function EnableSavingInGarage(garageHash, toggle) end
 
     
@@ -3162,8 +3163,8 @@ function EnableSavingInGarage(garageHash, toggle) end
 --- @hash [0xF2E1A7133DD356A6](https://docs.fivem.net/natives/?_0xF2E1A7133DD356A6)
 --- @param garageHash Hash
 --- @param toggle boolean
---- @return void
---- @overload fun(garageHash: Hash, toggle: boolean): void
+--- @return nil
+--- @overload fun(garageHash: Hash, toggle: boolean): nil
 --- @deprecated
 function N_0xf2e1a7133dd356a6(garageHash, toggle) end
 
@@ -3175,8 +3176,8 @@ function N_0xf2e1a7133dd356a6(garageHash, toggle) end
 --- @param y number (float)
 --- @param z number (float)
 --- @param p3 number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number, p3: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, p3: number): nil
 function SetForceObjectThisFrame(x, y, z, p3) end
 
     
@@ -3198,8 +3199,8 @@ function SetForceObjectThisFrame(x, y, z, p3) end
 --- @param p9 number (float)
 --- @param maxAngSpeed number (float)
 --- @param buoyancyFactor number (float)
---- @return void
---- @overload fun(object: Object, mass: number, gravityFactor: number, linearC: number, linearV: number, linearV2: number, angularC: number, angularV: number, angularV2: number, p9: number, maxAngSpeed: number, buoyancyFactor: number): void
+--- @return nil
+--- @overload fun(object: Object, mass: number, gravityFactor: number, linearC: number, linearV: number, linearV2: number, angularC: number, angularV: number, angularV2: number, p9: number, maxAngSpeed: number, buoyancyFactor: number): nil
 function SetObjectPhysicsParams(object, mass, gravityFactor, linearC, linearV, linearV2, angularC, angularV, angularV2, p9, maxAngSpeed, buoyancyFactor) end
 
     
@@ -3224,8 +3225,8 @@ function SetObjectPhysicsParams(object, mass, gravityFactor, linearC, linearV, l
 --- @param locked boolean
 --- @param heading number (float)
 --- @param p6 boolean
---- @return void
---- @overload fun(type: Hash, x: number, y: number, z: number, locked: boolean, heading: number, p6: boolean): void
+--- @return nil
+--- @overload fun(type: Hash, x: number, y: number, z: number, locked: boolean, heading: number, p6: boolean): nil
 function SetStateOfClosestDoorOfType(type, x, y, z, locked, heading, p6) end
 
     
@@ -3234,8 +3235,8 @@ function SetStateOfClosestDoorOfType(type, x, y, z, locked, heading, p6) end
 --- @hash [0xF92099527DB8E2A7](https://docs.fivem.net/natives/?_0xF92099527DB8E2A7)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0xf92099527db8e2a7(p0, p1) end
 
     
@@ -3243,8 +3244,8 @@ function N_0xf92099527db8e2a7(p0, p1) end
 ---
 --- @hash [0xF9C1681347C8BD15](https://docs.fivem.net/natives/?_0xF9C1681347C8BD15)
 --- @param object Object
---- @return void
---- @overload fun(object: Object): void
+--- @return nil
+--- @overload fun(object: Object): nil
 function N_0xf9c1681347c8bd15(object) end
 
     
@@ -3326,8 +3327,8 @@ function N_0xfc481c641ebbd27d(object) end
 ---
 --- @hash [0xFDC07C58E8AAB715](https://docs.fivem.net/natives/?_0xFDC07C58E8AAB715)
 --- @param pickupHash Hash
---- @return void
---- @overload fun(pickupHash: Hash): void
+--- @return nil
+--- @overload fun(pickupHash: Hash): nil
 function N_0xfdc07c58e8aab715(pickupHash) end
 
     

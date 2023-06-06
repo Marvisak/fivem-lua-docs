@@ -1,3 +1,4 @@
+--- @meta
 
 --- StopFireInRange
 ---
@@ -6,8 +7,8 @@
 --- @param y number (float)
 --- @param z number (float)
 --- @param radius number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number, radius: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, radius: number): nil
 function StopFireInRange(x, y, z, radius) end
 
     
@@ -61,8 +62,8 @@ function GetPedInsideExplosionArea(explosionType, x1, y1, z1, x2, y2, z2, radius
 --- @param isAudible boolean
 --- @param isInvisible boolean
 --- @param cameraShake number (float)
---- @return void
---- @overload fun(ped: Ped, x: number, y: number, z: number, explosionType: number, damageScale: number, isAudible: boolean, isInvisible: boolean, cameraShake: number): void
+--- @return nil
+--- @overload fun(ped: Ped, x: number, y: number, z: number, explosionType: number, damageScale: number, isAudible: boolean, isInvisible: boolean, cameraShake: number): nil
 function AddOwnedExplosion(ped, x, y, z, explosionType, damageScale, isAudible, isInvisible, cameraShake) end
 
     
@@ -116,8 +117,8 @@ function GetClosestFirePos(outPosition, x, y, z) end
 --- @param isAudible boolean
 --- @param isInvisible boolean
 --- @param cameraShake number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number, explosionType: number, explosionFx: Hash, damageScale: number, isAudible: boolean, isInvisible: boolean, cameraShake: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, explosionType: number, explosionFx: Hash, damageScale: number, isAudible: boolean, isInvisible: boolean, cameraShake: number): nil
 function AddExplosionWithUserVfx(x, y, z, explosionType, explosionFx, damageScale, isAudible, isInvisible, cameraShake) end
 
     
@@ -134,8 +135,8 @@ function AddExplosionWithUserVfx(x, y, z, explosionType, explosionFx, damageScal
 --- @param isAudible boolean
 --- @param isInvisible boolean
 --- @param cameraShake number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number, explosionType: number, explosionFx: Hash, damageScale: number, isAudible: boolean, isInvisible: boolean, cameraShake: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, explosionType: number, explosionFx: Hash, damageScale: number, isAudible: boolean, isInvisible: boolean, cameraShake: number): nil
 --- @deprecated
 function AddSpecfxExplosion(x, y, z, explosionType, explosionFx, damageScale, isAudible, isInvisible, cameraShake) end
 
@@ -206,8 +207,8 @@ function StartScriptFire(X, Y, Z, maxChildren, isGasFire) end
 ---
 --- @hash [0x7F0DD2EBBB651AFF](https://docs.fivem.net/natives/?_0x7F0DD2EBBB651AFF)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 function StopEntityFire(entity) end
 
     
@@ -215,8 +216,8 @@ function StopEntityFire(entity) end
 ---
 --- @hash [0x7FF548385680673F](https://docs.fivem.net/natives/?_0x7FF548385680673F)
 --- @param fireHandle FireId
---- @return void
---- @overload fun(fireHandle: FireId): void
+--- @return nil
+--- @overload fun(fireHandle: FireId): nil
 function RemoveScriptFire(fireHandle) end
 
     
@@ -228,8 +229,8 @@ function RemoveScriptFire(fireHandle) end
 ---
 --- @hash [0x8F390AC4155099BA](https://docs.fivem.net/natives/?_0x8F390AC4155099BA)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function SetFireSpreadRate(p0) end
 
     
@@ -386,8 +387,8 @@ function GetEntityInsideExplosionSphere(explosionType, x, y, z, radius) end
 --- @param isAudible boolean
 --- @param isInvisible boolean
 --- @param cameraShake number (float)
---- @return void
---- @overload fun(x: number, y: number, z: number, explosionType: number, damageScale: number, isAudible: boolean, isInvisible: boolean, cameraShake: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, explosionType: number, damageScale: number, isAudible: boolean, isInvisible: boolean, cameraShake: number): nil
 function AddExplosion(x, y, z, explosionType, damageScale, isAudible, isInvisible, cameraShake) end
 
     

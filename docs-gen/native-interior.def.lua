@@ -1,3 +1,4 @@
+--- @meta
 
 --- ```
 --- Returns the interior ID representing the requested interior at that location (if found?). The supplied interior string is not the same as the one used to load the interior.  
@@ -50,8 +51,8 @@ function GetInteriorFromEntity(entity) end
 ---
 --- @hash [0x23B59D8912F94246](https://docs.fivem.net/natives/?_0x23B59D8912F94246)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ClearRoomForGameViewport() end
 
     
@@ -60,8 +61,8 @@ function ClearRoomForGameViewport() end
 ---
 --- @hash [0x23B59D8912F94246](https://docs.fivem.net/natives/?_0x23B59D8912F94246)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x23b59d8912f94246() end
 
@@ -72,8 +73,8 @@ function N_0x23b59d8912f94246() end
 ---
 --- @hash [0x252BDC06B73FA6EA](https://docs.fivem.net/natives/?_0x252BDC06B73FA6EA)
 --- @param interior number (int)
---- @return Vector3, Hash
---- @overload fun(interior: number): Vector3, Hash
+--- @return nil, Vector3, Hash
+--- @overload fun(interior: number): nil, Vector3, Hash
 function GetInteriorLocationAndNamehash(interior) end
 
     
@@ -84,8 +85,8 @@ function GetInteriorLocationAndNamehash(interior) end
 ---
 --- @hash [0x252BDC06B73FA6EA](https://docs.fivem.net/natives/?_0x252BDC06B73FA6EA)
 --- @param interior number (int)
---- @return Vector3, Hash
---- @overload fun(interior: number): Vector3, Hash
+--- @return nil, Vector3, Hash
+--- @overload fun(interior: number): nil, Vector3, Hash
 --- @deprecated
 function N_0x252bdc06b73fa6ea(interior) end
 
@@ -97,8 +98,8 @@ function N_0x252bdc06b73fa6ea(interior) end
 ---
 --- @hash [0x252BDC06B73FA6EA](https://docs.fivem.net/natives/?_0x252BDC06B73FA6EA)
 --- @param interior number (int)
---- @return Vector3, Hash
---- @overload fun(interior: number): Vector3, Hash
+--- @return nil, Vector3, Hash
+--- @overload fun(interior: number): nil, Vector3, Hash
 --- @deprecated
 function GetInteriorInfo(interior) end
 
@@ -110,8 +111,8 @@ function GetInteriorInfo(interior) end
 ---
 --- @hash [0x261CCE7EED010641](https://docs.fivem.net/natives/?_0x261CCE7EED010641)
 --- @param interior number (int)
---- @return void
---- @overload fun(interior: number): void
+--- @return nil
+--- @overload fun(interior: number): nil
 function UnpinInterior(interior) end
 
     
@@ -128,8 +129,8 @@ function IsValidInterior(interior) end
 ---
 --- @hash [0x2CA429C029CCF247](https://docs.fivem.net/natives/?_0x2CA429C029CCF247)
 --- @param interior number (int)
---- @return void
---- @overload fun(interior: number): void
+--- @return nil
+--- @overload fun(interior: number): nil
 function PinInteriorInMemory(interior) end
 
     
@@ -138,8 +139,8 @@ function PinInteriorInMemory(interior) end
 ---
 --- @hash [0x2CA429C029CCF247](https://docs.fivem.net/natives/?_0x2CA429C029CCF247)
 --- @param interior number (int)
---- @return void
---- @overload fun(interior: number): void
+--- @return nil
+--- @overload fun(interior: number): nil
 --- @deprecated
 function N_0x2ca429c029ccf247(interior) end
 
@@ -149,8 +150,8 @@ function N_0x2ca429c029ccf247(interior) end
 ---
 --- @hash [0x2CA429C029CCF247](https://docs.fivem.net/natives/?_0x2CA429C029CCF247)
 --- @param interior number (int)
---- @return void
---- @overload fun(interior: number): void
+--- @return nil
+--- @overload fun(interior: number): nil
 --- @deprecated
 function LoadInterior(interior) end
 
@@ -196,8 +197,8 @@ function IsInteriorPropEnabled(interior, entitySetName) end
 --- @hash [0x38C1CB1CB119A016](https://docs.fivem.net/natives/?_0x38C1CB1CB119A016)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x38c1cb1cb119a016(p0, p1) end
 
     
@@ -217,8 +218,8 @@ function GetKeyForEntityInRoom(entity) end
 --- @hash [0x3F6167F351168730](https://docs.fivem.net/natives/?_0x3F6167F351168730)
 --- @param pickup Pickup
 --- @param roomName string (char*)
---- @return void
---- @overload fun(pickup: Pickup, roomName: string): void
+--- @return nil
+--- @overload fun(pickup: Pickup, roomName: string): nil
 function AddPickupToInteriorRoomByName(pickup, roomName) end
 
     
@@ -228,8 +229,8 @@ function AddPickupToInteriorRoomByName(pickup, roomName) end
 ---
 --- @hash [0x405DC2AEF6AF95B9](https://docs.fivem.net/natives/?_0x405DC2AEF6AF95B9)
 --- @param roomHashKey Hash
---- @return void
---- @overload fun(roomHashKey: Hash): void
+--- @return nil
+--- @overload fun(roomHashKey: Hash): nil
 function N_0x405dc2aef6af95b9(roomHashKey) end
 
     
@@ -237,8 +238,8 @@ function N_0x405dc2aef6af95b9(roomHashKey) end
 ---
 --- @hash [0x41F37C3427C75AE0](https://docs.fivem.net/natives/?_0x41F37C3427C75AE0)
 --- @param interiorID number (int)
---- @return void
---- @overload fun(interiorID: number): void
+--- @return nil
+--- @overload fun(interiorID: number): nil
 function RefreshInterior(interiorID) end
 
     
@@ -247,8 +248,8 @@ function RefreshInterior(interiorID) end
 --- @hash [0x420BD37289EEE162](https://docs.fivem.net/natives/?_0x420BD37289EEE162)
 --- @param interior number (int)
 --- @param entitySetName string (char*)
---- @return void
---- @overload fun(interior: number, entitySetName: string): void
+--- @return nil
+--- @overload fun(interior: number, entitySetName: string): nil
 function DeactivateInteriorEntitySet(interior, entitySetName) end
 
     
@@ -258,8 +259,8 @@ function DeactivateInteriorEntitySet(interior, entitySetName) end
 --- @hash [0x420BD37289EEE162](https://docs.fivem.net/natives/?_0x420BD37289EEE162)
 --- @param interior number (int)
 --- @param entitySetName string (char*)
---- @return void
---- @overload fun(interior: number, entitySetName: string): void
+--- @return nil
+--- @overload fun(interior: number, entitySetName: string): nil
 --- @deprecated
 function N_0x420bd37289eee162(interior, entitySetName) end
 
@@ -270,8 +271,8 @@ function N_0x420bd37289eee162(interior, entitySetName) end
 --- @hash [0x420BD37289EEE162](https://docs.fivem.net/natives/?_0x420BD37289EEE162)
 --- @param interior number (int)
 --- @param entitySetName string (char*)
---- @return void
---- @overload fun(interior: number, entitySetName: string): void
+--- @return nil
+--- @overload fun(interior: number, entitySetName: string): nil
 --- @deprecated
 function DisableInteriorProp(interior, entitySetName) end
 
@@ -291,8 +292,8 @@ function GetRoomKeyFromEntity(entity) end
 ---
 --- @hash [0x483ACA1176CA93F1](https://docs.fivem.net/natives/?_0x483ACA1176CA93F1)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x483aca1176ca93f1() end
 
     
@@ -312,8 +313,8 @@ function N_0x4c2330e61d3deb56(interior) end
 ---
 --- @hash [0x50C375537449F369](https://docs.fivem.net/natives/?_0x50C375537449F369)
 --- @param mapObjectHash Hash
---- @return void
---- @overload fun(mapObjectHash: Hash): void
+--- @return nil
+--- @overload fun(mapObjectHash: Hash): nil
 function EnableScriptCullModelThisFrame(mapObjectHash) end
 
     
@@ -322,8 +323,8 @@ function EnableScriptCullModelThisFrame(mapObjectHash) end
 ---
 --- @hash [0x50C375537449F369](https://docs.fivem.net/natives/?_0x50C375537449F369)
 --- @param mapObjectHash Hash
---- @return void
---- @overload fun(mapObjectHash: Hash): void
+--- @return nil
+--- @overload fun(mapObjectHash: Hash): nil
 --- @deprecated
 function N_0x50c375537449f369(mapObjectHash) end
 
@@ -336,8 +337,8 @@ function N_0x50c375537449f369(mapObjectHash) end
 --- @param entity Entity
 --- @param interior number (int)
 --- @param roomHashKey Hash
---- @return void
---- @overload fun(entity: Entity, interior: number, roomHashKey: Hash): void
+--- @return nil
+--- @overload fun(entity: Entity, interior: number, roomHashKey: Hash): nil
 function ForceRoomForEntity(entity, interior, roomHashKey) end
 
     
@@ -348,8 +349,8 @@ function ForceRoomForEntity(entity, interior, roomHashKey) end
 --- @hash [0x55E86AF2712B36A1](https://docs.fivem.net/natives/?_0x55E86AF2712B36A1)
 --- @param interior number (int)
 --- @param entitySetName string (char*)
---- @return void
---- @overload fun(interior: number, entitySetName: string): void
+--- @return nil
+--- @overload fun(interior: number, entitySetName: string): nil
 function ActivateInteriorEntitySet(interior, entitySetName) end
 
     
@@ -361,8 +362,8 @@ function ActivateInteriorEntitySet(interior, entitySetName) end
 --- @hash [0x55E86AF2712B36A1](https://docs.fivem.net/natives/?_0x55E86AF2712B36A1)
 --- @param interior number (int)
 --- @param entitySetName string (char*)
---- @return void
---- @overload fun(interior: number, entitySetName: string): void
+--- @return nil
+--- @overload fun(interior: number, entitySetName: string): nil
 --- @deprecated
 function N_0x55e86af2712b36a1(interior, entitySetName) end
 
@@ -375,8 +376,8 @@ function N_0x55e86af2712b36a1(interior, entitySetName) end
 --- @hash [0x55E86AF2712B36A1](https://docs.fivem.net/natives/?_0x55E86AF2712B36A1)
 --- @param interior number (int)
 --- @param entitySetName string (char*)
---- @return void
---- @overload fun(interior: number, entitySetName: string): void
+--- @return nil
+--- @overload fun(interior: number, entitySetName: string): nil
 --- @deprecated
 function EnableInteriorProp(interior, entitySetName) end
 
@@ -390,8 +391,8 @@ function EnableInteriorProp(interior, entitySetName) end
 --- @hash [0x6170941419D7D8EC](https://docs.fivem.net/natives/?_0x6170941419D7D8EC)
 --- @param interiorID number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(interiorID: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(interiorID: number, toggle: boolean): nil
 function DisableInterior(interiorID, toggle) end
 
     
@@ -411,8 +412,8 @@ function IsInteriorReady(interiorID) end
 --- @hash [0x7241CCB7D020DB69](https://docs.fivem.net/natives/?_0x7241CCB7D020DB69)
 --- @param entity Entity
 --- @param toggle boolean
---- @return void
---- @overload fun(entity: Entity, toggle: boolean): void
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
 function N_0x7241ccb7d020db69(entity, toggle) end
 
     
@@ -422,8 +423,8 @@ function N_0x7241ccb7d020db69(entity, toggle) end
 ---
 --- @hash [0x7ECDF98587E92DEC](https://docs.fivem.net/natives/?_0x7ECDF98587E92DEC)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x7ecdf98587e92dec(p0) end
 
     
@@ -432,8 +433,8 @@ function N_0x7ecdf98587e92dec(p0) end
 --- @hash [0x82EBB79E258FA2B7](https://docs.fivem.net/natives/?_0x82EBB79E258FA2B7)
 --- @param entity Entity
 --- @param interiorID number (int)
---- @return void
---- @overload fun(entity: Entity, interiorID: number): void
+--- @return nil
+--- @overload fun(entity: Entity, interiorID: number): nil
 function N_0x82ebb79e258fa2b7(entity, interiorID) end
 
     
@@ -445,8 +446,8 @@ function N_0x82ebb79e258fa2b7(entity, interiorID) end
 ---
 --- @hash [0x85D5422B2039A70D](https://docs.fivem.net/natives/?_0x85D5422B2039A70D)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 function ClearInteriorForEntity(entity) end
 
     
@@ -455,8 +456,8 @@ function ClearInteriorForEntity(entity) end
 --- @hash [0x920D853F3E17F1DA](https://docs.fivem.net/natives/?_0x920D853F3E17F1DA)
 --- @param interiorID number (int)
 --- @param roomHashKey Hash
---- @return void
---- @overload fun(interiorID: number, roomHashKey: Hash): void
+--- @return nil
+--- @overload fun(interiorID: number, roomHashKey: Hash): nil
 function ForceRoomForGameViewport(interiorID, roomHashKey) end
 
     
@@ -466,8 +467,8 @@ function ForceRoomForGameViewport(interiorID, roomHashKey) end
 --- @hash [0x920D853F3E17F1DA](https://docs.fivem.net/natives/?_0x920D853F3E17F1DA)
 --- @param interiorID number (int)
 --- @param roomHashKey Hash
---- @return void
---- @overload fun(interiorID: number, roomHashKey: Hash): void
+--- @return nil
+--- @overload fun(interiorID: number, roomHashKey: Hash): nil
 --- @deprecated
 function N_0x920d853f3e17f1da(interiorID, roomHashKey) end
 
@@ -499,8 +500,8 @@ function GetOffsetFromInteriorInWorldCoords(interior, x, y, z) end
 ---
 --- @hash [0x9E6542F0CE8E70A3](https://docs.fivem.net/natives/?_0x9E6542F0CE8E70A3)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function N_0x9e6542f0ce8e70a3(toggle) end
 
     
@@ -541,8 +542,8 @@ function GetRoomKeyFromGameplayCam() end
 ---
 --- @hash [0xA97F257D0151A6AB](https://docs.fivem.net/natives/?_0xA97F257D0151A6AB)
 --- @param mapObjectHash Hash
---- @return void
---- @overload fun(mapObjectHash: Hash): void
+--- @return nil
+--- @overload fun(mapObjectHash: Hash): nil
 function EnableExteriorCullModelThisFrame(mapObjectHash) end
 
     
@@ -553,8 +554,8 @@ function EnableExteriorCullModelThisFrame(mapObjectHash) end
 ---
 --- @hash [0xA97F257D0151A6AB](https://docs.fivem.net/natives/?_0xA97F257D0151A6AB)
 --- @param mapObjectHash Hash
---- @return void
---- @overload fun(mapObjectHash: Hash): void
+--- @return nil
+--- @overload fun(mapObjectHash: Hash): nil
 --- @deprecated
 function N_0xa97f257d0151a6ab(mapObjectHash) end
 
@@ -566,8 +567,8 @@ function N_0xa97f257d0151a6ab(mapObjectHash) end
 ---
 --- @hash [0xA97F257D0151A6AB](https://docs.fivem.net/natives/?_0xA97F257D0151A6AB)
 --- @param mapObjectHash Hash
---- @return void
---- @overload fun(mapObjectHash: Hash): void
+--- @return nil
+--- @overload fun(mapObjectHash: Hash): nil
 --- @deprecated
 function HideMapObjectThisFrame(mapObjectHash) end
 
@@ -579,8 +580,8 @@ function HideMapObjectThisFrame(mapObjectHash) end
 ---
 --- @hash [0xAF348AFCB575A441](https://docs.fivem.net/natives/?_0xAF348AFCB575A441)
 --- @param roomName string (char*)
---- @return void
---- @overload fun(roomName: string): void
+--- @return nil
+--- @overload fun(roomName: string): nil
 function N_0xaf348afcb575a441(roomName) end
 
     
@@ -603,8 +604,8 @@ function GetInteriorAtCoords(x, y, z) end
 ---
 --- @hash [0xB365FC0C4E27FFA7](https://docs.fivem.net/natives/?_0xB365FC0C4E27FFA7)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 function ClearRoomForEntity(entity) end
 
     
@@ -632,8 +633,8 @@ function IsInteriorScene() end
 --- @param interior number (int)
 --- @param entitySetName string (char*)
 --- @param color number (int)
---- @return void
---- @overload fun(interior: number, entitySetName: string, color: number): void
+--- @return nil
+--- @overload fun(interior: number, entitySetName: string, color: number): nil
 function SetInteriorEntitySetColor(interior, entitySetName, color) end
 
     
@@ -644,8 +645,8 @@ function SetInteriorEntitySetColor(interior, entitySetName, color) end
 --- @param interior number (int)
 --- @param entitySetName string (char*)
 --- @param color number (int)
---- @return void
---- @overload fun(interior: number, entitySetName: string, color: number): void
+--- @return nil
+--- @overload fun(interior: number, entitySetName: string, color: number): nil
 --- @deprecated
 function SetInteriorPropColor(interior, entitySetName, color) end
 
@@ -657,8 +658,8 @@ function SetInteriorPropColor(interior, entitySetName, color) end
 --- @hash [0xD9175F941610DB54](https://docs.fivem.net/natives/?_0xD9175F941610DB54)
 --- @param interiorID number (int)
 --- @param toggle boolean
---- @return void
---- @overload fun(interiorID: number, toggle: boolean): void
+--- @return nil
+--- @overload fun(interiorID: number, toggle: boolean): nil
 function CapInterior(interiorID, toggle) end
 
     

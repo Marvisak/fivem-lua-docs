@@ -1,3 +1,4 @@
+--- @meta
 
 --- AppGetFloat
 ---
@@ -13,8 +14,8 @@ function AppGetFloat(property) end
 --- @hash [0x25D7687C68E0DAA4](https://docs.fivem.net/natives/?_0x25D7687C68E0DAA4)
 --- @param property string (char*)
 --- @param value number (float)
---- @return void
---- @overload fun(property: string, value: number): void
+--- @return nil
+--- @overload fun(property: string, value: number): nil
 function AppSetFloat(property, value) end
 
     
@@ -22,8 +23,8 @@ function AppSetFloat(property, value) end
 ---
 --- @hash [0x262AB456A3D21F93](https://docs.fivem.net/natives/?_0x262AB456A3D21F93)
 --- @param blockName string (char*)
---- @return void
---- @overload fun(blockName: string): void
+--- @return nil
+--- @overload fun(blockName: string): nil
 function AppSetBlock(blockName) end
 
     
@@ -32,8 +33,8 @@ function AppSetBlock(blockName) end
 --- @hash [0x3FF2FCEC4B7721B4](https://docs.fivem.net/natives/?_0x3FF2FCEC4B7721B4)
 --- @param property string (char*)
 --- @param value string (char*)
---- @return void
---- @overload fun(property: string, value: string): void
+--- @return nil
+--- @overload fun(property: string, value: string): nil
 function AppSetString(property, value) end
 
     
@@ -50,8 +51,8 @@ function AppDeleteAppData(appName) end
 ---
 --- @hash [0x5FE1DF3342DB7DBA](https://docs.fivem.net/natives/?_0x5FE1DF3342DB7DBA)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function AppClearBlock() end
 
     
@@ -60,8 +61,8 @@ function AppClearBlock() end
 --- @hash [0x607E8E3D3E4F9611](https://docs.fivem.net/natives/?_0x607E8E3D3E4F9611)
 --- @param property string (char*)
 --- @param value number (int)
---- @return void
---- @overload fun(property: string, value: number): void
+--- @return nil
+--- @overload fun(property: string, value: number): nil
 function AppSetInt(property, value) end
 
     
@@ -96,8 +97,8 @@ function AppDataValid() end
 ---
 --- @hash [0x95C5D356CDA6E85F](https://docs.fivem.net/natives/?_0x95C5D356CDA6E85F)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function AppSaveData() end
 
     
@@ -127,8 +128,8 @@ function AppHasSyncedData(appName) end
 ---
 --- @hash [0xCFD0406ADAF90D2B](https://docs.fivem.net/natives/?_0xCFD0406ADAF90D2B)
 --- @param appName string (char*)
---- @return void
---- @overload fun(appName: string): void
+--- @return nil
+--- @overload fun(appName: string): nil
 function AppSetApp(appName) end
 
     
@@ -145,8 +146,8 @@ function AppGetInt(property) end
 ---
 --- @hash [0xE41C65E07A5F05FC](https://docs.fivem.net/natives/?_0xE41C65E07A5F05FC)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function AppCloseApp() end
 
     
@@ -154,8 +155,8 @@ function AppCloseApp() end
 ---
 --- @hash [0xE8E3FCF72EAC0EF8](https://docs.fivem.net/natives/?_0xE8E3FCF72EAC0EF8)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function AppCloseBlock() end
 
     

@@ -1,3 +1,4 @@
+--- @meta
 
 --- ```
 --- formerly called _GET_CONTROL_ACTION_NAME incorrectly  
@@ -116,8 +117,8 @@ function IsInputJustDisabled(padIndex) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 function N_0x14d29bb12d47f68c(p0, p1, p2, p3, p4) end
 
     
@@ -212,8 +213,8 @@ function IsDisabledControlJustReleased(padIndex, control) end
 --- @param padIndex number (int)
 --- @param control number (int)
 --- @param enable boolean
---- @return void
---- @overload fun(padIndex: number, control: number, enable: boolean): void
+--- @return nil
+--- @overload fun(padIndex: number, control: number, enable: boolean): nil
 function EnableControlAction(padIndex, control, enable) end
 
     
@@ -221,8 +222,8 @@ function EnableControlAction(padIndex, control, enable) end
 ---
 --- @hash [0x38C16A305E8CDC8D](https://docs.fivem.net/natives/?_0x38C16A305E8CDC8D)
 --- @param padIndex number (int)
---- @return void
---- @overload fun(padIndex: number): void
+--- @return nil
+--- @overload fun(padIndex: number): nil
 function StopPadShake(padIndex) end
 
     
@@ -292,8 +293,8 @@ function N_0x4683149ed1dde7a1(name) end
 --- @param padIndex number (int)
 --- @param duration number (int)
 --- @param frequency number (int)
---- @return void
---- @overload fun(padIndex: number, duration: number, frequency: number): void
+--- @return nil
+--- @overload fun(padIndex: number, duration: number, frequency: number): nil
 function SetPadShake(padIndex, duration, frequency) end
 
     
@@ -367,8 +368,8 @@ function N_0x59b9a7af4c95133c() end
 ---
 --- @hash [0x5B73C77D9EB66E24](https://docs.fivem.net/natives/?_0x5B73C77D9EB66E24)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0x5b73c77d9eb66e24(p0) end
 
     
@@ -402,8 +403,8 @@ function N_0x5b84d09cec5209c5(padIndex, control) end
 ---
 --- @hash [0x5F4B6931816E599B](https://docs.fivem.net/natives/?_0x5F4B6931816E599B)
 --- @param padIndex number (int)
---- @return void
---- @overload fun(padIndex: number): void
+--- @return nil
+--- @overload fun(padIndex: number): nil
 function DisableAllControlActions(padIndex) end
 
     
@@ -413,8 +414,8 @@ function DisableAllControlActions(padIndex) end
 ---
 --- @hash [0x643ED62D5EA3BEBD](https://docs.fivem.net/natives/?_0x643ED62D5EA3BEBD)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function ResetInputMappingScheme() end
 
     
@@ -425,8 +426,8 @@ function ResetInputMappingScheme() end
 ---
 --- @hash [0x643ED62D5EA3BEBD](https://docs.fivem.net/natives/?_0x643ED62D5EA3BEBD)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x643ed62d5ea3bebd() end
 
@@ -463,8 +464,8 @@ function IsLookInverted() end
 ---
 --- @hash [0x798FDEB5B1575088](https://docs.fivem.net/natives/?_0x798FDEB5B1575088)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetPlayerpadShakesWhenControllerDisabled(toggle) end
 
     
@@ -472,8 +473,8 @@ function SetPlayerpadShakesWhenControllerDisabled(toggle) end
 ---
 --- @hash [0x7F4724035FDCA1DD](https://docs.fivem.net/natives/?_0x7F4724035FDCA1DD)
 --- @param padIndex number (int)
---- @return void
---- @overload fun(padIndex: number): void
+--- @return nil
+--- @overload fun(padIndex: number): nil
 function DisableInputGroup(padIndex) end
 
     
@@ -482,8 +483,8 @@ function DisableInputGroup(padIndex) end
 ---
 --- @hash [0x7F4724035FDCA1DD](https://docs.fivem.net/natives/?_0x7F4724035FDCA1DD)
 --- @param padIndex number (int)
---- @return void
---- @overload fun(padIndex: number): void
+--- @return nil
+--- @overload fun(padIndex: number): nil
 --- @deprecated
 function N_0x7f4724035fdca1dd(padIndex) end
 
@@ -519,8 +520,8 @@ function N_0x80c2fd58d720c801(padIndex, controlGroup, p2) end
 --- @param red number (int)
 --- @param green number (int)
 --- @param blue number (int)
---- @return void
---- @overload fun(padIndex: number, red: number, green: number, blue: number): void
+--- @return nil
+--- @overload fun(padIndex: number, red: number, green: number, blue: number): nil
 function SetControlLightEffectColor(padIndex, red, green, blue) end
 
     
@@ -532,8 +533,8 @@ function SetControlLightEffectColor(padIndex, red, green, blue) end
 --- @param red number (int)
 --- @param green number (int)
 --- @param blue number (int)
---- @return void
---- @overload fun(padIndex: number, red: number, green: number, blue: number): void
+--- @return nil
+--- @overload fun(padIndex: number, red: number, green: number, blue: number): nil
 --- @deprecated
 function N_0x8290252fff36acb5(padIndex, red, green, blue) end
 
@@ -546,8 +547,8 @@ function N_0x8290252fff36acb5(padIndex, red, green, blue) end
 --- @param red number (int)
 --- @param green number (int)
 --- @param blue number (int)
---- @return void
---- @overload fun(padIndex: number, red: number, green: number, blue: number): void
+--- @return nil
+--- @overload fun(padIndex: number, red: number, green: number, blue: number): nil
 --- @deprecated
 function SetControlGroupColor(padIndex, red, green, blue) end
 
@@ -566,8 +567,8 @@ function IsDisabledControlJustPressed(padIndex, control) end
 ---
 --- @hash [0xA0CEFCEA390AAB9B](https://docs.fivem.net/natives/?_0xA0CEFCEA390AAB9B)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xa0cefcea390aab9b(p0) end
 
     
@@ -611,8 +612,8 @@ function IsInputDisabled(padIndex) end
 ---
 --- @hash [0xA5FFE9B05F199DE7](https://docs.fivem.net/natives/?_0xA5FFE9B05F199DE7)
 --- @param padIndex number (int)
---- @return void
---- @overload fun(padIndex: number): void
+--- @return nil
+--- @overload fun(padIndex: number): nil
 function EnableAllControlActions(padIndex) end
 
     
@@ -629,8 +630,8 @@ function GetLocalPlayerAimState() end
 ---
 --- @hash [0xCB0360EFEFB2580D](https://docs.fivem.net/natives/?_0xCB0360EFEFB2580D)
 --- @param padIndex number (int)
---- @return void
---- @overload fun(padIndex: number): void
+--- @return nil
+--- @overload fun(padIndex: number): nil
 function N_0xcb0360efefb2580d(padIndex) end
 
     
@@ -740,8 +741,8 @@ function GetControlNormal(padIndex, control) end
 --- @hash [0xEDE476E5EE29EDB1](https://docs.fivem.net/natives/?_0xEDE476E5EE29EDB1)
 --- @param padIndex number (int)
 --- @param control number (int)
---- @return void
---- @overload fun(padIndex: number, control: number): void
+--- @return nil
+--- @overload fun(padIndex: number, control: number): nil
 function SetInputExclusive(padIndex, control) end
 
     
@@ -750,8 +751,8 @@ function SetInputExclusive(padIndex, control) end
 --- @hash [0xF239400E16C23E08](https://docs.fivem.net/natives/?_0xF239400E16C23E08)
 --- @param padIndex number (int)
 --- @param p1 number (int)
---- @return void
---- @overload fun(padIndex: number, p1: number): void
+--- @return nil
+--- @overload fun(padIndex: number, p1: number): nil
 function N_0xf239400e16c23e08(padIndex, p1) end
 
     
@@ -842,8 +843,8 @@ function N_0xfc859e2374407556() end
 --- @param padIndex number (int)
 --- @param control number (int)
 --- @param disable boolean
---- @return void
---- @overload fun(padIndex: number, control: number, disable: boolean): void
+--- @return nil
+--- @overload fun(padIndex: number, control: number, disable: boolean): nil
 function DisableControlAction(padIndex, control, disable) end
 
     

@@ -1,3 +1,4 @@
+--- @meta
 
 --- ```
 --- Stops recording and saves the recorded clip.  
@@ -5,8 +6,8 @@
 ---
 --- @hash [0x071A5197D6AFC8B3](https://docs.fivem.net/natives/?_0x071A5197D6AFC8B3)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function StopRecordingAndSaveClip() end
 
     
@@ -17,8 +18,8 @@ function StopRecordingAndSaveClip() end
 ---
 --- @hash [0x071A5197D6AFC8B3](https://docs.fivem.net/natives/?_0x071A5197D6AFC8B3)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function StopRecording() end
 
@@ -27,8 +28,8 @@ function StopRecording() end
 ---
 --- @hash [0x13B350B8AD0EEE10](https://docs.fivem.net/natives/?_0x13B350B8AD0EEE10)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x13b350b8ad0eee10() end
 
     
@@ -54,8 +55,8 @@ function IsRecording() end
 --- @hash [0x208784099002BC30](https://docs.fivem.net/natives/?_0x208784099002BC30)
 --- @param missionNameLabel string (char*)
 --- @param p1 any
---- @return void
---- @overload fun(missionNameLabel: string, p1: any): void
+--- @return nil
+--- @overload fun(missionNameLabel: string, p1: any): nil
 function N_0x208784099002bc30(missionNameLabel, p1) end
 
     
@@ -65,8 +66,8 @@ function N_0x208784099002bc30(missionNameLabel, p1) end
 --- @param p0 number (float)
 --- @param p1 number (float)
 --- @param p2 number (int)
---- @return void
---- @overload fun(p0: number, p1: number, p2: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: number, p2: number): nil
 function N_0x293220da1b46cebc(p0, p1, p2) end
 
     
@@ -92,8 +93,8 @@ function N_0x4282e08174868be3() end
 ---
 --- @hash [0x48621C9FCA3EBD28](https://docs.fivem.net/natives/?_0x48621C9FCA3EBD28)
 --- @param p0 number (int)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function N_0x48621c9fca3ebd28(p0) end
 
     
@@ -123,8 +124,8 @@ function N_0x644546ec5287471b() end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function N_0x66972397e0757e7a(p0, p1, p2) end
 
     
@@ -132,8 +133,8 @@ function N_0x66972397e0757e7a(p0, p1, p2) end
 ---
 --- @hash [0x81CBAE94390F9F89](https://docs.fivem.net/natives/?_0x81CBAE94390F9F89)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x81cbae94390f9f89() end
 
     
@@ -143,8 +144,8 @@ function N_0x81cbae94390f9f89() end
 ---
 --- @hash [0x88BB3507ED41A240](https://docs.fivem.net/natives/?_0x88BB3507ED41A240)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function StopRecordingAndDiscardClip() end
 
     
@@ -155,8 +156,8 @@ function StopRecordingAndDiscardClip() end
 ---
 --- @hash [0x88BB3507ED41A240](https://docs.fivem.net/natives/?_0x88BB3507ED41A240)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x88bb3507ed41a240() end
 
@@ -169,8 +170,8 @@ function N_0x88bb3507ed41a240() end
 ---
 --- @hash [0xAF66DCEE6609B148](https://docs.fivem.net/natives/?_0xAF66DCEE6609B148)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function DisableRockstarEditorCameraChanges() end
 
     
@@ -183,8 +184,8 @@ function DisableRockstarEditorCameraChanges() end
 ---
 --- @hash [0xAF66DCEE6609B148](https://docs.fivem.net/natives/?_0xAF66DCEE6609B148)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xaf66dcee6609b148() end
 
@@ -198,8 +199,8 @@ function N_0xaf66dcee6609b148() end
 ---
 --- @hash [0xC3AC2FFF9612AC81](https://docs.fivem.net/natives/?_0xC3AC2FFF9612AC81)
 --- @param mode number (int)
---- @return void
---- @overload fun(mode: number): void
+--- @return nil
+--- @overload fun(mode: number): nil
 function StartRecording(mode) end
 
     
@@ -213,8 +214,8 @@ function StartRecording(mode) end
 ---
 --- @hash [0xC3AC2FFF9612AC81](https://docs.fivem.net/natives/?_0xC3AC2FFF9612AC81)
 --- @param mode number (int)
---- @return void
---- @overload fun(mode: number): void
+--- @return nil
+--- @overload fun(mode: number): nil
 --- @deprecated
 function N_0xc3ac2fff9612ac81(mode) end
 
@@ -232,8 +233,8 @@ function N_0xdf4b952f7d381b95() end
 ---
 --- @hash [0xEB2D525B57F42B40](https://docs.fivem.net/natives/?_0xEB2D525B57F42B40)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function StopRecordingThisFrame() end
 
     
@@ -242,8 +243,8 @@ function StopRecordingThisFrame() end
 ---
 --- @hash [0xEB2D525B57F42B40](https://docs.fivem.net/natives/?_0xEB2D525B57F42B40)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xeb2d525b57f42b40() end
 
@@ -252,8 +253,8 @@ function N_0xeb2d525b57f42b40() end
 ---
 --- @hash [0xF854439EFBB3B583](https://docs.fivem.net/natives/?_0xF854439EFBB3B583)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xf854439efbb3b583() end
 
     

@@ -1,3 +1,4 @@
+--- @meta
 
 --- IsGameplayCamShaking
 ---
@@ -14,8 +15,8 @@ function IsGameplayCamShaking() end
 ---
 --- @hash [0x0225778816FDC28C](https://docs.fivem.net/natives/?_0x0225778816FDC28C)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function N_0x0225778816fdc28c(p0) end
 
     
@@ -26,8 +27,8 @@ function N_0x0225778816fdc28c(p0) end
 --- @hash [0x026FB97D0A425F84](https://docs.fivem.net/natives/?_0x026FB97D0A425F84)
 --- @param cam Cam
 --- @param active boolean
---- @return void
---- @overload fun(cam: Cam, active: boolean): void
+--- @return nil
+--- @overload fun(cam: Cam, active: boolean): nil
 function SetCamActive(cam, active) end
 
     
@@ -87,8 +88,8 @@ function GetCamDofStrength(cam) end
 --- @param easeTime number (int)
 --- @param p3 boolean
 --- @param p4 boolean
---- @return void
---- @overload fun(render: boolean, ease: boolean, easeTime: number, p3: boolean, p4: boolean): void
+--- @return nil
+--- @overload fun(render: boolean, ease: boolean, easeTime: number, p3: boolean, p4: boolean): nil
 function RenderScriptCams(render, ease, easeTime, p3, p4) end
 
     
@@ -99,8 +100,8 @@ function RenderScriptCams(render, ease, easeTime, p3, p4) end
 --- @param cam2 Cam
 --- @param p2 number (int)
 --- @param p3 number (int)
---- @return void
---- @overload fun(cam: Cam, cam2: Cam, p2: number, p3: number): void
+--- @return nil
+--- @overload fun(cam: Cam, cam2: Cam, p2: number, p3: number): nil
 function AddCamSplineNodeUsingCameraFrame(cam, cam2, p2, p3) end
 
     
@@ -112,8 +113,8 @@ function AddCamSplineNodeUsingCameraFrame(cam, cam2, p2, p3) end
 --- @param cam2 Cam
 --- @param p2 number (int)
 --- @param p3 number (int)
---- @return void
---- @overload fun(cam: Cam, cam2: Cam, p2: number, p3: number): void
+--- @return nil
+--- @overload fun(cam: Cam, cam2: Cam, p2: number, p3: number): nil
 --- @deprecated
 function N_0x0a9f2a468b328e74(cam, cam2, p2, p3) end
 
@@ -122,8 +123,8 @@ function N_0x0a9f2a468b328e74(cam, cam2, p2, p3) end
 ---
 --- @hash [0x0AA27680A0BD43FA](https://docs.fivem.net/natives/?_0x0AA27680A0BD43FA)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x0aa27680a0bd43fa() end
 
     
@@ -131,8 +132,8 @@ function N_0x0aa27680a0bd43fa() end
 ---
 --- @hash [0x0AF7B437918103B3](https://docs.fivem.net/natives/?_0x0AF7B437918103B3)
 --- @param distance number (float)
---- @return void
---- @overload fun(distance: number): void
+--- @return nil
+--- @overload fun(distance: number): nil
 function SetFirstPersonAimCamNearClipThisUpdate(distance) end
 
     
@@ -141,8 +142,8 @@ function SetFirstPersonAimCamNearClipThisUpdate(distance) end
 ---
 --- @hash [0x0AF7B437918103B3](https://docs.fivem.net/natives/?_0x0AF7B437918103B3)
 --- @param distance number (float)
---- @return void
---- @overload fun(distance: number): void
+--- @return nil
+--- @overload fun(distance: number): nil
 --- @deprecated
 function N_0x0af7b437918103b3(distance) end
 
@@ -152,8 +153,8 @@ function N_0x0af7b437918103b3(distance) end
 ---
 --- @hash [0x0AF7B437918103B3](https://docs.fivem.net/natives/?_0x0AF7B437918103B3)
 --- @param distance number (float)
---- @return void
---- @overload fun(distance: number): void
+--- @return nil
+--- @overload fun(distance: number): nil
 --- @deprecated
 function SetFirstPersonCamNearClip(distance) end
 
@@ -162,8 +163,8 @@ function SetFirstPersonCamNearClip(distance) end
 ---
 --- @hash [0x0EF93E9F3D08C178](https://docs.fivem.net/natives/?_0x0EF93E9F3D08C178)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function StopGameplayCamShaking(p0) end
 
     
@@ -174,8 +175,8 @@ function StopGameplayCamShaking(p0) end
 --- @param cam2 Cam
 --- @param length number (int)
 --- @param p3 number (int)
---- @return void
---- @overload fun(cam: Cam, cam2: Cam, length: number, p3: number): void
+--- @return nil
+--- @overload fun(cam: Cam, cam2: Cam, length: number, p3: number): nil
 function AddCamSplineNodeUsingCamera(cam, cam2, length, p3) end
 
     
@@ -187,8 +188,8 @@ function AddCamSplineNodeUsingCamera(cam, cam2, length, p3) end
 --- @param cam2 Cam
 --- @param length number (int)
 --- @param p3 number (int)
---- @return void
---- @overload fun(cam: Cam, cam2: Cam, length: number, p3: number): void
+--- @return nil
+--- @overload fun(cam: Cam, cam2: Cam, length: number, p3: number): nil
 --- @deprecated
 function N_0x0fb82563989cf4fb(cam, cam2, length, p3) end
 
@@ -203,8 +204,8 @@ function N_0x0fb82563989cf4fb(cam, cam2, length, p3) end
 ---
 --- @hash [0x103991D4A307D472](https://docs.fivem.net/natives/?_0x103991D4A307D472)
 --- @param yaw number (float)
---- @return void
---- @overload fun(yaw: number): void
+--- @return nil
+--- @overload fun(yaw: number): nil
 function SetGameplayCamRawYaw(yaw) end
 
     
@@ -212,8 +213,8 @@ function SetGameplayCamRawYaw(yaw) end
 ---
 --- @hash [0x11FA5D3479C7DD47](https://docs.fivem.net/natives/?_0x11FA5D3479C7DD47)
 --- @param vehicleModel Hash
---- @return void
---- @overload fun(vehicleModel: Hash): void
+--- @return nil
+--- @overload fun(vehicleModel: Hash): nil
 function SetGameplayCamVehicleCameraName(vehicleModel) end
 
     
@@ -222,8 +223,8 @@ function SetGameplayCamVehicleCameraName(vehicleModel) end
 ---
 --- @hash [0x11FA5D3479C7DD47](https://docs.fivem.net/natives/?_0x11FA5D3479C7DD47)
 --- @param vehicleModel Hash
---- @return void
---- @overload fun(vehicleModel: Hash): void
+--- @return nil
+--- @overload fun(vehicleModel: Hash): nil
 --- @deprecated
 function N_0x11fa5d3479c7dd47(vehicleModel) end
 
@@ -234,8 +235,8 @@ function N_0x11fa5d3479c7dd47(vehicleModel) end
 ---
 --- @hash [0x12DED8CA53D47EA5](https://docs.fivem.net/natives/?_0x12DED8CA53D47EA5)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function N_0x12ded8ca53d47ea5(p0) end
 
     
@@ -246,8 +247,8 @@ function N_0x12ded8ca53d47ea5(p0) end
 --- @hash [0x1381539FEE034CDA](https://docs.fivem.net/natives/?_0x1381539FEE034CDA)
 --- @param cam Cam
 --- @param timeDuration number (int)
---- @return void
---- @overload fun(cam: Cam, timeDuration: number): void
+--- @return nil
+--- @overload fun(cam: Cam, timeDuration: number): nil
 function SetCamSplineDuration(cam, timeDuration) end
 
     
@@ -266,8 +267,8 @@ function SetCamSplineDuration(cam, timeDuration) end
 --- @param p7 number (float)
 --- @param p8 number (float)
 --- @param p9 boolean
---- @return void
---- @overload fun(cam: Cam, ped: Ped, boneIndex: number, p3: number, p4: number, p5: number, p6: number, p7: number, p8: number, p9: boolean): void
+--- @return nil
+--- @overload fun(cam: Cam, ped: Ped, boneIndex: number, p3: number, p4: number, p5: number, p6: number, p7: number, p8: number, p9: boolean): nil
 function AttachCamToPedBone_2(cam, ped, boneIndex, p3, p4, p5, p6, p7, p8, p9) end
 
     
@@ -316,8 +317,8 @@ function GetGameplayCamFarClip_2() end
 --- @hash [0x16A96863A17552BB](https://docs.fivem.net/natives/?_0x16A96863A17552BB)
 --- @param cam Cam
 --- @param toggle boolean
---- @return void
---- @overload fun(cam: Cam, toggle: boolean): void
+--- @return nil
+--- @overload fun(cam: Cam, toggle: boolean): nil
 function SetCamUseShallowDofMode(cam, toggle) end
 
     
@@ -325,8 +326,8 @@ function SetCamUseShallowDofMode(cam, toggle) end
 ---
 --- @hash [0x17FCA7199A530203](https://docs.fivem.net/natives/?_0x17FCA7199A530203)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x17fca7199a530203() end
 
     
@@ -344,8 +345,8 @@ function N_0x17fca7199a530203() end
 --- @param p6 number (int)
 --- @param p7 number (int)
 --- @param p8 any
---- @return void
---- @overload fun(entity: Entity, xOffset: number, yOffset: number, zOffset: number, p4: boolean, p5: number, p6: number, p7: number, p8: any): void
+--- @return nil
+--- @overload fun(entity: Entity, xOffset: number, yOffset: number, zOffset: number, p4: boolean, p5: number, p6: number, p7: number, p8: any): nil
 function SetGameplayEntityHint(entity, xOffset, yOffset, zOffset, p4, p5, p6, p7, p8) end
 
     
@@ -353,8 +354,8 @@ function SetGameplayEntityHint(entity, xOffset, yOffset, zOffset, p4, p5, p6, p7
 ---
 --- @hash [0x19464CB6E4078C8A](https://docs.fivem.net/natives/?_0x19464CB6E4078C8A)
 --- @param zoomLevel number (int)
---- @return void
---- @overload fun(zoomLevel: number): void
+--- @return nil
+--- @overload fun(zoomLevel: number): nil
 function SetFollowVehicleCamZoomLevel(zoomLevel) end
 
     
@@ -408,8 +409,8 @@ function N_0x19cafa3c87f7c2ff() end
 ---
 --- @hash [0x1A31FE0049E542F6](https://docs.fivem.net/natives/?_0x1A31FE0049E542F6)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function DisableAimCamThisUpdate() end
 
     
@@ -418,8 +419,8 @@ function DisableAimCamThisUpdate() end
 ---
 --- @hash [0x1A31FE0049E542F6](https://docs.fivem.net/natives/?_0x1A31FE0049E542F6)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x1a31fe0049e542f6() end
 
@@ -431,8 +432,8 @@ function N_0x1a31fe0049e542f6() end
 --- @hash [0x1B93E0107865DD40](https://docs.fivem.net/natives/?_0x1B93E0107865DD40)
 --- @param camera Cam
 --- @param name string (char*)
---- @return void
---- @overload fun(camera: Cam, name: string): void
+--- @return nil
+--- @overload fun(camera: Cam, name: string): nil
 function SetCamDebugName(camera, name) end
 
     
@@ -445,8 +446,8 @@ function SetCamDebugName(camera, name) end
 ---
 --- @hash [0x1C9D7949FA533490](https://docs.fivem.net/natives/?_0x1C9D7949FA533490)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function StopScriptGlobalShaking(p0) end
 
     
@@ -460,8 +461,8 @@ function StopScriptGlobalShaking(p0) end
 ---
 --- @hash [0x1C9D7949FA533490](https://docs.fivem.net/natives/?_0x1C9D7949FA533490)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 --- @deprecated
 function N_0x1c9d7949fa533490(p0) end
 
@@ -489,8 +490,8 @@ function N_0x1f2300cb7fa7b7f6() end
 --- @param p6 any
 --- @param p7 any
 --- @param p8 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any): nil
 function N_0x202a5ed9ce01d6e7(p0, p1, p2, p3, p4, p5, p6, p7, p8) end
 
     
@@ -503,8 +504,8 @@ function N_0x202a5ed9ce01d6e7(p0, p1, p2, p3, p4, p5, p6, p7, p8) end
 ---
 --- @hash [0x21E253A7F8DA5DFB](https://docs.fivem.net/natives/?_0x21E253A7F8DA5DFB)
 --- @param vehicleName string (char*)
---- @return void
---- @overload fun(vehicleName: string): void
+--- @return nil
+--- @overload fun(vehicleName: string): nil
 function SetGameplayCamVehicleCamera(vehicleName) end
 
     
@@ -518,8 +519,8 @@ function SetGameplayCamVehicleCamera(vehicleName) end
 ---
 --- @hash [0x21E253A7F8DA5DFB](https://docs.fivem.net/natives/?_0x21E253A7F8DA5DFB)
 --- @param vehicleName string (char*)
---- @return void
---- @overload fun(vehicleName: string): void
+--- @return nil
+--- @overload fun(vehicleName: string): nil
 --- @deprecated
 function N_0x21e253a7f8da5dfb(vehicleName) end
 
@@ -528,8 +529,8 @@ function N_0x21e253a7f8da5dfb(vehicleName) end
 ---
 --- @hash [0x2238E588E588A6D7](https://docs.fivem.net/natives/?_0x2238E588E588A6D7)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function StopCinematicCamShaking(p0) end
 
     
@@ -538,8 +539,8 @@ function StopCinematicCamShaking(p0) end
 --- @hash [0x242B5874F0A4E052](https://docs.fivem.net/natives/?_0x242B5874F0A4E052)
 --- @param cam Cam
 --- @param p1 number (float)
---- @return void
---- @overload fun(cam: Cam, p1: number): void
+--- @return nil
+--- @overload fun(cam: Cam, p1: number): nil
 function SetCamSplinePhase(cam, p1) end
 
     
@@ -547,8 +548,8 @@ function SetCamSplinePhase(cam, p1) end
 ---
 --- @hash [0x247ACBC4ABBC9D1C](https://docs.fivem.net/natives/?_0x247ACBC4ABBC9D1C)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0x247acbc4abbc9d1c(p0) end
 
     
@@ -588,8 +589,8 @@ function N_0x26903d9cd1175f2c(player, rotationOrder) end
 --- @hash [0x271017B9BA825366](https://docs.fivem.net/natives/?_0x271017B9BA825366)
 --- @param p0 any
 --- @param p1 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean): nil
 function N_0x271017b9ba825366(p0, p1) end
 
     
@@ -598,8 +599,8 @@ function N_0x271017b9ba825366(p0, p1) end
 --- @hash [0x271401846BD26E92](https://docs.fivem.net/natives/?_0x271401846BD26E92)
 --- @param p0 boolean
 --- @param p1 boolean
---- @return void
---- @overload fun(p0: boolean, p1: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean, p1: boolean): nil
 function N_0x271401846bd26e92(p0, p1) end
 
     
@@ -612,8 +613,8 @@ function N_0x271401846bd26e92(p0, p1) end
 --- @hash [0x28B022A17B068A3A](https://docs.fivem.net/natives/?_0x28B022A17B068A3A)
 --- @param p0 number (float)
 --- @param p1 number (float)
---- @return void
---- @overload fun(p0: number, p1: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: number): nil
 function N_0x28b022a17b068a3a(p0, p1) end
 
     
@@ -622,8 +623,8 @@ function N_0x28b022a17b068a3a(p0, p1) end
 --- @hash [0x2A2173E46DAECD12](https://docs.fivem.net/natives/?_0x2A2173E46DAECD12)
 --- @param context number (int)
 --- @param viewMode number (int)
---- @return void
---- @overload fun(context: number, viewMode: number): void
+--- @return nil
+--- @overload fun(context: number, viewMode: number): nil
 function SetCamViewModeForContext(context, viewMode) end
 
     
@@ -633,8 +634,8 @@ function SetCamViewModeForContext(context, viewMode) end
 --- @hash [0x2A2173E46DAECD12](https://docs.fivem.net/natives/?_0x2A2173E46DAECD12)
 --- @param context number (int)
 --- @param viewMode number (int)
---- @return void
---- @overload fun(context: number, viewMode: number): void
+--- @return nil
+--- @overload fun(context: number, viewMode: number): nil
 --- @deprecated
 function N_0x2a2173e46daecd12(context, viewMode) end
 
@@ -643,8 +644,8 @@ function N_0x2a2173e46daecd12(context, viewMode) end
 ---
 --- @hash [0x2AED6301F67007D5](https://docs.fivem.net/natives/?_0x2AED6301F67007D5)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 function DisableCamCollisionForEntity(entity) end
 
     
@@ -653,8 +654,8 @@ function DisableCamCollisionForEntity(entity) end
 ---
 --- @hash [0x2AED6301F67007D5](https://docs.fivem.net/natives/?_0x2AED6301F67007D5)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 --- @deprecated
 function N_0x2aed6301f67007d5(entity) end
 
@@ -670,8 +671,8 @@ function N_0x2aed6301f67007d5(entity) end
 --- @param duration number (int)
 --- @param blendOutDuration number (int)
 --- @param blendInDuration number (int)
---- @return void
---- @overload fun(p0: Ped, x1: number, y1: number, z1: number, p4: boolean, duration: number, blendOutDuration: number, blendInDuration: number): void
+--- @return nil
+--- @overload fun(p0: Ped, x1: number, y1: number, z1: number, p4: boolean, duration: number, blendOutDuration: number, blendInDuration: number): nil
 function SetGameplayPedHint(p0, x1, y1, z1, p4, duration, blendOutDuration, blendInDuration) end
 
     
@@ -682,8 +683,8 @@ function SetGameplayPedHint(p0, x1, y1, z1, p4, duration, blendOutDuration, blen
 --- @hash [0x2C654B4943BDDF7C](https://docs.fivem.net/natives/?_0x2C654B4943BDDF7C)
 --- @param camera Cam
 --- @param p1 number (float)
---- @return void
---- @overload fun(camera: Cam, p1: number): void
+--- @return nil
+--- @overload fun(camera: Cam, p1: number): nil
 function SetCamDofMaxNearInFocusDistanceBlendLevel(camera, p1) end
 
     
@@ -695,8 +696,8 @@ function SetCamDofMaxNearInFocusDistanceBlendLevel(camera, p1) end
 --- @hash [0x2C654B4943BDDF7C](https://docs.fivem.net/natives/?_0x2C654B4943BDDF7C)
 --- @param camera Cam
 --- @param p1 number (float)
---- @return void
---- @overload fun(camera: Cam, p1: number): void
+--- @return nil
+--- @overload fun(camera: Cam, p1: number): nil
 --- @deprecated
 function N_0x2c654b4943bddf7c(camera, p1) end
 
@@ -706,8 +707,8 @@ function N_0x2c654b4943bddf7c(camera, p1) end
 --- @hash [0x2F7F2B26DD3F18EE](https://docs.fivem.net/natives/?_0x2F7F2B26DD3F18EE)
 --- @param p0 number (float)
 --- @param p1 number (float)
---- @return void
---- @overload fun(p0: number, p1: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: number): nil
 function N_0x2f7f2b26dd3f18ee(p0, p1) end
 
     
@@ -726,8 +727,8 @@ function N_0x3044240d2e0fa842() end
 ---
 --- @hash [0x324C5AA411DA7737](https://docs.fivem.net/natives/?_0x324C5AA411DA7737)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x324c5aa411da7737(p0) end
 
     
@@ -746,8 +747,8 @@ function GetFollowPedCamZoomLevel() end
 ---
 --- @hash [0x380B4968D1E09E55](https://docs.fivem.net/natives/?_0x380B4968D1E09E55)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x380b4968d1e09e55() end
 
     
@@ -784,8 +785,8 @@ function GetGameplayCamRelativePitch() end
 --- @param p2 number (float)
 --- @param p3 number (float)
 --- @param p4 number (float)
---- @return void
---- @overload fun(cam: Cam, p1: number, p2: number, p3: number, p4: number): void
+--- @return nil
+--- @overload fun(cam: Cam, p1: number, p2: number, p3: number, p4: number): nil
 function SetCamDofPlanes(cam, p1, p2, p3, p4) end
 
     
@@ -794,8 +795,8 @@ function SetCamDofPlanes(cam, p1, p2, p3, p4) end
 --- @hash [0x3FA4BF0A7AB7DE2C](https://docs.fivem.net/natives/?_0x3FA4BF0A7AB7DE2C)
 --- @param cam Cam
 --- @param nearDOF number (float)
---- @return void
---- @overload fun(cam: Cam, nearDOF: number): void
+--- @return nil
+--- @overload fun(cam: Cam, nearDOF: number): nil
 function SetCamNearDof(cam, nearDOF) end
 
     
@@ -803,8 +804,8 @@ function SetCamNearDof(cam, nearDOF) end
 ---
 --- @hash [0x4008EDF7D6E48175](https://docs.fivem.net/natives/?_0x4008EDF7D6E48175)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0x4008edf7d6e48175(p0) end
 
     
@@ -815,8 +816,8 @@ function N_0x4008edf7d6e48175(p0) end
 --- @param p1 number (int)
 --- @param p2 number (float)
 --- @param p3 number (float)
---- @return void
---- @overload fun(cam: Cam, p1: number, p2: number, p3: number): void
+--- @return nil
+--- @overload fun(cam: Cam, p1: number, p2: number, p3: number): nil
 function OverrideCamSplineVelocity(cam, p1, p2, p3) end
 
     
@@ -825,8 +826,8 @@ function OverrideCamSplineVelocity(cam, p1, p2, p3) end
 --- @hash [0x4145A4C44FF3B5A6](https://docs.fivem.net/natives/?_0x4145A4C44FF3B5A6)
 --- @param cam Cam
 --- @param phase number (float)
---- @return void
---- @overload fun(cam: Cam, phase: number): void
+--- @return nil
+--- @overload fun(cam: Cam, phase: number): nil
 function SetCamAnimCurrentPhase(cam, phase) end
 
     
@@ -834,8 +835,8 @@ function SetCamAnimCurrentPhase(cam, phase) end
 ---
 --- @hash [0x42156508606DE65E](https://docs.fivem.net/natives/?_0x42156508606DE65E)
 --- @param distance number (float)
---- @return void
---- @overload fun(distance: number): void
+--- @return nil
+--- @overload fun(distance: number): nil
 function SetThirdPersonAimCamNearClipThisUpdate(distance) end
 
     
@@ -844,8 +845,8 @@ function SetThirdPersonAimCamNearClipThisUpdate(distance) end
 ---
 --- @hash [0x42156508606DE65E](https://docs.fivem.net/natives/?_0x42156508606DE65E)
 --- @param distance number (float)
---- @return void
---- @overload fun(distance: number): void
+--- @return nil
+--- @overload fun(distance: number): nil
 --- @deprecated
 function N_0x42156508606de65e(distance) end
 
@@ -855,8 +856,8 @@ function N_0x42156508606de65e(distance) end
 ---
 --- @hash [0x42156508606DE65E](https://docs.fivem.net/natives/?_0x42156508606DE65E)
 --- @param distance number (float)
---- @return void
---- @overload fun(distance: number): void
+--- @return nil
+--- @overload fun(distance: number): nil
 --- @deprecated
 function SetThirdPersonAimCamNearClip(distance) end
 
@@ -871,8 +872,8 @@ function SetThirdPersonAimCamNearClip(distance) end
 ---
 --- @hash [0x425A920FDB9A0DDA](https://docs.fivem.net/natives/?_0x425A920FDB9A0DDA)
 --- @param camName string (char*)
---- @return void
---- @overload fun(camName: string): void
+--- @return nil
+--- @overload fun(camName: string): nil
 function SetGameplayCamHash(camName) end
 
     
@@ -887,8 +888,8 @@ function SetGameplayCamHash(camName) end
 ---
 --- @hash [0x425A920FDB9A0DDA](https://docs.fivem.net/natives/?_0x425A920FDB9A0DDA)
 --- @param camName string (char*)
---- @return void
---- @overload fun(camName: string): void
+--- @return nil
+--- @overload fun(camName: string): nil
 --- @deprecated
 function N_0x425a920fdb9a0dda(camName) end
 
@@ -941,8 +942,8 @@ function SetFollowPedCamCutsceneChat(camName, p1) end
 --- @hash [0x45F1DE9C34B93AE6](https://docs.fivem.net/natives/?_0x45F1DE9C34B93AE6)
 --- @param cam Cam
 --- @param p1 boolean
---- @return void
---- @overload fun(cam: Cam, p1: boolean): void
+--- @return nil
+--- @overload fun(cam: Cam, p1: boolean): nil
 function SetCamInheritRollVehicle(cam, p1) end
 
     
@@ -950,8 +951,8 @@ function SetCamInheritRollVehicle(cam, p1) end
 ---
 --- @hash [0x469F2ECDEC046337](https://docs.fivem.net/natives/?_0x469F2ECDEC046337)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0x469f2ecdec046337(p0) end
 
     
@@ -962,8 +963,8 @@ function N_0x469f2ecdec046337(p0) end
 --- @hash [0x47B595D60664CFFA](https://docs.fivem.net/natives/?_0x47B595D60664CFFA)
 --- @param camera Cam
 --- @param multiplier number (float)
---- @return void
---- @overload fun(camera: Cam, multiplier: number): void
+--- @return nil
+--- @overload fun(camera: Cam, multiplier: number): nil
 function SetCamDofFocalLengthMultiplier(camera, multiplier) end
 
     
@@ -975,8 +976,8 @@ function SetCamDofFocalLengthMultiplier(camera, multiplier) end
 --- @hash [0x47B595D60664CFFA](https://docs.fivem.net/natives/?_0x47B595D60664CFFA)
 --- @param camera Cam
 --- @param multiplier number (float)
---- @return void
---- @overload fun(camera: Cam, multiplier: number): void
+--- @return nil
+--- @overload fun(camera: Cam, multiplier: number): nil
 --- @deprecated
 function N_0x47b595d60664cffa(camera, multiplier) end
 
@@ -987,8 +988,8 @@ function N_0x47b595d60664cffa(camera, multiplier) end
 --- @param roll number (float)
 --- @param pitch number (float)
 --- @param yaw number (float)
---- @return void
---- @overload fun(roll: number, pitch: number, yaw: number): void
+--- @return nil
+--- @overload fun(roll: number, pitch: number, yaw: number): nil
 function SetGameplayCamRelativeRotation(roll, pitch, yaw) end
 
     
@@ -999,8 +1000,8 @@ function SetGameplayCamRelativeRotation(roll, pitch, yaw) end
 --- @param roll number (float)
 --- @param pitch number (float)
 --- @param yaw number (float)
---- @return void
---- @overload fun(roll: number, pitch: number, yaw: number): void
+--- @return nil
+--- @overload fun(roll: number, pitch: number, yaw: number): nil
 --- @deprecated
 function N_0x48608c3464f58ab4(roll, pitch, yaw) end
 
@@ -1022,8 +1023,8 @@ function N_0x4879e4fe39074cdf() end
 ---
 --- @hash [0x487A82C650EB7799](https://docs.fivem.net/natives/?_0x487A82C650EB7799)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function CustomMenuCoordinates(p0) end
 
     
@@ -1034,8 +1035,8 @@ function CustomMenuCoordinates(p0) end
 ---
 --- @hash [0x487A82C650EB7799](https://docs.fivem.net/natives/?_0x487A82C650EB7799)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 --- @deprecated
 function N_0x487a82c650eb7799(p0) end
 
@@ -1044,8 +1045,8 @@ function N_0x487a82c650eb7799(p0) end
 ---
 --- @hash [0x49482F9FCD825AAA](https://docs.fivem.net/natives/?_0x49482F9FCD825AAA)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 function DisableCamCollisionForObject(entity) end
 
     
@@ -1054,8 +1055,8 @@ function DisableCamCollisionForObject(entity) end
 ---
 --- @hash [0x49482F9FCD825AAA](https://docs.fivem.net/natives/?_0x49482F9FCD825AAA)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 --- @deprecated
 function N_0x49482f9fcd825aaa(entity) end
 
@@ -1069,8 +1070,8 @@ function N_0x49482f9fcd825aaa(entity) end
 --- @param posX number (float)
 --- @param posY number (float)
 --- @param posZ number (float)
---- @return void
---- @overload fun(cam: Cam, posX: number, posY: number, posZ: number): void
+--- @return nil
+--- @overload fun(cam: Cam, posX: number, posY: number, posZ: number): nil
 function SetCamCoord(cam, posX, posY, posZ) end
 
     
@@ -1101,8 +1102,8 @@ function N_0x4f32c0d5a90a9b40() end
 --- @param p1 number (float)
 --- @param p2 number (float)
 --- @param p3 number (float)
---- @return void
---- @overload fun(cam: Cam, p1: number, p2: number, p3: number): void
+--- @return nil
+--- @overload fun(cam: Cam, p1: number, p2: number, p3: number): nil
 function SetFlyCamHorizontalResponse(cam, p1, p2, p3) end
 
     
@@ -1114,8 +1115,8 @@ function SetFlyCamHorizontalResponse(cam, p1, p2, p3) end
 --- @param p1 number (float)
 --- @param p2 number (float)
 --- @param p3 number (float)
---- @return void
---- @overload fun(cam: Cam, p1: number, p2: number, p3: number): void
+--- @return nil
+--- @overload fun(cam: Cam, p1: number, p2: number, p3: number): nil
 --- @deprecated
 function N_0x503f5920162365b2(cam, p1, p2, p3) end
 
@@ -1124,8 +1125,8 @@ function N_0x503f5920162365b2(cam, p1, p2, p3) end
 ---
 --- @hash [0x513403FB9C56211F](https://docs.fivem.net/natives/?_0x513403FB9C56211F)
 --- @param FOV number (float)
---- @return void
---- @overload fun(FOV: number): void
+--- @return nil
+--- @overload fun(FOV: number): nil
 function SetGameplayHintFov(FOV) end
 
     
@@ -1133,8 +1134,8 @@ function SetGameplayHintFov(FOV) end
 ---
 --- @hash [0x51669F7D1FB53D9F](https://docs.fivem.net/natives/?_0x51669F7D1FB53D9F)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function SetCinematicButtonActive(p0) end
 
     
@@ -1160,8 +1161,8 @@ function GetRenderingCam() end
 --- @param offsetY number (float)
 --- @param offsetZ number (float)
 --- @param p5 boolean
---- @return void
---- @overload fun(cam: Cam, entity: Entity, offsetX: number, offsetY: number, offsetZ: number, p5: boolean): void
+--- @return nil
+--- @overload fun(cam: Cam, entity: Entity, offsetX: number, offsetY: number, offsetZ: number, p5: boolean): nil
 function PointCamAtEntity(cam, entity, offsetX, offsetY, offsetZ, p5) end
 
     
@@ -1169,8 +1170,8 @@ function PointCamAtEntity(cam, entity, offsetX, offsetY, offsetZ, p5) end
 ---
 --- @hash [0x59424BD75174C9B1](https://docs.fivem.net/natives/?_0x59424BD75174C9B1)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x59424bd75174c9b1() end
 
     
@@ -1178,8 +1179,8 @@ function N_0x59424bd75174c9b1() end
 ---
 --- @hash [0x5A43C76F7FC7BA5F](https://docs.fivem.net/natives/?_0x5A43C76F7FC7BA5F)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x5a43c76f7fc7ba5f() end
 
     
@@ -1187,8 +1188,8 @@ function N_0x5a43c76f7fc7ba5f() end
 ---
 --- @hash [0x5A4F9EDF1673F704](https://docs.fivem.net/natives/?_0x5A4F9EDF1673F704)
 --- @param viewMode number (int)
---- @return void
---- @overload fun(viewMode: number): void
+--- @return nil
+--- @overload fun(viewMode: number): nil
 function SetFollowPedCamViewMode(viewMode) end
 
     
@@ -1225,8 +1226,8 @@ function GetGameplayCamRot_2(rotationOrder) end
 ---
 --- @hash [0x5C41E6BABC9E2112](https://docs.fivem.net/natives/?_0x5C41E6BABC9E2112)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0x5c41e6babc9e2112(p0) end
 
     
@@ -1256,8 +1257,8 @@ function IsScreenFadingIn() end
 ---
 --- @hash [0x5C90CAB09951A12F](https://docs.fivem.net/natives/?_0x5C90CAB09951A12F)
 --- @param seatIndex number (int)
---- @return void
---- @overload fun(seatIndex: number): void
+--- @return nil
+--- @overload fun(seatIndex: number): nil
 function SetFollowTurretSeatCam(seatIndex) end
 
     
@@ -1268,8 +1269,8 @@ function SetFollowTurretSeatCam(seatIndex) end
 ---
 --- @hash [0x5C90CAB09951A12F](https://docs.fivem.net/natives/?_0x5C90CAB09951A12F)
 --- @param seatIndex number (int)
---- @return void
---- @overload fun(seatIndex: number): void
+--- @return nil
+--- @overload fun(seatIndex: number): nil
 --- @deprecated
 function N_0x5c90cab09951a12f(seatIndex) end
 
@@ -1278,8 +1279,8 @@ function N_0x5c90cab09951a12f(seatIndex) end
 ---
 --- @hash [0x5D7B620DAE436138](https://docs.fivem.net/natives/?_0x5D7B620DAE436138)
 --- @param xOffset number (float)
---- @return void
---- @overload fun(xOffset: number): void
+--- @return nil
+--- @overload fun(xOffset: number): nil
 function SetGameplayHintAnimOffsetx(xOffset) end
 
     
@@ -1288,8 +1289,8 @@ function SetGameplayHintAnimOffsetx(xOffset) end
 ---
 --- @hash [0x5D7B620DAE436138](https://docs.fivem.net/natives/?_0x5D7B620DAE436138)
 --- @param xOffset number (float)
---- @return void
---- @overload fun(xOffset: number): void
+--- @return nil
+--- @overload fun(xOffset: number): nil
 --- @deprecated
 function N_0x5d7b620dae436138(xOffset) end
 
@@ -1304,8 +1305,8 @@ function N_0x5d7b620dae436138(xOffset) end
 --- @param vehicle Vehicle
 --- @param p1 number (int)
 --- @param p2 number (float)
---- @return void
---- @overload fun(vehicle: Vehicle, p1: number, p2: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, p1: number, p2: number): nil
 function N_0x5d96cfb59da076a0(vehicle, p1, p2) end
 
     
@@ -1333,8 +1334,8 @@ function CreateCamera(camHash, active) end
 --- @hash [0x5EE29B4D7D5DF897](https://docs.fivem.net/natives/?_0x5EE29B4D7D5DF897)
 --- @param cam Cam
 --- @param dofStrength number (float)
---- @return void
---- @overload fun(cam: Cam, dofStrength: number): void
+--- @return nil
+--- @overload fun(cam: Cam, dofStrength: number): nil
 function SetCamDofStrength(cam, dofStrength) end
 
     
@@ -1364,8 +1365,8 @@ function N_0x5f35f6732c3fbba0(player) end
 --- @param cam Cam
 --- @param p1 number (int)
 --- @param p2 number (int)
---- @return void
---- @overload fun(cam: Cam, p1: number, p2: number): void
+--- @return nil
+--- @overload fun(cam: Cam, p1: number, p2: number): nil
 function AddCamSplineNodeUsingGameplayFrame(cam, p1, p2) end
 
     
@@ -1376,8 +1377,8 @@ function AddCamSplineNodeUsingGameplayFrame(cam, p1, p2) end
 --- @param cam Cam
 --- @param p1 number (int)
 --- @param p2 number (int)
---- @return void
---- @overload fun(cam: Cam, p1: number, p2: number): void
+--- @return nil
+--- @overload fun(cam: Cam, p1: number, p2: number): nil
 --- @deprecated
 function N_0x609278246a29ca34(cam, p1, p2) end
 
@@ -1392,8 +1393,8 @@ function N_0x609278246a29ca34(cam, p1, p2) end
 --- @param y number (float)
 --- @param z number (float)
 --- @param heading boolean
---- @return void
---- @overload fun(cam: Cam, ped: Ped, boneIndex: number, x: number, y: number, z: number, heading: boolean): void
+--- @return nil
+--- @overload fun(cam: Cam, ped: Ped, boneIndex: number, x: number, y: number, z: number, heading: boolean): nil
 function AttachCamToPedBone(cam, ped, boneIndex, x, y, z, heading) end
 
     
@@ -1401,8 +1402,8 @@ function AttachCamToPedBone(cam, ped, boneIndex, x, y, z, heading) end
 ---
 --- @hash [0x62374889A4D59F72](https://docs.fivem.net/natives/?_0x62374889A4D59F72)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x62374889a4d59f72() end
 
     
@@ -1410,8 +1411,8 @@ function N_0x62374889a4d59f72() end
 ---
 --- @hash [0x62ECFCFDEE7885D6](https://docs.fivem.net/natives/?_0x62ECFCFDEE7885D6)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x62ecfcfdee7885d6() end
 
     
@@ -1419,8 +1420,8 @@ function N_0x62ecfcfdee7885d6() end
 ---
 --- @hash [0x6493CF69859B116A](https://docs.fivem.net/natives/?_0x6493CF69859B116A)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function UseStuntCameraThisFrame() end
 
     
@@ -1429,8 +1430,8 @@ function UseStuntCameraThisFrame() end
 ---
 --- @hash [0x6493CF69859B116A](https://docs.fivem.net/natives/?_0x6493CF69859B116A)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x6493cf69859b116a() end
 
@@ -1451,8 +1452,8 @@ function GetGameplayCamFov() end
 --- @hash [0x661B5C8654ADD825](https://docs.fivem.net/natives/?_0x661B5C8654ADD825)
 --- @param cam Cam
 --- @param p1 boolean
---- @return void
---- @overload fun(cam: Cam, p1: boolean): void
+--- @return nil
+--- @overload fun(cam: Cam, p1: boolean): nil
 function N_0x661b5c8654add825(cam, p1) end
 
     
@@ -1468,8 +1469,8 @@ function N_0x661b5c8654add825(cam, p1) end
 --- @param y number (float)
 --- @param z number (float)
 --- @param p6 boolean
---- @return void
---- @overload fun(cam: Cam, ped: Ped, boneIndex: number, x: number, y: number, z: number, p6: boolean): void
+--- @return nil
+--- @overload fun(cam: Cam, ped: Ped, boneIndex: number, x: number, y: number, z: number, p6: boolean): nil
 function PointCamAtPedBone(cam, ped, boneIndex, x, y, z, p6) end
 
     
@@ -1501,8 +1502,8 @@ function IsAimCamActive() end
 --- @param cam Cam
 --- @param type string (char*)
 --- @param amplitude number (float)
---- @return void
---- @overload fun(cam: Cam, type: string, amplitude: number): void
+--- @return nil
+--- @overload fun(cam: Cam, type: string, amplitude: number): nil
 function ShakeCam(cam, type, amplitude) end
 
     
@@ -1541,8 +1542,8 @@ function IsCamShaking(cam) end
 --- @hash [0x6D0858B8EDFD2B7D](https://docs.fivem.net/natives/?_0x6D0858B8EDFD2B7D)
 --- @param angle number (float)
 --- @param scalingFactor number (float)
---- @return void
---- @overload fun(angle: number, scalingFactor: number): void
+--- @return nil
+--- @overload fun(angle: number, scalingFactor: number): nil
 function SetGameplayCamRelativePitch(angle, scalingFactor) end
 
     
@@ -1551,8 +1552,8 @@ function SetGameplayCamRelativePitch(angle, scalingFactor) end
 --- @hash [0x6F0F77FBA9A8F2E6](https://docs.fivem.net/natives/?_0x6F0F77FBA9A8F2E6)
 --- @param cam Cam
 --- @param strength number (float)
---- @return void
---- @overload fun(cam: Cam, strength: number): void
+--- @return nil
+--- @overload fun(cam: Cam, strength: number): nil
 function SetCamMotionBlurStrength(cam, strength) end
 
     
@@ -1569,8 +1570,8 @@ function N_0x705a276ebff3133d() end
 ---
 --- @hash [0x70894BD0915C5BCA](https://docs.fivem.net/natives/?_0x70894BD0915C5BCA)
 --- @param zoomFactor number (float)
---- @return void
---- @overload fun(zoomFactor: number): void
+--- @return nil
+--- @overload fun(zoomFactor: number): nil
 function SetFirstPersonAimCamZoomFactor(zoomFactor) end
 
     
@@ -1579,8 +1580,8 @@ function SetFirstPersonAimCamZoomFactor(zoomFactor) end
 ---
 --- @hash [0x70894BD0915C5BCA](https://docs.fivem.net/natives/?_0x70894BD0915C5BCA)
 --- @param zoomFactor number (float)
---- @return void
---- @overload fun(zoomFactor: number): void
+--- @return nil
+--- @overload fun(zoomFactor: number): nil
 --- @deprecated
 function N_0x70894bd0915c5bca(zoomFactor) end
 
@@ -1606,8 +1607,8 @@ function IsGameplayCamLookingBehind() end
 ---
 --- @hash [0x7295C203DD659DFE](https://docs.fivem.net/natives/?_0x7295C203DD659DFE)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x7295c203dd659dfe() end
 
     
@@ -1621,8 +1622,8 @@ function N_0x7295c203dd659dfe() end
 ---
 --- @hash [0x731A880555DA3647](https://docs.fivem.net/natives/?_0x731A880555DA3647)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function SetUseHiDofInCutscene() end
 
     
@@ -1633,8 +1634,8 @@ function SetUseHiDofInCutscene() end
 --- @param p1 number (int)
 --- @param p2 any
 --- @param entity Entity
---- @return void
---- @overload fun(p0: any, p1: number, p2: any, entity: Entity): void
+--- @return nil
+--- @overload fun(p0: any, p1: number, p2: any, entity: Entity): nil
 function CreateCinematicShot(p0, p1, p2, entity) end
 
     
@@ -1675,8 +1676,8 @@ function N_0x74bd83ea840f6bc9() end
 ---
 --- @hash [0x759E13EBC1C15C5A](https://docs.fivem.net/natives/?_0x759E13EBC1C15C5A)
 --- @param pitch number (float)
---- @return void
---- @overload fun(pitch: number): void
+--- @return nil
+--- @overload fun(pitch: number): nil
 function SetGameplayCamRawPitch(pitch) end
 
     
@@ -1684,8 +1685,8 @@ function SetGameplayCamRawPitch(pitch) end
 ---
 --- @hash [0x7660C6E75D3A078E](https://docs.fivem.net/natives/?_0x7660C6E75D3A078E)
 --- @param p0 Hash
---- @return void
---- @overload fun(p0: Hash): void
+--- @return nil
+--- @overload fun(p0: Hash): nil
 function StopCinematicShot(p0) end
 
     
@@ -1737,8 +1738,8 @@ function N_0x79c0e43eb9b944e2(hash) end
 ---
 --- @hash [0x7B8A361C1813FBEF](https://docs.fivem.net/natives/?_0x7B8A361C1813FBEF)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x7b8a361c1813fbef() end
 
     
@@ -1748,8 +1749,8 @@ function N_0x7b8a361c1813fbef() end
 --- @param cam Cam
 --- @param p1 number (int)
 --- @param flags number (int)
---- @return void
---- @overload fun(cam: Cam, p1: number, flags: number): void
+--- @return nil
+--- @overload fun(cam: Cam, p1: number, flags: number): nil
 function SetCamSplineNodeExtraFlags(cam, p1, flags) end
 
     
@@ -1760,8 +1761,8 @@ function SetCamSplineNodeExtraFlags(cam, p1, flags) end
 --- @param cam Cam
 --- @param p1 number (int)
 --- @param flags number (int)
---- @return void
---- @overload fun(cam: Cam, p1: number, flags: number): void
+--- @return nil
+--- @overload fun(cam: Cam, p1: number, flags: number): nil
 --- @deprecated
 function N_0x7bf1a54ae67ac070(cam, p1, flags) end
 
@@ -1787,8 +1788,8 @@ function GetCamRot(cam, rotationOrder) end
 --- @param p1 number (int)
 --- @param p2 number (float)
 --- @param p3 number (float)
---- @return void
---- @overload fun(cam: Cam, p1: number, p2: number, p3: number): void
+--- @return nil
+--- @overload fun(cam: Cam, p1: number, p2: number, p3: number): nil
 function OverrideCamSplineMotionBlur(cam, p1, p2, p3) end
 
     
@@ -1799,8 +1800,8 @@ function OverrideCamSplineMotionBlur(cam, p1, p2, p3) end
 --- @hash [0x7DD234D6F3914C5B](https://docs.fivem.net/natives/?_0x7DD234D6F3914C5B)
 --- @param camera Cam
 --- @param p1 number (float)
---- @return void
---- @overload fun(camera: Cam, p1: number): void
+--- @return nil
+--- @overload fun(camera: Cam, p1: number): nil
 function SetCamDofFnumberOfLens(camera, p1) end
 
     
@@ -1812,8 +1813,8 @@ function SetCamDofFnumberOfLens(camera, p1) end
 --- @hash [0x7DD234D6F3914C5B](https://docs.fivem.net/natives/?_0x7DD234D6F3914C5B)
 --- @param camera Cam
 --- @param p1 number (float)
---- @return void
---- @overload fun(camera: Cam, p1: number): void
+--- @return nil
+--- @overload fun(camera: Cam, p1: number): nil
 --- @deprecated
 function N_0x7dd234d6f3914c5b(camera, p1) end
 
@@ -1846,8 +1847,8 @@ function GetGameplayCamZoom() end
 ---
 --- @hash [0x80C8B1846639BB19](https://docs.fivem.net/natives/?_0x80C8B1846639BB19)
 --- @param p0 number (int)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function SetCamEffect(p0) end
 
     
@@ -1898,8 +1899,8 @@ function GetGameplayCamRot(rotationOrder) end
 --- @param p1 number (int)
 --- @param p2 number (int)
 --- @param p3 number (float)
---- @return void
---- @overload fun(cam: Cam, p1: number, p2: number, p3: number): void
+--- @return nil
+--- @overload fun(cam: Cam, p1: number, p2: number, p3: number): nil
 function SetCamSplineNodeEase(cam, p1, p2, p3) end
 
     
@@ -1911,8 +1912,8 @@ function SetCamSplineNodeEase(cam, p1, p2, p3) end
 --- @param p1 number (int)
 --- @param p2 number (int)
 --- @param p3 number (float)
---- @return void
---- @overload fun(cam: Cam, p1: number, p2: number, p3: number): void
+--- @return nil
+--- @overload fun(cam: Cam, p1: number, p2: number, p3: number): nil
 --- @deprecated
 function N_0x83b8201ed82a9a2d(cam, p1, p2, p3) end
 
@@ -1928,8 +1929,8 @@ function N_0x83b8201ed82a9a2d(cam, p1, p2, p3) end
 --- @param p5 any
 --- @param p6 any
 --- @param p7 any
---- @return void
---- @overload fun(p0: any, p1: number, p2: number, p3: number, p4: boolean, p5: any, p6: any, p7: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: number, p2: number, p3: number, p4: boolean, p5: any, p6: any, p7: any): nil
 function SetGameplayObjectHint(p0, p1, p2, p3, p4, p5, p6, p7) end
 
     
@@ -1945,8 +1946,8 @@ function SetGameplayObjectHint(p0, p1, p2, p3, p4, p5, p6, p7) end
 --- @param rotY number (float)
 --- @param rotZ number (float)
 --- @param rotationOrder number (int)
---- @return void
---- @overload fun(cam: Cam, rotX: number, rotY: number, rotZ: number, rotationOrder: number): void
+--- @return nil
+--- @overload fun(cam: Cam, rotX: number, rotY: number, rotZ: number, rotationOrder: number): nil
 function SetCamRot(cam, rotX, rotY, rotZ, rotationOrder) end
 
     
@@ -1968,8 +1969,8 @@ function SetCamRot(cam, rotX, rotY, rotZ, rotationOrder) end
 --- @param length number (int)
 --- @param p8 number (int)
 --- @param transitionType number (int)
---- @return void
---- @overload fun(camera: Cam, x: number, y: number, z: number, xRot: number, yRot: number, zRot: number, length: number, p8: number, transitionType: number): void
+--- @return nil
+--- @overload fun(camera: Cam, x: number, y: number, z: number, xRot: number, yRot: number, zRot: number, length: number, p8: number, transitionType: number): nil
 function AddCamSplineNode(camera, x, y, z, xRot, yRot, zRot, length, p8, transitionType) end
 
     
@@ -1980,8 +1981,8 @@ function AddCamSplineNode(camera, x, y, z, xRot, yRot, zRot, length, p8, transit
 --- @hash [0x865908C81A2C22E9](https://docs.fivem.net/natives/?_0x865908C81A2C22E9)
 --- @param cam Cam
 --- @param bScriptHostCam boolean
---- @return void
---- @overload fun(cam: Cam, bScriptHostCam: boolean): void
+--- @return nil
+--- @overload fun(cam: Cam, bScriptHostCam: boolean): nil
 function DestroyCam(cam, bScriptHostCam) end
 
     
@@ -1992,8 +1993,8 @@ function DestroyCam(cam, bScriptHostCam) end
 ---
 --- @hash [0x891B5B39AC6302AF](https://docs.fivem.net/natives/?_0x891B5B39AC6302AF)
 --- @param duration number (int)
---- @return void
---- @overload fun(duration: number): void
+--- @return nil
+--- @overload fun(duration: number): nil
 function DoScreenFadeOut(duration) end
 
     
@@ -2037,8 +2038,8 @@ function N_0x89215ec747df244a(p0, p1, p2, p3, p4, p5, p6, p7, p8) end
 ---
 --- @hash [0x8BBACBF51DA047A8](https://docs.fivem.net/natives/?_0x8BBACBF51DA047A8)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 function SetGameplayCamFollowPedThisUpdate(ped) end
 
     
@@ -2047,8 +2048,8 @@ function SetGameplayCamFollowPedThisUpdate(ped) end
 ---
 --- @hash [0x8BBACBF51DA047A8](https://docs.fivem.net/natives/?_0x8BBACBF51DA047A8)
 --- @param ped Ped
---- @return void
---- @overload fun(ped: Ped): void
+--- @return nil
+--- @overload fun(ped: Ped): nil
 --- @deprecated
 function N_0x8bbacbf51da047a8(ped) end
 
@@ -2080,8 +2081,8 @@ function N_0x8bfceb5ea1b161b6() end
 --- @hash [0x8C1DC7770C51DC8D](https://docs.fivem.net/natives/?_0x8C1DC7770C51DC8D)
 --- @param cam Cam
 --- @param toggle boolean
---- @return void
---- @overload fun(cam: Cam, toggle: boolean): void
+--- @return nil
+--- @overload fun(cam: Cam, toggle: boolean): nil
 function SetCamAffectsAiming(cam, toggle) end
 
     
@@ -2119,8 +2120,8 @@ function GetFollowPedCamViewMode() end
 --- @param offY number (float)
 --- @param offZ number (float)
 --- @param fixedDirection boolean
---- @return void
---- @overload fun(cam: Cam, vehicle: Vehicle, boneIndex: number, relativeRotation: boolean, rotX: number, rotY: number, rotZ: number, offX: number, offY: number, offZ: number, fixedDirection: boolean): void
+--- @return nil
+--- @overload fun(cam: Cam, vehicle: Vehicle, boneIndex: number, relativeRotation: boolean, rotX: number, rotY: number, rotZ: number, offX: number, offY: number, offZ: number, fixedDirection: boolean): nil
 function AttachCamToVehicleBone(cam, vehicle, boneIndex, relativeRotation, rotX, rotY, rotZ, offX, offY, offZ, fixedDirection) end
 
     
@@ -2140,8 +2141,8 @@ function AttachCamToVehicleBone(cam, vehicle, boneIndex, relativeRotation, rotX,
 --- @param offY number (float)
 --- @param offZ number (float)
 --- @param fixedDirection boolean
---- @return void
---- @overload fun(cam: Cam, vehicle: Vehicle, boneIndex: number, relativeRotation: boolean, rotX: number, rotY: number, rotZ: number, offX: number, offY: number, offZ: number, fixedDirection: boolean): void
+--- @return nil
+--- @overload fun(cam: Cam, vehicle: Vehicle, boneIndex: number, relativeRotation: boolean, rotX: number, rotY: number, rotZ: number, offX: number, offY: number, offZ: number, fixedDirection: boolean): nil
 --- @deprecated
 function N_0x8db3f12a02caef72(cam, vehicle, boneIndex, relativeRotation, rotX, rotY, rotZ, offX, offY, offZ, fixedDirection) end
 
@@ -2152,8 +2153,8 @@ function N_0x8db3f12a02caef72(cam, vehicle, boneIndex, relativeRotation, rotX, r
 ---
 --- @hash [0x8E5FB15663F79120](https://docs.fivem.net/natives/?_0x8E5FB15663F79120)
 --- @param bScriptHostCam boolean
---- @return void
---- @overload fun(bScriptHostCam: boolean): void
+--- @return nil
+--- @overload fun(bScriptHostCam: boolean): nil
 function DestroyAllCams(bScriptHostCam) end
 
     
@@ -2167,8 +2168,8 @@ function DestroyAllCams(bScriptHostCam) end
 --- @hash [0x8F993D26E0CA5E8E](https://docs.fivem.net/natives/?_0x8F993D26E0CA5E8E)
 --- @param minimum number (float)
 --- @param maximum number (float)
---- @return void
---- @overload fun(minimum: number, maximum: number): void
+--- @return nil
+--- @overload fun(minimum: number, maximum: number): nil
 function ClampGameplayCamYaw(minimum, maximum) end
 
     
@@ -2176,8 +2177,8 @@ function ClampGameplayCamYaw(minimum, maximum) end
 ---
 --- @hash [0x91EF6EE6419E5B97](https://docs.fivem.net/natives/?_0x91EF6EE6419E5B97)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0x91ef6ee6419e5b97(p0) end
 
     
@@ -2244,8 +2245,8 @@ function PlayCamAnim(cam, animName, animDictionary, x, y, z, xRot, yRot, zRot, p
 --- @hash [0x9DFE13ECDC1EC196](https://docs.fivem.net/natives/?_0x9DFE13ECDC1EC196)
 --- @param p0 boolean
 --- @param p1 boolean
---- @return void
---- @overload fun(p0: boolean, p1: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean, p1: boolean): nil
 function N_0x9dfe13ecdc1ec196(p0, p1) end
 
     
@@ -2257,8 +2258,8 @@ function N_0x9dfe13ecdc1ec196(p0, p1) end
 --- @hash [0x9DFE13ECDC1EC196](https://docs.fivem.net/natives/?_0x9DFE13ECDC1EC196)
 --- @param p0 boolean
 --- @param p1 boolean
---- @return void
---- @overload fun(p0: boolean, p1: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean, p1: boolean): nil
 --- @deprecated
 function SetTimeIdleDrop(p0, p1) end
 
@@ -2273,8 +2274,8 @@ function SetTimeIdleDrop(p0, p1) end
 --- end
 --- @hash [0x9E4CFFF989258472](https://docs.fivem.net/natives/?_0x9E4CFFF989258472)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function InvalidateVehicleIdleCam() end
 
     
@@ -2289,8 +2290,8 @@ function InvalidateVehicleIdleCam() end
 --- end
 --- @hash [0x9E4CFFF989258472](https://docs.fivem.net/natives/?_0x9E4CFFF989258472)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x9e4cfff989258472() end
 
@@ -2303,8 +2304,8 @@ function N_0x9e4cfff989258472() end
 ---
 --- @hash [0x9F97DA93681F87EA](https://docs.fivem.net/natives/?_0x9F97DA93681F87EA)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x9f97da93681f87ea() end
 
     
@@ -2318,8 +2319,8 @@ function N_0x9f97da93681f87ea() end
 --- @param duration number (int)
 --- @param easeLocation number (int)
 --- @param easeRotation number (int)
---- @return void
---- @overload fun(camTo: Cam, camFrom: Cam, duration: number, easeLocation: number, easeRotation: number): void
+--- @return nil
+--- @overload fun(camTo: Cam, camFrom: Cam, duration: number, easeLocation: number, easeRotation: number): nil
 function SetCamActiveWithInterp(camTo, camFrom, duration, easeLocation, easeRotation) end
 
     
@@ -2367,8 +2368,8 @@ function GetCamAnimCurrentPhase(cam) end
 ---
 --- @hash [0xA13B0222F3D94A94](https://docs.fivem.net/natives/?_0xA13B0222F3D94A94)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function SetUseHiDof() end
 
     
@@ -2403,8 +2404,8 @@ function GetGameplayCamCoords() end
 --- @param time number (int)
 --- @param easeInTime number (int)
 --- @param easeOutTime number (int)
---- @return void
---- @overload fun(vehicle: Vehicle, offsetX: number, offsetY: number, offsetZ: number, p4: boolean, time: number, easeInTime: number, easeOutTime: number): void
+--- @return nil
+--- @overload fun(vehicle: Vehicle, offsetX: number, offsetY: number, offsetZ: number, p4: boolean, time: number, easeInTime: number, easeOutTime: number): nil
 function SetGameplayVehicleHint(vehicle, offsetX, offsetY, offsetZ, p4, time, easeInTime, easeOutTime) end
 
     
@@ -2419,8 +2420,8 @@ function SetGameplayVehicleHint(vehicle, offsetX, offsetY, offsetZ, p4, time, ea
 --- @param p2 string (char*)
 --- @param p3 string (char*)
 --- @param amplitude number (float)
---- @return void
---- @overload fun(cam: Cam, p1: string, p2: string, p3: string, amplitude: number): void
+--- @return nil
+--- @overload fun(cam: Cam, p1: string, p2: string, p3: string, amplitude: number): nil
 function AnimatedShakeCam(cam, p1, p2, p3, amplitude) end
 
     
@@ -2429,8 +2430,8 @@ function AnimatedShakeCam(cam, p1, p2, p3, amplitude) end
 --- @hash [0xA2767257A320FC82](https://docs.fivem.net/natives/?_0xA2767257A320FC82)
 --- @param p0 any
 --- @param p1 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean): nil
 function N_0xa2767257a320fc82(p0, p1) end
 
     
@@ -2438,8 +2439,8 @@ function N_0xa2767257a320fc82(p0, p1) end
 ---
 --- @hash [0xA2FABBE87F4BAD82](https://docs.fivem.net/natives/?_0xA2FABBE87F4BAD82)
 --- @param cam Cam
---- @return void
---- @overload fun(cam: Cam): void
+--- @return nil
+--- @overload fun(cam: Cam): nil
 function DetachCam(cam) end
 
     
@@ -2447,8 +2448,8 @@ function DetachCam(cam) end
 ---
 --- @hash [0xA41BCD7213805AAC](https://docs.fivem.net/natives/?_0xA41BCD7213805AAC)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function ForceCinematicRenderingThisUpdate(p0) end
 
     
@@ -2457,8 +2458,8 @@ function ForceCinematicRenderingThisUpdate(p0) end
 ---
 --- @hash [0xA41BCD7213805AAC](https://docs.fivem.net/natives/?_0xA41BCD7213805AAC)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 --- @deprecated
 function N_0xa41bcd7213805aac(p0) end
 
@@ -2482,8 +2483,8 @@ function GetFollowVehicleCamViewMode() end
 --- @hash [0xA516C198B7DCA1E1](https://docs.fivem.net/natives/?_0xA516C198B7DCA1E1)
 --- @param minimum number (float)
 --- @param maximum number (float)
---- @return void
---- @overload fun(minimum: number, maximum: number): void
+--- @return nil
+--- @overload fun(minimum: number, maximum: number): nil
 function ClampGameplayCamPitch(minimum, maximum) end
 
     
@@ -2493,8 +2494,8 @@ function ClampGameplayCamPitch(minimum, maximum) end
 --- @param cam Cam
 --- @param p1 number (int)
 --- @param scale number (float)
---- @return void
---- @overload fun(cam: Cam, p1: number, scale: number): void
+--- @return nil
+--- @overload fun(cam: Cam, p1: number, scale: number): nil
 function SetCamSplineNodeVelocityScale(cam, p1, scale) end
 
     
@@ -2505,8 +2506,8 @@ function SetCamSplineNodeVelocityScale(cam, p1, scale) end
 --- @param cam Cam
 --- @param p1 number (int)
 --- @param scale number (float)
---- @return void
---- @overload fun(cam: Cam, p1: number, scale: number): void
+--- @return nil
+--- @overload fun(cam: Cam, p1: number, scale: number): nil
 --- @deprecated
 function N_0xa6385deb180f319f(cam, p1, scale) end
 
@@ -2517,8 +2518,8 @@ function N_0xa6385deb180f319f(cam, p1, scale) end
 ---
 --- @hash [0xA7092AFE81944852](https://docs.fivem.net/natives/?_0xA7092AFE81944852)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xa7092afe81944852() end
 
     
@@ -2539,8 +2540,8 @@ function DoesCamExist(cam) end
 ---
 --- @hash [0xA87E00932DB4D85D](https://docs.fivem.net/natives/?_0xA87E00932DB4D85D)
 --- @param amplitude number (float)
---- @return void
---- @overload fun(amplitude: number): void
+--- @return nil
+--- @overload fun(amplitude: number): nil
 function SetGameplayCamShakeAmplitude(amplitude) end
 
     
@@ -2551,8 +2552,8 @@ function SetGameplayCamShakeAmplitude(amplitude) end
 --- @hash [0xAABD62873FFB1A33](https://docs.fivem.net/natives/?_0xAABD62873FFB1A33)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0xaabd62873ffb1a33(p0, p1) end
 
     
@@ -2560,8 +2561,8 @@ function N_0xaabd62873ffb1a33(p0, p1) end
 ---
 --- @hash [0xAC253D7842768F48](https://docs.fivem.net/natives/?_0xAC253D7842768F48)
 --- @param viewMode number (int)
---- @return void
---- @overload fun(viewMode: number): void
+--- @return nil
+--- @overload fun(viewMode: number): nil
 function SetFollowVehicleCamViewMode(viewMode) end
 
     
@@ -2569,8 +2570,8 @@ function SetFollowVehicleCamViewMode(viewMode) end
 ---
 --- @hash [0xADFF1B2A555F5FBA](https://docs.fivem.net/natives/?_0xADFF1B2A555F5FBA)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function DisableVehicleFirstPersonCamThisFrame() end
 
     
@@ -2579,8 +2580,8 @@ function DisableVehicleFirstPersonCamThisFrame() end
 --- @hash [0xAE306F2A904BF86E](https://docs.fivem.net/natives/?_0xAE306F2A904BF86E)
 --- @param cam Cam
 --- @param farClip number (float)
---- @return void
---- @overload fun(cam: Cam, farClip: number): void
+--- @return nil
+--- @overload fun(cam: Cam, farClip: number): nil
 function SetCamFarClip(cam, farClip) end
 
     
@@ -2590,8 +2591,8 @@ function SetCamFarClip(cam, farClip) end
 ---
 --- @hash [0xB1381B97F70C7B30](https://docs.fivem.net/natives/?_0xB1381B97F70C7B30)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xb1381b97f70c7b30() end
 
     
@@ -2605,8 +2606,8 @@ function N_0xb1381b97f70c7b30() end
 --- @hash [0xB13C14F66A00D047](https://docs.fivem.net/natives/?_0xB13C14F66A00D047)
 --- @param cam Cam
 --- @param fieldOfView number (float)
---- @return void
---- @overload fun(cam: Cam, fieldOfView: number): void
+--- @return nil
+--- @overload fun(cam: Cam, fieldOfView: number): nil
 function SetCamFov(cam, fieldOfView) end
 
     
@@ -2644,8 +2645,8 @@ function GetCamSplineNodeIndex(cam) end
 ---
 --- @hash [0xB4EC2312F4E5B1F1](https://docs.fivem.net/natives/?_0xB4EC2312F4E5B1F1)
 --- @param heading number (float)
---- @return void
---- @overload fun(heading: number): void
+--- @return nil
+--- @overload fun(heading: number): nil
 function SetGameplayCamRelativeHeading(heading) end
 
     
@@ -2720,8 +2721,8 @@ function IsCinematicCamShaking() end
 --- @hash [0xBCFC632DB7673BF0](https://docs.fivem.net/natives/?_0xBCFC632DB7673BF0)
 --- @param minAngle number (float)
 --- @param maxAngle number (float)
---- @return void
---- @overload fun(minAngle: number, maxAngle: number): void
+--- @return nil
+--- @overload fun(minAngle: number, maxAngle: number): nil
 function SetFirstPersonCamPitchRange(minAngle, maxAngle) end
 
     
@@ -2731,8 +2732,8 @@ function SetFirstPersonCamPitchRange(minAngle, maxAngle) end
 --- @hash [0xBCFC632DB7673BF0](https://docs.fivem.net/natives/?_0xBCFC632DB7673BF0)
 --- @param minAngle number (float)
 --- @param maxAngle number (float)
---- @return void
---- @overload fun(minAngle: number, maxAngle: number): void
+--- @return nil
+--- @overload fun(minAngle: number, maxAngle: number): nil
 --- @deprecated
 function N_0xbcfc632db7673bf0(minAngle, maxAngle) end
 
@@ -2742,8 +2743,8 @@ function N_0xbcfc632db7673bf0(minAngle, maxAngle) end
 --- @hash [0xBDECF64367884AC3](https://docs.fivem.net/natives/?_0xBDECF64367884AC3)
 --- @param cam Cam
 --- @param p1 boolean
---- @return void
---- @overload fun(cam: Cam, p1: boolean): void
+--- @return nil
+--- @overload fun(cam: Cam, p1: boolean): nil
 function StopCamShaking(cam, p1) end
 
     
@@ -2775,8 +2776,8 @@ function N_0xbf72910d0f26f025() end
 --- @param p9 number (int)
 --- @param p10 number (int)
 --- @param rotationOrder number (int)
---- @return void
---- @overload fun(cam: Cam, posX: number, posY: number, posZ: number, rotX: number, rotY: number, rotZ: number, fieldOfView: number, transitionSpeed: number, p9: number, p10: number, rotationOrder: number): void
+--- @return nil
+--- @overload fun(cam: Cam, posX: number, posY: number, posZ: number, rotX: number, rotY: number, rotZ: number, fieldOfView: number, transitionSpeed: number, p9: number, p10: number, rotationOrder: number): nil
 function SetCamParams(cam, posX, posY, posZ, rotX, rotY, rotZ, fieldOfView, transitionSpeed, p9, p10, rotationOrder) end
 
     
@@ -2800,8 +2801,8 @@ function GetCamNearDof(cam) end
 --- @param p1 string (char*)
 --- @param p2 string (char*)
 --- @param p3 number (float)
---- @return void
---- @overload fun(p0: string, p1: string, p2: string, p3: number): void
+--- @return nil
+--- @overload fun(p0: string, p1: string, p2: string, p3: number): nil
 function AnimatedShakeScriptGlobal(p0, p1, p2, p3) end
 
     
@@ -2815,8 +2816,8 @@ function AnimatedShakeScriptGlobal(p0, p1, p2, p3) end
 --- @param p1 string (char*)
 --- @param p2 string (char*)
 --- @param p3 number (float)
---- @return void
---- @overload fun(p0: string, p1: string, p2: string, p3: number): void
+--- @return nil
+--- @overload fun(p0: string, p1: string, p2: string, p3: number): nil
 --- @deprecated
 function N_0xc2eae3fb8cdbed31(p0, p1, p2, p3) end
 
@@ -2837,8 +2838,8 @@ function GetCamFov(cam) end
 --- @hash [0xC3654A441402562D](https://docs.fivem.net/natives/?_0xC3654A441402562D)
 --- @param camera Cam
 --- @param p1 number (float)
---- @return void
---- @overload fun(camera: Cam, p1: number): void
+--- @return nil
+--- @overload fun(camera: Cam, p1: number): nil
 function SetCamDofMaxNearInFocusDistance(camera, p1) end
 
     
@@ -2850,8 +2851,8 @@ function SetCamDofMaxNearInFocusDistance(camera, p1) end
 --- @hash [0xC3654A441402562D](https://docs.fivem.net/natives/?_0xC3654A441402562D)
 --- @param camera Cam
 --- @param p1 number (float)
---- @return void
---- @overload fun(camera: Cam, p1: number): void
+--- @return nil
+--- @overload fun(camera: Cam, p1: number): nil
 --- @deprecated
 function N_0xc3654a441402562d(camera, p1) end
 
@@ -2894,8 +2895,8 @@ function GetCamNearClip(cam) end
 --- @hash [0xC669EEA5D031B7DE](https://docs.fivem.net/natives/?_0xC669EEA5D031B7DE)
 --- @param camera Cam
 --- @param p1 number (float)
---- @return void
---- @overload fun(camera: Cam, p1: number): void
+--- @return nil
+--- @overload fun(camera: Cam, p1: number): nil
 function SetCamDofFocusDistanceBias(camera, p1) end
 
     
@@ -2907,8 +2908,8 @@ function SetCamDofFocusDistanceBias(camera, p1) end
 --- @hash [0xC669EEA5D031B7DE](https://docs.fivem.net/natives/?_0xC669EEA5D031B7DE)
 --- @param camera Cam
 --- @param p1 number (float)
---- @return void
---- @overload fun(camera: Cam, p1: number): void
+--- @return nil
+--- @overload fun(camera: Cam, p1: number): nil
 --- @deprecated
 function N_0xc669eea5d031b7de(camera, p1) end
 
@@ -2926,8 +2927,8 @@ function IsFollowPedCamActive() end
 ---
 --- @hash [0xC724C701C30B2FE7](https://docs.fivem.net/natives/?_0xC724C701C30B2FE7)
 --- @param p0 number (float)
---- @return void
---- @overload fun(p0: number): void
+--- @return nil
+--- @overload fun(p0: number): nil
 function SetCinematicCamShakeAmplitude(p0) end
 
     
@@ -2936,8 +2937,8 @@ function SetCinematicCamShakeAmplitude(p0) end
 --- @hash [0xC7848EFCCC545182](https://docs.fivem.net/natives/?_0xC7848EFCCC545182)
 --- @param cam Cam
 --- @param nearClip number (float)
---- @return void
---- @overload fun(cam: Cam, nearClip: number): void
+--- @return nil
+--- @overload fun(cam: Cam, nearClip: number): nil
 function SetCamNearClip(cam, nearClip) end
 
     
@@ -2953,8 +2954,8 @@ function SetCamNearClip(cam, nearClip) end
 --- @param render boolean
 --- @param p1 number (float)
 --- @param p2 number (int)
---- @return void
---- @overload fun(render: boolean, p1: number, p2: number): void
+--- @return nil
+--- @overload fun(render: boolean, p1: number, p2: number): nil
 function StopRenderingScriptCamsUsingCatchUp(render, p1, p2) end
 
     
@@ -2971,8 +2972,8 @@ function StopRenderingScriptCamsUsingCatchUp(render, p1, p2) end
 --- @param render boolean
 --- @param p1 number (float)
 --- @param p2 number (int)
---- @return void
---- @overload fun(render: boolean, p1: number, p2: number): void
+--- @return nil
+--- @overload fun(render: boolean, p1: number, p2: number): nil
 --- @deprecated
 function N_0xc819f3cbb62bf692(render, p1, p2) end
 
@@ -2990,8 +2991,8 @@ function N_0xc819f3cbb62bf692(render, p1, p2) end
 --- @param render boolean
 --- @param p1 number (float)
 --- @param p2 number (int)
---- @return void
---- @overload fun(render: boolean, p1: number, p2: number): void
+--- @return nil
+--- @overload fun(render: boolean, p1: number, p2: number): nil
 --- @deprecated
 function RenderFirstPersonCam(render, p1, p2) end
 
@@ -3000,8 +3001,8 @@ function RenderFirstPersonCam(render, p1, p2) end
 ---
 --- @hash [0xC8391C309684595A](https://docs.fivem.net/natives/?_0xC8391C309684595A)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xc8391c309684595a() end
 
     
@@ -3009,8 +3010,8 @@ function N_0xc8391c309684595a() end
 ---
 --- @hash [0xC8B5C4A79CC18B94](https://docs.fivem.net/natives/?_0xC8B5C4A79CC18B94)
 --- @param cam Cam
---- @return void
---- @overload fun(cam: Cam): void
+--- @return nil
+--- @overload fun(cam: Cam): nil
 function N_0xc8b5c4a79cc18b94(cam) end
 
     
@@ -3062,8 +3063,8 @@ function N_0xc912af078af19212() end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(cam: Cam, x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(cam: Cam, x: number, y: number, z: number): nil
 function SetFlyCamCoordAndConstrain(cam, x, y, z) end
 
     
@@ -3075,8 +3076,8 @@ function SetFlyCamCoordAndConstrain(cam, x, y, z) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(cam: Cam, x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(cam: Cam, x: number, y: number, z: number): nil
 --- @deprecated
 function N_0xc91c6c55199308ca(cam, x, y, z) end
 
@@ -3085,8 +3086,8 @@ function N_0xc91c6c55199308ca(cam, x, y, z) end
 ---
 --- @hash [0xC92717EF615B6704](https://docs.fivem.net/natives/?_0xC92717EF615B6704)
 --- @param yOffset number (float)
---- @return void
---- @overload fun(yOffset: number): void
+--- @return nil
+--- @overload fun(yOffset: number): nil
 function SetGameplayHintAnimOffsety(yOffset) end
 
     
@@ -3095,8 +3096,8 @@ function SetGameplayHintAnimOffsety(yOffset) end
 ---
 --- @hash [0xC92717EF615B6704](https://docs.fivem.net/natives/?_0xC92717EF615B6704)
 --- @param yOffset number (float)
---- @return void
---- @overload fun(yOffset: number): void
+--- @return nil
+--- @overload fun(yOffset: number): nil
 --- @deprecated
 function N_0xc92717ef615b6704(yOffset) end
 
@@ -3143,8 +3144,8 @@ function IsCinematicShotActive(p0) end
 ---
 --- @hash [0xCCD078C2665D2973](https://docs.fivem.net/natives/?_0xCCD078C2665D2973)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0xccd078c2665d2973(p0) end
 
     
@@ -3153,8 +3154,8 @@ function N_0xccd078c2665d2973(p0) end
 --- @hash [0xCED08CBE8EBB97C7](https://docs.fivem.net/natives/?_0xCED08CBE8EBB97C7)
 --- @param p0 number (float)
 --- @param p1 number (float)
---- @return void
---- @overload fun(p0: number, p1: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: number): nil
 function N_0xced08cbe8ebb97c7(p0, p1) end
 
     
@@ -3240,8 +3241,8 @@ function GetGameplayCamNearClip() end
 --- @hash [0xD1B0F412F109EA5D](https://docs.fivem.net/natives/?_0xD1B0F412F109EA5D)
 --- @param cam Cam
 --- @param smoothingStyle number (int)
---- @return void
---- @overload fun(cam: Cam, smoothingStyle: number): void
+--- @return nil
+--- @overload fun(cam: Cam, smoothingStyle: number): nil
 function SetCamSplineSmoothingStyle(cam, smoothingStyle) end
 
     
@@ -3297,8 +3298,8 @@ function SetCamSplineSmoothingStyle(cam, smoothingStyle) end
 --- @hash [0xD1B0F412F109EA5D](https://docs.fivem.net/natives/?_0xD1B0F412F109EA5D)
 --- @param cam Cam
 --- @param smoothingStyle number (int)
---- @return void
---- @overload fun(cam: Cam, smoothingStyle: number): void
+--- @return nil
+--- @overload fun(cam: Cam, smoothingStyle: number): nil
 --- @deprecated
 function N_0xd1b0f412f109ea5d(cam, smoothingStyle) end
 
@@ -3307,8 +3308,8 @@ function N_0xd1b0f412f109ea5d(cam, smoothingStyle) end
 ---
 --- @hash [0xD1F8363DFAD03848](https://docs.fivem.net/natives/?_0xD1F8363DFAD03848)
 --- @param value number (float)
---- @return void
---- @overload fun(value: number): void
+--- @return nil
+--- @overload fun(value: number): nil
 function SetGameplayHintBaseOrbitPitchOffset(value) end
 
     
@@ -3317,8 +3318,8 @@ function SetGameplayHintBaseOrbitPitchOffset(value) end
 ---
 --- @hash [0xD1F8363DFAD03848](https://docs.fivem.net/natives/?_0xD1F8363DFAD03848)
 --- @param value number (float)
---- @return void
---- @overload fun(value: number): void
+--- @return nil
+--- @overload fun(value: number): nil
 --- @deprecated
 function N_0xd1f8363dfad03848(value) end
 
@@ -3328,8 +3329,8 @@ function N_0xd1f8363dfad03848(value) end
 ---
 --- @hash [0xD1F8363DFAD03848](https://docs.fivem.net/natives/?_0xD1F8363DFAD03848)
 --- @param value number (float)
---- @return void
---- @overload fun(value: number): void
+--- @return nil
+--- @overload fun(value: number): nil
 --- @deprecated
 function SetGameplayHintAngle(value) end
 
@@ -3341,8 +3342,8 @@ function SetGameplayHintAngle(value) end
 ---
 --- @hash [0xD4E8E24955024033](https://docs.fivem.net/natives/?_0xD4E8E24955024033)
 --- @param duration number (int)
---- @return void
---- @overload fun(duration: number): void
+--- @return nil
+--- @overload fun(duration: number): nil
 function DoScreenFadeIn(duration) end
 
     
@@ -3356,8 +3357,8 @@ function DoScreenFadeIn(duration) end
 --- @param blendOutDuration number (int)
 --- @param blendInDuration number (int)
 --- @param unk number (int)
---- @return void
---- @overload fun(x: number, y: number, z: number, duration: number, blendOutDuration: number, blendInDuration: number, unk: number): void
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, duration: number, blendOutDuration: number, blendInDuration: number, unk: number): nil
 function SetGameplayCoordHint(x, y, z, duration, blendOutDuration, blendInDuration, unk) end
 
     
@@ -3386,8 +3387,8 @@ function N_0xd7360051c885628b() end
 --- @hash [0xD93DB43B82BC0D00](https://docs.fivem.net/natives/?_0xD93DB43B82BC0D00)
 --- @param cam Cam
 --- @param amplitude number (float)
---- @return void
---- @overload fun(cam: Cam, amplitude: number): void
+--- @return nil
+--- @overload fun(cam: Cam, amplitude: number): nil
 function SetCamShakeAmplitude(cam, amplitude) end
 
     
@@ -3406,8 +3407,8 @@ function GetCamSplineNodePhase(cam) end
 ---
 --- @hash [0xDB629FFD9285FA06](https://docs.fivem.net/natives/?_0xDB629FFD9285FA06)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function StopCutsceneCamShaking() end
 
     
@@ -3415,8 +3416,8 @@ function StopCutsceneCamShaking() end
 ---
 --- @hash [0xDB90C6CCA48940F1](https://docs.fivem.net/natives/?_0xDB90C6CCA48940F1)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function N_0xdb90c6cca48940f1(p0) end
 
     
@@ -3424,8 +3425,8 @@ function N_0xdb90c6cca48940f1(p0) end
 ---
 --- @hash [0xDC9DA9E8789F5246](https://docs.fivem.net/natives/?_0xDC9DA9E8789F5246)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function SetCinematicNewsChannelActiveThisUpdate() end
 
     
@@ -3434,8 +3435,8 @@ function SetCinematicNewsChannelActiveThisUpdate() end
 ---
 --- @hash [0xDC9DA9E8789F5246](https://docs.fivem.net/natives/?_0xDC9DA9E8789F5246)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xdc9da9e8789f5246() end
 
@@ -3445,8 +3446,8 @@ function N_0xdc9da9e8789f5246() end
 --- @hash [0xDCD4EA924F42D01A](https://docs.fivem.net/natives/?_0xDCD4EA924F42D01A)
 --- @param p0 boolean
 --- @param p1 number (int)
---- @return void
---- @overload fun(p0: boolean, p1: number): void
+--- @return nil
+--- @overload fun(p0: boolean, p1: number): nil
 function SetWidescreenBorders(p0, p1) end
 
     
@@ -3457,8 +3458,8 @@ function SetWidescreenBorders(p0, p1) end
 --- @hash [0xDCE214D9ED58F3CF](https://docs.fivem.net/natives/?_0xDCE214D9ED58F3CF)
 --- @param p0 string (char*)
 --- @param p1 number (float)
---- @return void
---- @overload fun(p0: string, p1: number): void
+--- @return nil
+--- @overload fun(p0: string, p1: number): nil
 function ShakeCinematicCam(p0, p1) end
 
     
@@ -3468,8 +3469,8 @@ function ShakeCinematicCam(p0, p1) end
 ---
 --- @hash [0xDCF0754AC3D6FD4E](https://docs.fivem.net/natives/?_0xDCF0754AC3D6FD4E)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetCinematicModeActive(toggle) end
 
     
@@ -3477,8 +3478,8 @@ function SetCinematicModeActive(toggle) end
 ---
 --- @hash [0xDD79DF9F4D26E1C9](https://docs.fivem.net/natives/?_0xDD79DF9F4D26E1C9)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xdd79df9f4d26e1c9() end
 
     
@@ -3491,8 +3492,8 @@ function N_0xdd79df9f4d26e1c9() end
 ---
 --- @hash [0xDE2EF5DA284CC8DF](https://docs.fivem.net/natives/?_0xDE2EF5DA284CC8DF)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function DisableFirstPersonCamThisFrame() end
 
     
@@ -3512,8 +3513,8 @@ function DisableFirstPersonCamThisFrame() end
 --- @hash [0xDF2E1F7742402E81](https://docs.fivem.net/natives/?_0xDF2E1F7742402E81)
 --- @param p0 number (float)
 --- @param distance number (float)
---- @return void
---- @overload fun(p0: number, distance: number): void
+--- @return nil
+--- @overload fun(p0: number, distance: number): nil
 function AnimateGameplayCamZoom(p0, distance) end
 
     
@@ -3564,8 +3565,8 @@ function GetGameplayCamFarClip() end
 --- @hash [0xE111A7C0D200CBC5](https://docs.fivem.net/natives/?_0xE111A7C0D200CBC5)
 --- @param p0 any
 --- @param p1 number (float)
---- @return void
---- @overload fun(p0: any, p1: number): void
+--- @return nil
+--- @overload fun(p0: any, p1: number): nil
 function N_0xe111a7c0d200cbc5(p0, p1) end
 
     
@@ -3603,8 +3604,8 @@ function IsSphereVisible(x, y, z, radius) end
 ---
 --- @hash [0xE3433EADAAF7EE40](https://docs.fivem.net/natives/?_0xE3433EADAAF7EE40)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 function SetGameplayHintAnimCloseup(toggle) end
 
     
@@ -3613,8 +3614,8 @@ function SetGameplayHintAnimCloseup(toggle) end
 ---
 --- @hash [0xE3433EADAAF7EE40](https://docs.fivem.net/natives/?_0xE3433EADAAF7EE40)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function GetIsMultiplayerBrief(toggle) end
 
@@ -3624,8 +3625,8 @@ function GetIsMultiplayerBrief(toggle) end
 ---
 --- @hash [0xE3433EADAAF7EE40](https://docs.fivem.net/natives/?_0xE3433EADAAF7EE40)
 --- @param toggle boolean
---- @return void
---- @overload fun(toggle: boolean): void
+--- @return nil
+--- @overload fun(toggle: boolean): nil
 --- @deprecated
 function N_0xe3433eadaaf7ee40(toggle) end
 
@@ -3646,8 +3647,8 @@ function IsGameplayHintActive() end
 --- @param p1 number (float)
 --- @param p2 number (float)
 --- @param p3 number (float)
---- @return void
---- @overload fun(cam: Cam, p1: number, p2: number, p3: number): void
+--- @return nil
+--- @overload fun(cam: Cam, p1: number, p2: number, p3: number): nil
 function SetFlyCamVerticalSpeedMultiplier(cam, p1, p2, p3) end
 
     
@@ -3659,8 +3660,8 @@ function SetFlyCamVerticalSpeedMultiplier(cam, p1, p2, p3) end
 --- @param p1 number (float)
 --- @param p2 number (float)
 --- @param p3 number (float)
---- @return void
---- @overload fun(cam: Cam, p1: number, p2: number, p3: number): void
+--- @return nil
+--- @overload fun(cam: Cam, p1: number, p2: number, p3: number): nil
 --- @deprecated
 function N_0xe827b9382cfb41ba(cam, p1, p2, p3) end
 
@@ -3670,8 +3671,8 @@ function N_0xe827b9382cfb41ba(cam, p1, p2, p3) end
 --- @hash [0xE9EA16D6E54CDCA4](https://docs.fivem.net/natives/?_0xE9EA16D6E54CDCA4)
 --- @param p0 Vehicle
 --- @param p1 number (int)
---- @return void
---- @overload fun(p0: Vehicle, p1: number): void
+--- @return nil
+--- @overload fun(p0: Vehicle, p1: number): nil
 function SetInVehicleCamStateThisUpdate(p0, p1) end
 
     
@@ -3681,8 +3682,8 @@ function SetInVehicleCamStateThisUpdate(p0, p1) end
 --- @hash [0xE9EA16D6E54CDCA4](https://docs.fivem.net/natives/?_0xE9EA16D6E54CDCA4)
 --- @param p0 Vehicle
 --- @param p1 number (int)
---- @return void
---- @overload fun(p0: Vehicle, p1: number): void
+--- @return nil
+--- @overload fun(p0: Vehicle, p1: number): nil
 --- @deprecated
 function N_0xe9ea16d6e54cdca4(p0, p1) end
 
@@ -3693,8 +3694,8 @@ function N_0xe9ea16d6e54cdca4(p0, p1) end
 ---
 --- @hash [0xEA7F0AD7E9BA676F](https://docs.fivem.net/natives/?_0xEA7F0AD7E9BA676F)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function EnableCrosshairThisFrame() end
 
     
@@ -3712,8 +3713,8 @@ function N_0xeaf0fa793d05c592() end
 --- @hash [0xEDD91296CD01AEE0](https://docs.fivem.net/natives/?_0xEDD91296CD01AEE0)
 --- @param cam Cam
 --- @param farDOF number (float)
---- @return void
---- @overload fun(cam: Cam, farDOF: number): void
+--- @return nil
+--- @overload fun(cam: Cam, farDOF: number): nil
 function SetCamFarDof(cam, farDOF) end
 
     
@@ -3750,8 +3751,8 @@ function GetFollowVehicleCamZoomLevel() end
 ---
 --- @hash [0xF33AB75780BA57DE](https://docs.fivem.net/natives/?_0xF33AB75780BA57DE)
 --- @param cam Cam
---- @return void
---- @overload fun(cam: Cam): void
+--- @return nil
+--- @overload fun(cam: Cam): nil
 function StopCamPointing(cam) end
 
     
@@ -3759,8 +3760,8 @@ function StopCamPointing(cam) end
 ---
 --- @hash [0xF46C581C61718916](https://docs.fivem.net/natives/?_0xF46C581C61718916)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function StopGameplayHint(p0) end
 
     
@@ -3771,8 +3772,8 @@ function StopGameplayHint(p0) end
 --- @hash [0xF4C8CF9E353AFECA](https://docs.fivem.net/natives/?_0xF4C8CF9E353AFECA)
 --- @param p0 string (char*)
 --- @param p1 number (float)
---- @return void
---- @overload fun(p0: string, p1: number): void
+--- @return nil
+--- @overload fun(p0: string, p1: number): nil
 function ShakeScriptGlobal(p0, p1) end
 
     
@@ -3784,8 +3785,8 @@ function ShakeScriptGlobal(p0, p1) end
 --- @hash [0xF4C8CF9E353AFECA](https://docs.fivem.net/natives/?_0xF4C8CF9E353AFECA)
 --- @param p0 string (char*)
 --- @param p1 number (float)
---- @return void
---- @overload fun(p0: string, p1: number): void
+--- @return nil
+--- @overload fun(p0: string, p1: number): nil
 --- @deprecated
 function N_0xf4c8cf9e353afeca(p0, p1) end
 
@@ -3800,8 +3801,8 @@ function N_0xf4c8cf9e353afeca(p0, p1) end
 --- end
 --- @hash [0xF4F2C0D4EE209E20](https://docs.fivem.net/natives/?_0xF4F2C0D4EE209E20)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function InvalidateIdleCam() end
 
     
@@ -3816,8 +3817,8 @@ function InvalidateIdleCam() end
 --- end
 --- @hash [0xF4F2C0D4EE209E20](https://docs.fivem.net/natives/?_0xF4F2C0D4EE209E20)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0xf4f2c0d4ee209e20() end
 
@@ -3827,8 +3828,8 @@ function N_0xf4f2c0d4ee209e20() end
 --- @hash [0xF55E4046F6F831DC](https://docs.fivem.net/natives/?_0xF55E4046F6F831DC)
 --- @param p0 any
 --- @param p1 number (float)
---- @return void
---- @overload fun(p0: any, p1: number): void
+--- @return nil
+--- @overload fun(p0: any, p1: number): nil
 function N_0xf55e4046f6f831dc(p0, p1) end
 
     
@@ -3878,8 +3879,8 @@ function IsCinematicCamActive() end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @return void
---- @overload fun(cam: Cam, x: number, y: number, z: number): void
+--- @return nil
+--- @overload fun(cam: Cam, x: number, y: number, z: number): nil
 function PointCamAtCoord(cam, x, y, z) end
 
     
@@ -3887,8 +3888,8 @@ function PointCamAtCoord(cam, x, y, z) end
 ---
 --- @hash [0xF8BDBF3D573049A1](https://docs.fivem.net/natives/?_0xF8BDBF3D573049A1)
 --- @param value number (float)
---- @return void
---- @overload fun(value: number): void
+--- @return nil
+--- @overload fun(value: number): nil
 function SetGameplayHintFollowDistanceScalar(value) end
 
     
@@ -3897,8 +3898,8 @@ function SetGameplayHintFollowDistanceScalar(value) end
 ---
 --- @hash [0xF8BDBF3D573049A1](https://docs.fivem.net/natives/?_0xF8BDBF3D573049A1)
 --- @param value number (float)
---- @return void
---- @overload fun(value: number): void
+--- @return nil
+--- @overload fun(value: number): nil
 --- @deprecated
 function N_0xf8bdbf3d573049a1(value) end
 
@@ -3908,8 +3909,8 @@ function N_0xf8bdbf3d573049a1(value) end
 ---
 --- @hash [0xF8BDBF3D573049A1](https://docs.fivem.net/natives/?_0xF8BDBF3D573049A1)
 --- @param value number (float)
---- @return void
---- @overload fun(value: number): void
+--- @return nil
+--- @overload fun(value: number): nil
 --- @deprecated
 function SetGameplayHintAnimOffsetz(value) end
 
@@ -3919,8 +3920,8 @@ function SetGameplayHintAnimOffsetz(value) end
 --- @hash [0xF9D02130ECDD1D77](https://docs.fivem.net/natives/?_0xF9D02130ECDD1D77)
 --- @param cam Cam
 --- @param height number (float)
---- @return void
---- @overload fun(cam: Cam, height: number): void
+--- @return nil
+--- @overload fun(cam: Cam, height: number): nil
 function SetFlyCamMaxHeight(cam, height) end
 
     
@@ -3930,8 +3931,8 @@ function SetFlyCamMaxHeight(cam, height) end
 --- @hash [0xF9D02130ECDD1D77](https://docs.fivem.net/natives/?_0xF9D02130ECDD1D77)
 --- @param cam Cam
 --- @param height number (float)
---- @return void
---- @overload fun(cam: Cam, height: number): void
+--- @return nil
+--- @overload fun(cam: Cam, height: number): nil
 --- @deprecated
 function N_0xf9d02130ecdd1d77(cam, height) end
 
@@ -3942,8 +3943,8 @@ function N_0xf9d02130ecdd1d77(cam, height) end
 --- @hash [0xF9D02130ECDD1D77](https://docs.fivem.net/natives/?_0xF9D02130ECDD1D77)
 --- @param cam Cam
 --- @param height number (float)
---- @return void
---- @overload fun(cam: Cam, height: number): void
+--- @return nil
+--- @overload fun(cam: Cam, height: number): nil
 --- @deprecated
 function SetCameraRange(cam, height) end
 
@@ -3952,8 +3953,8 @@ function SetCameraRange(cam, height) end
 ---
 --- @hash [0xFD3151CD37EA2245](https://docs.fivem.net/natives/?_0xFD3151CD37EA2245)
 --- @param entity Entity
---- @return void
---- @overload fun(entity: Entity): void
+--- @return nil
+--- @overload fun(entity: Entity): nil
 function N_0xfd3151cd37ea2245(entity) end
 
     
@@ -3975,8 +3976,8 @@ function N_0xfd3151cd37ea2245(entity) end
 --- @hash [0xFD55E49555E017CF](https://docs.fivem.net/natives/?_0xFD55E49555E017CF)
 --- @param shakeName string (char*)
 --- @param intensity number (float)
---- @return void
---- @overload fun(shakeName: string, intensity: number): void
+--- @return nil
+--- @overload fun(shakeName: string, intensity: number): nil
 function ShakeGameplayCam(shakeName, intensity) end
 
     
@@ -3991,8 +3992,8 @@ function ShakeGameplayCam(shakeName, intensity) end
 --- @param yOffset number (float)
 --- @param zOffset number (float)
 --- @param isRelative boolean
---- @return void
---- @overload fun(cam: Cam, entity: Entity, xOffset: number, yOffset: number, zOffset: number, isRelative: boolean): void
+--- @return nil
+--- @overload fun(cam: Cam, entity: Entity, xOffset: number, yOffset: number, zOffset: number, isRelative: boolean): nil
 function AttachCamToEntity(cam, entity, xOffset, yOffset, zOffset, isRelative) end
 
     

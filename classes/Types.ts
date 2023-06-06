@@ -86,7 +86,7 @@ export class Types {
   * @param isReturn `true` for @overload, `false` for @param
   * @param hash Function hash
   */
-  static getDocType (type: string, isReturn: boolean, hash: string): string {
+  static getDocType(type: string, isReturn: boolean, hash: string): string {
     let lType
     switch (type) {
       case 'int':
@@ -168,7 +168,7 @@ export class Types {
         lType = type = PrimitiveTypes.ANY
         break
       case 'func':
-        lType = type = 'fun'
+        lType = type = 'function'
         break
       case 'object':
         console.info(`\x1b[46m\x1b[30mINFO:\x1b[0m \x1b[36mFound a generic object type ${type} in hash ${hash}\x1b[0m -> ${NATIVE_URL}${hash}`)

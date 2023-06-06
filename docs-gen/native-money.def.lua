@@ -1,3 +1,4 @@
+--- @meta
 
 --- NetworkSpentBusiness
 ---
@@ -6,8 +7,8 @@
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkSpentBusiness(p0, p1, p2, p3) end
 
     
@@ -19,8 +20,8 @@ function NetworkSpentBusiness(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 --- @deprecated
 function N_0x0035bb914316f1e3(p0, p1, p2, p3) end
 
@@ -31,8 +32,8 @@ function N_0x0035bb914316f1e3(p0, p1, p2, p3) end
 ---
 --- @hash [0x005ACA7100BD101D](https://docs.fivem.net/natives/?_0x005ACA7100BD101D)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function NetworkEarnFromWagePaymentBonus(amount) end
 
     
@@ -40,8 +41,8 @@ function NetworkEarnFromWagePaymentBonus(amount) end
 ---
 --- @hash [0x02CE1D6AC0FC73EA](https://docs.fivem.net/natives/?_0x02CE1D6AC0FC73EA)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function NetworkEarnFromRockstar(amount) end
 
     
@@ -55,8 +56,8 @@ function NetworkEarnFromRockstar(amount) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 function NetworkSpentVehicleRequested(p0, p1, p2, p3, p4) end
 
     
@@ -69,8 +70,8 @@ function NetworkSpentVehicleRequested(p0, p1, p2, p3, p4) end
 --- @param p1 boolean
 --- @param p2 boolean
 --- @param p3 string (char*)
---- @return void
---- @overload fun(amount: number, p1: boolean, p2: boolean, p3: string): void
+--- @return nil
+--- @overload fun(amount: number, p1: boolean, p2: boolean, p3: string): nil
 function NetworkSpentUpgradeArena(amount, p1, p2, p3) end
 
     
@@ -82,8 +83,8 @@ function NetworkSpentUpgradeArena(amount, p1, p2, p3) end
 --- @param characterSlot number (int)
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(characterSlot: number, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(characterSlot: number, p1: boolean, p2: boolean): nil
 function NetworkDeleteCharacter(characterSlot, p1, p2) end
 
     
@@ -94,8 +95,8 @@ function NetworkDeleteCharacter(characterSlot, p1, p2) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkSpentOrderWarehouseVehicle(p0, p1, p2, p3) end
 
     
@@ -107,8 +108,8 @@ function NetworkSpentOrderWarehouseVehicle(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 --- @deprecated
 function N_0x05f04155a226fbbf(p0, p1, p2, p3) end
 
@@ -119,8 +120,8 @@ function N_0x05f04155a226fbbf(p0, p1, p2, p3) end
 ---
 --- @hash [0x0819DB99FD2FBBD8](https://docs.fivem.net/natives/?_0x0819DB99FD2FBBD8)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function NetworkEarnFromTimeTrialWin(amount) end
 
     
@@ -130,8 +131,8 @@ function NetworkEarnFromTimeTrialWin(amount) end
 --- @param p0 number (int)
 --- @param p1 number (int)
 --- @param amount number (int)
---- @return void
---- @overload fun(p0: number, p1: number, amount: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: number, amount: number): nil
 function NetworkSpentPayGoon(p0, p1, amount) end
 
     
@@ -142,8 +143,8 @@ function NetworkSpentPayGoon(p0, p1, amount) end
 --- @param p0 number (int)
 --- @param p1 number (int)
 --- @param amount number (int)
---- @return void
---- @overload fun(p0: number, p1: number, amount: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: number, amount: number): nil
 --- @deprecated
 function N_0x08a1b82b91900682(p0, p1, amount) end
 
@@ -154,8 +155,8 @@ function N_0x08a1b82b91900682(p0, p1, amount) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function NetworkEarnBoss(p0, p1, p2) end
 
     
@@ -166,8 +167,8 @@ function NetworkEarnBoss(p0, p1, p2) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 --- @deprecated
 function N_0x08b0ca7a6ab3ac32(p0, p1, p2) end
 
@@ -191,8 +192,8 @@ function N_0x08e8eeadfd0dc4a0(amount) end
 ---
 --- @hash [0x09E8F18641BE2575](https://docs.fivem.net/natives/?_0x09E8F18641BE2575)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function NetworkEarnFromCasinoMissionParticipation(amount) end
 
     
@@ -204,8 +205,8 @@ function NetworkEarnFromCasinoMissionParticipation(amount) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function NetworkEarnFromBusinessHubSell(p0, p1, p2) end
 
     
@@ -218,8 +219,8 @@ function NetworkEarnFromBusinessHubSell(p0, p1, p2) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 --- @deprecated
 function N_0x0b39cf0d53f1c883(p0, p1, p2) end
 
@@ -231,8 +232,8 @@ function N_0x0b39cf0d53f1c883(p0, p1, p2) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkSpentUpgradeBunker(p0, p1, p2, p3) end
 
     
@@ -244,8 +245,8 @@ function NetworkSpentUpgradeBunker(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 --- @deprecated
 function N_0x0c82d21a77c22d49(p0, p1, p2, p3) end
 
@@ -257,8 +258,8 @@ function N_0x0c82d21a77c22d49(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkEarnBossAgency(p0, p1, p2, p3) end
 
     
@@ -270,8 +271,8 @@ function NetworkEarnBossAgency(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 --- @deprecated
 function N_0x0cb1be0633c024a8(p0, p1, p2, p3) end
 
@@ -285,8 +286,8 @@ function N_0x0cb1be0633c024a8(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkSpentBuyTiltrotor(p0, p1, p2, p3) end
 
     
@@ -297,8 +298,8 @@ function NetworkSpentBuyTiltrotor(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function N_0x0d30eb83668e63c5(p0, p1, p2, p3) end
 
     
@@ -310,8 +311,8 @@ function N_0x0d30eb83668e63c5(p0, p1, p2, p3) end
 --- @param amount number (int)
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(amount: number, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(amount: number, p1: any, p2: any): nil
 function N_0x0dd362f14f18942a(amount, p1, p2) end
 
     
@@ -322,8 +323,8 @@ function N_0x0dd362f14f18942a(amount, p1, p2) end
 --- @hash [0x0E1E2FF3F4EC11AA](https://docs.fivem.net/natives/?_0x0E1E2FF3F4EC11AA)
 --- @param amount number (int)
 --- @param baseNameHash Hash
---- @return void
---- @overload fun(amount: number, baseNameHash: Hash): void
+--- @return nil
+--- @overload fun(amount: number, baseNameHash: Hash): nil
 function NetworkEarnFromSellBase(amount, baseNameHash) end
 
     
@@ -334,8 +335,8 @@ function NetworkEarnFromSellBase(amount, baseNameHash) end
 --- @hash [0x0F99F70C61F14619](https://docs.fivem.net/natives/?_0x0F99F70C61F14619)
 --- @param amount number (int)
 --- @param p1 any
---- @return void
---- @overload fun(amount: number, p1: any): void
+--- @return nil
+--- @overload fun(amount: number, p1: any): nil
 function NetworkEarnFromArenaCareerProgression(amount, p1) end
 
     
@@ -346,8 +347,8 @@ function NetworkEarnFromArenaCareerProgression(amount, p1) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkSpentPaServiceHeliPickup(p0, p1, p2, p3) end
 
     
@@ -359,8 +360,8 @@ function NetworkSpentPaServiceHeliPickup(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 --- @deprecated
 function N_0x0fe8e1fcd2b86b33(p0, p1, p2, p3) end
 
@@ -372,8 +373,8 @@ function N_0x0fe8e1fcd2b86b33(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function N_0x112209ce0290c03a(p0, p1, p2, p3) end
 
     
@@ -385,8 +386,8 @@ function N_0x112209ce0290c03a(p0, p1, p2, p3) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function NetworkEarnJobBonusFirstTimeBonus(p0, p1, p2) end
 
     
@@ -399,8 +400,8 @@ function NetworkEarnJobBonusFirstTimeBonus(p0, p1, p2) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 --- @deprecated
 function N_0x11b0a20c493f7e36(p0, p1, p2) end
 
@@ -412,8 +413,8 @@ function N_0x11b0a20c493f7e36(p0, p1, p2) end
 --- @hash [0x128A747F4A230952](https://docs.fivem.net/natives/?_0x128A747F4A230952)
 --- @param amount number (int)
 --- @param vehicleHash Hash
---- @return void
---- @overload fun(amount: number, vehicleHash: Hash): void
+--- @return nil
+--- @overload fun(amount: number, vehicleHash: Hash): nil
 function NetworkEarnFromDoomsdayFinaleBonus(amount, vehicleHash) end
 
     
@@ -424,8 +425,8 @@ function NetworkEarnFromDoomsdayFinaleBonus(amount, vehicleHash) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkSpentBuyBunker(p0, p1, p2, p3) end
 
     
@@ -437,8 +438,8 @@ function NetworkSpentBuyBunker(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 --- @deprecated
 function N_0x12d148d26538d0f9(p0, p1, p2, p3) end
 
@@ -448,8 +449,8 @@ function N_0x12d148d26538d0f9(p0, p1, p2, p3) end
 --- @hash [0x131BB5DA15453ACF](https://docs.fivem.net/natives/?_0x131BB5DA15453ACF)
 --- @param amount number (int)
 --- @param p3 any
---- @return number, any
---- @overload fun(amount: number, p3: any): number, any
+--- @return nil, number, any
+--- @overload fun(amount: number, p3: any): nil, number, any
 function NetworkEarnFromBounty(amount, p3) end
 
     
@@ -499,8 +500,8 @@ function NetworkGetRemainingVcDailyTransfers() end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 function NetworkSpentCarclubMembership(p0, p1, p2, p3, p4) end
 
     
@@ -515,8 +516,8 @@ function NetworkSpentCarclubMembership(p0, p1, p2, p3, p4) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 --- @deprecated
 function N_0x1464e17207cd36e2(p0, p1, p2, p3, p4) end
 
@@ -530,8 +531,8 @@ function N_0x1464e17207cd36e2(p0, p1, p2, p3, p4) end
 --- @param p1 any
 --- @param p2 boolean
 --- @param p3 boolean
---- @return void
---- @overload fun(amount: number, p1: any, p2: boolean, p3: boolean): void
+--- @return nil
+--- @overload fun(amount: number, p1: any, p2: boolean, p3: boolean): nil
 function NetworkSpentArenaJoinSpectator(amount, p1, p2, p3) end
 
     
@@ -562,8 +563,8 @@ function NetworkCasinoCanUseGamblingType(hash) end
 --- @hash [0x15BB2A5C757EB91F](https://docs.fivem.net/natives/?_0x15BB2A5C757EB91F)
 --- @param amount number (int)
 --- @param p1 number (int)
---- @return void
---- @overload fun(amount: number, p1: number): void
+--- @return nil
+--- @overload fun(amount: number, p1: number): nil
 function NetworkEarnFromGangopsWagesBonus(amount, p1) end
 
     
@@ -576,8 +577,8 @@ function NetworkEarnFromGangopsWagesBonus(amount, p1) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkSpentUpgradeTiltrotor(p0, p1, p2, p3) end
 
     
@@ -587,8 +588,8 @@ function NetworkSpentUpgradeTiltrotor(p0, p1, p2, p3) end
 --- @param amount number (int)
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(amount: number, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(amount: number, p1: boolean, p2: boolean): nil
 function NetworkSpentTaxi(amount, p1, p2) end
 
     
@@ -603,8 +604,8 @@ function NetworkSpentTaxi(amount, p1, p2) end
 --- @param p3 boolean
 --- @param p4 boolean
 --- @param p5 boolean
---- @return void
---- @overload fun(amount: number, p1: string, p2: string, p3: boolean, p4: boolean, p5: boolean): void
+--- @return nil
+--- @overload fun(amount: number, p1: string, p2: string, p3: boolean, p4: boolean, p5: boolean): nil
 function NetworkDeductCash(amount, p1, p2, p3, p4, p5) end
 
     
@@ -614,8 +615,8 @@ function NetworkDeductCash(amount, p1, p2, p3, p4, p5) end
 ---
 --- @hash [0x1B882107C23A9022](https://docs.fivem.net/natives/?_0x1B882107C23A9022)
 --- @param earnedMoney number (int)
---- @return void
---- @overload fun(earnedMoney: number): void
+--- @return nil
+--- @overload fun(earnedMoney: number): nil
 function NetworkRivalDeliveryCompleted(earnedMoney) end
 
     
@@ -627,8 +628,8 @@ function NetworkRivalDeliveryCompleted(earnedMoney) end
 --- @param amount number (int)
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(amount: number, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(amount: number, p1: boolean, p2: boolean): nil
 function NetworkSpentBountyHunterMission(amount, p1, p2) end
 
     
@@ -639,8 +640,8 @@ function NetworkSpentBountyHunterMission(amount, p1, p2) end
 --- @hash [0x1C121FC9545E0D52](https://docs.fivem.net/natives/?_0x1C121FC9545E0D52)
 --- @param amount number (int)
 --- @param unk string (char*)
---- @return void
---- @overload fun(amount: number, unk: string): void
+--- @return nil
+--- @overload fun(amount: number, unk: string): nil
 function NetworkEarnFromGangopsJobsFinale(amount, unk) end
 
     
@@ -672,8 +673,8 @@ function N_0x1c2473301b1c66ba() end
 --- @param matchId string (char*)
 --- @param p3 boolean
 --- @param p4 boolean
---- @return void
---- @overload fun(amount: number, p1: number, matchId: string, p3: boolean, p4: boolean): void
+--- @return nil
+--- @overload fun(amount: number, p1: number, matchId: string, p3: boolean, p4: boolean): nil
 function NetworkSpentBetting(amount, p1, matchId, p3, p4) end
 
     
@@ -686,8 +687,8 @@ function NetworkSpentBetting(amount, p1, matchId, p3, p4) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function N_0x1dc9b749e7ae282b(p0, p1, p2, p3) end
 
     
@@ -697,8 +698,8 @@ function N_0x1dc9b749e7ae282b(p0, p1, p2, p3) end
 ---
 --- @hash [0x1FDA0AA679C9919B](https://docs.fivem.net/natives/?_0x1FDA0AA679C9919B)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function NetworkEarnFromFmbbBossWork(p0) end
 
     
@@ -709,8 +710,8 @@ function NetworkEarnFromFmbbBossWork(p0) end
 ---
 --- @hash [0x1FDA0AA679C9919B](https://docs.fivem.net/natives/?_0x1FDA0AA679C9919B)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 --- @deprecated
 function N_0x1fda0aa679c9919b(p0) end
 
@@ -744,8 +745,8 @@ function N_0x20194d48eaec9a41(p2) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function N_0x226c284c830d0ca8(p0, p1, p2, p3) end
 
     
@@ -757,8 +758,8 @@ function N_0x226c284c830d0ca8(p0, p1, p2, p3) end
 --- @param amount number (int)
 --- @param unk string (char*)
 --- @param actIndex number (int)
---- @return void
---- @overload fun(amount: number, unk: string, actIndex: number): void
+--- @return nil
+--- @overload fun(amount: number, unk: string, actIndex: number): nil
 function NetworkEarnFromGangopsElite(amount, unk, actIndex) end
 
     
@@ -768,8 +769,8 @@ function NetworkEarnFromGangopsElite(amount, unk, actIndex) end
 --- @param amount number (int)
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(amount: number, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(amount: number, p1: boolean, p2: boolean): nil
 function NetworkSpentCashDrop(amount, p1, p2) end
 
     
@@ -782,8 +783,8 @@ function NetworkSpentCashDrop(amount, p1, p2) end
 --- @param matchId string (char*)
 --- @param p2 boolean
 --- @param p3 boolean
---- @return void
---- @overload fun(amount: number, matchId: string, p2: boolean, p3: boolean): void
+--- @return nil
+--- @overload fun(amount: number, matchId: string, p2: boolean, p3: boolean): nil
 function NetworkSpentJobSkip(amount, matchId, p2, p3) end
 
     
@@ -793,8 +794,8 @@ function NetworkSpentJobSkip(amount, matchId, p2, p3) end
 --- @param p0 any
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: boolean): nil
 function NetworkSpentBounty(p0, p1, p2) end
 
     
@@ -806,8 +807,8 @@ function NetworkSpentBounty(p0, p1, p2) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function N_0x2a7cec72c3443bcc(p0, p1, p2) end
 
     
@@ -820,8 +821,8 @@ function N_0x2a7cec72c3443bcc(p0, p1, p2) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function N_0x2a93c46aab1eacc9(p0, p1, p2, p3) end
 
     
@@ -832,8 +833,8 @@ function N_0x2a93c46aab1eacc9(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function N_0x2afc2d19b50797f2(p0, p1, p2, p3) end
 
     
@@ -843,8 +844,8 @@ function N_0x2afc2d19b50797f2(p0, p1, p2, p3) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p2: boolean): any
+--- @return nil
+--- @overload fun(p0: any, p2: boolean): nil, any
 function NetworkEarnFromChallengeWin(p0, p1, p2) end
 
     
@@ -855,8 +856,8 @@ function NetworkEarnFromChallengeWin(p0, p1, p2) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p2: boolean): any
+--- @return nil
+--- @overload fun(p0: any, p2: boolean): nil, any
 --- @deprecated
 function N_0x2b171e6b2f64d8df(p0, p1, p2) end
 
@@ -868,8 +869,8 @@ function N_0x2b171e6b2f64d8df(p0, p1, p2) end
 --- @hash [0x2C5809EB9DF57257](https://docs.fivem.net/natives/?_0x2C5809EB9DF57257)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function NetworkEarnFromBikeShopBusiness(p0, p1) end
 
     
@@ -882,8 +883,8 @@ function NetworkEarnFromBikeShopBusiness(p0, p1) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkSpentGunrunningContactService(p0, p1, p2, p3) end
 
     
@@ -894,8 +895,8 @@ function NetworkSpentGunrunningContactService(p0, p1, p2, p3) end
 --- @hash [0x2DCB19ABAB0380A8](https://docs.fivem.net/natives/?_0x2DCB19ABAB0380A8)
 --- @param amount number (int)
 --- @param p1 number (int)
---- @return void
---- @overload fun(amount: number, p1: number): void
+--- @return nil
+--- @overload fun(amount: number, p1: number): nil
 function NetworkEarnFromGangopsWages(amount, p1) end
 
     
@@ -906,8 +907,8 @@ function NetworkEarnFromGangopsWages(amount, p1) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function N_0x2fab6614ce22e196(p0, p1, p2, p3) end
 
     
@@ -919,8 +920,8 @@ function N_0x2fab6614ce22e196(p0, p1, p2, p3) end
 --- @param p2 Hash
 --- @param p3 boolean
 --- @param p4 boolean
---- @return void
---- @overload fun(p0: number, p1: number, p2: Hash, p3: boolean, p4: boolean): void
+--- @return nil
+--- @overload fun(p0: number, p1: number, p2: Hash, p3: boolean, p4: boolean): nil
 function NetworkBuyContraband(p0, p1, p2, p3, p4) end
 
     
@@ -933,8 +934,8 @@ function NetworkBuyContraband(p0, p1, p2, p3, p4) end
 --- @param p2 Hash
 --- @param p3 boolean
 --- @param p4 boolean
---- @return void
---- @overload fun(p0: number, p1: number, p2: Hash, p3: boolean, p4: boolean): void
+--- @return nil
+--- @overload fun(p0: number, p1: number, p2: Hash, p3: boolean, p4: boolean): nil
 --- @deprecated
 function N_0x30fd873ece50e9f6(p0, p1, p2, p3, p4) end
 
@@ -946,8 +947,8 @@ function N_0x30fd873ece50e9f6(p0, p1, p2, p3, p4) end
 --- @hash [0x31BA138F6304FB9F](https://docs.fivem.net/natives/?_0x31BA138F6304FB9F)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x31ba138f6304fb9f(p0, p1) end
 
     
@@ -958,8 +959,8 @@ function N_0x31ba138f6304fb9f(p0, p1) end
 --- @param data any
 --- @param p2 boolean
 --- @param p3 boolean
---- @return void
---- @overload fun(amount: number, data: any, p2: boolean, p3: boolean): void
+--- @return nil
+--- @overload fun(amount: number, data: any, p2: boolean, p3: boolean): nil
 function NetworkSpentPurchaseWarehouse(amount, data, p2, p3) end
 
     
@@ -971,8 +972,8 @@ function NetworkSpentPurchaseWarehouse(amount, data, p2, p3) end
 --- @param data any
 --- @param p2 boolean
 --- @param p3 boolean
---- @return void
---- @overload fun(amount: number, data: any, p2: boolean, p3: boolean): void
+--- @return nil
+--- @overload fun(amount: number, data: any, p2: boolean, p3: boolean): nil
 --- @deprecated
 function N_0x33981d6804e62f49(amount, data, p2, p3) end
 
@@ -986,8 +987,8 @@ function N_0x33981d6804e62f49(amount, data, p2, p3) end
 --- @param p1 boolean
 --- @param p2 boolean
 --- @param data any
---- @return void
---- @overload fun(amount: number, p1: boolean, p2: boolean): any
+--- @return nil
+--- @overload fun(amount: number, p1: boolean, p2: boolean): nil, any
 function NetworkSpentBuyCasino(amount, p1, p2, data) end
 
     
@@ -997,8 +998,8 @@ function NetworkSpentBuyCasino(amount, p1, p2, data) end
 ---
 --- @hash [0x35F8DA0E8A31EF1B](https://docs.fivem.net/natives/?_0x35F8DA0E8A31EF1B)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function NetworkEarnFromWagePayment(amount) end
 
     
@@ -1009,8 +1010,8 @@ function NetworkEarnFromWagePayment(amount) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkSpentUpgradeTruck(p0, p1, p2, p3) end
 
     
@@ -1022,8 +1023,8 @@ function NetworkSpentUpgradeTruck(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 --- @deprecated
 function N_0x365e877c61d6988b(p0, p1, p2, p3) end
 
@@ -1035,8 +1036,8 @@ function N_0x365e877c61d6988b(p0, p1, p2, p3) end
 --- @hash [0x36A7FD5A7194B03E](https://docs.fivem.net/natives/?_0x36A7FD5A7194B03E)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function NetworkEarnFromAutoshopBusiness(p0, p1) end
 
     
@@ -1048,8 +1049,8 @@ function NetworkEarnFromAutoshopBusiness(p0, p1) end
 --- @hash [0x36A7FD5A7194B03E](https://docs.fivem.net/natives/?_0x36A7FD5A7194B03E)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 --- @deprecated
 function N_0x36a7fd5a7194b03e(p0, p1) end
 
@@ -1107,8 +1108,8 @@ function NetworkCasinoPurchaseChips(p0, p1) end
 --- @hash [0x3DA5ECD1A56CBA6D](https://docs.fivem.net/natives/?_0x3DA5ECD1A56CBA6D)
 --- @param wallet number (int)
 --- @param bank number (int)
---- @return void
---- @overload fun(wallet: number, bank: number): void
+--- @return nil
+--- @overload fun(wallet: number, bank: number): nil
 function NetworkInitializeCash(wallet, bank) end
 
     
@@ -1118,8 +1119,8 @@ function NetworkInitializeCash(wallet, bank) end
 --- @hash [0x3DA5ECD1A56CBA6D](https://docs.fivem.net/natives/?_0x3DA5ECD1A56CBA6D)
 --- @param wallet number (int)
 --- @param bank number (int)
---- @return void
---- @overload fun(wallet: number, bank: number): void
+--- @return nil
+--- @overload fun(wallet: number, bank: number): nil
 --- @deprecated
 function N_0x3da5ecd1a56cba6d(wallet, bank) end
 
@@ -1133,8 +1134,8 @@ function N_0x3da5ecd1a56cba6d(wallet, bank) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkSpentUpgradeBase(p0, p1, p2, p3) end
 
     
@@ -1145,8 +1146,8 @@ function NetworkSpentUpgradeBase(p0, p1, p2, p3) end
 ---
 --- @hash [0x3E4ADAFF1830F146](https://docs.fivem.net/natives/?_0x3E4ADAFF1830F146)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function NetworkEarnFromWarehouse() end
 
     
@@ -1158,8 +1159,8 @@ function NetworkEarnFromWarehouse() end
 ---
 --- @hash [0x3E4ADAFF1830F146](https://docs.fivem.net/natives/?_0x3E4ADAFF1830F146)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 --- @deprecated
 function N_0x3e4adaff1830f146() end
 
@@ -1174,8 +1175,8 @@ function N_0x3e4adaff1830f146() end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 function NetworkEarnCasinoHeistBonus(p0, p1, p2, p3, p4) end
 
     
@@ -1191,8 +1192,8 @@ function NetworkEarnCasinoHeistBonus(p0, p1, p2, p3, p4) end
 --- @param p6 any
 --- @param p7 any
 --- @param p8 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any): nil
 function NetworkEarnFromPersonalVehicle(p0, p1, p2, p3, p4, p5, p6, p7, p8) end
 
     
@@ -1209,8 +1210,8 @@ function NetworkEarnFromPersonalVehicle(p0, p1, p2, p3, p4, p5, p6, p7, p8) end
 --- @param p6 any
 --- @param p7 any
 --- @param p8 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any): nil
 --- @deprecated
 function N_0x3f4d00167e41e0ad(p0, p1, p2, p3, p4, p5, p6, p7, p8) end
 
@@ -1224,8 +1225,8 @@ function N_0x3f4d00167e41e0ad(p0, p1, p2, p3, p4, p5, p6, p7, p8) end
 --- @param p1 boolean
 --- @param p2 boolean
 --- @param p3 string (char*)
---- @return void
---- @overload fun(amount: number, p1: boolean, p2: boolean, p3: string): void
+--- @return nil
+--- @overload fun(amount: number, p1: boolean, p2: boolean, p3: string): nil
 function NetworkSpentBuyArena(amount, p1, p2, p3) end
 
     
@@ -1236,8 +1237,8 @@ function NetworkSpentBuyArena(amount, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function N_0x4128464231e3ca0b(p0, p1, p2, p3) end
 
     
@@ -1247,8 +1248,8 @@ function N_0x4128464231e3ca0b(p0, p1, p2, p3) end
 ---
 --- @hash [0x42FCE14F50F27291](https://docs.fivem.net/natives/?_0x42FCE14F50F27291)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function NetworkEarnFromBusinessBattle(p0) end
 
     
@@ -1259,8 +1260,8 @@ function NetworkEarnFromBusinessBattle(p0) end
 ---
 --- @hash [0x42FCE14F50F27291](https://docs.fivem.net/natives/?_0x42FCE14F50F27291)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 --- @deprecated
 function N_0x42fce14f50f27291(p0) end
 
@@ -1269,8 +1270,8 @@ function N_0x42fce14f50f27291(p0) end
 ---
 --- @hash [0x4337511FA8221D36](https://docs.fivem.net/natives/?_0x4337511FA8221D36)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function NetworkEarnFromNotBadsport(amount) end
 
     
@@ -1279,8 +1280,8 @@ function NetworkEarnFromNotBadsport(amount) end
 ---
 --- @hash [0x4337511FA8221D36](https://docs.fivem.net/natives/?_0x4337511FA8221D36)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 --- @deprecated
 function N_0x4337511fa8221d36(amount) end
 
@@ -1295,8 +1296,8 @@ function N_0x4337511fa8221d36(amount) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 function NetworkSpentArcadeGeneric(p0, p1, p2, p3, p4) end
 
     
@@ -1309,8 +1310,8 @@ function NetworkSpentArcadeGeneric(p0, p1, p2, p3, p4) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkEarnFromSightseeing(p0, p1, p2, p3) end
 
     
@@ -1318,8 +1319,8 @@ function NetworkEarnFromSightseeing(p0, p1, p2, p3) end
 ---
 --- @hash [0x45B8154E077D9E4D](https://docs.fivem.net/natives/?_0x45B8154E077D9E4D)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function NetworkEarnFromHoldups(amount) end
 
     
@@ -1332,8 +1333,8 @@ function NetworkEarnFromHoldups(amount) end
 --- @param p1 boolean
 --- @param p2 boolean
 --- @param data any
---- @return void
---- @overload fun(amount: number, p1: boolean, p2: boolean): any
+--- @return nil
+--- @overload fun(amount: number, p1: boolean, p2: boolean): nil, any
 function NetworkSpentUpgradeCasino(amount, p1, p2, data) end
 
     
@@ -1346,8 +1347,8 @@ function NetworkSpentUpgradeCasino(amount, p1, p2, data) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkSpentCasinoHeistSkipMission(p0, p1, p2, p3) end
 
     
@@ -1359,8 +1360,8 @@ function NetworkSpentCasinoHeistSkipMission(p0, p1, p2, p3) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function N_0x4c3b75694f7e0d9c(p0, p1, p2) end
 
     
@@ -1373,8 +1374,8 @@ function N_0x4c3b75694f7e0d9c(p0, p1, p2) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkSpentBuyBase(p0, p1, p2, p3) end
 
     
@@ -1395,8 +1396,8 @@ function NetworkGetPvcBalance() end
 ---
 --- @hash [0x5128DF14A5BB86FC](https://docs.fivem.net/natives/?_0x5128DF14A5BB86FC)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function NetworkEarnFromDailyObjectiveEvent(amount) end
 
     
@@ -1407,8 +1408,8 @@ function NetworkEarnFromDailyObjectiveEvent(amount) end
 --- @hash [0x515B4A22E4D3C6D7](https://docs.fivem.net/natives/?_0x515B4A22E4D3C6D7)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function NetworkEarnFromAiTargetKill(p0, p1) end
 
     
@@ -1420,8 +1421,8 @@ function NetworkEarnFromAiTargetKill(p0, p1) end
 --- @hash [0x515B4A22E4D3C6D7](https://docs.fivem.net/natives/?_0x515B4A22E4D3C6D7)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 --- @deprecated
 function N_0x515b4a22e4d3c6d7(p0, p1) end
 
@@ -1432,8 +1433,8 @@ function N_0x515b4a22e4d3c6d7(p0, p1) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function NetworkSpentVipUtilityCharges(p0, p1, p2) end
 
     
@@ -1444,8 +1445,8 @@ function NetworkSpentVipUtilityCharges(p0, p1, p2) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 --- @deprecated
 function N_0x5182a339a3474510(p0, p1, p2) end
 
@@ -1456,8 +1457,8 @@ function N_0x5182a339a3474510(p0, p1, p2) end
 --- @param p0 any
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: boolean): nil
 function NetworkSpentBoatPickup(p0, p1, p2) end
 
     
@@ -1468,8 +1469,8 @@ function NetworkSpentBoatPickup(p0, p1, p2) end
 --- @hash [0x533073E8A596008C](https://docs.fivem.net/natives/?_0x533073E8A596008C)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function NetworkEarnFromVehicleAutoshop(p0, p1) end
 
     
@@ -1481,8 +1482,8 @@ function NetworkEarnFromVehicleAutoshop(p0, p1) end
 --- @hash [0x533073E8A596008C](https://docs.fivem.net/natives/?_0x533073E8A596008C)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 --- @deprecated
 function N_0x533073e8a596008c(p0, p1) end
 
@@ -1493,8 +1494,8 @@ function N_0x533073e8a596008c(p0, p1) end
 ---
 --- @hash [0x54ABA22FA6371249](https://docs.fivem.net/natives/?_0x54ABA22FA6371249)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function NetworkSpentBeachPartyGeneric(p0) end
 
     
@@ -1504,8 +1505,8 @@ function NetworkSpentBeachPartyGeneric(p0) end
 ---
 --- @hash [0x5517F90043466049](https://docs.fivem.net/natives/?_0x5517F90043466049)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function NetworkEarnFromCollectablesActionFigures(amount) end
 
     
@@ -1518,8 +1519,8 @@ function NetworkEarnFromCollectablesActionFigures(amount) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function N_0x5574637681911fda(p0, p1, p2, p3) end
 
     
@@ -1528,8 +1529,8 @@ function N_0x5574637681911fda(p0, p1, p2, p3) end
 --- @hash [0x55A1E095DB052FA5](https://docs.fivem.net/natives/?_0x55A1E095DB052FA5)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0x55a1e095db052fa5(p0, p1) end
 
     
@@ -1539,8 +1540,8 @@ function N_0x55a1e095db052fa5(p0, p1) end
 ---
 --- @hash [0x566FD402B25787DE](https://docs.fivem.net/natives/?_0x566FD402B25787DE)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function NetworkEarnFromCasinoMissionReward(amount) end
 
     
@@ -1549,8 +1550,8 @@ function NetworkEarnFromCasinoMissionReward(amount) end
 --- @hash [0x56A3B51944C50598](https://docs.fivem.net/natives/?_0x56A3B51944C50598)
 --- @param value number (int)
 --- @param networkHandle number (int*)
---- @return void
---- @overload fun(value: number): number
+--- @return nil
+--- @overload fun(value: number): nil, number
 function NetworkReceivePlayerJobshareCash(value, networkHandle) end
 
     
@@ -1563,8 +1564,8 @@ function NetworkReceivePlayerJobshareCash(value, networkHandle) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkEarnFromBusinessHubSource(p0, p1, p2, p3) end
 
     
@@ -1575,8 +1576,8 @@ function NetworkEarnFromBusinessHubSource(p0, p1, p2, p3) end
 --- @hash [0x5B669CF2299A271F](https://docs.fivem.net/natives/?_0x5B669CF2299A271F)
 --- @param amount number (int)
 --- @param p1 number (int)
---- @return void
---- @overload fun(amount: number, p1: number): void
+--- @return nil
+--- @overload fun(amount: number, p1: number): nil
 function NetworkEarnFromTargetRefund(amount, p1) end
 
     
@@ -1589,8 +1590,8 @@ function NetworkEarnFromTargetRefund(amount, p1) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkSpentEmployAssassins(p0, p1, p2, p3) end
 
     
@@ -1601,8 +1602,8 @@ function NetworkSpentEmployAssassins(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkSpentJukebox(p0, p1, p2, p3) end
 
     
@@ -1614,8 +1615,8 @@ function NetworkSpentJukebox(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 --- @deprecated
 function N_0x5bcde0f640c773d2(p0, p1, p2, p3) end
 
@@ -1627,8 +1628,8 @@ function N_0x5bcde0f640c773d2(p0, p1, p2, p3) end
 --- @hash [0x5C9B198AF5A54FA6](https://docs.fivem.net/natives/?_0x5C9B198AF5A54FA6)
 --- @param amount number (int)
 --- @param p1 any
---- @return void
---- @overload fun(amount: number, p1: any): void
+--- @return nil
+--- @overload fun(amount: number, p1: any): nil
 function NetworkEarnCollectableCompletedCollection(amount, p1) end
 
     
@@ -1681,8 +1682,8 @@ function NetworkGetEvcBalance() end
 --- @param amount number (int)
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(amount: number, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(amount: number, p1: boolean, p2: boolean): nil
 function NetworkSpentBallisticEquipment(amount, p1, p2) end
 
     
@@ -1693,8 +1694,8 @@ function NetworkSpentBallisticEquipment(amount, p1, p2) end
 --- @param amount number (int)
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(amount: number, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(amount: number, p1: boolean, p2: boolean): nil
 --- @deprecated
 function N_0x5d97630a8a0ef123(amount, p1, p2) end
 
@@ -1705,8 +1706,8 @@ function N_0x5d97630a8a0ef123(amount, p1, p2) end
 ---
 --- @hash [0x5E7AE8AABE8B7C0D](https://docs.fivem.net/natives/?_0x5E7AE8AABE8B7C0D)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function NetworkEarnFromAssassinateTargetKilled_2(amount) end
 
     
@@ -1718,8 +1719,8 @@ function NetworkEarnFromAssassinateTargetKilled_2(amount) end
 --- @param amount number (int)
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(amount: number, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(amount: number, p1: boolean, p2: boolean): nil
 function NetworkSpentGangopsTripSkip(amount, p1, p2) end
 
     
@@ -1729,8 +1730,8 @@ function NetworkSpentGangopsTripSkip(amount, p1, p2) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function N_0x5f456788b05faeac(p0, p1, p2) end
 
     
@@ -1740,8 +1741,8 @@ function N_0x5f456788b05faeac(p0, p1, p2) end
 --- @param p0 any
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: boolean): nil
 function NetworkPayEmployeeWage(p0, p1, p2) end
 
     
@@ -1752,8 +1753,8 @@ function NetworkPayEmployeeWage(p0, p1, p2) end
 --- @param p0 any
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: boolean): nil
 --- @deprecated
 function N_0x5fd5ed82cbbe9989(p0, p1, p2) end
 
@@ -1763,8 +1764,8 @@ function N_0x5fd5ed82cbbe9989(p0, p1, p2) end
 --- @hash [0x61326EE6DF15B0CA](https://docs.fivem.net/natives/?_0x61326EE6DF15B0CA)
 --- @param amount number (int)
 --- @param heistHash string (char*)
---- @return void
---- @overload fun(amount: number, heistHash: string): void
+--- @return nil
+--- @overload fun(amount: number, heistHash: string): nil
 function NetworkEarnFromBendJob(amount, heistHash) end
 
     
@@ -1774,8 +1775,8 @@ function NetworkEarnFromBendJob(amount, heistHash) end
 --- @hash [0x61326EE6DF15B0CA](https://docs.fivem.net/natives/?_0x61326EE6DF15B0CA)
 --- @param amount number (int)
 --- @param heistHash string (char*)
---- @return void
---- @overload fun(amount: number, heistHash: string): void
+--- @return nil
+--- @overload fun(amount: number, heistHash: string): nil
 --- @deprecated
 function N_0x61326ee6df15b0ca(amount, heistHash) end
 
@@ -1786,8 +1787,8 @@ function N_0x61326ee6df15b0ca(amount, heistHash) end
 --- @hash [0x61326EE6DF15B0CA](https://docs.fivem.net/natives/?_0x61326EE6DF15B0CA)
 --- @param amount number (int)
 --- @param heistHash string (char*)
---- @return void
---- @overload fun(amount: number, heistHash: string): void
+--- @return nil
+--- @overload fun(amount: number, heistHash: string): nil
 --- @deprecated
 function NetworkEarnFromMissionH(amount, heistHash) end
 
@@ -1801,8 +1802,8 @@ function NetworkEarnFromMissionH(amount, heistHash) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkSpentUpgradeHangar(p0, p1, p2, p3) end
 
     
@@ -1814,8 +1815,8 @@ function NetworkSpentUpgradeHangar(p0, p1, p2, p3) end
 --- @param amount number (int)
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(amount: number, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(amount: number, p1: boolean, p2: boolean): nil
 function NetworkSpentArenaPremium(amount, p1, p2) end
 
     
@@ -1828,8 +1829,8 @@ function NetworkSpentArenaPremium(amount, p1, p2) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(amount: number, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(amount: number, p1: any, p2: any, p3: any): nil
 function NetworkEarnFromArenaWar(amount, p1, p2, p3) end
 
     
@@ -1840,8 +1841,8 @@ function NetworkEarnFromArenaWar(amount, p1, p2, p3) end
 --- @param propertyName Hash
 --- @param p2 boolean
 --- @param p3 boolean
---- @return void
---- @overload fun(propertyCost: number, propertyName: Hash, p2: boolean, p3: boolean): void
+--- @return nil
+--- @overload fun(propertyCost: number, propertyName: Hash, p2: boolean, p3: boolean): nil
 function NetworkBuyProperty(propertyCost, propertyName, p2, p3) end
 
     
@@ -1856,8 +1857,8 @@ function NetworkBuyProperty(propertyCost, propertyName, p2, p3) end
 --- @param p3 any
 --- @param p4 any
 --- @param p5 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any): nil
 function N_0x65482bfd0923c8a1(p0, p1, p2, p3, p4, p5) end
 
     
@@ -1868,8 +1869,8 @@ function N_0x65482bfd0923c8a1(p0, p1, p2, p3, p4, p5) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function N_0x675d19c6067cae08(p0, p1, p2, p3) end
 
     
@@ -1879,8 +1880,8 @@ function N_0x675d19c6067cae08(p0, p1, p2, p3) end
 ---
 --- @hash [0x676C48776CACBB5A](https://docs.fivem.net/natives/?_0x676C48776CACBB5A)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function NetworkEarnFromSpinTheWheelCash(amount) end
 
     
@@ -1890,8 +1891,8 @@ function NetworkEarnFromSpinTheWheelCash(amount) end
 ---
 --- @hash [0x6816FB4416760775](https://docs.fivem.net/natives/?_0x6816FB4416760775)
 --- @param p0 any
---- @return any, any
---- @overload fun(p0: any): any, any
+--- @return nil, any, any
+--- @overload fun(p0: any): nil, any, any
 function NetworkEarnFromJobBonus(p0) end
 
     
@@ -1902,8 +1903,8 @@ function NetworkEarnFromJobBonus(p0) end
 ---
 --- @hash [0x6816FB4416760775](https://docs.fivem.net/natives/?_0x6816FB4416760775)
 --- @param p0 any
---- @return any, any
---- @overload fun(p0: any): any, any
+--- @return nil, any, any
+--- @overload fun(p0: any): nil, any, any
 --- @deprecated
 function N_0x6816fb4416760775(p0) end
 
@@ -1915,8 +1916,8 @@ function N_0x6816fb4416760775(p0) end
 ---
 --- @hash [0x6816FB4416760775](https://docs.fivem.net/natives/?_0x6816FB4416760775)
 --- @param p0 any
---- @return any, any
---- @overload fun(p0: any): any, any
+--- @return nil, any, any
+--- @overload fun(p0: any): nil, any, any
 --- @deprecated
 function NetworkEarnFromJobBonus(p0) end
 
@@ -1928,8 +1929,8 @@ function NetworkEarnFromJobBonus(p0) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function N_0x69ef772b192614c1(p0, p1, p2, p3) end
 
     
@@ -1939,8 +1940,8 @@ function N_0x69ef772b192614c1(p0, p1, p2, p3) end
 --- @param bank number (int)
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(bank: number, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(bank: number, p1: boolean, p2: boolean): nil
 function NetworkSpentFromRockstar(bank, p1, p2) end
 
     
@@ -1951,8 +1952,8 @@ function NetworkSpentFromRockstar(bank, p1, p2) end
 --- @param bank number (int)
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(bank: number, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(bank: number, p1: boolean, p2: boolean): nil
 --- @deprecated
 function N_0x6a445b64ed7abeb5(bank, p1, p2) end
 
@@ -1964,8 +1965,8 @@ function N_0x6a445b64ed7abeb5(bank, p1, p2) end
 --- @param p1 any
 --- @param p2 boolean
 --- @param p3 boolean
---- @return void
---- @overload fun(p0: any, p1: any, p2: boolean, p3: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: boolean, p3: boolean): nil
 function NetworkSpentCinema(p0, p1, p2, p3) end
 
     
@@ -1979,8 +1980,8 @@ function NetworkSpentCinema(p0, p1, p2, p3) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 function N_0x6b7e4fb50d5f3d65(p0, p1, p2, p3, p4) end
 
     
@@ -1995,8 +1996,8 @@ function N_0x6b7e4fb50d5f3d65(p0, p1, p2, p3, p4) end
 --- @param p3 any
 --- @param p4 any
 --- @param p5 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any): nil
 function NetworkSpentSubmarine(p0, p1, p2, p3, p4, p5) end
 
     
@@ -2006,8 +2007,8 @@ function NetworkSpentSubmarine(p0, p1, p2, p3, p4, p5) end
 --- @param p0 any
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: boolean): nil
 function NetworkSpentBuyPassiveMode(p0, p1, p2) end
 
     
@@ -2017,8 +2018,8 @@ function NetworkSpentBuyPassiveMode(p0, p1, p2) end
 --- @param p0 any
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: boolean): nil
 function NetworkSpentBuyRevealPlayers(p0, p1, p2) end
 
     
@@ -2028,8 +2029,8 @@ function NetworkSpentBuyRevealPlayers(p0, p1, p2) end
 --- @param p0 number (int)
 --- @param p1 string (char*)
 --- @param p2 number (int)
---- @return void
---- @overload fun(p0: number, p1: string, p2: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: string, p2: number): nil
 function NetworkEarnFromDailyObjectives(p0, p1, p2) end
 
     
@@ -2040,8 +2041,8 @@ function NetworkEarnFromDailyObjectives(p0, p1, p2) end
 --- @param p0 number (int)
 --- @param p1 string (char*)
 --- @param p2 number (int)
---- @return void
---- @overload fun(p0: number, p1: string, p2: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: string, p2: number): nil
 --- @deprecated
 function N_0x6ea318c91c1a8786(p0, p1, p2) end
 
@@ -2053,8 +2054,8 @@ function N_0x6ea318c91c1a8786(p0, p1, p2) end
 --- @param p0 number (int)
 --- @param p1 string (char*)
 --- @param p2 number (int)
---- @return void
---- @overload fun(p0: number, p1: string, p2: number): void
+--- @return nil
+--- @overload fun(p0: number, p1: string, p2: number): nil
 --- @deprecated
 function NetworkEarnFromDailyObjective(p0, p1, p2) end
 
@@ -2077,8 +2078,8 @@ function N_0x6fcf8ddea146c45b(p0) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function N_0x6fd97159fe3c971a(p0, p1, p2, p3) end
 
     
@@ -2102,8 +2103,8 @@ function NetworkGetStringBankWalletBalance() end
 --- @param p1 any
 --- @param p2 boolean
 --- @param p3 boolean
---- @return void
---- @overload fun(amount: number, p1: any, p2: boolean, p3: boolean): void
+--- @return nil
+--- @overload fun(amount: number, p1: any, p2: boolean, p3: boolean): nil
 function NetworkSpentArenaSpectatorBox(amount, p1, p2, p3) end
 
     
@@ -2113,8 +2114,8 @@ function NetworkSpentArenaSpectatorBox(amount, p1, p2, p3) end
 ---
 --- @hash [0x71BEC32FA466E105](https://docs.fivem.net/natives/?_0x71BEC32FA466E105)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function NetworkEarnFromBikerIncome(p0) end
 
     
@@ -2130,8 +2131,8 @@ function NetworkEarnFromBikerIncome(p0) end
 --- @param p4 any
 --- @param p5 any
 --- @param p6 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any): nil
 function NetworkEarnCasinoHeist(p0, p1, p2, p3, p4, p5, p6) end
 
     
@@ -2185,8 +2186,8 @@ function N_0x7303e27cc6532080(p0, p1, p2, p3, p4, p5) end
 --- @param p0 number (int)
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: number, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: number, p1: boolean, p2: boolean): nil
 function NetworkBuySmokes(p0, p1, p2) end
 
     
@@ -2199,8 +2200,8 @@ function NetworkBuySmokes(p0, p1, p2) end
 --- @param cost number (int)
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(cost: number, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(cost: number, p1: boolean, p2: boolean): nil
 function NetworkBuyAirstrike(cost, p1, p2) end
 
     
@@ -2233,8 +2234,8 @@ function N_0x76ef28da05ea395a() end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkSpentGangopsCannon(p0, p1, p2, p3) end
 
     
@@ -2245,8 +2246,8 @@ function NetworkSpentGangopsCannon(p0, p1, p2, p3) end
 --- @hash [0x7A5349B773584675](https://docs.fivem.net/natives/?_0x7A5349B773584675)
 --- @param amount number (int)
 --- @param p1 any
---- @return void
---- @overload fun(amount: number, p1: any): void
+--- @return nil
+--- @overload fun(amount: number, p1: any): nil
 function NetworkEarnFromRdrBonus(amount, p1) end
 
     
@@ -2259,8 +2260,8 @@ function NetworkEarnFromRdrBonus(amount, p1) end
 --- @param victim Player
 --- @param p2 boolean
 --- @param p3 boolean
---- @return void
---- @overload fun(amount: number, victim: Player, p2: boolean, p3: boolean): void
+--- @return nil
+--- @overload fun(amount: number, victim: Player, p2: boolean, p3: boolean): nil
 function NetworkBuyBounty(amount, victim, p2, p3) end
 
     
@@ -2270,8 +2271,8 @@ function NetworkBuyBounty(amount, victim, p2, p3) end
 --- @param p0 any
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: boolean): nil
 function NetworkSpentHeliPickup(p0, p1, p2) end
 
     
@@ -2291,8 +2292,8 @@ function N_0x7c4fccd2e4deb394() end
 --- @param p1 number (int)
 --- @param p2 boolean
 --- @param p3 boolean
---- @return void
---- @overload fun(p0: number, p1: number, p2: boolean, p3: boolean): void
+--- @return nil
+--- @overload fun(p0: number, p1: number, p2: boolean, p3: boolean): nil
 function NetworkSpentPlayerHealthcare(p0, p1, p2, p3) end
 
     
@@ -2304,8 +2305,8 @@ function NetworkSpentPlayerHealthcare(p0, p1, p2, p3) end
 --- @param p1 number (int)
 --- @param p2 boolean
 --- @param p3 boolean
---- @return void
---- @overload fun(p0: number, p1: number, p2: boolean, p3: boolean): void
+--- @return nil
+--- @overload fun(p0: number, p1: number, p2: boolean, p3: boolean): nil
 --- @deprecated
 function N_0x7c99101f7fce2ee5(p0, p1, p2, p3) end
 
@@ -2316,8 +2317,8 @@ function N_0x7c99101f7fce2ee5(p0, p1, p2, p3) end
 ---
 --- @hash [0x7E2F4E8F44CAF4E0](https://docs.fivem.net/natives/?_0x7E2F4E8F44CAF4E0)
 --- @param p0 boolean
---- @return void
---- @overload fun(p0: boolean): void
+--- @return nil
+--- @overload fun(p0: boolean): nil
 function NetworkSpentSalesDisplay(p0) end
 
     
@@ -2327,8 +2328,8 @@ function NetworkSpentSalesDisplay(p0) end
 --- @param p0 any
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: boolean): nil
 function NetworkSpentTelescope(p0, p1, p2) end
 
     
@@ -2338,8 +2339,8 @@ function NetworkSpentTelescope(p0, p1, p2) end
 --- @param p0 any
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: boolean): nil
 function NetworkSpentArrestBail(p0, p1, p2) end
 
     
@@ -2376,8 +2377,8 @@ function N_0x81404f3dc124fe5b(amount, p1, p2) end
 --- @param cost number (int)
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(cost: number, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(cost: number, p1: boolean, p2: boolean): nil
 function NetworkBuyHeliStrike(cost, p1, p2) end
 
     
@@ -2387,8 +2388,8 @@ function NetworkBuyHeliStrike(cost, p1, p2) end
 --- @param p0 any
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: boolean): nil
 function NetworkSpentRequestJob(p0, p1, p2) end
 
     
@@ -2399,8 +2400,8 @@ function NetworkSpentRequestJob(p0, p1, p2) end
 --- @param p0 any
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: boolean): nil
 --- @deprecated
 function N_0x8204da7934df3155(p0, p1, p2) end
 
@@ -2409,8 +2410,8 @@ function N_0x8204da7934df3155(p0, p1, p2) end
 ---
 --- @hash [0x821418C727FCACD7](https://docs.fivem.net/natives/?_0x821418C727FCACD7)
 --- @param characterSlot number (int)
---- @return void
---- @overload fun(characterSlot: number): void
+--- @return nil
+--- @overload fun(characterSlot: number): nil
 function NetworkManualDeleteCharacter(characterSlot) end
 
     
@@ -2419,8 +2420,8 @@ function NetworkManualDeleteCharacter(characterSlot) end
 ---
 --- @hash [0x821418C727FCACD7](https://docs.fivem.net/natives/?_0x821418C727FCACD7)
 --- @param characterSlot number (int)
---- @return void
---- @overload fun(characterSlot: number): void
+--- @return nil
+--- @overload fun(characterSlot: number): nil
 --- @deprecated
 function N_0x821418c727fcacd7(characterSlot) end
 
@@ -2430,8 +2431,8 @@ function N_0x821418c727fcacd7(characterSlot) end
 --- @hash [0x827A5BA1A44ACA6D](https://docs.fivem.net/natives/?_0x827A5BA1A44ACA6D)
 --- @param amount number (int)
 --- @param p1 string (char*)
---- @return void
---- @overload fun(amount: number, p1: string): void
+--- @return nil
+--- @overload fun(amount: number, p1: string): nil
 function NetworkEarnFromBetting(amount, p1) end
 
     
@@ -2441,8 +2442,8 @@ function NetworkEarnFromBetting(amount, p1) end
 ---
 --- @hash [0x83AD64F53F4E9483](https://docs.fivem.net/natives/?_0x83AD64F53F4E9483)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function NetworkEarnFromCompleteCollection(amount) end
 
     
@@ -2451,8 +2452,8 @@ function NetworkEarnFromCompleteCollection(amount) end
 --- @hash [0x849648349D77F5C5](https://docs.fivem.net/natives/?_0x849648349D77F5C5)
 --- @param amount number (int)
 --- @param propertyName Hash
---- @return void
---- @overload fun(amount: number, propertyName: Hash): void
+--- @return nil
+--- @overload fun(amount: number, propertyName: Hash): nil
 function NetworkEarnFromProperty(amount, propertyName) end
 
     
@@ -2460,8 +2461,8 @@ function NetworkEarnFromProperty(amount, propertyName) end
 ---
 --- @hash [0x84C0116D012E8FC2](https://docs.fivem.net/natives/?_0x84C0116D012E8FC2)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function NetworkEarnFromDestroyingContraband(p0) end
 
     
@@ -2470,8 +2471,8 @@ function NetworkEarnFromDestroyingContraband(p0) end
 ---
 --- @hash [0x84C0116D012E8FC2](https://docs.fivem.net/natives/?_0x84C0116D012E8FC2)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 --- @deprecated
 function N_0x84c0116d012e8fc2(p0) end
 
@@ -2483,8 +2484,8 @@ function N_0x84c0116d012e8fc2(p0) end
 --- @hash [0x84FF63BD4966F33D](https://docs.fivem.net/natives/?_0x84FF63BD4966F33D)
 --- @param amount number (int)
 --- @param p1 any
---- @return void
---- @overload fun(amount: number, p1: any): void
+--- @return nil
+--- @overload fun(amount: number, p1: any): nil
 function NetworkEarnFromCollectionItem(amount, p1) end
 
     
@@ -2495,8 +2496,8 @@ function NetworkEarnFromCollectionItem(amount, p1) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(amount: number, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(amount: number, p1: any, p2: any, p3: any): nil
 function NetworkEarnFromBusinessProduct(amount, p1, p2, p3) end
 
     
@@ -2508,8 +2509,8 @@ function NetworkEarnFromBusinessProduct(amount, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(amount: number, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(amount: number, p1: any, p2: any, p3: any): nil
 --- @deprecated
 function N_0x8586789730b10caf(amount, p1, p2, p3) end
 
@@ -2523,8 +2524,8 @@ function N_0x8586789730b10caf(amount, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function N_0x870289a558348378(p0, p1, p2, p3) end
 
     
@@ -2538,8 +2539,8 @@ function N_0x870289a558348378(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 boolean
 --- @param p3 boolean
---- @return void
---- @overload fun(player: Player, amount: number, p1: any, p2: boolean, p3: boolean): void
+--- @return nil
+--- @overload fun(player: Player, amount: number, p1: any, p2: boolean, p3: boolean): nil
 function NetworkSpentNightclubEntryFee(player, amount, p1, p2, p3) end
 
     
@@ -2553,8 +2554,8 @@ function NetworkSpentNightclubEntryFee(player, amount, p1, p2, p3) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(amount: number, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(amount: number, p1: any, p2: any, p3: any, p4: any): nil
 function NetworkSpentCasinoGeneric(amount, p1, p2, p3, p4) end
 
     
@@ -2567,8 +2568,8 @@ function NetworkSpentCasinoGeneric(amount, p1, p2, p3, p4) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkSpentUpgradeSub(p0, p1, p2, p3) end
 
     
@@ -2582,8 +2583,8 @@ function NetworkSpentUpgradeSub(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 --- @deprecated
 function N_0x89049a84065ce68e(p0, p1, p2, p3) end
 
@@ -2614,8 +2615,8 @@ function NetworkCasinoCanPurchaseChipsWithPvc_2() end
 --- @param p1 any
 --- @param p2 boolean
 --- @param p3 boolean
---- @return void
---- @overload fun(amountSpent: number, p1: any, p2: boolean, p3: boolean): void
+--- @return nil
+--- @overload fun(amountSpent: number, p1: any, p2: boolean, p3: boolean): nil
 function NetworkBuyFairgroundRide(amountSpent, p1, p2, p3) end
 
     
@@ -2632,8 +2633,8 @@ function NetworkBuyFairgroundRide(amountSpent, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 boolean
 --- @param p3 boolean
---- @return void
---- @overload fun(amountSpent: number, p1: any, p2: boolean, p3: boolean): void
+--- @return nil
+--- @overload fun(amountSpent: number, p1: any, p2: boolean, p3: boolean): nil
 --- @deprecated
 function N_0x8a7b3952dd64d2b5(amountSpent, p1, p2, p3) end
 
@@ -2646,8 +2647,8 @@ function N_0x8a7b3952dd64d2b5(amountSpent, p1, p2, p3) end
 ---
 --- @hash [0x8BCB27A057DF7B7F](https://docs.fivem.net/natives/?_0x8BCB27A057DF7B7F)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function NetworkEarnFromSellingVehicle(amount) end
 
     
@@ -2658,8 +2659,8 @@ function NetworkEarnFromSellingVehicle(amount) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function N_0x8e243837643d9583(p0, p1, p2, p3) end
 
     
@@ -2672,8 +2673,8 @@ function N_0x8e243837643d9583(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function N_0x90cd7c6871fbf1b4(p0, p1, p2, p3) end
 
     
@@ -2686,8 +2687,8 @@ function N_0x90cd7c6871fbf1b4(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkSpentBikeShopModify(p0, p1, p2, p3) end
 
     
@@ -2696,8 +2697,8 @@ function NetworkSpentBikeShopModify(p0, p1, p2, p3) end
 --- @hash [0x9251B6ABF2D0A5B4](https://docs.fivem.net/natives/?_0x9251B6ABF2D0A5B4)
 --- @param amount number (int)
 --- @param bunkerHash Hash
---- @return void
---- @overload fun(amount: number, bunkerHash: Hash): void
+--- @return nil
+--- @overload fun(amount: number, bunkerHash: Hash): nil
 function NetworkEarnFromSellBunker(amount, bunkerHash) end
 
     
@@ -2707,8 +2708,8 @@ function NetworkEarnFromSellBunker(amount, bunkerHash) end
 --- @hash [0x9251B6ABF2D0A5B4](https://docs.fivem.net/natives/?_0x9251B6ABF2D0A5B4)
 --- @param amount number (int)
 --- @param bunkerHash Hash
---- @return void
---- @overload fun(amount: number, bunkerHash: Hash): void
+--- @return nil
+--- @overload fun(amount: number, bunkerHash: Hash): nil
 --- @deprecated
 function N_0x9251b6abf2d0a5b4(amount, bunkerHash) end
 
@@ -2722,8 +2723,8 @@ function N_0x9251b6abf2d0a5b4(amount, bunkerHash) end
 --- @param p1 boolean
 --- @param p2 boolean
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: boolean, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: boolean, p3: any): nil
 function NetworkSpentCarclub(p0, p1, p2, p3) end
 
     
@@ -2737,8 +2738,8 @@ function NetworkSpentCarclub(p0, p1, p2, p3) end
 --- @param p1 boolean
 --- @param p2 boolean
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: boolean, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: boolean, p3: any): nil
 --- @deprecated
 function N_0x925227803a0eaa1b(p0, p1, p2, p3) end
 
@@ -2750,8 +2751,8 @@ function N_0x925227803a0eaa1b(p0, p1, p2, p3) end
 --- @param matchId string (char*)
 --- @param p2 boolean
 --- @param p3 boolean
---- @return void
---- @overload fun(amount: number, matchId: string, p2: boolean, p3: boolean): void
+--- @return nil
+--- @overload fun(amount: number, matchId: string, p2: boolean, p3: boolean): nil
 function NetworkPayMatchEntryFee(amount, matchId, p2, p3) end
 
     
@@ -2763,8 +2764,8 @@ function NetworkPayMatchEntryFee(amount, matchId, p2, p3) end
 --- @param matchId string (char*)
 --- @param p2 boolean
 --- @param p3 boolean
---- @return void
---- @overload fun(amount: number, matchId: string, p2: boolean, p3: boolean): void
+--- @return nil
+--- @overload fun(amount: number, matchId: string, p2: boolean, p3: boolean): nil
 --- @deprecated
 function N_0x9346e14f2af74d46(amount, matchId, p2, p3) end
 
@@ -2778,8 +2779,8 @@ function N_0x9346e14f2af74d46(amount, matchId, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkSpentImAbility(p0, p1, p2, p3) end
 
     
@@ -2793,8 +2794,8 @@ function NetworkSpentImAbility(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 --- @deprecated
 function N_0x93aa4165cb67e925(p0, p1, p2, p3) end
 
@@ -2810,8 +2811,8 @@ function N_0x93aa4165cb67e925(p0, p1, p2, p3) end
 --- @param p3 any
 --- @param p4 any
 --- @param p5 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any): nil
 function NetworkSpentCargoSourcing(p0, p1, p2, p3, p4, p5) end
 
     
@@ -2822,8 +2823,8 @@ function NetworkSpentCargoSourcing(p0, p1, p2, p3, p4, p5) end
 --- @hash [0x973A9781A34F8DEB](https://docs.fivem.net/natives/?_0x973A9781A34F8DEB)
 --- @param amount number (int)
 --- @param hash Hash
---- @return void
---- @overload fun(amount: number, hash: Hash): void
+--- @return nil
+--- @overload fun(amount: number, hash: Hash): nil
 function NetworkEarnFromCasinoAward(amount, hash) end
 
     
@@ -2863,8 +2864,8 @@ function N_0x9777734dad16992f() end
 --- @param amount number (int)
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(amount: number, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(amount: number, p1: boolean, p2: boolean): nil
 function NetworkSpentRobbedByMugger(amount, p1, p2) end
 
     
@@ -2875,8 +2876,8 @@ function NetworkSpentRobbedByMugger(amount, p1, p2) end
 --- @param amount number (int)
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(amount: number, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(amount: number, p1: boolean, p2: boolean): nil
 --- @deprecated
 function N_0x995a65f15f581359(amount, p1, p2) end
 
@@ -2888,8 +2889,8 @@ function N_0x995a65f15f581359(amount, p1, p2) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function N_0x998e18ceb44487fc(p0, p1, p2, p3) end
 
     
@@ -2904,8 +2905,8 @@ function N_0x998e18ceb44487fc(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 boolean
 --- @param p3 boolean
---- @return void
---- @overload fun(amount: number, p1: any, p2: boolean, p3: boolean): void
+--- @return nil
+--- @overload fun(amount: number, p1: any, p2: boolean, p3: boolean): nil
 function NetworkSpentSpinTheWheelPayment(amount, p1, p2, p3) end
 
     
@@ -2932,8 +2933,8 @@ function N_0x9b5016a6433a68c5() end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 function NetworkSpentAutoshopModifications(p0, p1, p2, p3, p4) end
 
     
@@ -2948,8 +2949,8 @@ function NetworkSpentAutoshopModifications(p0, p1, p2, p3, p4) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 --- @deprecated
 function N_0x9bea350d7c48061b(p0, p1, p2, p3, p4) end
 
@@ -2960,8 +2961,8 @@ function N_0x9bea350d7c48061b(p0, p1, p2, p3, p4) end
 --- @param p0 any
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: boolean): nil
 function NetworkSpentRequestHeist(p0, p1, p2) end
 
     
@@ -2972,8 +2973,8 @@ function NetworkSpentRequestHeist(p0, p1, p2) end
 --- @param p0 any
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: boolean): nil
 --- @deprecated
 function N_0x9d26502bb97bfe62(p0, p1, p2) end
 
@@ -2985,8 +2986,8 @@ function N_0x9d26502bb97bfe62(p0, p1, p2) end
 --- @param p0 any
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: boolean): nil
 --- @deprecated
 function NetworkSpentRequestHeist(p0, p1, p2) end
 
@@ -2999,8 +3000,8 @@ function NetworkSpentRequestHeist(p0, p1, p2) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function NetworkEarnJobBonusHeistAward(p0, p1, p2) end
 
     
@@ -3013,8 +3014,8 @@ function NetworkEarnJobBonusHeistAward(p0, p1, p2) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 --- @deprecated
 function N_0x9d4fdbb035229669(p0, p1, p2) end
 
@@ -3035,8 +3036,8 @@ function N_0x9d4fdbb035229669(p0, p1, p2) end
 --- @param networkHandle number (int*)
 --- @param notBankrupt boolean
 --- @param hasTheMoney boolean
---- @return void
---- @overload fun(amount: number, vehicleModel: Hash, notBankrupt: boolean, hasTheMoney: boolean): number
+--- @return nil
+--- @overload fun(amount: number, vehicleModel: Hash, notBankrupt: boolean, hasTheMoney: boolean): nil, number
 function NetworkSpentPayVehicleInsurancePremium(amount, vehicleModel, networkHandle, notBankrupt, hasTheMoney) end
 
     
@@ -3044,8 +3045,8 @@ function NetworkSpentPayVehicleInsurancePremium(amount, vehicleModel, networkHan
 ---
 --- @hash [0xA03D4ACE0A3284CE](https://docs.fivem.net/natives/?_0xA03D4ACE0A3284CE)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function NetworkEarnFromGangPickup(amount) end
 
     
@@ -3054,8 +3055,8 @@ function NetworkEarnFromGangPickup(amount) end
 ---
 --- @hash [0xA03D4ACE0A3284CE](https://docs.fivem.net/natives/?_0xA03D4ACE0A3284CE)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 --- @deprecated
 function N_0xa03d4ace0a3284ce(amount) end
 
@@ -3069,8 +3070,8 @@ function N_0xa03d4ace0a3284ce(amount) end
 --- @param amount number (int)
 --- @param p2 boolean
 --- @param p3 boolean
---- @return void
---- @overload fun(type: number, amount: number, p2: boolean, p3: boolean): void
+--- @return nil
+--- @overload fun(type: number, amount: number, p2: boolean, p3: boolean): nil
 function NetworkSpentGangopsStartStrand(type, amount, p2, p3) end
 
     
@@ -3096,8 +3097,8 @@ function NetworkGetVcBankBalanceIsNotLessThan(amount) end
 --- @param p1 number (int)
 --- @param p2 boolean
 --- @param p3 boolean
---- @return void
---- @overload fun(p0: number, p1: number, p2: boolean, p3: boolean): void
+--- @return nil
+--- @overload fun(p0: number, p1: number, p2: boolean, p3: boolean): nil
 function NetworkBuyBackupGang(p0, p1, p2, p3) end
 
     
@@ -3129,8 +3130,8 @@ function N_0xa40f9c2623f6a8b5(characterSlot) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function N_0xa51338e0dccd4065(p0, p1, p2) end
 
     
@@ -3141,8 +3142,8 @@ function N_0xa51338e0dccd4065(p0, p1, p2) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function N_0xa51b086b0b2c0f7a(p0, p1, p2, p3) end
 
     
@@ -3152,8 +3153,8 @@ function N_0xa51b086b0b2c0f7a(p0, p1, p2, p3) end
 --- @param p0 any
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: boolean): nil
 function NetworkSpentBuyOfftheradar(p0, p1, p2) end
 
     
@@ -3163,8 +3164,8 @@ function NetworkSpentBuyOfftheradar(p0, p1, p2) end
 --- @param p0 any
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: boolean): nil
 function NetworkSpentBullShark(p0, p1, p2) end
 
     
@@ -3212,8 +3213,8 @@ function NetworkGetBankBalanceString() end
 --- @param p7 any
 --- @param p8 any
 --- @param p9 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any, p9: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any, p9: any): nil
 function NetworkSpentVehicleExportMods(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9) end
 
     
@@ -3231,8 +3232,8 @@ function NetworkSpentVehicleExportMods(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9) e
 --- @param p7 any
 --- @param p8 any
 --- @param p9 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any, p9: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any, p9: any): nil
 --- @deprecated
 function N_0xa75ccf58a60a5fd1(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9) end
 
@@ -3243,8 +3244,8 @@ function N_0xa75ccf58a60a5fd1(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9) end
 ---
 --- @hash [0xA75EAC69F59E96E7](https://docs.fivem.net/natives/?_0xA75EAC69F59E96E7)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function NetworkEarnFromClubManagementParticipation(p0) end
 
     
@@ -3255,8 +3256,8 @@ function NetworkEarnFromClubManagementParticipation(p0) end
 ---
 --- @hash [0xA75EAC69F59E96E7](https://docs.fivem.net/natives/?_0xA75EAC69F59E96E7)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 --- @deprecated
 function N_0xa75eac69f59e96e7(p0) end
 
@@ -3267,8 +3268,8 @@ function N_0xa75eac69f59e96e7(p0) end
 ---
 --- @hash [0xA82959062361B259](https://docs.fivem.net/natives/?_0xA82959062361B259)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function NetworkEarnFromBbEventCargo(amount) end
 
     
@@ -3279,8 +3280,8 @@ function NetworkEarnFromBbEventCargo(amount) end
 --- @hash [0xA9160796D47A2CF8](https://docs.fivem.net/natives/?_0xA9160796D47A2CF8)
 --- @param amount number (int)
 --- @param unk string (char*)
---- @return void
---- @overload fun(amount: number, unk: string): void
+--- @return nil
+--- @overload fun(amount: number, unk: string): nil
 function NetworkEarnFromGangopsJobsSetup(amount, unk) end
 
     
@@ -3288,8 +3289,8 @@ function NetworkEarnFromGangopsJobsSetup(amount, unk) end
 ---
 --- @hash [0xA921DED15FDF28F5](https://docs.fivem.net/natives/?_0xA921DED15FDF28F5)
 --- @param characterSlot number (int)
---- @return void
---- @overload fun(characterSlot: number): void
+--- @return nil
+--- @overload fun(characterSlot: number): nil
 function NetworkClearCharacterWallet(characterSlot) end
 
     
@@ -3298,8 +3299,8 @@ function NetworkClearCharacterWallet(characterSlot) end
 ---
 --- @hash [0xA921DED15FDF28F5](https://docs.fivem.net/natives/?_0xA921DED15FDF28F5)
 --- @param characterSlot number (int)
---- @return void
---- @overload fun(characterSlot: number): void
+--- @return nil
+--- @overload fun(characterSlot: number): nil
 --- @deprecated
 function N_0xa921ded15fdf28f5(characterSlot) end
 
@@ -3312,8 +3313,8 @@ function N_0xa921ded15fdf28f5(characterSlot) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function N_0xa95cfb4e02390842(p0, p1, p2) end
 
     
@@ -3324,8 +3325,8 @@ function N_0xa95cfb4e02390842(p0, p1, p2) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function N_0xa95f667a755725da(p0, p1, p2, p3) end
 
     
@@ -3337,8 +3338,8 @@ function N_0xa95f667a755725da(p0, p1, p2, p3) end
 --- @param amount number (int)
 --- @param unk string (char*)
 --- @param p2 any
---- @return void
---- @overload fun(amount: number, unk: string, p2: any): void
+--- @return nil
+--- @overload fun(amount: number, unk: string, p2: any): nil
 function NetworkEarnFromGangopsAwards(amount, unk, p2) end
 
     
@@ -3381,8 +3382,8 @@ function N_0xab3caa6b422164da(p0, p1, p2, p3, p4) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkSpentBuyTruck(p0, p1, p2, p3) end
 
     
@@ -3394,8 +3395,8 @@ function NetworkSpentBuyTruck(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 --- @deprecated
 function N_0xac272c0ae01b4bd8(p0, p1, p2, p3) end
 
@@ -3406,8 +3407,8 @@ function N_0xac272c0ae01b4bd8(p0, p1, p2, p3) end
 ---
 --- @hash [0xAC95ED552157E092](https://docs.fivem.net/natives/?_0xAC95ED552157E092)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function NetworkEarnFromCasinoStoryMissionReward(amount) end
 
     
@@ -3418,8 +3419,8 @@ function NetworkEarnFromCasinoStoryMissionReward(amount) end
 --- @param p1 any
 --- @param p2 boolean
 --- @param p3 boolean
---- @return void
---- @overload fun(p0: any, p2: boolean, p3: boolean): any
+--- @return nil
+--- @overload fun(p0: any, p2: boolean, p3: boolean): nil, any
 function NetworkSpentCallPlayer(p0, p1, p2, p3) end
 
     
@@ -3429,8 +3430,8 @@ function NetworkSpentCallPlayer(p0, p1, p2, p3) end
 --- @param amount number (int)
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(amount: number, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(amount: number, p1: boolean, p2: boolean): nil
 function NetworkPayUtilityBill(amount, p1, p2) end
 
     
@@ -3441,8 +3442,8 @@ function NetworkPayUtilityBill(amount, p1, p2) end
 --- @param amount number (int)
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(amount: number, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(amount: number, p1: boolean, p2: boolean): nil
 --- @deprecated
 function N_0xafe08b35ec0c9eae(amount, p1, p2) end
 
@@ -3453,8 +3454,8 @@ function N_0xafe08b35ec0c9eae(amount, p1, p2) end
 --- @param p0 any
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: boolean): nil
 function NetworkSpentAmmoDrop(p0, p1, p2) end
 
     
@@ -3466,8 +3467,8 @@ function NetworkSpentAmmoDrop(p0, p1, p2) end
 --- @param amount number (int)
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(amount: number, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(amount: number, p1: boolean, p2: boolean): nil
 function NetworkSpentHangarUtilityCharges(amount, p1, p2) end
 
     
@@ -3475,8 +3476,8 @@ function NetworkSpentHangarUtilityCharges(amount, p1, p2) end
 ---
 --- @hash [0xB1CC1B9EC3007A2A](https://docs.fivem.net/natives/?_0xB1CC1B9EC3007A2A)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function NetworkEarnFromCrateDrop(amount) end
 
     
@@ -3485,8 +3486,8 @@ function NetworkEarnFromCrateDrop(amount) end
 ---
 --- @hash [0xB1CC1B9EC3007A2A](https://docs.fivem.net/natives/?_0xB1CC1B9EC3007A2A)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 --- @deprecated
 function N_0xb1cc1b9ec3007a2a(amount) end
 
@@ -3499,8 +3500,8 @@ function N_0xb1cc1b9ec3007a2a(amount) end
 --- @param amount number (int)
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(amount: number, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(amount: number, p1: boolean, p2: boolean): nil
 function NetworkSpentHangarStaffCharges(amount, p1, p2) end
 
     
@@ -3510,8 +3511,8 @@ function NetworkSpentHangarStaffCharges(amount, p1, p2) end
 --- @param p0 any
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: boolean): nil
 function NetworkSpentProstitutes(p0, p1, p2) end
 
     
@@ -3520,8 +3521,8 @@ function NetworkSpentProstitutes(p0, p1, p2) end
 --- @hash [0xB2CC4836834E8A98](https://docs.fivem.net/natives/?_0xB2CC4836834E8A98)
 --- @param amount number (int)
 --- @param p1 string (char*)
---- @return void
---- @overload fun(amount: number, p1: string): void
+--- @return nil
+--- @overload fun(amount: number, p1: string): nil
 function NetworkEarnFromJob(amount, p1) end
 
     
@@ -3534,8 +3535,8 @@ function NetworkEarnFromJob(amount, p1) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkSpentAutoshopPropertyUtilityFee(p0, p1, p2, p3) end
 
     
@@ -3549,8 +3550,8 @@ function NetworkSpentAutoshopPropertyUtilityFee(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 --- @deprecated
 function N_0xb40f96d6d252839b(p0, p1, p2, p3) end
 
@@ -3562,8 +3563,8 @@ function N_0xb40f96d6d252839b(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkSpentPaServiceDancer(p0, p1, p2, p3) end
 
     
@@ -3575,8 +3576,8 @@ function NetworkSpentPaServiceDancer(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 --- @deprecated
 function N_0xb49eca122467d05f(p0, p1, p2, p3) end
 
@@ -3588,8 +3589,8 @@ function N_0xb49eca122467d05f(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function N_0xb4c2ec463672474e(p0, p1, p2, p3) end
 
     
@@ -3599,8 +3600,8 @@ function N_0xb4c2ec463672474e(p0, p1, p2, p3) end
 ---
 --- @hash [0xB4DEAE67F35E2ACD](https://docs.fivem.net/natives/?_0xB4DEAE67F35E2ACD)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xb4deae67f35e2acd(p0) end
 
     
@@ -3615,8 +3616,8 @@ function N_0xb4deae67f35e2acd(p0) end
 --- @param p5 any
 --- @param p6 any
 --- @param p7 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any): nil
 function NetworkEarnFromVehicle(p0, p1, p2, p3, p4, p5, p6, p7) end
 
     
@@ -3630,8 +3631,8 @@ function NetworkEarnFromVehicle(p0, p1, p2, p3, p4, p5, p6, p7) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 function N_0xb5b58e24868cb09e(p0, p1, p2, p3, p4) end
 
     
@@ -3643,8 +3644,8 @@ function N_0xb5b58e24868cb09e(p0, p1, p2, p3, p4) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function NetworkEarnFromTunerAward(p0, p1, p2) end
 
     
@@ -3657,8 +3658,8 @@ function NetworkEarnFromTunerAward(p0, p1, p2) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 --- @deprecated
 function N_0xb846f547d3792df6(p0, p1, p2) end
 
@@ -3672,8 +3673,8 @@ function N_0xb846f547d3792df6(p0, p1, p2) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 boolean
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: boolean): nil
 function NetworkSpentFromBank(p0, p1, p2, p3) end
 
     
@@ -3687,8 +3688,8 @@ function NetworkSpentFromBank(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 boolean
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: boolean): nil
 --- @deprecated
 function N_0xb9f7a469460e7a4a(p0, p1, p2, p3) end
 
@@ -3699,8 +3700,8 @@ function N_0xb9f7a469460e7a4a(p0, p1, p2, p3) end
 ---
 --- @hash [0xBC6227792A188E2E](https://docs.fivem.net/natives/?_0xBC6227792A188E2E)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function NetworkEarnFromCarclubMembership(p0) end
 
     
@@ -3711,8 +3712,8 @@ function NetworkEarnFromCarclubMembership(p0) end
 ---
 --- @hash [0xBC6227792A188E2E](https://docs.fivem.net/natives/?_0xBC6227792A188E2E)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 --- @deprecated
 function N_0xbc6227792a188e2e(p0) end
 
@@ -3727,8 +3728,8 @@ function N_0xbc6227792a188e2e(p0) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 function NetworkEarnFromTunerFinale(p0, p1, p2, p3, p4) end
 
     
@@ -3743,8 +3744,8 @@ function NetworkEarnFromTunerFinale(p0, p1, p2, p3, p4) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 --- @deprecated
 function N_0xbcb266247193ac61(p0, p1, p2, p3, p4) end
 
@@ -3756,8 +3757,8 @@ function N_0xbcb266247193ac61(p0, p1, p2, p3, p4) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function N_0xbd0efb25cca8f97a(p0, p1, p2, p3) end
 
     
@@ -3768,8 +3769,8 @@ function N_0xbd0efb25cca8f97a(p0, p1, p2, p3) end
 --- @hash [0xC10322A8D3E061EE](https://docs.fivem.net/natives/?_0xC10322A8D3E061EE)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function NetworkEarnFromUpgradeAutoshopLocation(p0, p1) end
 
     
@@ -3781,8 +3782,8 @@ function NetworkEarnFromUpgradeAutoshopLocation(p0, p1) end
 --- @hash [0xC10322A8D3E061EE](https://docs.fivem.net/natives/?_0xC10322A8D3E061EE)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 --- @deprecated
 function N_0xc10322a8d3e061ee(p0, p1) end
 
@@ -3793,8 +3794,8 @@ function N_0xc10322a8d3e061ee(p0, p1) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function NetworkSpentImportExportRepair(p0, p1, p2) end
 
     
@@ -3805,8 +3806,8 @@ function NetworkSpentImportExportRepair(p0, p1, p2) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 --- @deprecated
 function N_0xc1952f3773ba18fe(p0, p1, p2) end
 
@@ -3817,8 +3818,8 @@ function N_0xc1952f3773ba18fe(p0, p1, p2) end
 ---
 --- @hash [0xC5156361F26E2212](https://docs.fivem.net/natives/?_0xC5156361F26E2212)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function NetworkEarnFromFmbbPhonecallMission(p0) end
 
     
@@ -3829,8 +3830,8 @@ function NetworkEarnFromFmbbPhonecallMission(p0) end
 ---
 --- @hash [0xC5156361F26E2212](https://docs.fivem.net/natives/?_0xC5156361F26E2212)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 --- @deprecated
 function N_0xc5156361f26e2212(p0) end
 
@@ -3852,8 +3853,8 @@ function NetworkCanBuyLotteryTicket(cost) end
 ---
 --- @hash [0xC66D1CF99ED7FE25](https://docs.fivem.net/natives/?_0xC66D1CF99ED7FE25)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function NetworkEarnFromAutoshopIncome(p0) end
 
     
@@ -3864,8 +3865,8 @@ function NetworkEarnFromAutoshopIncome(p0) end
 ---
 --- @hash [0xC66D1CF99ED7FE25](https://docs.fivem.net/natives/?_0xC66D1CF99ED7FE25)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 --- @deprecated
 function N_0xc66d1cf99ed7fe25(p0) end
 
@@ -3882,8 +3883,8 @@ function N_0xc66d1cf99ed7fe25(p0) end
 --- @param p4 any
 --- @param p5 any
 --- @param p6 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any): nil
 function N_0xc6e74cf8c884c880(p0, p1, p2, p3, p4, p5, p6) end
 
     
@@ -3892,8 +3893,8 @@ function N_0xc6e74cf8c884c880(p0, p1, p2, p3, p4, p5, p6) end
 --- @hash [0xC8407624CEF2354B](https://docs.fivem.net/natives/?_0xC8407624CEF2354B)
 --- @param amount number (int)
 --- @param p1 string (char*)
---- @return void
---- @overload fun(amount: number, p1: string): void
+--- @return nil
+--- @overload fun(amount: number, p1: string): nil
 function NetworkEarnFromPremiumJob(amount, p1) end
 
     
@@ -3903,8 +3904,8 @@ function NetworkEarnFromPremiumJob(amount, p1) end
 --- @hash [0xC8407624CEF2354B](https://docs.fivem.net/natives/?_0xC8407624CEF2354B)
 --- @param amount number (int)
 --- @param p1 string (char*)
---- @return void
---- @overload fun(amount: number, p1: string): void
+--- @return nil
+--- @overload fun(amount: number, p1: string): nil
 --- @deprecated
 function N_0xc8407624cef2354b(amount, p1) end
 
@@ -3923,8 +3924,8 @@ function N_0xc8407624cef2354b(amount, p1) end
 --- @param p6 any
 --- @param p7 any
 --- @param p8 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any): nil
 function NetworkSpentCasinoClubGeneric(p0, p1, p2, p3, p4, p5, p6, p7, p8) end
 
     
@@ -3936,8 +3937,8 @@ function NetworkSpentCasinoClubGeneric(p0, p1, p2, p3, p4, p5, p6, p7, p8) end
 --- @param p0 number (int)
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: number, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: number, p1: boolean, p2: boolean): nil
 function NetworkSpentBankInterest(p0, p1, p2) end
 
     
@@ -3948,8 +3949,8 @@ function NetworkSpentBankInterest(p0, p1, p2) end
 --- @hash [0xCAC672087B4A24AB](https://docs.fivem.net/natives/?_0xCAC672087B4A24AB)
 --- @param amount number (int)
 --- @param p1 any
---- @return void
---- @overload fun(amount: number, p1: any): void
+--- @return nil
+--- @overload fun(amount: number, p1: any): nil
 function NetworkEarnFromDarChallenge(amount, p1) end
 
     
@@ -3962,8 +3963,8 @@ function NetworkEarnFromDarChallenge(amount, p1) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkSpentPurchaseHangar(p0, p1, p2, p3) end
 
     
@@ -3975,8 +3976,8 @@ function NetworkSpentPurchaseHangar(p0, p1, p2, p3) end
 ---
 --- @hash [0xCD0F5B5D932AE473](https://docs.fivem.net/natives/?_0xCD0F5B5D932AE473)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0xcd0f5b5d932ae473() end
 
     
@@ -3988,8 +3989,8 @@ function N_0xcd0f5b5d932ae473() end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function N_0xcd4d66b43b1dd28d(p0, p1, p2) end
 
     
@@ -3999,8 +4000,8 @@ function N_0xcd4d66b43b1dd28d(p0, p1, p2) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function NetworkEarnGoon(p0, p1, p2) end
 
     
@@ -4011,8 +4012,8 @@ function NetworkEarnGoon(p0, p1, p2) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 --- @deprecated
 function N_0xcda1c62be2777802(p0, p1, p2) end
 
@@ -4026,8 +4027,8 @@ function N_0xcda1c62be2777802(p0, p1, p2) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkSpentCarclubTakeover(p0, p1, p2, p3) end
 
     
@@ -4041,8 +4042,8 @@ function NetworkSpentCarclubTakeover(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 --- @deprecated
 function N_0xd1e46824e6fb92b5(p0, p1, p2, p3) end
 
@@ -4058,8 +4059,8 @@ function N_0xd1e46824e6fb92b5(p0, p1, p2, p3) end
 --- @param p3 any
 --- @param p4 any
 --- @param p5 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any): nil
 function NetworkEarnIslandHeist(p0, p1, p2, p3, p4, p5) end
 
     
@@ -4073,8 +4074,8 @@ function NetworkEarnIslandHeist(p0, p1, p2, p3, p4, p5) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 function N_0xd29334ed1a256dbf(p0, p1, p2, p3, p4) end
 
     
@@ -4094,8 +4095,8 @@ function N_0xd29334ed1a256dbf(p0, p1, p2, p3, p4) end
 --- @param p8 any
 --- @param p9 any
 --- @param p10 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any, p9: any, p10: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any, p9: any, p10: any): nil
 function NetworkSpentCasinoHeist(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10) end
 
     
@@ -4105,8 +4106,8 @@ function NetworkSpentCasinoHeist(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10) en
 --- @param p0 any
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: boolean): nil
 function NetworkSpentNoCops(p0, p1, p2) end
 
     
@@ -4117,8 +4118,8 @@ function NetworkSpentNoCops(p0, p1, p2) end
 --- @param p0 any
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: boolean): nil
 --- @deprecated
 function N_0xd5bb406f4e04019f(p0, p1, p2) end
 
@@ -4131,8 +4132,8 @@ function N_0xd5bb406f4e04019f(p0, p1, p2) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 function NetworkSpentBaService(p0, p1, p2, p3, p4) end
 
     
@@ -4145,8 +4146,8 @@ function NetworkSpentBaService(p0, p1, p2, p3, p4) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 --- @deprecated
 function N_0xd7cccba28c4ecaf0(p0, p1, p2, p3, p4) end
 
@@ -4160,8 +4161,8 @@ function N_0xd7cccba28c4ecaf0(p0, p1, p2, p3, p4) end
 --- @param p1 number (int)
 --- @param p2 boolean
 --- @param p3 boolean
---- @return void
---- @overload fun(p0: number, p1: number, p2: boolean, p3: boolean): void
+--- @return nil
+--- @overload fun(p0: number, p1: number, p2: boolean, p3: boolean): nil
 function NetworkBuyLotteryTicket(p0, p1, p2, p3) end
 
     
@@ -4171,8 +4172,8 @@ function NetworkBuyLotteryTicket(p0, p1, p2, p3) end
 --- @param p0 any
 --- @param p1 any
 --- @param amount number (int)
---- @return void
---- @overload fun(p0: any, p1: any, amount: number): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, amount: number): nil
 function NetworkSpentWager(p0, p1, amount) end
 
     
@@ -4183,8 +4184,8 @@ function NetworkSpentWager(p0, p1, amount) end
 --- @param p0 any
 --- @param p1 any
 --- @param amount number (int)
---- @return void
---- @overload fun(p0: any, p1: any, amount: number): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, amount: number): nil
 --- @deprecated
 function N_0xd99db210089617fe(p0, p1, amount) end
 
@@ -4195,8 +4196,8 @@ function N_0xd99db210089617fe(p0, p1, amount) end
 --- @param cost number (int)
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(cost: number, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(cost: number, p1: boolean, p2: boolean): nil
 function NetworkBuyHealthcare(cost, p1, p2) end
 
     
@@ -4206,8 +4207,8 @@ function NetworkBuyHealthcare(cost, p1, p2) end
 --- @param p0 any
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: boolean): nil
 function NetworkSpentHoldups(p0, p1, p2) end
 
     
@@ -4220,8 +4221,8 @@ function NetworkSpentHoldups(p0, p1, p2) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkSpentGangopsStartMission(p0, p1, p2, p3) end
 
     
@@ -4231,8 +4232,8 @@ function NetworkSpentGangopsStartMission(p0, p1, p2, p3) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function NetworkSpentPayBoss(p0, p1, p2) end
 
     
@@ -4243,8 +4244,8 @@ function NetworkSpentPayBoss(p0, p1, p2) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 --- @deprecated
 function N_0xdbc966a01c02bca7(p0, p1, p2) end
 
@@ -4284,8 +4285,8 @@ function N_0xdc18531d7019a535(amount, characterSlot) end
 --- @param p1 any
 --- @param p2 boolean
 --- @param p3 boolean
---- @return void
---- @overload fun(amount: number, p1: any, p2: boolean, p3: boolean): void
+--- @return nil
+--- @overload fun(amount: number, p1: any, p2: boolean, p3: boolean): nil
 function NetworkSpentNightclubBarDrink(amount, p1, p2, p3) end
 
     
@@ -4298,8 +4299,8 @@ function NetworkSpentNightclubBarDrink(amount, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkSpentUpgradeAutoshop(p0, p1, p2, p3) end
 
     
@@ -4313,8 +4314,8 @@ function NetworkSpentUpgradeAutoshop(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 --- @deprecated
 function N_0xdd829aa198fdc46c(p0, p1, p2, p3) end
 
@@ -4326,8 +4327,8 @@ function N_0xdd829aa198fdc46c(p0, p1, p2, p3) end
 --- @hash [0xDE68E30D89F97132](https://docs.fivem.net/natives/?_0xDE68E30D89F97132)
 --- @param amount number (int)
 --- @param p1 any
---- @return void
---- @overload fun(amount: number, p1: any): void
+--- @return nil
+--- @overload fun(amount: number, p1: any): nil
 function N_0xde68e30d89f97132(amount, p1) end
 
     
@@ -4338,8 +4339,8 @@ function N_0xde68e30d89f97132(amount, p1) end
 --- @hash [0xDEBBF584665411D0](https://docs.fivem.net/natives/?_0xDEBBF584665411D0)
 --- @param amount number (int)
 --- @param p1 string (char*)
---- @return void
---- @overload fun(amount: number, p1: string): void
+--- @return nil
+--- @overload fun(amount: number, p1: string): nil
 function NetworkEarnFromJobX2(amount, p1) end
 
     
@@ -4352,8 +4353,8 @@ function NetworkEarnFromJobX2(amount, p1) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(amount: number, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(amount: number, p1: any, p2: any, p3: any): nil
 function NetworkEarnFromSmuggling(amount, p1, p2, p3) end
 
     
@@ -4363,8 +4364,8 @@ function NetworkEarnFromSmuggling(amount, p1, p2, p3) end
 ---
 --- @hash [0xDFF49EE984E7AAE8](https://docs.fivem.net/natives/?_0xDFF49EE984E7AAE8)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function NetworkEarnFromRcTimeTrial(amount) end
 
     
@@ -4375,8 +4376,8 @@ function NetworkEarnFromRcTimeTrial(amount) end
 --- @hash [0xE08256F972C7BB2C](https://docs.fivem.net/natives/?_0xE08256F972C7BB2C)
 --- @param amount number (int)
 --- @param p1 any
---- @return void
---- @overload fun(amount: number, p1: any): void
+--- @return nil
+--- @overload fun(amount: number, p1: any): nil
 function NetworkEarnFromArenaSkillLevelProgression(amount, p1) end
 
     
@@ -4386,8 +4387,8 @@ function NetworkEarnFromArenaSkillLevelProgression(amount, p1) end
 ---
 --- @hash [0xE0F82D68C7039158](https://docs.fivem.net/natives/?_0xE0F82D68C7039158)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function N_0xe0f82d68c7039158(p0) end
 
     
@@ -4409,8 +4410,8 @@ function N_0xe154b48b68ef72bc(p0) end
 --- @param p1 any
 --- @param p2 boolean
 --- @param p3 boolean
---- @return void
---- @overload fun(p0: any, p2: boolean, p3: boolean): any
+--- @return nil
+--- @overload fun(p0: any, p2: boolean, p3: boolean): nil, any
 function NetworkSpentBuyWantedlevel(p0, p1, p2, p3) end
 
     
@@ -4420,8 +4421,8 @@ function NetworkSpentBuyWantedlevel(p0, p1, p2, p3) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function N_0xe23adc6fcb1f29ae(p0, p1, p2) end
 
     
@@ -4457,8 +4458,8 @@ function N_0xe260e0bb9cd995ac(amount) end
 --- @param amount number (int)
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(amount: number, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(amount: number, p1: boolean, p2: boolean): nil
 function NetworkSpentRdrhatchetBonus(amount, p1, p2) end
 
     
@@ -4469,8 +4470,8 @@ function NetworkSpentRdrhatchetBonus(amount, p1, p2) end
 --- @hash [0xE2BB399D90942091](https://docs.fivem.net/natives/?_0xE2BB399D90942091)
 --- @param p0 any
 --- @param p1 any
---- @return void
---- @overload fun(p0: any, p1: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any): nil
 function N_0xe2bb399d90942091(p0, p1) end
 
     
@@ -4481,8 +4482,8 @@ function N_0xe2bb399d90942091(p0, p1) end
 --- @hash [0xE2E244AB823B4483](https://docs.fivem.net/natives/?_0xE2E244AB823B4483)
 --- @param amount number (int)
 --- @param p1 any
---- @return void
---- @overload fun(amount: number, p1: any): void
+--- @return nil
+--- @overload fun(amount: number, p1: any): nil
 function N_0xe2e244ab823b4483(amount, p1) end
 
     
@@ -4496,8 +4497,8 @@ function N_0xe2e244ab823b4483(amount, p1) end
 --- @param p0 any
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: boolean): nil
 function NetworkSpentHireMugger(p0, p1, p2) end
 
     
@@ -4509,8 +4510,8 @@ function NetworkSpentHireMugger(p0, p1, p2) end
 --- @param amount number (int)
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(amount: number, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(amount: number, p1: boolean, p2: boolean): nil
 function NetworkSpentMakeItRain(amount, p1, p2) end
 
     
@@ -4520,8 +4521,8 @@ function NetworkSpentMakeItRain(amount, p1, p2) end
 --- @param p0 any
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: boolean): nil
 function NetworkSpentHireMercenary(p0, p1, p2) end
 
     
@@ -4531,8 +4532,8 @@ function NetworkSpentHireMercenary(p0, p1, p2) end
 --- @param amount number (int)
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(amount: number, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(amount: number, p1: boolean, p2: boolean): nil
 function NetworkSpentMoveYacht(amount, p1, p2) end
 
     
@@ -4543,8 +4544,8 @@ function NetworkSpentMoveYacht(amount, p1, p2) end
 --- @param amount number (int)
 --- @param p1 boolean
 --- @param p2 boolean
---- @return void
---- @overload fun(amount: number, p1: boolean, p2: boolean): void
+--- @return nil
+--- @overload fun(amount: number, p1: boolean, p2: boolean): nil
 --- @deprecated
 function N_0xe7df4e0545dfb56e(amount, p1, p2) end
 
@@ -4558,8 +4559,8 @@ function N_0xe7df4e0545dfb56e(amount, p1, p2) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkSpentIslandHeist(p0, p1, p2, p3) end
 
     
@@ -4572,8 +4573,8 @@ function NetworkSpentIslandHeist(p0, p1, p2, p3) end
 --- @param amount number (int)
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, amount: number, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, amount: number, p2: any, p3: any): nil
 function NetworkEarnFromHackerTruckMission(p0, amount, p2, p3) end
 
     
@@ -4584,8 +4585,8 @@ function NetworkEarnFromHackerTruckMission(p0, amount, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkSpentOrderBodyguardVehicle(p0, p1, p2, p3) end
 
     
@@ -4597,8 +4598,8 @@ function NetworkSpentOrderBodyguardVehicle(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 --- @deprecated
 function N_0xe8b0b270b6e7c76e(p0, p1, p2, p3) end
 
@@ -4641,8 +4642,8 @@ function NetworkGetRemainingVcDailyTransfers_2() end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any): nil
 function NetworkSpentArcadeGame(p0, p1, p2, p3, p4) end
 
     
@@ -4654,8 +4655,8 @@ function NetworkSpentArcadeGame(p0, p1, p2, p3, p4) end
 --- @param p2 any
 --- @param p3 boolean
 --- @param p4 boolean
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: boolean, p4: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: boolean, p4: boolean): nil
 function NetworkSpentCarwash(p0, p1, p2, p3, p4) end
 
     
@@ -4664,8 +4665,8 @@ function NetworkSpentCarwash(p0, p1, p2, p3, p4) end
 --- @hash [0xECA658CE2A4E5A72](https://docs.fivem.net/natives/?_0xECA658CE2A4E5A72)
 --- @param amount number (int)
 --- @param p1 any
---- @return void
---- @overload fun(amount: number, p1: any): void
+--- @return nil
+--- @overload fun(amount: number, p1: any): nil
 function NetworkEarnFromContraband(amount, p1) end
 
     
@@ -4675,8 +4676,8 @@ function NetworkEarnFromContraband(amount, p1) end
 --- @hash [0xECA658CE2A4E5A72](https://docs.fivem.net/natives/?_0xECA658CE2A4E5A72)
 --- @param amount number (int)
 --- @param p1 any
---- @return void
---- @overload fun(amount: number, p1: any): void
+--- @return nil
+--- @overload fun(amount: number, p1: any): nil
 --- @deprecated
 function N_0xeca658ce2a4e5a72(amount, p1) end
 
@@ -4685,8 +4686,8 @@ function N_0xeca658ce2a4e5a72(amount, p1) end
 ---
 --- @hash [0xED1517D3AF17C698](https://docs.fivem.net/natives/?_0xED1517D3AF17C698)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function NetworkEarnFromPickup(amount) end
 
     
@@ -4696,8 +4697,8 @@ function NetworkEarnFromPickup(amount) end
 ---
 --- @hash [0xED26584F6BDCBBFD](https://docs.fivem.net/natives/?_0xED26584F6BDCBBFD)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function NetworkEarnFromGangopsJobsPrepParticipation(amount) end
 
     
@@ -4736,8 +4737,8 @@ function NetworkGetVcWalletBalanceIsNotLessThan(amount, characterSlot) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function N_0xed5fd7af10f5e262(p0, p1, p2, p3) end
 
     
@@ -4750,8 +4751,8 @@ function N_0xed5fd7af10f5e262(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function N_0xed76d195e6e3bf7f(p0, p1, p2, p3) end
 
     
@@ -4761,8 +4762,8 @@ function N_0xed76d195e6e3bf7f(p0, p1, p2, p3) end
 --- @param amount number (int)
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(amount: number, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(amount: number, p1: any, p2: any): nil
 function NetworkEarnFromVehicleExport(amount, p1, p2) end
 
     
@@ -4773,8 +4774,8 @@ function NetworkEarnFromVehicleExport(amount, p1, p2) end
 --- @param amount number (int)
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(amount: number, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(amount: number, p1: any, p2: any): nil
 --- @deprecated
 function N_0xedead9a91ec768b3(amount, p1, p2) end
 
@@ -4786,8 +4787,8 @@ function N_0xedead9a91ec768b3(amount, p1, p2) end
 --- @param p1 boolean
 --- @param p2 any
 --- @param p3 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: any, p3: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: any, p3: boolean): nil
 function NetworkSpentInStripclub(p0, p1, p2, p3) end
 
     
@@ -4799,8 +4800,8 @@ function NetworkSpentInStripclub(p0, p1, p2, p3) end
 --- @param p1 boolean
 --- @param p2 any
 --- @param p3 boolean
---- @return void
---- @overload fun(p0: any, p1: boolean, p2: any, p3: boolean): void
+--- @return nil
+--- @overload fun(p0: any, p1: boolean, p2: any, p3: boolean): nil
 --- @deprecated
 function N_0xee99784e4467689c(p0, p1, p2, p3) end
 
@@ -4814,8 +4815,8 @@ function N_0xee99784e4467689c(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function NetworkSpentBuyAutoshop(p0, p1, p2, p3) end
 
     
@@ -4829,8 +4830,8 @@ function NetworkSpentBuyAutoshop(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 --- @deprecated
 function N_0xeeb7e5d1feb20869(p0, p1, p2, p3) end
 
@@ -4841,8 +4842,8 @@ function N_0xeeb7e5d1feb20869(p0, p1, p2, p3) end
 ---
 --- @hash [0xEFE9C9A1651B81E6](https://docs.fivem.net/natives/?_0xEFE9C9A1651B81E6)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function NetworkEarnFromCashingOut(amount) end
 
     
@@ -4859,8 +4860,8 @@ function NetworkEarnFromCashingOut(amount) end
 --- @param p7 any
 --- @param p8 any
 --- @param p9 boolean
---- @return void
---- @overload fun(amount: number, item: Hash, p2: any, p3: any, p4: boolean, item_name: string, p6: any, p7: any, p8: any, p9: boolean): void
+--- @return nil
+--- @overload fun(amount: number, item: Hash, p2: any, p3: any, p4: boolean, item_name: string, p6: any, p7: any, p8: any, p9: boolean): nil
 function NetworkBuyItem(amount, item, p2, p3, p4, item_name, p6, p7, p8, p9) end
 
     
@@ -4871,8 +4872,8 @@ function NetworkBuyItem(amount, item, p2, p3, p4, item_name, p6, p7, p8, p9) end
 ---
 --- @hash [0xF514621E8EA463D0](https://docs.fivem.net/natives/?_0xF514621E8EA463D0)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function NetworkEarnFromArmourTruck(amount) end
 
     
@@ -4884,8 +4885,8 @@ function NetworkEarnFromArmourTruck(amount) end
 ---
 --- @hash [0xF514621E8EA463D0](https://docs.fivem.net/natives/?_0xF514621E8EA463D0)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 --- @deprecated
 function N_0xf514621e8ea463d0(amount) end
 
@@ -4909,8 +4910,8 @@ function NetworkCasinoCanGamble(p0) end
 ---
 --- @hash [0xF6B170F9A02E9E87](https://docs.fivem.net/natives/?_0xF6B170F9A02E9E87)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function NetworkEarnBountyHunterReward(p0) end
 
     
@@ -4921,8 +4922,8 @@ function NetworkEarnBountyHunterReward(p0) end
 ---
 --- @hash [0xF6B170F9A02E9E87](https://docs.fivem.net/natives/?_0xF6B170F9A02E9E87)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 --- @deprecated
 function N_0xf6b170f9a02e9e87(p0) end
 
@@ -4936,8 +4937,8 @@ function N_0xf6b170f9a02e9e87(p0) end
 --- @param p1 any
 --- @param p2 boolean
 --- @param p3 boolean
---- @return void
---- @overload fun(amount: number, p1: any, p2: boolean, p3: boolean): void
+--- @return nil
+--- @overload fun(amount: number, p1: any, p2: boolean, p3: boolean): nil
 function NetworkSpentRehireDj(amount, p1, p2, p3) end
 
     
@@ -4970,8 +4971,8 @@ function N_0xf70efa14fe091429(amount) end
 --- @hash [0xF92A014A634442D6](https://docs.fivem.net/natives/?_0xF92A014A634442D6)
 --- @param amount number (int)
 --- @param modelHash Hash
---- @return void
---- @overload fun(amount: number, modelHash: Hash): void
+--- @return nil
+--- @overload fun(amount: number, modelHash: Hash): nil
 function NetworkEarnFromImportExport(amount, modelHash) end
 
     
@@ -5026,8 +5027,8 @@ function NetworkGetStringWalletBalance(characterSlot) end
 --- @param context string (char*)
 --- @param reason string (char*)
 --- @param unk boolean
---- @return void
---- @overload fun(index: number, context: string, reason: string, unk: boolean): void
+--- @return nil
+--- @overload fun(index: number, context: string, reason: string, unk: boolean): nil
 function NetworkRefundCash(index, context, reason, unk) end
 
     
@@ -5072,8 +5073,8 @@ function NetworkRefundCash(index, context, reason, unk) end
 --- @param context string (char*)
 --- @param reason string (char*)
 --- @param unk boolean
---- @return void
---- @overload fun(index: number, context: string, reason: string, unk: boolean): void
+--- @return nil
+--- @overload fun(index: number, context: string, reason: string, unk: boolean): nil
 --- @deprecated
 function N_0xf9c812cd7c46e817(index, context, reason, unk) end
 
@@ -5086,8 +5087,8 @@ function N_0xf9c812cd7c46e817(index, context, reason, unk) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function NetworkEarnFromCriminalMastermindBonus(p0, p1, p2) end
 
     
@@ -5100,8 +5101,8 @@ function NetworkEarnFromCriminalMastermindBonus(p0, p1, p2) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 --- @deprecated
 function N_0xd20d79671a598594(p0, p1, p2) end
 
@@ -5113,8 +5114,8 @@ function N_0xd20d79671a598594(p0, p1, p2) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any, p3: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
 function N_0xfa07759e6fddd7cf(p0, p1, p2, p3) end
 
     
@@ -5124,8 +5125,8 @@ function N_0xfa07759e6fddd7cf(p0, p1, p2, p3) end
 ---
 --- @hash [0xFA700D8A9905F78A](https://docs.fivem.net/natives/?_0xFA700D8A9905F78A)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function NetworkEarnFromAssassinateTargetKilled(amount) end
 
     
@@ -5134,8 +5135,8 @@ function NetworkEarnFromAssassinateTargetKilled(amount) end
 --- @hash [0xFB18DF9CB95E0105](https://docs.fivem.net/natives/?_0xFB18DF9CB95E0105)
 --- @param amount number (int)
 --- @param networkHandle number (int*)
---- @return void
---- @overload fun(amount: number): number
+--- @return nil
+--- @overload fun(amount: number): nil, number
 function NetworkGivePlayerJobshareCash(amount, networkHandle) end
 
     
@@ -5158,8 +5159,8 @@ function NetworkGetIsHighEarner() end
 --- @param p0 number (int)
 --- @param p1 string (char*)
 --- @param p2 any
---- @return void
---- @overload fun(p0: number): string): any
+--- @return nil
+--- @overload fun(p0: number): nil, string): nil, any
 function NetworkEarnFromAmbientJob(p0, p1, p2) end
 
     
@@ -5172,8 +5173,8 @@ function NetworkEarnFromAmbientJob(p0, p1, p2) end
 --- @param p0 number (int)
 --- @param p1 string (char*)
 --- @param p2 any
---- @return void
---- @overload fun(p0: number): string): any
+--- @return nil
+--- @overload fun(p0: number): nil, string): nil, any
 --- @deprecated
 function N_0xfb6db092fbae29e6(p0, p1, p2) end
 
@@ -5187,8 +5188,8 @@ function N_0xfb6db092fbae29e6(p0, p1, p2) end
 --- @param p0 number (int)
 --- @param p1 string (char*)
 --- @param p2 any
---- @return void
---- @overload fun(p0: number): string): any
+--- @return nil
+--- @overload fun(p0: number): nil, string): nil, any
 --- @deprecated
 function NetworkEarnFromAmbientJob(p0, p1, p2) end
 
@@ -5202,8 +5203,8 @@ function NetworkEarnFromAmbientJob(p0, p1, p2) end
 --- @param p1 boolean
 --- @param p2 boolean
 --- @param p3 number (int)
---- @return void
---- @overload fun(amount: number, p1: boolean, p2: boolean, p3: number): void
+--- @return nil
+--- @overload fun(amount: number, p1: boolean, p2: boolean, p3: number): nil
 function NetworkSpentCasinoMembership(amount, p1, p2, p3) end
 
     
@@ -5213,8 +5214,8 @@ function NetworkSpentCasinoMembership(amount, p1, p2, p3) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 function NetworkSpentRenameOrganization(p0, p1, p2) end
 
     
@@ -5225,8 +5226,8 @@ function NetworkSpentRenameOrganization(p0, p1, p2) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @return void
---- @overload fun(p0: any, p1: any, p2: any): void
+--- @return nil
+--- @overload fun(p0: any, p1: any, p2: any): nil
 --- @deprecated
 function N_0xfc4ee00a7b3bfb76(p0, p1, p2) end
 
@@ -5237,8 +5238,8 @@ function N_0xfc4ee00a7b3bfb76(p0, p1, p2) end
 ---
 --- @hash [0xFDD8D2440DAF1590](https://docs.fivem.net/natives/?_0xFDD8D2440DAF1590)
 --- @param amount number (int)
---- @return void
---- @overload fun(amount: number): void
+--- @return nil
+--- @overload fun(amount: number): nil
 function NetworkEarnFromBbEventBonus(amount) end
 
     
@@ -5248,8 +5249,8 @@ function NetworkEarnFromBbEventBonus(amount) end
 ---
 --- @hash [0xFE65AFE7308E32B2](https://docs.fivem.net/natives/?_0xFE65AFE7308E32B2)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function NetworkEarnFromVehicleAutoshopBonus(p0) end
 
     
@@ -5260,8 +5261,8 @@ function NetworkEarnFromVehicleAutoshopBonus(p0) end
 ---
 --- @hash [0xFE65AFE7308E32B2](https://docs.fivem.net/natives/?_0xFE65AFE7308E32B2)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 --- @deprecated
 function N_0xfe65afe7308e32b2(p0) end
 
@@ -5300,8 +5301,8 @@ function N_0xffbe02cd385356bd() end
 ---
 --- @hash [0xFFFBA1B1F7C0B6F4](https://docs.fivem.net/natives/?_0xFFFBA1B1F7C0B6F4)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 function NetworkEarnFmbbWageBonus(p0) end
 
     
@@ -5312,8 +5313,8 @@ function NetworkEarnFmbbWageBonus(p0) end
 ---
 --- @hash [0xFFFBA1B1F7C0B6F4](https://docs.fivem.net/natives/?_0xFFFBA1B1F7C0B6F4)
 --- @param p0 any
---- @return void
---- @overload fun(p0: any): void
+--- @return nil
+--- @overload fun(p0: any): nil
 --- @deprecated
 function N_0xfffba1b1f7c0b6f4(p0) end
 

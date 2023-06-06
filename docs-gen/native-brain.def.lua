@@ -1,10 +1,11 @@
+--- @meta
 
 --- N_0x0b40ed49d7d6ff84
 ---
 --- @hash [0x0B40ED49D7D6FF84](https://docs.fivem.net/natives/?_0x0B40ED49D7D6FF84)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x0b40ed49d7d6ff84() end
 
     
@@ -20,8 +21,8 @@ function N_0x0b40ed49d7d6ff84() end
 --- @param activationRange number (float)
 --- @param p4 number (int)
 --- @param p5 number (int)
---- @return void
---- @overload fun(scriptName: string, modelHash: Hash, p2: number, activationRange: number, p4: number, p5: number): void
+--- @return nil
+--- @overload fun(scriptName: string, modelHash: Hash, p2: number, activationRange: number, p4: number, p5: number): nil
 function RegisterObjectScriptBrain(scriptName, modelHash, p2, activationRange, p4, p5) end
 
     
@@ -29,8 +30,8 @@ function RegisterObjectScriptBrain(scriptName, modelHash, p2, activationRange, p
 ---
 --- @hash [0x14D8518E9760F08F](https://docs.fivem.net/natives/?_0x14D8518E9760F08F)
 --- @param brainSet number (int)
---- @return void
---- @overload fun(brainSet: number): void
+--- @return nil
+--- @overload fun(brainSet: number): nil
 function DisableScriptBrainSet(brainSet) end
 
     
@@ -40,8 +41,8 @@ function DisableScriptBrainSet(brainSet) end
 --- @param scriptName string (char*)
 --- @param activationRange number (float)
 --- @param p2 number (int)
---- @return void
---- @overload fun(scriptName: string, activationRange: number, p2: number): void
+--- @return nil
+--- @overload fun(scriptName: string, activationRange: number, p2: number): nil
 function RegisterWorldPointScriptBrain(scriptName, activationRange, p2) end
 
     
@@ -52,8 +53,8 @@ function RegisterWorldPointScriptBrain(scriptName, activationRange, p2) end
 ---
 --- @hash [0x4D953DF78EBF8158](https://docs.fivem.net/natives/?_0x4D953DF78EBF8158)
 ---
---- @return void
---- @overload fun(): void
+--- @return nil
+--- @overload fun(): nil
 function N_0x4d953df78ebf8158() end
 
     
@@ -69,8 +70,8 @@ function N_0x4d953df78ebf8158() end
 --- @param model Hash
 --- @param p2 number (float)
 --- @param p3 number (float)
---- @return void
---- @overload fun(name: string, model: Hash, p2: number, p3: number): void
+--- @return nil
+--- @overload fun(name: string, model: Hash, p2: number, p3: number): nil
 function AddScriptToRandomPed(name, model, p2, p3) end
 
     
@@ -78,8 +79,8 @@ function AddScriptToRandomPed(name, model, p2, p3) end
 ---
 --- @hash [0x67AA4D73F0CFA86B](https://docs.fivem.net/natives/?_0x67AA4D73F0CFA86B)
 --- @param brainSet number (int)
---- @return void
---- @overload fun(brainSet: number): void
+--- @return nil
+--- @overload fun(brainSet: number): nil
 function EnableScriptBrainSet(brainSet) end
 
     
@@ -115,8 +116,8 @@ function EnableScriptBrainSet(brainSet) end
 ---
 --- @hash [0x6D6840CEE8845831](https://docs.fivem.net/natives/?_0x6D6840CEE8845831)
 --- @param action string (char*)
---- @return void
---- @overload fun(action: string): void
+--- @return nil
+--- @overload fun(action: string): nil
 function N_0x6d6840cee8845831(action) end
 
     
@@ -129,8 +130,8 @@ function N_0x6d6840cee8845831(action) end
 ---
 --- @hash [0x6E91B04E08773030](https://docs.fivem.net/natives/?_0x6E91B04E08773030)
 --- @param action string (char*)
---- @return void
---- @overload fun(action: string): void
+--- @return nil
+--- @overload fun(action: string): nil
 function N_0x6e91b04e08773030(action) end
 
     

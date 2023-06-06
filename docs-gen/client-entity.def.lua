@@ -1,3 +1,4 @@
+--- @meta
 
 --- Gets the current coordinates (world position) for a specified entity.
 --- @usage local playerCoords = GetEntityCoords(PlayerPedId())
