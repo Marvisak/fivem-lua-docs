@@ -3,7 +3,7 @@ export class ManualFixes {
    * Get a manual overload for a function (in case there's something that needs to be
    * tweaked, and it isn't tweaked in the official natives)
    */
-  static getManualOverloadFix (apiset: string, namespace: string, nativeName: string): string|null {
+  static getManualOverloadFix(apiset: string, namespace: string, nativeName: string): string | null {
     let overload: string
     switch (nativeName) {
       case 'GetVehicleLockOnTarget':
@@ -54,7 +54,7 @@ export class ManualFixes {
    * Perform simple fixes on a method
    * @return Should the method be considered for further processing or discarded? (`false` = discard)
    */
-  static fixMethod (methodObj: NativeDeclaration): boolean {
+  static fixMethod(methodObj: NativeDeclaration): boolean {
     switch (methodObj.hash) {
       case '0x9B8E1BF04B51F2E8':
         // GetAllVehicles() should only be used on server, on client GetGamePool() should be used.
@@ -94,6 +94,11 @@ export class ManualFixes {
 
       case '0xD4BEF069':
         methodObj.results = 'RegisteredCommandInfo[]'
+        break
+
+      case '0xA61C8FC6':
+        methodObj.params[0].type = "Player"
+        console.log(methodObj.params);
         break
     }
     return true

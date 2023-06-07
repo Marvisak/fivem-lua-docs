@@ -660,10 +660,10 @@ function GetVehicleType(vehicle) end
 ---     playerLicenses[source] = GetPlayerIdentifierByType(source, 'license')
 --- end
 --- @hash [0xA61C8FC6](https://docs.fivem.net/natives/?_0xA61C8FC6)
---- @param playerSrc string (char*)
+--- @param playerSrc Player
 --- @param identifierType string (char*)
 --- @return string
---- @overload fun(playerSrc: string, identifierType: string): string
+--- @overload fun(playerSrc: Player, identifierType: string): string
 function GetPlayerIdentifierByType(playerSrc, identifierType) end
 
     
