@@ -17,13 +17,13 @@ export class ManualFixes {
         overload = 'fun(entity: Entity): Vector3'
         break
       case 'NetworkFadeInEntity':
-        overload = 'fun(entity: Entity, state: boolean, slow: boolean): void'
+        overload = 'fun(entity: Entity, state: boolean, slow: boolean): nil'
         break
       case 'GetInteriorRoomIndexByHash':
         overload = 'fun(interiorId: number, roomHash: Hash): number'
         break
       case 'SetResourceKvp':
-        overload = 'fun(key: string, value: string|JsonString<any>): void'
+        overload = 'fun(key: string, value: string|JsonString<any>): nil'
         break
       case 'GetEntityRotation':
         overload = 'fun(entity: Entity): Vector3'
@@ -39,10 +39,10 @@ export class ManualFixes {
         break
       case 'DrawMarker':
         // make last param three params optional
-        overload = 'fun(type: number, posX: number, posY: number, posZ: number, dirX: number, dirY: number, dirZ: number, rotX: number, rotY: number, rotZ: number, scaleX: number, scaleY: number, scaleZ: number, red: number, green: number, blue: number, alpha: number, bobUpAndDown: boolean, faceCamera: boolean, p19: number, rotate: boolean): void'
+        overload = 'fun(type: number, posX: number, posY: number, posZ: number, dirX: number, dirY: number, dirZ: number, rotX: number, rotY: number, rotZ: number, scaleX: number, scaleY: number, scaleZ: number, red: number, green: number, blue: number, alpha: number, bobUpAndDown: boolean, faceCamera: boolean, p19: number, rotate: boolean): nil'
         break
       case 'SetFacialIdleAnimOverride':
-        overload = 'fun(ped: Ped, animName: string, animDict: number): void'
+        overload = 'fun(ped: Ped, animName: string, animDict: number): nil'
         break
       default:
         overload = null

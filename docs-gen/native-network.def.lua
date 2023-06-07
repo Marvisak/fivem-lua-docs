@@ -1675,7 +1675,7 @@ function NetworkClanGetNumMembershipDesc() end
 --- @param entity Entity
 --- @param state boolean
 --- @return nil
---- @overload fun(entity: Entity, state: boolean, slow: boolean): void
+--- @overload fun(entity: Entity, state: boolean, slow: boolean): nil
 function NetworkFadeInEntity(entity, state) end
 
     

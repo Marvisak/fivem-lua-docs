@@ -10473,7 +10473,7 @@ function N_0xff4803bc019852d9(p0, p1) end
 --- @param animName string (char*)
 --- @param animDict string (char*)
 --- @return nil
---- @overload fun(ped: Ped, animName: string, animDict: number): void
+--- @overload fun(ped: Ped, animName: string, animDict: number): nil
 function SetFacialIdleAnimOverride(ped, animName, animDict) end
 
     

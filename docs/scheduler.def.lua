@@ -1,7 +1,6 @@
 --- @meta
 
-
----@type Player
+--- @type Player
 source = nil
 
 ---@return CitizenClass

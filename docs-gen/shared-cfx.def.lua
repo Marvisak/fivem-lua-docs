@@ -24,7 +24,7 @@ function DeleteFunctionReference(referenceIdentity) end
 --- @param key string (char*)
 --- @param value string (char*)
 --- @return nil
---- @overload fun(key: string, value: string|JsonString<any>): void
+--- @overload fun(key: string, value: string|JsonString<any>): nil
 function SetResourceKvp(key, value) end
 
     
