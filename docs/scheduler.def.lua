@@ -3,6 +3,8 @@
 --- @type Player
 source = nil
 
+exports = {}
+
 ---@return CitizenClass
 function CitizenLocal()
     --- @class CitizenClass
