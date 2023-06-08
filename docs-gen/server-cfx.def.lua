@@ -12,7 +12,7 @@ function FlagServerAsPrivate(private_) end
 --- Requests whether or not the player owns the specified SKU.
 ---
 --- @hash [0x167ABA27](https://docs.fivem.net/natives/?_0x167ABA27)
---- @param playerSrc string (char*)
+--- @param playerSrc Player
 --- @param skuId number (int)
 --- @return boolean
 --- @overload fun(playerSrc: string, skuId: number): boolean
@@ -22,7 +22,7 @@ function DoesPlayerOwnSku(playerSrc, skuId) end
 --- Requests whether or not the commerce data for the specified player has loaded from Tebex.
 ---
 --- @hash [0x1D14F4FE](https://docs.fivem.net/natives/?_0x1D14F4FE)
---- @param playerSrc string (char*)
+--- @param playerSrc Player
 --- @return boolean
 --- @overload fun(playerSrc: string): boolean
 function IsPlayerCommerceInfoLoadedExt(playerSrc) end
@@ -31,7 +31,7 @@ function IsPlayerCommerceInfoLoadedExt(playerSrc) end
 --- Checks if the player is currently muted
 ---
 --- @hash [0x1D5D50C2](https://docs.fivem.net/natives/?_0x1D5D50C2)
---- @param playerSrc number (int)
+--- @param playerSrc Player
 --- @return boolean
 --- @overload fun(playerSrc: number): boolean
 function MumbleIsPlayerMuted(playerSrc) end
@@ -40,7 +40,7 @@ function MumbleIsPlayerMuted(playerSrc) end
 --- TempBanPlayer
 ---
 --- @hash [0x1E35DBBA](https://docs.fivem.net/natives/?_0x1E35DBBA)
---- @param playerSrc string (char*)
+--- @param playerSrc Player
 --- @param reason string (char*)
 --- @return nil
 --- @overload fun(playerSrc: string, reason: string): nil
@@ -201,7 +201,7 @@ function DeleteResourceKvpNoSync(key) end
 --- GetPlayerLastMsg
 ---
 --- @hash [0x427E8E6A](https://docs.fivem.net/natives/?_0x427E8E6A)
---- @param playerSrc string (char*)
+--- @param playerSrc Player
 --- @return number
 --- @overload fun(playerSrc: string): number
 function GetPlayerLastMsg(playerSrc) end
@@ -210,7 +210,7 @@ function GetPlayerLastMsg(playerSrc) end
 --- Returns whether or not the specified player has enough information to start a commerce session for.
 ---
 --- @hash [0x429461C3](https://docs.fivem.net/natives/?_0x429461C3)
---- @param playerSrc string (char*)
+--- @param playerSrc Player
 --- @return boolean
 --- @overload fun(playerSrc: string): boolean
 function CanPlayerStartCommerceSession(playerSrc) end
@@ -219,7 +219,7 @@ function CanPlayerStartCommerceSession(playerSrc) end
 --- Gets the current camera rotation for a specified player. This native is used server side when using OneSync.
 ---
 --- @hash [0x433C765D](https://docs.fivem.net/natives/?_0x433C765D)
---- @param playerSrc string (char*)
+--- @param playerSrc Player
 --- @return Vector3
 --- @overload fun(playerSrc: string): Vector3
 function GetPlayerCameraRotation(playerSrc) end
@@ -248,7 +248,7 @@ function GetTrainCarriageIndex(train) end
 --- Routing buckets are also known as 'dimensions' or 'virtual worlds' in past echoes, however they are population-aware.
 ---
 --- @hash [0x52441C34](https://docs.fivem.net/natives/?_0x52441C34)
---- @param playerSrc string (char*)
+--- @param playerSrc Player
 --- @return number
 --- @overload fun(playerSrc: string): number
 function GetPlayerRoutingBucket(playerSrc) end
@@ -266,7 +266,7 @@ function GetPedSourceOfDamage(ped) end
 --- Gets a player's token. Tokens can be used to enhance banning logic, however are specific to a server.
 ---
 --- @hash [0x54C06897](https://docs.fivem.net/natives/?_0x54C06897)
---- @param playerSrc string (char*)
+--- @param playerSrc Player
 --- @param index number (int)
 --- @return string
 --- @overload fun(playerSrc: string, index: number): string
@@ -294,7 +294,7 @@ function GetHostId() end
 --- GetNumPlayerTokens
 ---
 --- @hash [0x619E4A3D](https://docs.fivem.net/natives/?_0x619E4A3D)
---- @param playerSrc string (char*)
+--- @param playerSrc Player
 --- @return number
 --- @overload fun(playerSrc: string): number
 function GetNumPlayerTokens(playerSrc) end
@@ -312,7 +312,7 @@ function GetResourcePath(resourceName) end
 --- GetAirDragMultiplierForPlayersVehicle
 ---
 --- @hash [0x62FC38D0](https://docs.fivem.net/natives/?_0x62FC38D0)
---- @param playerSrc string (char*)
+--- @param playerSrc Player
 --- @return number
 --- @overload fun(playerSrc: string): number
 function GetAirDragMultiplierForPlayersVehicle(playerSrc) end
@@ -355,7 +355,7 @@ function GetNumPlayerIndices() end
 --- Routing buckets are also known as 'dimensions' or 'virtual worlds' in past echoes, however they are population-aware.
 ---
 --- @hash [0x6504EB38](https://docs.fivem.net/natives/?_0x6504EB38)
---- @param playerSrc string (char*)
+--- @param playerSrc Player
 --- @param bucket number (int)
 --- @return nil
 --- @overload fun(playerSrc: string, bucket: number): nil
@@ -428,7 +428,7 @@ function TriggerLatentClientEventInternal(eventName, eventTarget, eventPayload, 
 --- GetPlayerIdentifier
 ---
 --- @hash [0x7302DBCF](https://docs.fivem.net/natives/?_0x7302DBCF)
---- @param playerSrc string (char*)
+--- @param playerSrc Player
 --- @param identifier number (int)
 --- @return string
 --- @overload fun(playerSrc: string, identifier: number): string
@@ -438,7 +438,7 @@ function GetPlayerIdentifier(playerSrc, identifier) end
 --- Requests the commerce data from Tebex for the specified player, including the owned SKUs. Use `IS_PLAYER_COMMERCE_INFO_LOADED` to check if it has loaded.
 ---
 --- @hash [0x7995539E](https://docs.fivem.net/natives/?_0x7995539E)
---- @param playerSrc string (char*)
+--- @param playerSrc Player
 --- @return nil
 --- @overload fun(playerSrc: string): nil
 function LoadPlayerCommerceDataExt(playerSrc) end
@@ -447,7 +447,7 @@ function LoadPlayerCommerceDataExt(playerSrc) end
 --- NetworkGetVoiceProximityOverride
 ---
 --- @hash [0x7A6462F4](https://docs.fivem.net/natives/?_0x7A6462F4)
---- @param playerSrc string (char*)
+--- @param playerSrc Player
 --- @return Vector3
 --- @overload fun(playerSrc: string): Vector3
 function NetworkGetVoiceProximityOverride(playerSrc) end
@@ -460,7 +460,7 @@ function NetworkGetVoiceProximityOverride(playerSrc) end
 --- ```
 ---
 --- @hash [0x7ADE63E1](https://docs.fivem.net/natives/?_0x7ADE63E1)
---- @param playerSrc string (char*)
+--- @param playerSrc Player
 --- @param lastPursuit boolean
 --- @return number
 --- @overload fun(playerSrc: string, lastPursuit: boolean): number
@@ -481,7 +481,7 @@ function GetPedSpecificTaskType(ped, index) end
 --- GetPlayerMaxHealth
 ---
 --- @hash [0x8154E470](https://docs.fivem.net/natives/?_0x8154E470)
---- @param playerSrc string (char*)
+--- @param playerSrc Player
 --- @return number
 --- @overload fun(playerSrc: string): number
 function GetPlayerMaxHealth(playerSrc) end
@@ -504,7 +504,7 @@ function GetPedScriptTaskCommand(ped) end
 --- ```
 ---
 --- @hash [0x89A3881A](https://docs.fivem.net/natives/?_0x89A3881A)
---- @param playerSrc string (char*)
+--- @param playerSrc Player
 --- @return boolean
 --- @overload fun(playerSrc: string): boolean
 function IsPlayerEvadingWantedLevel(playerSrc) end
@@ -514,7 +514,7 @@ function IsPlayerEvadingWantedLevel(playerSrc) end
 --- Set to `0.0` to reset.
 ---
 --- @hash [0x8A2FBAD4](https://docs.fivem.net/natives/?_0x8A2FBAD4)
---- @param playerSrc string (char*)
+--- @param playerSrc Player
 --- @param radius number (float)
 --- @return nil
 --- @overload fun(playerSrc: string, radius: number): nil
@@ -564,7 +564,7 @@ function GetTrainCarriageEngine(train) end
 --- will open the browser prompting further purchase details.
 ---
 --- @hash [0x96F93CCE](https://docs.fivem.net/natives/?_0x96F93CCE)
---- @param playerSrc string (char*)
+--- @param playerSrc Player
 --- @param skuId number (int)
 --- @return nil
 --- @overload fun(playerSrc: string, skuId: number): nil
@@ -663,14 +663,14 @@ function GetVehicleType(vehicle) end
 --- @param playerSrc Player
 --- @param identifierType string (char*)
 --- @return string
---- @overload fun(playerSrc: Player, identifierType: string): string
+--- @overload fun(playerSrc: string, identifierType: string): string
 function GetPlayerIdentifierByType(playerSrc, identifierType) end
 
     
 --- Requests the commerce data for the specified player, including the owned SKUs. Use `IS_PLAYER_COMMERCE_INFO_LOADED` to check if it has loaded.
 ---
 --- @hash [0xA8F63EAB](https://docs.fivem.net/natives/?_0xA8F63EAB)
---- @param playerSrc string (char*)
+--- @param playerSrc Player
 --- @return nil
 --- @overload fun(playerSrc: string): nil
 function LoadPlayerCommerceData(playerSrc) end
@@ -711,7 +711,7 @@ function ScheduleResourceTick(resourceName) end
 --- DropPlayer
 ---
 --- @hash [0xBA0613E1](https://docs.fivem.net/natives/?_0xBA0613E1)
---- @param playerSrc string (char*)
+--- @param playerSrc Player
 --- @param reason string (char*)
 --- @return nil
 --- @overload fun(playerSrc: string, reason: string): nil
@@ -721,7 +721,7 @@ function DropPlayer(playerSrc, reason) end
 --- Requests whether or not the commerce data for the specified player has loaded.
 ---
 --- @hash [0xBEFE93F4](https://docs.fivem.net/natives/?_0xBEFE93F4)
---- @param playerSrc string (char*)
+--- @param playerSrc Player
 --- @return boolean
 --- @overload fun(playerSrc: string): boolean
 function IsPlayerCommerceInfoLoaded(playerSrc) end
@@ -739,7 +739,7 @@ function GetPedDesiredHeading(ped) end
 --- IsPlayerUsingSuperJump
 ---
 --- @hash [0xC7D2C20C](https://docs.fivem.net/natives/?_0xC7D2C20C)
---- @param playerSrc string (char*)
+--- @param playerSrc Player
 --- @return boolean
 --- @overload fun(playerSrc: string): boolean
 function IsPlayerUsingSuperJump(playerSrc) end
@@ -757,7 +757,7 @@ function GetPlayerFromIndex(index) end
 --- Mutes or unmutes the specified player
 ---
 --- @hash [0xCC6C2EB1](https://docs.fivem.net/natives/?_0xCC6C2EB1)
---- @param playerSrc number (int)
+--- @param playerSrc Player
 --- @param toggle boolean
 --- @return nil
 --- @overload fun(playerSrc: number, toggle: boolean): nil
@@ -817,7 +817,7 @@ function GetVehicleHeadlightsColour(vehicle) end
 --- IsPlayerAceAllowed
 ---
 --- @hash [0xDEDAE23D](https://docs.fivem.net/natives/?_0xDEDAE23D)
---- @param playerSrc string (char*)
+--- @param playerSrc Player
 --- @param object string (char*)
 --- @return boolean
 --- @overload fun(playerSrc: string, object: string): boolean
@@ -827,7 +827,7 @@ function IsPlayerAceAllowed(playerSrc, object) end
 --- Requests whether or not the player owns the specified package.
 ---
 --- @hash [0xDEF0480B](https://docs.fivem.net/natives/?_0xDEF0480B)
---- @param playerSrc string (char*)
+--- @param playerSrc Player
 --- @param skuId number (int)
 --- @return boolean
 --- @overload fun(playerSrc: string, skuId: number): boolean
@@ -865,7 +865,7 @@ function HasVehicleBeenOwnedByPlayer(vehicle) end
 --- GetPlayerGuid
 ---
 --- @hash [0xE52D9680](https://docs.fivem.net/natives/?_0xE52D9680)
---- @param playerSrc string (char*)
+--- @param playerSrc Player
 --- @return string
 --- @overload fun(playerSrc: string): string
 function GetPlayerGuid(playerSrc) end
@@ -931,7 +931,7 @@ function EnableEnhancedHostSupport(enabled) end
 --- GetPlayerEndpoint
 ---
 --- @hash [0xFEE404F9](https://docs.fivem.net/natives/?_0xFEE404F9)
---- @param playerSrc string (char*)
+--- @param playerSrc Player
 --- @return string
 --- @overload fun(playerSrc: string): string
 function GetPlayerEndpoint(playerSrc) end
@@ -940,7 +940,7 @@ function GetPlayerEndpoint(playerSrc) end
 --- GetPlayerPing
 ---
 --- @hash [0xFF1290D4](https://docs.fivem.net/natives/?_0xFF1290D4)
---- @param playerSrc string (char*)
+--- @param playerSrc Player
 --- @return number
 --- @overload fun(playerSrc: string): number
 function GetPlayerPing(playerSrc) end
@@ -949,7 +949,7 @@ function GetPlayerPing(playerSrc) end
 --- GetNumPlayerIdentifiers
 ---
 --- @hash [0xFF7F66AB](https://docs.fivem.net/natives/?_0xFF7F66AB)
---- @param playerSrc string (char*)
+--- @param playerSrc Player
 --- @return number
 --- @overload fun(playerSrc: string): number
 function GetNumPlayerIdentifiers(playerSrc) end

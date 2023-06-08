@@ -95,11 +95,6 @@ export class ManualFixes {
       case '0xD4BEF069':
         methodObj.results = 'RegisteredCommandInfo[]'
         break
-
-      case '0xA61C8FC6':
-        methodObj.params[0].type = "Player"
-        console.log(methodObj.params);
-        break
     }
     return true
   }

@@ -8,15 +8,15 @@ export class Parser {
 
   static readonly RESERVED_KEYWORDS = new Set<string>(['and', 'break', 'do', 'else', 'elseif', 'end', 'false', 'for', 'function', 'if', 'in', 'local', 'nil', 'not', 'or', 'repeat', 'return', 'then', 'true', 'until', 'while'])
 
-  static toUpperCaseFirst (str: string) {
+  static toUpperCaseFirst(str: string) {
     return str.charAt(0).toUpperCase() + str.slice(1)
   }
 
-  static parseRawName (name: string): string {
+  static parseRawName(name: string): string {
     return this.toUpperCaseFirst(name.toLowerCase().replace('0x', 'n_0x').replace(/_([a-z])/g, (regs) => regs[1].toUpperCase()))
   }
 
-  static getRawNameFromNative (native: NativeDeclaration) {
+  static getRawNameFromNative(native: NativeDeclaration) {
     return native.name || native.hash || native.jhash
   }
 
@@ -40,7 +40,7 @@ export class Parser {
    *
    * @param params
    */
-  static isSinglePointerNative (params: NativeDelcarationParam[]) {
+  static isSinglePointerNative(params: NativeDelcarationParam[]) {
     let foundPointer = false
     for (const param of params) {
       if (param.type.includes('*') && param.type !== 'char*') {
@@ -54,7 +54,7 @@ export class Parser {
     return foundPointer
   }
 
-  static generateOverloadAndParams (params: NativeDelcarationParam[], hash: string, resultsArray: string[]): GeneratedOverload {
+  static generateOverloadAndParams(params: NativeDelcarationParam[], hash: string, resultsArray: string[]): GeneratedOverload {
     let parsedParams: string = ''
     let overload: string = 'fun('
     let first: boolean = true
@@ -101,7 +101,7 @@ export class Parser {
     return [outParams, overload, isSinglePtr]
   }
 
-  static parseSingleParam (element: NativeDelcarationParam, hash: string) {
+  static parseSingleParam(element: NativeDelcarationParam, hash: string) {
     let result = ''
     let name = element.name
     if (this.RESERVED_KEYWORDS.has(name)) {
@@ -110,13 +110,15 @@ export class Parser {
     }
 
     let type = Types.getDocType(element.type, false, hash)
+    if (name == "playerSrc")
+      type = "Player"
 
     result += `--- @param ${name} ${type}\n`
 
     return result
   }
 
-  static parseSingleOverload (element: NativeDelcarationParam, first: boolean, hash: string) {
+  static parseSingleOverload(element: NativeDelcarationParam, first: boolean, hash: string) {
     let result = ''
     let name = element.name
     if (this.RESERVED_KEYWORDS.has(name)) {
@@ -131,7 +133,7 @@ export class Parser {
     return result
   }
 
-  static getParamNames (params: NativeDelcarationParam[], isSinglePtr: boolean): string {
+  static getParamNames(params: NativeDelcarationParam[], isSinglePtr: boolean): string {
     let result = ''
     let isFirst = true
     params.forEach((element: NativeDelcarationParam) => {
@@ -166,7 +168,7 @@ export class Parser {
     return result
   }
 
-  static parseExamples (examples: NativeDeclarationExample[]): string {
+  static parseExamples(examples: NativeDeclarationExample[]): string {
     let result = ''
     examples.forEach(example => {
       if (example.lang === 'lua') {
@@ -177,7 +179,7 @@ export class Parser {
     return result.length > 0 ? result.substring(0, result.length - 1) : '---'
   }
 
-  static parseDescription (name: string, desc: string) {
+  static parseDescription(name: string, desc: string) {
     desc = desc.replaceAll('](#\\_0x', `](${NATIVE_URL}0x`)
     return '--- ' + (desc.length > 0 ? desc.replace(/\n/g, '\n--- ') : name)
   }
@@ -187,7 +189,7 @@ export class Parser {
    * @param methodObj
    * @returns null if the native is supposed to be discarded, otherwise an array containing the parsed native and aliases
    */
-  static parseMethod (methodObj: NativeDeclaration): ParsedMethod[] | null {
+  static parseMethod(methodObj: NativeDeclaration): ParsedMethod[] | null {
     if (!ManualFixes.fixMethod(methodObj)) {
       return null
     }
