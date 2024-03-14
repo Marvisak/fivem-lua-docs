@@ -1163,13 +1163,11 @@ function N_0x91ef34584710be99(x, y, z, radius, p4, p5, p6, weaponHash) end
 function IsWeaponValid(weaponHash) end
 
     
---- ```
---- Now has 8 params.  
---- ```
+--- Create a weapon object that cannot be attached to a ped. If you want to create a weapon object that can be attached to a ped, use [`CREATE_OBJECT`](https://docs.fivem.net/natives/?_0x509D5878EB39E842) instead.
 --- 
 --- ```
---- NativeDB Added Parameter 9: Any p8
---- NativeDB Added Parameter 10: Any p9
+--- NativeDB Added Parameter 9: BOOL bRegisterAsNetworkObject
+--- NativeDB Added Parameter 10: BOOL bScriptHostObject
 --- ```
 ---
 --- @hash [0x9541D3CF0D398F36](https://docs.fivem.net/natives/?_0x9541D3CF0D398F36)
@@ -1178,12 +1176,12 @@ function IsWeaponValid(weaponHash) end
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @param showWorldModel boolean
+--- @param bCreateDefaultComponents boolean
 --- @param scale number (float)
---- @param p7 any
+--- @param customModelHash number (int)
 --- @return Object
---- @overload fun(weaponHash: Hash, ammoCount: number, x: number, y: number, z: number, showWorldModel: boolean, scale: number, p7: any): Object
-function CreateWeaponObject(weaponHash, ammoCount, x, y, z, showWorldModel, scale, p7) end
+--- @overload fun(weaponHash: Hash, ammoCount: number, x: number, y: number, z: number, bCreateDefaultComponents: boolean, scale: number, customModelHash: number): Object
+function CreateWeaponObject(weaponHash, ammoCount, x, y, z, bCreateDefaultComponents, scale, customModelHash) end
 
     
 --- ```
@@ -1493,8 +1491,13 @@ function CanUseWeaponOnParachute(weaponHash) end
 function GiveWeaponToPed(ped, weaponHash, ammoCount, isHidden, bForceInHand) end
 
     
---- GetWeapontypeGroup
----
+--- Gets and returns the hash of the group of the specified weapon (group names can be found/changed under "Group" in the weapons' meta file).
+--- Note that the group is **not** the same as the location on the weapon wheel.
+--- @usage print(GetWeapontypeGroup(`WEAPON_PISTOL`)) -- Outputs the hash of GROUP_PISTOL
+--- print(GetWeapontypeGroup(`WEAPON_RPG`)) -- Outputs the hash of GROUP_HEAVY
+--- print(GetWeapontypeGroup(`WEAPON_SNOWBALL`)) -- Outputs the hash of GROUP_THROWN
+--- print(GetWeapontypeGroup(`WEAPON_MUSKET`)) -- Outputs the hash of GROUP_SNIPER
+--- print(GetWeapontypeGroup(GetSelectedPedWeapon(PlayerPedId()))) -- Outputs the hash of the currently selected weapo
 --- @hash [0xC3287EE3050FB74C](https://docs.fivem.net/natives/?_0xC3287EE3050FB74C)
 --- @param weaponHash Hash
 --- @return Hash
@@ -1634,10 +1637,10 @@ function GiveWeaponComponentToPed(ped, weaponHash, componentHash) end
 --- @param y number (float)
 --- @param z number (float)
 --- @param radius number (float)
---- @param outZoneId number (int)
+--- @param SphereIndex number (int*)
 --- @return boolean
---- @overload fun(x: number, y: number, z: number, radius: number, outZoneId: number): boolean
-function IsAnyAirDefenseZoneInsideSphere(x, y, z, radius, outZoneId) end
+--- @overload fun(x: number, y: number, z: number, radius: number): boolean, number
+function IsAnyAirDefenseZoneInsideSphere(x, y, z, radius, SphereIndex) end
 
     
 --- # New Name: IsAnyAirDefenseZoneInsideSphere
@@ -1648,11 +1651,11 @@ function IsAnyAirDefenseZoneInsideSphere(x, y, z, radius, outZoneId) end
 --- @param y number (float)
 --- @param z number (float)
 --- @param radius number (float)
---- @param outZoneId number (int)
+--- @param SphereIndex number (int*)
 --- @return boolean
---- @overload fun(x: number, y: number, z: number, radius: number, outZoneId: number): boolean
+--- @overload fun(x: number, y: number, z: number, radius: number): boolean, number
 --- @deprecated
-function N_0xdab963831dbfd3f4(x, y, z, radius, outZoneId) end
+function N_0xdab963831dbfd3f4(x, y, z, radius, SphereIndex) end
 
     
 --- # New Name: IsAnyAirDefenseZoneInsideSphere
@@ -1663,11 +1666,11 @@ function N_0xdab963831dbfd3f4(x, y, z, radius, outZoneId) end
 --- @param y number (float)
 --- @param z number (float)
 --- @param radius number (float)
---- @param outZoneId number (int)
+--- @param SphereIndex number (int*)
 --- @return boolean
---- @overload fun(x: number, y: number, z: number, radius: number, outZoneId: number): boolean
+--- @overload fun(x: number, y: number, z: number, radius: number): boolean, number
 --- @deprecated
-function IsAirDefenseZoneInsideSphere(x, y, z, radius, outZoneId) end
+function IsAirDefenseZoneInsideSphere(x, y, z, radius, SphereIndex) end
 
     
 --- GetMaxAmmo
@@ -1757,7 +1760,7 @@ function SetPlayerAirDefenseZoneFlag(player, zoneId, enable) end
 function N_0xecdc202b25e5cf48(player, zoneId, enable) end
 
     
---- Does the same as [`_SET_CAN_PED_SELECT_WEAPON`](https://runtime.fivem.net/doc/natives/#\_0xB4771B9AAF4E68E4) except for all weapons.
+--- Does the same as [`_SET_CAN_PED_SELECT_WEAPON`](https://docs.fivem.net/natives/?_0xB4771B9AAF4E68E4) except for all weapons.
 ---
 --- @hash [0xEFF296097FF1E509](https://docs.fivem.net/natives/?_0xEFF296097FF1E509)
 --- @param ped Ped
@@ -1768,7 +1771,7 @@ function SetCanPedEquipAllWeapons(ped, toggle) end
 
     
 --- # New Name: SetCanPedEquipAllWeapons
---- Does the same as [`_SET_CAN_PED_SELECT_WEAPON`](https://runtime.fivem.net/doc/natives/#\_0xB4771B9AAF4E68E4) except for all weapons.
+--- Does the same as [`_SET_CAN_PED_SELECT_WEAPON`](https://docs.fivem.net/natives/?_0xB4771B9AAF4E68E4) except for all weapons.
 ---
 --- @hash [0xEFF296097FF1E509](https://docs.fivem.net/natives/?_0xEFF296097FF1E509)
 --- @param ped Ped

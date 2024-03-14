@@ -162,10 +162,10 @@ function SetFirstPersonCamNearClip(distance) end
 --- StopGameplayCamShaking
 ---
 --- @hash [0x0EF93E9F3D08C178](https://docs.fivem.net/natives/?_0x0EF93E9F3D08C178)
---- @param p0 boolean
+--- @param bStopImmediately boolean
 --- @return nil
---- @overload fun(p0: boolean): nil
-function StopGameplayCamShaking(p0) end
+--- @overload fun(bStopImmediately: boolean): nil
+function StopGameplayCamShaking(bStopImmediately) end
 
     
 --- Takes a camera and uses the information from it as a camera spline node.
@@ -312,7 +312,11 @@ function N_0x162f9d995753dc19() end
 function GetGameplayCamFarClip_2() end
 
     
---- SetCamUseShallowDofMode
+--- Enables or disables the usage of a shallow DOF. Needs to be set to true to use [`SET_CAM_NEAR_DOF`](https://docs.fivem.net/natives/?_0x3FA4BF0A7AB7DE2C), [`SET_CAM_FAR_DOF`](https://docs.fivem.net/natives/?_0xEDD91296CD01AEE0), etc. Doesn't need to be called every tick.
+--- 
+--- ### Usage Example
+--- 
+--- A usage example for this native can be found in the following native documentation: [`SET_CAM_DOF_STRENGTH`](https://docs.fivem.net/natives/?_0x5EE29B4D7D5DF897).
 ---
 --- @hash [0x16A96863A17552BB](https://docs.fivem.net/natives/?_0x16A96863A17552BB)
 --- @param cam Cam
@@ -437,34 +441,38 @@ function N_0x1a31fe0049e542f6() end
 function SetCamDebugName(camera, name) end
 
     
+--- Stops the currently active global camera shake that was initiated by a script. You can check if a global camera shake is active using [IS_SCRIPT_GLOBAL_SHAKING](https://docs.fivem.net/natives/?_0xC912AF078AF19212).
+--- 
 --- ```
---- In drunk_controller.c4, sub_309
---- if (CAM::IS_SCRIPT_GLOBAL_SHAKING()) {
----     CAM::STOP_SCRIPT_GLOBAL_SHAKING(0);
---- }
+--- NativeDB Introduced: v323
 --- ```
----
+--- @usage -- Stops the currently active global camera shake with a gradual fade out
+--- if IsScriptGlobalShaking() then
+---     StopScriptGlobalShaking(false)
+--- en
 --- @hash [0x1C9D7949FA533490](https://docs.fivem.net/natives/?_0x1C9D7949FA533490)
---- @param p0 boolean
+--- @param bStopImmediately boolean
 --- @return nil
---- @overload fun(p0: boolean): nil
-function StopScriptGlobalShaking(p0) end
+--- @overload fun(bStopImmediately: boolean): nil
+function StopScriptGlobalShaking(bStopImmediately) end
 
     
 --- # New Name: StopScriptGlobalShaking
+--- Stops the currently active global camera shake that was initiated by a script. You can check if a global camera shake is active using [IS_SCRIPT_GLOBAL_SHAKING](https://docs.fivem.net/natives/?_0xC912AF078AF19212).
+--- 
 --- ```
---- In drunk_controller.c4, sub_309
---- if (CAM::IS_SCRIPT_GLOBAL_SHAKING()) {
----     CAM::STOP_SCRIPT_GLOBAL_SHAKING(0);
---- }
+--- NativeDB Introduced: v323
 --- ```
----
+--- @usage -- Stops the currently active global camera shake with a gradual fade out
+--- if IsScriptGlobalShaking() then
+---     StopScriptGlobalShaking(false)
+--- en
 --- @hash [0x1C9D7949FA533490](https://docs.fivem.net/natives/?_0x1C9D7949FA533490)
---- @param p0 boolean
+--- @param bStopImmediately boolean
 --- @return nil
---- @overload fun(p0: boolean): nil
+--- @overload fun(bStopImmediately: boolean): nil
 --- @deprecated
-function N_0x1c9d7949fa533490(p0) end
+function N_0x1c9d7949fa533490(bStopImmediately) end
 
     
 --- N_0x1f2300cb7fa7b7f6
@@ -790,7 +798,11 @@ function GetGameplayCamRelativePitch() end
 function SetCamDofPlanes(cam, p1, p2, p3, p4) end
 
     
---- SetCamNearDof
+--- Specifies when the camera should start being in focus. Can be used together with [`SET_USE_HI_DOF`](https://docs.fivem.net/natives/?_0xA13B0222F3D94A94), [`SET_CAM_FAR_DOF`](https://docs.fivem.net/natives/?_0xEDD91296CD01AEE0), [`SET_CAM_USE_SHALLOW_DOF_MODE`](https://docs.fivem.net/natives/?_0x16A96863A17552BB), [`SET_CAM_DOF_STRENGTH`](https://docs.fivem.net/natives/?_0x5EE29B4D7D5DF897) and other DoF related natives.
+--- 
+--- ### Usage Example
+--- 
+--- A usage example for this native can be found in the following native documentation: [`SET_CAM_DOF_STRENGTH`](https://docs.fivem.net/natives/?_0x5EE29B4D7D5DF897).
 ---
 --- @hash [0x3FA4BF0A7AB7DE2C](https://docs.fivem.net/natives/?_0x3FA4BF0A7AB7DE2C)
 --- @param cam Cam
@@ -1329,8 +1341,29 @@ function IsFirstPersonAimCamActive() end
 function CreateCamera(camHash, active) end
 
     
---- SetCamDofStrength
----
+--- Specifies how much the DoF effect should be applied (Set using [`SET_CAM_NEAR_DOF`](https://docs.fivem.net/natives/?_0x3FA4BF0A7AB7DE2C), [`SET_CAM_FAR_DOF`](https://docs.fivem.net/natives/?_0xEDD91296CD01AEE0), etc.)
+--- @usage CreateThread(function()
+---     local camera = CreateCam("DEFAULT_SCRIPTED_FLY_CAMERA", true)
+---     -- Set the cam coordinates to the player coords
+---     local playerCoords = GetEntityCoords(PlayerPedId())
+---     SetCamCoord(camera, playerCoords)
+---     -- Render the camera we just created
+---     RenderScriptCams(true)
+---     -- Use a shallow depth of field
+---     SetCamUseShallowDofMode(camera, true)
+---     -- Set at what distance your camera should start to focus (Example: 0.7 meters)
+---     SetCamNearDof(camera, 0.7)
+---     -- Set at what distance your camera should stop focusing (Example: 1.3 meters)
+---     SetCamFarDof(camera, 1.3)
+---     -- Apply 100% of the DoF effect (The native you're reading documentation on)
+---     SetCamDofStrength(camera, 1.0)
+--- 
+---     while DoesCamExist(camera) do
+---         -- Use DoF effect (needs to be called every tick)
+---         SetUseHiDof()
+---         Citizen.Wait(0)  
+---     end
+--- end
 --- @hash [0x5EE29B4D7D5DF897](https://docs.fivem.net/natives/?_0x5EE29B4D7D5DF897)
 --- @param cam Cam
 --- @param dofStrength number (float)
@@ -1383,19 +1416,26 @@ function AddCamSplineNodeUsingGameplayFrame(cam, p1, p2) end
 function N_0x609278246a29ca34(cam, p1, p2) end
 
     
---- AttachCamToPedBone
+--- This native works with peds only.
+--- @usage local ped = PlayerPedId()
+--- local cam = CreateCam("DEFAULT_SCRIPTED_CAMERA", true)
+--- 
+--- AttachCamToPedBone(cam,ped,4089, 0.0, 0.0, 0.0, true) -- attach it to a finger on the left hand
+--- 
+--- SetCamActive(cam, true)
+--- RenderScriptCams(true, false, 0, true, true)
 ---
 --- @hash [0x61A3DBA14AB7F411](https://docs.fivem.net/natives/?_0x61A3DBA14AB7F411)
 --- @param cam Cam
 --- @param ped Ped
 --- @param boneIndex number (int)
---- @param x number (float)
---- @param y number (float)
---- @param z number (float)
---- @param heading boolean
+--- @param xOffset number (float)
+--- @param yOffset number (float)
+--- @param zOffset number (float)
+--- @param isRelative boolean
 --- @return nil
---- @overload fun(cam: Cam, ped: Ped, boneIndex: number, x: number, y: number, z: number, heading: boolean): nil
-function AttachCamToPedBone(cam, ped, boneIndex, x, y, z, heading) end
+--- @overload fun(cam: Cam, ped: Ped, boneIndex: number, xOffset: number, yOffset: number, zOffset: number, isRelative: boolean): nil
+function AttachCamToPedBone(cam, ped, boneIndex, xOffset, yOffset, zOffset, isRelative) end
 
     
 --- N_0x62374889a4d59f72
@@ -1416,17 +1456,25 @@ function N_0x62374889a4d59f72() end
 function N_0x62ecfcfdee7885d6() end
 
     
---- UseStuntCameraThisFrame
+--- Applies a predefined set of vehicle camera settings optimized for capturing stunts, effective for the current game update/frame.
+--- 
+--- ```
+--- NativeDB Introduced: v791
+--- ```
 ---
 --- @hash [0x6493CF69859B116A](https://docs.fivem.net/natives/?_0x6493CF69859B116A)
 ---
 --- @return nil
 --- @overload fun(): nil
-function UseStuntCameraThisFrame() end
+function UseVehicleCamStuntSettingsThisUpdate() end
 
     
---- # New Name: UseStuntCameraThisFrame
---- UseStuntCameraThisFrame
+--- # New Name: UseVehicleCamStuntSettingsThisUpdate
+--- Applies a predefined set of vehicle camera settings optimized for capturing stunts, effective for the current game update/frame.
+--- 
+--- ```
+--- NativeDB Introduced: v791
+--- ```
 ---
 --- @hash [0x6493CF69859B116A](https://docs.fivem.net/natives/?_0x6493CF69859B116A)
 ---
@@ -1434,6 +1482,21 @@ function UseStuntCameraThisFrame() end
 --- @overload fun(): nil
 --- @deprecated
 function N_0x6493cf69859b116a() end
+
+    
+--- # New Name: UseVehicleCamStuntSettingsThisUpdate
+--- Applies a predefined set of vehicle camera settings optimized for capturing stunts, effective for the current game update/frame.
+--- 
+--- ```
+--- NativeDB Introduced: v791
+--- ```
+---
+--- @hash [0x6493CF69859B116A](https://docs.fivem.net/natives/?_0x6493CF69859B116A)
+---
+--- @return nil
+--- @overload fun(): nil
+--- @deprecated
+function UseStuntCameraThisFrame() end
 
     
 --- GetGameplayCamFov
@@ -1445,16 +1508,26 @@ function N_0x6493cf69859b116a() end
 function GetGameplayCamFov() end
 
     
---- ```
---- SET_CAM_*
---- ```
+--- Makes the minimap follow a scripted camera's rotation instead of the gameplay cam.
 ---
 --- @hash [0x661B5C8654ADD825](https://docs.fivem.net/natives/?_0x661B5C8654ADD825)
 --- @param cam Cam
---- @param p1 boolean
+--- @param toggle boolean
 --- @return nil
---- @overload fun(cam: Cam, p1: boolean): nil
-function N_0x661b5c8654add825(cam, p1) end
+--- @overload fun(cam: Cam, toggle: boolean): nil
+function SetCamControlsMiniMapHeading(cam, toggle) end
+
+    
+--- # New Name: SetCamControlsMiniMapHeading
+--- Makes the minimap follow a scripted camera's rotation instead of the gameplay cam.
+---
+--- @hash [0x661B5C8654ADD825](https://docs.fivem.net/natives/?_0x661B5C8654ADD825)
+--- @param cam Cam
+--- @param toggle boolean
+--- @return nil
+--- @overload fun(cam: Cam, toggle: boolean): nil
+--- @deprecated
+function N_0x661b5c8654add825(cam, toggle) end
 
     
 --- ```
@@ -1509,7 +1582,7 @@ function ShakeCam(cam, type, amplitude) end
     
 --- CAM::\_GET_GAMEPLAY_CAM_COORDS can be used instead of posX,Y,Z\
 --- CAM::\_GET_GAMEPLAY_CAM_ROT can be used instead of rotX,Y,Z\
---- CAM::\_80EC114669DAEFF4() can be used instead of p7 (Possible p7 is FOV parameter. )\
+--- CAM::\_GET_FINAL_RENDERED_CAM_FOV can be used instead of p7 (Possible p7 is FOV parameter. )\
 --- rotationOrder is 2 usually
 ---
 --- @hash [0x6ABFA3E16460F22D](https://docs.fivem.net/natives/?_0x6ABFA3E16460F22D)
@@ -1723,14 +1796,57 @@ function N_0x77c3cec46be286f6() end
 function IsScreenFadingOut() end
 
     
---- ```
---- NativeDB Introduced: v1734
---- ```
----
+--- Override the camera work of the third-person camera to table game for current frame only.
+--- 
+--- |                  HashKey                    |       Hash        |    Game         |
+--- | :---------------------------------: | :-----------:| :-------------:  |
+--- | `CASINO_LUCKY_WHEEL_CAMERA` |   `5891389`   |  Lucky Wheel    |
+--- | `CASINO_SLOT_MACHINE_CAMERA` |  `518572876`  |     Slots       |
+--- | `CASINO_ROULETTE_CAMERA` |   `71681063`  |    Roulette     |
+--- | `CASINO_BLACKJACK_CAMERA` | `-2124244681` |    Blackjack    |
+--- | `CASINO_POKER_CAMERA` | `-1938411241` |   Three Cards   |
+--- | `CASINO_INSIDE_TRACK_CAMERA` | `1929822423` |   Inside Track    |
+--- | `ARCADE_LOVE_PROFESSOR_P1_CAMERA` | `545868034` |   LoveProfessorP1   |
+--- | `ARCADE_LOVE_PROFESSOR_P2_CAMERA` | `935304251` |   LoveProfessorP2   |
+--- @usage CreateThread(function()
+---     while true do
+---       -- override to lucky wheel camera work
+---       SetTableGamesCameraThisUpdate(GetHashKey("CASINO_LUCKY_WHEEL_CAMERA"))
+---       Wait(0)
+---     end
+--- end
 --- @hash [0x79C0E43EB9B944E2](https://docs.fivem.net/natives/?_0x79C0E43EB9B944E2)
 --- @param hash Hash
 --- @return boolean
 --- @overload fun(hash: Hash): boolean
+function SetTableGamesCameraThisUpdate(hash) end
+
+    
+--- # New Name: SetTableGamesCameraThisUpdate
+--- Override the camera work of the third-person camera to table game for current frame only.
+--- 
+--- |                  HashKey                    |       Hash        |    Game         |
+--- | :---------------------------------: | :-----------:| :-------------:  |
+--- | `CASINO_LUCKY_WHEEL_CAMERA` |   `5891389`   |  Lucky Wheel    |
+--- | `CASINO_SLOT_MACHINE_CAMERA` |  `518572876`  |     Slots       |
+--- | `CASINO_ROULETTE_CAMERA` |   `71681063`  |    Roulette     |
+--- | `CASINO_BLACKJACK_CAMERA` | `-2124244681` |    Blackjack    |
+--- | `CASINO_POKER_CAMERA` | `-1938411241` |   Three Cards   |
+--- | `CASINO_INSIDE_TRACK_CAMERA` | `1929822423` |   Inside Track    |
+--- | `ARCADE_LOVE_PROFESSOR_P1_CAMERA` | `545868034` |   LoveProfessorP1   |
+--- | `ARCADE_LOVE_PROFESSOR_P2_CAMERA` | `935304251` |   LoveProfessorP2   |
+--- @usage CreateThread(function()
+---     while true do
+---       -- override to lucky wheel camera work
+---       SetTableGamesCameraThisUpdate(GetHashKey("CASINO_LUCKY_WHEEL_CAMERA"))
+---       Wait(0)
+---     end
+--- end
+--- @hash [0x79C0E43EB9B944E2](https://docs.fivem.net/natives/?_0x79C0E43EB9B944E2)
+--- @param hash Hash
+--- @return boolean
+--- @overload fun(hash: Hash): boolean
+--- @deprecated
 function N_0x79c0e43eb9b944e2(hash) end
 
     
@@ -1767,10 +1883,16 @@ function SetCamSplineNodeExtraFlags(cam, p1, flags) end
 function N_0x7bf1a54ae67ac070(cam, p1, flags) end
 
     
---- ```
---- The last parameter, as in other "ROT" methods, is usually 2.  
---- ```
----
+--- Gets a camera's rotation by handle (`cam`) lookup, outputs a `Vector3` in degrees.
+--- @usage -- We need a valid camera handle for this to work.
+--- local theCamHandle = CreateCam("DEFAULT_SCRIPTED_CAMERA", true)
+--- 
+--- -- Let's set the camera rotation for illustrative purposes
+--- SetCamRot(theCamHandle, 0.1, 0.2, 0.3, 0)
+--- 
+--- -- We are now able to get the camera rotation.
+--- local camRot = GetCamRot(theCamHandle, 0) -- vector3(0.100000, 0.200000, 0.300000)
+--- Citizen.Trace(string.format("Cam Rotation is x: %f, y: %f, z: %f", camRot.x, camRot.y, camRot.z)
 --- @hash [0x7D304C1C955E3E12](https://docs.fivem.net/natives/?_0x7D304C1C955E3E12)
 --- @param cam Cam
 --- @param rotationOrder number (int)
@@ -1872,19 +1994,11 @@ function GetFinalRenderedCamFov() end
 function N_0x80ec114669daeff4() end
 
     
---- ```
---- p0 dosen't seem to change much, I tried it with 0, 1, 2:  
---- 0-Pitch(X): -70.000092  
---- 0-Roll(Y): -0.000001  
---- 0-Yaw(Z): -43.886459  
---- 1-Pitch(X): -70.000092  
---- 1-Roll(Y): -0.000001  
---- 1-Yaw(Z): -43.886463  
---- 2-Pitch(X): -70.000092  
---- 2-Roll(Y): -0.000002  
---- 2-Yaw(Z): -43.886467  
---- ```
----
+--- This function takes a rotation order and outputs a `Vector3` in degrees.
+--- 
+--- It first calls a game function to calculate these values given the rotation order and effectively multiplies those values by `180/PI`, hence degrees since the function it calls outputs radians which are then converted to degrees.
+--- @usage local camRot = GetGameplayCamRot(0) -- vector3(-14.74518, 0.05254443, 95.24616)
+--- Citizen.Trace(string.format("Cam Rotation is x: %f, y: %f, z: %f", camRot.x, camRot.y, camRot.z)
 --- @hash [0x837765A25378F0BB](https://docs.fivem.net/natives/?_0x837765A25378F0BB)
 --- @param rotationOrder number (int)
 --- @return Vector3
@@ -1934,12 +2048,10 @@ function N_0x83b8201ed82a9a2d(cam, p1, p2, p3) end
 function SetGameplayObjectHint(p0, p1, p2, p3, p4, p5, p6, p7) end
 
     
---- ```
---- Sets the rotation of the cam.  
---- Last parameter unknown.  
---- Last parameter seems to always be set to 2.  
---- ```
----
+--- Sets the rotation of the camera.
+--- @usage -- We need a valid camera handle for this to work.
+--- local theCamHandle = CreateCam("DEFAULT_SCRIPTED_CAMERA", true)
+--- SetCamRot(theCamHandle, 0.1, 0.2, 0.3, 0
 --- @hash [0x85973643155D0B07](https://docs.fivem.net/natives/?_0x85973643155D0B07)
 --- @param cam Cam
 --- @param rotX number (float)
@@ -2364,7 +2476,12 @@ function GetGameplayCamNearDof() end
 function GetCamAnimCurrentPhase(cam) end
 
     
---- SetUseHiDof
+--- Needs to be called every tick to make the active camera use a high depth of field.\
+--- The DoF can be customized using [`SET_CAM_NEAR_DOF`](https://docs.fivem.net/natives/?_0x3FA4BF0A7AB7DE2C), [`SET_CAM_FAR_DOF`](https://docs.fivem.net/natives/?_0xEDD91296CD01AEE0), [`SET_CAM_USE_SHALLOW_DOF_MODE`](https://docs.fivem.net/natives/?_0x16A96863A17552BB), [`SET_CAM_DOF_STRENGTH`](https://docs.fivem.net/natives/?_0x5EE29B4D7D5DF897) and other DoF related natives.
+--- 
+--- ### Usage Example
+--- 
+--- A usage example for this native can be found in the following native documentation: [`SET_CAM_DOF_STRENGTH`](https://docs.fivem.net/natives/?_0x5EE29B4D7D5DF897).
 ---
 --- @hash [0xA13B0222F3D94A94](https://docs.fivem.net/natives/?_0xA13B0222F3D94A94)
 ---
@@ -2523,9 +2640,7 @@ function N_0xa6385deb180f319f(cam, p1, scale) end
 function N_0xa7092afe81944852() end
 
     
---- ```
---- Returns whether or not the passed camera handle exists.  
---- ```
+--- Looks up a camera handle in the current camera pool and returns `true` if the handle is found, otherwise it returns `false`.
 ---
 --- @hash [0xA7A932170592B50E](https://docs.fivem.net/natives/?_0xA7A932170592B50E)
 --- @param cam Cam
@@ -2596,11 +2711,10 @@ function SetCamFarClip(cam, farClip) end
 function N_0xb1381b97f70c7b30() end
 
     
+--- Adjusts the field of view (FOV) for a specified camera, allowing for a wider or narrower perspective of the game world. The field of view is measured in degrees and affects how much of the game world is visible at any given moment through the camera.
+--- 
 --- ```
---- Sets the field of view of the cam.  
---- ---------------------------------------------  
---- Min: 1.0f  
---- Max: 130.0f  
+--- NativeDB Introduced: v323
 --- ```
 ---
 --- @hash [0xB13C14F66A00D047](https://docs.fivem.net/natives/?_0xB13C14F66A00D047)
@@ -2652,14 +2766,7 @@ function SetGameplayCamRelativeHeading(heading) end
     
 --- Create a camera with the specified cam name/type, You can use `SET_CAM_` natives to manipulate the camera.
 --- 
---- Camera names found in the b617d scripts:
---- 
---- ```
---- "DEFAULT_ANIMATED_CAMERA"  
---- "DEFAULT_SCRIPTED_CAMERA"  
---- "DEFAULT_SCRIPTED_FLY_CAMERA"  
---- "DEFAULT_SPLINE_CAMERA" 
---- ```
+--- Take a look at [CREATE_CAM](https://docs.fivem.net/natives/?_0xC3981DCE61D9E13F) if you would like to see the available camera names.
 --- @usage local cam = CreateCamWithParams("DEFAULT_SCRIPTED_CAMERA", 561.3, 301.3, 63.0, 0.0, 0.0, 0.0, 90.0
 --- @hash [0xB51194800B257161](https://docs.fivem.net/natives/?_0xB51194800B257161)
 --- @param camName string (char*)
@@ -2942,59 +3049,179 @@ function SetCinematicCamShakeAmplitude(p0) end
 function SetCamNearClip(cam, nearClip) end
 
     
+--- Instructs the game engine to stop rendering scripted cameras and transition back to the gameplay camera, optionally applying custom blending and rendering options.
+--- 
+--- ```cpp
+--- enum eRenderingOptionFlags {
+---     RO_NO_OPTIONS = 0,
+---     RO_STOP_RENDERING_OPTION_WHEN_PLAYER_EXITS_INTO_COVER = 1
+--- };
 --- ```
---- This native makes the gameplay camera zoom into first person/third person with a special effect.
+--- 
+--- ```cpp
+--- enum eCamSplineSmoothingFlags {
+---     CAM_SPLINE_NO_SMOOTH                = 0,    // No smoothing just moves at a constant rate
+---     CAM_SPLINE_SLOW_IN_SMOOTH           = 1,    // Decelerates when approaching a node
+---     CAM_SPLINE_SLOW_OUT_SMOOTH          = 2,    // Accelerates slowly when leaving a node
+---     CAM_SPLINE_SLOW_IN_OUT_SMOOTH       = 3,    // Decelerates when approaching a node and accelerates slowly when leaving a node
+---     CAM_SPLINE_VERY_SLOW_IN             = 4, 
+---     CAM_SPLINE_VERY_SLOW_OUT            = 5, 
+---     CAM_SPLINE_VERY_SLOW_IN_SLOW_OUT    = 6, 
+---     CAM_SPLINE_SLOW_IN_VERY_SLOW_OUT    = 7, 
+---     CAM_SPLINE_VERY_SLOW_IN_VERY_SLOW_OUT = 8,
+---     CAM_SPLINE_EASE_IN                  = 9, 
+---     CAM_SPLINE_EASE_OUT                 = 10, 
+---     CAM_SPLINE_QUADRATIC_EASE_IN        = 11, 
+---     CAM_SPLINE_QUADRATIC_EASE_OUT       = 12, 
+---     CAM_SPLINE_QUADRATIC_EASE_IN_OUT    = 13, 
+---     CAM_SPLINE_CUBIC_EASE_IN            = 14, 
+---     CAM_SPLINE_CUBIC_EASE_OUT           = 15, 
+---     CAM_SPLINE_CUBIC_EASE_IN_OUT        = 16, 
+---     CAM_SPLINE_QUARTIC_EASE_IN          = 17, 
+---     CAM_SPLINE_QUARTIC_EASE_OUT         = 18, 
+---     CAM_SPLINE_QUARTIC_EASE_IN_OUT      = 19, 
+---     CAM_SPLINE_QUINTIC_EASE_IN          = 20, 
+---     CAM_SPLINE_QUINTIC_EASE_OUT         = 21, 
+---     CAM_SPLINE_QUINTIC_EASE_IN_OUT      = 22, 
+---     CAM_SPLINE_CIRCULAR_EASE_IN         = 23, 
+---     CAM_SPLINE_CIRCULAR_EASE_OUT        = 24, 
+---     CAM_SPLINE_CIRCULAR_EASE_IN_OUT     = 25 
+--- };
 --- ```
 --- 
 --- ```
---- NativeDB Added Parameter 4: Any p3
+--- NativeDB Added Parameter 4: int renderingOptions : An integer bitmask of eRenderingOptionFlags to apply specific rendering behaviors during the transition. RO_NO_OPTIONS signifies no special options are applied.
+--- ```
+--- 
+--- ```
+--- NativeDB Introduced: v323
 --- ```
 ---
 --- @hash [0xC819F3CBB62BF692](https://docs.fivem.net/natives/?_0xC819F3CBB62BF692)
---- @param render boolean
---- @param p1 number (float)
---- @param p2 number (int)
+--- @param bShouldApplyAcrossAllThreads boolean
+--- @param distanceToBlend number (float)
+--- @param blendType number (int)
 --- @return nil
---- @overload fun(render: boolean, p1: number, p2: number): nil
-function StopRenderingScriptCamsUsingCatchUp(render, p1, p2) end
+--- @overload fun(bShouldApplyAcrossAllThreads: boolean, distanceToBlend: number, blendType: number): nil
+function StopRenderingScriptCamsUsingCatchUp(bShouldApplyAcrossAllThreads, distanceToBlend, blendType) end
 
     
 --- # New Name: StopRenderingScriptCamsUsingCatchUp
+--- Instructs the game engine to stop rendering scripted cameras and transition back to the gameplay camera, optionally applying custom blending and rendering options.
+--- 
+--- ```cpp
+--- enum eRenderingOptionFlags {
+---     RO_NO_OPTIONS = 0,
+---     RO_STOP_RENDERING_OPTION_WHEN_PLAYER_EXITS_INTO_COVER = 1
+--- };
 --- ```
---- This native makes the gameplay camera zoom into first person/third person with a special effect.
+--- 
+--- ```cpp
+--- enum eCamSplineSmoothingFlags {
+---     CAM_SPLINE_NO_SMOOTH                = 0,    // No smoothing just moves at a constant rate
+---     CAM_SPLINE_SLOW_IN_SMOOTH           = 1,    // Decelerates when approaching a node
+---     CAM_SPLINE_SLOW_OUT_SMOOTH          = 2,    // Accelerates slowly when leaving a node
+---     CAM_SPLINE_SLOW_IN_OUT_SMOOTH       = 3,    // Decelerates when approaching a node and accelerates slowly when leaving a node
+---     CAM_SPLINE_VERY_SLOW_IN             = 4, 
+---     CAM_SPLINE_VERY_SLOW_OUT            = 5, 
+---     CAM_SPLINE_VERY_SLOW_IN_SLOW_OUT    = 6, 
+---     CAM_SPLINE_SLOW_IN_VERY_SLOW_OUT    = 7, 
+---     CAM_SPLINE_VERY_SLOW_IN_VERY_SLOW_OUT = 8,
+---     CAM_SPLINE_EASE_IN                  = 9, 
+---     CAM_SPLINE_EASE_OUT                 = 10, 
+---     CAM_SPLINE_QUADRATIC_EASE_IN        = 11, 
+---     CAM_SPLINE_QUADRATIC_EASE_OUT       = 12, 
+---     CAM_SPLINE_QUADRATIC_EASE_IN_OUT    = 13, 
+---     CAM_SPLINE_CUBIC_EASE_IN            = 14, 
+---     CAM_SPLINE_CUBIC_EASE_OUT           = 15, 
+---     CAM_SPLINE_CUBIC_EASE_IN_OUT        = 16, 
+---     CAM_SPLINE_QUARTIC_EASE_IN          = 17, 
+---     CAM_SPLINE_QUARTIC_EASE_OUT         = 18, 
+---     CAM_SPLINE_QUARTIC_EASE_IN_OUT      = 19, 
+---     CAM_SPLINE_QUINTIC_EASE_IN          = 20, 
+---     CAM_SPLINE_QUINTIC_EASE_OUT         = 21, 
+---     CAM_SPLINE_QUINTIC_EASE_IN_OUT      = 22, 
+---     CAM_SPLINE_CIRCULAR_EASE_IN         = 23, 
+---     CAM_SPLINE_CIRCULAR_EASE_OUT        = 24, 
+---     CAM_SPLINE_CIRCULAR_EASE_IN_OUT     = 25 
+--- };
 --- ```
 --- 
 --- ```
---- NativeDB Added Parameter 4: Any p3
+--- NativeDB Added Parameter 4: int renderingOptions : An integer bitmask of eRenderingOptionFlags to apply specific rendering behaviors during the transition. RO_NO_OPTIONS signifies no special options are applied.
+--- ```
+--- 
+--- ```
+--- NativeDB Introduced: v323
 --- ```
 ---
 --- @hash [0xC819F3CBB62BF692](https://docs.fivem.net/natives/?_0xC819F3CBB62BF692)
---- @param render boolean
---- @param p1 number (float)
---- @param p2 number (int)
+--- @param bShouldApplyAcrossAllThreads boolean
+--- @param distanceToBlend number (float)
+--- @param blendType number (int)
 --- @return nil
---- @overload fun(render: boolean, p1: number, p2: number): nil
+--- @overload fun(bShouldApplyAcrossAllThreads: boolean, distanceToBlend: number, blendType: number): nil
 --- @deprecated
-function N_0xc819f3cbb62bf692(render, p1, p2) end
+function N_0xc819f3cbb62bf692(bShouldApplyAcrossAllThreads, distanceToBlend, blendType) end
 
     
 --- # New Name: StopRenderingScriptCamsUsingCatchUp
+--- Instructs the game engine to stop rendering scripted cameras and transition back to the gameplay camera, optionally applying custom blending and rendering options.
+--- 
+--- ```cpp
+--- enum eRenderingOptionFlags {
+---     RO_NO_OPTIONS = 0,
+---     RO_STOP_RENDERING_OPTION_WHEN_PLAYER_EXITS_INTO_COVER = 1
+--- };
 --- ```
---- This native makes the gameplay camera zoom into first person/third person with a special effect.
+--- 
+--- ```cpp
+--- enum eCamSplineSmoothingFlags {
+---     CAM_SPLINE_NO_SMOOTH                = 0,    // No smoothing just moves at a constant rate
+---     CAM_SPLINE_SLOW_IN_SMOOTH           = 1,    // Decelerates when approaching a node
+---     CAM_SPLINE_SLOW_OUT_SMOOTH          = 2,    // Accelerates slowly when leaving a node
+---     CAM_SPLINE_SLOW_IN_OUT_SMOOTH       = 3,    // Decelerates when approaching a node and accelerates slowly when leaving a node
+---     CAM_SPLINE_VERY_SLOW_IN             = 4, 
+---     CAM_SPLINE_VERY_SLOW_OUT            = 5, 
+---     CAM_SPLINE_VERY_SLOW_IN_SLOW_OUT    = 6, 
+---     CAM_SPLINE_SLOW_IN_VERY_SLOW_OUT    = 7, 
+---     CAM_SPLINE_VERY_SLOW_IN_VERY_SLOW_OUT = 8,
+---     CAM_SPLINE_EASE_IN                  = 9, 
+---     CAM_SPLINE_EASE_OUT                 = 10, 
+---     CAM_SPLINE_QUADRATIC_EASE_IN        = 11, 
+---     CAM_SPLINE_QUADRATIC_EASE_OUT       = 12, 
+---     CAM_SPLINE_QUADRATIC_EASE_IN_OUT    = 13, 
+---     CAM_SPLINE_CUBIC_EASE_IN            = 14, 
+---     CAM_SPLINE_CUBIC_EASE_OUT           = 15, 
+---     CAM_SPLINE_CUBIC_EASE_IN_OUT        = 16, 
+---     CAM_SPLINE_QUARTIC_EASE_IN          = 17, 
+---     CAM_SPLINE_QUARTIC_EASE_OUT         = 18, 
+---     CAM_SPLINE_QUARTIC_EASE_IN_OUT      = 19, 
+---     CAM_SPLINE_QUINTIC_EASE_IN          = 20, 
+---     CAM_SPLINE_QUINTIC_EASE_OUT         = 21, 
+---     CAM_SPLINE_QUINTIC_EASE_IN_OUT      = 22, 
+---     CAM_SPLINE_CIRCULAR_EASE_IN         = 23, 
+---     CAM_SPLINE_CIRCULAR_EASE_OUT        = 24, 
+---     CAM_SPLINE_CIRCULAR_EASE_IN_OUT     = 25 
+--- };
 --- ```
 --- 
 --- ```
---- NativeDB Added Parameter 4: Any p3
+--- NativeDB Added Parameter 4: int renderingOptions : An integer bitmask of eRenderingOptionFlags to apply specific rendering behaviors during the transition. RO_NO_OPTIONS signifies no special options are applied.
+--- ```
+--- 
+--- ```
+--- NativeDB Introduced: v323
 --- ```
 ---
 --- @hash [0xC819F3CBB62BF692](https://docs.fivem.net/natives/?_0xC819F3CBB62BF692)
---- @param render boolean
---- @param p1 number (float)
---- @param p2 number (int)
+--- @param bShouldApplyAcrossAllThreads boolean
+--- @param distanceToBlend number (float)
+--- @param blendType number (int)
 --- @return nil
---- @overload fun(render: boolean, p1: number, p2: number): nil
+--- @overload fun(bShouldApplyAcrossAllThreads: boolean, distanceToBlend: number, blendType: number): nil
 --- @deprecated
-function RenderFirstPersonCam(render, p1, p2) end
+function RenderFirstPersonCam(bShouldApplyAcrossAllThreads, distanceToBlend, blendType) end
 
     
 --- N_0xc8391c309684595a
@@ -3026,13 +3253,13 @@ function N_0xc8b5c4a79cc18b94(cam) end
 function IsCamPlayingAnim(cam, animName, animDictionary) end
 
     
+--- Determines if a global camera shake is currently active. You can stop the currently active global camera shake using [STOP_SCRIPT_GLOBAL_SHAKING](https://docs.fivem.net/natives/?_0x1C9D7949FA533490).
+--- 
 --- ```
---- In drunk_controller.c4, sub_309
---- if (CAM::IS_SCRIPT_GLOBAL_SHAKING()) {
----     CAM::STOP_SCRIPT_GLOBAL_SHAKING(0);
---- }
+--- NativeDB Introduced: v323
 --- ```
----
+--- @usage -- Print whether a global camera shake is currently active
+--- print(IsScriptGlobalShaking()
 --- @hash [0xC912AF078AF19212](https://docs.fivem.net/natives/?_0xC912AF078AF19212)
 ---
 --- @return boolean
@@ -3041,13 +3268,13 @@ function IsScriptGlobalShaking() end
 
     
 --- # New Name: IsScriptGlobalShaking
+--- Determines if a global camera shake is currently active. You can stop the currently active global camera shake using [STOP_SCRIPT_GLOBAL_SHAKING](https://docs.fivem.net/natives/?_0x1C9D7949FA533490).
+--- 
 --- ```
---- In drunk_controller.c4, sub_309
---- if (CAM::IS_SCRIPT_GLOBAL_SHAKING()) {
----     CAM::STOP_SCRIPT_GLOBAL_SHAKING(0);
---- }
+--- NativeDB Introduced: v323
 --- ```
----
+--- @usage -- Print whether a global camera shake is currently active
+--- print(IsScriptGlobalShaking()
 --- @hash [0xC912AF078AF19212](https://docs.fivem.net/natives/?_0xC912AF078AF19212)
 ---
 --- @return boolean
@@ -3708,7 +3935,11 @@ function EnableCrosshairThisFrame() end
 function N_0xeaf0fa793d05c592() end
 
     
---- SetCamFarDof
+--- Specifies when the camera should stop being in focus. Can be used together with [`SET_USE_HI_DOF`](https://docs.fivem.net/natives/?_0xA13B0222F3D94A94), [`SET_CAM_NEAR_DOF`](https://docs.fivem.net/natives/?_0x3FA4BF0A7AB7DE2C), [`SET_CAM_USE_SHALLOW_DOF_MODE`](https://docs.fivem.net/natives/?_0x16A96863A17552BB), [`SET_CAM_DOF_STRENGTH`](https://docs.fivem.net/natives/?_0x5EE29B4D7D5DF897) and other DoF related natives.
+--- 
+--- ### Usage Example
+--- 
+--- A usage example for this native can be found in the following native documentation: [`SET_CAM_DOF_STRENGTH`](https://docs.fivem.net/natives/?_0x5EE29B4D7D5DF897).
 ---
 --- @hash [0xEDD91296CD01AEE0](https://docs.fivem.net/natives/?_0xEDD91296CD01AEE0)
 --- @param cam Cam
@@ -3756,13 +3987,17 @@ function GetFollowVehicleCamZoomLevel() end
 function StopCamPointing(cam) end
 
     
---- StopGameplayHint
+--- Terminates the current gameplay hint camera, with an option for immediate cessation or a gradual fade out.
+--- 
+--- ```
+--- NativeDB Introduced: v323
+--- ```
 ---
 --- @hash [0xF46C581C61718916](https://docs.fivem.net/natives/?_0xF46C581C61718916)
---- @param p0 boolean
+--- @param bStopImmediately boolean
 --- @return nil
---- @overload fun(p0: boolean): nil
-function StopGameplayHint(p0) end
+--- @overload fun(bStopImmediately: boolean): nil
+function StopGameplayHint(bStopImmediately) end
 
     
 --- ```
@@ -3984,7 +4219,13 @@ function ShakeGameplayCam(shakeName, intensity) end
 --- ```
 --- Last param determines if its relative to the Entity  
 --- ```
----
+--- @usage local entity = PlayerPedId()
+--- local cam = CreateCam("DEFAULT_SCRIPTED_CAMERA", true)
+--- 
+--- AttachCamToEntity(cam,entity, 0.0, 0.0, 0.0, true) --attach camera to the center of the entity
+--- 
+--- SetCamActive(cam, true)
+--- RenderScriptCams(true, false, 0, true, true
 --- @hash [0xFEDB7D269E8C60E3](https://docs.fivem.net/natives/?_0xFEDB7D269E8C60E3)
 --- @param cam Cam
 --- @param entity Entity

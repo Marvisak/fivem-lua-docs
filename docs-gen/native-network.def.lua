@@ -1846,8 +1846,8 @@ function SetEntityLocallyVisible(entity) end
 ---
 --- @hash [0x24409FC4C55CB22D](https://docs.fivem.net/natives/?_0x24409FC4C55CB22D)
 --- @param p0 any
---- @return any
---- @overload fun(p0: any): any
+--- @return string
+--- @overload fun(p0: any): string
 function NetworkGetPresenceInviteContentId(p0) end
 
     
@@ -1856,8 +1856,8 @@ function NetworkGetPresenceInviteContentId(p0) end
 ---
 --- @hash [0x24409FC4C55CB22D](https://docs.fivem.net/natives/?_0x24409FC4C55CB22D)
 --- @param p0 any
---- @return any
---- @overload fun(p0: any): any
+--- @return string
+--- @overload fun(p0: any): string
 --- @deprecated
 function N_0x24409fc4c55cb22d(p0) end
 
@@ -2012,18 +2012,22 @@ function N_0x265559da40b3f327(p0) end
 function N_0x265635150fb0d82e() end
 
     
---- NetworkAllowLocalEntityAttachment
+--- Allows scripts to use attachment commands on entities (eg. [`ATTACH_ENTITY_TO_ENTITY`](https://docs.fivem.net/natives/?_0x6B9BBD38AB0796DF)) that are not controlled by the client.
+--- 
+--- **Note:** This is only local and does not affect entities on other machines. This is used by the ferris wheel script to sync players on carts.
 ---
 --- @hash [0x267C78C60E806B9A](https://docs.fivem.net/natives/?_0x267C78C60E806B9A)
 --- @param entity Entity
 --- @param toggle boolean
 --- @return nil
 --- @overload fun(entity: Entity, toggle: boolean): nil
-function NetworkAllowLocalEntityAttachment(entity, toggle) end
+function NetworkAllowRemoteAttachmentModification(entity, toggle) end
 
     
---- # New Name: NetworkAllowLocalEntityAttachment
---- NetworkAllowLocalEntityAttachment
+--- # New Name: NetworkAllowRemoteAttachmentModification
+--- Allows scripts to use attachment commands on entities (eg. [`ATTACH_ENTITY_TO_ENTITY`](https://docs.fivem.net/natives/?_0x6B9BBD38AB0796DF)) that are not controlled by the client.
+--- 
+--- **Note:** This is only local and does not affect entities on other machines. This is used by the ferris wheel script to sync players on carts.
 ---
 --- @hash [0x267C78C60E806B9A](https://docs.fivem.net/natives/?_0x267C78C60E806B9A)
 --- @param entity Entity
@@ -2032,6 +2036,20 @@ function NetworkAllowLocalEntityAttachment(entity, toggle) end
 --- @overload fun(entity: Entity, toggle: boolean): nil
 --- @deprecated
 function N_0x267c78c60e806b9a(entity, toggle) end
+
+    
+--- # New Name: NetworkAllowRemoteAttachmentModification
+--- Allows scripts to use attachment commands on entities (eg. [`ATTACH_ENTITY_TO_ENTITY`](https://docs.fivem.net/natives/?_0x6B9BBD38AB0796DF)) that are not controlled by the client.
+--- 
+--- **Note:** This is only local and does not affect entities on other machines. This is used by the ferris wheel script to sync players on carts.
+---
+--- @hash [0x267C78C60E806B9A](https://docs.fivem.net/natives/?_0x267C78C60E806B9A)
+--- @param entity Entity
+--- @param toggle boolean
+--- @return nil
+--- @overload fun(entity: Entity, toggle: boolean): nil
+--- @deprecated
+function NetworkAllowLocalEntityAttachment(entity, toggle) end
 
     
 --- The Native returns a hash of the session id as string from the specific invite index!
@@ -2446,10 +2464,10 @@ function NetworkSetLocalPlayerInvincibleTime(time) end
 ---
 --- @hash [0x2DA41ED6E1FCD7A5](https://docs.fivem.net/natives/?_0x2DA41ED6E1FCD7A5)
 --- @param p0 any
---- @param p1 any
+--- @param TypeOfWeapon number (int*)
 --- @return any
---- @overload fun(p0: any, p1: any): any
-function N_0x2da41ed6e1fcd7a5(p0, p1) end
+--- @overload fun(p0: any): any, number
+function N_0x2da41ed6e1fcd7a5(p0, TypeOfWeapon) end
 
     
 --- NetworkLaunchTransition
@@ -2473,16 +2491,14 @@ function N_0x2e0bf682cc778d49(p0) end
 --- N_0x2e4c123d1c8a710e
 ---
 --- @hash [0x2E4C123D1C8A710E](https://docs.fivem.net/natives/?_0x2E4C123D1C8A710E)
---- @param p0 any
---- @param p1 any
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
 --- @param p5 any
 --- @param p6 any
---- @return any
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any): any
-function N_0x2e4c123d1c8a710e(p0, p1, p2, p3, p4, p5, p6) end
+--- @return any, number, number
+--- @overload fun(p2: any, p3: any, p4: any, p5: any, p6: any): any, number, number
+function N_0x2e4c123d1c8a710e(p2, p3, p4, p5, p6) end
 
     
 --- ```
@@ -3490,8 +3506,8 @@ function N_0x407091cf6037118e(netID) end
 --- @hash [0x40F7E66472DF3E5C](https://docs.fivem.net/natives/?_0x40F7E66472DF3E5C)
 --- @param p0 any
 --- @param p1 any
---- @return any
---- @overload fun(p0: any, p1: any): any
+--- @return string
+--- @overload fun(p0: any, p1: any): string
 function UgcGetCachedDescription(p0, p1) end
 
     
@@ -3501,8 +3517,8 @@ function UgcGetCachedDescription(p0, p1) end
 --- @hash [0x40F7E66472DF3E5C](https://docs.fivem.net/natives/?_0x40F7E66472DF3E5C)
 --- @param p0 any
 --- @param p1 any
---- @return any
---- @overload fun(p0: any, p1: any): any
+--- @return string
+--- @overload fun(p0: any, p1: any): string
 --- @deprecated
 function N_0x40f7e66472df3e5c(p0, p1) end
 
@@ -3850,12 +3866,25 @@ function NetworkCheckDataManagerSucceededForHandle(friendDataIndex, networkHandl
 function N_0x44b37cdcae765aae(friendDataIndex, networkHandle) end
 
     
---- N_0x45a83257ed02d9bc
+--- Forces the "Are you sure you want to quit Grand Theft Auto V?" warning message (Same as when you Alt+F4) to show.
+--- Doesn't work in singleplayer.
 ---
 --- @hash [0x45A83257ED02D9BC](https://docs.fivem.net/natives/?_0x45A83257ED02D9BC)
 ---
 --- @return nil
 --- @overload fun(): nil
+function NetworkQuitMpToDesktop() end
+
+    
+--- # New Name: NetworkQuitMpToDesktop
+--- Forces the "Are you sure you want to quit Grand Theft Auto V?" warning message (Same as when you Alt+F4) to show.
+--- Doesn't work in singleplayer.
+---
+--- @hash [0x45A83257ED02D9BC](https://docs.fivem.net/natives/?_0x45A83257ED02D9BC)
+---
+--- @return nil
+--- @overload fun(): nil
+--- @deprecated
 function N_0x45a83257ed02d9bc() end
 
     
@@ -6443,8 +6472,8 @@ function N_0x702bc4d605522539(p0) end
 ---
 --- @hash [0x703F12425ECA8BF5](https://docs.fivem.net/natives/?_0x703F12425ECA8BF5)
 --- @param p0 any
---- @return any
---- @overload fun(p0: any): any
+--- @return string
+--- @overload fun(p0: any): string
 function UgcGetContentUserName(p0) end
 
     
@@ -6453,8 +6482,8 @@ function UgcGetContentUserName(p0) end
 ---
 --- @hash [0x703F12425ECA8BF5](https://docs.fivem.net/natives/?_0x703F12425ECA8BF5)
 --- @param p0 any
---- @return any
---- @overload fun(p0: any): any
+--- @return string
+--- @overload fun(p0: any): string
 --- @deprecated
 function N_0x703f12425eca8bf5(p0) end
 
@@ -7584,10 +7613,10 @@ function N_0x82a2b386716608f1() end
 --- @hash [0x83660B734994124D](https://docs.fivem.net/natives/?_0x83660B734994124D)
 --- @param p0 any
 --- @param p1 any
---- @param p2 any
+--- @param damageDealt number (int*)
 --- @return any
---- @overload fun(p0: any, p1: any, p2: any): any
-function N_0x83660b734994124d(p0, p1, p2) end
+--- @overload fun(p0: any, p1: any): any, number
+function N_0x83660b734994124d(p0, p1, damageDealt) end
 
     
 --- ```
@@ -10895,8 +10924,8 @@ function N_0xbec0816ff5acbcda(player, toggle) end
 ---
 --- @hash [0xBF09786A7FCAB582](https://docs.fivem.net/natives/?_0xBF09786A7FCAB582)
 --- @param p0 any
---- @return any
---- @overload fun(p0: any): any
+--- @return string
+--- @overload fun(p0: any): string
 function UgcGetContentName(p0) end
 
     
@@ -10905,8 +10934,8 @@ function UgcGetContentName(p0) end
 ---
 --- @hash [0xBF09786A7FCAB582](https://docs.fivem.net/natives/?_0xBF09786A7FCAB582)
 --- @param p0 any
---- @return any
---- @overload fun(p0: any): any
+--- @return string
+--- @overload fun(p0: any): string
 --- @deprecated
 function N_0xbf09786a7fcab582(p0) end
 
@@ -11256,10 +11285,10 @@ function N_0xc42dd763159f3461() end
 ---
 --- @hash [0xC434133D9BA52777](https://docs.fivem.net/natives/?_0xC434133D9BA52777)
 --- @param p0 any
---- @param p1 any
+--- @param TypeOfWeapon number (int*)
 --- @return any
---- @overload fun(p0: any, p1: any): any
-function N_0xc434133d9ba52777(p0, p1) end
+--- @overload fun(p0: any): any, number
+function N_0xc434133d9ba52777(p0, TypeOfWeapon) end
 
     
 --- NetworkDisableLeaveRemotePedBehind
@@ -11286,8 +11315,8 @@ function N_0xc505036a35afd01b(toggle) end
 ---
 --- @hash [0xC55A0B40FFB1ED23](https://docs.fivem.net/natives/?_0xC55A0B40FFB1ED23)
 ---
---- @return any
---- @overload fun(): any
+--- @return string
+--- @overload fun(): string
 function UgcGetCreateContentId() end
 
     
@@ -11296,8 +11325,8 @@ function UgcGetCreateContentId() end
 ---
 --- @hash [0xC55A0B40FFB1ED23](https://docs.fivem.net/natives/?_0xC55A0B40FFB1ED23)
 ---
---- @return any
---- @overload fun(): any
+--- @return string
+--- @overload fun(): string
 --- @deprecated
 function N_0xc55a0b40ffb1ed23() end
 
@@ -12857,12 +12886,9 @@ function NetworkGetRandomIntInRange(rangeStart, rangeEnd) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @param p4 any
---- @param p5 any
---- @param p6 any
---- @return nil
---- @overload fun(p0: any, p1: any, p2: any, p3: any, p4: any, p5: any, p6: any): nil
-function N_0xe42d626eec94e5d9(p0, p1, p2, p3, p4, p5, p6) end
+--- @return nil, number, number, number
+--- @overload fun(p0: any, p1: any, p2: any, p3: any): nil, number, number, number
+function N_0xe42d626eec94e5d9(p0, p1, p2, p3) end
 
     
 --- NetworkDoesTunableExistHash
@@ -13024,8 +13050,9 @@ function N_0xe66c690248f11150(ped, p1) end
 function N_0xe6717e652b8c8d8a(p0, p1) end
 
     
---- Works in Singleplayer too.
---- Passing wrong data (e.g. hours above 23) will cause the game to crash.
+--- Overrides the game clock time for the local player, allowing for manipulation of the in-game time. This native is effective in both multiplayer and singleplayer modes.
+--- 
+--- **Note:** Passing wrong data (e.g. hours above 23) will cause the game to crash.
 ---
 --- @hash [0xE679E3E06E363892](https://docs.fivem.net/natives/?_0xE679E3E06E363892)
 --- @param hours number (int)

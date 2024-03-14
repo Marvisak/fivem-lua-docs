@@ -464,8 +464,29 @@ function TaskVehicleDriveToCoordLongrange(ped, vehicle, x, y, z, speed, driveMod
 function TaskBoatMission(pedDriver, boat, p2, p3, x, y, z, p7, maxSpeed, drivingStyle, p10, p11) end
 
     
---- ```
---- If no timeout, set timeout to -1.  
+--- Sometimes a path may not be able to be found. This could happen because there simply isn't any way to get there, or maybe a bunch of dynamic objects have blocked the way,
+--- or maybe the destination is too far away. In this case the ped will simply stand still.
+--- To identify when this has happened, you can use GET_NAVMESH_ROUTE_RESULT. This will help you find situations where peds cannot get to their target.
+--- 
+--- ```cpp
+--- enum eNavScriptFlags {
+---     ENAV_DEFAULT = 0, // Default flag
+---     ENAV_NO_STOPPING = 1, // Will ensure the ped continues to move whilst waiting for the path to be found, and will not slow down at the end of their route.
+---     ENAV_ADV_SLIDE_TO_COORD_AND_ACHIEVE_HEADING_AT_END = 2, // Performs a slide-to-coord at the end of the task. This requires that the accompanying NAVDATA structure has the 'SlideToCoordHeading' member set correctly.
+---     ENAV_GO_FAR_AS_POSSIBLE_IF_TARGET_NAVMESH_NOT_LOADED = 4, // If the navmesh is not loaded in under the target position, then this will cause the ped to get as close as is possible on whatever navmesh is loaded. The navmesh must still be loaded at the path start.
+---     ENAV_ALLOW_SWIMMING_UNDERWATER = 8, // Will allow navigation underwater - by default this is not allowed.
+---     ENAV_KEEP_TO_PAVEMENTS = 16, // Will only allow navigation on pavements. If the path starts or ends off the pavement, the command will fail. Likewise if no pavement-only route can be found even although the start and end are on pavement.
+---     ENAV_NEVER_ENTER_WATER = 32, // Prevents the path from entering water at all.
+---     ENAV_DONT_AVOID_OBJECTS = 64, // Disables object-avoidance for this path. The ped may still make minor steering adjustments to avoid objects, but will not pathfind around them.
+---     ENAV_ADVANCED_USE_MAX_SLOPE_NAVIGABLE = 128, // Specifies that the navmesh route will only be able to traverse up slopes which are under the angle specified, in the MaxSlopeNavigable member of the accompanying NAVDATA structure.
+---     ENAV_STOP_EXACTLY = 512, // Unused.
+---     ENAV_ACCURATE_WALKRUN_START = 1024, // The entity will look ahead in its path for a longer distance to make the walk/run start go more in the right direction.
+---     ENAV_DONT_AVOID_PEDS = 2048, // Disables ped-avoidance for this path while we move.
+---     ENAV_DONT_ADJUST_TARGET_POSITION = 4096, // If target pos is inside the boundingbox of an object it will otherwise be pushed out.
+---     ENAV_SUPPRESS_EXACT_STOP = 8192, // Turns off the default behaviour, which is to stop exactly at the target position. Occasionally this can cause footsliding/skating problems.
+---     ENAV_ADVANCED_USE_CLAMP_MAX_SEARCH_DISTANCE = 16384, // Prevents the path-search from finding paths outside of this search distance. This can be used to prevent peds from finding long undesired routes.
+---     ENAV_PULL_FROM_EDGE_EXTRA = 32768 // Pulls out the paths from edges at corners for a longer distance, to prevent peds walking into stuff.
+--- };
 --- ```
 ---
 --- @hash [0x15D3A79D4E44B913](https://docs.fivem.net/natives/?_0x15D3A79D4E44B913)
@@ -473,14 +494,14 @@ function TaskBoatMission(pedDriver, boat, p2, p3, x, y, z, p7, maxSpeed, driving
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
---- @param speed number (float)
---- @param timeout number (int)
---- @param stoppingRange number (float)
---- @param persistFollowing boolean
---- @param unk number (float)
+--- @param moveBlendRatio number (float)
+--- @param time number (int)
+--- @param radius number (float)
+--- @param flags number (int)
+--- @param finalHeading number (float)
 --- @return nil
---- @overload fun(ped: Ped, x: number, y: number, z: number, speed: number, timeout: number, stoppingRange: number, persistFollowing: boolean, unk: number): nil
-function TaskFollowNavMeshToCoord(ped, x, y, z, speed, timeout, stoppingRange, persistFollowing, unk) end
+--- @overload fun(ped: Ped, x: number, y: number, z: number, moveBlendRatio: number, time: number, radius: number, flags: number, finalHeading: number): nil
+function TaskFollowNavMeshToCoord(ped, x, y, z, moveBlendRatio, time, radius, flags, finalHeading) end
 
     
 --- ClearPedSecondaryTask
@@ -753,14 +774,24 @@ function WaypointPlaybackStartAimingAtPed(p0, p1, p2) end
 function TaskSmartFleePed(ped, fleeTarget, distance, fleeTime, p4, p5) end
 
     
---- AddPatrolRouteLink
----
+--- connects/links 2 [route nodes](https://docs.fivem.net/natives/?_0x8EDF950167586B7C)\
+--- image representing the cyclic example below:\
+--- ![image](https://user-images.githubusercontent.com/55803068/188470866-c32c6a9f-a25d-4772-9b18-5be46e2c14a1.png)
+--- @usage -- these lines connect 1,2,3,4,5,6 in a cyclic manner (1 > 2 > 3 > 4 > 5 > 6 > 1)
+--- 
+--- 
+--- AddPatrolRouteLink(1,2)
+--- AddPatrolRouteLink(2,3)
+--- AddPatrolRouteLink(3,4)
+--- AddPatrolRouteLink(4,5)
+--- AddPatrolRouteLink(5,6)
+--- AddPatrolRouteLink(6,1
 --- @hash [0x23083260DEC3A551](https://docs.fivem.net/natives/?_0x23083260DEC3A551)
---- @param p0 any
---- @param p1 any
+--- @param id1 number (int)
+--- @param id2 number (int)
 --- @return nil
---- @overload fun(p0: any, p1: any): nil
-function AddPatrolRouteLink(p0, p1) end
+--- @overload fun(id1: number, id2: number): nil
+function AddPatrolRouteLink(id1, id2) end
 
     
 --- ```
@@ -2245,11 +2276,34 @@ function PlayEntityScriptedAnim(p0, p4, p5) end
 function SetPedPathCanUseLadders(ped, Toggle) end
 
     
+--- Gets the status of a spesifed script-assigned task on the given ped. The return value is always an int between 0-7.
+--- 
+--- You can set taskHash to `SCRIPT_TASK_ANY` to check if any task is active, it will return 1 for active, 3 for no active.
+--- `SCRIPT_TASK_INVALID` can be similarly used, it returns 7 if there are any active task, and 3 if there are no active tasks.
+--- 
+--- taskHash list: https://alloc8or.re/gta5/doc/enums/eScriptTaskHash.txt
+--- 
+--- Returns:
+--- 
 --- ```
---- Gets the status of a script-assigned task.
---- taskHash: https://alloc8or.re/gta5/doc/enums/eScriptTaskHash.txt
+--- 0 = WAITING_TO_START_TASK
+--- 1 = PERFORMING_TASK
+--- 2 = DORMANT_TASK
+--- 3 = VACANT_STAGE
+--- 7 = TASK_FINISHED_OR_NOT_FOUND
 --- ```
----
+--- @usage local playerPed = PlayerPedId()
+--- local coords = GetOffsetFromEntityInWorldCoords(playerPed, 0.0, 6.0, 0.0)
+--- TaskGoStraightToCoord(playerPed, coords, 1.0, 5000, GetEntityHeading(playerPed), 0.15)
+--- 
+--- Citizen.CreateThread(function()
+---     while true do
+---         local taskStatus = GetScriptTaskStatus(PlayerPedId(), "SCRIPT_TASK_GO_STRAIGHT_TO_COORD")
+---         print(taskStatus)
+---         if taskStatus == 7 then print("task was finished!"); break end
+---         Citizen.Wait(250)
+---     end
+--- end
 --- @hash [0x77F1BEB8863288D5](https://docs.fivem.net/natives/?_0x77F1BEB8863288D5)
 --- @param ped Ped
 --- @param taskHash Hash
@@ -2625,32 +2679,22 @@ function SetHighFallTask(ped, duration, p2, p3) end
 function SetPedPathCanUseClimbovers(ped, Toggle) end
 
     
---- ```
---- Example:
---- TASK::ADD_PATROL_ROUTE_NODE(2, "WORLD_HUMAN_GUARD_STAND", -193.4915, -2378.864990234375, 10.9719, -193.4915, -2378.864990234375, 10.9719, 3000);
---- p0 is between 0 and 4 in the scripts.
---- p1 is "WORLD_HUMAN_GUARD_STAND" or "StandGuard".
---- p2, p3 and p4 is only one parameter sometimes in the scripts. Most likely a Vector3 hence p2, p3 and p4 are coordinates.
---- Examples:
---- TASK::ADD_PATROL_ROUTE_NODE(1, "WORLD_HUMAN_GUARD_STAND", l_739[7/*3*/], 0.0, 0.0, 0.0, 0);
---- TASK::ADD_PATROL_ROUTE_NODE(1, "WORLD_HUMAN_GUARD_STAND", l_B0[17/*44*/]._f3, l_B0[17/*44*/]._f3, 2000);
---- p5, p6 and p7 are for example set to: 1599.0406494140625, 2713.392578125, 44.4309.
---- p8 is an int, often random set to for example: MISC::GET_RANDOM_INT_IN_RANGE(5000, 10000).
---- ```
----
+--- x2,y2 and z2 are the coordinates to which the ped should look at
+--- @usage -- the guard will go toward vector3(1.0, 1.0, 1.0) coordinates looking toward vector3(0.0, 0.0, 0.0) coordinates waiting 1000ms with the WORLD_HUMAN_GUARD_STAND animation
+--- AddPatrolRouteNode(1, "WORLD_HUMAN_GUARD_STAND", vector3(1.0, 1.0, 1.0), vector3(0.0, 0.0, 0.0), 1000
 --- @hash [0x8EDF950167586B7C](https://docs.fivem.net/natives/?_0x8EDF950167586B7C)
---- @param p0 number (int)
---- @param p1 string (char*)
+--- @param id number (int)
+--- @param guardScenario string (char*)
 --- @param x1 number (float)
 --- @param y1 number (float)
 --- @param z1 number (float)
 --- @param x2 number (float)
 --- @param y2 number (float)
 --- @param z2 number (float)
---- @param p8 number (int)
+--- @param waitTime number (int)
 --- @return nil
---- @overload fun(p0: number, p1: string, x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, p8: number): nil
-function AddPatrolRouteNode(p0, p1, x1, y1, z1, x2, y2, z2, p8) end
+--- @overload fun(id: number, guardScenario: string, x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, waitTime: number): nil
+function AddPatrolRouteNode(id, guardScenario, x1, y1, z1, x2, y2, z2, waitTime) end
 
     
 --- ```
@@ -2978,10 +3022,10 @@ function TaskUseNearestScenarioChainToCoordWarp(p0, p1, p2, p3, p4, p5) end
 --- @param ped Ped
 --- @param animDictionary string (char*)
 --- @param animationName string (char*)
---- @param p3 number (float)
+--- @param animExitSpeed number (float)
 --- @return nil
---- @overload fun(ped: Ped, animDictionary: string, animationName: string, p3: number): nil
-function StopAnimTask(ped, animDictionary, animationName, p3) end
+--- @overload fun(ped: Ped, animDictionary: string, animationName: string, animExitSpeed: number): nil
+function StopAnimTask(ped, animDictionary, animationName, animExitSpeed) end
 
     
 --- GetVehicleWaypointProgress

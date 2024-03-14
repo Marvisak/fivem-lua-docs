@@ -74,7 +74,7 @@ function IsPlayerTeleportActive() end
 function ChangePlayerPed(player, ped, b2, resetDamage) end
 
     
---- SetAllRandomPedsFlee
+--- Sets whether all random peds will run away from the player if they are agitated (threatened) (bool=true), or if they will stand their ground (bool=false).
 ---
 --- @hash [0x056E0FE8534C2949](https://docs.fivem.net/natives/?_0x056E0FE8534C2949)
 --- @param player Player
@@ -574,17 +574,16 @@ function N_0x31e90b8873a4cd3b(player, p1) end
 function SetPoliceIgnorePlayer(player, toggle) end
 
     
---- ```
---- p2 is always false in R* scripts  
---- ```
----
+--- SetPlayerWantedLevelNoDrop
+--- @usage local player = PlayerId()
+--- SetPlayerWantedLevelNoDrop(player, 5, false) -- 5 star wanted leve
 --- @hash [0x340E61DE7F471565](https://docs.fivem.net/natives/?_0x340E61DE7F471565)
 --- @param player Player
 --- @param wantedLevel number (int)
---- @param p2 boolean
+--- @param delayedResponse boolean
 --- @return nil
---- @overload fun(player: Player, wantedLevel: number, p2: boolean): nil
-function SetPlayerWantedLevelNoDrop(player, wantedLevel, p2) end
+--- @overload fun(player: Player, wantedLevel: number, delayedResponse: boolean): nil
+function SetPlayerWantedLevelNoDrop(player, wantedLevel, delayedResponse) end
 
     
 --- N_0x36f1b38855f2a8df
@@ -668,19 +667,16 @@ function IsPlayerBattleAware(player) end
 function N_0x38d28da81e4e9bf9(player) end
 
     
---- ```
---- Call SET_PLAYER_WANTED_LEVEL_NOW for immediate effect  
---- wantedLevel is an integer value representing 0 to 5 stars even though the game supports the 6th wanted level but no police will appear since no definitions are present for it in the game files  
---- disableNoMission-  Disables When Off Mission- appears to always be false  
---- ```
----
+--- SetPlayerWantedLevel
+--- @usage local player = PlayerId()
+--- SetPlayerWantedLevel(player, 5, false) -- 5 star wanted leve
 --- @hash [0x39FF19C64EF7DA5B](https://docs.fivem.net/natives/?_0x39FF19C64EF7DA5B)
 --- @param player Player
 --- @param wantedLevel number (int)
---- @param disableNoMission boolean
+--- @param delayedResponse boolean
 --- @return nil
---- @overload fun(player: Player, wantedLevel: number, disableNoMission: boolean): nil
-function SetPlayerWantedLevel(player, wantedLevel, disableNoMission) end
+--- @overload fun(player: Player, wantedLevel: number, delayedResponse: boolean): nil
+function SetPlayerWantedLevel(player, wantedLevel, delayedResponse) end
 
     
 --- ```
@@ -1205,10 +1201,8 @@ function N_0x5dc40a8869c22141(player, state) end
 function GetPlayerHasReserveParachute(player) end
 
     
---- ```
---- Inhibits the player from using any method of combat including melee and firearms.  
---- NOTE: Only disables the firing for one frame  
---- ```
+--- Inhibits the player from using any method of combat including melee and firearms.\
+--- NOTE: Only disables the firing for one frame
 ---
 --- @hash [0x5E6CC07646BBEAB8](https://docs.fivem.net/natives/?_0x5E6CC07646BBEAB8)
 --- @param player Player
@@ -1803,36 +1797,44 @@ function SetPlayerParachuteModelOverride(player, model) end
 function GetCauseOfMostRecentForceCleanup() end
 
     
---- ```
---- This was previously named as "RESERVE_ENTITY_EXPLODES_ON_HIGH_EXPLOSION_COMBO"  
---- which is obviously incorrect.  
---- Seems to only appear in scripts used in Singleplayer. p1 ranges from 2 - 46.  
---- I assume this switches the crime type  
---- ```
+--- Suppresses a crime for a given player for this frame only.
+--- 
+--- **Note:** This native needs to be executed inside a thread if a crime is meant to be suppressed for a given amount of time.
 ---
 --- @hash [0x9A987297ED8BD838](https://docs.fivem.net/natives/?_0x9A987297ED8BD838)
 --- @param player Player
---- @param p1 number (int)
+--- @param crimeType number (int)
 --- @return nil
---- @overload fun(player: Player, p1: number): nil
-function SwitchCrimeType(player, p1) end
+--- @overload fun(player: Player, crimeType: number): nil
+function SuppressCrimeThisFrame(player, crimeType) end
 
     
---- # New Name: SwitchCrimeType
---- ```
---- This was previously named as "RESERVE_ENTITY_EXPLODES_ON_HIGH_EXPLOSION_COMBO"  
---- which is obviously incorrect.  
---- Seems to only appear in scripts used in Singleplayer. p1 ranges from 2 - 46.  
---- I assume this switches the crime type  
---- ```
+--- # New Name: SuppressCrimeThisFrame
+--- Suppresses a crime for a given player for this frame only.
+--- 
+--- **Note:** This native needs to be executed inside a thread if a crime is meant to be suppressed for a given amount of time.
 ---
 --- @hash [0x9A987297ED8BD838](https://docs.fivem.net/natives/?_0x9A987297ED8BD838)
 --- @param player Player
---- @param p1 number (int)
+--- @param crimeType number (int)
 --- @return nil
---- @overload fun(player: Player, p1: number): nil
+--- @overload fun(player: Player, crimeType: number): nil
 --- @deprecated
-function N_0x9a987297ed8bd838(player, p1) end
+function N_0x9a987297ed8bd838(player, crimeType) end
+
+    
+--- # New Name: SuppressCrimeThisFrame
+--- Suppresses a crime for a given player for this frame only.
+--- 
+--- **Note:** This native needs to be executed inside a thread if a crime is meant to be suppressed for a given amount of time.
+---
+--- @hash [0x9A987297ED8BD838](https://docs.fivem.net/natives/?_0x9A987297ED8BD838)
+--- @param player Player
+--- @param crimeType number (int)
+--- @return nil
+--- @overload fun(player: Player, crimeType: number): nil
+--- @deprecated
+function SwitchCrimeType(player, crimeType) end
 
     
 --- ```
@@ -2002,14 +2004,19 @@ function N_0xa0d3e4f7aafb7e78(player, percentage) end
 function GetPlayerUnderwaterTimeRemaining(player) end
 
     
---- RestorePlayerStamina
----
+--- Adds a percentage to a players stamina
+--- @usage Citizen.CreateThread(function()
+---   while true do
+---     RestorePlayerStamina(PlayerId(), 0.3)
+---     Citizen.Wait(15000) -- 15 seconds
+---   end
+--- end
 --- @hash [0xA352C1B864CAFD33](https://docs.fivem.net/natives/?_0xA352C1B864CAFD33)
 --- @param player Player
---- @param p1 number (float)
+--- @param percentage number (float)
 --- @return nil
---- @overload fun(player: Player, p1: number): nil
-function RestorePlayerStamina(player, p1) end
+--- @overload fun(player: Player, percentage: number): nil
+function RestorePlayerStamina(player, percentage) end
 
     
 --- ```
@@ -2317,9 +2324,13 @@ function ClearPlayerWantedLevel(player) end
 function N_0xb45eff719d8427a6(p0) end
 
     
---- ```
---- Alternative: GET_VEHICLE_PED_IS_IN(PLAYER_PED_ID(), 1);  
---- ```
+--- ### Warning
+--- 
+--- This native will return `0` if the last vehicle the player was in was destroyed.
+--- 
+--- ### Alternative
+--- 
+--- You can use [GET_VEHICLE_PED_IS_IN](https://docs.fivem.net/natives/?_0x9A9112A0FE9A4713), which will actually get the last vehicle, even if it was destroyed.
 ---
 --- @hash [0xB6997A7EB3F5C8C0](https://docs.fivem.net/natives/?_0xB6997A7EB3F5C8C0)
 ---
@@ -2493,7 +2504,7 @@ function GiveAchievementToPlayer(achievement) end
 function StartFiringAmnesty(duration) end
 
     
---- DisablePlayerVehicleRewards
+--- Disables vehicle rewards for the current frame.
 ---
 --- @hash [0xC142BE3BB9CE125F](https://docs.fivem.net/natives/?_0xC142BE3BB9CE125F)
 --- @param player Player
@@ -3261,16 +3272,58 @@ function N_0xefd79fa81dfba9cb(player, distance) end
 function ClearPlayerHasDamagedAtLeastOnePed(player) end
 
     
+--- Violation types:
+--- 
 --- ```
---- Only 1 occurrence. p1 was 2.  
+--- enum eViolationType {
+---   VT_PAVED_PEDESTRIAN_AREAS = 0,
+---   VT_RUNNING_REDS,
+---   VT_AGAINST_TRAFFIC
+--- };
 --- ```
+--- 
+--- Checks if a player is performing a certain type of traffic violation.
+--- 
+--- *   Type 0: Checks if the player is driving outside designated road areas pedestrians would walk on (specifically paved sidewalks).
+--- *   Type 1: Checks if the player is running through reds, takes some time to return true.
+--- *   Type 2: Checks if the player is driving on the wrong side of the road (against traffic).
+--- 
+--- Used solely in "Al Di Napoli" with type 2 for a voiceline.
 ---
 --- @hash [0xF10B44FD479D69F3](https://docs.fivem.net/natives/?_0xF10B44FD479D69F3)
 --- @param player Player
---- @param p1 number (int)
+--- @param type number (int)
 --- @return boolean
---- @overload fun(player: Player, p1: number): boolean
-function N_0xf10b44fd479d69f3(player, p1) end
+--- @overload fun(player: Player, type: number): boolean
+function IsPlayerDrivingDangerously(player, type) end
+
+    
+--- # New Name: IsPlayerDrivingDangerously
+--- Violation types:
+--- 
+--- ```
+--- enum eViolationType {
+---   VT_PAVED_PEDESTRIAN_AREAS = 0,
+---   VT_RUNNING_REDS,
+---   VT_AGAINST_TRAFFIC
+--- };
+--- ```
+--- 
+--- Checks if a player is performing a certain type of traffic violation.
+--- 
+--- *   Type 0: Checks if the player is driving outside designated road areas pedestrians would walk on (specifically paved sidewalks).
+--- *   Type 1: Checks if the player is running through reds, takes some time to return true.
+--- *   Type 2: Checks if the player is driving on the wrong side of the road (against traffic).
+--- 
+--- Used solely in "Al Di Napoli" with type 2 for a voiceline.
+---
+--- @hash [0xF10B44FD479D69F3](https://docs.fivem.net/natives/?_0xF10B44FD479D69F3)
+--- @param player Player
+--- @param type number (int)
+--- @return boolean
+--- @overload fun(player: Player, type: number): boolean
+--- @deprecated
+function N_0xf10b44fd479d69f3(player, type) end
 
     
 --- ```

@@ -326,6 +326,8 @@ function GetSubmarineCrushDepthWarningState(submarine) end
 function SetVehicleRudderBroken(vehicle, toggle) end
 
     
+--- Set a specific offset for helis chasing target in combat
+--- 
 --- ```
 --- NativeDB Introduced: v1180
 --- ```
@@ -337,17 +339,50 @@ function SetVehicleRudderBroken(vehicle, toggle) end
 --- @param z number (float)
 --- @return nil
 --- @overload fun(vehicle: Vehicle, x: number, y: number, z: number): nil
+function SetHeliCombatOffset(vehicle, x, y, z) end
+
+    
+--- # New Name: SetHeliCombatOffset
+--- Set a specific offset for helis chasing target in combat
+--- 
+--- ```
+--- NativeDB Introduced: v1180
+--- ```
+---
+--- @hash [0x0A3F820A9A9A9AC5](https://docs.fivem.net/natives/?_0x0A3F820A9A9A9AC5)
+--- @param vehicle Vehicle
+--- @param x number (float)
+--- @param y number (float)
+--- @param z number (float)
+--- @return nil
+--- @overload fun(vehicle: Vehicle, x: number, y: number, z: number): nil
+--- @deprecated
 function N_0x0a3f820a9a9a9ac5(vehicle, x, y, z) end
 
     
---- ```
---- CLEAR_VEHICLE_*
---- ```
----
+--- Removes the cargen area of interest and resumes normal cargen spawning.
+--- 
+--- You can set the area of interest with [`SET_VEHICLE_GENERATOR_AREA_OF_INTEREST`](https://docs.fivem.net/natives/?_0x9A75585FB2E54FAD)
+--- @usage -- This example clears the area of interest (cargen) and resumes normal spawning
+--- ClearVehicleGeneratorAreaOfInterest(
 --- @hash [0x0A436B8643716D14](https://docs.fivem.net/natives/?_0x0A436B8643716D14)
 ---
 --- @return nil
 --- @overload fun(): nil
+function ClearVehicleGeneratorAreaOfInterest() end
+
+    
+--- # New Name: ClearVehicleGeneratorAreaOfInterest
+--- Removes the cargen area of interest and resumes normal cargen spawning.
+--- 
+--- You can set the area of interest with [`SET_VEHICLE_GENERATOR_AREA_OF_INTEREST`](https://docs.fivem.net/natives/?_0x9A75585FB2E54FAD)
+--- @usage -- This example clears the area of interest (cargen) and resumes normal spawning
+--- ClearVehicleGeneratorAreaOfInterest(
+--- @hash [0x0A436B8643716D14](https://docs.fivem.net/natives/?_0x0A436B8643716D14)
+---
+--- @return nil
+--- @overload fun(): nil
+--- @deprecated
 function N_0x0a436b8643716d14() end
 
     
@@ -373,14 +408,66 @@ function SetBoatDisableAvoidance(vehicle, p1) end
 function N_0x0a6a279f3aa4fd70(vehicle, p1) end
 
     
---- N_0x0ad9e8f87ff7c16f
----
+--- This native sets whether a specific vehicle influences the player's wanted level when it is involved in an incident that typically triggers a wanted response, such as being marked as a "victim" vehicle.
+--- 
+--- This is particularly useful when utilizing the wanted system from GTA, and you want to prevent a vehicle from affecting the wanted level when it is stolen. In the decompiled scripts this native is only used to disable the influence of the vehicle on the wanted level.
+--- @usage -- This example will prevent the closest vehicle from influencing the wanted level.
+--- 
+--- -- Retrieve the LocalPlayer
+--- local playerPed = PlayerPedId()
+--- 
+--- -- Retrieve the coordinates of the player.
+--- local playerCoords = GetEntityCoords(playerPed)
+--- 
+--- -- Retrieve the closest vehicle.
+--- local vehicle = GetClosestVehicle(playerCoords.x, playerCoords.y, playerCoords.z, 3, 0, 70)
+--- 
+--- -- Check if the vehicle exists in the game world.
+--- if not DoesEntityExist(vehicle) then 
+---     -- If the vehicle does not exist, end the execution of the code here.
+---     return 
+--- end
+--- 
+--- -- Set the vehicle to not influence the wanted level.
+--- SetVehicleInfluencesWantedLevel(vehicle, false
 --- @hash [0x0AD9E8F87FF7C16F](https://docs.fivem.net/natives/?_0x0AD9E8F87FF7C16F)
---- @param p0 any
---- @param p1 boolean
+--- @param vehicle Vehicle
+--- @param influenceWantedLevel boolean
 --- @return nil
---- @overload fun(p0: any, p1: boolean): nil
-function N_0x0ad9e8f87ff7c16f(p0, p1) end
+--- @overload fun(vehicle: Vehicle, influenceWantedLevel: boolean): nil
+function SetVehicleInfluencesWantedLevel(vehicle, influenceWantedLevel) end
+
+    
+--- # New Name: SetVehicleInfluencesWantedLevel
+--- This native sets whether a specific vehicle influences the player's wanted level when it is involved in an incident that typically triggers a wanted response, such as being marked as a "victim" vehicle.
+--- 
+--- This is particularly useful when utilizing the wanted system from GTA, and you want to prevent a vehicle from affecting the wanted level when it is stolen. In the decompiled scripts this native is only used to disable the influence of the vehicle on the wanted level.
+--- @usage -- This example will prevent the closest vehicle from influencing the wanted level.
+--- 
+--- -- Retrieve the LocalPlayer
+--- local playerPed = PlayerPedId()
+--- 
+--- -- Retrieve the coordinates of the player.
+--- local playerCoords = GetEntityCoords(playerPed)
+--- 
+--- -- Retrieve the closest vehicle.
+--- local vehicle = GetClosestVehicle(playerCoords.x, playerCoords.y, playerCoords.z, 3, 0, 70)
+--- 
+--- -- Check if the vehicle exists in the game world.
+--- if not DoesEntityExist(vehicle) then 
+---     -- If the vehicle does not exist, end the execution of the code here.
+---     return 
+--- end
+--- 
+--- -- Set the vehicle to not influence the wanted level.
+--- SetVehicleInfluencesWantedLevel(vehicle, false
+--- @hash [0x0AD9E8F87FF7C16F](https://docs.fivem.net/natives/?_0x0AD9E8F87FF7C16F)
+--- @param vehicle Vehicle
+--- @param influenceWantedLevel boolean
+--- @return nil
+--- @overload fun(vehicle: Vehicle, influenceWantedLevel: boolean): nil
+--- @deprecated
+function N_0x0ad9e8f87ff7c16f(vehicle, influenceWantedLevel) end
 
     
 --- ```
@@ -395,17 +482,74 @@ function N_0x0ad9e8f87ff7c16f(p0, p1) end
 function GetHydraulicWheelValue(vehicle, wheelId) end
 
     
+--- Adjusts the scale of damage applied to a specified section of a plane.
+--- In the decompiled scripts the `damageScale` is always set to `0f` (maybe to disable damages on the specified section)
+--- 
+--- ```cpp
+--- enum ePlaneDamageSection {
+---     WING_L = 0,
+---     WING_R = 1,
+---     TAIL = 2,
+---     ENGINE_L = 3,
+---     ENGINE_R = 4,
+---     ELEVATOR_L = 5,
+---     ELEVATOR_R = 6,
+---     AILERON_L = 7,
+---     AILERON_R = 8,
+---     RUDDER = 9,
+---     RUDDER_2 = 10,
+---     AIRBRAKE_L = 11,
+---     AIRBRAKE_R = 12
+--- }
+--- ```
+--- 
 --- ```
 --- NativeDB Introduced: v1290
 --- ```
 ---
 --- @hash [0x0BBB9A7A8FFE931B](https://docs.fivem.net/natives/?_0x0BBB9A7A8FFE931B)
---- @param p0 any
---- @param p1 any
---- @param p2 any
+--- @param vehicle Vehicle
+--- @param damageSection number (int)
+--- @param damageScale number (float)
 --- @return nil
---- @overload fun(p0: any, p1: any, p2: any): nil
-function N_0x0bbb9a7a8ffe931b(p0, p1, p2) end
+--- @overload fun(vehicle: Vehicle, damageSection: number, damageScale: number): nil
+function SetPlaneSectionDamageScale(vehicle, damageSection, damageScale) end
+
+    
+--- # New Name: SetPlaneSectionDamageScale
+--- Adjusts the scale of damage applied to a specified section of a plane.
+--- In the decompiled scripts the `damageScale` is always set to `0f` (maybe to disable damages on the specified section)
+--- 
+--- ```cpp
+--- enum ePlaneDamageSection {
+---     WING_L = 0,
+---     WING_R = 1,
+---     TAIL = 2,
+---     ENGINE_L = 3,
+---     ENGINE_R = 4,
+---     ELEVATOR_L = 5,
+---     ELEVATOR_R = 6,
+---     AILERON_L = 7,
+---     AILERON_R = 8,
+---     RUDDER = 9,
+---     RUDDER_2 = 10,
+---     AIRBRAKE_L = 11,
+---     AIRBRAKE_R = 12
+--- }
+--- ```
+--- 
+--- ```
+--- NativeDB Introduced: v1290
+--- ```
+---
+--- @hash [0x0BBB9A7A8FFE931B](https://docs.fivem.net/natives/?_0x0BBB9A7A8FFE931B)
+--- @param vehicle Vehicle
+--- @param damageSection number (int)
+--- @param damageScale number (float)
+--- @return nil
+--- @overload fun(vehicle: Vehicle, damageSection: number, damageScale: number): nil
+--- @deprecated
+function N_0x0bbb9a7a8ffe931b(vehicle, damageSection, damageScale) end
 
     
 --- SetVehicleParachuteActive
@@ -465,11 +609,11 @@ function N_0x0d5f65a8f4ebdab5(vehicle, state) end
 --- DetachVehicleFromCargobob
 ---
 --- @hash [0x0E21D3DF1051399D](https://docs.fivem.net/natives/?_0x0E21D3DF1051399D)
---- @param vehicle Vehicle
 --- @param cargobob Vehicle
+--- @param vehicle Vehicle
 --- @return nil
---- @overload fun(vehicle: Vehicle, cargobob: Vehicle): nil
-function DetachVehicleFromCargobob(vehicle, cargobob) end
+--- @overload fun(cargobob: Vehicle, vehicle: Vehicle): nil
+function DetachVehicleFromCargobob(cargobob, vehicle) end
 
     
 --- GetTotalDurationOfVehicleRecording
@@ -809,8 +953,10 @@ function IsVehicleAttachedToTowTruck(towTruck, vehicle) end
 function SetVehicleSearchlight(heli, toggle, canBeUsedByAI) end
 
     
---- SetTrainCruiseSpeed
----
+--- Used to control train speed, can be used to start and stop its movement as well.
+--- @usage local train = CreateMissionTrain(21, 40.2, -1201.3, 31.0, false)
+--- SetTrainCruiseSpeed(train, 20.0) -- Can be used to 'start' the train
+--- SetTrainCruiseSpeed(train, 0.0) -- Can be used to 'stop' the trai
 --- @hash [0x16469284DB8C62B5](https://docs.fivem.net/natives/?_0x16469284DB8C62B5)
 --- @param train Vehicle
 --- @param speed number (float)
@@ -1016,17 +1162,73 @@ function N_0x1aa8a837d2169d94(vehicle, p1) end
 function SetVehicleLightsCanBeVisiblyDamaged(vehicle, p1) end
 
     
---- ```
---- Sets a value that appears to affect door opening behavior when damaged.
+--- Enables or disables the opening of a vehicle's rear doors in the event of a sticky bomb explosion. This native is effective for armored vehicles, such as the Stockade (Brinks vehicle), allowing the rear doors to be opened through controlled explosions, which might otherwise remain locked due to the vehicle nature.
+--- @usage -- This example disables the rear doors of the vehicle from opening upon explosion.
 --- 
---- SET_*
---- ```
----
+--- -- Retrieve the LocalPlayer.
+--- local playerPed = PlayerPedId()
+--- 
+--- -- Retrieve the vehicle the player is currently in. 
+--- local vehicle = GetVehiclePedIsIn(playerPed, false)
+--- 
+--- -- Check if the vehicle exists in the game world.
+--- if not DoesEntityExist(vehicle) then 
+---     -- If the vehicle does not exist, end the execution of the code here.
+---     return 
+--- end
+--- 
+--- -- Retrieve the model of the vehicle
+--- local modelVehicle = GetEntityModel(vehicle)
+--- 
+--- -- Retrieve the hash of the Stockade.
+--- local hashStockade = GetHashKey("stockade")
+--- 
+--- -- Check if the vehicle is a Stockade.
+--- if (modelVehicle == hashStockade) then
+---     -- Disable the rear doors from opening upon explosion.
+---     SetOpenRearDoorsOnExplosion(vehicle, true)
+--- en
 --- @hash [0x1B212B26DD3C04DF](https://docs.fivem.net/natives/?_0x1B212B26DD3C04DF)
 --- @param vehicle Vehicle
 --- @param toggle boolean
 --- @return nil
 --- @overload fun(vehicle: Vehicle, toggle: boolean): nil
+function SetOpenRearDoorsOnExplosion(vehicle, toggle) end
+
+    
+--- # New Name: SetOpenRearDoorsOnExplosion
+--- Enables or disables the opening of a vehicle's rear doors in the event of a sticky bomb explosion. This native is effective for armored vehicles, such as the Stockade (Brinks vehicle), allowing the rear doors to be opened through controlled explosions, which might otherwise remain locked due to the vehicle nature.
+--- @usage -- This example disables the rear doors of the vehicle from opening upon explosion.
+--- 
+--- -- Retrieve the LocalPlayer.
+--- local playerPed = PlayerPedId()
+--- 
+--- -- Retrieve the vehicle the player is currently in. 
+--- local vehicle = GetVehiclePedIsIn(playerPed, false)
+--- 
+--- -- Check if the vehicle exists in the game world.
+--- if not DoesEntityExist(vehicle) then 
+---     -- If the vehicle does not exist, end the execution of the code here.
+---     return 
+--- end
+--- 
+--- -- Retrieve the model of the vehicle
+--- local modelVehicle = GetEntityModel(vehicle)
+--- 
+--- -- Retrieve the hash of the Stockade.
+--- local hashStockade = GetHashKey("stockade")
+--- 
+--- -- Check if the vehicle is a Stockade.
+--- if (modelVehicle == hashStockade) then
+---     -- Disable the rear doors from opening upon explosion.
+---     SetOpenRearDoorsOnExplosion(vehicle, true)
+--- en
+--- @hash [0x1B212B26DD3C04DF](https://docs.fivem.net/natives/?_0x1B212B26DD3C04DF)
+--- @param vehicle Vehicle
+--- @param toggle boolean
+--- @return nil
+--- @overload fun(vehicle: Vehicle, toggle: boolean): nil
+--- @deprecated
 function N_0x1b212b26dd3c04df(vehicle, toggle) end
 
     
@@ -1255,14 +1457,26 @@ function N_0x1f2e4e06dea8992b(vehicle, p1) end
 function N_0x1f34b0626c594380(p0, p1) end
 
     
---- N_0x1f9fb66f3a3842d2
+--- This native is used to simulate a high-speed impact for a vehicle when it collides with a breakable object (frag). It's particularly useful in scripted sequences where a vehicle is required to break through a barrier but might not actually be moving at a sufficient speed to do so realistically. Note that this setting is temporary and will reset after one frame, so it needs to be called every frame for a lasting effect.
 ---
 --- @hash [0x1F9FB66F3A3842D2](https://docs.fivem.net/natives/?_0x1F9FB66F3A3842D2)
 --- @param vehicle Vehicle
---- @param p1 boolean
+--- @param actHighSpeed boolean
 --- @return nil
---- @overload fun(vehicle: Vehicle, p1: boolean): nil
-function N_0x1f9fb66f3a3842d2(vehicle, p1) end
+--- @overload fun(vehicle: Vehicle, actHighSpeed: boolean): nil
+function SetVehicleActAsIfHighSpeedForFragSmashing(vehicle, actHighSpeed) end
+
+    
+--- # New Name: SetVehicleActAsIfHighSpeedForFragSmashing
+--- This native is used to simulate a high-speed impact for a vehicle when it collides with a breakable object (frag). It's particularly useful in scripted sequences where a vehicle is required to break through a barrier but might not actually be moving at a sufficient speed to do so realistically. Note that this setting is temporary and will reset after one frame, so it needs to be called every frame for a lasting effect.
+---
+--- @hash [0x1F9FB66F3A3842D2](https://docs.fivem.net/natives/?_0x1F9FB66F3A3842D2)
+--- @param vehicle Vehicle
+--- @param actHighSpeed boolean
+--- @return nil
+--- @overload fun(vehicle: Vehicle, actHighSpeed: boolean): nil
+--- @deprecated
+function N_0x1f9fb66f3a3842d2(vehicle, actHighSpeed) end
 
     
 --- ```
@@ -1685,56 +1899,44 @@ function GetVehicleDoorLockStatus(vehicle) end
 function DoesVehicleHaveWeapons(vehicle) end
 
     
---- ```
---- This native makes the vehicle stop immediately, as happens when we enter a MP garage.  
---- . distance defines how far it will travel until stopping. Garage doors use 3.0.  
---- . If killEngine is set to 1, you cannot resume driving the vehicle once it stops. This looks like is a bitmapped integer.  
---- ```
+--- This native makes the vehicle stop immediately, as it happens when we enter a multiplayer garage.
 ---
 --- @hash [0x260BE8F09E326A20](https://docs.fivem.net/natives/?_0x260BE8F09E326A20)
 --- @param vehicle Vehicle
 --- @param distance number (float)
 --- @param duration number (int)
---- @param unknown boolean
+--- @param bControlVerticalVelocity boolean
 --- @return nil
---- @overload fun(vehicle: Vehicle, distance: number, duration: number, unknown: boolean): nil
-function BringVehicleToHalt(vehicle, distance, duration, unknown) end
+--- @overload fun(vehicle: Vehicle, distance: number, duration: number, bControlVerticalVelocity: boolean): nil
+function BringVehicleToHalt(vehicle, distance, duration, bControlVerticalVelocity) end
 
     
 --- # New Name: BringVehicleToHalt
---- ```
---- This native makes the vehicle stop immediately, as happens when we enter a MP garage.  
---- . distance defines how far it will travel until stopping. Garage doors use 3.0.  
---- . If killEngine is set to 1, you cannot resume driving the vehicle once it stops. This looks like is a bitmapped integer.  
---- ```
+--- This native makes the vehicle stop immediately, as it happens when we enter a multiplayer garage.
 ---
 --- @hash [0x260BE8F09E326A20](https://docs.fivem.net/natives/?_0x260BE8F09E326A20)
 --- @param vehicle Vehicle
 --- @param distance number (float)
 --- @param duration number (int)
---- @param unknown boolean
+--- @param bControlVerticalVelocity boolean
 --- @return nil
---- @overload fun(vehicle: Vehicle, distance: number, duration: number, unknown: boolean): nil
+--- @overload fun(vehicle: Vehicle, distance: number, duration: number, bControlVerticalVelocity: boolean): nil
 --- @deprecated
-function N_0x260be8f09e326a20(vehicle, distance, duration, unknown) end
+function N_0x260be8f09e326a20(vehicle, distance, duration, bControlVerticalVelocity) end
 
     
 --- # New Name: BringVehicleToHalt
---- ```
---- This native makes the vehicle stop immediately, as happens when we enter a MP garage.  
---- . distance defines how far it will travel until stopping. Garage doors use 3.0.  
---- . If killEngine is set to 1, you cannot resume driving the vehicle once it stops. This looks like is a bitmapped integer.  
---- ```
+--- This native makes the vehicle stop immediately, as it happens when we enter a multiplayer garage.
 ---
 --- @hash [0x260BE8F09E326A20](https://docs.fivem.net/natives/?_0x260BE8F09E326A20)
 --- @param vehicle Vehicle
 --- @param distance number (float)
 --- @param duration number (int)
---- @param unknown boolean
+--- @param bControlVerticalVelocity boolean
 --- @return nil
---- @overload fun(vehicle: Vehicle, distance: number, duration: number, unknown: boolean): nil
+--- @overload fun(vehicle: Vehicle, distance: number, duration: number, bControlVerticalVelocity: boolean): nil
 --- @deprecated
-function SetVehicleHalt(vehicle, distance, duration, unknown) end
+function SetVehicleHalt(vehicle, distance, duration, bControlVerticalVelocity) end
 
     
 --- SetFarDrawVehicles
@@ -2389,15 +2591,29 @@ function AreAnyVehicleSeatsFree(vehicle) end
 function IsAnyVehicleSeatEmpty(vehicle) end
 
     
---- ```
---- NativeDB Introduced: v1290
---- ```
----
+--- Disables wings for `Deluxo` and `Oppressor MK II`. For the Deluxo, it retracts the wings immediately, preventing flight. For the Oppressor Mk II, the wings retract after landing and take-off is not possible, though it can still glide if launched into the air.
+--- @usage -- In this case we are disabling the wings of the vehicle
+--- local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
+--- SetDisableHoverModeFlight(vehicle, true
 --- @hash [0x2D55FE374D5FDB91](https://docs.fivem.net/natives/?_0x2D55FE374D5FDB91)
 --- @param vehicle Vehicle
 --- @param toggle boolean
 --- @return nil
 --- @overload fun(vehicle: Vehicle, toggle: boolean): nil
+function SetDisableHoverModeFlight(vehicle, toggle) end
+
+    
+--- # New Name: SetDisableHoverModeFlight
+--- Disables wings for `Deluxo` and `Oppressor MK II`. For the Deluxo, it retracts the wings immediately, preventing flight. For the Oppressor Mk II, the wings retract after landing and take-off is not possible, though it can still glide if launched into the air.
+--- @usage -- In this case we are disabling the wings of the vehicle
+--- local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
+--- SetDisableHoverModeFlight(vehicle, true
+--- @hash [0x2D55FE374D5FDB91](https://docs.fivem.net/natives/?_0x2D55FE374D5FDB91)
+--- @param vehicle Vehicle
+--- @param toggle boolean
+--- @return nil
+--- @overload fun(vehicle: Vehicle, toggle: boolean): nil
+--- @deprecated
 function SetVehicleHoverTransformActive(vehicle, toggle) end
 
     
@@ -3474,20 +3690,45 @@ function SetVehicleExclusiveDriver(vehicle, toggle) end
 function N_0x41062318f23ed854(vehicle, toggle) end
 
     
---- ```
---- p2 is unknown and is always -1 in the script natives.
---- ```
----
+--- AttachVehicleToCargobob
+--- @usage function RequestVehicleModel(modelHash)
+---     if not IsModelInCdimage(modelHash) then return end
+---     RequestModel(modelHash)
+---     while not HasModelLoaded(modelHash) do 
+---       Wait(0)
+---     end
+--- end
+--- 
+--- RegisterCommand('spawnCargobob', function(source, args)
+---     local cargobobHash = `cargobob` 
+---     local carHash = `adder` 
+---     local myPed = PlayerPedId()
+--- 
+---     local spawnCoords = GetEntityCoords(myPed)
+--- 
+---     RequestVehicleModel(cargobobHash)
+---     local cargobob = CreateVehicle(cargobobHash, spawnCoords+vec3(0.0,0.0, 10.0), GetEntityHeading(myPed), true, false) -- Spawns a cargobob above players location
+---     SetHeliBladesSpeed(cargobob, 1.0) -- sets the helicoper blades to max spin speed
+---     SetPedIntoVehicle(myPed, cargobob, -1) -- sets the player into the cargobob
+---     SetModelAsNoLongerNeeded(cargobobHash) -- removes model from game memory as we no longer need it
+---     CreatePickUpRopeForCargobob(cargobob, 1) -- 0 = hook, 1 = Magnet Enable rope from cargobob
+--- 
+---     RequestVehicleModel(carHash)
+---     local vehicle = CreateVehicle(carHash, spawnCoords, GetEntityHeading(myPed), true, false) -- Spawns a vehicle for the cargobob to pickup
+---     SetModelAsNoLongerNeeded(carHash)
+---     Wait(1000)
+---     AttachVehicleToCargobob(cargobob, vehicle, GetEntityBoneIndexByName(vehicle, 'bodyshell'), 0.0, 0.0, 0.0) --Attach the vehicle to the magnet or hook
+--- end
 --- @hash [0x4127F1D84E347769](https://docs.fivem.net/natives/?_0x4127F1D84E347769)
---- @param vehicle Vehicle
 --- @param cargobob Vehicle
---- @param p2 number (int)
+--- @param vehicle Vehicle
+--- @param vehicleBoneIndex number (int)
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
 --- @return nil
---- @overload fun(vehicle: Vehicle, cargobob: Vehicle, p2: number, x: number, y: number, z: number): nil
-function AttachVehicleToCargobob(vehicle, cargobob, p2, x, y, z) end
+--- @overload fun(cargobob: Vehicle, vehicle: Vehicle, vehicleBoneIndex: number, x: number, y: number, z: number): nil
+function AttachVehicleToCargobob(cargobob, vehicle, vehicleBoneIndex, x, y, z) end
 
     
 --- N_0x41290b40fa63e6da
@@ -3660,7 +3901,7 @@ function IsVehicleAlarmActivated(vehicle) end
 
     
 --- According to decompiled scripts this should work with the `deluxo` and `oppressor2` vehicles.
---- I've only seen this work for `deluxo` though, can't figure out what it's supposed to do on `oppressor2`.
+--- Does nothing when used on `oppressor2`.
 --- 
 --- For the deluxo:
 --- 
@@ -3672,18 +3913,20 @@ function IsVehicleAlarmActivated(vehicle) end
 --- This doesn't need to be called every tick, just once and the vehicle will transform to that state at the usual transform speed. It'll just stop transforming when it reaches the state you provided.
 --- 
 --- Once this native is used then players will just be able to hit the vehicle transform key to toggle the transformation cycle; it won't block users from using the key.
----
+--- @usage -- In this case we are enabling the hover mode for the deluxo (fyling mode)
+--- local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
+--- SetSpecialFlightModeTargetRatio(vehicle, 1.0
 --- @hash [0x438B3D7CA026FE91](https://docs.fivem.net/natives/?_0x438B3D7CA026FE91)
 --- @param vehicle Vehicle
 --- @param state number (float)
 --- @return nil
 --- @overload fun(vehicle: Vehicle, state: number): nil
-function SetVehicleHoverTransformPercentage(vehicle, state) end
+function SetSpecialFlightModeTargetRatio(vehicle, state) end
 
     
---- # New Name: SetVehicleHoverTransformPercentage
+--- # New Name: SetSpecialFlightModeTargetRatio
 --- According to decompiled scripts this should work with the `deluxo` and `oppressor2` vehicles.
---- I've only seen this work for `deluxo` though, can't figure out what it's supposed to do on `oppressor2`.
+--- Does nothing when used on `oppressor2`.
 --- 
 --- For the deluxo:
 --- 
@@ -3695,7 +3938,9 @@ function SetVehicleHoverTransformPercentage(vehicle, state) end
 --- This doesn't need to be called every tick, just once and the vehicle will transform to that state at the usual transform speed. It'll just stop transforming when it reaches the state you provided.
 --- 
 --- Once this native is used then players will just be able to hit the vehicle transform key to toggle the transformation cycle; it won't block users from using the key.
----
+--- @usage -- In this case we are enabling the hover mode for the deluxo (fyling mode)
+--- local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
+--- SetSpecialFlightModeTargetRatio(vehicle, 1.0
 --- @hash [0x438B3D7CA026FE91](https://docs.fivem.net/natives/?_0x438B3D7CA026FE91)
 --- @param vehicle Vehicle
 --- @param state number (float)
@@ -3705,9 +3950,9 @@ function SetVehicleHoverTransformPercentage(vehicle, state) end
 function N_0x438b3d7ca026fe91(vehicle, state) end
 
     
---- # New Name: SetVehicleHoverTransformPercentage
+--- # New Name: SetSpecialFlightModeTargetRatio
 --- According to decompiled scripts this should work with the `deluxo` and `oppressor2` vehicles.
---- I've only seen this work for `deluxo` though, can't figure out what it's supposed to do on `oppressor2`.
+--- Does nothing when used on `oppressor2`.
 --- 
 --- For the deluxo:
 --- 
@@ -3719,7 +3964,9 @@ function N_0x438b3d7ca026fe91(vehicle, state) end
 --- This doesn't need to be called every tick, just once and the vehicle will transform to that state at the usual transform speed. It'll just stop transforming when it reaches the state you provided.
 --- 
 --- Once this native is used then players will just be able to hit the vehicle transform key to toggle the transformation cycle; it won't block users from using the key.
----
+--- @usage -- In this case we are enabling the hover mode for the deluxo (fyling mode)
+--- local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
+--- SetSpecialFlightModeTargetRatio(vehicle, 1.0
 --- @hash [0x438B3D7CA026FE91](https://docs.fivem.net/natives/?_0x438B3D7CA026FE91)
 --- @param vehicle Vehicle
 --- @param state number (float)
@@ -3727,6 +3974,32 @@ function N_0x438b3d7ca026fe91(vehicle, state) end
 --- @overload fun(vehicle: Vehicle, state: number): nil
 --- @deprecated
 function SetVehicleTransformState(vehicle, state) end
+
+    
+--- # New Name: SetSpecialFlightModeTargetRatio
+--- According to decompiled scripts this should work with the `deluxo` and `oppressor2` vehicles.
+--- Does nothing when used on `oppressor2`.
+--- 
+--- For the deluxo:
+--- 
+--- *   Set `state` to `0.0`: Fully transform to a 'road' vehicle (non-hover mode).
+--- *   Set `state` to `1.0`: Fully transform to a 'flying' vehicle (hover mode).
+--- 
+--- If you set it to something like 0.5, then something [weird happens](https://streamable.com/p6wmr), you end up in some 50% hover mode, 50% not hover mode.
+--- 
+--- This doesn't need to be called every tick, just once and the vehicle will transform to that state at the usual transform speed. It'll just stop transforming when it reaches the state you provided.
+--- 
+--- Once this native is used then players will just be able to hit the vehicle transform key to toggle the transformation cycle; it won't block users from using the key.
+--- @usage -- In this case we are enabling the hover mode for the deluxo (fyling mode)
+--- local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
+--- SetSpecialFlightModeTargetRatio(vehicle, 1.0
+--- @hash [0x438B3D7CA026FE91](https://docs.fivem.net/natives/?_0x438B3D7CA026FE91)
+--- @param vehicle Vehicle
+--- @param state number (float)
+--- @return nil
+--- @overload fun(vehicle: Vehicle, state: number): nil
+--- @deprecated
+function SetVehicleHoverTransformPercentage(vehicle, state) end
 
     
 --- ```
@@ -3939,14 +4212,14 @@ function RemoveVehiclesFromGeneratorsInArea(x1, y1, z1, x2, y2, z2, unk) end
     
 --- ```cpp
 --- enum eWindowId {
---- 	VEH_EXT_WINDSCREEN = 0,
---- 	VEH_EXT_WINDSCREEN_R = 1,
---- 	VEH_EXT_WINDOW_LF = 2,
---- 	VEH_EXT_WINDOW_RF = 3,
---- 	VEH_EXT_WINDOW_LR = 4,
---- 	VEH_EXT_WINDOW_RR = 5,
---- 	VEH_EXT_WINDOW_LM = 6,
---- 	VEH_EXT_WINDOW_RM = 7,
+--- 	VEH_EXT_WINDOW_LF = 0,
+--- 	VEH_EXT_WINDOW_RF = 1,
+--- 	VEH_EXT_WINDOW_LR = 2,
+--- 	VEH_EXT_WINDOW_RR = 3,
+--- 	VEH_EXT_WINDOW_LM = 4,
+--- 	VEH_EXT_WINDOW_RM = 5,
+--- 	VEH_EXT_WINDSCREEN = 6,
+--- 	VEH_EXT_WINDSCREEN_R = 7,
 --- }
 --- ```
 ---
@@ -4145,8 +4418,9 @@ function SetPlanePropellersHealth(plane, health) end
 function N_0x4c815eb175086f84(plane, health) end
 
     
---- IsVehicleSirenOn
----
+--- Returns whether the vehicle's lights and sirens are on.
+--- @usage local veh = GetVehiclePedIsIn(PlayerPedId())
+--- print(tostring(IsVehicleSirenOn(veh)
 --- @hash [0x4C9BF537BE2634B2](https://docs.fivem.net/natives/?_0x4C9BF537BE2634B2)
 --- @param vehicle Vehicle
 --- @return boolean
@@ -4598,8 +4872,29 @@ function GetVehicleSuspensionHeight(vehicle) end
 function GetVehicleModelMaxTraction(modelHash) end
 
     
---- GetVehicleEstimatedMaxSpeed
----
+--- Retrieves a static value representing the estimated max speed of a specific vehicle, including any vehicle mods. This value does not change dynamically during gameplay.
+--- 
+--- ```
+--- NativeDB Introduced: v323
+--- ```
+--- @usage -- This example prints the estimated max speed of the player's current vehicle.
+--- 
+--- -- Retrieve the player ped.
+--- local playerPed = PlayerPedId()
+--- 
+--- -- Retrieve the vehicle the player is currently in.
+--- local vehicle = GetVehiclePedIsIn(playerPed, false)
+--- 
+--- -- If the vehicle does not exist, end the execution of the code here.
+--- if not DoesEntityExist(vehicle) then 
+---     return 
+--- end
+--- 
+--- -- Retrieve the estimated max speed of the vehicle.
+--- local estimatedMaxSpeed = GetVehicleEstimatedMaxSpeed(vehicle)
+--- 
+--- -- Print the estimated max speed of the vehicle.
+--- print("Estimated Max Speed: " .. estimatedMaxSpeed
 --- @hash [0x53AF99BAA671CA47](https://docs.fivem.net/natives/?_0x53AF99BAA671CA47)
 --- @param vehicle Vehicle
 --- @return number
@@ -4608,8 +4903,29 @@ function GetVehicleEstimatedMaxSpeed(vehicle) end
 
     
 --- # New Name: GetVehicleEstimatedMaxSpeed
---- GetVehicleEstimatedMaxSpeed
----
+--- Retrieves a static value representing the estimated max speed of a specific vehicle, including any vehicle mods. This value does not change dynamically during gameplay.
+--- 
+--- ```
+--- NativeDB Introduced: v323
+--- ```
+--- @usage -- This example prints the estimated max speed of the player's current vehicle.
+--- 
+--- -- Retrieve the player ped.
+--- local playerPed = PlayerPedId()
+--- 
+--- -- Retrieve the vehicle the player is currently in.
+--- local vehicle = GetVehiclePedIsIn(playerPed, false)
+--- 
+--- -- If the vehicle does not exist, end the execution of the code here.
+--- if not DoesEntityExist(vehicle) then 
+---     return 
+--- end
+--- 
+--- -- Retrieve the estimated max speed of the vehicle.
+--- local estimatedMaxSpeed = GetVehicleEstimatedMaxSpeed(vehicle)
+--- 
+--- -- Print the estimated max speed of the vehicle.
+--- print("Estimated Max Speed: " .. estimatedMaxSpeed
 --- @hash [0x53AF99BAA671CA47](https://docs.fivem.net/natives/?_0x53AF99BAA671CA47)
 --- @param vehicle Vehicle
 --- @return number
@@ -4619,8 +4935,29 @@ function N_0x53af99baa671ca47(vehicle) end
 
     
 --- # New Name: GetVehicleEstimatedMaxSpeed
---- GetVehicleEstimatedMaxSpeed
----
+--- Retrieves a static value representing the estimated max speed of a specific vehicle, including any vehicle mods. This value does not change dynamically during gameplay.
+--- 
+--- ```
+--- NativeDB Introduced: v323
+--- ```
+--- @usage -- This example prints the estimated max speed of the player's current vehicle.
+--- 
+--- -- Retrieve the player ped.
+--- local playerPed = PlayerPedId()
+--- 
+--- -- Retrieve the vehicle the player is currently in.
+--- local vehicle = GetVehiclePedIsIn(playerPed, false)
+--- 
+--- -- If the vehicle does not exist, end the execution of the code here.
+--- if not DoesEntityExist(vehicle) then 
+---     return 
+--- end
+--- 
+--- -- Retrieve the estimated max speed of the vehicle.
+--- local estimatedMaxSpeed = GetVehicleEstimatedMaxSpeed(vehicle)
+--- 
+--- -- Print the estimated max speed of the vehicle.
+--- print("Estimated Max Speed: " .. estimatedMaxSpeed
 --- @hash [0x53AF99BAA671CA47](https://docs.fivem.net/natives/?_0x53AF99BAA671CA47)
 --- @param vehicle Vehicle
 --- @return number
@@ -5056,30 +5393,107 @@ function SetVehicleCanBreak(vehicle, toggle) end
 function N_0x59c3757b3b7408e8(vehicle, toggle, p2) end
 
     
+--- Retrieves the agility for a specific boat model, including any vehicle mods. Unlike other vehicles where Rockstar Games typically assess performance based on traction, boats use agility as a measure. This static value is distinct from the traction metrics used for other vehicle types.
+--- 
 --- ```
---- GET_VEHICLE_MODEL_*
---- called if the vehicle is a boat -- returns vecMoveResistanceX?
+--- NativeDB Introduced: v323
 --- ```
----
+--- @usage -- This example prints the agility of the player's current boat.
+--- 
+--- -- Retrieve the player ped.
+--- local playerPed = PlayerPedId()
+--- 
+--- -- Retrieve the vehicle the player is currently in.
+--- local vehicle = GetVehiclePedIsIn(playerPed, false)
+--- 
+--- -- Retrieve the model hash of the boat.
+--- local boatHash = GetEntityModel(vehicle)
+--- 
+--- -- If the vehicle does not exist or is not a boat, end the execution of the code here.
+--- if not DoesEntityExist(vehicle) or not IsThisModelABoat(boatHash) then 
+---     return 
+--- end
+--- 
+--- -- Retrieve the agility of the boat.
+--- local agility = GetBoatVehicleModelAgility(boatHash)
+--- 
+--- -- Print the agility of the boat.
+--- print("Boat Agility: " .. agility
 --- @hash [0x5AA3F878A178C4FC](https://docs.fivem.net/natives/?_0x5AA3F878A178C4FC)
 --- @param modelHash Hash
 --- @return number
 --- @overload fun(modelHash: Hash): number
-function GetVehicleModelMoveResistance(modelHash) end
+function GetBoatVehicleModelAgility(modelHash) end
 
     
---- # New Name: GetVehicleModelMoveResistance
+--- # New Name: GetBoatVehicleModelAgility
+--- Retrieves the agility for a specific boat model, including any vehicle mods. Unlike other vehicles where Rockstar Games typically assess performance based on traction, boats use agility as a measure. This static value is distinct from the traction metrics used for other vehicle types.
+--- 
 --- ```
---- GET_VEHICLE_MODEL_*
---- called if the vehicle is a boat -- returns vecMoveResistanceX?
+--- NativeDB Introduced: v323
 --- ```
----
+--- @usage -- This example prints the agility of the player's current boat.
+--- 
+--- -- Retrieve the player ped.
+--- local playerPed = PlayerPedId()
+--- 
+--- -- Retrieve the vehicle the player is currently in.
+--- local vehicle = GetVehiclePedIsIn(playerPed, false)
+--- 
+--- -- Retrieve the model hash of the boat.
+--- local boatHash = GetEntityModel(vehicle)
+--- 
+--- -- If the vehicle does not exist or is not a boat, end the execution of the code here.
+--- if not DoesEntityExist(vehicle) or not IsThisModelABoat(boatHash) then 
+---     return 
+--- end
+--- 
+--- -- Retrieve the agility of the boat.
+--- local agility = GetBoatVehicleModelAgility(boatHash)
+--- 
+--- -- Print the agility of the boat.
+--- print("Boat Agility: " .. agility
 --- @hash [0x5AA3F878A178C4FC](https://docs.fivem.net/natives/?_0x5AA3F878A178C4FC)
 --- @param modelHash Hash
 --- @return number
 --- @overload fun(modelHash: Hash): number
 --- @deprecated
 function N_0x5aa3f878a178c4fc(modelHash) end
+
+    
+--- # New Name: GetBoatVehicleModelAgility
+--- Retrieves the agility for a specific boat model, including any vehicle mods. Unlike other vehicles where Rockstar Games typically assess performance based on traction, boats use agility as a measure. This static value is distinct from the traction metrics used for other vehicle types.
+--- 
+--- ```
+--- NativeDB Introduced: v323
+--- ```
+--- @usage -- This example prints the agility of the player's current boat.
+--- 
+--- -- Retrieve the player ped.
+--- local playerPed = PlayerPedId()
+--- 
+--- -- Retrieve the vehicle the player is currently in.
+--- local vehicle = GetVehiclePedIsIn(playerPed, false)
+--- 
+--- -- Retrieve the model hash of the boat.
+--- local boatHash = GetEntityModel(vehicle)
+--- 
+--- -- If the vehicle does not exist or is not a boat, end the execution of the code here.
+--- if not DoesEntityExist(vehicle) or not IsThisModelABoat(boatHash) then 
+---     return 
+--- end
+--- 
+--- -- Retrieve the agility of the boat.
+--- local agility = GetBoatVehicleModelAgility(boatHash)
+--- 
+--- -- Print the agility of the boat.
+--- print("Boat Agility: " .. agility
+--- @hash [0x5AA3F878A178C4FC](https://docs.fivem.net/natives/?_0x5AA3F878A178C4FC)
+--- @param modelHash Hash
+--- @return number
+--- @overload fun(modelHash: Hash): number
+--- @deprecated
+function GetVehicleModelMoveResistance(modelHash) end
 
     
 --- ```
@@ -5104,8 +5518,9 @@ function SetDriftTyresEnabled(vehicle, toggle) end
 function SetVehicleProvidesCover(vehicle, toggle) end
 
     
---- DeleteMissionTrain
----
+--- Used to delete mission trains created with [`CREATE_MISSION_TRAIN`](https://docs.fivem.net/natives/?_0x63C6CCA8E68AE8C8).
+--- @usage local train = CreateMissionTrain(21, 40.2, -1201.3, 31.0, false)
+--- DeleteMissionTrain(train
 --- @hash [0x5B76B14AE875C795](https://docs.fivem.net/natives/?_0x5B76B14AE875C795)
 --- @param train Vehicle (Vehicle*)
 --- @return nil
@@ -5174,10 +5589,29 @@ function N_0x5bbcf35bf6e456f7(toggle) end
 function SetVehicleAllowNoPassengersLockon(veh, toggle) end
 
     
+--- Retrieves a static value representing the maximum drive force of specific a vehicle, including any vehicle mods. This value does not change dynamically during gameplay. This value provides an approximation and should be considered alongside other performance metrics like top speed for a more comprehensive understanding of the vehicle's capabilities.
+--- 
 --- ```
---- static - max acceleration  
+--- NativeDB Introduced: v323
 --- ```
----
+--- @usage -- This example prints the acceleration of the player's current vehicle.
+--- 
+--- -- Retrieve the player ped.
+--- local playerPed = PlayerPedId()
+--- 
+--- -- Retrieve the vehicle the player is currently in.
+--- local vehicle = GetVehiclePedIsIn(playerPed, false)
+--- 
+--- -- If the vehicle does not exist, end the execution of the code here.
+--- if not DoesEntityExist(vehicle) then 
+---     return 
+--- end
+--- 
+--- -- Retrieve the acceleration of the vehicle.
+--- local acceleration = GetVehicleAcceleration(vehicle)
+--- 
+--- -- Print the acceleration of the vehicle.
+--- print("Vehicle Acceleration: " .. acceleration
 --- @hash [0x5DD35C8D074E57AE](https://docs.fivem.net/natives/?_0x5DD35C8D074E57AE)
 --- @param vehicle Vehicle
 --- @return number
@@ -5448,16 +5882,28 @@ function IsVehicleSeatAccessible(ped, vehicle, seatIndex, side, onEnter) end
 function N_0x639431e895b9aa57(ped, vehicle, seatIndex, side, onEnter) end
 
     
---- Train models must be [requested](https://docs.fivem.net/natives/?_0x963D27A58DF860AC) before use. See trains.xml for freight and metro variations.
+--- Train models must be [requested](https://docs.fivem.net/natives/?_0x963D27A58DF860AC) before use. See trains.xml (located in `Grand Theft Auto V\update\update.rpf\common\data\levels\gta5\trains.xml`) for freight and metro variations.
+--- 
+--- Model names to request can be found by searching `model_name` in the file.
+--- 
+--- The `Lua` usage example provided down below has been provided in such way so users can test each and every train variation.
+--- 
+--- ### Newly added parameters (seen in 2372 build)
 --- 
 --- ```
---- NativeDB Added Parameter 6: Any p5
---- NativeDB Added Parameter 7: Any p6
+--- NativeDB Added Parameter 6: BOOL isNetwork
+--- NativeDB Added Parameter 7: BOOL netMissionEntity
 --- ```
+--- 
+--- *   **isNetwork**: Whether to create a network object for the train. If false, the train exists only locally.
+--- *   **netMissionEntity**: Whether to register the train as pinned to the script host in the R\* network model.
 --- 
 --- ### Train Models:
 --- 
 --- *   freight
+--- 
+--- ### Carriage Models:
+--- 
 --- *   freightcar
 --- *   freightcar2 (Added v2372)
 --- *   freightcont1
@@ -5465,7 +5911,56 @@ function N_0x639431e895b9aa57(ped, vehicle, seatIndex, side, onEnter) end
 --- *   freightgrain
 --- *   metrotrain
 --- *   tankercar
----
+--- 
+--- ### Some train variations (default from trains.xml as of build 2372)
+--- 
+--- *   17. Very long train and freight variation.
+--- *   18. Freight train only.
+--- *   26. Double metro train (with both models flipped opposite to each other). This used to be `25` before the 2802 build, it also used to be `24` before the 2372 build.
+--- @usage --[[ 
+---     This function needs to be invoked prior to calling CreateMissionTrain  or the trains (as well as its carriages) won't spawn.
+---     Could also result in a game-crash when CreateMissionTrain is called without
+---     loading the train model needed for the variation before-hand.
+--- ]]
+--- function loadTrainModels()
+---     local trainsAndCarriages = {
+---         'freight', 'metrotrain', 'freightcont1', 'freightcar', 
+---         'freightcar2', 'freightcont2', 'tankercar', 'freightgrain'
+---     }
+--- 
+---     for _, vehicleName in ipairs(trainsAndCarriages) do
+---         local modelHashKey = GetHashKey(vehicleName)
+---         RequestModel(modelHashKey) -- load the model
+---         -- wait for the model to load
+---         while not HasModelLoaded(modelHashKey) do
+---             Citizen.Wait(500)
+---         end
+---     end
+--- end
+--- 
+--- loadTrainModels()
+--- 
+--- RegisterCommand("createtrain", function(source, args, rawCommand)
+---     if #args < 1 then
+---         TriggerEvent('chat:addMessage', {
+---             args = { 
+---                 'Error, provide a variation id, you can find those in trains.xml. Variations range from 0 to 26.'
+---             }
+---         })
+---         return
+---     end
+---     
+---     local playerCoords = GetEntityCoords(PlayerPedId())
+---      -- Now actually create a train using a variation
+---      -- These coordinates were used for testing: 1438.98, 6405.92, 34.19
+---     CreateMissionTrain(
+---         tonumber(args[1]),
+---         playerCoords.x, playerCoords.y, playerCoords.z,
+---         true,
+---         true,
+---         true
+---     )
+--- end, false
 --- @hash [0x63C6CCA8E68AE8C8](https://docs.fivem.net/natives/?_0x63C6CCA8E68AE8C8)
 --- @param variation number (int)
 --- @param x number (float)
@@ -5982,15 +6477,29 @@ function N_0x6eaaefc76acc311f(p0) end
 function N_0x6ebfb22d646ffc18(vehicle, p1) end
 
     
---- ```
---- NativeDB Introduced: v1365
---- ```
----
+--- This native allows opening or closing the wings of the Deluxo/Oppressor. For the Deluxo, wing deployment depends on sufficient altitude.
+--- @usage -- In this case we are opening the wings of the vehicle
+--- local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
+--- SetHoverModeWingRatio(vehicle, 1.0
 --- @hash [0x70A252F60A3E036B](https://docs.fivem.net/natives/?_0x70A252F60A3E036B)
 --- @param vehicle Vehicle
 --- @param ratio number (float)
 --- @return nil
 --- @overload fun(vehicle: Vehicle, ratio: number): nil
+function SetHoverModeWingRatio(vehicle, ratio) end
+
+    
+--- # New Name: SetHoverModeWingRatio
+--- This native allows opening or closing the wings of the Deluxo/Oppressor. For the Deluxo, wing deployment depends on sufficient altitude.
+--- @usage -- In this case we are opening the wings of the vehicle
+--- local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
+--- SetHoverModeWingRatio(vehicle, 1.0
+--- @hash [0x70A252F60A3E036B](https://docs.fivem.net/natives/?_0x70A252F60A3E036B)
+--- @param vehicle Vehicle
+--- @param ratio number (float)
+--- @return nil
+--- @overload fun(vehicle: Vehicle, ratio: number): nil
+--- @deprecated
 function SetSpecialflightWingRatio(vehicle, ratio) end
 
     
@@ -6271,9 +6780,7 @@ function N_0x76d26a22750e849e(vehicle) end
 function FixVehicleWindow(vehicle, windowIndex) end
 
     
---- ```
---- Returns -1 if the vehicle mod is stock  
---- ```
+--- GetVehicleMod
 ---
 --- @hash [0x772960298DA26FDB](https://docs.fivem.net/natives/?_0x772960298DA26FDB)
 --- @param vehicle Vehicle
@@ -7152,14 +7659,26 @@ function N_0x89d630cf5ea96d23(handler, container) end
 function SetVehicleGravity(vehicle, toggle) end
 
     
---- N_0x8aa9180de2fedd45
+--- Will disable a plane or a helicopter's need to swerve around object in its heightmap when using TASK_PLANE_MISSION or other AI / Pilot behavior.  Will ensure plane flys directly to it's destination or die trying! This native does NOT need to be called every frame, but instead, just called once on the vehicle (NOT THE PED) you're trying to disable avoidance for!
 ---
 --- @hash [0x8AA9180DE2FEDD45](https://docs.fivem.net/natives/?_0x8AA9180DE2FEDD45)
 --- @param vehicle Vehicle
---- @param p1 boolean
+--- @param avoidObstacles boolean
 --- @return nil
---- @overload fun(vehicle: Vehicle, p1: boolean): nil
-function N_0x8aa9180de2fedd45(vehicle, p1) end
+--- @overload fun(vehicle: Vehicle, avoidObstacles: boolean): nil
+function EnableAircraftObstacleAvoidance(vehicle, avoidObstacles) end
+
+    
+--- # New Name: EnableAircraftObstacleAvoidance
+--- Will disable a plane or a helicopter's need to swerve around object in its heightmap when using TASK_PLANE_MISSION or other AI / Pilot behavior.  Will ensure plane flys directly to it's destination or die trying! This native does NOT need to be called every frame, but instead, just called once on the vehicle (NOT THE PED) you're trying to disable avoidance for!
+---
+--- @hash [0x8AA9180DE2FEDD45](https://docs.fivem.net/natives/?_0x8AA9180DE2FEDD45)
+--- @param vehicle Vehicle
+--- @param avoidObstacles boolean
+--- @return nil
+--- @overload fun(vehicle: Vehicle, avoidObstacles: boolean): nil
+--- @deprecated
+function N_0x8aa9180de2fedd45(vehicle, avoidObstacles) end
 
     
 --- SetVehicleUndriveable
@@ -8006,6 +8525,8 @@ function SetVehicleEngineCanDegrade(vehicle, toggle) end
 function N_0x9849de24fcf23ccc(vehicle, toggle) end
 
     
+--- Determines whether the specified vehicle is equipped with a searchlight.
+--- 
 --- ```
 --- NativeDB Introduced: v2189
 --- ```
@@ -8014,6 +8535,21 @@ function N_0x9849de24fcf23ccc(vehicle, toggle) end
 --- @param vehicle Vehicle
 --- @return boolean
 --- @overload fun(vehicle: Vehicle): boolean
+function DoesVehicleHaveSearchlight(vehicle) end
+
+    
+--- # New Name: DoesVehicleHaveSearchlight
+--- Determines whether the specified vehicle is equipped with a searchlight.
+--- 
+--- ```
+--- NativeDB Introduced: v2189
+--- ```
+---
+--- @hash [0x99015ED7DBEA5113](https://docs.fivem.net/natives/?_0x99015ED7DBEA5113)
+--- @param vehicle Vehicle
+--- @return boolean
+--- @overload fun(vehicle: Vehicle): boolean
+--- @deprecated
 function DoesVehicleHaveSearchlight(vehicle) end
 
     
@@ -8155,12 +8691,19 @@ function CargobobMagnetGrabVehicle(cargobob, isActive) end
 function SetCargobobPickupMagnetActive(cargobob, isActive) end
 
     
---- ```
---- Related to car generators & CPlayerSwitchMgrLong
---- SET_VEHICLE_*
---- SET_VEHICLE_GENERATORS_EXPECTED_GAMEPLAY_PT ?
---- ```
----
+--- Specifies an area of interest where cargens will focus on spawning vehicles
+--- 
+--- You can clear the area of interest with [`CLEAR_VEHICLE_GENERATOR_AREA_OF_INTEREST`](https://docs.fivem.net/natives/?_0x0A436B8643716D14)
+--- @usage -- This example sets the area of interest (cargen) to the player's position with a radius of 100.0
+--- 
+--- -- Retrieve the player ped
+--- local playerPed = PlayerPedId()
+--- 
+--- -- Retrieve the coordinates of the player.
+--- local coords = GetEntityCoords(playerPed, false)
+--- 
+--- -- Set the area of interest to the player's position with a radius of 100.0
+--- SetVehicleGeneratorAreaOfInterest(coords.x, coords.y, coords.z, 100.0
 --- @hash [0x9A75585FB2E54FAD](https://docs.fivem.net/natives/?_0x9A75585FB2E54FAD)
 --- @param x number (float)
 --- @param y number (float)
@@ -8168,6 +8711,31 @@ function SetCargobobPickupMagnetActive(cargobob, isActive) end
 --- @param radius number (float)
 --- @return nil
 --- @overload fun(x: number, y: number, z: number, radius: number): nil
+function SetVehicleGeneratorAreaOfInterest(x, y, z, radius) end
+
+    
+--- # New Name: SetVehicleGeneratorAreaOfInterest
+--- Specifies an area of interest where cargens will focus on spawning vehicles
+--- 
+--- You can clear the area of interest with [`CLEAR_VEHICLE_GENERATOR_AREA_OF_INTEREST`](https://docs.fivem.net/natives/?_0x0A436B8643716D14)
+--- @usage -- This example sets the area of interest (cargen) to the player's position with a radius of 100.0
+--- 
+--- -- Retrieve the player ped
+--- local playerPed = PlayerPedId()
+--- 
+--- -- Retrieve the coordinates of the player.
+--- local coords = GetEntityCoords(playerPed, false)
+--- 
+--- -- Set the area of interest to the player's position with a radius of 100.0
+--- SetVehicleGeneratorAreaOfInterest(coords.x, coords.y, coords.z, 100.0
+--- @hash [0x9A75585FB2E54FAD](https://docs.fivem.net/natives/?_0x9A75585FB2E54FAD)
+--- @param x number (float)
+--- @param y number (float)
+--- @param z number (float)
+--- @param radius number (float)
+--- @return nil
+--- @overload fun(x: number, y: number, z: number, radius: number): nil
+--- @deprecated
 function N_0x9a75585fb2e54fad(x, y, z, radius) end
 
     
@@ -8784,16 +9352,15 @@ function GetVehicleDeformationGetTree(vehicle, height) end
 --- N_0xa4822f1cf23f4810
 ---
 --- @hash [0xA4822F1CF23F4810](https://docs.fivem.net/natives/?_0xA4822F1CF23F4810)
---- @param p1 any
 --- @param p3 any
 --- @param p4 any
 --- @param p5 any
 --- @param p6 any
 --- @param p7 any
 --- @param p8 any
---- @return boolean, Vector3, Vector3
---- @overload fun(p1: any, p3: any, p4: any, p5: any, p6: any, p7: any, p8: any): boolean, Vector3, Vector3
-function N_0xa4822f1cf23f4810(p1, p3, p4, p5, p6, p7, p8) end
+--- @return boolean, Vector3, Vector3, Vector3
+--- @overload fun(p3: any, p4: any, p5: any, p6: any, p7: any, p8: any): boolean, Vector3, Vector3, Vector3
+function N_0xa4822f1cf23f4810(p3, p4, p5, p6, p7, p8) end
 
     
 --- ```
@@ -9507,9 +10074,9 @@ function N_0xb088e9a47ae6edd5(vehicle, p1) end
 --- @hash [0xB09D25E77C33EB3F](https://docs.fivem.net/natives/?_0xB09D25E77C33EB3F)
 --- @param ped Ped
 --- @param vehicle Vehicle
---- @param outIndex number (int)
+--- @param outIndex number (int*)
 --- @return boolean
---- @overload fun(ped: Ped, vehicle: Vehicle, outIndex: number): boolean
+--- @overload fun(ped: Ped, vehicle: Vehicle): boolean, number
 function IsPedExclusiveDriverOfVehicle(ped, vehicle, outIndex) end
 
     
@@ -9519,9 +10086,9 @@ function IsPedExclusiveDriverOfVehicle(ped, vehicle, outIndex) end
 --- @hash [0xB09D25E77C33EB3F](https://docs.fivem.net/natives/?_0xB09D25E77C33EB3F)
 --- @param ped Ped
 --- @param vehicle Vehicle
---- @param outIndex number (int)
+--- @param outIndex number (int*)
 --- @return boolean
---- @overload fun(ped: Ped, vehicle: Vehicle, outIndex: number): boolean
+--- @overload fun(ped: Ped, vehicle: Vehicle): boolean, number
 --- @deprecated
 function N_0xb09d25e77c33eb3f(ped, vehicle, outIndex) end
 
@@ -9604,15 +10171,23 @@ function SetDeployHeliStubWings(vehicle, deploy, p2) end
 function N_0xb251e0b33e58b424(vehicle, deploy, p2) end
 
     
---- ```
---- This native doesn't seem to do anything, might be a debug-only native.  
---- Confirmed, it is a debug native.  
---- ```
+--- This native it's a debug native. Won't do anything.
 ---
 --- @hash [0xB264C4D2F2B0A78B](https://docs.fivem.net/natives/?_0xB264C4D2F2B0A78B)
 --- @param vehicle Vehicle
 --- @return nil
 --- @overload fun(vehicle: Vehicle): nil
+function AllowAmbientVehiclesToAvoidAdverseConditions(vehicle) end
+
+    
+--- # New Name: AllowAmbientVehiclesToAvoidAdverseConditions
+--- This native it's a debug native. Won't do anything.
+---
+--- @hash [0xB264C4D2F2B0A78B](https://docs.fivem.net/natives/?_0xB264C4D2F2B0A78B)
+--- @param vehicle Vehicle
+--- @return nil
+--- @overload fun(vehicle: Vehicle): nil
+--- @deprecated
 function N_0xb264c4d2f2b0a78b(vehicle) end
 
     
@@ -9971,21 +10546,43 @@ function GetVehicleTyreSmokeColor(vehicle) end
 function GetVehicleCustomPrimaryColour(vehicle) end
 
     
+--- Locks the doors of a specified vehicle to a defined lock state, affecting how players and NPCs can interact with the vehicle.
+--- 
 --- ```
---- // Source GTA VC miss2 leak, matching constants for 0/2/4, testing
---- // They use 10 in am_mp_property_int, don't know what it does atm.
---- enum eCarLock {
----     CARLOCK_NONE = 0,
----     CARLOCK_UNLOCKED = 1,
----     CARLOCK_LOCKED = 2,
----     CARLOCK_LOCKOUT_PLAYER_ONLY = 3,
----     CARLOCK_LOCKED_PLAYER_INSIDE = 4,
----     CARLOCK_LOCKED_INITIALLY = 5,
----     CARLOCK_FORCE_SHUT_DOORS = 6,
----     CARLOCK_LOCKED_BUT_CAN_BE_DAMAGED = 7
+--- NativeDB Introduced: v323
+--- ```
+--- 
+--- ```cpp
+--- enum eVehicleLockState {
+---     VEHICLELOCK_NONE = 0, // No specific lock state, vehicle behaves according to the game's default settings.
+---     VEHICLELOCK_UNLOCKED = 1, // Vehicle is fully unlocked, allowing free entry by players and NPCs.
+---     VEHICLELOCK_LOCKED = 2, // Vehicle is locked, preventing entry by players and NPCs.
+---     VEHICLELOCK_LOCKOUT_PLAYER_ONLY = 3, // Vehicle locks out only players, allowing NPCs to enter.
+---     VEHICLELOCK_LOCKED_PLAYER_INSIDE = 4, // Vehicle is locked once a player enters, preventing others from entering.
+---     VEHICLELOCK_LOCKED_INITIALLY = 5, // Vehicle starts in a locked state, but may be unlocked through game events.
+---     VEHICLELOCK_FORCE_SHUT_DOORS = 6, // Forces the vehicle's doors to shut and lock.
+---     VEHICLELOCK_LOCKED_BUT_CAN_BE_DAMAGED = 7, // Vehicle is locked but can still be damaged.
+---     VEHICLELOCK_LOCKED_BUT_BOOT_UNLOCKED = 8, // Vehicle is locked, but its trunk/boot remains unlocked.
+---     VEHICLELOCK_LOCKED_NO_PASSENGERS = 9, // Vehicle is locked and does not allow passengers, except for the driver.
+---     VEHICLELOCK_CANNOT_ENTER = 10 // Vehicle is completely locked, preventing entry entirely, even if previously inside.
 --- };
+--- 
 --- ```
----
+--- @usage -- Command to lock the car of the player for everyone.
+--- RegisterCommand("lockcar", function()
+---     local playerPed = PlayerPedId() -- Get the player ped
+---     local vehicle = GetVehiclePedIsIn(playerPed, false) -- Get the vehicle the player is in
+---     if (vehicle == 0) then return end -- If the player is not in a vehicle, return
+---     SetVehicleDoorsLocked(vehicle, 2) -- Lock the doors of the vehicle
+--- end, false)
+--- 
+--- -- Command to unlock the car of the player for everyone.
+--- RegisterCommand("unlockcar", function()
+---     local playerPed = PlayerPedId() -- Get the player ped
+---     local vehicle = GetVehiclePedIsIn(playerPed, false) -- Get the vehicle the player is in
+---     if (vehicle == 0) then return end -- If the player is not in a vehicle, return
+---     SetVehicleDoorsLocked(vehicle, 1) -- Unlock the doors of the vehicle
+--- end, false
 --- @hash [0xB664292EAECF7FA6](https://docs.fivem.net/natives/?_0xB664292EAECF7FA6)
 --- @param vehicle Vehicle
 --- @param doorLockStatus number (int)
@@ -10150,18 +10747,18 @@ function GetVehicleHealthPercentage(vehicle) end
 function GetVehicleBodyHealth_2(vehicle) end
 
     
---- SetVehicleJetEngineOn
+--- Calling this native will keep a vehicle's engine running after exiting.
 ---
 --- @hash [0xB8FBC8B1330CA9B4](https://docs.fivem.net/natives/?_0xB8FBC8B1330CA9B4)
 --- @param vehicle Vehicle
 --- @param toggle boolean
 --- @return nil
 --- @overload fun(vehicle: Vehicle, toggle: boolean): nil
-function SetVehicleJetEngineOn(vehicle, toggle) end
+function SetVehicleKeepEngineOnWhenAbandoned(vehicle, toggle) end
 
     
---- # New Name: SetVehicleJetEngineOn
---- SetVehicleJetEngineOn
+--- # New Name: SetVehicleKeepEngineOnWhenAbandoned
+--- Calling this native will keep a vehicle's engine running after exiting.
 ---
 --- @hash [0xB8FBC8B1330CA9B4](https://docs.fivem.net/natives/?_0xB8FBC8B1330CA9B4)
 --- @param vehicle Vehicle
@@ -10170,6 +10767,18 @@ function SetVehicleJetEngineOn(vehicle, toggle) end
 --- @overload fun(vehicle: Vehicle, toggle: boolean): nil
 --- @deprecated
 function N_0xb8fbc8b1330ca9b4(vehicle, toggle) end
+
+    
+--- # New Name: SetVehicleKeepEngineOnWhenAbandoned
+--- Calling this native will keep a vehicle's engine running after exiting.
+---
+--- @hash [0xB8FBC8B1330CA9B4](https://docs.fivem.net/natives/?_0xB8FBC8B1330CA9B4)
+--- @param vehicle Vehicle
+--- @param toggle boolean
+--- @return nil
+--- @overload fun(vehicle: Vehicle, toggle: boolean): nil
+--- @deprecated
+function SetVehicleJetEngineOn(vehicle, toggle) end
 
     
 --- StartVehicleAlarm
@@ -10251,12 +10860,79 @@ function IsVehicleTyreBurst(vehicle, wheelID, completely) end
 function ExplodeVehicle(vehicle, isAudible, isInvisible) end
 
     
---- N_0xba91d045575699ad
----
+--- Checks whether the specified boat vehicle is capsized, meaning it has overturned or is upside down in the water.
+--- @usage -- This example checks if the player is in a boat and if the boat is capsized.
+--- 
+--- -- Retrieve the LocalPlayer.
+--- local playerPed = PlayerPedId()
+--- 
+--- -- Retrieve the vehicle the player is in
+--- local vehicle = GetVehiclePedIsIn(playerPed, false)
+--- 
+--- -- Retrieve the model of the vehicle
+--- local vehicleModel = GetEntityModel(vehicle)
+--- 
+--- -- Check if the vehicle exists in the game world.
+--- if not DoesEntityExist(vehicle) then 
+---     -- If the vehicle does not exist, end the execution of the code here.
+---     return 
+--- end
+--- 
+--- -- Check if the vehicle is a boat.
+--- if not IsThisModelABoat(vehicleModel) then
+---     -- If the vehicle is not a boat, end the execution of the code here.
+---     return
+--- end
+--- 
+--- -- Check if the boat is capsized.
+--- if GetIsBoatCapsized(vehicle) then
+---     print("The boat is capsized!")
+--- else
+---     print("The boat is not capsized!")
+--- en
 --- @hash [0xBA91D045575699AD](https://docs.fivem.net/natives/?_0xBA91D045575699AD)
 --- @param vehicle Vehicle
 --- @return boolean
 --- @overload fun(vehicle: Vehicle): boolean
+function GetIsBoatCapsized(vehicle) end
+
+    
+--- # New Name: GetIsBoatCapsized
+--- Checks whether the specified boat vehicle is capsized, meaning it has overturned or is upside down in the water.
+--- @usage -- This example checks if the player is in a boat and if the boat is capsized.
+--- 
+--- -- Retrieve the LocalPlayer.
+--- local playerPed = PlayerPedId()
+--- 
+--- -- Retrieve the vehicle the player is in
+--- local vehicle = GetVehiclePedIsIn(playerPed, false)
+--- 
+--- -- Retrieve the model of the vehicle
+--- local vehicleModel = GetEntityModel(vehicle)
+--- 
+--- -- Check if the vehicle exists in the game world.
+--- if not DoesEntityExist(vehicle) then 
+---     -- If the vehicle does not exist, end the execution of the code here.
+---     return 
+--- end
+--- 
+--- -- Check if the vehicle is a boat.
+--- if not IsThisModelABoat(vehicleModel) then
+---     -- If the vehicle is not a boat, end the execution of the code here.
+---     return
+--- end
+--- 
+--- -- Check if the boat is capsized.
+--- if GetIsBoatCapsized(vehicle) then
+---     print("The boat is capsized!")
+--- else
+---     print("The boat is not capsized!")
+--- en
+--- @hash [0xBA91D045575699AD](https://docs.fivem.net/natives/?_0xBA91D045575699AD)
+--- @param vehicle Vehicle
+--- @return boolean
+--- @overload fun(vehicle: Vehicle): boolean
+--- @deprecated
 function N_0xba91d045575699ad(vehicle) end
 
     
@@ -11069,21 +11745,17 @@ function N_0xc970d0e0fc31d768(vehicle, wheelIndex, multiplier) end
 
     
 --- See eDoorId declared in [`SET_VEHICLE_DOOR_SHUT`](https://docs.fivem.net/natives/?_0x93D9BD300D7789E5)
---- 
---- Returns vehicle door destroy type previously set with \_SET_VEHICLE_DOOR_DESTROY_TYPE
 ---
 --- @hash [0xCA4AC3EAAE46EC7B](https://docs.fivem.net/natives/?_0xCA4AC3EAAE46EC7B)
 --- @param vehicle Vehicle
 --- @param doorIndex number (int)
 --- @return number
 --- @overload fun(vehicle: Vehicle, doorIndex: number): number
-function GetVehicleDoorDestroyType(vehicle, doorIndex) end
+function GetVehicleIndividualDoorLockStatus(vehicle, doorIndex) end
 
     
---- # New Name: GetVehicleDoorDestroyType
+--- # New Name: GetVehicleIndividualDoorLockStatus
 --- See eDoorId declared in [`SET_VEHICLE_DOOR_SHUT`](https://docs.fivem.net/natives/?_0x93D9BD300D7789E5)
---- 
---- Returns vehicle door destroy type previously set with \_SET_VEHICLE_DOOR_DESTROY_TYPE
 ---
 --- @hash [0xCA4AC3EAAE46EC7B](https://docs.fivem.net/natives/?_0xCA4AC3EAAE46EC7B)
 --- @param vehicle Vehicle
@@ -11092,6 +11764,18 @@ function GetVehicleDoorDestroyType(vehicle, doorIndex) end
 --- @overload fun(vehicle: Vehicle, doorIndex: number): number
 --- @deprecated
 function N_0xca4ac3eaae46ec7b(vehicle, doorIndex) end
+
+    
+--- # New Name: GetVehicleIndividualDoorLockStatus
+--- See eDoorId declared in [`SET_VEHICLE_DOOR_SHUT`](https://docs.fivem.net/natives/?_0x93D9BD300D7789E5)
+---
+--- @hash [0xCA4AC3EAAE46EC7B](https://docs.fivem.net/natives/?_0xCA4AC3EAAE46EC7B)
+--- @param vehicle Vehicle
+--- @param doorIndex number (int)
+--- @return number
+--- @overload fun(vehicle: Vehicle, doorIndex: number): number
+--- @deprecated
+function GetVehicleDoorDestroyType(vehicle, doorIndex) end
 
     
 --- SetNumberOfParkedVehicles
@@ -11344,15 +12028,31 @@ function GetAreBombBayDoorsOpen(aircraft) end
 function DetachVehicleFromAnyTowTruck(vehicle) end
 
     
---- ```
---- NativeDB Introduced: v1290
---- ```
----
+--- Used alongside [`SET_SPECIAL_FLIGHT_MODE_TARGET_RATIO`](https://docs.fivem.net/natives/?_0x438B3D7CA026FE91), this function initiates hover transformation for vehicles with a hover mode, like the `Deluxo`, based on a specified ratio (0.0 to 1.0). Incorrect values can glitch the vehicle. Without pairing, vehicles revert to car mode. Ineffective on the `oppressor2`
+--- @usage -- In this case we are enabling the hover mode for the vehicle and initiates hover transformation.
+--- local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
+--- SetSpecialFlightModeRatio(vehicle, 0.75 - GetFrameTime())
+--- SetVehicleHoverTransformPercentage(vehicle, 1.0
 --- @hash [0xD138FA15C9776837](https://docs.fivem.net/natives/?_0xD138FA15C9776837)
 --- @param vehicle Vehicle
 --- @param ratio number (float)
 --- @return nil
 --- @overload fun(vehicle: Vehicle, ratio: number): nil
+function SetSpecialFlightModeRatio(vehicle, ratio) end
+
+    
+--- # New Name: SetSpecialFlightModeRatio
+--- Used alongside [`SET_SPECIAL_FLIGHT_MODE_TARGET_RATIO`](https://docs.fivem.net/natives/?_0x438B3D7CA026FE91), this function initiates hover transformation for vehicles with a hover mode, like the `Deluxo`, based on a specified ratio (0.0 to 1.0). Incorrect values can glitch the vehicle. Without pairing, vehicles revert to car mode. Ineffective on the `oppressor2`
+--- @usage -- In this case we are enabling the hover mode for the vehicle and initiates hover transformation.
+--- local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
+--- SetSpecialFlightModeRatio(vehicle, 0.75 - GetFrameTime())
+--- SetVehicleHoverTransformPercentage(vehicle, 1.0
+--- @hash [0xD138FA15C9776837](https://docs.fivem.net/natives/?_0xD138FA15C9776837)
+--- @param vehicle Vehicle
+--- @param ratio number (float)
+--- @return nil
+--- @overload fun(vehicle: Vehicle, ratio: number): nil
+--- @deprecated
 function SetVehicleHoverTransformRatio(vehicle, ratio) end
 
     
@@ -11449,11 +12149,7 @@ function N_0xd4b8e3d1917bc86b(toggle) end
 function SetSomethingMultiplierThisFrame(toggle) end
 
     
---- ```
---- Only used like this:  
---- if (VEHICLE::GET_VEHICLE_IS_MERCENARY(ENTITY::GET_VEHICLE_INDEX_FROM_ENTITY_INDEX(v_3))) {                                                        sub_157e9c(g_40001._f1868, 0);  
---- }  
---- ```
+--- Returns whether the specified vehicle is designated as a mercenary vehicle
 ---
 --- @hash [0xD4C4642CB7F50B5D](https://docs.fivem.net/natives/?_0xD4C4642CB7F50B5D)
 --- @param vehicle Vehicle
@@ -11463,11 +12159,7 @@ function GetVehicleIsMercenary(vehicle) end
 
     
 --- # New Name: GetVehicleIsMercenary
---- ```
---- Only used like this:  
---- if (VEHICLE::GET_VEHICLE_IS_MERCENARY(ENTITY::GET_VEHICLE_INDEX_FROM_ENTITY_INDEX(v_3))) {                                                        sub_157e9c(g_40001._f1868, 0);  
---- }  
---- ```
+--- Returns whether the specified vehicle is designated as a mercenary vehicle
 ---
 --- @hash [0xD4C4642CB7F50B5D](https://docs.fivem.net/natives/?_0xD4C4642CB7F50B5D)
 --- @param vehicle Vehicle
@@ -11591,9 +12283,9 @@ function SetRandomBoatsInMp(toggle) end
 --- GetVehicleFlightNozzlePosition
 --- @usage local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
 --- 
---- if GetVehicleHoverModePercentage(vehicle) == 0.0 then
+--- if GetVehicleFlightNozzlePosition(vehicle) == 0.0 then
 ---     print("Flying normally!")
---- elseif GetVehicleHoverModePercentage(vehicle) == 1.0 then
+--- elseif GetVehicleFlightNozzlePosition(vehicle) == 1.0 then
 ---     print("Flying in VTOL mode!")
 --- else
 ---     print("Currently switching hover mode!")
@@ -11610,9 +12302,9 @@ function GetVehicleFlightNozzlePosition(aircraft) end
 --- GetVehicleFlightNozzlePosition
 --- @usage local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
 --- 
---- if GetVehicleHoverModePercentage(vehicle) == 0.0 then
+--- if GetVehicleFlightNozzlePosition(vehicle) == 0.0 then
 ---     print("Flying normally!")
---- elseif GetVehicleHoverModePercentage(vehicle) == 1.0 then
+--- elseif GetVehicleFlightNozzlePosition(vehicle) == 1.0 then
 ---     print("Flying in VTOL mode!")
 --- else
 ---     print("Currently switching hover mode!")
@@ -11630,9 +12322,9 @@ function N_0xda62027c8bdb326e(aircraft) end
 --- GetVehicleFlightNozzlePosition
 --- @usage local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
 --- 
---- if GetVehicleHoverModePercentage(vehicle) == 0.0 then
+--- if GetVehicleFlightNozzlePosition(vehicle) == 0.0 then
 ---     print("Flying normally!")
---- elseif GetVehicleHoverModePercentage(vehicle) == 1.0 then
+--- elseif GetVehicleFlightNozzlePosition(vehicle) == 1.0 then
 ---     print("Flying in VTOL mode!")
 --- else
 ---     print("Currently switching hover mode!")
@@ -11650,9 +12342,9 @@ function GetPlaneHoverModePercentage(aircraft) end
 --- GetVehicleFlightNozzlePosition
 --- @usage local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
 --- 
---- if GetVehicleHoverModePercentage(vehicle) == 0.0 then
+--- if GetVehicleFlightNozzlePosition(vehicle) == 0.0 then
 ---     print("Flying normally!")
---- elseif GetVehicleHoverModePercentage(vehicle) == 1.0 then
+--- elseif GetVehicleFlightNozzlePosition(vehicle) == 1.0 then
 ---     print("Flying in VTOL mode!")
 --- else
 ---     print("Currently switching hover mode!")
@@ -11670,9 +12362,9 @@ function GetVehicleHoverModePercentage(aircraft) end
 --- GetVehicleFlightNozzlePosition
 --- @usage local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
 --- 
---- if GetVehicleHoverModePercentage(vehicle) == 0.0 then
+--- if GetVehicleFlightNozzlePosition(vehicle) == 0.0 then
 ---     print("Flying normally!")
---- elseif GetVehicleHoverModePercentage(vehicle) == 1.0 then
+--- elseif GetVehicleFlightNozzlePosition(vehicle) == 1.0 then
 ---     print("Flying in VTOL mode!")
 --- else
 ---     print("Currently switching hover mode!")
@@ -12232,15 +12924,15 @@ function CopyVehicleDamages(sourceVehicle, targetVehicle) end
 function N_0xe44a982368a4af23(sourceVehicle, targetVehicle) end
 
     
---- ```
---- iVar3 = get_vehicle_cause_of_destruction(uLocal_248[iVar2]);  
---- if (iVar3 == joaat("weapon_stickybomb"))  
---- {  
----      func_171(726);  
----      iLocal_260 = 1;  
---- }  
---- ```
----
+--- GetVehicleCauseOfDestruction
+--- @usage local destructionCauseHash = GetVehicleCauseOfDestruction(GetVehiclePedIsIn(PlayerPedId(), true))
+--- if destructionCauseHash == GetHashKey("weapon_stickybomb") then
+---      -- It looks like the vehicle was destroyed by a sticky bomb
+---      Citizen.Trace('Vehicle was destroyed by a sticky bomb!')
+--- elseif destructionCauseHash ~= 0 then
+---      -- It looks like the vehicle was destroyed by something else!
+---      Citizen.Trace('Vehicle was destroyed by: ' .. destructionCauseHash)
+--- en
 --- @hash [0xE495D1EF4C91FD20](https://docs.fivem.net/natives/?_0xE495D1EF4C91FD20)
 --- @param vehicle Vehicle
 --- @return Hash
@@ -12942,31 +13634,55 @@ function RemoveVehicleRecording(recording, script) end
 function GetVehicleNumberPlateTextIndex(vehicle) end
 
     
---- ```
---- If false, anything related to INPUT_VEH_TRANSFORM are ignored (changing hover state through script natives still possible).
---- ```
---- 
---- ```
---- NativeDB Introduced: v1290
---- ```
----
+--- Allows locking the hover/non-hover mode of a vehicle, such as the flying mode of the `Deluxo`. In the decompiled scripts, this native is used on `oppressor2` but couldn't get it to work on it.
+--- @usage -- Checks the altitude of the Deluxo and locks its current mode when above 150 meters.
+--- -- If the Deluxo is in flying mode at this altitude, it will be unable to switch to driving mode, and vice versa.
+--- Citizen.CreateThread(function()
+---     local coords -- Variable to store the vehicle's coordinates.
+---     local vehicle -- Variable to store the vehicle entity.
+---     
+---     repeat
+---         vehicle = GetVehiclePedIsIn(PlayerPedId(), false) -- Get the vehicle the player is currently in.
+---         
+---         if (GetEntityModel(vehicle) == joaat("deluxo")) then -- Check if the vehicle is a Deluxo.
+---             coords = GetEntityCoords(vehicle) -- Get the current coordinates of the vehicle.
+---         end
+---         
+---         Citizen.Wait(0) -- Wait for the next frame.
+---         
+---     until coords.z >= 150.0 -- Keep looping until the Deluxo is above 150 meters.
+---     
+---     SetSpecialFlightModeAllowed(vehicle, false) -- Lock the Deluxo's current mode (flying or driving).
+--- end
 --- @hash [0xF1211889DF15A763](https://docs.fivem.net/natives/?_0xF1211889DF15A763)
 --- @param vehicle Vehicle
 --- @param toggle boolean
 --- @return nil
 --- @overload fun(vehicle: Vehicle, toggle: boolean): nil
-function SetVehicleHoverTransformEnabled(vehicle, toggle) end
+function SetSpecialFlightModeAllowed(vehicle, toggle) end
 
     
---- # New Name: SetVehicleHoverTransformEnabled
---- ```
---- If false, anything related to INPUT_VEH_TRANSFORM are ignored (changing hover state through script natives still possible).
---- ```
---- 
---- ```
---- NativeDB Introduced: v1290
---- ```
----
+--- # New Name: SetSpecialFlightModeAllowed
+--- Allows locking the hover/non-hover mode of a vehicle, such as the flying mode of the `Deluxo`. In the decompiled scripts, this native is used on `oppressor2` but couldn't get it to work on it.
+--- @usage -- Checks the altitude of the Deluxo and locks its current mode when above 150 meters.
+--- -- If the Deluxo is in flying mode at this altitude, it will be unable to switch to driving mode, and vice versa.
+--- Citizen.CreateThread(function()
+---     local coords -- Variable to store the vehicle's coordinates.
+---     local vehicle -- Variable to store the vehicle entity.
+---     
+---     repeat
+---         vehicle = GetVehiclePedIsIn(PlayerPedId(), false) -- Get the vehicle the player is currently in.
+---         
+---         if (GetEntityModel(vehicle) == joaat("deluxo")) then -- Check if the vehicle is a Deluxo.
+---             coords = GetEntityCoords(vehicle) -- Get the current coordinates of the vehicle.
+---         end
+---         
+---         Citizen.Wait(0) -- Wait for the next frame.
+---         
+---     until coords.z >= 150.0 -- Keep looping until the Deluxo is above 150 meters.
+---     
+---     SetSpecialFlightModeAllowed(vehicle, false) -- Lock the Deluxo's current mode (flying or driving).
+--- end
 --- @hash [0xF1211889DF15A763](https://docs.fivem.net/natives/?_0xF1211889DF15A763)
 --- @param vehicle Vehicle
 --- @param toggle boolean
@@ -12974,6 +13690,36 @@ function SetVehicleHoverTransformEnabled(vehicle, toggle) end
 --- @overload fun(vehicle: Vehicle, toggle: boolean): nil
 --- @deprecated
 function N_0xf1211889df15a763(vehicle, toggle) end
+
+    
+--- # New Name: SetSpecialFlightModeAllowed
+--- Allows locking the hover/non-hover mode of a vehicle, such as the flying mode of the `Deluxo`. In the decompiled scripts, this native is used on `oppressor2` but couldn't get it to work on it.
+--- @usage -- Checks the altitude of the Deluxo and locks its current mode when above 150 meters.
+--- -- If the Deluxo is in flying mode at this altitude, it will be unable to switch to driving mode, and vice versa.
+--- Citizen.CreateThread(function()
+---     local coords -- Variable to store the vehicle's coordinates.
+---     local vehicle -- Variable to store the vehicle entity.
+---     
+---     repeat
+---         vehicle = GetVehiclePedIsIn(PlayerPedId(), false) -- Get the vehicle the player is currently in.
+---         
+---         if (GetEntityModel(vehicle) == joaat("deluxo")) then -- Check if the vehicle is a Deluxo.
+---             coords = GetEntityCoords(vehicle) -- Get the current coordinates of the vehicle.
+---         end
+---         
+---         Citizen.Wait(0) -- Wait for the next frame.
+---         
+---     until coords.z >= 150.0 -- Keep looping until the Deluxo is above 150 meters.
+---     
+---     SetSpecialFlightModeAllowed(vehicle, false) -- Lock the Deluxo's current mode (flying or driving).
+--- end
+--- @hash [0xF1211889DF15A763](https://docs.fivem.net/natives/?_0xF1211889DF15A763)
+--- @param vehicle Vehicle
+--- @param toggle boolean
+--- @return nil
+--- @overload fun(vehicle: Vehicle, toggle: boolean): nil
+--- @deprecated
+function SetVehicleHoverTransformEnabled(vehicle, toggle) end
 
     
 --- ```
@@ -13023,14 +13769,27 @@ function GetVehicleBodyHealth(vehicle) end
 function SetVehicleDoorControl(vehicle, doorIndex, speed, angle) end
 
     
---- SetConvertibleRoof
----
+--- This allows for the vehicle's roof to be put on when set to true, and removed when set to false, provided that the vehicle has a version with a roof and a version without a roof.
+--- 
+--- #### Vehicles with both roofed and roofless versions (others may exist; this list is compiled from decompiled scripts).
+--- 
+--- *   chino
+--- *   voltic
+--- *   buccaneer
+--- *   buccaneer2
+--- *   chino2
+--- *   faction
+--- *   faction2
+--- *   mamba
+--- @usage -- In this case we are removing the roof from the vehicle.
+--- local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
+--- SetConvertibleRoof(vehicle, false
 --- @hash [0xF39C4F538B5124C2](https://docs.fivem.net/natives/?_0xF39C4F538B5124C2)
 --- @param vehicle Vehicle
---- @param p1 boolean
+--- @param toggle boolean
 --- @return nil
---- @overload fun(vehicle: Vehicle, p1: boolean): nil
-function SetConvertibleRoof(vehicle, p1) end
+--- @overload fun(vehicle: Vehicle, toggle: boolean): nil
+function SetConvertibleRoof(vehicle, toggle) end
 
     
 --- N_0xf3b0e0aed097a3f5
@@ -13338,17 +14097,71 @@ function N_0xf796359a959df65d(toggle) end
 function DisplayDistantVehicles(toggle) end
 
     
---- Will return a vehicle's manufacturer display label.
---- Returns "CARNOTFOUND" if the hash doesn't match a vehicle hash.
+--- Retrieves the manufacturer's name for a specified vehicle.
 --- 
 --- ```
 --- NativeDB Introduced: v1868
 --- ```
----
+--- @usage -- This example prints the manufacturer of the player's current vehicle.
+--- 
+--- -- Retrieve the player ped.
+--- local playerPed = PlayerPedId()
+--- 
+--- -- Retrieve the vehicle the player is currently in.
+--- local vehicle = GetVehiclePedIsIn(playerPed, false)
+--- 
+--- -- If the vehicle does not exist, end the execution of the code here.
+--- if not DoesEntityExist(vehicle) then 
+---     return 
+--- end
+--- 
+--- -- Retrieve the model hash of the vehicle.
+--- local vehicleHash = GetEntityModel(vehicle)
+--- 
+--- -- Retrieve the manufacturer of the vehicle.
+--- local manufacturer = GetMakeNameFromVehicleModel(vehicleHash)
+--- 
+--- -- Print the manufacturer of the vehicle.
+--- print("Vehicle Manufacturer: " .. manufacturer
 --- @hash [0xF7AF4F159FF99F97](https://docs.fivem.net/natives/?_0xF7AF4F159FF99F97)
 --- @param modelHash Hash
 --- @return string
 --- @overload fun(modelHash: Hash): string
+function GetMakeNameFromVehicleModel(modelHash) end
+
+    
+--- # New Name: GetMakeNameFromVehicleModel
+--- Retrieves the manufacturer's name for a specified vehicle.
+--- 
+--- ```
+--- NativeDB Introduced: v1868
+--- ```
+--- @usage -- This example prints the manufacturer of the player's current vehicle.
+--- 
+--- -- Retrieve the player ped.
+--- local playerPed = PlayerPedId()
+--- 
+--- -- Retrieve the vehicle the player is currently in.
+--- local vehicle = GetVehiclePedIsIn(playerPed, false)
+--- 
+--- -- If the vehicle does not exist, end the execution of the code here.
+--- if not DoesEntityExist(vehicle) then 
+---     return 
+--- end
+--- 
+--- -- Retrieve the model hash of the vehicle.
+--- local vehicleHash = GetEntityModel(vehicle)
+--- 
+--- -- Retrieve the manufacturer of the vehicle.
+--- local manufacturer = GetMakeNameFromVehicleModel(vehicleHash)
+--- 
+--- -- Print the manufacturer of the vehicle.
+--- print("Vehicle Manufacturer: " .. manufacturer
+--- @hash [0xF7AF4F159FF99F97](https://docs.fivem.net/natives/?_0xF7AF4F159FF99F97)
+--- @param modelHash Hash
+--- @return string
+--- @overload fun(modelHash: Hash): string
+--- @deprecated
 function GetMakeNameFromVehicleModel(modelHash) end
 
     
@@ -13458,19 +14271,19 @@ function N_0xf87d9f2301f7d206(vehicle) end
 function N_0xf8b49f5ba7f850e7(vehicle, p1) end
 
     
---- ```
+--- Returns the convertible state of the specified vehicle.
+--- 
+--- ```cpp
 --- enum RoofState
 --- {
----      ROOFSTATE_UP = 0;
----      ROOFSTATE_LOWERING,
----      ROOFSTATE_DOWN,
----      ROOFSTATE_RAISING
+---      ROOFSTATE_UP = 0,
+---      ROOFSTATE_LOWERING = 1,
+---      ROOFSTATE_DOWN = 2,
+---      ROOFSTATE_RAISING = 3
 --- };
 --- ```
---- 
---- Got a "6" return value but not sure about what the value means
---- 6 -> unknown (Stopped but not fully open ?)
----
+--- @usage local vehicle = GetVehiclePedIsIn(PlayerPedId())
+--- print(GetConvertibleRoofState(vehicle)
 --- @hash [0xF8C397922FC03F41](https://docs.fivem.net/natives/?_0xF8C397922FC03F41)
 --- @param vehicle Vehicle
 --- @return number
@@ -13628,8 +14441,14 @@ function SetHeliTailRotorHealth(vehicle, health) end
 function N_0xfe205f38aaa58e5b(vehicle, health) end
 
     
+--- Checks the angle of the door mapped from 0.0 - 1.0 where 0.0 is fully closed and 1.0 is fully open.
+--- 
 --- See eDoorId declared in [`SET_VEHICLE_DOOR_SHUT`](https://docs.fivem.net/natives/?_0x93D9BD300D7789E5)
----
+--- @usage local veh = GetVehiclePedIsIn(PlayerPedId()
+--- -- check if driver door is open
+--- if GetVehicleDoorAngleRatio(veh, 0) > 0.0 then
+---   print("Driver door is open!)
+--- en
 --- @hash [0xFE3F9C29F7B32BD5](https://docs.fivem.net/natives/?_0xFE3F9C29F7B32BD5)
 --- @param vehicle Vehicle
 --- @param doorIndex number (int)

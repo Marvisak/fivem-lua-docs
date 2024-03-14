@@ -621,7 +621,12 @@ function LoadScene(x, y, z) end
 
     
 --- GetPlayerSwitchState
----
+--- @usage local stateSwitch = GetPlayerSwitchState()
+--- if stateSwitch == 5 then
+---     -- Player is in the air
+---     elseif stateSwitch == 12 then
+---     -- Player is not in the air or switch is completed
+--- en
 --- @hash [0x470555300D10B2A5](https://docs.fivem.net/natives/?_0x470555300D10B2A5)
 ---
 --- @return number
@@ -973,14 +978,13 @@ function N_0x8a7a40100edfec58(interior, roomName) end
 function RequestInteriorRoomByName(interior, roomName) end
 
     
---- Control how many new (ambient?) peds will spawn in the game world.
---- Range for p0 seems to be 0-3, where 0 is none and 3 is the normal level.
+--- Sets the memory budget level for ped population.
 ---
 --- @hash [0x8C95333CFC3340F3](https://docs.fivem.net/natives/?_0x8C95333CFC3340F3)
---- @param p0 number (int)
+--- @param budgetLevel number (int)
 --- @return nil
---- @overload fun(p0: number): nil
-function SetPedPopulationBudget(p0) end
+--- @overload fun(budgetLevel: number): nil
+function SetPedPopulationBudget(budgetLevel) end
 
     
 --- AllowPlayerSwitchAscent
@@ -1089,11 +1093,27 @@ function HasModelLoaded(model) end
 --- ```
 ---
 --- @hash [0x9A9D1BA639675CF1](https://docs.fivem.net/natives/?_0x9A9D1BA639675CF1)
---- @param name string (char*)
+--- @param islandName string (char*)
 --- @param toggle boolean
 --- @return nil
---- @overload fun(name: string, toggle: boolean): nil
-function SetIslandHopperEnabled(name, toggle) end
+--- @overload fun(islandName: string, toggle: boolean): nil
+function SetIslandEnabled(islandName, toggle) end
+
+    
+--- # New Name: SetIslandEnabled
+--- Enables the specified island. For more information, see islandhopper.meta
+--- 
+--- ```
+--- NativeDB Introduced: v2189
+--- ```
+---
+--- @hash [0x9A9D1BA639675CF1](https://docs.fivem.net/natives/?_0x9A9D1BA639675CF1)
+--- @param islandName string (char*)
+--- @param toggle boolean
+--- @return nil
+--- @overload fun(islandName: string, toggle: boolean): nil
+--- @deprecated
+function SetIslandHopperEnabled(islandName, toggle) end
 
     
 --- BeginSrl
@@ -1171,50 +1191,34 @@ function OverrideLodscaleThisFrame(scaling) end
 function N_0xa76359fc80b2438e(scaling) end
 
     
---- ```
---- doesn't act normally when used on mount chilliad
+--- You can check if the player is in a Switch state with [`IS_PLAYER_SWITCH_IN_PROGRESS`](https://docs.fivem.net/natives/?_0xD9D2CFFF49FAB35F).
 --- 
---- flags:
---- 
---- 0: normal
---- 1: no transition
---- 255: switch IN
---- 
---- switchType: 0 - 3
---- 
---- 0: 1 step towards ped
---- 1: 3 steps out from ped
---- 2: 1 step out from ped
---- 3: 1 step towards ped
---- ```
----
+--- ***Note:** Doesn't act normally when used on Mount Chiliad.*
+--- @usage -- Check if the player is in a Switch "state"
+--- if not IsPlayerSwitchInProgress() then
+---     -- If the player is not already in a Switch state, initiate a Switch
+---     SwitchToMultiFirstPart(PlayerPedId(), 0, 1)
+---     -- In this case, switchType is set to 1, which means "3 steps out from ped"
+--- en
 --- @hash [0xAAB3200ED59016BC](https://docs.fivem.net/natives/?_0xAAB3200ED59016BC)
 --- @param ped Ped
 --- @param flags number (int)
 --- @param switchType number (int)
 --- @return nil
 --- @overload fun(ped: Ped, flags: number, switchType: number): nil
-function SwitchOutPlayer(ped, flags, switchType) end
+function SwitchToMultiFirstpart(ped, flags, switchType) end
 
     
---- # New Name: SwitchOutPlayer
---- ```
---- doesn't act normally when used on mount chilliad
+--- # New Name: SwitchToMultiFirstpart
+--- You can check if the player is in a Switch state with [`IS_PLAYER_SWITCH_IN_PROGRESS`](https://docs.fivem.net/natives/?_0xD9D2CFFF49FAB35F).
 --- 
---- flags:
---- 
---- 0: normal
---- 1: no transition
---- 255: switch IN
---- 
---- switchType: 0 - 3
---- 
---- 0: 1 step towards ped
---- 1: 3 steps out from ped
---- 2: 1 step out from ped
---- 3: 1 step towards ped
---- ```
----
+--- ***Note:** Doesn't act normally when used on Mount Chiliad.*
+--- @usage -- Check if the player is in a Switch "state"
+--- if not IsPlayerSwitchInProgress() then
+---     -- If the player is not already in a Switch state, initiate a Switch
+---     SwitchToMultiFirstPart(PlayerPedId(), 0, 1)
+---     -- In this case, switchType is set to 1, which means "3 steps out from ped"
+--- en
 --- @hash [0xAAB3200ED59016BC](https://docs.fivem.net/natives/?_0xAAB3200ED59016BC)
 --- @param ped Ped
 --- @param flags number (int)
@@ -1223,6 +1227,26 @@ function SwitchOutPlayer(ped, flags, switchType) end
 --- @overload fun(ped: Ped, flags: number, switchType: number): nil
 --- @deprecated
 function N_0xaab3200ed59016bc(ped, flags, switchType) end
+
+    
+--- # New Name: SwitchToMultiFirstpart
+--- You can check if the player is in a Switch state with [`IS_PLAYER_SWITCH_IN_PROGRESS`](https://docs.fivem.net/natives/?_0xD9D2CFFF49FAB35F).
+--- 
+--- ***Note:** Doesn't act normally when used on Mount Chiliad.*
+--- @usage -- Check if the player is in a Switch "state"
+--- if not IsPlayerSwitchInProgress() then
+---     -- If the player is not already in a Switch state, initiate a Switch
+---     SwitchToMultiFirstPart(PlayerPedId(), 0, 1)
+---     -- In this case, switchType is set to 1, which means "3 steps out from ped"
+--- en
+--- @hash [0xAAB3200ED59016BC](https://docs.fivem.net/natives/?_0xAAB3200ED59016BC)
+--- @param ped Ped
+--- @param flags number (int)
+--- @param switchType number (int)
+--- @return nil
+--- @overload fun(ped: Ped, flags: number, switchType: number): nil
+--- @deprecated
+function SwitchOutPlayer(ped, flags, switchType) end
 
     
 --- ```
@@ -1711,24 +1735,53 @@ function EnableSwitchPauseBeforeDescent() end
 function N_0xd4793dff3af2abcd() end
 
     
---- Use after using \_SWITCH_OUT_PLAYER to swoop the camera back down to the player's ped.
----
+--- After using [`SWITCH_TO_MULTI_FIRSTPART`](https://docs.fivem.net/natives/?_0xAAB3200ED59016BC) , use this native to smoothly return the camera to the player's character.
+--- @usage RegisterCommand("switchPlayer", function()
+---     if IsPlayerSwitchInProgress() then return end
+---     local ped = PlayerPedId()
+---     SwitchToMultiFirstPart(ped, 0, 1)
+---     Citizen.Wait(5000)
+---     SwitchToMultiSecondPart(ped)
+--- end, false
 --- @hash [0xD8295AF639FD9CB8](https://docs.fivem.net/natives/?_0xD8295AF639FD9CB8)
 --- @param ped Ped
 --- @return nil
 --- @overload fun(ped: Ped): nil
-function SwitchInPlayer(ped) end
+function SwitchToMultiSecondpart(ped) end
 
     
---- # New Name: SwitchInPlayer
---- Use after using \_SWITCH_OUT_PLAYER to swoop the camera back down to the player's ped.
----
+--- # New Name: SwitchToMultiSecondpart
+--- After using [`SWITCH_TO_MULTI_FIRSTPART`](https://docs.fivem.net/natives/?_0xAAB3200ED59016BC) , use this native to smoothly return the camera to the player's character.
+--- @usage RegisterCommand("switchPlayer", function()
+---     if IsPlayerSwitchInProgress() then return end
+---     local ped = PlayerPedId()
+---     SwitchToMultiFirstPart(ped, 0, 1)
+---     Citizen.Wait(5000)
+---     SwitchToMultiSecondPart(ped)
+--- end, false
 --- @hash [0xD8295AF639FD9CB8](https://docs.fivem.net/natives/?_0xD8295AF639FD9CB8)
 --- @param ped Ped
 --- @return nil
 --- @overload fun(ped: Ped): nil
 --- @deprecated
 function N_0xd8295af639fd9cb8(ped) end
+
+    
+--- # New Name: SwitchToMultiSecondpart
+--- After using [`SWITCH_TO_MULTI_FIRSTPART`](https://docs.fivem.net/natives/?_0xAAB3200ED59016BC) , use this native to smoothly return the camera to the player's character.
+--- @usage RegisterCommand("switchPlayer", function()
+---     if IsPlayerSwitchInProgress() then return end
+---     local ped = PlayerPedId()
+---     SwitchToMultiFirstPart(ped, 0, 1)
+---     Citizen.Wait(5000)
+---     SwitchToMultiSecondPart(ped)
+--- end, false
+--- @hash [0xD8295AF639FD9CB8](https://docs.fivem.net/natives/?_0xD8295AF639FD9CB8)
+--- @param ped Ped
+--- @return nil
+--- @overload fun(ped: Ped): nil
+--- @deprecated
+function SwitchInPlayer(ped) end
 
     
 --- ```
@@ -1796,9 +1849,7 @@ function SetInteriorActive(interiorID, toggle) end
 function SetModelAsNoLongerNeeded(model) end
 
     
---- ```
---- IPL list: pastebin.com/iNGLY32D  
---- ```
+--- IPL list can be found [here](https://gist.github.com/4mmonium/4c8a076b5f712a7cc64666003009a2e7).
 ---
 --- @hash [0xEE6C5AD3ECE0A82D](https://docs.fivem.net/natives/?_0xEE6C5AD3ECE0A82D)
 --- @param iplName string (char*)

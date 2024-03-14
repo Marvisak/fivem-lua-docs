@@ -554,9 +554,7 @@ function GetDesObjectAnimProgress(object) end
 function N_0x27f248c3febfaad3(p0, p1) end
 
     
---- ```
---- Pickup hashes: pastebin.com/8EuSv2r1  
---- ```
+--- Pickup hashes can be found [here](https://gist.github.com/4mmonium/1eabfb6b3996e3aa6b9525a3eccf8a0b).
 ---
 --- @hash [0x27F9D613092159CF](https://docs.fivem.net/natives/?_0x27F9D613092159CF)
 --- @param pickupHash Hash
@@ -594,9 +592,7 @@ function RemoveAllPickupsOfType(pickupHash) end
 function IsPointInAngledArea(xPos, yPos, zPos, x1, y1, z1, x2, y2, z2, width, p10, includez) end
 
     
---- ```
---- Pickup hashes: pastebin.com/8EuSv2r1
---- ```
+--- Pickup hashes can be found [here](https://gist.github.com/4mmonium/1eabfb6b3996e3aa6b9525a3eccf8a0b).
 ---
 --- @hash [0x2EAF1FDB2FB55698](https://docs.fivem.net/natives/?_0x2EAF1FDB2FB55698)
 --- @param pickupHash Hash
@@ -1414,10 +1410,7 @@ function N_0x659f9d71f52843f8(p0, p1) end
 function N_0x66a49d021870fe88() end
 
     
---- ```
---- Used for doing money drop  
---- Pickup hashes: pastebin.com/8EuSv2r1  
---- ```
+--- Creates an ambient pickup given the hash. Pickup hashes can be found [here](https://gist.github.com/4mmonium/1eabfb6b3996e3aa6b9525a3eccf8a0b).
 ---
 --- @hash [0x673966A0C0FD7171](https://docs.fivem.net/natives/?_0x673966A0C0FD7171)
 --- @param pickupHash Hash
@@ -3240,18 +3233,137 @@ function SetStateOfClosestDoorOfType(type, x, y, z, locked, heading, p6) end
 function N_0xf92099527db8e2a7(p0, p1) end
 
     
---- N_0xf9c1681347c8bd15
----
+--- Resets and brings back all the children of a fragment based object.
+--- This should be used when attaching or detaching an object from another entity, especially when the object being detached consists of multiple fragments.
+--- 
+--- Attempting to teleport a fragment-based object using [`SET_ENTITY_COORDS`](https://docs.fivem.net/natives/?_0x06843DA7060A026B) such as a flag object, will result in it remaining in place and failing to teleport, given the condition mentioned in the preceding statement.
+--- 
+--- The native should be executed after detaching the object from its parent entity and before calling [`SET_ENTITY_COORDS`](https://docs.fivem.net/natives/?_0x06843DA7060A026B).
+--- 
+--- Example given down below.
+--- @usage RegisterCommand("fixobject", function(source, args, rawCommand)
+---     -- prop_flag_ls does not get teleported after being attached to the player
+---     -- prop_beachflag_01 only the pole gets teleported after being attached to the player
+---     local modelHash = `prop_beachflag_01`
+---     if not HasModelLoaded(modelHash) then
+---         RequestModel(modelHash)
+---         while not HasModelLoaded(modelHash) do
+---             Citizen.Wait(1)
+---         end
+---     end
+--- 
+---     -- Set argument 1 to 0 if you wish to see what occurs when fragments aren't fixed.
+---     -- i.e. /fixobject 0
+---     local shouldFixFragments = tonumber(args[1]) or true
+---     
+---     local entity = CreateObject(modelHash, GetEntityCoords(PlayerPedId()), true, false, false)
+---     AttachEntityToEntity(
+---         entity,
+---         PlayerPedId(),
+---         GetPedBoneIndex(PlayerPedId(), 0x796E), --0x796E
+---         0.0, 0.0, 0.1, -- offset attachment for the first entity
+---         0.0, 0.0, 0.0, 
+---         false, 
+---         false, 
+---         false, 
+---         false, 
+---         1, -- rotation order
+---         true, 
+---         false
+---     )
+---     
+---     Citizen.SetTimeout(5000, function()
+---         DetachEntity(entity, true, true)
+---         Citizen.Trace("Detaching entity...")
+---     end)
+--- 
+---     Citizen.SetTimeout(8000, function()
+---         local coords = GetEntityCoords(PlayerPedId())
+---         Citizen.Trace(
+---             string.format("Setting coords to %f %f %f...", coords.x, coords.y, coords.z)
+---         )
+---         if shouldFixFragments then
+---             Citizen.Trace("Fixing fragments for entity...")
+---             FixObjectFragment(entity)
+---         end
+---         SetEntityCoords(entity, coords, false, false, false, true)
+---         FreezeEntityPosition(entity, true)
+---     end)
+--- end, false
 --- @hash [0xF9C1681347C8BD15](https://docs.fivem.net/natives/?_0xF9C1681347C8BD15)
 --- @param object Object
 --- @return nil
 --- @overload fun(object: Object): nil
+function FixObjectFragment(object) end
+
+    
+--- # New Name: FixObjectFragment
+--- Resets and brings back all the children of a fragment based object.
+--- This should be used when attaching or detaching an object from another entity, especially when the object being detached consists of multiple fragments.
+--- 
+--- Attempting to teleport a fragment-based object using [`SET_ENTITY_COORDS`](https://docs.fivem.net/natives/?_0x06843DA7060A026B) such as a flag object, will result in it remaining in place and failing to teleport, given the condition mentioned in the preceding statement.
+--- 
+--- The native should be executed after detaching the object from its parent entity and before calling [`SET_ENTITY_COORDS`](https://docs.fivem.net/natives/?_0x06843DA7060A026B).
+--- 
+--- Example given down below.
+--- @usage RegisterCommand("fixobject", function(source, args, rawCommand)
+---     -- prop_flag_ls does not get teleported after being attached to the player
+---     -- prop_beachflag_01 only the pole gets teleported after being attached to the player
+---     local modelHash = `prop_beachflag_01`
+---     if not HasModelLoaded(modelHash) then
+---         RequestModel(modelHash)
+---         while not HasModelLoaded(modelHash) do
+---             Citizen.Wait(1)
+---         end
+---     end
+--- 
+---     -- Set argument 1 to 0 if you wish to see what occurs when fragments aren't fixed.
+---     -- i.e. /fixobject 0
+---     local shouldFixFragments = tonumber(args[1]) or true
+---     
+---     local entity = CreateObject(modelHash, GetEntityCoords(PlayerPedId()), true, false, false)
+---     AttachEntityToEntity(
+---         entity,
+---         PlayerPedId(),
+---         GetPedBoneIndex(PlayerPedId(), 0x796E), --0x796E
+---         0.0, 0.0, 0.1, -- offset attachment for the first entity
+---         0.0, 0.0, 0.0, 
+---         false, 
+---         false, 
+---         false, 
+---         false, 
+---         1, -- rotation order
+---         true, 
+---         false
+---     )
+---     
+---     Citizen.SetTimeout(5000, function()
+---         DetachEntity(entity, true, true)
+---         Citizen.Trace("Detaching entity...")
+---     end)
+--- 
+---     Citizen.SetTimeout(8000, function()
+---         local coords = GetEntityCoords(PlayerPedId())
+---         Citizen.Trace(
+---             string.format("Setting coords to %f %f %f...", coords.x, coords.y, coords.z)
+---         )
+---         if shouldFixFragments then
+---             Citizen.Trace("Fixing fragments for entity...")
+---             FixObjectFragment(entity)
+---         end
+---         SetEntityCoords(entity, coords, false, false, false, true)
+---         FreezeEntityPosition(entity, true)
+---     end)
+--- end, false
+--- @hash [0xF9C1681347C8BD15](https://docs.fivem.net/natives/?_0xF9C1681347C8BD15)
+--- @param object Object
+--- @return nil
+--- @overload fun(object: Object): nil
+--- @deprecated
 function N_0xf9c1681347c8bd15(object) end
 
     
---- ```
---- Pickup hashes: pastebin.com/8EuSv2r1  
---- ```
+--- Pickup hashes can be found [here](https://gist.github.com/4mmonium/1eabfb6b3996e3aa6b9525a3eccf8a0b).
 ---
 --- @hash [0xF9C36251F6E48E33](https://docs.fivem.net/natives/?_0xF9C36251F6E48E33)
 --- @param pickupHash Hash
@@ -3265,9 +3377,7 @@ function DoesPickupOfTypeExistInArea(pickupHash, x, y, z, radius) end
 
     
 --- # New Name: DoesPickupOfTypeExistInArea
---- ```
---- Pickup hashes: pastebin.com/8EuSv2r1  
---- ```
+--- Pickup hashes can be found [here](https://gist.github.com/4mmonium/1eabfb6b3996e3aa6b9525a3eccf8a0b).
 ---
 --- @hash [0xF9C36251F6E48E33](https://docs.fivem.net/natives/?_0xF9C36251F6E48E33)
 --- @param pickupHash Hash
@@ -3281,9 +3391,7 @@ function DoesPickupOfTypeExistInArea(pickupHash, x, y, z, radius) end
 function IsPickupWithinRadius(pickupHash, x, y, z, radius) end
 
     
---- ```
---- Pickup hashes: pastebin.com/8EuSv2r1  
---- ```
+--- Pickup hashes can be found [here](https://gist.github.com/4mmonium/1eabfb6b3996e3aa6b9525a3eccf8a0b).
 ---
 --- @hash [0xFBA08C503DD5FA58](https://docs.fivem.net/natives/?_0xFBA08C503DD5FA58)
 --- @param pickupHash Hash

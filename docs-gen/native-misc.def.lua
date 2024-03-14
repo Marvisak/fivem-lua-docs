@@ -100,19 +100,18 @@ function GetModelDimensions(modelHash) end
 function StopSaveArray() end
 
     
---- ```
---- flags appears to always be 0
---- ```
----
+--- Clears an area of cops at the given coordinates and radius.
+--- @usage -- Clear the area, do also create an event
+--- ClearAreaOfCops(0.0, 0.0, 0.0, 10000.0, true
 --- @hash [0x04F8FC8FCF58F88D](https://docs.fivem.net/natives/?_0x04F8FC8FCF58F88D)
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
 --- @param radius number (float)
---- @param flags number (int)
+--- @param createNetEvent boolean
 --- @return nil
---- @overload fun(x: number, y: number, z: number, radius: number, flags: number): nil
-function ClearAreaOfCops(x, y, z, radius, flags) end
+--- @overload fun(x: number, y: number, z: number, radius: number, createNetEvent: boolean): nil
+function ClearAreaOfCops(x, y, z, radius, createNetEvent) end
 
     
 --- ```
@@ -210,43 +209,52 @@ function HaveCreditsReachedEnd() end
 function N_0x075f1d57402c93ba() end
 
     
---- ClearAreaOfProjectiles
----
+--- Clears an area of projectiles at the given coordinates and radius.
+--- @usage -- Clear the area, do also create an event
+--- ClearAreaOfProjectiles(0.0, 0.0, 0.0, 10000.0, true
 --- @hash [0x0A1CB9094635D1A6](https://docs.fivem.net/natives/?_0x0A1CB9094635D1A6)
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
 --- @param radius number (float)
---- @param flags number (int)
+--- @param createNetEvent boolean
 --- @return nil
---- @overload fun(x: number, y: number, z: number, radius: number, flags: number): nil
-function ClearAreaOfProjectiles(x, y, z, radius, flags) end
+--- @overload fun(x: number, y: number, z: number, radius: number, createNetEvent: boolean): nil
+function ClearAreaOfProjectiles(x, y, z, radius, createNetEvent) end
 
     
---- ScriptRaceInit
+--- Initializes a script race in GTA:Online and sets up the helper split time system.
+--- 
+--- ```
+--- NativeDB Introduced: v323
+--- ```
 ---
 --- @hash [0x0A60017F841A54F2](https://docs.fivem.net/natives/?_0x0A60017F841A54F2)
---- @param p0 any
---- @param p1 any
---- @param p2 any
---- @param p3 any
+--- @param numCheckpoints number (int)
+--- @param numLaps number (int)
+--- @param numPlayers number (int)
+--- @param localPlayer Player
 --- @return nil
---- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
-function ScriptRaceInit(p0, p1, p2, p3) end
+--- @overload fun(numCheckpoints: number, numLaps: number, numPlayers: number, localPlayer: Player): nil
+function ScriptRaceInit(numCheckpoints, numLaps, numPlayers, localPlayer) end
 
     
 --- # New Name: ScriptRaceInit
---- ScriptRaceInit
+--- Initializes a script race in GTA:Online and sets up the helper split time system.
+--- 
+--- ```
+--- NativeDB Introduced: v323
+--- ```
 ---
 --- @hash [0x0A60017F841A54F2](https://docs.fivem.net/natives/?_0x0A60017F841A54F2)
---- @param p0 any
---- @param p1 any
---- @param p2 any
---- @param p3 any
+--- @param numCheckpoints number (int)
+--- @param numLaps number (int)
+--- @param numPlayers number (int)
+--- @param localPlayer Player
 --- @return nil
---- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
+--- @overload fun(numCheckpoints: number, numLaps: number, numPlayers: number, localPlayer: Player): nil
 --- @deprecated
-function N_0x0a60017f841a54f2(p0, p1, p2, p3) end
+function N_0x0a60017f841a54f2(numCheckpoints, numLaps, numPlayers, localPlayer) end
 
     
 --- AreStringsEqual
@@ -275,18 +283,40 @@ function AreStringsEqual(string1, string2) end
 function UpdateOnscreenKeyboard() end
 
     
---- ```
---- 0 as param = weird black and green screen
---- 0.1 - 0.99 = Prevent rain effect from falling (still sound and effects on puddles) and prevent puddles from increase/decrease, seems than it prevent any weather change too
---- 1 and more = "Unfreeze" rain puddles but clear weather too
---- When 'freezing' is enabled, it seem to also freeze value getted with GetRainLevel
---- ```
----
+--- Clears the active weather type after a specific amount of time determined by `transitionTimeInMs`.
+--- @usage RegisterCommand('weathertransition', function(source, args)
+---     -- Set the weather type to foggy so we can see the change
+---     SetWeatherTypeNowPersist("FOGGY")
+---     -- Clear the weather and run the transition
+---     local transitionTimeInMs = tonumber(args[1]) or 5000
+---     if transitionTimeInMs > 0 then
+---         ClearWeatherTypeNowPersistNetwork(transitionTimeInMs)
+---     end
+--- end, false
 --- @hash [0x0CF97F497FE7D048](https://docs.fivem.net/natives/?_0x0CF97F497FE7D048)
---- @param p0 number (float)
+--- @param transitionTimeInMs number (int)
 --- @return nil
---- @overload fun(p0: number): nil
-function N_0x0cf97f497fe7d048(p0) end
+--- @overload fun(transitionTimeInMs: number): nil
+function ClearWeatherTypeNowPersistNetwork(transitionTimeInMs) end
+
+    
+--- # New Name: ClearWeatherTypeNowPersistNetwork
+--- Clears the active weather type after a specific amount of time determined by `transitionTimeInMs`.
+--- @usage RegisterCommand('weathertransition', function(source, args)
+---     -- Set the weather type to foggy so we can see the change
+---     SetWeatherTypeNowPersist("FOGGY")
+---     -- Clear the weather and run the transition
+---     local transitionTimeInMs = tonumber(args[1]) or 5000
+---     if transitionTimeInMs > 0 then
+---         ClearWeatherTypeNowPersistNetwork(transitionTimeInMs)
+---     end
+--- end, false
+--- @hash [0x0CF97F497FE7D048](https://docs.fivem.net/natives/?_0x0CF97F497FE7D048)
+--- @param transitionTimeInMs number (int)
+--- @return nil
+--- @overload fun(transitionTimeInMs: number): nil
+--- @deprecated
+function N_0x0cf97f497fe7d048(transitionTimeInMs) end
 
     
 --- RegisterEnumToSave
@@ -308,11 +338,9 @@ function RegisterEnumToSave(p0, name) end
 --- @param p3 number (float)
 --- @param p4 number (float)
 --- @param p5 boolean
---- @param p6 number (float)
---- @param p7 number (float)
---- @return boolean
---- @overload fun(p0: boolean, p1: number, p2: number, p3: number, p4: number, p5: boolean, p6: number, p7: number): boolean
-function OverrideSaveHouse(p0, p1, p2, p3, p4, p5, p6, p7) end
+--- @return boolean, Vector3, number
+--- @overload fun(p0: boolean, p1: number, p2: number, p3: number, p4: number, p5: boolean): boolean, Vector3, number
+function OverrideSaveHouse(p0, p1, p2, p3, p4, p5) end
 
     
 --- ```
@@ -618,18 +646,38 @@ function GetBenchmarkPassFromCommandLine() end
 function N_0x1b2366c3f2a5c8df() end
 
     
+--- Records that a player has successfully passed a checkpoint during a scripted race in GTA:Online. This native should be used after initializing the race with [`SCRIPT_RACE_INIT`](https://docs.fivem.net/natives/?_0x0A60017F841A54F2).
+--- 
 --- ```
---- SCRIPT_RACE_*
+--- NativeDB Introduced: v323
 --- ```
 ---
 --- @hash [0x1BB299305C3E8C13](https://docs.fivem.net/natives/?_0x1BB299305C3E8C13)
---- @param p0 any
---- @param p1 any
---- @param p2 any
---- @param p3 any
+--- @param ped Ped
+--- @param checkpoint number (int)
+--- @param lap number (int)
+--- @param time number (int)
 --- @return nil
---- @overload fun(p0: any, p1: any, p2: any, p3: any): nil
-function N_0x1bb299305c3e8c13(p0, p1, p2, p3) end
+--- @overload fun(ped: Ped, checkpoint: number, lap: number, time: number): nil
+function ScriptRacePlayerHitCheckpoint(ped, checkpoint, lap, time) end
+
+    
+--- # New Name: ScriptRacePlayerHitCheckpoint
+--- Records that a player has successfully passed a checkpoint during a scripted race in GTA:Online. This native should be used after initializing the race with [`SCRIPT_RACE_INIT`](https://docs.fivem.net/natives/?_0x0A60017F841A54F2).
+--- 
+--- ```
+--- NativeDB Introduced: v323
+--- ```
+---
+--- @hash [0x1BB299305C3E8C13](https://docs.fivem.net/natives/?_0x1BB299305C3E8C13)
+--- @param ped Ped
+--- @param checkpoint number (int)
+--- @param lap number (int)
+--- @param time number (int)
+--- @return nil
+--- @overload fun(ped: Ped, checkpoint: number, lap: number, time: number): nil
+--- @deprecated
+function N_0x1bb299305c3e8c13(ped, checkpoint, lap, time) end
 
     
 --- Acos
@@ -700,29 +748,68 @@ function SetFadeOutAfterArrest(toggle) end
 function CompareStrings(str1, str2, matchCase, maxLength) end
 
     
---- ```
---- Unsure about the use of this native but here's an example:
---- void sub_8709() {
----     MISC::_1EAE0A6E978894A2(0, 1);
----     MISC::_1EAE0A6E978894A2(1, 1);
----     MISC::_1EAE0A6E978894A2(2, 1);
----     MISC::_1EAE0A6E978894A2(3, 1);
----     MISC::_1EAE0A6E978894A2(4, 1);
----     MISC::_1EAE0A6E978894A2(5, 1);
----     MISC::_1EAE0A6E978894A2(6, 1);
----     MISC::_1EAE0A6E978894A2(7, 1);
----     MISC::_1EAE0A6E978894A2(8, 1);
+--- Suppresses or enables a specific type of random event for the current frame.
+--- 
+--- ```cpp
+--- enum eEventType {
+---     RC_PED_STEAL_VEHICLE = 0,
+---     RC_PED_JAY_WALK_LIGHT = 1,
+---     RC_COP_PURSUE = 2,
+---     RC_COP_PURSUE_VEHICLE_FLEE_SPAWNED = 3,
+---     RC_COP_VEHICLE_DRIVING_FAST = 4,
+---     RC_COP_VEHICLE_DRIVING_SLOW = 5,
+---     RC_DRIVER_RECKLESS = 6,
+---     RC_DRIVER_PRO = 7,
+---     RC_PED_PURSUE_WHEN_HIT_BY_CAR = 8
 --- }
---- So it appears that p0 ranges from 0 to 8.
---- ENABLE_DISPATCH_SERVICE, seems to have a similar layout.
 --- ```
----
+--- @usage local eventToDisable = 0 -- RC_PED_STEAL_VEHICLE
+--- 
+--- CreateThread(function()
+---     while true do
+---         Wait(0)
+---         SupressRandomEventThisFrame(eventToDisable, true)
+---     end
+--- end
 --- @hash [0x1EAE0A6E978894A2](https://docs.fivem.net/natives/?_0x1EAE0A6E978894A2)
---- @param p0 number (int)
---- @param p1 boolean
+--- @param eventType number (int)
+--- @param enable boolean
 --- @return nil
---- @overload fun(p0: number, p1: boolean): nil
-function N_0x1eae0a6e978894a2(p0, p1) end
+--- @overload fun(eventType: number, enable: boolean): nil
+function SupressRandomEventThisFrame(eventType, enable) end
+
+    
+--- # New Name: SupressRandomEventThisFrame
+--- Suppresses or enables a specific type of random event for the current frame.
+--- 
+--- ```cpp
+--- enum eEventType {
+---     RC_PED_STEAL_VEHICLE = 0,
+---     RC_PED_JAY_WALK_LIGHT = 1,
+---     RC_COP_PURSUE = 2,
+---     RC_COP_PURSUE_VEHICLE_FLEE_SPAWNED = 3,
+---     RC_COP_VEHICLE_DRIVING_FAST = 4,
+---     RC_COP_VEHICLE_DRIVING_SLOW = 5,
+---     RC_DRIVER_RECKLESS = 6,
+---     RC_DRIVER_PRO = 7,
+---     RC_PED_PURSUE_WHEN_HIT_BY_CAR = 8
+--- }
+--- ```
+--- @usage local eventToDisable = 0 -- RC_PED_STEAL_VEHICLE
+--- 
+--- CreateThread(function()
+---     while true do
+---         Wait(0)
+---         SupressRandomEventThisFrame(eventToDisable, true)
+---     end
+--- end
+--- @hash [0x1EAE0A6E978894A2](https://docs.fivem.net/natives/?_0x1EAE0A6E978894A2)
+--- @param eventType number (int)
+--- @param enable boolean
+--- @return nil
+--- @overload fun(eventType: number, enable: boolean): nil
+--- @deprecated
+function N_0x1eae0a6e978894a2(eventType, enable) end
 
     
 --- GetWindDirection
@@ -966,24 +1053,31 @@ function RemoveDispatchSpawnBlockingArea(p0) end
 function EnableTennisMode(ped, toggle, p2) end
 
     
+--- Immediately changes the game's weather to the specified type, which will then persist for one cycle before the game resumes its natural weather progression.
+--- 
+--- **Note:** This native is not supported in networked sessions. Please refer to [`SET_OVERRIDE_WEATHER`](https://docs.fivem.net/natives/?_0xA43D5C6FE51ADBEF) or [`SET_WEATHER_TYPE_NOW_PERSIST`](https://docs.fivem.net/natives/?_0xED712CA327900C8A) if you want to override weather in networked sessions.
+--- 
 --- ```
---- // timecycle_keyframe_data
---- BLIZZARD = 0x27EA2814
---- CLEAR = 0x36A83D84
---- CLEARING = 0x6DB1A50D
---- CLOUDS = 0x30FDAF5C
---- EXTRASUNNY = 0x97AA0A79
---- FOGGY = 0xAE737644
---- HALLOWEEN = 0xC91A3202
---- NEUTRAL = 0xA4CA1326
---- OVERCAST = 0xBB898D2D
---- RAIN = 0x54A69840
---- SMOG = 0x10DCF4B5
---- SNOW = 0xEFB6EFF6
---- SNOWLIGHT = 0x23FB812B
---- THUNDER = 0xB677829F
---- XMAS = 0xAAC9C895
+--- NativeDB Introduced: v323
 --- ```
+--- 
+--- **Weather Types:**
+--- 
+--- *   CLEAR
+--- *   EXTRASUNNY
+--- *   CLOUDS
+--- *   OVERCAST
+--- *   RAIN
+--- *   CLEARING
+--- *   THUNDER
+--- *   SMOG
+--- *   FOGGY
+--- *   XMAS
+--- *   SNOW
+--- *   SNOWLIGHT
+--- *   BLIZZARD
+--- *   HALLOWEEN
+--- *   NEUTRAL
 ---
 --- @hash [0x29B487C359E19889](https://docs.fivem.net/natives/?_0x29B487C359E19889)
 --- @param weatherType string (char*)
@@ -1865,8 +1959,17 @@ function SetGamePaused(toggle) end
 function SetWeatherTypeTransition(weatherType1, weatherType2, percentWeather2) end
 
     
---- SetSuperJumpThisFrame
----
+--- Allows the player to perform super jumps. This function must be called every frame for it to work.
+--- It basically OR's a flag for a single frame, allowing the ped to perform a super jump only when the flag is set.
+--- @usage Citizen.CreateThread(function()
+---     while true do
+---         SetSuperJumpThisFrame(PlayerId())
+---         -- Try enabling the two down below if you also want invincibility and no ragdoll effects
+---         --SetPlayerInvincible(PlayerId(), true)
+---         --SetPedCanRagdoll(PlayerPedId(), false)
+---         Citizen.Wait(0)
+---     end
+--- end
 --- @hash [0x57FFF03E423A4C0B](https://docs.fivem.net/natives/?_0x57FFF03E423A4C0B)
 --- @param player Player
 --- @return nil
@@ -2316,7 +2419,13 @@ function SetDispatchIdealSpawnDistance(p0) end
 function N_0x703cc7f60cbb2b57(p0) end
 
     
---- Refer to [`SET_WEATHER_TYPE_NOW_PERSIST`](https://docs.fivem.net/natives/?_0xED712CA327900C8A) for weather types.
+--- Sets the current weather type to persist indefinitely until changed.
+--- 
+--- **Note:** This native is not supported in networked sessions. Please refer to [`SET_OVERRIDE_WEATHER`](https://docs.fivem.net/natives/?_0xA43D5C6FE51ADBEF) or [`SET_WEATHER_TYPE_NOW_PERSIST`](https://docs.fivem.net/natives/?_0xED712CA327900C8A) if you want to override weather in networked sessions.
+--- 
+--- ```
+--- NativeDB Introduced: v323
+--- ```
 ---
 --- @hash [0x704983DF373B198F](https://docs.fivem.net/natives/?_0x704983DF373B198F)
 --- @param weatherType string (char*)
@@ -2697,8 +2806,20 @@ function SetRandomWeatherType() end
 function GetAllocatedStackSize() end
 
     
---- GetGroundZAndNormalFor_3dCoord
----
+--- Attempts to identify the highest ground Z-coordinate and determine the corresponding surface normal directly beneath a specified 3D coordinate.
+--- 
+--- ```
+--- NativeDB Introduced: v323
+--- ```
+--- @usage local x, y, z = 100.0, -200.0, 50.0
+--- local success, groundZ, normal = GetGroundZAndNormalFor_3dCoord(x, y, z)
+--- 
+--- if success then
+---     print("Ground Z found at: ", groundZ)
+---     print("Surface normal is: ", normal.x, normal.y, normal.z)
+--- else
+---     print("No ground found.")
+--- en
 --- @hash [0x8BDC7BFC57A81E76](https://docs.fivem.net/natives/?_0x8BDC7BFC57A81E76)
 --- @param x number (float)
 --- @param y number (float)
@@ -2709,8 +2830,20 @@ function GetGroundZAndNormalFor_3dCoord(x, y, z) end
 
     
 --- # New Name: GetGroundZAndNormalFor_3dCoord
---- GetGroundZAndNormalFor_3dCoord
----
+--- Attempts to identify the highest ground Z-coordinate and determine the corresponding surface normal directly beneath a specified 3D coordinate.
+--- 
+--- ```
+--- NativeDB Introduced: v323
+--- ```
+--- @usage local x, y, z = 100.0, -200.0, 50.0
+--- local success, groundZ, normal = GetGroundZAndNormalFor_3dCoord(x, y, z)
+--- 
+--- if success then
+---     print("Ground Z found at: ", groundZ)
+---     print("Surface normal is: ", normal.x, normal.y, normal.z)
+--- else
+---     print("No ground found.")
+--- en
 --- @hash [0x8BDC7BFC57A81E76](https://docs.fivem.net/natives/?_0x8BDC7BFC57A81E76)
 --- @param x number (float)
 --- @param y number (float)
@@ -2722,8 +2855,20 @@ function N_0x8bdc7bfc57a81e76(x, y, z) end
 
     
 --- # New Name: GetGroundZAndNormalFor_3dCoord
---- GetGroundZAndNormalFor_3dCoord
----
+--- Attempts to identify the highest ground Z-coordinate and determine the corresponding surface normal directly beneath a specified 3D coordinate.
+--- 
+--- ```
+--- NativeDB Introduced: v323
+--- ```
+--- @usage local x, y, z = 100.0, -200.0, 50.0
+--- local success, groundZ, normal = GetGroundZAndNormalFor_3dCoord(x, y, z)
+--- 
+--- if success then
+---     print("Ground Z found at: ", groundZ)
+---     print("Surface normal is: ", normal.x, normal.y, normal.z)
+--- else
+---     print("No ground found.")
+--- en
 --- @hash [0x8BDC7BFC57A81E76](https://docs.fivem.net/natives/?_0x8BDC7BFC57A81E76)
 --- @param x number (float)
 --- @param y number (float)
@@ -3216,9 +3361,7 @@ function SetPlayerRockstarEditorDisabled(toggle) end
 function N_0x9d8d44adbba61ef2(toggle) end
 
     
---- ```
---- For a full list, see here: pastebin.com/yLNWicUi  
---- ```
+--- For a full list, see [here](https://gist.github.com/4mmonium/f76f3ecef649ed275b260b433ea84494).
 ---
 --- @hash [0x9DC711BC69C548DF](https://docs.fivem.net/natives/?_0x9DC711BC69C548DF)
 --- @param scriptName string (char*)
@@ -3227,8 +3370,14 @@ function N_0x9d8d44adbba61ef2(toggle) end
 function TerminateAllScriptsWithThisName(scriptName) end
 
     
+--- Determines the highest ground Z-coordinate directly below a specified 3D coordinate, excluding any objects at that point. Optionally, water can be considered as ground when determining the highest point.
+--- 
 --- ```
---- NativeDB Added Parameter 6: BOOL p5
+--- NativeDB Added Parameter 6: BOOL ignoreDistToWaterLevelCheck - If set to true, the distance to the water level will be ignored when checking for water as ground. 
+--- ```
+--- 
+--- ```
+--- NativeDB Introduced: v505
 --- ```
 ---
 --- @hash [0x9E82F0F362881B29](https://docs.fivem.net/natives/?_0x9E82F0F362881B29)
@@ -3236,15 +3385,21 @@ function TerminateAllScriptsWithThisName(scriptName) end
 --- @param y number (float)
 --- @param z number (float)
 --- @param groundZ number (float*)
---- @param p4 boolean
+--- @param waterAsGround boolean
 --- @return boolean
---- @overload fun(x: number, y: number, z: number, p4: boolean): boolean, number
-function GetGroundZFor_3dCoord_2(x, y, z, groundZ, p4) end
+--- @overload fun(x: number, y: number, z: number, waterAsGround: boolean): boolean, number
+function GetGroundZExcludingObjectsFor_3dCoord(x, y, z, groundZ, waterAsGround) end
 
     
---- # New Name: GetGroundZFor_3dCoord_2
+--- # New Name: GetGroundZExcludingObjectsFor_3dCoord
+--- Determines the highest ground Z-coordinate directly below a specified 3D coordinate, excluding any objects at that point. Optionally, water can be considered as ground when determining the highest point.
+--- 
 --- ```
---- NativeDB Added Parameter 6: BOOL p5
+--- NativeDB Added Parameter 6: BOOL ignoreDistToWaterLevelCheck - If set to true, the distance to the water level will be ignored when checking for water as ground. 
+--- ```
+--- 
+--- ```
+--- NativeDB Introduced: v505
 --- ```
 ---
 --- @hash [0x9E82F0F362881B29](https://docs.fivem.net/natives/?_0x9E82F0F362881B29)
@@ -3252,11 +3407,34 @@ function GetGroundZFor_3dCoord_2(x, y, z, groundZ, p4) end
 --- @param y number (float)
 --- @param z number (float)
 --- @param groundZ number (float*)
---- @param p4 boolean
+--- @param waterAsGround boolean
 --- @return boolean
---- @overload fun(x: number, y: number, z: number, p4: boolean): boolean, number
+--- @overload fun(x: number, y: number, z: number, waterAsGround: boolean): boolean, number
 --- @deprecated
-function N_0x9e82f0f362881b29(x, y, z, groundZ, p4) end
+function N_0x9e82f0f362881b29(x, y, z, groundZ, waterAsGround) end
+
+    
+--- # New Name: GetGroundZExcludingObjectsFor_3dCoord
+--- Determines the highest ground Z-coordinate directly below a specified 3D coordinate, excluding any objects at that point. Optionally, water can be considered as ground when determining the highest point.
+--- 
+--- ```
+--- NativeDB Added Parameter 6: BOOL ignoreDistToWaterLevelCheck - If set to true, the distance to the water level will be ignored when checking for water as ground. 
+--- ```
+--- 
+--- ```
+--- NativeDB Introduced: v505
+--- ```
+---
+--- @hash [0x9E82F0F362881B29](https://docs.fivem.net/natives/?_0x9E82F0F362881B29)
+--- @param x number (float)
+--- @param y number (float)
+--- @param z number (float)
+--- @param groundZ number (float*)
+--- @param waterAsGround boolean
+--- @return boolean
+--- @overload fun(x: number, y: number, z: number, waterAsGround: boolean): boolean, number
+--- @deprecated
+function GetGroundZFor_3dCoord_2(x, y, z, groundZ, waterAsGround) end
 
     
 --- ```
@@ -4064,19 +4242,18 @@ function N_0xba4b8d83bdc75551(p0) end
 function AddStuntJumpAngled(x1, y1, z1, x2, y2, z2, radius1, x3, y3, z3, x4, y4, z4, radius2, camX, camY, camZ, unk1, unk2, unk3) end
 
     
---- ```
---- Example:       CLEAR_AREA_OF_PEDS(0, 0, 0, 10000, 1);
---- ```
----
+--- Clears an area of peds at the given coordinates and radius.
+--- @usage -- Clear the area, do also create an event
+--- ClearAreaOfPeds(0.0, 0.0, 0.0, 10000.0, true
 --- @hash [0xBE31FD6CE464AC59](https://docs.fivem.net/natives/?_0xBE31FD6CE464AC59)
 --- @param x number (float)
 --- @param y number (float)
 --- @param z number (float)
 --- @param radius number (float)
---- @param flags number (int)
+--- @param createNetEvent boolean
 --- @return nil
---- @overload fun(x: number, y: number, z: number, radius: number, flags: number): nil
-function ClearAreaOfPeds(x, y, z, radius, flags) end
+--- @overload fun(x: number, y: number, z: number, radius: number, createNetEvent: boolean): nil
+function ClearAreaOfPeds(x, y, z, radius, createNetEvent) end
 
     
 --- StartSaveStructWithSize
@@ -5171,7 +5348,8 @@ function N_0xe532ec1a63231b4f(p0, p1) end
 function IsPointObscuredByAMissionEntity(p0, p1, p2, p3, p4, p5, p6) end
 
     
---- In singleplayer it does exactly what the name implies. In FiveM / GTA:Online it shows `Disconnecting from GTA Online` HUD and then quits the game.
+--- In singleplayer it does exactly what the name implies. In FiveM / GTA:Online it shows the `Disconnecting from GTA Online` warning screen message and quits the game.
+--- After quitting, the game process is started again (as the name implies).
 ---
 --- @hash [0xE574A662ACAEFBB1](https://docs.fivem.net/natives/?_0xE574A662ACAEFBB1)
 ---
@@ -5181,7 +5359,8 @@ function RestartGame() end
 
     
 --- # New Name: RestartGame
---- In singleplayer it does exactly what the name implies. In FiveM / GTA:Online it shows `Disconnecting from GTA Online` HUD and then quits the game.
+--- In singleplayer it does exactly what the name implies. In FiveM / GTA:Online it shows the `Disconnecting from GTA Online` warning screen message and quits the game.
+--- After quitting, the game process is started again (as the name implies).
 ---
 --- @hash [0xE574A662ACAEFBB1](https://docs.fivem.net/natives/?_0xE574A662ACAEFBB1)
 ---
@@ -5189,6 +5368,18 @@ function RestartGame() end
 --- @overload fun(): nil
 --- @deprecated
 function N_0xe574a662acaefbb1() end
+
+    
+--- # New Name: RestartGame
+--- In singleplayer it does exactly what the name implies. In FiveM / GTA:Online it shows the `Disconnecting from GTA Online` warning screen message and quits the game.
+--- After quitting, the game process is started again (as the name implies).
+---
+--- @hash [0xE574A662ACAEFBB1](https://docs.fivem.net/natives/?_0xE574A662ACAEFBB1)
+---
+--- @return nil
+--- @overload fun(): nil
+--- @deprecated
+function RestartGame() end
 
     
 --- GetBenchmarkTime
@@ -5399,14 +5590,34 @@ function N_0xeb4a0c2d56441717(dispatchService) end
 function GetNumberOfDispatchedUnitsForPlayer(dispatchService) end
 
     
---- ```
---- Exits the game and downloads a fresh social club update on next restart.  
---- ```
+--- Quits the game.
 ---
 --- @hash [0xEB6891F03362FB12](https://docs.fivem.net/natives/?_0xEB6891F03362FB12)
 ---
 --- @return nil
 --- @overload fun(): nil
+function QuitGame() end
+
+    
+--- # New Name: QuitGame
+--- Quits the game.
+---
+--- @hash [0xEB6891F03362FB12](https://docs.fivem.net/natives/?_0xEB6891F03362FB12)
+---
+--- @return nil
+--- @overload fun(): nil
+--- @deprecated
+function N_0xeb6891f03362fb12() end
+
+    
+--- # New Name: QuitGame
+--- Quits the game.
+---
+--- @hash [0xEB6891F03362FB12](https://docs.fivem.net/natives/?_0xEB6891F03362FB12)
+---
+--- @return nil
+--- @overload fun(): nil
+--- @deprecated
 function ForceSocialClubUpdate() end
 
     
@@ -5419,7 +5630,7 @@ function ForceSocialClubUpdate() end
 function N_0xebd3205a207939ed(p0) end
 
     
---- Refer to [`SET_WEATHER_TYPE_NOW`](#0x29B487C359E19889) for weather types.
+--- Refer to [`SET_WEATHER_TYPE_NOW`](https://docs.fivem.net/natives/?_0x29B487C359E19889) for weather types.
 ---
 --- @hash [0xED712CA327900C8A](https://docs.fivem.net/natives/?_0xED712CA327900C8A)
 --- @param weatherType string (char*)
@@ -5570,24 +5781,47 @@ function SlerpNearQuaternion(t, x, y, z, w, x1, y1, z1, w1) end
 function N_0xf2f6a2fa49278625(t, x, y, z, w, x1, y1, z1, w1) end
 
     
---- SetCloudHatOpacity
----
+--- Allows modification of the cloud opacity. It can also be used in other contexts, such as when the player is in a switch state [`IS_PLAYER_SWITCH_IN_PROGRESS`](https://docs.fivem.net/natives/?_0xD9D2CFFF49FAB35F).
+--- @usage -- Check if the player is in a Switch "state"
+--- if IsPlayerSwitchInProgress() then
+---     -- If the player is in a Switch state, set the clouds opacity to 1.0
+---     SetCloudsAlpha(1.0)
+--- en
 --- @hash [0xF36199225D6D8C86](https://docs.fivem.net/natives/?_0xF36199225D6D8C86)
 --- @param opacity number (float)
 --- @return nil
 --- @overload fun(opacity: number): nil
-function SetCloudHatOpacity(opacity) end
+function SetCloudsAlpha(opacity) end
 
     
---- # New Name: SetCloudHatOpacity
---- SetCloudHatOpacity
----
+--- # New Name: SetCloudsAlpha
+--- Allows modification of the cloud opacity. It can also be used in other contexts, such as when the player is in a switch state [`IS_PLAYER_SWITCH_IN_PROGRESS`](https://docs.fivem.net/natives/?_0xD9D2CFFF49FAB35F).
+--- @usage -- Check if the player is in a Switch "state"
+--- if IsPlayerSwitchInProgress() then
+---     -- If the player is in a Switch state, set the clouds opacity to 1.0
+---     SetCloudsAlpha(1.0)
+--- en
 --- @hash [0xF36199225D6D8C86](https://docs.fivem.net/natives/?_0xF36199225D6D8C86)
 --- @param opacity number (float)
 --- @return nil
 --- @overload fun(opacity: number): nil
 --- @deprecated
 function N_0xf36199225d6d8c86(opacity) end
+
+    
+--- # New Name: SetCloudsAlpha
+--- Allows modification of the cloud opacity. It can also be used in other contexts, such as when the player is in a switch state [`IS_PLAYER_SWITCH_IN_PROGRESS`](https://docs.fivem.net/natives/?_0xD9D2CFFF49FAB35F).
+--- @usage -- Check if the player is in a Switch "state"
+--- if IsPlayerSwitchInProgress() then
+---     -- If the player is in a Switch state, set the clouds opacity to 1.0
+---     SetCloudsAlpha(1.0)
+--- en
+--- @hash [0xF36199225D6D8C86](https://docs.fivem.net/natives/?_0xF36199225D6D8C86)
+--- @param opacity number (float)
+--- @return nil
+--- @overload fun(opacity: number): nil
+--- @deprecated
+function SetCloudHatOpacity(opacity) end
 
     
 --- Refer to [`SET_WEATHER_TYPE_NOW_PERSIST`](https://docs.fivem.net/natives/?_0xED712CA327900C8A) for weather types.
@@ -5608,25 +5842,96 @@ function GetWeatherTypeTransition() end
 function SetFadeInAfterLoad(toggle) end
 
     
---- N_0xf56dfb7b61be7276
----
+--- Determines whether a line segment intersects a plane and, if so, returns the parameter value at which this intersection occurs.
+--- 
+--- ```
+--- NativeDB Introduced: v323
+--- ```
+--- @usage -- Define the line segment with start and end points
+--- local startX, startY, startZ = 100.0, -200.0, 50.0
+--- local endX, endY, endZ = 200.0, -100.0, 50.0
+--- 
+--- -- Define the plane with a point on the plane and the normal vector
+--- local planeX, planeY, planeZ = 150.0, -150.0, 50.0
+--- local normalX, normalY, normalZ = 0.0, 0.0, 1.0
+--- 
+--- -- Call the native
+--- local success, intersectionParameter = GetLinePlaneIntersection(startX, startY, startZ, endX, endY, endZ, planeX, planeY, planeZ, normalX, normalY, normalZ, intersectionParameter)
+--- 
+--- if success then
+---     -- Calculate the intersection point using intersectionParameter
+---     local intersectX = startX + (endX - startX) * intersectionParameter
+---     local intersectY = startY + (endY - startY) * intersectionParameter
+---     local intersectZ = startZ + (endZ - startZ) * intersectionParameter
+---     
+---     print("Intersection point at: (" .. intersectX .. ", " .. intersectY .. ", " .. intersectZ .. ")")
+--- else
+---     print("No intersection found.")
+--- en
 --- @hash [0xF56DFB7B61BE7276](https://docs.fivem.net/natives/?_0xF56DFB7B61BE7276)
---- @param p0 number (float)
---- @param p1 number (float)
---- @param p2 number (float)
---- @param p3 number (float)
---- @param p4 number (float)
---- @param p5 number (float)
---- @param p6 number (float)
---- @param p7 number (float)
---- @param p8 number (float)
---- @param p9 number (float)
---- @param p10 number (float)
---- @param p11 number (float)
---- @param p12 number (float*)
+--- @param x1 number (float)
+--- @param y1 number (float)
+--- @param z1 number (float)
+--- @param x2 number (float)
+--- @param y2 number (float)
+--- @param z2 number (float)
+--- @param planeX number (float)
+--- @param planeY number (float)
+--- @param planeZ number (float)
+--- @param planeNormalX number (float)
+--- @param planeNormalY number (float)
+--- @param planeNormalZ number (float)
+--- @param intersectionParameter number (float*)
 --- @return boolean
---- @overload fun(p0: number, p1: number, p2: number, p3: number, p4: number, p5: number, p6: number, p7: number, p8: number, p9: number, p10: number, p11: number): boolean, number
-function N_0xf56dfb7b61be7276(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12) end
+--- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, planeX: number, planeY: number, planeZ: number, planeNormalX: number, planeNormalY: number, planeNormalZ: number): boolean, number
+function GetLinePlaneIntersection(x1, y1, z1, x2, y2, z2, planeX, planeY, planeZ, planeNormalX, planeNormalY, planeNormalZ, intersectionParameter) end
+
+    
+--- # New Name: GetLinePlaneIntersection
+--- Determines whether a line segment intersects a plane and, if so, returns the parameter value at which this intersection occurs.
+--- 
+--- ```
+--- NativeDB Introduced: v323
+--- ```
+--- @usage -- Define the line segment with start and end points
+--- local startX, startY, startZ = 100.0, -200.0, 50.0
+--- local endX, endY, endZ = 200.0, -100.0, 50.0
+--- 
+--- -- Define the plane with a point on the plane and the normal vector
+--- local planeX, planeY, planeZ = 150.0, -150.0, 50.0
+--- local normalX, normalY, normalZ = 0.0, 0.0, 1.0
+--- 
+--- -- Call the native
+--- local success, intersectionParameter = GetLinePlaneIntersection(startX, startY, startZ, endX, endY, endZ, planeX, planeY, planeZ, normalX, normalY, normalZ, intersectionParameter)
+--- 
+--- if success then
+---     -- Calculate the intersection point using intersectionParameter
+---     local intersectX = startX + (endX - startX) * intersectionParameter
+---     local intersectY = startY + (endY - startY) * intersectionParameter
+---     local intersectZ = startZ + (endZ - startZ) * intersectionParameter
+---     
+---     print("Intersection point at: (" .. intersectX .. ", " .. intersectY .. ", " .. intersectZ .. ")")
+--- else
+---     print("No intersection found.")
+--- en
+--- @hash [0xF56DFB7B61BE7276](https://docs.fivem.net/natives/?_0xF56DFB7B61BE7276)
+--- @param x1 number (float)
+--- @param y1 number (float)
+--- @param z1 number (float)
+--- @param x2 number (float)
+--- @param y2 number (float)
+--- @param z2 number (float)
+--- @param planeX number (float)
+--- @param planeY number (float)
+--- @param planeZ number (float)
+--- @param planeNormalX number (float)
+--- @param planeNormalY number (float)
+--- @param planeNormalZ number (float)
+--- @param intersectionParameter number (float*)
+--- @return boolean
+--- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, planeX: number, planeY: number, planeZ: number, planeNormalX: number, planeNormalY: number, planeNormalZ: number): boolean, number
+--- @deprecated
+function N_0xf56dfb7b61be7276(x1, y1, z1, x2, y2, z2, planeX, planeY, planeZ, planeNormalX, planeNormalY, planeNormalZ, intersectionParameter) end
 
     
 --- ```
@@ -5746,14 +6051,31 @@ function SetWeatherTypeOvertimePersist(weatherType, time) end
 function SetWeatherTypeOverTime(weatherType, time) end
 
     
+--- Enable/disable optional stunt camera.
+--- 
 --- ```
---- Toggles some stunt jump stuff.
+--- NativeDB Introduced: v757
 --- ```
 ---
 --- @hash [0xFB80AB299D2EE1BD](https://docs.fivem.net/natives/?_0xFB80AB299D2EE1BD)
 --- @param toggle boolean
 --- @return nil
 --- @overload fun(toggle: boolean): nil
+function ToggleShowOptionalStuntJumpCamera(toggle) end
+
+    
+--- # New Name: ToggleShowOptionalStuntJumpCamera
+--- Enable/disable optional stunt camera.
+--- 
+--- ```
+--- NativeDB Introduced: v757
+--- ```
+---
+--- @hash [0xFB80AB299D2EE1BD](https://docs.fivem.net/natives/?_0xFB80AB299D2EE1BD)
+--- @param toggle boolean
+--- @return nil
+--- @overload fun(toggle: boolean): nil
+--- @deprecated
 function N_0xfb80ab299d2ee1bd(toggle) end
 
     
@@ -5823,8 +6145,27 @@ function LoadCloudHat(name, transitionTime) end
 function SetCloudHatTransition(name, transitionTime) end
 
     
---- GetFrameCount
----
+--- Gets the number of the current frame being displayed.
+--- @usage -- Create a thread
+--- Citizen.CreateThread(function()
+---     -- Loop forever
+---     while true do
+---         -- Get the number of the current frame being displayed
+---         local startCount = GetFrameCount()
+--- 
+---         -- Wait one second
+---         Wait(1000)
+--- 
+---         -- Get the new number of the current frame being displayed, after waiting one second
+---         local endCount = GetFrameCount()
+--- 
+---         -- Calculate the number of frames that have been rendered between the two points
+---         local frameNum = endCount - startCount
+--- 
+---         -- Print the output to the console, mentioning that it is an approximate value
+---         print("Approximate FPS: "..frameNum)
+---     end
+--- end
 --- @hash [0xFC8202EFC642E6F2](https://docs.fivem.net/natives/?_0xFC8202EFC642E6F2)
 ---
 --- @return number

@@ -91,7 +91,7 @@ function SetTextProportional(p0) end
 function AddTextComponentInteger(value) end
 
     
---- See https://docs.fivem.net/docs/game-references/blips/#BlipColors
+--- SetBlipColour
 ---
 --- @hash [0x03D7FB09E75D6B7E](https://docs.fivem.net/natives/?_0x03D7FB09E75D6B7E)
 --- @param blip Blip
@@ -266,14 +266,17 @@ function IsScriptedHudComponentHiddenThisFrame(id) end
 function N_0x09c0403ed9a751c2(id) end
 
     
---- ```
---- BOOL IsContextActive(char *ctx)  
---- {  
---- 	BEGIN_TEXT_COMMAND_IS_THIS_HELP_MESSAGE_BEING_DISPLAYED(ctx);  
---- 	return END_TEXT_COMMAND_IS_THIS_HELP_MESSAGE_BEING_DISPLAYED(0);  
---- }  
---- ```
----
+--- BeginTextCommandIsThisHelpMessageBeingDisplayed
+--- @usage -- Create new text entry
+--- AddTextEntry('TEST_LABEL', 'Hello world.')
+--- 
+--- -- Draw help message
+--- BeginTextCommandDisplayHelp('TEST_LABEL')
+--- EndTextCommandDisplayHelp(0, false, true, -1)
+--- 
+--- -- Test if the message has been displayed
+--- BeginTextCommandIsThisHelpMessageBeingDisplayed("TEST_LABEL")
+--- local isDisplayed = EndTextCommandIsThisHelpMessageBeingDisplayed(0
 --- @hash [0x0A24DA3A41B718F5](https://docs.fivem.net/natives/?_0x0A24DA3A41B718F5)
 --- @param labelName string (char*)
 --- @return nil
@@ -282,14 +285,17 @@ function BeginTextCommandIsThisHelpMessageBeingDisplayed(labelName) end
 
     
 --- # New Name: BeginTextCommandIsThisHelpMessageBeingDisplayed
---- ```
---- BOOL IsContextActive(char *ctx)  
---- {  
---- 	BEGIN_TEXT_COMMAND_IS_THIS_HELP_MESSAGE_BEING_DISPLAYED(ctx);  
---- 	return END_TEXT_COMMAND_IS_THIS_HELP_MESSAGE_BEING_DISPLAYED(0);  
---- }  
---- ```
----
+--- BeginTextCommandIsThisHelpMessageBeingDisplayed
+--- @usage -- Create new text entry
+--- AddTextEntry('TEST_LABEL', 'Hello world.')
+--- 
+--- -- Draw help message
+--- BeginTextCommandDisplayHelp('TEST_LABEL')
+--- EndTextCommandDisplayHelp(0, false, true, -1)
+--- 
+--- -- Test if the message has been displayed
+--- BeginTextCommandIsThisHelpMessageBeingDisplayed("TEST_LABEL")
+--- local isDisplayed = EndTextCommandIsThisHelpMessageBeingDisplayed(0
 --- @hash [0x0A24DA3A41B718F5](https://docs.fivem.net/natives/?_0x0A24DA3A41B718F5)
 --- @param labelName string (char*)
 --- @return nil
@@ -521,24 +527,40 @@ function N_0x0e4c749ff9de9cc4(value, commaSeparated) end
 function RestartFrontendMenu(menuHash, p1) end
 
     
---- EndTextCommandIsThisHelpMessageBeingDisplayed
+--- Returns whether a specific help message is being displayed or not.
+--- 
+--- ```cpp
+--- enum HudIndexes {
+---     HELP_TEXT = 0,
+---     FLOATING_HELP_TEXT_1 = 1,
+---     FLOATING_HELP_TEXT_2 = 2,
+--- }
+--- ```
 ---
 --- @hash [0x10BDDBFC529428DD](https://docs.fivem.net/natives/?_0x10BDDBFC529428DD)
---- @param p0 number (int)
+--- @param hudIndex number (int)
 --- @return boolean
---- @overload fun(p0: number): boolean
-function EndTextCommandIsThisHelpMessageBeingDisplayed(p0) end
+--- @overload fun(hudIndex: number): boolean
+function EndTextCommandIsThisHelpMessageBeingDisplayed(hudIndex) end
 
     
 --- # New Name: EndTextCommandIsThisHelpMessageBeingDisplayed
---- EndTextCommandIsThisHelpMessageBeingDisplayed
+--- Returns whether a specific help message is being displayed or not.
+--- 
+--- ```cpp
+--- enum HudIndexes {
+---     HELP_TEXT = 0,
+---     FLOATING_HELP_TEXT_1 = 1,
+---     FLOATING_HELP_TEXT_2 = 2,
+--- }
+--- ```
 ---
 --- @hash [0x10BDDBFC529428DD](https://docs.fivem.net/natives/?_0x10BDDBFC529428DD)
---- @param p0 number (int)
+--- @param hudIndex number (int)
 --- @return boolean
---- @overload fun(p0: number): boolean
+--- @overload fun(hudIndex: number): boolean
 --- @deprecated
-function N_0x10bddbfc529428dd(p0) end
+function N_0x10bddbfc529428dd(hudIndex) end
 
     
 --- ```
@@ -1521,11 +1543,9 @@ function DoesTextBlockExist(gxt) end
 function SetTextDropShadow() end
 
     
---- ```
---- HUD colors and their values: pastebin.com/d9aHPbXN  
---- --------------------------------------------------  
---- makes hudColorIndex2 color into hudColorIndex color  
---- ```
+--- Changes the hud color at a given index (hudColorIndex) by another one (hudColorIndex2).
+--- 
+--- HUD colors can be found [here](https://docs.fivem.net/docs/game-references/hud-colors/)
 ---
 --- @hash [0x1CCC708F0F850613](https://docs.fivem.net/natives/?_0x1CCC708F0F850613)
 --- @param hudColorIndex number (int)
@@ -1536,11 +1556,9 @@ function ReplaceHudColour(hudColorIndex, hudColorIndex2) end
 
     
 --- # New Name: ReplaceHudColour
---- ```
---- HUD colors and their values: pastebin.com/d9aHPbXN  
---- --------------------------------------------------  
---- makes hudColorIndex2 color into hudColorIndex color  
---- ```
+--- Changes the hud color at a given index (hudColorIndex) by another one (hudColorIndex2).
+--- 
+--- HUD colors can be found [here](https://docs.fivem.net/docs/game-references/hud-colors/)
 ---
 --- @hash [0x1CCC708F0F850613](https://docs.fivem.net/natives/?_0x1CCC708F0F850613)
 --- @param hudColorIndex number (int)
@@ -1552,11 +1570,9 @@ function N_0x1ccc708f0f850613(hudColorIndex, hudColorIndex2) end
 
     
 --- # New Name: ReplaceHudColour
---- ```
---- HUD colors and their values: pastebin.com/d9aHPbXN  
---- --------------------------------------------------  
---- makes hudColorIndex2 color into hudColorIndex color  
---- ```
+--- Changes the hud color at a given index (hudColorIndex) by another one (hudColorIndex2).
+--- 
+--- HUD colors can be found [here](https://docs.fivem.net/docs/game-references/hud-colors/)
 ---
 --- @hash [0x1CCC708F0F850613](https://docs.fivem.net/natives/?_0x1CCC708F0F850613)
 --- @param hudColorIndex number (int)
@@ -1748,8 +1764,6 @@ function SetAbilityBarVisibilityInMultiplayer(visible) end
 function GetBlipInfoIdDisplay(blip) end
 
     
---- NOTE: 'duration' is a multiplier, so 1.0 is normal, 2.0 is twice as long (very slow), and 0.5 is half as long.
---- 
 --- Example, only occurrence in the scripts:
 --- 
 --- ```
@@ -1757,7 +1771,6 @@ function GetBlipInfoIdDisplay(blip) end
 --- ```
 --- 
 --- Example result:
---- 
 --- ![](https://i.imgur.com/YrN4Bcm.png)
 ---
 --- @hash [0x1E6611149DB3DB6B](https://docs.fivem.net/natives/?_0x1E6611149DB3DB6B)
@@ -1767,15 +1780,13 @@ function GetBlipInfoIdDisplay(blip) end
 --- @param iconType number (int)
 --- @param nameStr string (char*)
 --- @param subtitleStr string (char*)
---- @param duration number (float)
+--- @param durationMultiplier number (float)
 --- @return number
---- @overload fun(picTxd: string, picTxn: string, flash: boolean, iconType: number, nameStr: string, subtitleStr: string, duration: number): number
-function EndTextCommandThefeedPostMessagetextTu(picTxd, picTxn, flash, iconType, nameStr, subtitleStr, duration) end
+--- @overload fun(picTxd: string, picTxn: string, flash: boolean, iconType: number, nameStr: string, subtitleStr: string, durationMultiplier: number): number
+function EndTextCommandThefeedPostMessagetextTu(picTxd, picTxn, flash, iconType, nameStr, subtitleStr, durationMultiplier) end
 
     
 --- # New Name: EndTextCommandThefeedPostMessagetextTu
---- NOTE: 'duration' is a multiplier, so 1.0 is normal, 2.0 is twice as long (very slow), and 0.5 is half as long.
---- 
 --- Example, only occurrence in the scripts:
 --- 
 --- ```
@@ -1783,7 +1794,6 @@ function EndTextCommandThefeedPostMessagetextTu(picTxd, picTxn, flash, iconType,
 --- ```
 --- 
 --- Example result:
---- 
 --- ![](https://i.imgur.com/YrN4Bcm.png)
 ---
 --- @hash [0x1E6611149DB3DB6B](https://docs.fivem.net/natives/?_0x1E6611149DB3DB6B)
@@ -1793,16 +1803,14 @@ function EndTextCommandThefeedPostMessagetextTu(picTxd, picTxn, flash, iconType,
 --- @param iconType number (int)
 --- @param nameStr string (char*)
 --- @param subtitleStr string (char*)
---- @param duration number (float)
+--- @param durationMultiplier number (float)
 --- @return number
---- @overload fun(picTxd: string, picTxn: string, flash: boolean, iconType: number, nameStr: string, subtitleStr: string, duration: number): number
+--- @overload fun(picTxd: string, picTxn: string, flash: boolean, iconType: number, nameStr: string, subtitleStr: string, durationMultiplier: number): number
 --- @deprecated
-function N_0x1e6611149db3db6b(picTxd, picTxn, flash, iconType, nameStr, subtitleStr, duration) end
+function N_0x1e6611149db3db6b(picTxd, picTxn, flash, iconType, nameStr, subtitleStr, durationMultiplier) end
 
     
 --- # New Name: EndTextCommandThefeedPostMessagetextTu
---- NOTE: 'duration' is a multiplier, so 1.0 is normal, 2.0 is twice as long (very slow), and 0.5 is half as long.
---- 
 --- Example, only occurrence in the scripts:
 --- 
 --- ```
@@ -1810,7 +1818,6 @@ function N_0x1e6611149db3db6b(picTxd, picTxn, flash, iconType, nameStr, subtitle
 --- ```
 --- 
 --- Example result:
---- 
 --- ![](https://i.imgur.com/YrN4Bcm.png)
 ---
 --- @hash [0x1E6611149DB3DB6B](https://docs.fivem.net/natives/?_0x1E6611149DB3DB6B)
@@ -1820,11 +1827,11 @@ function N_0x1e6611149db3db6b(picTxd, picTxn, flash, iconType, nameStr, subtitle
 --- @param iconType number (int)
 --- @param nameStr string (char*)
 --- @param subtitleStr string (char*)
---- @param duration number (float)
+--- @param durationMultiplier number (float)
 --- @return number
---- @overload fun(picTxd: string, picTxn: string, flash: boolean, iconType: number, nameStr: string, subtitleStr: string, duration: number): number
+--- @overload fun(picTxd: string, picTxn: string, flash: boolean, iconType: number, nameStr: string, subtitleStr: string, durationMultiplier: number): number
 --- @deprecated
-function SetNotificationMessage_4(picTxd, picTxn, flash, iconType, nameStr, subtitleStr, duration) end
+function SetNotificationMessage_4(picTxd, picTxn, flash, iconType, nameStr, subtitleStr, durationMultiplier) end
 
     
 --- SetRaceTrackRender
@@ -1871,10 +1878,7 @@ function RaceGalleryNextBlipSprite(spriteId) end
 function N_0x1eae6dd17b7a5efa(spriteId) end
 
     
---- ```
---- Blips Images + IDs:  
---- gtaxscripting.blogspot.com/2016/05/gta-v-blips-id-and-image.html  
---- ```
+--- Gets the sprite id of the specified blip. Blip sprite ids and images can be found [here](https://docs.fivem.net/docs/game-references/blips/).
 ---
 --- @hash [0x1FC877464A04FC4F](https://docs.fivem.net/natives/?_0x1FC877464A04FC4F)
 --- @param blip Blip
@@ -2119,7 +2123,15 @@ function SetBlipCategory(blip, index) end
 --- 
 --- BeginTextCommandDisplayHelp('HelpMsg')
 --- EndTextCommandDisplayHelp(0, false, true, -1)
----
+--- 
+--- 
+--- 
+--- -- Shows a floating help text which uses FLOATING_HELP_TEXT_1 hud component.
+--- AddTextEntry('FloatingHelpText', 'Press E to show respect.')
+--- SetFloatingHelpTextWorldPosition(0, vector3(100, 100, 100))
+--- SetFloatingHelpTextStyle(0, true, 2, -1, 3, 0)
+--- BeginTextCommandDisplayHelp('FloatingHelpText')
+--- EndTextCommandDisplayHelp(1, false, false, -1
 --- @hash [0x238FFE5C7B0498A6](https://docs.fivem.net/natives/?_0x238FFE5C7B0498A6)
 --- @param shape number (int)
 --- @param loop boolean
@@ -2137,7 +2149,15 @@ function EndTextCommandDisplayHelp(shape, loop, beep, duration) end
 --- 
 --- BeginTextCommandDisplayHelp('HelpMsg')
 --- EndTextCommandDisplayHelp(0, false, true, -1)
----
+--- 
+--- 
+--- 
+--- -- Shows a floating help text which uses FLOATING_HELP_TEXT_1 hud component.
+--- AddTextEntry('FloatingHelpText', 'Press E to show respect.')
+--- SetFloatingHelpTextWorldPosition(0, vector3(100, 100, 100))
+--- SetFloatingHelpTextStyle(0, true, 2, -1, 3, 0)
+--- BeginTextCommandDisplayHelp('FloatingHelpText')
+--- EndTextCommandDisplayHelp(1, false, false, -1
 --- @hash [0x238FFE5C7B0498A6](https://docs.fivem.net/natives/?_0x238FFE5C7B0498A6)
 --- @param shape number (int)
 --- @param loop boolean
@@ -2284,10 +2304,16 @@ function SetBlipAsMissionCreatorBlip(blip, toggle) end
 function SetTextOutline() end
 
     
---- ```
---- Enabling this on a radius blip will make it outline only. See https://cdn.discordapp.com/attachments/553235301632573459/575132227935928330/unknown.png
---- ```
----
+--- Enabling this on a radius blip will make it outline only.\
+--- Please note that this only works on a **radius** blip (i.e. one generated using [`ADD_BLIP_FOR_RADIUS`](https://docs.fivem.net/natives/?_0x46818D79B1F7499A)), not a normal blip.
+--- 
+--- **Example result:**\
+--- ![example-image](https://i.imgur.com/hS6ki7p.png)
+--- @usage local coords = GetEntityCoords(PlayerPedId())
+--- local radiusBlip = AddBlipForRadius(coords, 100.0) -- need to have .0
+--- SetBlipColour(radiusBlip, 1)
+--- SetBlipAlpha(radiusBlip, 255)
+--- SetRadiusBlipEdge(radiusBlip, true
 --- @hash [0x25615540D894B814](https://docs.fivem.net/natives/?_0x25615540D894B814)
 --- @param blip Blip
 --- @param toggle boolean
@@ -2297,10 +2323,16 @@ function SetRadiusBlipEdge(blip, toggle) end
 
     
 --- # New Name: SetRadiusBlipEdge
---- ```
---- Enabling this on a radius blip will make it outline only. See https://cdn.discordapp.com/attachments/553235301632573459/575132227935928330/unknown.png
---- ```
----
+--- Enabling this on a radius blip will make it outline only.\
+--- Please note that this only works on a **radius** blip (i.e. one generated using [`ADD_BLIP_FOR_RADIUS`](https://docs.fivem.net/natives/?_0x46818D79B1F7499A)), not a normal blip.
+--- 
+--- **Example result:**\
+--- ![example-image](https://i.imgur.com/hS6ki7p.png)
+--- @usage local coords = GetEntityCoords(PlayerPedId())
+--- local radiusBlip = AddBlipForRadius(coords, 100.0) -- need to have .0
+--- SetBlipColour(radiusBlip, 1)
+--- SetBlipAlpha(radiusBlip, 255)
+--- SetRadiusBlipEdge(radiusBlip, true
 --- @hash [0x25615540D894B814](https://docs.fivem.net/natives/?_0x25615540D894B814)
 --- @param blip Blip
 --- @param toggle boolean
@@ -2465,13 +2497,16 @@ function DisplayAreaName(toggle) end
 function N_0x2790f4b17d098e26(toggle) end
 
     
---- N_0x2916a928514c9827
----
+--- Forces the map menu to reload.
+--- @usage   if GetNumberOfReferencesOfScriptWithNameHash(`pausemenu_map`) > 0 then -- Ensure we're on the map screen
+---     ReloadMapMenu()
+---     print('Reloaded map menu!')
+---   en
 --- @hash [0x2916A928514C9827](https://docs.fivem.net/natives/?_0x2916A928514C9827)
 ---
 --- @return nil
 --- @overload fun(): nil
-function N_0x2916a928514c9827() end
+function ReloadMapMenu() end
 
     
 --- ```
@@ -4552,7 +4587,7 @@ function SetNotificationMessageClanTag(picTxd, picTxn, flash, iconType, nameStr,
 function AddBlipForEntity(entity) end
 
     
---- Toggles the Cayo Perico map.
+--- Switches the display of the in-game minimap to the Cayo Perico map. This native needs to be called every frame to maintain the toggled state effectively.
 --- 
 --- ```
 --- NativeDB Introduced: v2189
@@ -4562,6 +4597,21 @@ function AddBlipForEntity(entity) end
 --- @param toggle boolean
 --- @return nil
 --- @overload fun(toggle: boolean): nil
+function SetUseIslandMap(toggle) end
+
+    
+--- # New Name: SetUseIslandMap
+--- Switches the display of the in-game minimap to the Cayo Perico map. This native needs to be called every frame to maintain the toggled state effectively.
+--- 
+--- ```
+--- NativeDB Introduced: v2189
+--- ```
+---
+--- @hash [0x5E1460624D194A38](https://docs.fivem.net/natives/?_0x5E1460624D194A38)
+--- @param toggle boolean
+--- @return nil
+--- @overload fun(toggle: boolean): nil
+--- @deprecated
 function SetToggleMinimapHeistIsland(toggle) end
 
     
@@ -5013,7 +5063,7 @@ function SetTextFont(fontType) end
 function N_0x66e7cb63c97b7d20() end
 
     
---- Does the same as [`SET_GPS_MULTI_ROUTE_RENDER(false)`](https://runtime.fivem.net/doc/reference.html#\_0x3DDA37128DD1ACA8)
+--- Does the same as [`SET_GPS_MULTI_ROUTE_RENDER(false)`](https://docs.fivem.net/natives/?_0x3DDA37128DD1ACA8)
 ---
 --- @hash [0x67EEDEA1B9BAFD94](https://docs.fivem.net/natives/?_0x67EEDEA1B9BAFD94)
 ---
@@ -5023,7 +5073,7 @@ function ClearGpsMultiRoute() end
 
     
 --- # New Name: ClearGpsMultiRoute
---- Does the same as [`SET_GPS_MULTI_ROUTE_RENDER(false)`](https://runtime.fivem.net/doc/reference.html#\_0x3DDA37128DD1ACA8)
+--- Does the same as [`SET_GPS_MULTI_ROUTE_RENDER(false)`](https://docs.fivem.net/natives/?_0x3DDA37128DD1ACA8)
 ---
 --- @hash [0x67EEDEA1B9BAFD94](https://docs.fivem.net/natives/?_0x67EEDEA1B9BAFD94)
 ---
@@ -5127,6 +5177,8 @@ function N_0x6b1de27ee78e6a19(hudColorIndex) end
 function SetTextRightJustify(toggle) end
 
     
+--- Enables or disables the sonar sweep animation on the minimap.
+--- 
 --- ```
 --- NativeDB Introduced: v2189
 --- ```
@@ -5135,6 +5187,21 @@ function SetTextRightJustify(toggle) end
 --- @param toggle boolean
 --- @return nil
 --- @overload fun(toggle: boolean): nil
+function SetMinimapSonarSweep(toggle) end
+
+    
+--- # New Name: SetMinimapSonarSweep
+--- Enables or disables the sonar sweep animation on the minimap.
+--- 
+--- ```
+--- NativeDB Introduced: v2189
+--- ```
+---
+--- @hash [0x6B50FC8749632EC1](https://docs.fivem.net/natives/?_0x6B50FC8749632EC1)
+--- @param toggle boolean
+--- @return nil
+--- @overload fun(toggle: boolean): nil
+--- @deprecated
 function SetMinimapSonarEnabled(toggle) end
 
     
@@ -5651,7 +5718,7 @@ function RequestAdditionalText(gxt, slot) end
 --- You need to center the minimap manually as well as change/lock it's zoom and angle in order for it to appear correctly on the minimap.
 --- You'll also need to use the `GOLF` scaleform in order to get the correct minmap border to show up.
 --- 
---- Use [`N_0x35edd5b2e3ff01c0()`](https://runtime.fivem.net/doc/reference.html#\_0x35EDD5B2E3FF01C0) to reset the map when you no longer want to display any golf holes (you still need to unlock zoom, position and angle of the radar manually after calling this).
+--- Use [`SET_MINIMAP_GOLF_COURSE_OFF()`](https://docs.fivem.net/natives/?_0x35EDD5B2E3FF01C0) to reset the map when you no longer want to display any golf holes (you still need to unlock zoom, position and angle of the radar manually after calling this).
 ---
 --- @hash [0x71BDB63DBAF8DA59](https://docs.fivem.net/natives/?_0x71BDB63DBAF8DA59)
 --- @param hole number (int)
@@ -5667,7 +5734,7 @@ function SetMinimapGolfCourse(hole) end
 --- You need to center the minimap manually as well as change/lock it's zoom and angle in order for it to appear correctly on the minimap.
 --- You'll also need to use the `GOLF` scaleform in order to get the correct minmap border to show up.
 --- 
---- Use [`N_0x35edd5b2e3ff01c0()`](https://runtime.fivem.net/doc/reference.html#\_0x35EDD5B2E3FF01C0) to reset the map when you no longer want to display any golf holes (you still need to unlock zoom, position and angle of the radar manually after calling this).
+--- Use [`SET_MINIMAP_GOLF_COURSE_OFF()`](https://docs.fivem.net/natives/?_0x35EDD5B2E3FF01C0) to reset the map when you no longer want to display any golf holes (you still need to unlock zoom, position and angle of the radar manually after calling this).
 ---
 --- @hash [0x71BDB63DBAF8DA59](https://docs.fivem.net/natives/?_0x71BDB63DBAF8DA59)
 --- @param hole number (int)
@@ -5842,24 +5909,33 @@ function ShowHeightOnBlip(blip, toggle) end
 function N_0x75a16c3da34f1245(blip, toggle) end
 
     
---- This native is used to colorize certain map components like the army base at the top of the map.
+--- This native is used to colorize/toggle certain map components like the army base.
 --- 
---- An incomplete list of components ID:
+--- Component IDs 6 through 14 are used by the freemode event King of the Castle in GTA Online.
 --- 
---- 0: Los Santos' air port yellow lift-off markers.
---- 1: Sandy Shore's air port yellow lift-off markers.
---- 2: Trevor's air port yellow lift-off markers.
---- 6: Vespucci Beach lifeguard building.
---- 15: Army base.
+--- ### An incomplete list of component IDs:
 --- 
---- [List of hud colors](https://pastebin.com/d9aHPbXN)
----
+--- *   **0**: Los Santos International Airport yellow runway markers
+--- *   **1**: Sandy Shores Airfield yellow runway markers
+--- *   **2**: McKenzie Field yellow runway markers
+--- *   **6**: Vespucci Beach lifeguard building
+--- *   **7**: Top level zone of Alien Camp (Hippy Camp)
+--- *   **8**: Paleto Bay fire station drill tower
+--- *   **9** Land Act Dam tower
+--- *   **10** Pala Springs Aerial Tramway
+--- *   **11** Galileo Observatory power unit
+--- *   **12** Small zone (empty "interior") near Central Los Santos Medical Center
+--- *   **13** Richman Mansion grotto
+--- *   **14** 2 Alien Camp (Hippy Camp) circles
+--- *   **15** Fort Zancudo
+--- @usage -- Enables Fort Zancudo on the map
+--- SetMinimapComponent(15, true, 0
 --- @hash [0x75A9A10948D1DEA6](https://docs.fivem.net/natives/?_0x75A9A10948D1DEA6)
 --- @param componentID number (int)
 --- @param toggle boolean
 --- @param hudColor number (int)
---- @return any
---- @overload fun(componentID: number, toggle: boolean, hudColor: number): any
+--- @return number
+--- @overload fun(componentID: number, toggle: boolean, hudColor: number): number
 function SetMinimapComponent(componentID, toggle, hudColor) end
 
     
@@ -6058,34 +6134,98 @@ function SetFloatingHelpTextWorldPosition(hudIndex, x, y, z) end
 function N_0x784ba7e0eceb4178(hudIndex, x, y, z) end
 
     
---- SetFloatingHelpTextStyle
----
+--- ### Arrow Positions
+--- 
+--- *   0 = Off / No arrow
+--- *   1 = Top
+--- *   2 = Left
+--- *   3 = Bottom
+--- *   4 = Right
+--- 
+--- ### Note
+--- 
+--- Any numeric value greater than 4 will result in a right arrow (Index 4)
+--- 
+--- ### Important
+--- 
+--- Needs to be called every frame
+--- 
+--- ![Preview of the provided example code](https://forum.cfx.re/uploads/default/original/4X/7/f/3/7f319bc93c3a00b8829bd4ac8dddc235fbf3a9ef.png)
+--- @usage function DisplayHelpText(string)
+---     BeginTextCommandDisplayHelp("STRING")
+---     AddTextComponentSubstringPlayerName(string)
+---     EndTextCommandDisplayHelp(1, false, false, 0)
+--- end
+--- 
+--- CreateThread(function()
+---     while true do
+---         Wait(0)
+--- 
+---         local Ped = PlayerPedId()
+--- 
+---         DisplayHelpText('Example Text')
+---         SetFloatingHelpTextStyle(0, 2, 2, 0, 3, 0)
+---         SetFloatingHelpTextToEntity(0, Ped, 0, 0)
+---     end
+--- end
 --- @hash [0x788E7FD431BD67F1](https://docs.fivem.net/natives/?_0x788E7FD431BD67F1)
 --- @param hudIndex number (int)
---- @param p1 number (int)
---- @param p2 number (int)
---- @param p3 number (int)
---- @param p4 number (int)
---- @param p5 number (int)
+--- @param style number (int)
+--- @param hudColor number (int)
+--- @param alpha number (int)
+--- @param arrowPosition number (int)
+--- @param boxOffset number (int)
 --- @return nil
---- @overload fun(hudIndex: number, p1: number, p2: number, p3: number, p4: number, p5: number): nil
-function SetFloatingHelpTextStyle(hudIndex, p1, p2, p3, p4, p5) end
+--- @overload fun(hudIndex: number, style: number, hudColor: number, alpha: number, arrowPosition: number, boxOffset: number): nil
+function SetFloatingHelpTextStyle(hudIndex, style, hudColor, alpha, arrowPosition, boxOffset) end
 
     
 --- # New Name: SetFloatingHelpTextStyle
---- SetFloatingHelpTextStyle
----
+--- ### Arrow Positions
+--- 
+--- *   0 = Off / No arrow
+--- *   1 = Top
+--- *   2 = Left
+--- *   3 = Bottom
+--- *   4 = Right
+--- 
+--- ### Note
+--- 
+--- Any numeric value greater than 4 will result in a right arrow (Index 4)
+--- 
+--- ### Important
+--- 
+--- Needs to be called every frame
+--- 
+--- ![Preview of the provided example code](https://forum.cfx.re/uploads/default/original/4X/7/f/3/7f319bc93c3a00b8829bd4ac8dddc235fbf3a9ef.png)
+--- @usage function DisplayHelpText(string)
+---     BeginTextCommandDisplayHelp("STRING")
+---     AddTextComponentSubstringPlayerName(string)
+---     EndTextCommandDisplayHelp(1, false, false, 0)
+--- end
+--- 
+--- CreateThread(function()
+---     while true do
+---         Wait(0)
+--- 
+---         local Ped = PlayerPedId()
+--- 
+---         DisplayHelpText('Example Text')
+---         SetFloatingHelpTextStyle(0, 2, 2, 0, 3, 0)
+---         SetFloatingHelpTextToEntity(0, Ped, 0, 0)
+---     end
+--- end
 --- @hash [0x788E7FD431BD67F1](https://docs.fivem.net/natives/?_0x788E7FD431BD67F1)
 --- @param hudIndex number (int)
---- @param p1 number (int)
---- @param p2 number (int)
---- @param p3 number (int)
---- @param p4 number (int)
---- @param p5 number (int)
+--- @param style number (int)
+--- @param hudColor number (int)
+--- @param alpha number (int)
+--- @param arrowPosition number (int)
+--- @param boxOffset number (int)
 --- @return nil
---- @overload fun(hudIndex: number, p1: number, p2: number, p3: number, p4: number, p5: number): nil
+--- @overload fun(hudIndex: number, style: number, hudColor: number, alpha: number, arrowPosition: number, boxOffset: number): nil
 --- @deprecated
-function N_0x788e7fd431bd67f1(hudIndex, p1, p2, p3, p4, p5) end
+function N_0x788e7fd431bd67f1(hudIndex, style, hudColor, alpha, arrowPosition, boxOffset) end
 
     
 --- IsNamedRendertargetRegistered
@@ -6341,9 +6481,9 @@ function SetMpGamerTagChatting(gamerTagId, string) end
 function N_0x7c226d5346d4d10a(p0) end
 
     
---- ```
---- HUD colors and their values: pastebin.com/d9aHPbXN  
---- ```
+--- Gets hud color RGBA parameter values by passing a hud color index (hudColorIndex).
+--- 
+--- HUD colors can be found [here](https://docs.fivem.net/docs/game-references/hud-colors/)
 ---
 --- @hash [0x7C9C91AB74A0360F](https://docs.fivem.net/natives/?_0x7C9C91AB74A0360F)
 --- @param hudColorIndex number (int)
@@ -7093,20 +7233,24 @@ function SetGpsCustomRouteRender(toggle, radarThickness, mapThickness) end
 function N_0x900086f371220b6f(toggle, radarThickness, mapThickness) end
 
     
---- **displayId Behaviour** <br>
---- 0 = Doesn't show up, ever, anywhere. <br>
---- 1 = Doesn't show up, ever, anywhere. <br>
---- 2 = Shows on both main map and minimap. (Selectable on map) <br>
---- 3 = Shows on main map only. (Selectable on map) <br>
---- 4 = Shows on main map only. (Selectable on map) <br>
---- 5 = Shows on minimap only. <br>
---- 6 = Shows on both main map and minimap. (Selectable on map) <br>
---- 7 = Doesn't show up, ever, anywhere. <br>
---- 8 = Shows on both main map and minimap. (Not selectable on map) <br>
---- 9 = Shows on minimap only. <br>
---- 10 = Shows on both main map and minimap. (Not selectable on map) <br>
---- Anything higher than 10 seems to be exactly the same as 10. <br>
---- <br>
+--- **displayId Behaviour**
+--- 
+--- | display ID 	| Behaviour                                                   	|
+--- |------------	|-------------------------------------------------------------	|
+--- | 0          	| Doesn't show up, ever, anywhere.                            	|
+--- | 1          	| Doesn't show up, ever, anywhere.                            	|
+--- | 2          	| Shows on both main map and minimap. (Selectable on map)     	|
+--- | 3          	| Shows on main map only. (Selectable on map)                 	|
+--- | 4          	| Shows on main map only. (Selectable on map)                 	|
+--- | 5          	| Shows on minimap only.                                      	|
+--- | 6          	| Shows on both main map and minimap. (Selectable on map)     	|
+--- | 7          	| Doesn't show up, ever, anywhere.                            	|
+--- | 8          	| Shows on both main map and minimap. (Not selectable on map) 	|
+--- | 9          	| Shows on minimap only.                                      	|
+--- | 10         	| Shows on both main map and minimap. (Not selectable on map) 	|
+--- 
+--- Anything higher than 10 seems to be exactly the same as 10.
+--- 
 --- Rockstar seem to only use 0, 2, 3, 4, 5 and 8 in the decompiled scripts.
 ---
 --- @hash [0x9029B2F3DA924928](https://docs.fivem.net/natives/?_0x9029B2F3DA924928)
@@ -7428,26 +7572,15 @@ function RemoveMultiplayerWalletCash() end
 function N_0x95cf81bd06ee1887() end
 
     
---- ```
---- The messages are localized strings.  
---- Examples:  
---- "No_bus_money"  
---- "Enter_bus"  
---- "Tour_help"  
---- "LETTERS_HELP2"  
---- "Dummy"  
---- **The bool appears to always be false (if it even is a bool, as it's represented by a zero)**  
---- --------  
---- p1 doesn't seem to make a difference, regardless of the state it's in.   
---- picture of where on the screen this is displayed?  
---- ```
+--- Shows a help message for one frame.
+--- Do note that this message doesn't get added to the Pause Menu info section.
 ---
 --- @hash [0x960C9FF8F616E41C](https://docs.fivem.net/natives/?_0x960C9FF8F616E41C)
---- @param message string (char*)
---- @param p1 boolean
+--- @param pTextLabel string (char*)
+--- @param bCurvedWindow boolean
 --- @return nil
---- @overload fun(message: string, p1: boolean): nil
-function DisplayHelpTextThisFrame(message, p1) end
+--- @overload fun(pTextLabel: string, bCurvedWindow: boolean): nil
+function DisplayHelpTextThisFrame(pTextLabel, bCurvedWindow) end
 
     
 --- ```
@@ -8780,7 +8913,7 @@ function DoesTextLabelExist(gxt) end
 --- p1 is either 1 or 2 in the PC scripts.  
 --- ```
 --- 
---- This native is used to "give"/duplicate a player ped to a frontend menu as configured via the `ACTIVATE_FRONTEND_MENU` native, you first must utilize the `CLONE_PED` ( https://runtime.fivem.net/doc/natives/#\_0xEF29A16337FACADB ) to clone said ped.
+--- This native is used to "give"/duplicate a player ped to a frontend menu as configured via the `ACTIVATE_FRONTEND_MENU` native, you first must utilize the [CLONE_PED](https://docs.fivem.net/natives/?_0xEF29A16337FACADB) to clone said ped.
 ---
 --- @hash [0xAC0BFBDC3BE00E14](https://docs.fivem.net/natives/?_0xAC0BFBDC3BE00E14)
 --- @param ped Ped
@@ -10141,8 +10274,8 @@ function N_0xcdca26e80faecb8f() end
 --- By default, the blip will show as a *regular* blip with the specified color/sprite if it is outside of the minimap view.
 --- 
 --- Example image:
---- ![minimap](https://w.wew.wtf/pdcjig.png)
---- ![big map](https://w.wew.wtf/zgcjcm.png)
+--- ![minimap](https://i.imgur.com/qLbXWcQ.png)
+--- ![big map](https://i.imgur.com/0j7O7Rh.png)
 --- 
 --- (Native name is *likely* to actually be ADD_BLIP_FOR_AREA, but due to the usual reasons this can't be confirmed)
 --- @usage local coords = GetEntityCoords(PlayerPedId())
@@ -10168,8 +10301,8 @@ function AddBlipForArea(x, y, z, width, height) end
 --- By default, the blip will show as a *regular* blip with the specified color/sprite if it is outside of the minimap view.
 --- 
 --- Example image:
---- ![minimap](https://w.wew.wtf/pdcjig.png)
---- ![big map](https://w.wew.wtf/zgcjcm.png)
+--- ![minimap](https://i.imgur.com/qLbXWcQ.png)
+--- ![big map](https://i.imgur.com/0j7O7Rh.png)
 --- 
 --- (Native name is *likely* to actually be ADD_BLIP_FOR_AREA, but due to the usual reasons this can't be confirmed)
 --- @usage local coords = GetEntityCoords(PlayerPedId())
@@ -11312,10 +11445,6 @@ function SetPauseMenuActive(toggle) end
 function GetBlipColour(blip) end
 
     
---- <!--
---- _loc1_.map((name, idx) => `| ${idx} | ${name} | ![${name}](https://runtime.fivem.net/blips/${name}.svg) |`).join('\n')
---- -->
---- 
 --- Sets the displayed sprite for a specific blip.
 --- 
 --- There's a [list of sprites](https://docs.fivem.net/game-references/blips/) on the FiveM documentation site.
@@ -12043,9 +12172,7 @@ function N_0xf284ac67940c6812() end
 function FlashMinimapDisplay() end
 
     
---- ```
---- HUD colors and their values: pastebin.com/d9aHPbXN  
---- ```
+--- Hud colors can be found [here](https://docs.fivem.net/docs/game-references/hud-colors/)
 ---
 --- @hash [0xF314CF4F0211894E](https://docs.fivem.net/natives/?_0xF314CF4F0211894E)
 --- @param hudColorIndex number (int)
@@ -12059,9 +12186,7 @@ function ReplaceHudColourWithRgba(hudColorIndex, r, g, b, a) end
 
     
 --- # New Name: ReplaceHudColourWithRgba
---- ```
---- HUD colors and their values: pastebin.com/d9aHPbXN  
---- ```
+--- Hud colors can be found [here](https://docs.fivem.net/docs/game-references/hud-colors/)
 ---
 --- @hash [0xF314CF4F0211894E](https://docs.fivem.net/natives/?_0xF314CF4F0211894E)
 --- @param hudColorIndex number (int)
@@ -12076,9 +12201,7 @@ function N_0xf314cf4f0211894e(hudColorIndex, r, g, b, a) end
 
     
 --- # New Name: ReplaceHudColourWithRgba
---- ```
---- HUD colors and their values: pastebin.com/d9aHPbXN  
---- ```
+--- Hud colors can be found [here](https://docs.fivem.net/docs/game-references/hud-colors/)
 ---
 --- @hash [0xF314CF4F0211894E](https://docs.fivem.net/natives/?_0xF314CF4F0211894E)
 --- @param hudColorIndex number (int)

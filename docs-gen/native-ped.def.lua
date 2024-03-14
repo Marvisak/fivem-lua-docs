@@ -122,10 +122,7 @@ function SetPedDucking(ped, toggle) end
 function N_0x03ea03af85a85cb7(ped, p1, p2, p3, p4, p5, p6, p7, p8) end
 
     
---- ```
---- List of component/props ID  
---- gtaxscripting.blogspot.com/2016/04/gta-v-peds-component-and-props.html  
---- ```
+--- GetPedTextureVariation
 ---
 --- @hash [0x04A355E041E004E6](https://docs.fivem.net/natives/?_0x04A355E041E004E6)
 --- @param ped Ped
@@ -222,10 +219,7 @@ function IsAnyPedNearPoint(x, y, z, radius) end
 function SetPedMoveRateOverride(ped, value) end
 
     
---- ```
---- List of component/props ID  
---- gtaxscripting.blogspot.com/2016/04/gta-v-peds-component-and-props.html  
---- ```
+--- ClearPedProp
 ---
 --- @hash [0x0943E5B8E078E76E](https://docs.fivem.net/natives/?_0x0943E5B8E078E76E)
 --- @param ped Ped
@@ -1141,22 +1135,22 @@ function N_0x1a330d297aac6bc1(ped, p1) end
 function SetAiWeaponDamageModifier(value) end
 
     
---- AddScenarioBlockingArea
+--- Sets an area where scenarios are blocked
 ---
 --- @hash [0x1B5C85C612E5256E](https://docs.fivem.net/natives/?_0x1B5C85C612E5256E)
---- @param x1 number (float)
---- @param y1 number (float)
---- @param z1 number (float)
---- @param x2 number (float)
---- @param y2 number (float)
---- @param z2 number (float)
---- @param p6 boolean
---- @param p7 boolean
---- @param p8 boolean
---- @param p9 boolean
+--- @param posMinX number (float)
+--- @param posMinY number (float)
+--- @param posMinZ number (float)
+--- @param posMaxX number (float)
+--- @param posMaxY number (float)
+--- @param posMaxZ number (float)
+--- @param network boolean
+--- @param cancelActive boolean
+--- @param blockPeds boolean
+--- @param blockVehicles boolean
 --- @return number
---- @overload fun(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, p6: boolean, p7: boolean, p8: boolean, p9: boolean): number
-function AddScenarioBlockingArea(x1, y1, z1, x2, y2, z2, p6, p7, p8, p9) end
+--- @overload fun(posMinX: number, posMinY: number, posMinZ: number, posMaxX: number, posMaxY: number, posMaxZ: number, network: boolean, cancelActive: boolean, blockPeds: boolean, blockVehicles: boolean): number
+function AddScenarioBlockingArea(posMinX, posMinY, posMinZ, posMaxX, posMaxY, posMaxZ, network, cancelActive, blockPeds, blockVehicles) end
 
     
 --- IsPedUsingScenario
@@ -1368,25 +1362,41 @@ function SetPedWeaponMovementClipset(ped, clipSet) end
 --- 
 --- ### MP Freemode list of components
 --- 
---- **0**: Face\
---- **1**: Mask\
---- **2**: Hair\
---- **3**: Torso\
---- **4**: Leg\
---- **5**: Parachute / bag\
---- **6**: Shoes\
---- **7**: Accessory\
---- **8**: Undershirt\
---- **9**: Kevlar\
---- **10**: Badge\
+--- **0**: Face
+--- **1**: Mask
+--- **2**: Hair
+--- **3**: Torso
+--- **4**: Leg
+--- **5**: Parachute / bag
+--- **6**: Shoes
+--- **7**: Accessory
+--- **8**: Undershirt
+--- **9**: Kevlar
+--- **10**: Badge
 --- **11**: Torso 2
 --- 
---- ### Related and useful natives
+--- List of Component IDs
 --- 
---- [GET_NUMBER_OF_PED_DRAWABLE_VARIATIONS](https://docs.fivem.net/natives/?_0x27561561732A7842)\
---- [GET_NUMBER_OF_PED_TEXTURE_VARIATIONS](https://docs.fivem.net/natives/?_0x8F7156A3142A6BAD)
---- 
---- [List of component/props ID](gtaxscripting.blogspot.com/2016/04/gta-v-peds-component-and-props.html) of player_two with examples
+--- ```cpp
+--- // Components
+--- enum ePedVarComp
+--- {
+---     PV_COMP_INVALID = 0xFFFFFFFF,
+---     PV_COMP_HEAD = 0, // "HEAD"
+---     PV_COMP_BERD = 1, // "BEARD"
+---     PV_COMP_HAIR = 2, // "HAIR"
+---     PV_COMP_UPPR = 3, // "UPPER"
+---     PV_COMP_LOWR = 4, // "LOWER"
+---     PV_COMP_HAND = 5, // "HAND"
+---     PV_COMP_FEET = 6, // "FEET"
+---     PV_COMP_TEEF = 7, // "TEETH"
+---     PV_COMP_ACCS = 8, // "ACCESSORIES"
+---     PV_COMP_TASK = 9, // "TASK"
+---     PV_COMP_DECL = 10, // "DECL"
+---     PV_COMP_JBIB = 11, // "JBIB"
+---     PV_COMP_MAX = 12,
+--- };
+--- ```
 ---
 --- @hash [0x262B14F48D29DE80](https://docs.fivem.net/natives/?_0x262B14F48D29DE80)
 --- @param ped Ped
@@ -1483,11 +1493,6 @@ function N_0x26af0e8e30bd2a2c(ped) end
 
     
 --- ```
---- List of component/props ID  
---- gtaxscripting.blogspot.com/2016/04/gta-v-peds-component-and-props.html  
---- ```
---- 
---- ```
 --- NativeDB Added Parameter 3: BOOL p2
 --- ```
 ---
@@ -1560,10 +1565,7 @@ function GetPedHeadBlendData(ped, headBlendData) end
 function GetPedHeadBlendData(ped, headBlendData) end
 
     
---- ```
---- List of component/props ID  
---- gtaxscripting.blogspot.com/2016/04/gta-v-peds-component-and-props.html  
---- ```
+--- GetNumberOfPedDrawableVariations
 ---
 --- @hash [0x27561561732A7842](https://docs.fivem.net/natives/?_0x27561561732A7842)
 --- @param ped Ped
@@ -1694,53 +1696,44 @@ function SetPedAsGroupLeader(ped, groupId) end
 function IsPedRunningMobilePhoneTask(ped) end
 
     
---- ```
---- List of component/props ID
---- gtaxscripting.blogspot.com/2016/04/gta-v-peds-component-and-props.html
---- ```
+--- SetPedPreloadPropData
 ---
 --- @hash [0x2B16A3BFF1FBCE49](https://docs.fivem.net/natives/?_0x2B16A3BFF1FBCE49)
 --- @param ped Ped
 --- @param componentId number (int)
 --- @param drawableId number (int)
---- @param TextureId number (int)
+--- @param textureId number (int)
 --- @return boolean
---- @overload fun(ped: Ped, componentId: number, drawableId: number, TextureId: number): boolean
-function SetPedPreloadPropData(ped, componentId, drawableId, TextureId) end
+--- @overload fun(ped: Ped, componentId: number, drawableId: number, textureId: number): boolean
+function SetPedPreloadPropData(ped, componentId, drawableId, textureId) end
 
     
 --- # New Name: SetPedPreloadPropData
---- ```
---- List of component/props ID
---- gtaxscripting.blogspot.com/2016/04/gta-v-peds-component-and-props.html
---- ```
+--- SetPedPreloadPropData
 ---
 --- @hash [0x2B16A3BFF1FBCE49](https://docs.fivem.net/natives/?_0x2B16A3BFF1FBCE49)
 --- @param ped Ped
 --- @param componentId number (int)
 --- @param drawableId number (int)
---- @param TextureId number (int)
+--- @param textureId number (int)
 --- @return boolean
---- @overload fun(ped: Ped, componentId: number, drawableId: number, TextureId: number): boolean
+--- @overload fun(ped: Ped, componentId: number, drawableId: number, textureId: number): boolean
 --- @deprecated
-function N_0x2b16a3bff1fbce49(ped, componentId, drawableId, TextureId) end
+function N_0x2b16a3bff1fbce49(ped, componentId, drawableId, textureId) end
 
     
 --- # New Name: SetPedPreloadPropData
---- ```
---- List of component/props ID
---- gtaxscripting.blogspot.com/2016/04/gta-v-peds-component-and-props.html
---- ```
+--- SetPedPreloadPropData
 ---
 --- @hash [0x2B16A3BFF1FBCE49](https://docs.fivem.net/natives/?_0x2B16A3BFF1FBCE49)
 --- @param ped Ped
 --- @param componentId number (int)
 --- @param drawableId number (int)
---- @param TextureId number (int)
+--- @param textureId number (int)
 --- @return boolean
---- @overload fun(ped: Ped, componentId: number, drawableId: number, TextureId: number): boolean
+--- @overload fun(ped: Ped, componentId: number, drawableId: number, textureId: number): boolean
 --- @deprecated
-function IsPedPropValid(ped, componentId, drawableId, TextureId) end
+function IsPedPropValid(ped, componentId, drawableId, textureId) end
 
     
 --- ```
@@ -1806,6 +1799,8 @@ function GetPedFloodInvincibility(ped, p1) end
 --- 
 --- The naming of the native is a legacy leftover (formerly EXPLODE_CHAR_HEAD in GTA3) as in the early 3D GTA games, lethal
 --- damage to a ped head would 'explode' it.
+--- 
+--- Do note that this native function does not work in multiplayer/network environment.
 ---
 --- @hash [0x2D05CED3A38D0F3A](https://docs.fivem.net/natives/?_0x2D05CED3A38D0F3A)
 --- @param ped Ped
@@ -1942,11 +1937,11 @@ function N_0x2f3c3d9f50681de4(p0, p1) end
 --- RemoveScenarioBlockingArea
 ---
 --- @hash [0x31D16B74C6E29D66](https://docs.fivem.net/natives/?_0x31D16B74C6E29D66)
---- @param p0 any
---- @param p1 boolean
+--- @param scenarioBlockingIndex number (int)
+--- @param bNetwork boolean
 --- @return nil
---- @overload fun(p0: any, p1: boolean): nil
-function RemoveScenarioBlockingArea(p0, p1) end
+--- @overload fun(scenarioBlockingIndex: number, bNetwork: boolean): nil
+function RemoveScenarioBlockingArea(scenarioBlockingIndex, bNetwork) end
 
     
 --- ```
@@ -2003,14 +1998,18 @@ function ApplyPedBloodByZone(ped, p1, p2, p3, p4) end
 function N_0x3311e47b91edcbbc(ped, p1, p2, p3, p4) end
 
     
---- Seems to consistently return true if the ped is dead, however, it does not detect the dying phase.
+--- Determines if a ped is dead. Contrary to what the name might suggest, it does not always detect when a ped is in the 'dying' phase (transitioning to death). The exception is when `checkMeleeDeathFlags` is set to `true`, which then includes peds in the midst of melee takedown moves as being in a dying state, even if the death task has not yet started.
+--- 
+--- ```
+--- NativeDB Introduced: v323
+--- ```
 ---
 --- @hash [0x3317DEDB88C95038](https://docs.fivem.net/natives/?_0x3317DEDB88C95038)
 --- @param ped Ped
---- @param p1 boolean
+--- @param checkMeleeDeathFlags boolean
 --- @return boolean
---- @overload fun(ped: Ped, p1: boolean): boolean
-function IsPedDeadOrDying(ped, p1) end
+--- @overload fun(ped: Ped, checkMeleeDeathFlags: boolean): boolean
+function IsPedDeadOrDying(ped, checkMeleeDeathFlags) end
 
     
 --- SetPedToLoadCover
@@ -2960,7 +2959,25 @@ function SetCreateRandomCopsOnScenarios(toggle) end
 --- ```
 --- gtaforums.com/topic/885580-ped-headshotmugshot-txd/  
 --- ```
----
+--- @usage CreateThread(function()
+---     -- Get the ped headshot image.
+---     local handle = RegisterPedheadshot(PlayerPedId())
+---     while not IsPedheadshotReady(handle) or not IsPedheadshotValid(handle) do
+---         Wait(0)
+---     end
+---     local txd = GetPedheadshotTxdString(handle)
+--- 
+---     -- Add the notification text, the more text you add the smaller the font
+---     -- size will become (text is forced on 1 line only), so keep this short!
+---     SetNotificationTextEntry("STRING")
+---     AddTextComponentSubstringPlayerName("Headshot")
+--- 
+---     -- Draw the notification
+---     DrawNotificationAward(txd, txd, 200, 0, "FM_GEN_UNLOCK")
+--- 
+---     -- Cleanup after yourself!
+---     UnregisterPedheadshot(handle)
+--- end
 --- @hash [0x4462658788425076](https://docs.fivem.net/natives/?_0x4462658788425076)
 --- @param ped Ped
 --- @return number
@@ -3269,7 +3286,7 @@ function IsPedInCombat(ped, target) end
 --- 
 --- **Note:**
 --- 
---- You may need to call [`SetPedHeadBlendData`](#0x9414E18B9434C2FE) prior to calling this native in order for it to work.
+--- You may need to call [`SetPedHeadBlendData`](https://docs.fivem.net/natives/?_0x9414E18B9434C2FE) prior to calling this native in order for it to work.
 ---
 --- @hash [0x48F44967FA05CC1E](https://docs.fivem.net/natives/?_0x48F44967FA05CC1E)
 --- @param ped Ped
@@ -3288,7 +3305,7 @@ function SetPedHeadOverlay(ped, overlayID, index, opacity) end
 --- 
 --- **Note:**
 --- 
---- You may need to call [`SetPedHeadBlendData`](#0x9414E18B9434C2FE) prior to calling this native in order for it to work.
+--- You may need to call [`SetPedHeadBlendData`](https://docs.fivem.net/natives/?_0x9414E18B9434C2FE) prior to calling this native in order for it to work.
 ---
 --- @hash [0x497BF74A7B9CB952](https://docs.fivem.net/natives/?_0x497BF74A7B9CB952)
 --- @param ped Ped
@@ -3358,8 +3375,10 @@ function GetAnimInitialOffsetRotation(animDict, animName, x, y, z, xRot, yRot, z
 function IsPedTracked(ped) end
 
     
+--- Sets the tint index for the hair on the specified ped.
+--- 
 --- ```
---- Used for freemode (online) characters.  
+--- NativeDB Introduced: v323
 --- ```
 ---
 --- @hash [0x4CFFC65454C93A49](https://docs.fivem.net/natives/?_0x4CFFC65454C93A49)
@@ -3368,6 +3387,23 @@ function IsPedTracked(ped) end
 --- @param highlightColorID number (int)
 --- @return nil
 --- @overload fun(ped: Ped, colorID: number, highlightColorID: number): nil
+function SetPedHairTint(ped, colorID, highlightColorID) end
+
+    
+--- # New Name: SetPedHairTint
+--- Sets the tint index for the hair on the specified ped.
+--- 
+--- ```
+--- NativeDB Introduced: v323
+--- ```
+---
+--- @hash [0x4CFFC65454C93A49](https://docs.fivem.net/natives/?_0x4CFFC65454C93A49)
+--- @param ped Ped
+--- @param colorID number (int)
+--- @param highlightColorID number (int)
+--- @return nil
+--- @overload fun(ped: Ped, colorID: number, highlightColorID: number): nil
+--- @deprecated
 function SetPedHairColor(ped, colorID, highlightColorID) end
 
     
@@ -4380,10 +4416,7 @@ function ApplyPedOverlay(ped, collection, overlay) end
 function SetPedDecoration(ped, collection, overlay) end
 
     
---- ```
---- List of component/props ID  
---- gtaxscripting.blogspot.com/2016/04/gta-v-peds-component-and-props.html  
---- ```
+--- GetNumberOfPedPropDrawableVariations
 ---
 --- @hash [0x5FAF9754E789FB47](https://docs.fivem.net/natives/?_0x5FAF9754E789FB47)
 --- @param ped Ped
@@ -4798,7 +4831,7 @@ function IsPedOnVehicle(ped) end
 --- 4 - Legs
 --- 5 - Hands
 --- 6 - Foot
---- 7 - ------
+--- 7 - Scarfs/Neck Accessories
 --- 8 - Accessories 1
 --- 9 - Accessories 2
 --- 10- Decals
@@ -5118,10 +5151,7 @@ function GetSeatPedIsTryingToEnter(ped) end
 function IsPedInAnyTrain(ped) end
 
     
---- ```
---- List of component/props ID  
---- gtaxscripting.blogspot.com/2016/04/gta-v-peds-component-and-props.html  
---- ```
+--- KnockOffPedProp
 ---
 --- @hash [0x6FD7816A36615F48](https://docs.fivem.net/natives/?_0x6FD7816A36615F48)
 --- @param ped Ped
@@ -5207,7 +5237,7 @@ function N_0x711794453cfd692b(p0, p1) end
 --- 
 --- **Note:**
 --- 
---- You may need to call [`SetPedHeadBlendData`](#0x9414E18B9434C2FE) prior to calling this native in order for it to work.
+--- You may need to call [`SetPedHeadBlendData`](https://docs.fivem.net/natives/?_0x9414E18B9434C2FE) prior to calling this native in order for it to work.
 ---
 --- @hash [0x71A5C1DBA060049E](https://docs.fivem.net/natives/?_0x71A5C1DBA060049E)
 --- @param ped Ped
@@ -5502,14 +5532,14 @@ function GetPedParachuteState(ped) end
 function SetPedVisualFieldMinElevationAngle(ped, angle) end
 
     
---- SetScenarioPedDensityMultiplierThisFrame
+--- Set the number of scenario peds on the entire map
 ---
 --- @hash [0x7A556143A1C03898](https://docs.fivem.net/natives/?_0x7A556143A1C03898)
---- @param p0 number (float)
---- @param p1 number (float)
+--- @param interiorMult number (float)
+--- @param exteriorMult number (float)
 --- @return nil
---- @overload fun(p0: number, p1: number): nil
-function SetScenarioPedDensityMultiplierThisFrame(p0, p1) end
+--- @overload fun(interiorMult: number, exteriorMult: number): nil
+function SetScenarioPedDensityMultiplierThisFrame(interiorMult, exteriorMult) end
 
     
 --- ```
@@ -5990,10 +6020,7 @@ function ClearPedAlternateWalkAnim(ped, p1) end
 function SetPedStealthMovement(ped, p1, action) end
 
     
---- ```
---- List of component/props ID  
---- gtaxscripting.blogspot.com/2016/04/gta-v-peds-component-and-props.html  
---- ```
+--- GetPedPropIndex
 ---
 --- @hash [0x898CC20EA75BACD8](https://docs.fivem.net/natives/?_0x898CC20EA75BACD8)
 --- @param ped Ped
@@ -6155,10 +6182,7 @@ function RemoveGroup(groupId) end
 function ClearPedLastDamageBone(ped) end
 
     
---- ```
---- List of component/props ID  
---- gtaxscripting.blogspot.com/2016/04/gta-v-peds-component-and-props.html  
---- ```
+--- GetNumberOfPedTextureVariations
 ---
 --- @hash [0x8F7156A3142A6BAD](https://docs.fivem.net/natives/?_0x8F7156A3142A6BAD)
 --- @param ped Ped
@@ -6260,18 +6284,34 @@ function RegisterHatedTargetsAroundPed(ped, radius) end
 --- 
 --- ### MP Freemode list of props
 --- 
---- **0**: Hat\
---- **1**: Glass\
---- **2**: Ear\
---- **6**: Watch\
---- **7**: Bracelet
+--- **0**: Hats
+--- **1**: Glasses
+--- **2**: Ears
+--- **6**: Watches
+--- **7**: Bracelets
 --- 
---- ### Related and useful natives
+--- List of Prop IDs
 --- 
---- [GET_NUMBER_OF_PED_PROP_DRAWABLE_VARIATIONS](https://docs.fivem.net/natives/?_0x5FAF9754E789FB47)\
---- [GET_NUMBER_OF_PED_PROP_TEXTURE_VARIATIONS](https://docs.fivem.net/natives/?_0xA6E7F1CEB523E171)
---- 
---- [List of component/props ID](https://gtaxscripting.blogspot.com/2016/04/gta-v-peds-component-and-props.html) of player_two with examples
+--- ```cpp
+--- // Props
+--- enum eAnchorPoints
+--- {
+---     ANCHOR_HEAD = 0, // "p_head"
+---     ANCHOR_EYES = 1, // "p_eyes"
+---     ANCHOR_EARS = 2, // "p_ears"
+---     ANCHOR_MOUTH = 3, // "p_mouth"
+---     ANCHOR_LEFT_HAND = 4, // "p_lhand"
+---     ANCHOR_RIGHT_HAND = 5, // "p_rhand"
+---     ANCHOR_LEFT_WRIST = 6, // "p_lwrist"
+---     ANCHOR_RIGHT_WRIST = 7, // "p_rwrist"
+---     ANCHOR_HIP = 8, // "p_lhip"
+---     ANCHOR_LEFT_FOOT = 9, // "p_lfoot"
+---     ANCHOR_RIGHT_FOOT = 10, // "p_rfoot"
+---     ANCHOR_PH_L_HAND = 11, // "ph_lhand"
+---     ANCHOR_PH_R_HAND = 12, // "ph_rhand"
+---     NUM_ANCHORS = 13,
+--- };
+--- ```
 ---
 --- @hash [0x93376B65A266EB5F](https://docs.fivem.net/natives/?_0x93376B65A266EB5F)
 --- @param ped Ped
@@ -6318,10 +6358,10 @@ function GetPedKiller(ped) end
 --- 
 --- This native function is often called prior to calling natives such as:
 --- 
---- *   [`SetPedHairColor`](#0xBB43F090)
---- *   [`SetPedHeadOverlayColor`](#0x78935A27)
---- *   [`SetPedHeadOverlay`](#0xD28DBA90)
---- *   [`SetPedFaceFeature`](#0x6C8D4458)
+--- *   [`SetPedHairColor`](https://docs.fivem.net/natives/?_0xBB43F090)
+--- *   [`SetPedHeadOverlayColor`](https://docs.fivem.net/natives/?_0x78935A27)
+--- *   [`SetPedHeadOverlay`](https://docs.fivem.net/natives/?_0xD28DBA90)
+--- *   [`SetPedFaceFeature`](https://docs.fivem.net/natives/?_0x6C8D4458)
 --- @usage -- Unfortunately, there's no clear way of getting the head blend data in lua out of the box, but there are wrappers:
 --- -- https://forum.cfx.re/t/small-c-export-event-wrapper-for-getpedheadblenddata/214611
 --- SetPedHeadBlendData(PlayerPedId(), 0, 0, 0, 0, 0, 0, 0, 0, 0, false
@@ -6466,8 +6506,16 @@ function RegisterPedheadshotTransparent(ped) end
 function N_0x953563ce563143af(ped) end
 
     
---- SetPedDensityMultiplierThisFrame
----
+--- **Usage:** Call this native every frame
+--- @usage -- 0.0 means no peds, while 1.0 indicates the regular density of peds.
+--- local pedsDensityFactor = 0.0 
+--- 
+--- Citizen.CreateThread(function()
+---    while true do
+---        SetPedDensityMultiplierThisFrame(pedsDensityFactor)
+---        Citizen.Wait(0)    
+---    end
+--- end
 --- @hash [0x95E3D6257B166CF2](https://docs.fivem.net/natives/?_0x95E3D6257B166CF2)
 --- @param multiplier number (float)
 --- @return nil
@@ -6593,9 +6641,23 @@ function IsPedBeingJacked(ped) end
 function N_0x9a77dfd295e29b09(ped, toggle) end
 
     
---- Gets the vehicle the specified Ped is in. Returns 0 if the ped is/was not in a vehicle.
---- If the Ped is not in a vehicle and includeLastVehicle is true, the vehicle they were last in is returned.
----
+--- Retrieves the vehicle the specified ped is currently in, or the last vehicle they were in.
+--- @usage -- This example gets the vehicle the player is currently in and print the vehicle id.
+--- 
+--- -- Retrieve the LocalPlayer.
+--- local playerPed = PlayerPedId()
+--- 
+--- -- Retrieve the vehicle the player is currently in. 
+--- local vehicle = GetVehiclePedIsIn(playerPed, false)
+--- 
+--- -- Check if the vehicle exists in the game world.
+--- if not DoesEntityExist(vehicle) then 
+---     -- If the vehicle does not exist, end the execution of the code here.
+---     return 
+--- end
+--- 
+--- -- Print the vehicle id
+--- print("Vehicle ID: " .. vehicle
 --- @hash [0x9A9112A0FE9A4713](https://docs.fivem.net/natives/?_0x9A9112A0FE9A4713)
 --- @param ped Ped
 --- @param lastVehicle boolean
@@ -6850,6 +6912,7 @@ function IsPedGoingIntoCover(ped) end
 
     
 --- These combat attributes seem to be the same as the BehaviourFlags from combatbehaviour.meta.
+--- 
 --- So far, these are the equivalents found:
 --- 
 --- ```
@@ -6859,21 +6922,98 @@ function IsPedGoingIntoCover(ped) end
 --- 	BF_CanUseVehicles = 1,
 --- 	BF_CanDoDrivebys = 2,
 --- 	BF_CanLeaveVehicle = 3,
---- 	BF_CanFightArmedPedsWhenNotArmed = 5,
+--- 	BF_CanUseDynamicStrafeDecisions = 4,
+--- 	BF_AlwaysFight = 5,
+--- 	_0x66BB9FCC = 6,
+--- 	_0x6837DA41 = 7,
+--- 	_0xB4A13A5A = 8,
+--- 	_0xEE326AAD = 9,
+--- 	_0x7DF2CCFA = 10,
+--- 	_0x0036D422 = 11,
+--- 	BF_BlindFireWhenInCover = 12,
+--- 	BF_Aggressive = 13,
+--- 	BF_CanInvestigate = 14,
+--- 	BF_HasRadio = 15,
+--- 	_0x6BDE28D1 = 16,
+--- 	BF_AlwaysFlee = 17,
+--- 	_0x7852797D = 18,
+--- 	_0x33497B95 = 19,
 --- 	BF_CanTauntInVehicle = 20,
---- 	BF_AlwaysFight = 46,
---- 	BF_IgnoreTrafficWhenDriving = 52,
+--- 	BF_CanChaseTargetOnFoot = 21,
+--- 	BF_WillDragInjuredPedsToSafety = 22,
+--- 	_0xCD7168B8 = 23,
+--- 	BF_UseProximityFiringRate = 24,
+--- 	_0x48F914F8 = 25,
+--- 	_0x2EA543D0 = 26,
+--- 	BF_PerfectAccuracy = 27,
+--- 	BF_CanUseFrustratedAdvance = 28,
+--- 	_0x3D131AC1 = 29,
+--- 	_0x3AD95F27 = 30,
+--- 	BF_MaintainMinDistanceToTarget = 31,
+--- 	_0xEAD68AD2 = 32,
+--- 	_0xA206C2E0 = 33,
+--- 	BF_CanUsePeekingVariations = 34,
+--- 	_0xA5715184 = 35,
+--- 	_0xD5265533 = 36,
+--- 	_0x2B84C2BF = 37,
+--- 	BF_DisableBulletReactions = 38,
+--- 	BF_CanBust = 39,
+--- 	_0xAA525726 = 40,
+--- 	BF_CanCommandeerVehicles = 41,
+--- 	BF_CanFlank = 42,
+--- 	BF_SwitchToAdvanceIfCantFindCover = 43,
+--- 	BF_SwitchToDefensiveIfInCover = 44,
+--- 	_0xEB4786A0 = 45,
+--- 	BF_CanFightArmedPedsWhenNotArmed = 46,
+--- 	_0xA08E9402 = 47,
+--- 	_0x952EAD7D = 48,
+--- 	BF_UseEnemyAccuracyScaling = 49,
+--- 	BF_CanCharge = 50,
+--- 	_0xDA8C2BD3 = 51,
+--- 	_0x6562F017 = 52,
+--- 	_0xA2C3D53B = 53,
+--- 	BF_AlwaysEquipBestWeapon = 54,
+--- 	BF_CanSeeUnderwaterPeds = 55,
+--- 	_0xF619486B = 56,
+--- 	_0x61EB63A3 = 57,
+--- 	BF_DisableFleeFromCombat = 58,
+--- 	_0x8976D12B = 59,
+--- 	BF_CanThrowSmokeGrenade = 60,
+--- 	BF_NonMissionPedsFleeFromThisPedUnlessArmed = 61,
+--- 	_0x5452A10C = 62,
 --- 	BF_FleesFromInvincibleOpponents = 63,
----         BF_FreezeMovement = 292,  
----         BF_PlayerCanUseFiringWeapons = 1424  
+--- 	BF_DisableBlockFromPursueDuringVehicleChase = 64,
+--- 	BF_DisableSpinOutDuringVehicleChase = 65,
+--- 	BF_DisableCruiseInFrontDuringBlockDuringVehicleChase = 66,
+--- 	_0x0B404731 = 67,
+--- 	BF_DisableReactToBuddyShot = 68,
+--- 	_0x7FFD6AEB = 69,
+--- 	_0x51F4AEF8 = 70,
+--- 	BF_PermitChargeBeyondDefensiveArea = 71,
+--- 	_0x63E0A8E2 = 72,
+--- 	_0xDF974436 = 73,
+--- 	_0x556C080B = 74,
+--- 	_0xA4D50035 = 75,
+--- 	BF_SetDisableShoutTargetPositionOnCombatStart = 76,
+--- 	BF_DisableRespondedToThreatBroadcast = 77,
+--- 	_0xCBB01765 = 78,
+--- 	_0x4F862ED4 = 79,
+--- 	_0xEF9C7C40 = 80,
+--- 	_0xE51B494F = 81,
+--- 	_0x054D0199 = 82,
+--- 	_0xD36BCE94 = 83,
+--- 	_0xFB11F690 = 84,
+--- 	_0xD208A9AD = 85,
+--- 	BF_AllowDogFighting = 86,
+--- 	_0x07A6E531 = 87,
+--- 	_0x34F9317B = 88,
+--- 	_0x4240F5A9 = 89,
+--- 	_0xEE129DBD = 90,
+--- 	_0x053AEAD9 = 91, 
 --- };
 --- ```
 --- 
---- 8 = ?\
---- 9 = ?\
---- 13 = ?\
---- 14 ?\
---- Research thread: gtaforums.com/topic/833391-researchguide-combat-behaviour-flags/
+--- The source for this enum is [here](https://alexguirre.github.io/rage-parser-dumps/dump.html?game=gta5\&build=2944#\_0x0E8E7201).
 ---
 --- @hash [0x9F7794730795E019](https://docs.fivem.net/natives/?_0x9F7794730795E019)
 --- @param ped Ped
@@ -7155,10 +7295,7 @@ function N_0xa660faf550eb37e5(p0, p1) end
 
     
 --- ```
---- Need to check behavior when drawableId = -1  
---- 
---- List of component/props ID  
---- gtaxscripting.blogspot.com/2016/04/gta-v-peds-component-and-props.html  
+--- Need to check behavior when drawableId = -1
 --- ```
 ---
 --- @hash [0xA6E7F1CEB523E171](https://docs.fivem.net/natives/?_0xA6E7F1CEB523E171)
@@ -8092,10 +8229,7 @@ function GetClosestPed(x, y, z, radius, p4, p5, outPed, p7, p8, pedType) end
 function SetPedLegIkMode(ped, mode) end
 
     
---- ```
---- List of component/props ID  
---- gtaxscripting.blogspot.com/2016/04/gta-v-peds-component-and-props.html  
---- ```
+--- SetPedRandomProps
 ---
 --- @hash [0xC44AA05345C992C6](https://docs.fivem.net/natives/?_0xC44AA05345C992C6)
 --- @param ped Ped
@@ -8226,9 +8360,6 @@ function SetPedRelationshipGroupHash(ped, hash) end
     
 --- ```
 --- p1 is always 0 in R* scripts; and a quick disassembly seems to indicate that p1 is unused.  
---- 
---- List of component/props ID:
---- gtaxscripting.blogspot.com/2016/04/gta-v-peds-component-and-props.html  
 --- ```
 ---
 --- @hash [0xC8A9481A01E63C28](https://docs.fivem.net/natives/?_0xC8A9481A01E63C28)
@@ -8374,10 +8505,7 @@ function SetPedPrimaryLookat(ped, lookAt) end
 function GetDeadPedPickupCoords(ped, p1, p2) end
 
     
---- ```
---- List of component/props ID  
---- gtaxscripting.blogspot.com/2016/04/gta-v-peds-component-and-props.html  
---- ```
+--- ClearAllPedProps
 ---
 --- @hash [0xCD8A7537A9B52F06](https://docs.fivem.net/natives/?_0xCD8A7537A9B52F06)
 --- @param ped Ped
@@ -8386,17 +8514,17 @@ function GetDeadPedPickupCoords(ped, p1, p2) end
 function ClearAllPedProps(ped) end
 
     
---- DisposeSynchronizedScene
+--- TakeOwnershipOfSynchronizedScene
 ---
 --- @hash [0xCD9CC7E200A52A6F](https://docs.fivem.net/natives/?_0xCD9CC7E200A52A6F)
 --- @param scene number (int)
 --- @return nil
 --- @overload fun(scene: number): nil
-function DisposeSynchronizedScene(scene) end
+function TakeOwnershipOfSynchronizedScene(scene) end
 
     
---- # New Name: DisposeSynchronizedScene
---- DisposeSynchronizedScene
+--- # New Name: TakeOwnershipOfSynchronizedScene
+--- TakeOwnershipOfSynchronizedScene
 ---
 --- @hash [0xCD9CC7E200A52A6F](https://docs.fivem.net/natives/?_0xCD9CC7E200A52A6F)
 --- @param scene number (int)
@@ -8404,6 +8532,17 @@ function DisposeSynchronizedScene(scene) end
 --- @overload fun(scene: number): nil
 --- @deprecated
 function N_0xcd9cc7e200a52a6f(scene) end
+
+    
+--- # New Name: TakeOwnershipOfSynchronizedScene
+--- TakeOwnershipOfSynchronizedScene
+---
+--- @hash [0xCD9CC7E200A52A6F](https://docs.fivem.net/natives/?_0xCD9CC7E200A52A6F)
+--- @param scene number (int)
+--- @return nil
+--- @overload fun(scene: number): nil
+--- @deprecated
+function DisposeSynchronizedScene(scene) end
 
     
 --- ```
@@ -9036,10 +9175,7 @@ function IsPedHairColorValid(colorID) end
 function N_0xe0d36e5d9e99cc21(colorID) end
 
     
---- ```
---- List of component/props ID  
---- gtaxscripting.blogspot.com/2016/04/gta-v-peds-component-and-props.html  
---- ```
+--- GetPedPropTextureIndex
 ---
 --- @hash [0xE131A28626F81AB2](https://docs.fivem.net/natives/?_0xE131A28626F81AB2)
 --- @param ped Ped
@@ -9110,10 +9246,7 @@ function ClearPedFacialDecorations(ped) end
 function IsPedRunningRagdollTask(ped) end
 
     
---- ```
---- List of component/props ID  
---- gtaxscripting.blogspot.com/2016/04/gta-v-peds-component-and-props.html  
---- ```
+--- GetPedPaletteVariation
 ---
 --- @hash [0xE3DD5F2A84B42281](https://docs.fivem.net/natives/?_0xE3DD5F2A84B42281)
 --- @param ped Ped
@@ -9244,11 +9377,7 @@ function N_0xe6ca85e7259ce16b(ped) end
 function GetMount(ped) end
 
     
---- ```
---- Checks if the component variation is valid, this works great for randomizing components using loops.  
---- List of component/props ID  
---- gtaxscripting.blogspot.com/2016/04/gta-v-peds-component-and-props.html  
---- ```
+--- Checks if the component variation is valid, this works great for randomizing components using loops.
 ---
 --- @hash [0xE825F6B6CEA7671D](https://docs.fivem.net/natives/?_0xE825F6B6CEA7671D)
 --- @param ped Ped
@@ -9535,30 +9664,36 @@ function N_0xec4b4b3b9908052a(ped, unk) end
 function IsPedOnSpecificVehicle(ped, vehicle) end
 
     
---- SetPedShouldPlayDirectedScenarioExit
+--- When this ped receives its next script task, they will exit from their scenario using the normal scenario exit.
+--- Exiting the scenario may take several frames while the ped is playing the exit animation.
+--- If the ped is not currently using a scenario at the time of the command or 0,0,0 is specified as the reaction position,
+--- then the ped will by default attempt to direct their exit forwards.
 ---
 --- @hash [0xEC6935EBE0847B90](https://docs.fivem.net/natives/?_0xEC6935EBE0847B90)
---- @param p0 any
---- @param p1 any
---- @param p2 any
---- @param p3 any
---- @return any
---- @overload fun(p0: any, p1: any, p2: any, p3: any): any
-function SetPedShouldPlayDirectedScenarioExit(p0, p1, p2, p3) end
+--- @param ped Ped
+--- @param x number (float)
+--- @param y number (float)
+--- @param z number (float)
+--- @return boolean
+--- @overload fun(ped: Ped, x: number, y: number, z: number): boolean
+function SetPedShouldPlayDirectedScenarioExit(ped, x, y, z) end
 
     
 --- # New Name: SetPedShouldPlayDirectedScenarioExit
---- SetPedShouldPlayDirectedScenarioExit
+--- When this ped receives its next script task, they will exit from their scenario using the normal scenario exit.
+--- Exiting the scenario may take several frames while the ped is playing the exit animation.
+--- If the ped is not currently using a scenario at the time of the command or 0,0,0 is specified as the reaction position,
+--- then the ped will by default attempt to direct their exit forwards.
 ---
 --- @hash [0xEC6935EBE0847B90](https://docs.fivem.net/natives/?_0xEC6935EBE0847B90)
---- @param p0 any
---- @param p1 any
---- @param p2 any
---- @param p3 any
---- @return any
---- @overload fun(p0: any, p1: any, p2: any, p3: any): any
+--- @param ped Ped
+--- @param x number (float)
+--- @param y number (float)
+--- @param z number (float)
+--- @return boolean
+--- @overload fun(ped: Ped, x: number, y: number, z: number): boolean
 --- @deprecated
-function N_0xec6935ebe0847b90(p0, p1, p2, p3) end
+function N_0xec6935ebe0847b90(ped, x, y, z) end
 
     
 --- SetPedDriveByClipsetOverride
@@ -9695,40 +9830,48 @@ function SetPedShouldPlayFleeScenarioExit(ped, p1, p2, p3) end
 function N_0xeeed8fafec331a70(ped, p1, p2, p3) end
 
     
---- ApplyPedBloodSpecific
+--- Applies blood damage to a ped with specific parameters for zone, UV offsets, rotation, scale, and initial aging.
+--- 
+--- ```
+--- NativeDB Introduced: v323
+--- ```
 ---
 --- @hash [0xEF0D582CBF2D9B0F](https://docs.fivem.net/natives/?_0xEF0D582CBF2D9B0F)
 --- @param ped Ped
---- @param p1 any
---- @param p2 number (float)
---- @param p3 number (float)
---- @param p4 number (float)
---- @param p5 number (float)
---- @param p6 any
---- @param p7 number (float)
---- @param p8 any
+--- @param component number (int)
+--- @param u number (float)
+--- @param v number (float)
+--- @param rotation number (float)
+--- @param scale number (float)
+--- @param forcedFrame number (int)
+--- @param preAge number (float)
+--- @param bloodName string (char*)
 --- @return nil
---- @overload fun(ped: Ped, p1: any, p2: number, p3: number, p4: number, p5: number, p6: any, p7: number): nil, any
-function ApplyPedBloodSpecific(ped, p1, p2, p3, p4, p5, p6, p7, p8) end
+--- @overload fun(ped: Ped, component: number, u: number, v: number, rotation: number, scale: number, forcedFrame: number, preAge: number, bloodName: string): nil
+function ApplyPedBloodSpecific(ped, component, u, v, rotation, scale, forcedFrame, preAge, bloodName) end
 
     
 --- # New Name: ApplyPedBloodSpecific
---- ApplyPedBloodSpecific
+--- Applies blood damage to a ped with specific parameters for zone, UV offsets, rotation, scale, and initial aging.
+--- 
+--- ```
+--- NativeDB Introduced: v323
+--- ```
 ---
 --- @hash [0xEF0D582CBF2D9B0F](https://docs.fivem.net/natives/?_0xEF0D582CBF2D9B0F)
 --- @param ped Ped
---- @param p1 any
---- @param p2 number (float)
---- @param p3 number (float)
---- @param p4 number (float)
---- @param p5 number (float)
---- @param p6 any
---- @param p7 number (float)
---- @param p8 any
+--- @param component number (int)
+--- @param u number (float)
+--- @param v number (float)
+--- @param rotation number (float)
+--- @param scale number (float)
+--- @param forcedFrame number (int)
+--- @param preAge number (float)
+--- @param bloodName string (char*)
 --- @return nil
---- @overload fun(ped: Ped, p1: any, p2: number, p3: number, p4: number, p5: number, p6: any, p7: number): nil, any
+--- @overload fun(ped: Ped, component: number, u: number, v: number, rotation: number, scale: number, forcedFrame: number, preAge: number, bloodName: string): nil
 --- @deprecated
-function N_0xef0d582cbf2d9b0f(ped, p1, p2, p3, p4, p5, p6, p7, p8) end
+function N_0xef0d582cbf2d9b0f(ped, component, u, v, rotation, scale, forcedFrame, preAge, bloodName) end
 
     
 --- Creates a copy of the passed ped, optionally setting it as local and/or shallow-copying the head blend data.
@@ -9767,9 +9910,8 @@ function GetPedVisualFieldCenterAngle(ped) end
 function N_0xf033419d1b81fae8(p0) end
 
     
---- ```
---- Causes Ped to ragdoll on collision with any object (e.g Running into trashcan). If applied to player you will sometimes trip on the sidewalk.  
---- ```
+--- Causes Ped to ragdoll on collision with any object (e.g Running into trashcan). If applied to player you will sometimes trip on the sidewalk.
+--- Needs to be recalled after each ragdoll from a Collision.
 ---
 --- @hash [0xF0A4F1BBF4FA7497](https://docs.fivem.net/natives/?_0xF0A4F1BBF4FA7497)
 --- @param ped Ped

@@ -454,12 +454,9 @@ function SeethroughSetMaxThickness(thickness) end
 function N_0x0c8fac83902a62df(thickness) end
 
     
---- ```
---- In percentage: 0.0 - 100.0
---- 
---- NativeDB Introduced: v1290
---- ```
----
+--- Seeks a BINK movie to a specified position.
+--- @usage -- Movie drawn prior
+--- SetBinkMovieTime(1, 50.0) -- Seeks to 50% in
 --- @hash [0x0CB6B3446855B57A](https://docs.fivem.net/natives/?_0x0CB6B3446855B57A)
 --- @param binkMovie number (int)
 --- @param progress number (float)
@@ -469,12 +466,9 @@ function SetBinkMovieTime(binkMovie, progress) end
 
     
 --- # New Name: SetBinkMovieTime
---- ```
---- In percentage: 0.0 - 100.0
---- 
---- NativeDB Introduced: v1290
---- ```
----
+--- Seeks a BINK movie to a specified position.
+--- @usage -- Movie drawn prior
+--- SetBinkMovieTime(1, 50.0) -- Seeks to 50% in
 --- @hash [0x0CB6B3446855B57A](https://docs.fivem.net/natives/?_0x0CB6B3446855B57A)
 --- @param binkMovie number (int)
 --- @param progress number (float)
@@ -972,7 +966,7 @@ function StartParticleFxLoopedOnEntity(effectName, entity, xOffset, yOffset, zOf
 function N_0x1bbc135a4d25edde(p0) end
 
     
---- This native is used along with these two natives: [`0xa356990e161c9e65`](https://runtime.fivem.net/doc/reference.html#\_0xA356990E161C9E65) and [`0x5ce62918f8d703c7`](https://runtime.fivem.net/doc/reference.html#\_0x5CE62918F8D703C7).
+--- This native is used along with these two natives: [`TERRAINGRID_ACTIVATE`](https://docs.fivem.net/natives/?_0xA356990E161C9E65) and [`TERRAINGRID_SET_COLOURS`](https://docs.fivem.net/natives/?_0x5CE62918F8D703C7).
 --- 
 --- This native configures the location, size, rotation, normal height, and the difference ratio between min, normal and max.
 --- 
@@ -998,7 +992,7 @@ function TerraingridSetParams(x, y, z, p3, rotation, p5, width, height, p8, scal
 
     
 --- # New Name: TerraingridSetParams
---- This native is used along with these two natives: [`0xa356990e161c9e65`](https://runtime.fivem.net/doc/reference.html#\_0xA356990E161C9E65) and [`0x5ce62918f8d703c7`](https://runtime.fivem.net/doc/reference.html#\_0x5CE62918F8D703C7).
+--- This native is used along with these two natives: [`TERRAINGRID_ACTIVATE`](https://docs.fivem.net/natives/?_0xA356990E161C9E65) and [`TERRAINGRID_SET_COLOURS`](https://docs.fivem.net/natives/?_0x5CE62918F8D703C7).
 --- 
 --- This native configures the location, size, rotation, normal height, and the difference ratio between min, normal and max.
 --- 
@@ -1721,18 +1715,18 @@ function DrawInteractiveSprite(textureDict, textureName, screenX, screenY, width
 function N_0x2bc54a8188768488(textureDict, textureName, screenX, screenY, width, height, heading, red, green, blue, alpha) end
 
     
---- Resets the extra timecycle modifier strength normally set with [`SetExtraTimecycleModifierStrength`](https://docs.fivem.net/natives/?_0x2C328AF17210F009)
----
+--- Removes any custom moon cycle overrides that have been configured with [ENABLE_MOON_CYCLE_OVERRIDE](https://docs.fivem.net/natives/?_0x2C328AF17210F009)
+--- @usage DisableMoonCycleOverride(
 --- @hash [0x2BF72AD5B41AA739](https://docs.fivem.net/natives/?_0x2BF72AD5B41AA739)
 ---
 --- @return nil
 --- @overload fun(): nil
-function ResetExtraTimecycleModifierStrength() end
+function DisableMoonCycleOverride() end
 
     
---- # New Name: ResetExtraTimecycleModifierStrength
---- Resets the extra timecycle modifier strength normally set with [`SetExtraTimecycleModifierStrength`](https://docs.fivem.net/natives/?_0x2C328AF17210F009)
----
+--- # New Name: DisableMoonCycleOverride
+--- Removes any custom moon cycle overrides that have been configured with [ENABLE_MOON_CYCLE_OVERRIDE](https://docs.fivem.net/natives/?_0x2C328AF17210F009)
+--- @usage DisableMoonCycleOverride(
 --- @hash [0x2BF72AD5B41AA739](https://docs.fivem.net/natives/?_0x2BF72AD5B41AA739)
 ---
 --- @return nil
@@ -1741,24 +1735,88 @@ function ResetExtraTimecycleModifierStrength() end
 function N_0x2bf72ad5b41aa739() end
 
     
---- The same as [`SetTimecycleModifierStrength`](https://docs.fivem.net/natives/?_0x82E7FFCD5B2326B3) but for the secondary tiemcycle modifier.
+--- # New Name: DisableMoonCycleOverride
+--- Removes any custom moon cycle overrides that have been configured with [ENABLE_MOON_CYCLE_OVERRIDE](https://docs.fivem.net/natives/?_0x2C328AF17210F009)
+--- @usage DisableMoonCycleOverride(
+--- @hash [0x2BF72AD5B41AA739](https://docs.fivem.net/natives/?_0x2BF72AD5B41AA739)
 ---
---- @hash [0x2C328AF17210F009](https://docs.fivem.net/natives/?_0x2C328AF17210F009)
---- @param strength number (float)
 --- @return nil
---- @overload fun(strength: number): nil
-function SetExtraTimecycleModifierStrength(strength) end
+--- @overload fun(): nil
+--- @deprecated
+function ResetExtraTimecycleModifierStrength() end
 
     
---- # New Name: SetExtraTimecycleModifierStrength
---- The same as [`SetTimecycleModifierStrength`](https://docs.fivem.net/natives/?_0x82E7FFCD5B2326B3) but for the secondary tiemcycle modifier.
----
+--- Enable a custom moon cycle, allowing control of which lunar phase the moon is in.
+--- 
+--- Valid values are from `0.0` to `1.0`, with `0.5` representing a full moon.
+--- 
+--- | Value |   Lunar Phase   |
+--- | :---: | :-------------: |
+--- | `0.1` | Waxing Crescent |
+--- | `0.2` |  First Quarter  |
+--- | `0.3` | Waxing Gibbous  |
+--- | `0.5` |    Full Moon    |
+--- | `0.7` | Waning Gibbous  |
+--- | `0.8` |  Third Quarter  |
+--- | `0.9` | Waning Crescent |
+--- 
+--- The moon phase can be disabled with [DISABLE_MOON_CYCLE_OVERRIDE](https://docs.fivem.net/natives/?_0x2BF72AD5B41AA739)
+--- @usage EnableMoonCycleOverride(0.5
 --- @hash [0x2C328AF17210F009](https://docs.fivem.net/natives/?_0x2C328AF17210F009)
---- @param strength number (float)
+--- @param phase number (float)
 --- @return nil
---- @overload fun(strength: number): nil
+--- @overload fun(phase: number): nil
+function EnableMoonCycleOverride(phase) end
+
+    
+--- # New Name: EnableMoonCycleOverride
+--- Enable a custom moon cycle, allowing control of which lunar phase the moon is in.
+--- 
+--- Valid values are from `0.0` to `1.0`, with `0.5` representing a full moon.
+--- 
+--- | Value |   Lunar Phase   |
+--- | :---: | :-------------: |
+--- | `0.1` | Waxing Crescent |
+--- | `0.2` |  First Quarter  |
+--- | `0.3` | Waxing Gibbous  |
+--- | `0.5` |    Full Moon    |
+--- | `0.7` | Waning Gibbous  |
+--- | `0.8` |  Third Quarter  |
+--- | `0.9` | Waning Crescent |
+--- 
+--- The moon phase can be disabled with [DISABLE_MOON_CYCLE_OVERRIDE](https://docs.fivem.net/natives/?_0x2BF72AD5B41AA739)
+--- @usage EnableMoonCycleOverride(0.5
+--- @hash [0x2C328AF17210F009](https://docs.fivem.net/natives/?_0x2C328AF17210F009)
+--- @param phase number (float)
+--- @return nil
+--- @overload fun(phase: number): nil
 --- @deprecated
-function N_0x2c328af17210f009(strength) end
+function N_0x2c328af17210f009(phase) end
+
+    
+--- # New Name: EnableMoonCycleOverride
+--- Enable a custom moon cycle, allowing control of which lunar phase the moon is in.
+--- 
+--- Valid values are from `0.0` to `1.0`, with `0.5` representing a full moon.
+--- 
+--- | Value |   Lunar Phase   |
+--- | :---: | :-------------: |
+--- | `0.1` | Waxing Crescent |
+--- | `0.2` |  First Quarter  |
+--- | `0.3` | Waxing Gibbous  |
+--- | `0.5` |    Full Moon    |
+--- | `0.7` | Waning Gibbous  |
+--- | `0.8` |  Third Quarter  |
+--- | `0.9` | Waning Crescent |
+--- 
+--- The moon phase can be disabled with [DISABLE_MOON_CYCLE_OVERRIDE](https://docs.fivem.net/natives/?_0x2BF72AD5B41AA739)
+--- @usage EnableMoonCycleOverride(0.5
+--- @hash [0x2C328AF17210F009](https://docs.fivem.net/natives/?_0x2C328AF17210F009)
+--- @param phase number (float)
+--- @return nil
+--- @overload fun(phase: number): nil
+--- @deprecated
+function SetExtraTimecycleModifierStrength(phase) end
 
     
 --- N_0x2c42340f916c5930
@@ -1989,10 +2047,19 @@ function GetDecalWashLevel(decal) end
 function N_0x32f34ff7f617643b(p0, p1) end
 
     
---- ```
---- NativeDB Introduced: v1290
---- ```
----
+--- Creates an integer (usually 1) for a BINK movie to be called with other natives.
+--- [List of all BINK movies (alphabetically ordered) as of b2802](https://gist.github.com/ItsJunction/8046f28c29ea8ff2821e9e4f933f595f)
+--- @usage Citizen.CreateThread(function()
+---     local binkint = SetBinkMovie("casino_trailer")
+---     SetBinkMovieTime(binkint, 0.0) -- Seeks to 0%
+--- 
+---     while (GetBinkMovieTime(binkint) < 100.0) do -- Very Basic Idea That Works?
+---         print(math.floor(GetBinkMovieTime(binkint) * 100)/100 .. "%") -- Prints current playtime (as percentage).
+---         PlayBinkMovie(binkint)
+---         DrawBinkMovie(binkint, 0.5, 0.5, 1.0, 1.0, 0.0, 255, 255, 255, 255) -- This example draws and plays in Fullscreen and in the center of screen (no matter the resolution).
+---         Citizen.Wait(0)
+---     end
+--- end
 --- @hash [0x338D9F609FD632DB](https://docs.fivem.net/natives/?_0x338D9F609FD632DB)
 --- @param name string (char*)
 --- @return number
@@ -2001,10 +2068,19 @@ function SetBinkMovie(name) end
 
     
 --- # New Name: SetBinkMovie
---- ```
---- NativeDB Introduced: v1290
---- ```
----
+--- Creates an integer (usually 1) for a BINK movie to be called with other natives.
+--- [List of all BINK movies (alphabetically ordered) as of b2802](https://gist.github.com/ItsJunction/8046f28c29ea8ff2821e9e4f933f595f)
+--- @usage Citizen.CreateThread(function()
+---     local binkint = SetBinkMovie("casino_trailer")
+---     SetBinkMovieTime(binkint, 0.0) -- Seeks to 0%
+--- 
+---     while (GetBinkMovieTime(binkint) < 100.0) do -- Very Basic Idea That Works?
+---         print(math.floor(GetBinkMovieTime(binkint) * 100)/100 .. "%") -- Prints current playtime (as percentage).
+---         PlayBinkMovie(binkint)
+---         DrawBinkMovie(binkint, 0.5, 0.5, 1.0, 1.0, 0.0, 255, 255, 255, 255) -- This example draws and plays in Fullscreen and in the center of screen (no matter the resolution).
+---         Citizen.Wait(0)
+---     end
+--- end
 --- @hash [0x338D9F609FD632DB](https://docs.fivem.net/natives/?_0x338D9F609FD632DB)
 --- @param name string (char*)
 --- @return number
@@ -2782,7 +2858,7 @@ function GetScreenblurFadeCurrentTime() end
 function IsParticleFxDelayedBlink() end
 
     
---- This native is used along with these two natives: [`0xa356990e161c9e65`](https://runtime.fivem.net/doc/reference.html#\_0xA356990E161C9E65) and [`0x1c4fc5752bcd8e48`](https://runtime.fivem.net/doc/reference.html#\_0x1C4FC5752BCD8E48).
+--- This native is used along with these two natives: [`TERRAINGRID_ACTIVATE`](https://docs.fivem.net/natives/?_0xA356990E161C9E65) and [`TERRAINGRID_SET_PARAMS`](https://docs.fivem.net/natives/?_0x1C4FC5752BCD8E48).
 --- This native sets the colors for the golf putting grid. the 'min...' values are for the lower areas that the grid covers, the 'max...' values are for the higher areas that the grid covers, all remaining values are for the 'normal' ground height.
 --- All those natives combined they will output something like this: https://i.imgur.com/TC6cku6.png
 --- 
@@ -2810,7 +2886,7 @@ function TerraingridSetColours(lowR, lowG, lowB, lowAlpha, R, G, B, Alpha, highR
 
     
 --- # New Name: TerraingridSetColours
---- This native is used along with these two natives: [`0xa356990e161c9e65`](https://runtime.fivem.net/doc/reference.html#\_0xA356990E161C9E65) and [`0x1c4fc5752bcd8e48`](https://runtime.fivem.net/doc/reference.html#\_0x1C4FC5752BCD8E48).
+--- This native is used along with these two natives: [`TERRAINGRID_ACTIVATE`](https://docs.fivem.net/natives/?_0xA356990E161C9E65) and [`TERRAINGRID_SET_PARAMS`](https://docs.fivem.net/natives/?_0x1C4FC5752BCD8E48).
 --- This native sets the colors for the golf putting grid. the 'min...' values are for the lower areas that the grid covers, the 'max...' values are for the higher areas that the grid covers, all remaining values are for the 'normal' ground height.
 --- All those natives combined they will output something like this: https://i.imgur.com/TC6cku6.png
 --- 
@@ -3448,24 +3524,32 @@ function SeethroughReset() end
 function PlayBinkMovie(binkMovie) end
 
     
---- ```
---- NativeDB Introduced: v1290
---- ```
----
+--- Must be called each frame, will play at specified position on screen when called with [`_PLAY_BINK_MOVIE`](https://docs.fivem.net/natives/?_0x70D2CC8A542A973C)
+--- @usage Citizen.CreateThread(function()
+---     local binkint = SetBinkMovie("casino_trailer") -- BINK movie, list can be found at https://gist.github.com/ItsJunction/8046f28c29ea8ff2821e9e4f933f595f
+---     SetBinkMovieTime(binkint, 0.0) -- Seeks to 0%, just incase of errors.
+--- 
+---     while (GetBinkMovieTime(binkint) < 100.0) do
+---         print(math.floor(GetBinkMovieTime(binkint) * 100)/100 .. "%") -- Prints current playtime (as percentage).
+---         PlayBinkMovie(binkint)
+---         DrawBinkMovie(binkint, 0.5, 0.5, 1.0, 1.0, 0.0, 255, 255, 255, 255) -- This example draws and plays in fullscreen in the center (no matter the resolution).
+---         Citizen.Wait(0)
+---     end
+--- end
 --- @hash [0x7118E83EEB9F7238](https://docs.fivem.net/natives/?_0x7118E83EEB9F7238)
 --- @param binkMovie number (int)
---- @param p1 number (float)
---- @param p2 number (float)
---- @param p3 number (float)
---- @param p4 number (float)
---- @param p5 number (float)
+--- @param posX number (float)
+--- @param posY number (float)
+--- @param scaleX number (float)
+--- @param scaleY number (float)
+--- @param rotation number (float)
 --- @param r number (int)
 --- @param g number (int)
 --- @param b number (int)
 --- @param a number (int)
 --- @return nil
---- @overload fun(binkMovie: number, p1: number, p2: number, p3: number, p4: number, p5: number, r: number, g: number, b: number, a: number): nil
-function DrawBinkMovie(binkMovie, p1, p2, p3, p4, p5, r, g, b, a) end
+--- @overload fun(binkMovie: number, posX: number, posY: number, scaleX: number, scaleY: number, rotation: number, r: number, g: number, b: number, a: number): nil
+function DrawBinkMovie(binkMovie, posX, posY, scaleX, scaleY, rotation, r, g, b, a) end
 
     
 --- ```
@@ -4709,9 +4793,9 @@ function SeethroughSetFadeEndDistance(distance) end
 function N_0x9d75795b9dc6ebbf(distance) end
 
     
---- Creates a motion-blur sort of effect, this native does not seem to work, however by using the [`START_SCREEN_EFFECT`](https://docs.fivem.net/natives/?_0x2206BF9A37B7F724) native with `"DrugsMichaelAliensFight"` as the effect parameter, you should be able to get the effect.
+--- Creates a motion-blur sort of effect, this native does not seem to work, however by using the [`ANIMPOSTFX_PLAY`](https://docs.fivem.net/natives/?_0x2206BF9A37B7F724) native with `"DrugsMichaelAliensFight"` as the effect parameter, you should be able to get the effect.
 --- 
---- This native does not seem to work, however by using the [START_SCREEN_EFFECT](https://runtime.fivem.net/doc/natives/#\_0x2206BF9A37B7F724) native with "DrugsMichaelAliensFight" as the effect parameter, you should be able to get the effect.
+--- This native does not seem to work, however by using the [ANIMPOSTFX_PLAY](https://docs.fivem.net/natives/?_0x2206BF9A37B7F724) native with "DrugsMichaelAliensFight" as the effect parameter, you should be able to get the effect.
 ---
 --- @hash [0x9DCE1F0F78260875](https://docs.fivem.net/natives/?_0x9DCE1F0F78260875)
 --- @param toggle boolean
@@ -4721,9 +4805,9 @@ function EnableAlienBloodVfx(toggle) end
 
     
 --- # New Name: EnableAlienBloodVfx
---- Creates a motion-blur sort of effect, this native does not seem to work, however by using the [`START_SCREEN_EFFECT`](https://docs.fivem.net/natives/?_0x2206BF9A37B7F724) native with `"DrugsMichaelAliensFight"` as the effect parameter, you should be able to get the effect.
+--- Creates a motion-blur sort of effect, this native does not seem to work, however by using the [`ANIMPOSTFX_PLAY`](https://docs.fivem.net/natives/?_0x2206BF9A37B7F724) native with `"DrugsMichaelAliensFight"` as the effect parameter, you should be able to get the effect.
 --- 
---- This native does not seem to work, however by using the [START_SCREEN_EFFECT](https://runtime.fivem.net/doc/natives/#\_0x2206BF9A37B7F724) native with "DrugsMichaelAliensFight" as the effect parameter, you should be able to get the effect.
+--- This native does not seem to work, however by using the [ANIMPOSTFX_PLAY](https://docs.fivem.net/natives/?_0x2206BF9A37B7F724) native with "DrugsMichaelAliensFight" as the effect parameter, you should be able to get the effect.
 ---
 --- @hash [0x9DCE1F0F78260875](https://docs.fivem.net/natives/?_0x9DCE1F0F78260875)
 --- @param toggle boolean
@@ -4754,7 +4838,7 @@ function TransitionToBlurred(transitionTime) end
 
     
 --- This native enables/disables the gold putting grid display (https://i.imgur.com/TC6cku6.png).
---- This requires these two natives to be called as well to configure the grid: [`0x1c4fc5752bcd8e48`](https://runtime.fivem.net/doc/reference.html#\_0x1C4FC5752BCD8E48) and [`0x5ce62918f8d703c7`](https://runtime.fivem.net/doc/reference.html#\_0x5CE62918F8D703C7).
+--- This requires these two natives to be called as well to configure the grid: [`TERRAINGRID_SET_PARAMS`](https://docs.fivem.net/natives/?_0x1C4FC5752BCD8E48) and [`TERRAINGRID_SET_COLOURS`](https://docs.fivem.net/natives/?_0x5CE62918F8D703C7).
 ---
 --- @hash [0xA356990E161C9E65](https://docs.fivem.net/natives/?_0xA356990E161C9E65)
 --- @param toggle boolean
@@ -4765,7 +4849,7 @@ function TerraingridActivate(toggle) end
     
 --- # New Name: TerraingridActivate
 --- This native enables/disables the gold putting grid display (https://i.imgur.com/TC6cku6.png).
---- This requires these two natives to be called as well to configure the grid: [`0x1c4fc5752bcd8e48`](https://runtime.fivem.net/doc/reference.html#\_0x1C4FC5752BCD8E48) and [`0x5ce62918f8d703c7`](https://runtime.fivem.net/doc/reference.html#\_0x5CE62918F8D703C7).
+--- This requires these two natives to be called as well to configure the grid: [`TERRAINGRID_SET_PARAMS`](https://docs.fivem.net/natives/?_0x1C4FC5752BCD8E48) and [`TERRAINGRID_SET_COLOURS`](https://docs.fivem.net/natives/?_0x5CE62918F8D703C7).
 ---
 --- @hash [0xA356990E161C9E65](https://docs.fivem.net/natives/?_0xA356990E161C9E65)
 --- @param toggle boolean
@@ -5396,8 +5480,9 @@ function DestroyTrackedPoint(point) end
 function N_0xb2ebe8cbc58b90e9() end
 
     
---- ```
---- decal types:  
+--- Places a decal into the world
+--- 
+--- ```cs
 --- public enum DecalTypes  
 --- {  
 ---     splatters_blood = 1010,  
@@ -5460,12 +5545,12 @@ function N_0xb2ebe8cbc58b90e9() end
 --- @param posX number (float)
 --- @param posY number (float)
 --- @param posZ number (float)
---- @param p4 number (float)
---- @param p5 number (float)
---- @param p6 number (float)
---- @param p7 number (float)
---- @param p8 number (float)
---- @param p9 number (float)
+--- @param dirX number (float)
+--- @param dirY number (float)
+--- @param dirZ number (float)
+--- @param sideX number (float)
+--- @param sideY number (float)
+--- @param sideZ number (float)
 --- @param width number (float)
 --- @param height number (float)
 --- @param rCoef number (float)
@@ -5473,12 +5558,12 @@ function N_0xb2ebe8cbc58b90e9() end
 --- @param bCoef number (float)
 --- @param opacity number (float)
 --- @param timeout number (float)
---- @param p17 boolean
---- @param p18 boolean
---- @param p19 boolean
+--- @param isLongRange boolean
+--- @param isDynamic boolean
+--- @param useComplexColn boolean
 --- @return number
---- @overload fun(decalType: number, posX: number, posY: number, posZ: number, p4: number, p5: number, p6: number, p7: number, p8: number, p9: number, width: number, height: number, rCoef: number, gCoef: number, bCoef: number, opacity: number, timeout: number, p17: boolean, p18: boolean, p19: boolean): number
-function AddDecal(decalType, posX, posY, posZ, p4, p5, p6, p7, p8, p9, width, height, rCoef, gCoef, bCoef, opacity, timeout, p17, p18, p19) end
+--- @overload fun(decalType: number, posX: number, posY: number, posZ: number, dirX: number, dirY: number, dirZ: number, sideX: number, sideY: number, sideZ: number, width: number, height: number, rCoef: number, gCoef: number, bCoef: number, opacity: number, timeout: number, isLongRange: boolean, isDynamic: boolean, useComplexColn: boolean): number
+function AddDecal(decalType, posX, posY, posZ, dirX, dirY, dirZ, sideX, sideY, sideZ, width, height, rCoef, gCoef, bCoef, opacity, timeout, isLongRange, isDynamic, useComplexColn) end
 
     
 --- ```
@@ -6567,12 +6652,29 @@ function DrawSpotLight(posX, posY, posZ, dirX, dirY, dirZ, colorR, colorG, color
 function N_0xd1c55b110e4df534(p0) end
 
     
---- N_0xd1c7cb175e012964
+--- Passes keyboard input to scaleform. You must call this native every frame. Once an input occurs, this native will return true and call `SET_PC_KEY` scaleform movie method with the key that has been inputted.
+--- 
+--- The key parameter which is passed to the scaleform can also be: "BACKSPACE", "ENTER" or "\x1b" (Which is ESC).
+--- This native is only used in `web_browser.c` as of game build 2944.
 ---
 --- @hash [0xD1C7CB175E012964](https://docs.fivem.net/natives/?_0xD1C7CB175E012964)
 --- @param scaleformHandle number (int)
 --- @return boolean
 --- @overload fun(scaleformHandle: number): boolean
+function PassKeyboardInputToScaleform(scaleformHandle) end
+
+    
+--- # New Name: PassKeyboardInputToScaleform
+--- Passes keyboard input to scaleform. You must call this native every frame. Once an input occurs, this native will return true and call `SET_PC_KEY` scaleform movie method with the key that has been inputted.
+--- 
+--- The key parameter which is passed to the scaleform can also be: "BACKSPACE", "ENTER" or "\x1b" (Which is ESC).
+--- This native is only used in `web_browser.c` as of game build 2944.
+---
+--- @hash [0xD1C7CB175E012964](https://docs.fivem.net/natives/?_0xD1C7CB175E012964)
+--- @param scaleformHandle number (int)
+--- @return boolean
+--- @overload fun(scaleformHandle: number): boolean
+--- @deprecated
 function N_0xd1c7cb175e012964(scaleformHandle) end
 
     
@@ -6882,10 +6984,26 @@ function GetScaleformMovieMethodReturnValueBool(methodReturn) end
 function N_0xd80a80346a45d761(methodReturn) end
 
     
+--- If true, this native will create purple explosions upon projectile impact, add comic-like PTFX when firing a weapon, create a sound on bullet impact and have its own "blood effect".
+--- 
+--- If the PTFX asset "scr_rcbarry2" is not requested using ([`RequestNamedPtfxAsset`](https://docs.fivem.net/natives/?_0xD821490579791273)) then this native **will not work as intended**.
+--- 
+--- Excerpt from fm_content_drug_lab_work.c:
+--- 
 --- ```
---- Creates cartoon effect when Michel smokes the weed  
+--- STREAMING::REQUEST_NAMED_PTFX_ASSET("scr_rcbarry2");
+--- if (STREAMING::HAS_NAMED_PTFX_ASSET_LOADED("scr_rcbarry2"))
+--- {
+---   GRAPHICS::ENABLE_CLOWN_BLOOD_VFX(true);
+---   AUDIO::START_AUDIO_SCENE("DLC_CM2022_DRUG_TRIP_SPRINKLERS_SCENE");
+---   func_720(26);
+--- }
 --- ```
----
+--- @usage RequestNamedPtfxAsset("scr_rcbarry2") -- Request the PTFX
+--- while not HasNamedPtfxAssetLoaded("scr_rcbarry2") do
+---   Citizen.Wait(0)
+--- end
+--- EnableClownBloodVfx(true) -- Enable the clown PTF
 --- @hash [0xD821490579791273](https://docs.fivem.net/natives/?_0xD821490579791273)
 --- @param toggle boolean
 --- @return nil
@@ -6894,10 +7012,26 @@ function EnableClownBloodVfx(toggle) end
 
     
 --- # New Name: EnableClownBloodVfx
+--- If true, this native will create purple explosions upon projectile impact, add comic-like PTFX when firing a weapon, create a sound on bullet impact and have its own "blood effect".
+--- 
+--- If the PTFX asset "scr_rcbarry2" is not requested using ([`RequestNamedPtfxAsset`](https://docs.fivem.net/natives/?_0xD821490579791273)) then this native **will not work as intended**.
+--- 
+--- Excerpt from fm_content_drug_lab_work.c:
+--- 
 --- ```
---- Creates cartoon effect when Michel smokes the weed  
+--- STREAMING::REQUEST_NAMED_PTFX_ASSET("scr_rcbarry2");
+--- if (STREAMING::HAS_NAMED_PTFX_ASSET_LOADED("scr_rcbarry2"))
+--- {
+---   GRAPHICS::ENABLE_CLOWN_BLOOD_VFX(true);
+---   AUDIO::START_AUDIO_SCENE("DLC_CM2022_DRUG_TRIP_SPRINKLERS_SCENE");
+---   func_720(26);
+--- }
 --- ```
----
+--- @usage RequestNamedPtfxAsset("scr_rcbarry2") -- Request the PTFX
+--- while not HasNamedPtfxAssetLoaded("scr_rcbarry2") do
+---   Citizen.Wait(0)
+--- end
+--- EnableClownBloodVfx(true) -- Enable the clown PTF
 --- @hash [0xD821490579791273](https://docs.fivem.net/natives/?_0xD821490579791273)
 --- @param toggle boolean
 --- @return nil
